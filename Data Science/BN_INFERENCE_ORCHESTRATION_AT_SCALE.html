@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BN Design at Scale: Build Approaches, Routing and Inference Orchestration</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --border: #d8dee4;
+    --bg-code: #f6f8fa;
+    --accent: #0969da;
+    --ok: #1a7f37;
+    --bad: #cf222e;
+  }
+  body {
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 24px 100px;
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  h1 { font-size: 1.9em; border-bottom: 2px solid var(--border); padding-bottom: 0.3em; }
+  h2 { font-size: 1.4em; border-bottom: 1px solid var(--border); padding-bottom: 0.25em; margin-top: 2.2em; }
+  h3 { font-size: 1.15em; margin-top: 1.8em; color: #24292f; }
+  h4 { font-size: 1em; margin-top: 1.4em; }
+  p.context {
+    background: var(--bg-code);
+    border-left: 4px solid var(--accent);
+    padding: 10px 16px;
+    border-radius: 4px;
+  }
+  code {
+    background: var(--bg-code);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: "SFMono-Regular", Consolas, monospace;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0 1.6em;
+    font-size: 0.94em;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #f6f8fa; }
+  tr:nth-child(even) td { background: #fbfbfb; }
+  .mermaid {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 1.2em 0 2em;
+    overflow-x: auto;
+    text-align: center;
+  }
+  hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
+  .verdict-ok { color: var(--ok); font-weight: 600; }
+  .verdict-bad { color: var(--bad); font-weight: 600; }
+  .toc {
+    background: var(--bg-code);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 24px;
+  }
+  .toc a { text-decoration: none; color: var(--accent); }
+  ul { padding-left: 1.4em; }
+  strong { color: #24292f; }
+</style>
+</head>
+<body>
+
+<h1>BN Design at Scale: Build Approaches, Routing and Inference Orchestration</h1>
+
+<p class="context"><strong>Context:</strong> ~850 NHS Pathways pathways, usage following a power-law distribution (small number of pathways carry the majority of call volume, long tail of lightly-used pathways). Target: millions of triages per annum. Building individual networks is tractable — the open problem is <strong>inference-time orchestration</strong>: which BN(s) to load, how to run them together, and how to avoid re-asking the patient questions already answered when moving between BNs.</p>
+
+<div class="toc">
+  <strong>Contents</strong>
+  <ul>
+    <li><a href="#part1">Part 1 — Build-Time Approaches</a></li>
+    <li><a href="#part2">Part 2 — Entry and Routing Strategies</a></li>
+    <li><a href="#part3">Part 3 — Inference Orchestration Patterns</a></li>
+    <li><a href="#part4">Part 4 — Cross-BN Session State Reuse</a></li>
+    <li><a href="#part5">Part 5 — Recommended End-to-End Architecture</a></li>
+    <li><a href="#open">Open Decisions Requiring Empirical Calibration</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</div>
+
+<hr>
+
+<h2 id="part1">Part 1 — Build-Time Approaches</h2>
+
+<p>Three build strategies, confirmed against the documented power-law tiering (Tier 1 ~85 pathways / 80% volume, Tier 2 ~250 pathways / 15% volume, Tier 3 ~515 pathways / 5% volume).</p>
+
+<div class="mermaid">
+flowchart TB
+    subgraph A["Option 1 — One Monolithic BN"]
+        A1["Single network\nall 850 pathways\nall variables merged"]
+    end
+
+    subgraph B["Option 2 — One BN per Pathway"]
+        B1["Pathway 1 BN"]
+        B2["Pathway 2 BN"]
+        B3["... 850 independent BNs ..."]
+        B4["Pathway 850 BN"]
+    end
+
+    subgraph C["Option 3 — Hybrid Tiered (Recommended)"]
+        C1["Tier 1 — Self-contained\nPathway-specific BN\n(~85 pathways, 80% volume)"]
+        C2["Tier 2 — Family BN\n+ pathway adapters\n(~250 pathways, 15% volume)"]
+        C3["Tier 3 — Template BN\n+ conservative CPTs\n(~515 pathways, 5% volume)"]
+        C1 -.shared core concepts.- C2
+        C2 -.shared core concepts.- C3
+    end
+</div>
+
+<table>
+<tr><th>Option</th><th>Build cost</th><th>Inference cost</th><th>Data sufficiency</th><th>Verdict</th></tr>
+<tr><td>1 — Monolithic</td><td>Very high, one-time</td><td>Very high per query (huge CPTs, dense graph)</td><td>Fails on sparse tail pathways pooled in</td><td class="verdict-bad">❌ Rejected</td></tr>
+<tr><td>2 — Per-pathway</td><td>High × 850</td><td>Low per BN, but routing across 850 is the hard part</td><td>Fails for ~515 tail pathways (insufficient data)</td><td class="verdict-bad">❌ Rejected</td></tr>
+<tr><td>3 — Hybrid tiered</td><td>Moderate, scales with tier</td><td>Manageable — this document's focus</td><td>Matches data density to model complexity</td><td class="verdict-ok">✅ Adopted</td></tr>
+</table>
+
+<p>The build-time decision is settled. <strong>The rest of this document assumes Option 3</strong> and focuses entirely on what happens at inference time once ~85 Tier 1 BNs, ~50 Tier 2 family BNs, and a handful of Tier 3 templates exist simultaneously.</p>
+
+<hr>
+
+<h2 id="part2">Part 2 — Entry and Routing Strategies</h2>
+
+<p>Before any BN runs, the system must decide which BN(s) are candidates given the presenting symptom(s). Four viable strategies, not mutually exclusive.</p>
+
+<h3>Option A — Static symptom-group entry (inherited from current Pathways)</h3>
+<p>Reuse the existing NHS Pathways presenting-complaint categorisation as the first filter. Each presenting complaint category maps to a fixed shortlist of BNs.</p>
+
+<div class="mermaid">
+flowchart LR
+    U["Patient / Call Handler\npresenting complaint"] --> SG["Static Symptom Group\nLookup Table\n(inherited from Pathways)"]
+    SG --> L["Shortlist of BNs\nfor this symptom group\n(fixed at build time)"]
+    L --> BN1["Tier 1 BN"]
+    L --> BN2["Tier 2 Family BN"]
+    L --> BN3["Tier 3 Template BN"]
+</div>
+
+<p><strong>Pros:</strong> Zero additional build effort — reuses existing categorisation; deterministic and auditable; fast (a lookup, not a model).<br>
+<strong>Cons:</strong> Inherits any weaknesses of the current category boundaries; does not adapt as new evidence arrives; cannot handle multi-symptom presentations gracefully.</p>
+
+<h3>Option B — Retrieval-based initial evaluator</h3>
+<p>Each BN is tagged at build time with the SNOMED concepts / symptoms it covers (this is a natural by-product of the Layer 1/2/3 ontology work already done). At session start, presenting symptom(s) are matched against this BN metadata index to retrieve <strong>all</strong> BNs whose scope includes the presenting symptom — not just one predetermined group.</p>
+
+<div class="mermaid">
+flowchart LR
+    U["Patient presenting\nsymptom(s)"] --> EMB["Symptom-to-Concept\nMapping (SNOMED)"]
+    EMB --> IDX[("BN Metadata Index\nconcept coverage per BN\nbuilt at model registration time")]
+    IDX --> CAND["Candidate BN Set\nALL BNs whose scope\nincludes this concept"]
+    CAND --> BN1["Tier 1 BN"]
+    CAND --> BN2["Tier 1 BN"]
+    CAND --> BN3["Tier 2 Family BN"]
+    CAND --> BNn["... N candidates"]
+</div>
+
+<p>This is what you described: "an initial evaluator that would take given symptoms and bring all possible BNs that had those symptoms." The BN metadata index is a natural extension of the model registry — every registered model carries a manifest of the concepts it covers.</p>
+
+<p><strong>Pros:</strong> Adapts automatically as new BNs are registered — no manual symptom-group maintenance; captures multi-symptom presentations naturally (a candidate set, not a single bucket); directly reusable for Tier 2/3 as they are built.<br>
+<strong>Cons:</strong> Candidate sets can be large for common symptoms (e.g. "chest pain" may match 15+ BNs) — this is exactly the scale problem Part 3 addresses; requires the concept-coverage metadata to be well maintained and versioned.</p>
+
+<h3>Option C — Two-stage probabilistic router</h3>
+<p>An intake router narrows to a small candidate set, then a family disambiguation router commits to one specific BN after 2–4 high-information questions.</p>
+
+<div class="mermaid">
+flowchart TB
+    U["Patient presenting\nsymptom(s)"] --> SA["Stage A — Intake Router\n(pathway ID + early answers)"]
+    SA -->|"high confidence"| PB["Route directly\nto Pathway BN"]
+    SA -->|"ambiguous"| SB["Stage B — Family\nDisambiguation Router\n(2-4 more questions)"]
+    SB -->|"commits"| FB["Route to specific\nPathway or Family BN"]
+    SB -->|"still uncertain"| SC["Stage C — Safety Fallback\nconservative disposition\nor escalation"]
+</div>
+
+<p><strong>Pros:</strong> Bounded computation — commits to one BN quickly; safety fallback is explicit and built in.<br>
+<strong>Cons:</strong> Requires empirically calibrated confidence thresholds (T1/T2) — cannot be set by design alone; a hard commit can be wrong if the router misjudges early.</p>
+
+<h3>Option D — Hybrid: static category first, retrieval within category</h3>
+<p>Use Option A to narrow to a broad category cheaply (deterministic, fast, zero cost), then apply Option B's retrieval only within that category to build the candidate set. This bounds candidate set size while retaining adaptability.</p>
+
+<div class="mermaid">
+flowchart LR
+    U["Presenting symptom"] --> SG["Static category filter\n(cheap, deterministic)"]
+    SG --> RET["Retrieval within category\n(concept-coverage index)"]
+    RET --> CAND["Bounded candidate set\ntypically 3-8 BNs"]
+</div>
+
+<p><strong>Recommendation:</strong> Option D. It bounds the candidate set size (solving Option B's scale weakness) while remaining adaptive (solving Option A's rigidity). Feeds directly into the orchestration patterns below.</p>
+
+<hr>
+
+<h2 id="part3">Part 3 — Inference Orchestration Patterns (the core problem)</h2>
+
+<p>Once a candidate BN set exists, how do you actually run inference across them at a rate of millions of sessions per year? Four patterns, increasing in sophistication.</p>
+
+<h3>Pattern 1 — Strict single-path commit</h3>
+<p>The router commits to exactly one BN before any inference runs. Simplest possible architecture.</p>
+
+<div class="mermaid">
+sequenceDiagram
+    participant P as Patient
+    participant R as Router
+    participant BN as Committed BN
+    P->>R: presenting symptom
+    R->>R: select single BN (Option A/C)
+    R->>BN: load BN, begin session
+    loop each question
+        P->>BN: answer
+        BN->>BN: update posterior
+    end
+    BN->>P: disposition
+</div>
+
+<p><strong>Compute cost:</strong> Lowest — one BN active per session.<br>
+<strong>Scale characteristic:</strong> Trivially horizontal — each session is independent, one model in memory.<br>
+<strong>Risk:</strong> Misrouting is invisible until too late; no cross-checking; wrong disposition if the wrong BN was committed to early.<br>
+<strong>Verdict:</strong> Cheapest at scale but carries the highest clinical risk. Only acceptable if the router's confidence is very high (Stage A direct route in Option C).</p>
+
+<h3>Pattern 2 — Parallel candidate shortlist evaluation ("beam" pattern)</h3>
+<p>Load the top-N candidate BNs simultaneously. Feed the same evidence to all of them. After each answer, drop candidates whose posterior confidence falls below a pruning threshold. Continue until one candidate dominates or the shortlist collapses to one.</p>
+
+<div class="mermaid">
+sequenceDiagram
+    participant P as Patient
+    participant O as Orchestrator
+    participant BN1 as Candidate BN 1
+    participant BN2 as Candidate BN 2
+    participant BN3 as Candidate BN 3
+    P->>O: presenting symptom
+    O->>O: retrieve candidates (Option B/D)
+    O->>BN1: init with shared evidence
+    O->>BN2: init with shared evidence
+    O->>BN3: init with shared evidence
+    loop each question (shared across active candidates)
+        P->>O: answer
+        O->>BN1: evidence update
+        O->>BN2: evidence update
+        O->>BN3: evidence update
+        BN1-->>O: posterior
+        BN2-->>O: posterior
+        BN3-->>O: posterior
+        O->>O: prune candidates below threshold
+    end
+    Note over O: BN2 dominates, BN1 and BN3 dropped
+    O->>P: disposition (from BN2)
+</div>
+
+<p><strong>Compute cost:</strong> N× a single BN while candidates are active; drops as pruning proceeds — most expensive at session start, cheapest by the end.<br>
+<strong>Scale characteristic:</strong> Compute cost is front-loaded and self-limiting (pruning reduces load quickly, typically within 2–3 questions). Still meaningfully more expensive than Pattern 1 at the start of every session — at millions of sessions/year this matters.<br>
+<strong>Safety benefit:</strong> No hard early commit — the correct BN survives on its own evidence-driven merit, not a single router decision.<br>
+<strong>Verdict:</strong> Best safety profile of the four patterns. The cost is manageable if pruning is aggressive and candidate sets are bounded (Option D keeps this to 3–8 candidates).</p>
+
+<h3>Pattern 3 — Composite shared-core with subnet activation</h3>
+<p>Rather than running N separate BN objects, build one composite graph: a shared Layer 1/2 core plus "subnets" for each candidate pathway's Layer 3 variables. Subnets are activated or deactivated as evidence makes them more or less plausible.</p>
+
+<div class="mermaid">
+flowchart TB
+    subgraph Composite["Composite Session Graph"]
+        Core["Shared Core\n(Layer 1 concepts:\ndemographics, hemodynamic\nstability, red flags)"]
+        Fam["Shared Family Layer\n(Layer 2 concepts:\nchest pain family variables)"]
+        Sub1["Subnet: Pathway A\n(Layer 3, ACTIVE)"]
+        Sub2["Subnet: Pathway B\n(Layer 3, ACTIVE)"]
+        Sub3["Subnet: Pathway C\n(Layer 3, DEACTIVATED\nlow posterior)"]
+        Core --> Fam
+        Fam --> Sub1
+        Fam --> Sub2
+        Fam -.deactivated as evidence rules it out.-> Sub3
+    end
+</div>
+
+<p><strong>Compute cost:</strong> Lower than Pattern 2 for shared concepts (evaluated once, not N times); subnets only add incremental cost for their pathway-specific variables.<br>
+<strong>Scale characteristic:</strong> More efficient than Pattern 2 because shared evidence is computed once instead of redundantly across N separate BN objects.<br>
+<strong>Complexity cost:</strong> Significantly harder to build and validate — the composite graph structure must be assembled dynamically per session, and clinical review of a dynamically-composed graph is harder than reviewing N fixed graphs.<br>
+<strong>Verdict:</strong> The most computationally elegant solution, but the engineering and clinical governance overhead is substantial. Best suited to Tier 2 family BNs where the shared Layer 2 core is already a formal, validated artefact — less suited to ad hoc composition across arbitrary Tier 1 pathways.</p>
+
+<h3>Pattern 4 — Orchestrator + stateless inference worker pool (scale pattern)</h3>
+<p>This is not a competing inference <em>logic</em> pattern — it is the <strong>deployment architecture</strong> that makes Patterns 1–3 viable at millions of sessions per year. Separate session/evidence orchestration from BN inference computation.</p>
+
+<div class="mermaid">
+flowchart TB
+    subgraph Client
+        P["Patient / 111 Online\nor Telephony"]
+    end
+
+    subgraph Orchestration["Session Orchestrator (stateful)"]
+        SO["Session Orchestrator\nholds: evidence, candidate set,\nposteriors, routing state"]
+        SS[("Session Store\nRedis / DynamoDB\nconcept-keyed evidence")]
+        SO <--> SS
+    end
+
+    subgraph Workers["Stateless BN Inference Worker Pool (horizontally scaled)"]
+        W1["Worker: evaluate BN X\ngiven evidence"]
+        W2["Worker: evaluate BN Y\ngiven evidence"]
+        W3["Worker: evaluate BN Z\ngiven evidence"]
+    end
+
+    MR[("Model Registry\nversioned BN packages")]
+
+    P <--> SO
+    SO -->|"dispatch evaluation requests"| W1
+    SO -->|"dispatch evaluation requests"| W2
+    SO -->|"dispatch evaluation requests"| W3
+    W1 -->|"posterior"| SO
+    W2 -->|"posterior"| SO
+    W3 -->|"posterior"| SO
+    W1 -.loads model from.-> MR
+    W2 -.loads model from.-> MR
+    W3 -.loads model from.-> MR
+</div>
+
+<p><strong>Why this matters at scale:</strong> BN inference workers are stateless and only need the evidence set plus a model version to compute a posterior — they can be scaled horizontally like any stateless compute service (containers, serverless functions). The Session Orchestrator is the only stateful component and its job is narrow: hold evidence, dispatch evaluation requests to workers, aggregate posteriors, apply pruning/routing logic.</p>
+
+<p>This deployment pattern is compatible with <strong>any</strong> of Patterns 1–3 as the inference logic running inside it. Pattern 2 (parallel candidates) simply means the orchestrator dispatches to N workers instead of 1 per question round.</p>
+
+<p><strong>Verdict:</strong> This is the necessary infrastructure pattern regardless of which inference logic pattern is chosen, once volume reaches millions/year. Should be adopted as the baseline deployment architecture.</p>
+
+<h3>Comparison Summary</h3>
+<table>
+<tr><th>Pattern</th><th>Compute cost/session</th><th>Safety profile</th><th>Engineering complexity</th><th>Recommended for</th></tr>
+<tr><td>1 — Single-path commit</td><td>Lowest</td><td>Weakest — no cross-check</td><td>Lowest</td><td>Tier 3 (sparse, low-stakes tail pathways) only</td></tr>
+<tr><td>2 — Parallel candidate shortlist</td><td>Moderate, front-loaded</td><td>Strongest — evidence-driven survival</td><td>Moderate</td><td>Tier 1 (high-volume, high-stakes pathways)</td></tr>
+<tr><td>3 — Composite shared-core</td><td>Lowest at scale, once mature</td><td>Strong, if composite validated well</td><td>Highest</td><td>Tier 2 family BNs with a stable, pre-validated family core</td></tr>
+<tr><td>4 — Orchestrator + worker pool</td><td>N/A (deployment pattern)</td><td>N/A</td><td>Moderate, standard microservice pattern</td><td>All tiers — this is infrastructure, not a choice between 1–3</td></tr>
+</table>
+
+<p><strong>Recommended combination:</strong> Pattern 4 (orchestrator + worker pool) as the deployment baseline, running Pattern 2 (parallel shortlist) for Tier 1 pathways where safety matters most, graduating to Pattern 3 (composite core) for Tier 2 families once the family ontology is mature and validated, and Pattern 1 (single commit) acceptable only for Tier 3 tail pathways where the conservative/rules-based fallback already limits risk.</p>
+
+<hr>
+
+<h2 id="part4">Part 4 — Cross-BN Session State Reuse (avoiding repeat questions)</h2>
+
+<p>This is the requirement that ties everything together: if the router or shortlist-pruning process switches from BN_A to BN_B, the patient must not be re-asked a question they already answered, provided the same clinical concept is relevant to BN_B.</p>
+
+<h3>The core mechanism: concept-keyed evidence, not variable-keyed evidence</h3>
+<p>The critical design decision is that the session evidence store is <strong>not</strong> keyed by BN-specific variable names (<code>Respiratory_Status</code>, <code>Chest_Pain_Characteristics</code>). It is keyed by the underlying <strong>SNOMED concept</strong> the answer represents. Each BN then <em>projects</em> the shared concept-keyed evidence into its own variable space using the mapping table that the three-layer ontology already requires.</p>
+
+<div class="mermaid">
+flowchart TB
+    subgraph Global["Global Session Evidence Store (concept-keyed)"]
+        E1["SNOMED concept: 267036007\n(dyspnoea) = Present"]
+        E2["SNOMED concept: 29857009\n(chest pain) = Moderate"]
+        E3["SNOMED concept: 271594007\n(respiratory rate) = Elevated"]
+    end
+
+    subgraph ProjA["BN_A view (Tier 1 — PA212)"]
+        VA1["Respiratory_Status\n(derived from E1 + E3)"]
+        VA2["Chest_Pain_Characteristics\n(derived from E2)"]
+    end
+
+    subgraph ProjB["BN_B view (Tier 1 — different pathway,\nsame chest-pain family)"]
+        VB1["Breathlessness_Severity\n(derived from E1)"]
+        VB2["Pain_Score\n(derived from E2)"]
+        VB3["New_Variable_Only_In_B\n(NOT YET ANSWERED)"]
+    end
+
+    Global -->|"concept-to-variable\nmapping (Layer 1/2 ontology)"| ProjA
+    Global -->|"concept-to-variable\nmapping (Layer 1/2 ontology)"| ProjB
+</div>
+
+<p>When the orchestrator switches focus from BN_A to BN_B (during Pattern 2 pruning, or after a Pattern 1 misroute correction), it does <strong>not</strong> start a fresh evidence set. It re-projects the existing global evidence into BN_B's variable space. Only variables in BN_B that have no corresponding concept yet in the global store (<code>New_Variable_Only_In_B</code> above) trigger a new question to the patient.</p>
+
+<h3>Sequence: switching BNs mid-session without repeat questions</h3>
+
+<div class="mermaid">
+sequenceDiagram
+    participant P as Patient
+    participant O as Orchestrator
+    participant GS as Global Evidence Store (concept-keyed)
+    participant BNa as BN_A (active)
+    participant BNb as BN_B (candidate, not yet active)
+
+    P->>O: answers Q1 (dyspnoea = present)
+    O->>GS: store {concept: dyspnoea, value: present}
+    O->>BNa: project evidence, update posterior
+    BNa-->>O: posterior_A
+
+    P->>O: answers Q2 (chest pain = moderate)
+    O->>GS: store {concept: chest_pain, value: moderate}
+    O->>BNa: project evidence, update posterior
+    BNa-->>O: posterior_A (confidence dropping)
+
+    Note over O: Pattern 2 pruning suggests BN_B is now more plausible
+    O->>BNb: activate, project EXISTING global evidence (dyspnoea, chest_pain already known)
+    BNb-->>O: posterior_B (computed WITHOUT re-asking Q1/Q2)
+
+    Note over O: BN_B has one variable with no mapped concept yet
+    O->>P: ask ONLY the new question BN_B needs
+    P->>O: answers Q3
+    O->>GS: store {concept: new_concept, value: X}
+    O->>BNb: project evidence, update posterior
+    BNb-->>O: posterior_B (final)
+    O->>P: disposition
+</div>
+
+<h3>What this requires to work</h3>
+<table>
+<tr><th>Requirement</th><th>Why</th></tr>
+<tr><td>Every BN variable must have a documented concept mapping</td><td>Without this mapping, projection between BNs is impossible</td></tr>
+<tr><td>Layer 1/2 ontology governance must be enforced rigorously</td><td>If two BNs map the same real-world concept to different granularity or meaning, projected evidence will be silently wrong</td></tr>
+<tr><td>The global evidence store must be the source of truth; BN-specific evidence sets are always <em>derived</em>, never independently collected</td><td>Prevents state divergence between BN_A's view and BN_B's view of the same patient</td></tr>
+<tr><td>Concept-to-variable mapping must be versioned alongside each BN model package</td><td>If a BN's mapping changes between versions, historical session replay and cross-BN projection must know which mapping version applied</td></tr>
+<tr><td>Contradictory concept values across time must be handled explicitly (e.g. if two different-worded questions somehow map to the same concept with different apparent answers)</td><td>Contradictory evidence flag</td></tr>
+</table>
+
+<p>This mechanism is what makes Pattern 2 (parallel candidates) and Pattern 3 (composite core) affordable in terms of patient experience — the computational cost of running multiple BNs is hidden entirely from the patient, who only ever sees the next most-informative unanswered question, regardless of how many candidate BNs are active behind the scenes.</p>
+
+<hr>
+
+<h2 id="part5">Part 5 — Recommended End-to-End Architecture</h2>
+
+<p>Combining Part 2 Option D (bounded retrieval), Part 3 Pattern 4 (orchestrator + workers) running Pattern 2 for Tier 1 / Pattern 1 for Tier 3, and Part 4's concept-keyed evidence store:</p>
+
+<div class="mermaid">
+flowchart TB
+    P["Patient"] --> ENTRY["Entry: Static category filter\n+ concept-coverage retrieval\n(Part 2, Option D)"]
+    ENTRY --> CAND["Bounded candidate BN set\n(typically 3-8 BNs)"]
+
+    CAND --> SO["Session Orchestrator\n(Part 3, Pattern 4)"]
+    SO <--> GS[("Global Evidence Store\nconcept-keyed\n(Part 4)")]
+
+    SO -->|"Tier 1 candidates:\nparallel shortlist eval"| W1["Worker Pool\n(Pattern 2)"]
+    SO -->|"Tier 3 candidate:\nsingle commit"| W2["Worker Pool\n(Pattern 1)"]
+
+    W1 -->|"posteriors"| SO
+    W2 -->|"posteriors"| SO
+
+    SO --> PRUNE{"Pruning /\nconvergence check"}
+    PRUNE -->|"one BN dominates"| DISP["Disposition\n+ evidence trace"]
+    PRUNE -->|"still ambiguous"| NQ["Select next question\n(information gain)"]
+    NQ --> P
+    PRUNE -->|"safety threshold breached"| ESC["Safety escalation\n(bypass all BNs)"]
+</div>
+
+<hr>
+
+<h2 id="open">Open Decisions Requiring Empirical Calibration</h2>
+
+<p>These cannot be resolved by architecture alone — they require retrospective data (Candidate 1/1b from the validation candidates document) to calibrate:</p>
+
+<ol>
+  <li><strong>Candidate set size bound</strong> for Option D — how many BNs is "too many" before Pattern 2's front-loaded compute cost becomes a real capacity problem at millions of sessions/year</li>
+  <li><strong>Pruning threshold</strong> — at what posterior confidence gap does a candidate get dropped from the shortlist in Pattern 2</li>
+  <li><strong>Pattern 2 vs Pattern 1 cutover point</strong> — is there a volume or acuity threshold below which Tier 2 pathways should also use Pattern 1 for cost reasons</li>
+  <li><strong>Concept mapping granularity</strong> — how finely SNOMED concepts must be split to avoid false evidence reuse across BNs that use "the same" concept at different clinical resolution</li>
+  <li><strong>Worker pool sizing and autoscaling policy</strong> for Pattern 4 against real session volume and concurrency patterns</li>
+  <li><strong>Composite graph governance model</strong> (Pattern 3) — what clinical review process is required for a dynamically-assembled graph, given the existing three-gate review process assumes a fixed graph per BN</li>
+</ol>
+
+<hr>
+
+<h2 id="summary">Summary</h2>
+
+<table>
+<tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Build approach</td><td>Hybrid tiered (Option 3) — already settled</td></tr>
+<tr><td>Entry/routing</td><td>Static category filter + bounded concept-coverage retrieval (Option D)</td></tr>
+<tr><td>Inference orchestration</td><td>Pattern 4 (orchestrator + stateless workers) as deployment baseline; Pattern 2 (parallel shortlist) for Tier 1; Pattern 1 (single commit) acceptable for Tier 3; Pattern 3 (composite core) as a future optimisation for mature Tier 2 families</td></tr>
+<tr><td>Avoiding repeat questions across BNs</td><td>Concept-keyed global evidence store, with each BN projecting shared evidence into its own variable space via the existing three-layer ontology mapping</td></tr>
+<tr><td>Biggest remaining risk</td><td>Ontology governance quality — every mechanism above depends on concept-to-variable mappings being accurate, versioned and consistently applied across all active BNs</td></tr>
+</table>
+
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: "default", securityLevel: "loose", flowchart: { htmlLabels: true } });
+</script>
+
+</body>
+</html>
