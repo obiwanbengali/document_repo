@@ -1,0 +1,5 @@
+Item,EvidenceClass,Statement
+Bayesian dependencies,assumption,Parent counts are sensitivity cases only. Phase 3B does not map deterministic Pathways edges directly into Bayesian dependencies.
+Parent state cardinality,measured+assumption,"Parent state cases use measured median and p90 authored answer cardinality, applied homogeneously to isolate CPT growth."
+Raw storage,derived,"Storage figures count probability arrays only. They exclude node objects, factor metadata, indexes, evidence caches and interpreter overhead."
+Runtime memory,deferred,Runtime memory and serialised artefact size will be measured in Phase 3C against a concrete BN implementation rather than estimated from an arbitrary multiplier.

@@ -1,0 +1,705 @@
+Metadata-Version: 2.4
+Name: pathways-analysis
+Version: 0.1.0
+Summary: Read-only structural analysis of the NHS Pathways dataset for Bayesian Network architecture evidence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas<2.3,>=2.0
+Requires-Dist: pyarrow>=14
+Requires-Dist: SQLAlchemy>=2.0
+Requires-Dist: pyodbc>=5.0
+Requires-Dist: networkx>=3.1
+Requires-Dist: scipy>=1.9
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: python-louvain>=0.16
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: PyYAML>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4; extra == "dev"
+Provides-Extra: leiden
+Requires-Dist: leidenalg>=0.9; extra == "leiden"
+Requires-Dist: igraph>=0.10; extra == "leiden"
+Provides-Extra: benchmark
+Requires-Dist: pgmpy==0.1.25; extra == "benchmark"
+Requires-Dist: numpy<2,>=1.24; extra == "benchmark"
+
+# Pathways Structural Analysis Workbench
+
+Reproducible, read-only structural analysis of the NHS Pathways dataset. It produces
+evidence for an Architecture Decision Record comparing three candidate Bayesian Network
+designs:
+
+1. a monolithic Bayesian Network,
+2. a federated / hierarchical Bayesian Network,
+3. potentially smaller specialised Bayesian Networks.
+
+**This repository implements Phase 1 and Phase 2: evidence gathering only.** It
+deliberately makes no architectural recommendation.
+
+| Phase | Question it answers | Status |
+|---|---|---|
+| **1** | What does the Pathways estate structurally look like? | implemented — `python -m pathways_analysis.profiling` |
+| **2** | What candidate Bayesian family sets could be built from it, how much do they overlap, and what shared structure would they need? | implemented — `python -m pathways_analysis.family_discovery` |
+| **3** | How large, how fast and how expensive would each representation be, and monolithic vs federated? | **started — Phase 3A representation definition** |
+
+A **non-technical reporting layer** over Phases 1 and 2 lives in [`reports/`](reports/):
+a static HTML briefing for senior stakeholders, delivery and programme leadership,
+architects new to the work, clinicians who are not data scientists, and governance and
+assurance. It requires no understanding of SQL, graph theory, clustering or Bayesian
+networks, and it changes none of the evidence. See **The reporting layer** below.
+
+Phase 2 produces **candidate** families. None is clinically endorsed: a grouping
+produced by an algorithm is a structural candidate until a clinician has reviewed it,
+which is what `outputs/phase2/clinical_review_pack.md` exists for.
+
+---
+
+## Data handling rules
+
+These are enforced by the code, not just documented:
+
+| Rule | How it is enforced |
+|---|---|
+| No NHS Pathways data in git | `.gitignore` excludes all of `data/processed/`, `outputs/`, and every `*.csv` / `*.parquet` / `*.graphml` |
+| No raw database content in source files | SQL files contain queries only; no extracted values are pasted into code |
+| Credentials from environment variables | `config.DatabaseSettings.from_env()` has no default credential and fails loudly if one is missing |
+| Read-only access | `db.assert_read_only()` rejects any statement that is not `SELECT`/`WITH`, or that contains a mutating keyword outside a comment. Every query is checked at load time |
+| Source database never modified | No DDL or DML exists anywhere in `sql/` or `src/` |
+| Nothing sent to external APIs or LLMs | The package has no network dependency beyond the database connection |
+| Thresholds are visible, not buried | Every Phase 2 threshold and weight lives in `config/family_discovery.yaml` and is echoed into `outputs/phase2/reports/configuration_used.csv` |
+| The browser never sees the raw estate | `report_builder.py` selects and aggregates; `reports/data/*.json` is gitignored, and `tests/test_report_builder.py` fails if clinical free text reaches a payload |
+| Every report page is marked confidential | A non-dismissible banner on all four pages, and `noindex, nofollow, noarchive` on each |
+
+`.env` is gitignored. Treat every file under `outputs/` and `data/processed/` as
+confidential NHS Pathways content — the tables contain pathway titles, question
+identifiers, disposition codes and SNOMED preferred terms.
+
+---
+
+## Prerequisites
+
+- Python 3.9 or newer
+- Microsoft ODBC Driver 18 for SQL Server
+- **OpenSSL 1.0 / 1.1 / 3.x** — Driver 18 links against OpenSSL and fails with
+  `SSL Provider: [OpenSSL library could not be loaded]` if only macOS LibreSSL is
+  present. On macOS: `brew install openssl@3`
+- Network access to the Pathways SQL Server instance
+
+Verify the driver is registered:
+
+```bash
+odbcinst -q -d      # expect: [ODBC Driver 18 for SQL Server]
+```
+
+---
+
+## Setup
+
+```bash
+cd pathways-analysis
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install -e ".[dev]"
+```
+
+### Configure the database connection
+
+Credentials come from environment variables only. Copy the template and fill it in:
+
+```bash
+cp .env.example .env
+$EDITOR .env          # add PATHWAYS_DB_PASSWORD
+chmod 600 .env
+```
+
+| Variable | Required | Notes |
+|---|---|---|
+| `PATHWAYS_DB_HOST` | yes | Use `127.0.0.1` rather than `localhost` for a local Docker instance — `localhost` may resolve to IPv6 `::1` and fail to connect |
+| `PATHWAYS_DB_PORT` | yes | Typically `1433` |
+| `PATHWAYS_DB_NAME` | yes | e.g. `TriageDB` |
+| `PATHWAYS_DB_USER` | yes | |
+| `PATHWAYS_DB_PASSWORD` | yes | Never logged or written to any output |
+| `PATHWAYS_DB_DRIVER` | no | Defaults to `ODBC Driver 18 for SQL Server` |
+| `PATHWAYS_DB_ENCRYPT` | no | Defaults to `yes` |
+| `PATHWAYS_DB_TRUST_SERVER_CERT` | no | Defaults to `true`, required for the self-signed certificate on a local Docker SQL Server. Do not carry this into a real environment |
+| `PATHWAYS_DB_LOGIN_TIMEOUT` | no | Seconds, default `30` |
+| `PATHWAYS_DB_QUERY_TIMEOUT` | no | Seconds, default `600` |
+| `PATHWAYS_PROJECT_ROOT` | no | Override where artefacts are written |
+
+Exported environment variables take precedence over `.env`, so CI can inject
+credentials without touching the file.
+
+Check connectivity without running the analysis:
+
+```bash
+python -m pathways_analysis.profiling --check-connection
+python -m pathways_analysis.family_discovery --check-connection
+```
+
+---
+
+## Running the analysis
+
+```bash
+# Everything: tables, graph artefacts, charts, summary report
+python -m pathways_analysis.profiling
+
+# Skip charts (faster; all tables and graph artefacts still written)
+python -m pathways_analysis.profiling --no-charts
+
+# More detail on progress
+python -m pathways_analysis.profiling --log-level DEBUG
+```
+
+An installed console script is equivalent:
+
+```bash
+pathways-profile --no-charts
+```
+
+### Phase 2: candidate family discovery
+
+```bash
+# Everything: all candidate strategies, every metric, charts and both reports
+python -m pathways_analysis.family_discovery
+
+# One family-discovery approach at a time
+python -m pathways_analysis.family_discovery --strategy native
+python -m pathways_analysis.family_discovery --strategy graph
+python -m pathways_analysis.family_discovery --strategy hybrid
+
+# Skip charts, or point at a modified configuration
+python -m pathways_analysis.family_discovery --no-charts
+python -m pathways_analysis.family_discovery --config config/family_discovery.yaml
+```
+
+`--strategy hybrid` still runs community detection, because Hybrid A is built from
+graph communities. The installed equivalent is `pathways-families`.
+
+Phase 2 writes only under `outputs/phase2/`, so it can never overwrite a Phase 1
+artefact. A full run takes a few minutes; every threshold and weight it uses comes from
+`config/family_discovery.yaml` and is echoed into
+`outputs/phase2/reports/configuration_used.csv`.
+
+Optional Leiden support:
+
+```bash
+pip install -e ".[leiden]"
+```
+
+Leiden is included because it repairs a known Louvain defect — Louvain can emit
+internally disconnected communities — so agreement between the two is meaningful
+evidence rather than two runs of the same idea. Without it, the Leiden row in
+`community_method_comparison.csv` records "unavailable" and nothing else changes.
+
+The runner validates connectivity first and **exits non-zero without writing anything**
+if the database is unreachable, rather than producing a partial evidence base. Exit
+codes: `0` success, `2` configuration error, `3` database failure.
+
+Individual optional charts are isolated: a chart that fails logs a warning and the run
+continues.
+
+### Phase 3A: representation sizing baseline
+
+Phase 3A now has an executable baseline:
+
+```bash
+python -m pathways_analysis.phase3_sizing
+# installed equivalent:
+pathways-phase3
+```
+
+It requires the Phase 2 candidate membership output and a read-only database connection.
+It writes only under `outputs/phase3/` and produces:
+
+- `representation_summary.csv`
+- `state_cardinality_summary.csv`
+- `family_sizing_baseline.csv`
+- `cpt_parent_sensitivity.csv`
+- `evidence_and_assumptions.csv`
+
+The first run is deliberately a sizing baseline only. It does not construct a Bayesian DAG
+and does not claim that deterministic Pathways edges are Bayesian dependencies.
+
+### Phase 3B: CPT growth and raw probability storage
+
+After Phase 3A has completed:
+
+```bash
+python -m pathways_analysis.phase3_cpt_sizing
+# installed equivalent:
+pathways-phase3-cpt
+```
+
+Phase 3B uses measured variable state cardinalities and explicit parent-count sensitivity
+cases. It writes:
+
+- `cpt_sizing_by_representation.csv`
+- `cpt_growth_curve.csv`
+- `family_cpt_sizing.csv`
+- `cpt_sizing_exclusions.csv`
+- `phase3b_method_notes.csv`
+
+These are computational sizing scenarios, not a Bayesian DAG. Runtime memory and serialised
+artefact size are deliberately deferred to Phase 3C, where they can be measured against a
+real implementation rather than inferred from an arbitrary overhead multiplier.
+
+### Phase 3C: controlled inference benchmarking
+
+Install the optional benchmark dependencies, then run:
+
+```bash
+pip install -e ".[benchmark]"
+python -m pathways_analysis.phase3_benchmark --plan-only
+python -m pathways_analysis.phase3_benchmark
+# installed equivalent:
+pathways-phase3-benchmark
+```
+
+The benchmark builds valid synthetic pgmpy networks using measured model-size targets and
+measured median/p90 state cardinality, but a deliberately controlled rolling-window DAG and
+uniform synthetic CPT values. It records topology, parent count and state cardinality beside
+every latency figure because exact inference performance is strongly topology-dependent.
+
+Outputs include:
+
+- `benchmark_plan.csv`
+- `benchmark_results.csv`
+- `benchmark_skipped_cases.csv`
+- `phase3c_method_notes.csv`
+
+Benchmark probabilities have no clinical meaning. The results are computational evidence only.
+
+### Phase 3D: runtime architecture
+
+After Phase 2 outputs and the Phase 3A-C evidence are available:
+
+```bash
+python -m pathways_analysis.phase3_runtime
+# installed equivalent:
+pathways-phase3-runtime
+```
+
+Phase 3D deliberately separates logical BN architecture from service deployment. It carries
+four runtime patterns forward:
+
+- monolith always resident
+- federated models all resident in one central inference service
+- federated models lazy-loaded/cached in one central inference service
+- hierarchical shared/common layer plus family models
+
+It writes:
+
+- `runtime_patterns.csv`
+- `runtime_coordination_evidence.csv`
+- `benchmark_runtime_envelope.csv`
+- `runtime_failure_modes.csv`
+- `runtime_change_blast_radius.csv`
+- `reports/phase3d_runtime_architecture.md`
+
+The routing and ambiguity metrics are structural evidence, not production traffic. If Phase
+3C benchmark results have not been generated yet, Phase 3D records benchmark evidence as
+pending instead of inventing performance numbers.
+
+### Phase 3E: infrastructure and cost
+
+```bash
+python -m pathways_analysis.phase3_cost
+# installed equivalent:
+pathways-phase3-cost
+```
+
+Phase 3E maps the four Phase 3D runtime patterns to an explicit ECS/Fargate capacity model.
+It models 100k, 1m and 5m assessments per month, HA task floors, peak-load assumptions,
+structural family fan-out and cost per 1,000 assessments.
+
+The checked-in Fargate price is the current AWS public Linux/x86 **us-east-1 example rate**
+used only to exercise the cost model. The target region is `eu-west-2`, so absolute costs
+remain illustrative until the agreed Commercial / FinOps London rate card is supplied.
+
+Outputs:
+
+- `infrastructure_capacity_scenarios.csv`
+- `infrastructure_cost_scenarios.csv`
+- `runtime_workload_multipliers.csv`
+- `phase3e_method_notes.csv`
+- `reports/phase3e_infrastructure_cost.md`
+
+### Phase 3F: ADR evidence synthesis
+
+```bash
+python -m pathways_analysis.phase3_adr
+# installed equivalent:
+pathways-phase3-adr
+```
+
+Phase 3F combines Phase 3A-E into the draft Bayesian topology ADR. It does not
+algorithmically select a winner. It records explicit decision gates and leaves the ADR in
+draft while benchmark evidence, target-region pricing or clinician-led family review remain
+open.
+
+Outputs:
+
+- `adr_decision_gates.csv`
+- `adr_evidence_matrix.csv`
+- `adr_runtime_tradeoffs.csv`
+- `reports/phase3f_draft_adr.md`
+
+### The reporting layer
+
+Two commands: build the presentation data, then serve the folder.
+
+```bash
+# 1. Transform the analytical outputs into scoped presentation JSON
+python -m pathways_analysis.report_builder            # both phases
+python -m pathways_analysis.report_builder --phase 1
+python -m pathways_analysis.report_builder --phase 2
+
+# 2. Serve the static report
+cd reports && python -m http.server 8000
+# then open http://localhost:8000/
+```
+
+The installed equivalent of the first command is `pathways-report`. It reads files only:
+**no database connection and no credentials are needed**, and it never modifies an
+analytical artefact. Exit code `2` means required evidence is missing, and the message
+names the file and the command that produces it.
+
+The report must be **served**, not opened from disk. Browsers block local `fetch`, so
+double-clicking `phase1.html` shows an error panel explaining this rather than a blank
+page.
+
+#### Why the browser does not read the CSVs
+
+The analytical estate is ~80 CSV files aimed at people doing the analysis. Most of it is
+irrelevant to a briefing and much of it is confidential clinical content. `report_builder`
+therefore decides explicitly what the presentation may see:
+
+| Rule | How it is applied |
+|---|---|
+| Aggregate by default | Distributions are banded into plain-English buckets, never shipped per pathway |
+| No clinical free text | No question text, no symptom-discriminator or SNOMED descriptions, **no pathway titles** |
+| Minimal per-pathway data | One ten-row most-connected list, carrying pathway references and connection counts only |
+| Reference names permitted | Symptom-group and clinical-area *names*, because the family explorer is unusable without them |
+| Lineage travels with the data | Every block carries the artefact path it came from, shown in the page |
+| Evidence class travels with the data | Every block is tagged `measured`, `derived` or `candidate` |
+| Fail loudly | A missing artefact or renamed column stops the build; it never renders a blank section |
+
+`tests/test_report_builder.py` enforces the confidentiality rules directly: the synthetic
+fixtures put marker strings into the columns the builder reads, and the tests fail if a
+marker reaches the payload.
+
+The fourth evidence class in the programme's scheme — **architectural interpretation** —
+is deliberately absent. The report has no way to label a statement with it, because that
+comparison is Phase 3 work.
+
+#### What is in `reports/`
+
+```
+reports/
+├── index.html          executive landing page: the three phases and the flow to the ADR
+├── phase1.html         "Understanding NHS Pathways" — 7 sections
+├── phase2.html         "Discovering Candidate Bayesian Families" — 12 sections
+├── phase3.html         "Comparing Architectures" — shows "Not yet started"
+├── css/report.css      briefing styles; the validated palette as custom properties
+├── js/common.js        payload loading, figure chrome, glossary, evidence key
+├── js/charts.js        Plotly wrappers, one per chart form
+├── js/phase1.js        Phase 1 section rendering
+├── js/phase2.js        Phase 2 section rendering
+├── vendor/             Plotly (MIT), vendored so the report makes no external request
+└── data/               generated JSON — gitignored, regenerate with report_builder
+```
+
+Every visualisation carries three fixed notes — *What am I looking at? / What does this
+tell us? / Why does it matter?* — with the technical definition and the source artefact
+path underneath in a collapsible area. Charts use the same validated palette as the
+Python figures; no chart uses more than three categorical hues, and heatmaps use a
+single-hue ramp.
+
+Design constraints worth knowing if you extend it:
+
+- **No framework and no build step.** Plain HTML, CSS and vanilla JavaScript, served as
+  static files.
+- **No external requests.** Plotly is vendored locally rather than loaded from a CDN, so
+  the report works offline and phones nothing home.
+- **Charts are sized explicitly, not by Plotly's `autosize`.** Autosize measures the
+  container for both dimensions, and because the container's height is set by the
+  previous plot, a re-measure can shrink a chart until its card clips it. `renderChart`
+  sets the width from the container and keeps the height fixed per chart form.
+- **Light theme only.** An automatically inverted dark theme would put the palette
+  outside the lightness band it was validated in; a properly re-stepped dark palette is
+  separate work.
+
+### Tests
+
+```bash
+pytest
+```
+
+The suite covers graph transformation, cohesion metrics, community detection
+determinism, Jaccard similarity (cross-checked against a brute-force set computation),
+the read-only guard and identifier normalisation, the report builder's confidentiality
+and aggregation rules, plus the Phase 2 family metrics:
+overlap matrices, boundary classification, merge/split before-and-after comparisons,
+routing ambiguity, the adjusted Rand index and family naming. It needs no database
+connection, and **no test contains real NHS Pathways data** — every fixture is
+synthetic and small enough to verify by hand.
+
+---
+
+## Repository layout
+
+```
+pathways-analysis/
+├── README.md
+├── CLAUDE.md                     # working notes on the dataset's real semantics
+├── pyproject.toml
+├── .env.example
+├── .gitignore
+├── sql/                          # all analysis SQL, one file per concern
+│   ├── 00_reference_data.sql     # dimension extracts + triage logic fact table
+│   ├── 01_inventory.sql          # dataset inventory counts
+│   ├── 02_pathway_complexity.sql # per-pathway structural metrics
+│   ├── 03_question_reuse.sql     # node-reference reuse across pathways
+│   ├── 04_answer_cardinality.sql # answer counts (Phase 2 CPT sizing input)
+│   ├── 05_jump_analysis.sql      # JumpID profiling and classification
+│   ├── 06_transfer_analysis.sql  # T1-T4 unpivot and target resolution
+│   ├── 07_symptom_analysis.sql   # symptom groups and discriminators
+│   ├── 08_snomed_analysis.sql    # SNOMED reach per pathway
+│   ├── 09_data_quality.sql       # referential integrity and duplicate checks
+│   ├── 09_family_features.sql    # PHASE 2: age/gender/trauma tags, disposition routes
+│   ├── 10_family_overlap.sql     # PHASE 2: server-side native-grouping overlap
+│   ├── 11_family_transitions.sql # PHASE 2: server-side edge list (cross-check)
+│   └── 12_family_shared_features.sql  # PHASE 2: feature reuse across pathways
+├── config/
+│   └── family_discovery.yaml     # PHASE 2: every threshold, weight and method choice
+├── src/pathways_analysis/
+│   ├── config.py                 # env-var settings, path discovery
+│   ├── db.py                     # read-only engine, query loader, safety guard
+│   ├── graph.py                  # graph building, metrics, communities, similarity
+│   ├── exports.py                # table/graph/chart writing and chart theme
+│   ├── profiling.py              # Phase 1 runner and CLI
+│   ├── family_config.py          # Phase 2 configuration loading and validation
+│   ├── family_features.py        # per-pathway feature model, NHS-native candidates
+│   ├── family_overlap.py         # overlap matrix, high-overlap evidence, merges
+│   ├── family_evaluation.py      # cohesion, splits, scorecard, strategy comparison
+│   ├── family_boundaries.py      # boundary pathways and cross-family features
+│   ├── family_core.py            # shared-core candidate features
+│   ├── family_routing.py         # pathway-to-family affinity and routing ambiguity
+│   ├── family_charts.py          # Phase 2 figures
+│   ├── family_report.py          # evidence report and clinical review pack
+│   ├── family_discovery.py       # Phase 2 runner, hybrid strategies and CLI
+│   └── report_builder.py         # REPORTING: analytical CSVs -> scoped presentation JSON
+├── reports/                      # REPORTING: static HTML briefing (see below)
+│   ├── index.html                # executive landing page
+│   ├── phase1.html               # Phase 1 report
+│   ├── phase2.html               # Phase 2 report
+│   ├── phase3.html               # Phase 3 placeholder — "Not yet started"
+│   ├── css/report.css
+│   ├── js/{common,charts,phase1,phase2}.js
+│   ├── vendor/                   # Plotly, vendored (MIT) — no external requests
+│   └── data/                     # generated JSON, gitignored
+├── tests/
+├── data/processed/               # gitignored outputs
+└── outputs/
+    ├── tables/                   # gitignored CSVs (Phase 1)
+    ├── charts/                   # gitignored PNGs (Phase 1)
+    ├── pathway_graph.graphml
+    ├── phase1_summary.md
+    └── phase2/                   # gitignored Phase 2 outputs
+        ├── tables/
+        ├── charts/
+        ├── graphs/
+        ├── reports/
+        ├── family_discovery_report.md
+        └── clinical_review_pack.md
+```
+
+Two files share the `09_` prefix: `09_data_quality.sql` is Phase 1's and
+`09_family_features.sql` is Phase 2's. The prefix orders files for readability only —
+queries are addressed by name, and the loader rejects duplicate names across files.
+
+The Phase 2 module list is three modules longer than the seven the brief named:
+`family_config.py`, `family_charts.py` and `family_report.py` were split out so that
+configuration loading, figure composition and document generation do not sit inside the
+runner.
+
+Queries are addressed by name, not filename. Each `.sql` file contains one or more
+blocks introduced by a `-- name: <identifier>` marker, and `db.QueryLibrary` loads them
+all, rejecting duplicate names across files and any statement that is not read-only.
+
+`sql/00_reference_data.sql` and `sql/09_data_quality.sql` are additions to the
+originally specified eight files: the first holds the dimension extracts that the other
+analyses join against, the second holds the integrity checks behind
+`outputs/tables/data_quality.csv`.
+
+---
+
+## What the run produces
+
+### Tables (`outputs/tables/`)
+
+| File | Contents |
+|---|---|
+| `dataset_inventory.csv` | Active/total counts for every catalogue |
+| `pathway_inventory.csv` | One row per active pathway (also written as Parquet) |
+| `pathway_complexity.csv` | Per-pathway structural metrics, all pathways |
+| `pathway_complexity_summary.csv` | min/mean/median/p75/p90/p95/p99/max for the four size metrics |
+| `question_reuse.csv`, `question_reuse_bands.csv` | Reuse per node reference and banded |
+| `node_reference_kinds.csv` | Breakdown of the polymorphic `QuestionID` column |
+| `answer_cardinality.csv`, `*_distribution.csv`, `*_summary.csv`, `*_by_control_type.csv` | Answer counts, Phase 2 CPT sizing input |
+| `jump_distribution.csv`, `jump_buckets.csv`, `jump_positive_summary.csv` | Every `JumpID` value, classified |
+| `transfer_values.csv` | Unpivoted T1-T4 with resolution verdict per value |
+| `transfer_resolution_by_jump_id.csv` | Which `JumpID` values carry which target type |
+| `pathway_to_pathway_edges.csv` | Aggregated directed pathway edges |
+| `pathway_to_disposition_edges.csv` | Pathway to disposition references |
+| `unresolved_transfer_values.csv` | Transfer values resolving to nothing — never discarded |
+| `pathway_graph_nodes.csv`, `pathway_graph_edges.csv`, `pathway_graph_metrics.csv` | Graph node/edge tables and whole-graph metrics |
+| `graph_communities.csv`, `graph_community_summary.csv` | Community membership and cohesion per algorithm |
+| `symptom_group_analysis.csv`, `clinical_area_analysis.csv` | Cohesion per grouping |
+| `pathway_discriminators.csv`, `discriminator_reuse.csv`, `*_distribution.csv` | Symptom discriminator mapping and reuse |
+| `pathway_snomed.csv`, `snomed_reuse.csv`, `*_distribution.csv` | SNOMED mapping and reuse |
+| `pathway_question_similarity.csv`, `pathway_sd_similarity.csv`, `pathway_snomed_similarity.csv` | Pairwise Jaccard overlap per signal |
+| `pathway_direct_link_similarity.csv` | Similarity signal D: direct graph links |
+| `data_quality.csv` | Every integrity check with a status and a note |
+| `unreferenced_questions.csv`, `unreferenced_answers.csv`, `node_prefix_distribution.csv` | Supporting detail |
+
+### Other artefacts
+
+- `data/processed/pathway_inventory.parquet`
+- `outputs/pathway_graph.graphml` — the directed pathway graph, for Gephi/Cytoscape
+- `outputs/charts/*.png` — nine charts
+- `outputs/phase1_summary.md` — factual findings, separating measured facts, derived
+  metrics and unresolved data issues
+
+The complete graph is **not** rendered as a single node-link diagram: at its real size
+that would be unreadable. The GraphML file is provided for interactive inspection.
+
+---
+
+## Definitions used
+
+Metric definitions are stated here and in the generated summary so numbers are not
+quoted without their meaning:
+
+- **Active** pathway / question / disposition: `IsArchived = 0` AND
+  `FlagForDeletion = 0`. `tblSymptomGroups` and `tblSymptomDiscriminators` have no
+  `FlagForDeletion` column, so their `Active` and `IsArchived` flags are reported
+  separately rather than merged into one definition.
+- **Order position**: a `(PathwayID, OrderNumber)` pair. Verified to carry exactly one
+  distinct `QuestionID`, so a position is a single decision node.
+- **Branching factor**: distinct `AnswerNumber` values at an order position, averaged
+  over the pathway's positions.
+- **QuestionCount**: distinct `Tx` triage questions only. `Cx` care-advice and `Dx`
+  disposition node references are counted separately — see CLAUDE.md.
+- **Pathway transfer**: a T1-T4 value of the form `<PathwayID>.<OrderNumber>` whose
+  pathway part resolves against `tblPathways`.
+- **Graph edge**: a resolved pathway transfer, aggregated to one edge per ordered
+  `(source, target)` pathway pair. Edge attributes are `transition_count` (branch slots),
+  `branches`, `answer_branches`, `source_question_count`, `source_order_count`.
+- **Internal-edge percentage**: for a group of pathways,
+  `internal / (internal + outgoing) * 100` — the share of edges leaving the group's
+  pathways that stay inside the group.
+- **Graph-derived community**: a partition of the transfer topology. **Not** a clinical
+  family; it carries no clinical endorsement.
+
+### Analytical choices worth knowing
+
+- **Betweenness is unweighted.** `networkx` treats edge weight as *distance*, but
+  `transition_count` means *strength*. Passing counts as weights would invert the
+  meaning, so betweenness is computed unweighted and the weighted view is provided via
+  degree columns and PageRank (which does use `transition_count`).
+- **Graph scope** is every active pathway plus any pathway taking part in a resolved
+  transfer. Metrics for the active-only subgraph are reported alongside, so neither view
+  is hidden.
+- **Similarity tables contain only pairs sharing at least one feature.** The number of
+  possible pairs is reported next to each, so overlap density stays visible.
+- **Community detection is seeded** (`RANDOM_SEED = 42`) and community ids are
+  renumbered largest-first, so repeated runs are byte-identical.
+
+---
+
+## What Phase 2 produces
+
+Everything lands under `outputs/phase2/`. 43 tables; the ones a reader starts with:
+
+| File | Contents |
+|---|---|
+| `tables/pathway_family_features.csv` / `.parquet` | The normalised per-pathway feature model: metadata, feature id lists and counts, graph context, age/gender/trauma classification |
+| `tables/native_group_candidates.csv` | Structural metrics for every NHS-native grouping (symptom group, clinical area, area group, trauma, age, gender, module) |
+| `tables/community_method_comparison.csv` | Every community-detection method: community count, modularity, and adjusted Rand index against the primary method |
+| `tables/graph_community_membership.csv`, `graph_community_summary.csv` | Membership and per-community composition for each method |
+| `tables/pathway_similarity_*.csv` | Pairwise similarity, one file per evidence dimension, never combined |
+| `tables/hybrid_family_candidates.csv`, `hybrid_family_sensitivity.csv` | The three hybrid strategies, and what changes when the Hybrid C weighting changes |
+| `tables/family_cohesion.csv` | Every cohesion metric for every family of every strategy |
+| `tables/family_overlap_matrix.csv`, `high_overlap_family_pairs.csv` | Pairwise family overlap, banded, with per-pair driving evidence |
+| `tables/boundary_pathways.csv`, `boundary_pathway_summary.csv` | Pathways between families, classified structurally |
+| `tables/shared_questions.csv`, `shared_symptom_discriminators.csv`, `shared_snomed.csv`, `shared_dispositions.csv` | How many families use each feature |
+| `tables/shared_core_candidates.csv` | Features that would need duplicating across families |
+| `tables/family_split_candidates.csv`, `family_merge_candidates.csv` | Before-and-after metrics for hypothetical splits and merges |
+| `tables/pathway_family_routing.csv`, `pathway_family_routing_summary.csv` | Per-pathway family affinity and ambiguity |
+| `tables/age_family_analysis.csv`, `trauma_family_analysis.csv` | Whether age and trauma form families, variants inside families, or cross-cutting structure |
+| `tables/family_quality_scorecard.csv` | Per-family metrics, each dimension kept separate |
+| `tables/family_strategy_comparison.csv` | NHS-native vs graph-derived vs hybrid, side by side |
+| `tables/candidate_bayesian_families.csv`, `candidate_family_membership.csv` | The candidate family set presented for review, and its membership |
+| `reports/metric_definitions.csv` | The definition of every derived metric Phase 2 emits |
+| `reports/edge_derivation_crosscheck.csv`, `feature_count_crosscheck.csv` | Python derivations checked against independent server-side ones |
+| `family_discovery_report.md` | The evidence report, every statement labelled measured / derived / algorithmic / assumption / interpretation |
+| `clinical_review_pack.md` | The short document a clinician reviews, one block per candidate family |
+
+Plus 13 charts in `charts/` and a family-level network view in `graphs/`.
+
+### Phase 2 analytical choices worth knowing
+
+- **Three independent discovery approaches**, compared rather than one being assumed:
+  NHS-native metadata, graph communities, and three hybrid rules. Agreement between
+  independent methods is then available as evidence.
+- **A pathway may belong to several families.** Membership is long-format throughout;
+  clinical areas, area groups, trauma and age tags are all genuinely overlapping in
+  this data, so treating any of them as a partition would be wrong.
+- **The candidate set presented for review is a configured choice**
+  (`presentation.primary_candidate_strategy`, default `hybrid_a`), not a finding. Every
+  strategy is measured and compared.
+- **Families are only named from dominant NHS metadata.** Where no metadata value
+  covers at least `naming_dominance_threshold` of a family's pathways, the family keeps
+  a neutral name such as `Community_07` and its dominant groupings are reported in
+  separate columns. Inventing a clinical-sounding name for a community that has none
+  would read as a clinical claim the evidence does not support.
+- **Internal-edge percentage cannot judge a merge or a split.** Merging converts
+  cross-family edges into internal ones, so it can only rise; splitting does the
+  reverse. Both verdicts are therefore read from the shared-symptom-discriminator
+  change, which has no such bias.
+- **Disposition overlap is high by construction.** Under 200 disposition codes exist
+  and most families reach a similar subset, so disposition Jaccard has the highest
+  median of any dimension. The overlap band therefore excludes it by default
+  (`overlap_thresholds.band_measure: discriminating`); both measures are exported.
+- **Jaccard is scale-free**, so two one-pathway families sharing all their questions
+  score 1.0. `high_overlap_family_pairs.csv` carries `SmallerFamilyPathwayCount` and is
+  ordered by it, so the trivial pairs do not crowd out the substantial ones.
+- **Strongly connected components are excluded from the metric battery** as a
+  connectivity diagnostic rather than a candidate family set; their counts are still
+  reported in the community tables.
+- **Two Python derivations are cross-checked against SQL**: the pathway edge list and
+  the per-feature pathway counts. A divergence would invalidate every downstream
+  cohesion metric, so it is checked rather than assumed.
+
+---
+
+## Phase 3 (not implemented)
+
+Phase 3 has started using the current Phase 2 candidate families as a provisional analytical baseline.
+Clinical review is still required before final family boundaries are treated as agreed. After the first
+Phase 3 comparison, Phase 2 will be revisited using clinician-led family definition and affected sizing
+will be re-run. Phase 3 will cover: the literal, deduplicated and clinically-normalised Bayesian
+representations; monolithic and federated BN sizing; node/edge estimates; CPT growth;
+memory requirements; model artefact size; inference benchmarks; runtime architecture;
+AWS infrastructure and scaling; operational cost and cost per 1,000 triages; release
+blast radius; and the final ADR comparison.
+
+From Phase 2 it will need the reviewed family set, the membership including overlaps,
+the per-family variable counts, the shared-core candidates and their duplication
+counts, the boundary features, the routing-ambiguity measures, and the merge/split
+candidates as alternative family sets to size alongside the primary one. Section 16 of
+`outputs/phase2/family_discovery_report.md` states each of these precisely.

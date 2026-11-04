@@ -1,0 +1,5 @@
+PatternId,InferenceOperationsPerAssessment,CoordinationCpuMultiplier,Basis,EvidenceClass
+monolith_always_resident,1.0,1.0,single whole-model inference,architectural_interpretation
+federated_all_resident,1.4258,1.0,Phase 2 structural minimum plausible-family fan-out,derived+architectural_interpretation
+federated_lazy_loaded,1.4258,1.1,same structural fan-out plus 10% explicit cache/load coordination sensitivity assumption,derived+assumption
+hierarchical_shared_core,2.4257999999999997,1.0,one shared/core inference plus Phase 2 structural minimum family fan-out,derived+architectural_interpretation

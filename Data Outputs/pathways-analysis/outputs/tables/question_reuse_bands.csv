@@ -1,0 +1,6 @@
+band,question_count,total_logic_rows,mean_pathways_per_question,percentage_of_questions
+1 pathway,1486,5330,1.000000,37.450000
+2-5 pathways,1469,18245,3.020000,37.020000
+6-10 pathways,451,13901,7.480000,11.370000
+11-25 pathways,390,24709,16.320000,9.830000
+26+ pathways,172,58068,61.270000,4.330000

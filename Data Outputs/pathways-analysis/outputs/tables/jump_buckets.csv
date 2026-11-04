@@ -1,0 +1,10 @@
+bucket,row_count,t_fields_populated
+JumpID > 0,110728,0
+JumpID = -1,21927,21927
+JumpID = -2,322,0
+JumpID = -3,1063,1063
+JumpID = -4,66,0
+JumpID = -5,192,0
+JumpID = -6,783,783
+JumpID = -9,5586,0
+unexpected values,2,0

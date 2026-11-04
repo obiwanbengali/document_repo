@@ -1,0 +1,5 @@
+Dimension,ClassificationValue,strategy,TaggedPathways,FamiliesContainingValue,FamilyCountTotal,LargestFamilyShare,LargestFamilyId,FamiliesCovering80Percent,DistinctAreaGroups,TopAreaGroups,MeanBetweennessOfTagged,MeanBetweennessOfAllInScope,SpreadReading
+age,paediatric_only,hybrid_a,356,18,34,0.160100,HA_C00,9,8,abdomen:74 | head:55 | non specific:48 | back:43,0.000046,0.000092,"spread: tagged pathways are distributed across many families, consistent with a cross-cutting dimension"
+age,adult_and_paediatric,hybrid_a,284,30,34,0.218300,HA_C00,9,8,abdomen:31 | head:30 | non specific:30 | back:24,0.000149,0.000092,"spread: tagged pathways are distributed across many families, consistent with a cross-cutting dimension"
+age,adult_only,hybrid_a,156,20,34,0.198700,HA_C02,9,8,abdomen:23 | non specific:15 | face:13 | head:12,0.000106,0.000092,"spread: tagged pathways are distributed across many families, consistent with a cross-cutting dimension"
+age,unspecified,hybrid_a,19,3,34,0.894700,HA_C08,1,0,,0.000000,0.000092,concentrated: one family holds at least half the tagged pathways

@@ -1,0 +1,31 @@
+check_name,affected_rows,status,notes
+triage_logic_tx_question_not_catalogued,0,clean,
+triage_logic_node_reference_unknown_prefix,0,clean,
+triage_logic_answer_not_catalogued_for_tx_question,0,clean,
+triage_logic_pathway_not_catalogued,0,clean,
+duplicate_pathway_id,0,clean,
+duplicate_question_id,0,clean,
+duplicate_question_answer_pair,0,clean,
+active_pathway_with_no_triage_logic,0,clean,
+active_pathway_referencing_archived_question,0,clean,
+pathway_symptom_group_not_catalogued,0,clean,
+clinical_area_link_pathway_not_catalogued,0,clean,
+answer_sd_id_not_catalogued,0,clean,
+answer_snomed_answer_id_not_catalogued,0,clean,
+positive_jump_target_order_not_in_same_pathway,0,clean,
+transfer_value_resolves_to_both,0,clean,
+pathway_transfer_target_is_archived,0,clean,
+triage_logic_non_tx_node_reference,20416,expected_by_design,"Expected. QuestionID is a polymorphic node reference; Cx/Dx rows are care advice and disposition nodes, not missing questions."
+answer_never_referenced,3164,expected_by_design,Expected in part. The answer catalogue is shared across pathways and not every catalogued answer is wired into triage logic.
+question_never_referenced,1052,expected_by_design,Expected in part. Includes archived and superseded questions.
+pathway_with_null_module,845,expected_by_design,"Module is NULL for every row in tblPathways in this snapshot, so it carries no analytical signal here."
+pathway_with_null_party,828,expected_by_design,Party is NULL for almost every row in this snapshot.
+inactive_pathway_with_triage_logic,25,expected_by_design,Archived/deleted pathways retain their triage logic rows.
+active_question_never_referenced,523,investigate,
+active_pathway_with_no_clinical_area,439,investigate,
+pathway_with_null_symptom_group,161,investigate,
+active_pathway_with_null_symptom_group,150,investigate,
+disposition_dx_rank_not_catalogued,79,investigate,
+pathway_transfer_target_order_not_found,8,investigate,
+transfer_value_resolves_to_neither,4,investigate,
+undocumented_jump_id_values,2,investigate,

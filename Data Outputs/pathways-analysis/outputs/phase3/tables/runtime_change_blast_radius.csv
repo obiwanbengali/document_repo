@@ -1,0 +1,5 @@
+PatternId,LocalChangeUnit,ModelReleaseBlastRadius,RegressionScope,CompatibilityManagement,EvidenceClass
+monolith_always_resident,single monolithic artefact,whole model,whole-model structural and clinical regression,low structural complexity; one model version,architectural_interpretation
+federated_all_resident,family artefact,family plus boundary/shared evidence dependencies,"changed family, neighbouring families and shared contracts",family-set manifest,architectural_interpretation
+federated_lazy_loaded,family artefact,family plus cache/version interactions,same as federation plus load/cache behaviour,family-set manifest plus cache invalidation,architectural_interpretation
+hierarchical_shared_core,family or shared-core artefact,family-local for isolated change; broad for shared-core change,family-level for local changes; all dependent families for core changes,explicit shared-core/family compatibility matrix or manifest,architectural_interpretation

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>ENT Bayesian Family Evidence</title>
+<link rel="stylesheet" href="css/report.css">
+<style>
+  .ent-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:1.5rem 0}
+  .ent-stat{border:1px solid var(--rule);border-radius:var(--radius);padding:1rem;background:var(--surface-raised)}
+  .ent-stat strong{display:block;font-size:1.75rem;line-height:1.1}
+  .ent-steps{counter-reset:step;display:grid;gap:1rem}
+  .ent-step{border-left:4px solid var(--series-1,#2a78d6);padding:.25rem 0 .25rem 1rem}
+  .ent-step h3{margin:.1rem 0 .35rem}
+  .filter-row{display:flex;gap:.75rem;flex-wrap:wrap;margin:1rem 0}
+  .filter-row input,.filter-row select{min-width:220px;padding:.65rem;border:1px solid var(--rule-strong);border-radius:.35rem;background:var(--surface-raised)}
+  .group-row td{background:var(--surface);font-weight:700;font-size:.95rem;border-top:2px solid var(--rule-strong)}
+  .section-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.75rem;margin:1rem 0 1.5rem}
+  .section-summary__item{padding:.85rem 1rem;border-left:3px solid var(--series-1,#2a78d6);background:var(--surface)}
+  .section-summary__item strong{display:block;font-size:1.2rem}
+  .data-table{width:100%;border-collapse:collapse;font-size:.9rem}
+  .data-table th,.data-table td{padding:.65rem;border-bottom:1px solid var(--rule);vertical-align:top;text-align:left}
+  .data-table th{position:sticky;top:0;background:var(--surface-raised);z-index:1}
+  .table-wrap{overflow:auto;max-height:680px;border:1px solid var(--rule);border-radius:var(--radius)}
+  .reason-list{margin:0;padding-left:1.1rem}
+  .muted{color:var(--ink-muted)}
+  .pill{display:inline-block;padding:.15rem .45rem;border:1px solid var(--rule-strong);border-radius:999px;margin:.1rem .15rem .1rem 0;font-size:.78rem}
+</style>
+</head>
+<body>
+<div class="confidentiality-banner" data-confidentiality>
+  <strong>Confidential.</strong> Contains derived NHS Pathways analysis.
+</div>
+<header class="site-header">
+  <div class="site-header__inner">
+    <p class="site-header__title"><a href="index.html">NHS Pathways architecture investigation</a></p>
+    <nav class="site-nav" aria-label="Report sections">
+      <a href="index.html">Overview</a>
+      <a href="phase1.html">Estate structure</a>
+      <a href="phase2.html">Family discovery</a>
+      <a href="phase3.html">Architecture comparison</a>
+      <a href="ent.html">ENT family</a>
+      <a href="revised-ent.html">Revised ENT</a>
+    </nav>
+  </div>
+</header>
+<main id="report">
+  <div class="page-intro">
+    <p class="page-intro__eyebrow">ENT Family Definition</p>
+    <h1>ENT — Ear, Nose and Throat as the first Bayesian family</h1>
+    <p class="page-intro__question">What exactly belongs in the ENT family, what jumps in or out, and what needs clinical review?</p>
+    <p class="lede">
+      This report defines a conservative ENT seed for the April 2027 private-beta work and
+      shows the evidence around its boundary. It is intentionally not a clinical approval:
+      the purpose is to make the proposed family transparent and reviewable before the BN is built.
+    </p>
+    <p class="muted">Generated: <span data-meta-generated></span> · <span data-meta-scope></span></p>
+  </div>
+
+  <div id="load-status" class="callout"><p>Loading ENT evidence…</p></div>
+
+  <section class="report-section" hidden>
+    <div class="section-head"><span class="section-head__number">Summary</span><h2>The proposed family at a glance</h2></div>
+    <div class="ent-grid" id="summary-cards"></div>
+    <h3>Pathways by ENT heading</h3>
+    <div class="section-summary" id="heading-summary"></div>
+    <div class="callout" id="definition-note"></div>
+  </section>
+
+  <section class="report-section" hidden>
+    <div class="section-head"><span class="section-head__number">Method</span><h2>How the ENT boundary is being defined</h2><p>Each stage is explicit so clinical reviewers can challenge the rule, the membership or the boundary.</p></div>
+    <div class="ent-steps" id="steps"></div>
+  </section>
+
+  <section class="report-section" hidden>
+    <div class="section-head"><span class="section-head__number">Step 2</span><h2>Every pathway currently included in ENT</h2><p>The reason column is the important part: no pathway is included simply because it is close to ENT in the graph.</p></div>
+    <div class="filter-row">
+      <input id="pathway-filter" type="search" placeholder="Filter by pathway ID, title, symptom group or reason">
+      <label>Group by
+        <select id="pathway-group">
+          <option value="ent_heading">ENT heading</option>
+          <option value="symptom_group">Symptom group</option>
+          <option value="clinical_area">Clinical area</option>
+          <option value="none">No grouping</option>
+        </select>
+      </label>
+    </div>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th>Pathway</th><th>Title</th><th>Symptom group</th><th>Clinical areas</th><th>Why included</th></tr></thead><tbody id="included-body"></tbody></table></div>
+  </section>
+
+  <section class="report-section" hidden>
+    <div class="section-head"><span class="section-head__number">Boundary</span><h2>Outbound jumps — ENT to elsewhere</h2><p>These are the places where the ENT model would hand off, escalate or share evidence with another family.</p></div>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th>ENT source</th><th>External target</th><th>Transfers</th><th>Distinct answers</th><th>Source questions</th></tr></thead><tbody id="outbound-body"></tbody></table></div>
+  </section>
+
+  <section class="report-section" hidden>
+    <div class="section-head"><span class="section-head__number">Boundary</span><h2>Incoming pathways — elsewhere into ENT</h2><p>These are especially useful for checking whether the initial ENT seed is too narrow.</p></div>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th>External source</th><th>ENT target</th><th>Transfers</th><th>Distinct answers</th><th>Source questions</th></tr></thead><tbody id="inbound-body"></tbody></table></div>
+  </section>
+
+  <section class="report-section" hidden>
+    <div class="section-head"><span class="section-head__number">Review queue</span><h2>Potential ENT overlaps not automatically included</h2><p>These pathways match broader overlap terms only. They are intentionally held outside the core until clinicians decide otherwise.</p></div>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th>Pathway</th><th>Title</th><th>Reason for review</th></tr></thead><tbody id="review-body"></tbody></table></div>
+  </section>
+
+  <section class="report-section" hidden>
+    <div class="section-head"><span class="section-head__number">Clinical gate</span><h2>Questions to settle before the ENT BN boundary is approved</h2></div>
+    <ul id="clinical-questions"></ul>
+    <div class="callout"><p><strong>Design principle:</strong> Pathway transfers are evidence of a relationship, not instructions to create BN edges. Clinical review still decides what becomes family membership, shared evidence, a safety gate or an external handoff.</p></div>
+  </section>
+</main>
+<script src="js/common.js"></script>
+<script src="js/ent.js"></script>
+</body>
+</html>

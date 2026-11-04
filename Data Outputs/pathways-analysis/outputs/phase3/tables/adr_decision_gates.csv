@@ -1,0 +1,8 @@
+Gate,Passed,Detail
+Phase 3A representation evidence,True,representation summary exists
+Phase 3B CPT sizing evidence,True,CPT sizing output exists
+Phase 3C benchmark evidence,True,benchmark results exist and are non-empty
+Phase 3D runtime evidence,True,runtime pattern output exists
+Phase 3E cost evidence,True,cost scenario output exists
+Target-region pricing refreshed,False,"target=eu-west-2, basis=us-east-1, status=illustrative_only_pending_eu-west-2_refresh"
+Clinician-led family review complete,False,Phase 2 family refinement is still required before the federated family boundaries can be treated as clinically agreed.

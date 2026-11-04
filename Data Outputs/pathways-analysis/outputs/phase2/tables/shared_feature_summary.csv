@@ -1,0 +1,5 @@
+FeatureType,FeatureTypeLabel,OutputTable,FeaturesTotal,FamilySpecific,SharedBy2Families,SharedBy3To5Families,BroadlyShared,PercentageFamilySpecific,PercentageBroadlyShared,MedianFamilyCount,MaxFamilyCount,SharedCoreCandidates,SharedCoreThresholdFamilies,TotalDuplicationIfFederated
+disposition,disposition code,shared_dispositions.csv,194,60,48,41,45,30.930000,23.200000,2.000000,22,56,5,466
+question,Tx triage question,shared_questions.csv,3787,2370,750,504,163,62.580000,4.300000,1.000000,26,244,5,1479
+snomed,SNOMED concept,shared_snomed.csv,297,84,58,90,65,28.280000,21.890000,3.000000,13,78,5,505
+symptom_discriminator,symptom discriminator,shared_symptom_discriminators.csv,469,255,89,92,33,54.370000,7.040000,1.000000,14,46,5,285

@@ -1,0 +1,195 @@
+strategy,FeatureType,FeatureId,Description,FamilyCount,PathwayCount,TotalOccurrences,FamilyDistribution,TopFamilyId,TopFamilyLabel,TopFamilyPathwayCount,SharingBand
+hybrid_a,disposition,DX012,Emergency Ambulance Response (Category 3),22,404,3117,HA_C00:70 | HA_C03:62 | HA_C04_01:55 | HA_C02:52 | HA_C01_00:36 | HA_C07_00:29 | HA_C05:26 | HA_C06:24 | HA_C08:12 | HA_C04_00:8 | HA_C09:8 | HA_C10:7,HA_C00,HA_C00,70,broadly shared
+hybrid_a,disposition,DX02,Refer to Treatment Centre within 1 hour,14,405,7405,HA_C00:96 | HA_C03:66 | HA_C02:55 | HA_C04_01:55 | HA_C05:37 | HA_C06:22 | HA_C04_00:16 | HA_C10:14 | HA_C09:12 | HA_C01_00:11 | HA_C07_00:10 | HA_C11:6,HA_C00,HA_C00,96,broadly shared
+hybrid_a,disposition,DX11,Speak to a Primary Care Service within 1 hour,14,262,3337,HA_C03:64 | HA_C00:39 | HA_C05:36 | HA_C02:32 | HA_C06:27 | HA_C04_01:21 | HA_C07_00:18 | HA_C09:6 | HA_C01_00:5 | HA_C04_00:5 | HA_C10:4 | HA_C01_03:3,HA_C03,HA_C03,64,broadly shared
+hybrid_a,disposition,DX15,Speak to a Primary Care Service within 24 hours,14,94,616,HA_C03:31 | HA_C02:18 | HA_C04_01:12 | HA_C06:10 | HA_C01_00:4 | HA_C00:3 | HA_C01_03:3 | HA_C04_00:3 | HA_C07_00:3 | HA_C09:3 | HA_C05:1 | HA_C10:1,HA_C03,HA_C03,31,broadly shared
+hybrid_a,disposition,DX06,To Contact a Primary Care Service within 6 hours,13,386,5232,HA_C02:80 | HA_C00:67 | HA_C03:66 | HA_C04_01:44 | HA_C05:37 | HA_C06:36 | HA_C04_00:11 | HA_C07_00:11 | HA_C10:11 | HA_C09:8 | HA_C01_00:6 | HA_C11:6,HA_C02,HA_C02,80,broadly shared
+hybrid_a,disposition,DX08,To Contact a Primary Care Service within 24 hours,13,356,4692,HA_C02:73 | HA_C00:61 | HA_C03:57 | HA_C04_01:42 | HA_C06:36 | HA_C05:30 | HA_C04_00:13 | HA_C10:13 | HA_C11:10 | HA_C09:8 | HA_C01_00:6 | HA_C07_00:4,HA_C02,HA_C02,73,broadly shared
+hybrid_a,disposition,DX05,To Contact a Primary Care Service within 2 hours,13,316,5732,HA_C03:72 | HA_C02:66 | HA_C05:37 | HA_C04_01:33 | HA_C06:32 | HA_C00:22 | HA_C07_00:15 | HA_C09:10 | HA_C11:8 | HA_C10:7 | HA_C04_00:6 | HA_C01_00:5,HA_C03,HA_C03,72,broadly shared
+hybrid_a,disposition,DX07,To Contact a Primary Care Service within 12 hours,13,259,2112,HA_C03:59 | HA_C02:47 | HA_C00:44 | HA_C06:27 | HA_C04_01:25 | HA_C05:19 | HA_C10:11 | HA_C04_00:6 | HA_C11:6 | HA_C07_00:5 | HA_C01_00:4 | HA_C01_03:3,HA_C03,HA_C03,59,broadly shared
+hybrid_a,disposition,DX0122,Emergency Ambulance Response (Category 3),13,148,518,HA_C02:29 | HA_C03:29 | HA_C01_00:24 | HA_C05:16 | HA_C01_01:12 | HA_C00:10 | HA_C04_01:10 | HA_C06:6 | HA_C07_00:5 | HA_C09:4 | HA_C01_03:1 | HA_C11:1,HA_C02,HA_C02,29,broadly shared
+hybrid_a,disposition,DX011,Emergency Ambulance Response,13,94,1219,HA_C08:16 | HA_C04_01:14 | HA_C01_01:12 | HA_C07_00:12 | HA_C00:9 | HA_C01_00:8 | HA_C09:7 | HA_C05:5 | HA_C01_03:4 | HA_C02:3 | HA_C03:2 | HA_C07_01:1,HA_C08,HA_C08,16,broadly shared
+hybrid_a,disposition,DX32,Speak to a Clinician from our service Immediately,13,84,563,HA_C01_00:29 | HA_C09:17 | HA_C06:9 | HA_C10:7 | HA_C03:4 | HA_C05:4 | HA_C07_00:4 | HA_C04_01:3 | HA_C00:2 | HA_C02:2 | HA_C01_03:1 | HA_C08:1,HA_C01_00,HA_C01_00,29,broadly shared
+hybrid_a,disposition,DX25,Home Management,12,284,1202,HA_C00:70 | HA_C02:56 | HA_C04_01:34 | HA_C06:30 | HA_C03:29 | HA_C05:19 | HA_C09:11 | HA_C04_00:10 | HA_C10:10 | HA_C11:8 | HA_C01_00:5 | HA_C01_03:2,HA_C00,HA_C00,70,broadly shared
+hybrid_a,disposition,DX0121,Emergency Ambulance Response (Category 3),12,214,1170,HA_C02:48 | HA_C00:35 | HA_C03:35 | HA_C04_01:31 | HA_C05:28 | HA_C07_00:14 | HA_C06:12 | HA_C09:5 | HA_C10:2 | HA_C11:2 | HA_C01_03:1 | HA_C14:1,HA_C02,HA_C02,48,broadly shared
+hybrid_a,disposition,DX03,Refer to Treatment Centre within 4 hours,12,202,1848,HA_C00:71 | HA_C04_01:34 | HA_C05:20 | HA_C02:14 | HA_C04_00:13 | HA_C06:12 | HA_C01_00:10 | HA_C10:8 | HA_C11:8 | HA_C03:7 | HA_C01_03:3 | HA_C09:2,HA_C00,HA_C00,71,broadly shared
+hybrid_a,disposition,DX75,MUST contact own GP Practice within 3 working days,12,173,1860,HA_C02:46 | HA_C03:31 | HA_C06:29 | HA_C04_01:18 | HA_C11:9 | HA_C05:8 | HA_C09:7 | HA_C10:7 | HA_C00:6 | HA_C04_00:6 | HA_C01_00:3 | HA_C01_03:3,HA_C02,HA_C02,46,broadly shared
+hybrid_a,disposition,DX01121,Emergency Ambulance Response for Septicaemia,12,159,451,HA_C03:33 | HA_C07_00:28 | HA_C02:26 | HA_C06:23 | HA_C05:20 | HA_C04_01:13 | HA_C10:5 | HA_C12:5 | HA_C11:3 | HA_C00:1 | HA_C01_03:1 | HA_C09:1,HA_C03,HA_C03,33,broadly shared
+hybrid_a,disposition,DX16,For persistent or recurrent symptoms: get in touch with the GP Practice within 3 working days,12,124,708,HA_C03:36 | HA_C02:32 | HA_C06:15 | HA_C04_01:14 | HA_C09:7 | HA_C05:4 | HA_C07_00:4 | HA_C01_00:3 | HA_C01_03:3 | HA_C10:3 | HA_C00:2 | HA_C11:1,HA_C03,HA_C03,36,broadly shared
+hybrid_a,disposition,DX09,For persistent or recurrent symptoms: get in touch with the GP Practice for a Non-Urgent Appointment,12,121,768,HA_C02:37 | HA_C06:16 | HA_C03:14 | HA_C05:12 | HA_C09:10 | HA_C04_01:8 | HA_C00:6 | HA_C10:6 | HA_C04_00:4 | HA_C01_00:3 | HA_C01_03:3 | HA_C11:2,HA_C02,HA_C02,37,broadly shared
+hybrid_a,disposition,DX13,Speak to a Primary Care Service within 6 hours,12,97,792,HA_C03:23 | HA_C02:17 | HA_C04_01:16 | HA_C06:10 | HA_C00:8 | HA_C05:7 | HA_C01_00:5 | HA_C09:5 | HA_C01_03:3 | HA_C07_00:1 | HA_C10:1 | HA_C38:1,HA_C03,HA_C03,23,broadly shared
+hybrid_a,disposition,DX12,Speak to a Primary Care Service within 2 hours,12,86,764,HA_C02:17 | HA_C03:14 | HA_C06:11 | HA_C00:9 | HA_C04_01:9 | HA_C05:7 | HA_C07_00:5 | HA_C01_00:4 | HA_C09:4 | HA_C01_03:3 | HA_C10:2 | HA_C38:1,HA_C02,HA_C02,17,broadly shared
+hybrid_a,disposition,DX016,Non-emergency Ambulance Response (Category 4),12,56,176,HA_C00:13 | HA_C03:10 | HA_C02:7 | HA_C05:5 | HA_C04_00:4 | HA_C04_01:4 | HA_C08:4 | HA_C09:3 | HA_C01_00:2 | HA_C01_03:2 | HA_C12:1 | HA_C14:1,HA_C00,HA_C00,13,broadly shared
+hybrid_a,disposition,DX38,Speak to Clinician from our service for home management advice,11,257,928,HA_C00:68 | HA_C02:51 | HA_C04_01:34 | HA_C03:25 | HA_C06:20 | HA_C05:19 | HA_C04_00:10 | HA_C09:10 | HA_C10:9 | HA_C11:8 | HA_C01_00:3,HA_C00,HA_C00,68,broadly shared
+hybrid_a,disposition,DX14,Speak to a Primary Care Service within 12 hours,11,69,432,HA_C03:30 | HA_C06:10 | HA_C02:6 | HA_C04_01:5 | HA_C01_00:4 | HA_C00:3 | HA_C01_03:3 | HA_C05:3 | HA_C09:3 | HA_C10:1 | HA_C38:1,HA_C03,HA_C03,30,broadly shared
+hybrid_a,disposition,DX10,MUST contact own GP Practice for a Non-Urgent appointment,11,57,288,HA_C03:16 | HA_C02:10 | HA_C06:9 | HA_C10:4 | HA_C01_00:3 | HA_C01_03:3 | HA_C04_01:3 | HA_C05:3 | HA_C00:2 | HA_C04_00:2 | HA_C09:2,HA_C03,HA_C03,16,broadly shared
+hybrid_a,disposition,DX0112,Emergency Ambulance Response for Acute Coronary Syndrome,11,49,173,HA_C02:11 | HA_C04_01:9 | HA_C07_00:9 | HA_C03:5 | HA_C05:5 | HA_C09:5 | HA_C00:1 | HA_C01_00:1 | HA_C01_03:1 | HA_C06:1 | HA_C10:1,HA_C02,HA_C02,11,broadly shared
+hybrid_a,disposition,DX94,Refer to Treatment Centre within 1 hour for Sexual Assault Assessment,10,153,1076,HA_C00:59 | HA_C04_01:26 | HA_C05:20 | HA_C02:13 | HA_C04_00:13 | HA_C03:9 | HA_C01_00:5 | HA_C10:4 | HA_C06:3 | HA_C01_03:1,HA_C00,HA_C00,59,broadly shared
+hybrid_a,disposition,DX0126,Emergency Ambulance Response for Trauma Emergency (Category 3),10,35,344,HA_C01_01:12 | HA_C00:6 | HA_C04_01:5 | HA_C02:4 | HA_C05:3 | HA_C01_00:1 | HA_C01_03:1 | HA_C03:1 | HA_C06:1 | HA_C14:1,HA_C01_01,HA_C01_01,12,broadly shared
+hybrid_a,disposition,DX28,Contact Pharmacist within 24 hours,9,48,260,HA_C02:14 | HA_C06:13 | HA_C11:8 | HA_C05:5 | HA_C04_01:3 | HA_C03:2 | HA_C01_00:1 | HA_C01_03:1 | HA_C04_00:1,HA_C02,HA_C02,14,broadly shared
+hybrid_a,disposition,DX108,The call is closed with no further action required,9,18,272,HA_C01_03:5 | HA_C09:4 | HA_C00:2 | HA_C01_00:2 | HA_C02:1 | HA_C04_01:1 | HA_C06:1 | HA_C10:1 | HA_C41:1,HA_C01_03,HA_C01_03,5,broadly shared
+hybrid_a,disposition,DX010,Emergency Ambulance Response for Potential Cardiac Arrest,8,47,261,HA_C01_00:16 | HA_C07_00:12 | HA_C08:10 | HA_C09:4 | HA_C01_03:2 | HA_C05:1 | HA_C07_01:1 | HA_C12:1,HA_C01_00,HA_C01_00,16,broadly shared
+hybrid_a,disposition,DX0127,"Emergency Ambulance Response, Pregnancy (Category 3)",8,40,292,HA_C05:16 | HA_C04_01:8 | HA_C00:6 | HA_C02:4 | HA_C03:2 | HA_C06:2 | HA_C01_03:1 | HA_C14:1,HA_C05,HA_C05,16,broadly shared
+hybrid_a,disposition,DX50,Speak to Midwife or Labour Suite immediately,8,39,268,HA_C05:14 | HA_C03:10 | HA_C02:7 | HA_C04_01:4 | HA_C01_00:1 | HA_C01_03:1 | HA_C09:1 | HA_C11:1,HA_C05,HA_C05,14,broadly shared
+hybrid_a,disposition,DX0114,Emergency Ambulance Response for Aortic Aneurysm Rupture/Dissection,8,19,61,HA_C05:6 | HA_C12:4 | HA_C07_00:3 | HA_C03:2 | HA_C01_03:1 | HA_C02:1 | HA_C04_01:1 | HA_C09:1,HA_C05,HA_C05,6,broadly shared
+hybrid_a,disposition,DX0118,Emergency Ambulance Response for Potential Shock,7,42,178,HA_C07_00:18 | HA_C01_01:8 | HA_C05:5 | HA_C12:5 | HA_C02:4 | HA_C01_00:1 | HA_C01_03:1,HA_C07_00,HA_C07_00,18,broadly shared
+hybrid_a,disposition,DX0124,Emergency Ambulance Response for Risk of Suicide (Category 3),7,40,124,HA_C01_00:12 | HA_C07_00:12 | HA_C09:8 | HA_C02:4 | HA_C00:2 | HA_C01_03:1 | HA_C05:1,HA_C01_00,HA_C01_00,12,broadly shared
+hybrid_a,disposition,DX0113,Emergency Ambulance Response for Anaphylaxis,7,25,101,HA_C00:7 | HA_C05:5 | HA_C12:5 | HA_C03:4 | HA_C04_01:2 | HA_C01_03:1 | HA_C06:1,HA_C00,HA_C00,7,broadly shared
+hybrid_a,disposition,DX0106,Emergency Ambulance Response for Respiratory Distress,7,17,69,HA_C01_01:4 | HA_C03:4 | HA_C07_00:4 | HA_C09:2 | HA_C01_03:1 | HA_C05:1 | HA_C12:1,HA_C01_01,HA_C01_01,4,broadly shared
+hybrid_a,disposition,DX0117,Emergency Ambulance Response for Possible Stroke Time Critical,7,17,55,HA_C05:5 | HA_C07_00:4 | HA_C02:2 | HA_C09:2 | HA_C12:2 | HA_C01_03:1 | HA_C04_01:1,HA_C05,HA_C05,5,broadly shared
+hybrid_a,disposition,DX31,Contact Genito-Urinary Clinic or other local service,7,15,140,HA_C06:4 | HA_C04_01:3 | HA_C05:3 | HA_C02:2 | HA_C00:1 | HA_C01_03:1 | HA_C03:1,HA_C06,HA_C06,4,broadly shared
+hybrid_a,disposition,DX35,Speak to Clinician from our service within 2 hours,6,57,206,HA_C03:34 | HA_C06:8 | HA_C02:5 | HA_C00:4 | HA_C04_01:3 | HA_C05:3,HA_C03,HA_C03,34,broadly shared
+hybrid_a,disposition,DX0116,Emergency Ambulance Response for Major Blood Loss,6,33,343,HA_C01_00:16 | HA_C05:5 | HA_C12:5 | HA_C01_01:4 | HA_C09:2 | HA_C01_03:1,HA_C01_00,HA_C01_00,16,broadly shared
+hybrid_a,disposition,DX325,Speak to a Clinician from our service Immediately - Toxic Ingestion/Inhalation,6,33,114,HA_C03:21 | HA_C02:5 | HA_C07_00:3 | HA_C00:2 | HA_C05:1 | HA_C10:1,HA_C03,HA_C03,21,broadly shared
+hybrid_a,disposition,DX01120,Emergency Ambulance Response for Respiratory Distress Trauma,6,17,43,HA_C01_01:8 | HA_C05:4 | HA_C09:2 | HA_C00:1 | HA_C01_00:1 | HA_C01_03:1,HA_C01_01,HA_C01_01,8,broadly shared
+hybrid_a,disposition,DX0105,Emergency Ambulance Response for Potential Shock,6,16,72,HA_C07_00:7 | HA_C01_01:4 | HA_C12:2 | HA_C01_00:1 | HA_C01_03:1 | HA_C05:1,HA_C07_00,HA_C07_00,7,broadly shared
+hybrid_a,disposition,DX01213,Emergency Ambulance Response for Accidental Poisoning (Category 3),6,12,54,HA_C00:5 | HA_C03:2 | HA_C09:2 | HA_C01_03:1 | HA_C05:1 | HA_C11:1,HA_C00,HA_C00,5,broadly shared
+hybrid_a,disposition,DX01010,Emergency Ambulance Response for Pre-arrest Anaphylaxis,5,32,123,HA_C01_00:16 | HA_C07_00:12 | HA_C09:2 | HA_C01_03:1 | HA_C06:1,HA_C01_00,HA_C01_00,16,shared by 3-5 families
+hybrid_a,disposition,DX0111,Emergency Ambulance Response for Acute Abdomen Pregnant,5,22,52,HA_C05:17 | HA_C12:2 | HA_C01_03:1 | HA_C03:1 | HA_C04_01:1,HA_C05,HA_C05,17,shared by 3-5 families
+hybrid_a,disposition,DX0119,Emergency Ambulance Response for Respiratory Distress Non-Trauma,5,20,74,HA_C07_00:8 | HA_C05:5 | HA_C12:4 | HA_C09:2 | HA_C01_03:1,HA_C07_00,HA_C07_00,8,shared by 3-5 families
+hybrid_a,disposition,DX013,Assistance needed at home due to inability to get off the floor,5,18,44,HA_C00:12 | HA_C04_01:3 | HA_C01_00:1 | HA_C01_03:1 | HA_C13:1,HA_C00,HA_C00,12,shared by 3-5 families
+hybrid_a,disposition,DX1113,COVID risk Clinical Assessment service 2 hours,5,9,76,HA_C07_00:5 | HA_C01_00:1 | HA_C01_03:1 | HA_C05:1 | HA_C06:1,HA_C07_00,HA_C07_00,5,shared by 3-5 families
+hybrid_a,disposition,DX1115,COVID risk Clinical Assessment service 6 hours,5,9,68,HA_C07_00:5 | HA_C01_00:1 | HA_C01_03:1 | HA_C05:1 | HA_C06:1,HA_C07_00,HA_C07_00,5,shared by 3-5 families
+hybrid_a,disposition,DX81,Contact Own GP Practice next working day for Repeat Prescription,5,6,25,HA_C01_00:2 | HA_C00:1 | HA_C01_03:1 | HA_C08:1 | HA_C38:1,HA_C01_00,HA_C01_00,2,shared by 3-5 families
+hybrid_a,disposition,DX80,Repeat prescription required within 6 hours,5,5,28,HA_C00:1 | HA_C01_00:1 | HA_C01_03:1 | HA_C38:1 | HA_C41:1,HA_C00,HA_C00,1,shared by 3-5 families
+hybrid_a,disposition,DX85,Repeat prescription required within 2 hours,5,5,28,HA_C00:1 | HA_C01_00:1 | HA_C01_03:1 | HA_C38:1 | HA_C41:1,HA_C00,HA_C00,1,shared by 3-5 families
+hybrid_a,disposition,DX86,Repeat prescription required within 12 hours,5,5,32,HA_C00:1 | HA_C01_00:1 | HA_C01_03:1 | HA_C38:1 | HA_C41:1,HA_C00,HA_C00,1,shared by 3-5 families
+hybrid_a,disposition,DX87,Repeat prescription required within 24 hours,5,5,28,HA_C00:1 | HA_C01_00:1 | HA_C01_03:1 | HA_C38:1 | HA_C41:1,HA_C00,HA_C00,1,shared by 3-5 families
+hybrid_a,disposition,DX0162,Transport to an Emergency Treatment Centre within 1 hour (Category 3),4,29,141,HA_C04_01:14 | HA_C03:9 | HA_C02:5 | HA_C07_00:1,HA_C04_01,HA_C04_01,14,shared by 3-5 families
+hybrid_a,disposition,DX01012,Emergency Ambulance Response for Obstetric Complications,4,13,189,HA_C01_00:8 | HA_C05:2 | HA_C09:2 | HA_C01_03:1,HA_C01_00,HA_C01_00,8,shared by 3-5 families
+hybrid_a,disposition,DX0104,Emergency Ambulance Response for Major Blood Loss,4,13,135,HA_C01_00:8 | HA_C09:2 | HA_C12:2 | HA_C01_03:1,HA_C01_00,HA_C01_00,8,shared by 3-5 families
+hybrid_a,disposition,DX01122,Emergency Ambulance Response for Unconsciousness,4,12,28,HA_C05:5 | HA_C01_00:4 | HA_C09:2 | HA_C01_03:1,HA_C05,HA_C05,5,shared by 3-5 families
+hybrid_a,disposition,DX1112,COVID risk Clinical Assessment service 1 hour,4,9,72,HA_C07_00:5 | HA_C01_00:2 | HA_C05:1 | HA_C06:1,HA_C07_00,HA_C07_00,5,shared by 3-5 families
+hybrid_a,disposition,DX46,Refer to health information within 24 hours,4,9,33,HA_C01_00:4 | HA_C09:3 | HA_C06:1 | HA_C08:1,HA_C01_00,HA_C01_00,4,shared by 3-5 families
+hybrid_a,disposition,DX89,Refer to Treatment Centre within 12 hours,4,9,136,HA_C00:6 | HA_C01_03:1 | HA_C04_01:1 | HA_C05:1,HA_C00,HA_C00,6,shared by 3-5 families
+hybrid_a,disposition,DX30,Speak to Midwife within 1 hour,4,8,44,HA_C04_01:3 | HA_C03:2 | HA_C05:2 | HA_C01_03:1,HA_C04_01,HA_C04_01,3,shared by 3-5 families
+hybrid_a,disposition,DX391,COVID Self Care,4,7,28,HA_C01_00:3 | HA_C06:2 | HA_C01_03:1 | HA_C05:1,HA_C01_00,HA_C01_00,3,shared by 3-5 families
+hybrid_a,disposition,DX01125,Emergency Ambulance Response for Potential COVID19,4,6,37,HA_C05:2 | HA_C07_00:2 | HA_C01_00:1 | HA_C06:1,HA_C05,HA_C05,2,shared by 3-5 families
+hybrid_a,disposition,DX0125,Emergency Ambulance Response (Category 3),4,4,4,HA_C19:1 | HA_C20:1 | HA_C24:1 | HA_C25:1,HA_C19,HA_C19,1,shared by 3-5 families
+hybrid_a,disposition,DX1116,COVID risk Clinical Assessment service 12 hours,4,4,40,HA_C01_00:1 | HA_C01_03:1 | HA_C05:1 | HA_C06:1,HA_C01_00,HA_C01_00,1,shared by 3-5 families
+hybrid_a,disposition,DX1117,COVID risk Clinical Assessment Service next working day,4,4,28,HA_C01_00:1 | HA_C01_03:1 | HA_C05:1 | HA_C06:1,HA_C01_00,HA_C01_00,1,shared by 3-5 families
+hybrid_a,disposition,DX404,Speak to an Assessor Immediately for Symptomatic Assessment,4,4,40,HA_C01_00:1 | HA_C01_03:1 | HA_C10:1 | HA_C38:1,HA_C01_00,HA_C01_00,1,shared by 3-5 families
+hybrid_a,disposition,DX0103,Emergency Ambulance Response for Fitting Now,3,19,57,HA_C01_00:16 | HA_C09:2 | HA_C01_03:1,HA_C01_00,HA_C01_00,16,shared by 3-5 families
+hybrid_a,disposition,DX0101,Emergency Ambulance Response for Pre-arrest,3,18,55,HA_C01_00:16 | HA_C01_03:1 | HA_C09:1,HA_C01_00,HA_C01_00,16,shared by 3-5 families
+hybrid_a,disposition,DX39,Symptom Management Advice,3,17,112,HA_C00:8 | HA_C06:8 | HA_C03:1,HA_C00,HA_C00,8,shared by 3-5 families
+hybrid_a,disposition,DX0107,Emergency Ambulance Response for Unconsciousness,3,15,51,HA_C01_00:12 | HA_C09:2 | HA_C01_03:1,HA_C01_00,HA_C01_00,12,shared by 3-5 families
+hybrid_a,disposition,DX01011,Emergency Ambulance Response for Life-threatening Asthma,3,11,57,HA_C07_00:8 | HA_C09:2 | HA_C01_03:1,HA_C07_00,HA_C07_00,8,shared by 3-5 families
+hybrid_a,disposition,DX49,999 for police,3,11,200,HA_C09:7 | HA_C01_00:3 | HA_C01_03:1,HA_C09,HA_C09,7,shared by 3-5 families
+hybrid_a,disposition,DX92,Refer to Mental Health/Crisis Service within 4 hours,3,9,44,HA_C09:5 | HA_C01_00:2 | HA_C01_03:2,HA_C09,HA_C09,5,shared by 3-5 families
+hybrid_a,disposition,DX21,To Speak to a Dental Service within 24 hours,3,8,52,HA_C10:5 | HA_C02:2 | HA_C01_03:1,HA_C10,HA_C10,5,shared by 3-5 families
+hybrid_a,disposition,DX026,A deferred dispatch is being arranged,3,7,7,HA_C08:4 | HA_C01_00:2 | HA_C09:1,HA_C08,HA_C08,4,shared by 3-5 families
+hybrid_a,disposition,DX22,To Speak to a Dental Practice within 7 days,3,7,68,HA_C10:5 | HA_C01_03:1 | HA_C02:1,HA_C10,HA_C10,5,shared by 3-5 families
+hybrid_a,disposition,DX18,To Speak to a Dental Service within 2 hours,3,5,20,HA_C10:3 | HA_C01_00:1 | HA_C01_03:1,HA_C10,HA_C10,3,shared by 3-5 families
+hybrid_a,disposition,DX34,Speak to Clinician from our service within 30 minutes,3,4,14,HA_C07_00:2 | HA_C01_00:1 | HA_C02:1,HA_C07_00,HA_C07_00,2,shared by 3-5 families
+hybrid_a,disposition,DX73,Refer to Social Services Immediately,3,4,16,HA_C09:2 | HA_C01_00:1 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 3-5 families
+hybrid_a,disposition,DX74,"Refer to Social Services, next working day",3,4,16,HA_C09:2 | HA_C01_00:1 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 3-5 families
+hybrid_a,disposition,DX82,Medication Enquiry,3,3,9,HA_C00:1 | HA_C01_00:1 | HA_C08:1,HA_C00,HA_C00,1,shared by 3-5 families
+hybrid_a,disposition,DX91,Unexpected death,3,3,16,HA_C01_00:1 | HA_C01_03:1 | HA_C09:1,HA_C01_00,HA_C01_00,1,shared by 3-5 families
+hybrid_a,disposition,DX500,Speak to a Service Advisor Immediately for Injury Assessment,2,24,104,HA_C01_00:12 | HA_C01_01:12,HA_C01_00,HA_C01_00,12,shared by 2 families
+hybrid_a,disposition,DX0115,Emergency Ambulance Response for Labour Complications,2,23,228,HA_C05:22 | HA_C03:1,HA_C05,HA_C05,22,shared by 2 families
+hybrid_a,disposition,DX20,To Speak to a Dental Service within 12 hours,2,7,36,HA_C10:6 | HA_C01_03:1,HA_C10,HA_C10,6,shared by 2 families
+hybrid_a,disposition,DX19,To Speak to a Dental Service within 6 hours,2,6,40,HA_C10:5 | HA_C01_03:1,HA_C10,HA_C10,5,shared by 2 families
+hybrid_a,disposition,DX64,Speak to the Primary Care Service 2 hours for antiviral assessment,2,5,60,HA_C06:4 | HA_C03:1,HA_C06,HA_C06,4,shared by 2 families
+hybrid_a,disposition,DX0102,Emergency Ambulance Response for Potential Cardiac Arrest Post Delivery,2,4,20,HA_C01_00:2 | HA_C05:2,HA_C01_00,HA_C01_00,2,shared by 2 families
+hybrid_a,disposition,DX110,Community Nurse within 4 hours,2,4,24,HA_C01_00:3 | HA_C01_03:1,HA_C01_00,HA_C01_00,3,shared by 2 families
+hybrid_a,disposition,DX111,Community Nurse within 24 hours,2,4,40,HA_C01_00:3 | HA_C01_03:1,HA_C01_00,HA_C01_00,3,shared by 2 families
+hybrid_a,disposition,DX112,Community Nurse next working day,2,4,28,HA_C01_00:3 | HA_C01_03:1,HA_C01_00,HA_C01_00,3,shared by 2 families
+hybrid_a,disposition,DX117,Speak to a Primary Care Service within 1 hour for palliative care,2,4,24,HA_C01_00:3 | HA_C01_03:1,HA_C01_00,HA_C01_00,3,shared by 2 families
+hybrid_a,disposition,DX63,Refer to National Pandemic Flu Service,2,4,29,HA_C07_00:3 | HA_C08:1,HA_C07_00,HA_C07_00,3,shared by 2 families
+hybrid_a,disposition,DX01214,Emergency Ambulance Response for Potential COVID19 (Category 3),2,3,45,HA_C05:2 | HA_C06:1,HA_C05,HA_C05,2,shared by 2 families
+hybrid_a,disposition,DX014,Crew arrived before a disposition was reached,2,3,28,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX021,Refer to Treatment Centre within 1 hour possible Viral Haemorrhagic Fever,2,3,20,HA_C00:2 | HA_C03:1,HA_C00,HA_C00,2,shared by 2 families
+hybrid_a,disposition,DX113,Health Visitor next working day,2,3,12,HA_C01_00:2 | HA_C01_03:1,HA_C01_00,HA_C01_00,2,shared by 2 families
+hybrid_a,disposition,DX118,Refer to Dental Treatment Centre within 1 hour,2,3,12,HA_C10:2 | HA_C01_03:1,HA_C10,HA_C10,2,shared by 2 families
+hybrid_a,disposition,DX17,To Speak to a Dental Service within 1 hour,2,3,12,HA_C10:2 | HA_C01_03:1,HA_C10,HA_C10,2,shared by 2 families
+hybrid_a,disposition,DX321,Speak to a Clinician from our service Immediately - Refused Ambulance Disposition,2,3,20,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX322,Speak to a Clinician from our service Immediately - Refused Emergency Treatment Centre Disposition,2,3,12,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX323,Speak to a Clinician from our service Immediately - Refused Primary Care Service Disposition,2,3,12,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX324,Speak to a Clinician from our service Immediately - Refused Disposition,2,3,12,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX329,Speak to a Clinician from our service Immediately - Failed Contraception,2,3,8,HA_C05:2 | HA_C01_00:1,HA_C05,HA_C05,2,shared by 2 families
+hybrid_a,disposition,DX333,Speak to a Clinician from our service Immediately - Ambulance Validation,2,3,12,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX334,Speak to a Clinician from our service Immediately - Treatment Centre Within 1 Hour Validation,2,3,12,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX335,Speak to a Clinician from our service Immediately - Other Disposition Validation,2,3,12,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX337,Speak to a Clinician from our service Immediately - Treatment Centre Within 4 Hour Validation,2,3,12,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX338,Speak to a Clinician from our service Immediately - Treatment Centre Within 12 Hour Validation,2,3,12,HA_C09:2 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX45,Service Location Information,2,3,25,HA_C01_00:2 | HA_C08:1,HA_C01_00,HA_C01_00,2,shared by 2 families
+hybrid_a,disposition,DX451,COVID Coordination Service,2,3,12,HA_C01_00:2 | HA_C05:1,HA_C01_00,HA_C01_00,2,shared by 2 families
+hybrid_a,disposition,DX47,Refer to Community Healthcare Professional,2,3,9,HA_C01_00:2 | HA_C08:1,HA_C01_00,HA_C01_00,2,shared by 2 families
+hybrid_a,disposition,DX84,Refer to Another Agency,2,3,12,HA_C09:2 | HA_C01_00:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,disposition,DX0128,Non-emergency Ambulance Response (Category 4),2,2,2,HA_C20:1 | HA_C25:1,HA_C20,HA_C20,1,shared by 2 families
+hybrid_a,disposition,DX1111,Speak to a Primary Care Service within 1 hour possible Viral Haemorrhagic Fever,2,2,12,HA_C00:1 | HA_C03:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,disposition,DX1114,COVID risk Clinical Assessment service 4 hours,2,2,8,HA_C01_00:1 | HA_C05:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX115,Contact a local service the next working day for appointment,2,2,12,HA_C01_00:1 | HA_C01_03:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX116,Speak to the Primary Care Service within 6 hours for Expected Death,2,2,8,HA_C01_00:1 | HA_C09:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX29,Contact Pharmacist next working day,2,2,16,HA_C01_00:1 | HA_C01_03:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX42,Child protection / Vulnerable adult immediate referral,2,2,8,HA_C01_00:1 | HA_C01_03:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX43,"Refer to child protection / vulnerable adult lead, next working day",2,2,8,HA_C01_00:1 | HA_C01_03:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX48,Refer to Another Out of Hours Service Provider,2,2,5,HA_C01_00:1 | HA_C08:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX51,Speak to Midwife within 2 hours,2,2,16,HA_C01_00:1 | HA_C01_03:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX76,Callback by Healthcare Professional within 30 minutes,2,2,5,HA_C01_00:1 | HA_C08:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX77,Callback by Healthcare Professional within 60 minutes,2,2,5,HA_C01_00:1 | HA_C08:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX78,Receive report of results or tests from laboratory,2,2,5,HA_C01_00:1 | HA_C08:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX95,"The call is closed with no further action required, wrong service called",2,2,20,HA_C01_00:1 | HA_C09:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX96,Refer to Health Information within 12 hours,2,2,5,HA_C01_00:1 | HA_C08:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX97,Emergency Contraception required within 2 hours,2,2,8,HA_C01_03:1 | HA_C05:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,disposition,DX98,Emergency Contraception required within 12 hours,2,2,12,HA_C01_00:1 | HA_C05:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,disposition,DX326,Speak to a Clinician from our service Immediately - Frequent Caller,1,24,72,HA_C01_00:24,HA_C01_00,HA_C01_00,24,family-specific
+hybrid_a,disposition,DX024,Assistance is being dispatched to arrive within 2 hours,1,4,4,HA_C08:4,HA_C08,HA_C08,4,family-specific
+hybrid_a,disposition,DX025,Assistance is being dispatched to arrive within 4 hours,1,4,4,HA_C08:4,HA_C08,HA_C08,4,family-specific
+hybrid_a,disposition,DX028,Assistance is being dispatched to arrive within 1 hour,1,4,4,HA_C08:4,HA_C08,HA_C08,4,family-specific
+hybrid_a,disposition,DX60,Contact Optician next routine appointment within 72 hours (3 days from now),1,4,16,HA_C11:4,HA_C11,HA_C11,4,family-specific
+hybrid_a,disposition,DX114,Community Midwife next working day,1,3,16,HA_C01_00:3,HA_C01_00,HA_C01_00,3,family-specific
+hybrid_a,disposition,DX327,Speak to a Clinician from our service Immediately - Chemical Eye Splash,1,3,12,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,disposition,DX0123,Emergency Ambulance Response (Category 3),1,2,2,HA_C01_00:2,HA_C01_00,HA_C01_00,2,family-specific
+hybrid_a,disposition,DX106,A Clinician from our Service will call the individual back immediately to assess the problem,1,2,18,HA_C09:2,HA_C09,HA_C09,2,family-specific
+hybrid_a,disposition,DX330,"Speak to a Clinician from our service Immediately - Burn, Chemical",1,2,8,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,disposition,DX405,Speak to an Assessor Immediately for Assessment of Chest Pain,1,2,12,HA_C10:2,HA_C10,HA_C10,2,family-specific
+hybrid_a,disposition,DX0108,Emergency Ambulance Response for Level 1 Inter-Facility Transfer,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX0109,Emergency Ambulance Response for Level 1 Health Care Professional request,1,1,2,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX01123,Emergency Ambulance Response for Level 2 Inter-Facility Transfer,1,1,2,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX01124,Emergency Ambulance Response for Level 2 Health Care Professional request,1,1,2,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX01210,Ambulance Response for Level 3 Health Care Professional request within 1 hour,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX01211,A non-emergency Ambulance Response for Level 3 Inter-Facility Transfer within 2 hours,1,1,2,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX01212,A non-emergency Ambulance Response for Level 3 Health Care Professional request within 2 hours,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX0129,Ambulance Response for Level 3 Inter-Facility Transfer within 1 hour,1,1,2,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX0161,Non-emergency Ambulance Response possible Viral Haemorrhagic Fever (Category 4),1,1,3,HA_C03:1,HA_C03,HA_C03,1,family-specific
+hybrid_a,disposition,DX0163,A non-emergency Ambulance Response for Level 4 Health Care Professional request within 4 hours,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX0164,A non-emergency Ambulance Response for Level 4 Health Care Professional request within 3 hours,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX0165,A non-emergency Ambulance Response for Level 4 Inter-Facility Transfer request within 4 hours,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX017,Ambulance for Clinical Reasons,1,1,5,HA_C16:1,HA_C16,HA_C16,1,family-specific
+hybrid_a,disposition,DX018,Ambulance for Transport Reasons,1,1,5,HA_C17:1,HA_C17,HA_C17,1,family-specific
+hybrid_a,disposition,DX0181,Emergency Ambulance due to Clinical Reasons,1,1,1,HA_C18:1,HA_C18,HA_C18,1,family-specific
+hybrid_a,disposition,DX020,"Ambulance for Unexpected Death, Under 18",1,1,12,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,disposition,DX022,Refer to Emergency Ambulatory Care (SDEC) within 1 hour,1,1,16,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,disposition,DX119,Callback by Healthcare Professional within 2 hours,1,1,4,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX120,Callback by Healthcare Professional within 4 hours,1,1,8,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX122,Contact for a possible home visit within 6 hours,1,1,8,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,disposition,DX123,Contact for a possible home visit within 2 hours,1,1,8,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,disposition,DX124,Community Urgent Response within 2 hours,1,1,16,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,disposition,DX328,Speak to a Clinician from our service Immediately - Management of dying individual (expected),1,1,2,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,disposition,DX331,Speak to a Clinician from our service Immediately - Operational Re - Triage,1,1,4,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX332,Speak to a Clinician from our service Immediately - Management of palliative care,1,1,2,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX336,Paramedic requesting callback from Healthcare Professional within 30mins,1,1,4,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,disposition,DX400,Speak to an Assessor Immediately for Assessment of Significant Blood Loss,1,1,4,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,disposition,DX401,Speak to an Assessor Immediately for Assessment of Breathing Difficulties,1,1,12,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,disposition,DX402,Speak to an Assessor Immediately for Assessment of Potential Critical Illness,1,1,4,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,disposition,DX403,Speak to an Assessor Immediately for Assessment of Potential Life Threatening Shock,1,1,12,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,disposition,DX406,Speak to an Assessor Immediately for Assessment of Major Trauma,1,1,4,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,disposition,DX407,Speak to an Assessor Immediately for Assessment of Head Injury,1,1,4,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,disposition,DX408,Speak to an Assessor Immediately for Assessment of Probable Stroke or Mini-Stroke,1,1,4,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,disposition,DX409,Speak to an Assessor Immediately for Assessment of Possible Allergic Reaction,1,1,4,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,disposition,DX52,The call is closed with referral to the police only,1,1,12,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,disposition,DX600,Immediate Assessment for Potential Critical Illness,1,1,8,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX601,Immediate Assessment for Severe Breathing Difficulty,1,1,4,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX602,Immediate Assessment for Heavy Bleeding,1,1,4,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX603,Immediate Assessment for Rapid Swelling Affecting Airway,1,1,4,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX604,Immediate Assessment of Covid-19 Symptoms,1,1,4,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX605,ED Booked Arrival,1,1,4,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX606,ED Referral by Healthcare Professional,1,1,8,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX607,ED or Hospital Discharge within last 3 days,1,1,4,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX608,Not age appropriate for self-triage,1,1,8,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,disposition,DX61,Speak to the GP Practice within 20 minutes,1,1,1,HA_C08:1,HA_C08,HA_C08,1,family-specific
+hybrid_a,disposition,DX62,999 for an ambulance,1,1,1,HA_C08:1,HA_C08,HA_C08,1,family-specific
+hybrid_a,disposition,DX79,Failed Contraception,1,1,1,HA_C08:1,HA_C08,HA_C08,1,family-specific
+hybrid_a,disposition,DX83,Clinician Home Management of Dying Individual (Expected),1,1,2,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,disposition,DX90,Repeat prescription required,1,1,1,HA_C08:1,HA_C08,HA_C08,1,family-specific

@@ -1,0 +1,7 @@
+method,available,reason_unavailable,community_count,modularity,largest_community_size,median_community_size,mean_community_size,singleton_communities,median_internal_edge_percentage,mean_internal_edge_percentage,adjusted_rand_index_vs_primary,is_primary_method
+louvain,True,,50,0.672914,123,1.000000,16.760000,34,100.000000,87.520000,1.000000,True
+networkx_louvain,True,,50,0.671340,125,1.000000,16.760000,34,100.000000,85.900000,0.751922,False
+leiden,True,,51,0.673626,142,1.000000,16.430000,34,100.000000,85.270000,0.702602,False
+greedy_modularity,True,,48,0.660216,145,1.000000,17.460000,34,100.000000,88.280000,0.606598,False
+label_propagation,True,,95,0.621325,114,3.000000,8.820000,34,54.770000,62.150000,0.468474,False
+strongly_connected,True,,790,0.020234,43,1.000000,1.060000,787,0.000000,19.030000,0.040966,False

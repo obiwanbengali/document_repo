@@ -1,0 +1,5 @@
+Representation,Strength,Tradeoff,EvidenceClass
+literal_monolith,single model boundary and simple runtime routing,largest structural representation; whole-model release and regression blast radius,architectural_interpretation
+deduplicated_monolith,retains one runtime model while removing repeated QuestionID occurrences,still one global dependency structure and whole-model release boundary; QuestionID identity is not clinical semantic normalisation,architectural_interpretation
+provisional_federated,smaller family inference units and potentially more localised model changes,"cross-family routing, shared evidence, compatibility/version management and family-boundary clinical governance",architectural_interpretation
+hierarchical_shared_core,makes broadly shared evidence explicit rather than duplicating it silently,shared-core changes regain a broad blast radius and require explicit compatibility contracts with family models,architectural_interpretation

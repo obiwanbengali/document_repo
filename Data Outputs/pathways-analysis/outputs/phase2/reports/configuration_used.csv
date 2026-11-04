@@ -1,0 +1,29 @@
+setting,value
+pathway_scope,active
+community_detection.methods,"louvain, networkx_louvain, leiden, greedy_modularity, label_propagation, strongly_connected"
+community_detection.primary_method,louvain
+family_size.minimum_family_size,5
+family_size.split_review_size,40
+family_size.minimum_split_part_size,8
+overlap_thresholds.band_measure,discriminating
+overlap_thresholds.moderate,0.15
+overlap_thresholds.high,0.35
+hybrid_c_weights,"disposition=0.100, graph=0.350, question=0.200, snomed=0.150, symptom_discriminator=0.200"
+hybrid_c.similarity_threshold,0.12
+hybrid_c.clustering_method,louvain
+hybrid_c_sensitivity variants,"graph_only, features_only, equal, sd_heavy, graph_heavy, question_heavy"
+hybrid_a.clinical_cohesion_threshold,0.2
+hybrid_a.split_feature,symptom_group
+hybrid_b.weak_cohesion_internal_edge_pct,25
+boundary.strong_external_degree,3
+boundary.hub_external_family_count,3
+boundary.hub_betweenness_percentile,90
+shared_core.minimum_family_count,5
+routing.weights,"disposition=0.100, graph=0.350, question=0.200, snomed=0.150, symptom_discriminator=0.200"
+routing.moderate_ambiguity,0.4
+routing.high_ambiguity,0.7
+routing.plausible_affinity_ratio,0.6
+similarity.max_graph_hops,2
+presentation.primary_candidate_strategy,hybrid_a
+presentation.naming_dominance_threshold,0.5
+composite_score.enabled,False

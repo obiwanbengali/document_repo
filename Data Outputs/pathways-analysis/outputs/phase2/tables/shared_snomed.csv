@@ -1,0 +1,298 @@
+strategy,FeatureType,FeatureId,Description,FamilyCount,PathwayCount,TotalOccurrences,FamilyDistribution,TopFamilyId,TopFamilyLabel,TopFamilyPathwayCount,SharingBand
+hybrid_a,snomed,103001002,Feeling feverish,13,322,1090,HA_C03:65 | HA_C02:64 | HA_C00:58 | HA_C04_01:31 | HA_C05:31 | HA_C06:31 | HA_C07_00:14 | HA_C10:13 | HA_C11:6 | HA_C08:4 | HA_C04_00:3 | HA_C01_00:1,HA_C03,HA_C03,65,broadly shared
+hybrid_a,snomed,267036007,Dyspnoea,12,223,385,HA_C03:47 | HA_C00:35 | HA_C04_01:35 | HA_C06:24 | HA_C02:23 | HA_C05:19 | HA_C04_00:9 | HA_C01_01:8 | HA_C07_00:8 | HA_C09:6 | HA_C10:6 | HA_C01_00:3,HA_C03,HA_C03,47,broadly shared
+hybrid_a,snomed,275723000,Patient's condition deteriorating,12,216,472,HA_C02:39 | HA_C03:35 | HA_C06:32 | HA_C07_00:27 | HA_C01_00:24 | HA_C05:19 | HA_C04_01:16 | HA_C08:8 | HA_C00:6 | HA_C10:5 | HA_C11:4 | HA_C09:1,HA_C02,HA_C02,39,broadly shared
+hybrid_a,snomed,423902002,Purpura,12,184,468,HA_C03:33 | HA_C02:27 | HA_C07_00:26 | HA_C01_00:24 | HA_C06:24 | HA_C05:15 | HA_C04_01:13 | HA_C08:8 | HA_C00:5 | HA_C10:5 | HA_C11:3 | HA_C09:1,HA_C03,HA_C03,33,broadly shared
+hybrid_a,snomed,161647008,H/O: anticoagulant therapy,12,125,315,HA_C02:29 | HA_C00:16 | HA_C04_01:16 | HA_C03:14 | HA_C05:13 | HA_C06:11 | HA_C01_00:8 | HA_C04_00:7 | HA_C01_01:4 | HA_C07_00:4 | HA_C11:2 | HA_C10:1,HA_C02,HA_C02,29,broadly shared
+hybrid_a,snomed,102874004,Possible pregnancy,12,98,161,HA_C02:23 | HA_C04_01:16 | HA_C01_00:12 | HA_C06:11 | HA_C03:8 | HA_C07_00:8 | HA_C05:7 | HA_C01_01:4 | HA_C00:3 | HA_C04_00:2 | HA_C09:2 | HA_C11:2,HA_C02,HA_C02,23,broadly shared
+hybrid_a,snomed,231431000000108,Over 20 weeks gestational age,12,67,101,HA_C02:16 | HA_C04_01:13 | HA_C05:9 | HA_C01_00:8 | HA_C03:6 | HA_C01_01:4 | HA_C00:2 | HA_C04_00:2 | HA_C06:2 | HA_C07_00:2 | HA_C11:2 | HA_C09:1,HA_C02,HA_C02,16,broadly shared
+hybrid_a,snomed,428566005,Gestation less than 20 weeks,12,67,101,HA_C02:16 | HA_C04_01:13 | HA_C05:9 | HA_C01_00:8 | HA_C03:6 | HA_C01_01:4 | HA_C00:2 | HA_C04_00:2 | HA_C06:2 | HA_C07_00:2 | HA_C11:2 | HA_C09:1,HA_C02,HA_C02,16,broadly shared
+hybrid_a,snomed,441924001,Gestational age unknown,12,67,101,HA_C02:16 | HA_C04_01:13 | HA_C05:9 | HA_C01_00:8 | HA_C03:6 | HA_C01_01:4 | HA_C00:2 | HA_C04_00:2 | HA_C06:2 | HA_C07_00:2 | HA_C11:2 | HA_C09:1,HA_C02,HA_C02,16,broadly shared
+hybrid_a,snomed,161941007,Dyspnoea at rest,11,131,272,HA_C03:49 | HA_C01_00:21 | HA_C06:18 | HA_C05:13 | HA_C01_01:10 | HA_C04_01:7 | HA_C07_00:6 | HA_C02:3 | HA_C09:2 | HA_C00:1 | HA_C10:1,HA_C03,HA_C03,49,broadly shared
+hybrid_a,snomed,130987000,Acute confusion,10,185,487,HA_C03:56 | HA_C06:26 | HA_C02:25 | HA_C05:25 | HA_C04_01:24 | HA_C07_00:10 | HA_C09:9 | HA_C10:5 | HA_C00:4 | HA_C11:1,HA_C03,HA_C03,56,broadly shared
+hybrid_a,snomed,422608009,Sexual assault,10,160,286,HA_C00:60 | HA_C04_01:26 | HA_C05:20 | HA_C02:13 | HA_C04_00:13 | HA_C01_00:11 | HA_C03:9 | HA_C10:4 | HA_C06:3 | HA_C01_03:1,HA_C00,HA_C00,60,broadly shared
+hybrid_a,snomed,213257006,Generally unwell,10,142,338,HA_C03:48 | HA_C02:41 | HA_C04_01:17 | HA_C05:10 | HA_C06:9 | HA_C07_00:5 | HA_C10:5 | HA_C04_00:4 | HA_C01_00:2 | HA_C00:1,HA_C03,HA_C03,48,broadly shared
+hybrid_a,snomed,409668002,Photophobia,10,142,186,HA_C03:37 | HA_C06:23 | HA_C02:21 | HA_C04_01:16 | HA_C05:16 | HA_C07_00:16 | HA_C11:6 | HA_C10:5 | HA_C00:1 | HA_C09:1,HA_C03,HA_C03,37,broadly shared
+hybrid_a,snomed,161882006,Stiff neck,10,139,175,HA_C03:37 | HA_C06:23 | HA_C02:21 | HA_C05:16 | HA_C07_00:16 | HA_C04_01:15 | HA_C10:5 | HA_C11:4 | HA_C00:1 | HA_C09:1,HA_C03,HA_C03,37,broadly shared
+hybrid_a,snomed,64779008,Blood coagulation disorder,10,106,253,HA_C02:29 | HA_C00:16 | HA_C04_01:16 | HA_C03:14 | HA_C05:9 | HA_C01_00:8 | HA_C04_00:7 | HA_C01_01:4 | HA_C11:2 | HA_C10:1,HA_C02,HA_C02,29,broadly shared
+hybrid_a,snomed,386806002,Impaired cognition,10,90,105,HA_C03:24 | HA_C02:17 | HA_C06:14 | HA_C05:13 | HA_C07_00:8 | HA_C04_01:5 | HA_C10:4 | HA_C11:3 | HA_C00:1 | HA_C09:1,HA_C03,HA_C03,24,broadly shared
+hybrid_a,snomed,95667004,Unilateral facial paresis,10,70,123,HA_C04_01:23 | HA_C02:11 | HA_C01_01:8 | HA_C07_00:7 | HA_C05:5 | HA_C10:5 | HA_C03:4 | HA_C11:3 | HA_C06:2 | HA_C09:2,HA_C04_01,HA_C04_01,23,broadly shared
+hybrid_a,snomed,63102001,Visual disturbance,10,53,81,HA_C04_01:12 | HA_C05:11 | HA_C03:10 | HA_C11:9 | HA_C02:3 | HA_C06:2 | HA_C07_00:2 | HA_C10:2 | HA_C00:1 | HA_C09:1,HA_C04_01,HA_C04_01,12,broadly shared
+hybrid_a,snomed,90774003,Victim of physical assault,9,125,428,HA_C00:59 | HA_C04_01:25 | HA_C04_00:10 | HA_C01_00:9 | HA_C05:8 | HA_C02:7 | HA_C10:4 | HA_C06:2 | HA_C01_03:1,HA_C00,HA_C00,59,broadly shared
+hybrid_a,snomed,161445009,H/O: diabetes mellitus,9,76,158,HA_C03:20 | HA_C07_00:20 | HA_C02:15 | HA_C06:9 | HA_C04_01:4 | HA_C05:3 | HA_C11:3 | HA_C00:1 | HA_C01_03:1,HA_C03,HA_C03,20,broadly shared
+hybrid_a,snomed,707857003,Exposure to Ebola virus,8,60,400,HA_C03:43 | HA_C06:7 | HA_C02:3 | HA_C04_01:3 | HA_C00:1 | HA_C05:1 | HA_C48:1 | HA_C49:1,HA_C03,HA_C03,43,broadly shared
+hybrid_a,snomed,367391008,Malaise,8,52,115,HA_C02:24 | HA_C04_01:10 | HA_C06:9 | HA_C04_00:3 | HA_C00:2 | HA_C10:2 | HA_C03:1 | HA_C11:1,HA_C02,HA_C02,24,broadly shared
+hybrid_a,snomed,161587009,H/O: head injury,8,36,56,HA_C04_01:15 | HA_C03:6 | HA_C06:4 | HA_C07_00:3 | HA_C09:3 | HA_C05:2 | HA_C11:2 | HA_C02:1,HA_C04_01,HA_C04_01,15,broadly shared
+hybrid_a,snomed,76948002,Severe pain,8,30,54,HA_C04_01:7 | HA_C02:5 | HA_C10:4 | HA_C11:4 | HA_C03:3 | HA_C06:3 | HA_C00:2 | HA_C04_00:2,HA_C04_01,HA_C04_01,7,broadly shared
+hybrid_a,snomed,80313002,Palpitations,8,29,41,HA_C01_01:8 | HA_C02:7 | HA_C00:5 | HA_C06:4 | HA_C09:2 | HA_C01_00:1 | HA_C04_01:1 | HA_C07_00:1,HA_C01_01,HA_C01_01,8,broadly shared
+hybrid_a,snomed,370388006,Patient immunocompromised,8,27,54,HA_C06:13 | HA_C03:4 | HA_C02:3 | HA_C00:2 | HA_C10:2 | HA_C04_01:1 | HA_C05:1 | HA_C11:1,HA_C06,HA_C06,13,broadly shared
+hybrid_a,snomed,266712008,New medication commenced,7,105,154,HA_C02:42 | HA_C03:37 | HA_C04_01:13 | HA_C09:7 | HA_C05:2 | HA_C06:2 | HA_C11:2,HA_C02,HA_C02,42,broadly shared
+hybrid_a,snomed,267032009,Tired all the time,7,79,123,HA_C02:35 | HA_C03:16 | HA_C06:10 | HA_C04_01:9 | HA_C04_00:6 | HA_C10:2 | HA_C05:1,HA_C02,HA_C02,35,broadly shared
+hybrid_a,snomed,79890006,Loss of appetite,7,79,123,HA_C02:35 | HA_C03:16 | HA_C06:10 | HA_C04_01:9 | HA_C04_00:6 | HA_C10:2 | HA_C05:1,HA_C02,HA_C02,35,broadly shared
+hybrid_a,snomed,269899009,Faeces colour: tarry,7,75,144,HA_C03:39 | HA_C00:10 | HA_C05:10 | HA_C04_01:8 | HA_C04_00:6 | HA_C01_00:1 | HA_C02:1,HA_C03,HA_C03,39,broadly shared
+hybrid_a,snomed,64412006,Red stools,7,75,144,HA_C03:39 | HA_C00:10 | HA_C05:10 | HA_C04_01:8 | HA_C04_00:6 | HA_C01_00:1 | HA_C02:1,HA_C03,HA_C03,39,broadly shared
+hybrid_a,snomed,267051003,Vomiting blood - fresh,7,71,97,HA_C03:28 | HA_C00:15 | HA_C04_01:13 | HA_C04_00:8 | HA_C05:5 | HA_C01_00:1 | HA_C02:1,HA_C03,HA_C03,28,broadly shared
+hybrid_a,snomed,40835002,Coffee ground vomiting,7,71,97,HA_C03:28 | HA_C00:15 | HA_C04_01:13 | HA_C04_00:8 | HA_C05:5 | HA_C01_00:1 | HA_C02:1,HA_C03,HA_C03,28,broadly shared
+hybrid_a,snomed,262519004,Multiple injuries,7,68,100,HA_C00:42 | HA_C04_01:14 | HA_C04_00:7 | HA_C05:2 | HA_C01_00:1 | HA_C02:1 | HA_C10:1,HA_C00,HA_C00,42,broadly shared
+hybrid_a,snomed,29164008,Disturbance in speech,7,56,85,HA_C04_01:21 | HA_C02:11 | HA_C01_01:8 | HA_C07_00:7 | HA_C03:4 | HA_C11:3 | HA_C09:2,HA_C04_01,HA_C04_01,21,broadly shared
+hybrid_a,snomed,305793000,Seen by clinical oncology service,7,56,103,HA_C02:25 | HA_C06:13 | HA_C04_01:5 | HA_C07_00:4 | HA_C04_00:3 | HA_C05:3 | HA_C10:3,HA_C02,HA_C02,25,broadly shared
+hybrid_a,snomed,713512009,Muscle weakness of upper limb,7,51,80,HA_C04_01:16 | HA_C02:11 | HA_C01_01:8 | HA_C07_00:7 | HA_C03:4 | HA_C11:3 | HA_C09:2,HA_C04_01,HA_C04_01,16,broadly shared
+hybrid_a,snomed,45326000,Shoulder pain,7,37,144,HA_C03:21 | HA_C05:6 | HA_C07_00:5 | HA_C04_01:2 | HA_C02:1 | HA_C06:1 | HA_C10:1,HA_C03,HA_C03,21,broadly shared
+hybrid_a,snomed,12063002,Rectal haemorrhage,7,21,22,HA_C00:5 | HA_C03:5 | HA_C02:4 | HA_C05:4 | HA_C04_00:1 | HA_C04_01:1 | HA_C06:1,HA_C00,HA_C00,5,broadly shared
+hybrid_a,snomed,274667000,Jaw pain,7,15,29,HA_C04_01:7 | HA_C02:3 | HA_C03:1 | HA_C05:1 | HA_C06:1 | HA_C10:1 | HA_C11:1,HA_C04_01,HA_C04_01,7,broadly shared
+hybrid_a,snomed,182877009,Drug dosage altered,6,99,292,HA_C02:39 | HA_C03:37 | HA_C04_01:13 | HA_C09:7 | HA_C11:2 | HA_C05:1,HA_C02,HA_C02,39,broadly shared
+hybrid_a,snomed,813381000000102,Foreign body associated with wound,6,72,225,HA_C00:35 | HA_C01_01:12 | HA_C01_03:12 | HA_C01_00:5 | HA_C05:5 | HA_C04_01:3,HA_C00,HA_C00,35,broadly shared
+hybrid_a,snomed,248435007,Prolonged fever,6,66,146,HA_C03:32 | HA_C06:16 | HA_C04_01:9 | HA_C02:4 | HA_C10:4 | HA_C05:1,HA_C03,HA_C03,32,broadly shared
+hybrid_a,snomed,246975001,Scleral icterus,6,65,93,HA_C03:34 | HA_C02:11 | HA_C06:10 | HA_C11:5 | HA_C09:4 | HA_C05:1,HA_C03,HA_C03,34,broadly shared
+hybrid_a,snomed,161615003,H/O: surgery,6,63,124,HA_C03:20 | HA_C02:12 | HA_C06:12 | HA_C05:9 | HA_C04_01:6 | HA_C07_00:4,HA_C03,HA_C03,20,broadly shared
+hybrid_a,snomed,422868009,Unexplained weight loss,6,62,89,HA_C02:34 | HA_C03:16 | HA_C06:5 | HA_C04_00:4 | HA_C04_01:2 | HA_C05:1,HA_C02,HA_C02,34,broadly shared
+hybrid_a,snomed,247441003,Erythema,6,60,241,HA_C02:36 | HA_C04_01:8 | HA_C06:6 | HA_C10:5 | HA_C00:4 | HA_C03:1,HA_C02,HA_C02,36,broadly shared
+hybrid_a,snomed,128482007,Acute inflammatory disease,6,57,236,HA_C02:36 | HA_C04_01:8 | HA_C06:6 | HA_C10:5 | HA_C00:1 | HA_C03:1,HA_C02,HA_C02,36,broadly shared
+hybrid_a,snomed,707793005,Hot skin,6,57,236,HA_C02:36 | HA_C04_01:8 | HA_C06:6 | HA_C10:5 | HA_C00:1 | HA_C03:1,HA_C02,HA_C02,36,broadly shared
+hybrid_a,snomed,80593000,Ingestion of foreign material,6,57,98,HA_C03:42 | HA_C02:5 | HA_C05:4 | HA_C04_01:3 | HA_C00:2 | HA_C07_00:1,HA_C03,HA_C03,42,broadly shared
+hybrid_a,snomed,422400008,Vomiting,6,53,111,HA_C03:31 | HA_C04_01:10 | HA_C02:6 | HA_C05:2 | HA_C07_00:2 | HA_C11:2,HA_C03,HA_C03,31,broadly shared
+hybrid_a,snomed,248062006,Self-injurious behaviour,6,49,64,HA_C00:27 | HA_C04_01:7 | HA_C05:6 | HA_C02:4 | HA_C04_00:4 | HA_C01_00:1,HA_C00,HA_C00,27,broadly shared
+hybrid_a,snomed,721542002,Acute blistering eruption of skin,6,44,134,HA_C02:21 | HA_C06:7 | HA_C04_01:6 | HA_C10:5 | HA_C05:3 | HA_C11:2,HA_C02,HA_C02,21,broadly shared
+hybrid_a,snomed,49650001,Dysuria,6,40,50,HA_C03:23 | HA_C02:5 | HA_C05:4 | HA_C06:4 | HA_C04_01:2 | HA_C11:2,HA_C03,HA_C03,23,broadly shared
+hybrid_a,snomed,109211000119102,History of toxic inhalation exposure,6,36,49,HA_C06:12 | HA_C00:6 | HA_C03:6 | HA_C04_01:5 | HA_C05:5 | HA_C01_00:2,HA_C06,HA_C06,12,broadly shared
+hybrid_a,snomed,65124004,Swelling,6,35,82,HA_C00:21 | HA_C10:5 | HA_C03:4 | HA_C04_01:2 | HA_C06:2 | HA_C02:1,HA_C00,HA_C00,21,broadly shared
+hybrid_a,snomed,271903000,H/O: pregnancy,6,34,49,HA_C03:12 | HA_C06:7 | HA_C07_00:5 | HA_C02:4 | HA_C04_01:4 | HA_C05:2,HA_C03,HA_C03,12,broadly shared
+hybrid_a,snomed,300359004,Finding of vomiting,6,34,62,HA_C03:15 | HA_C04_01:11 | HA_C02:4 | HA_C09:2 | HA_C05:1 | HA_C11:1,HA_C03,HA_C03,15,broadly shared
+hybrid_a,snomed,41652007,Pain in eye,6,31,42,HA_C11:9 | HA_C06:7 | HA_C04_01:5 | HA_C10:5 | HA_C03:3 | HA_C05:2,HA_C11,HA_C11,9,broadly shared
+hybrid_a,snomed,1098521000000101,Face Arms Speech Time test positive,6,23,30,HA_C04_01:10 | HA_C02:5 | HA_C11:3 | HA_C03:2 | HA_C07_00:2 | HA_C09:1,HA_C04_01,HA_C04_01,10,broadly shared
+hybrid_a,snomed,276438008,Swelling / lump finding,6,22,28,HA_C02:8 | HA_C09:4 | HA_C03:3 | HA_C04_00:3 | HA_C04_01:3 | HA_C06:1,HA_C02,HA_C02,8,broadly shared
+hybrid_a,snomed,29857009,Chest pain,6,17,29,HA_C04_01:6 | HA_C06:4 | HA_C02:3 | HA_C07_00:2 | HA_C03:1 | HA_C10:1,HA_C04_01,HA_C04_01,6,broadly shared
+hybrid_a,snomed,75851004,Scalp tenderness,6,13,29,HA_C04_01:5 | HA_C02:3 | HA_C11:2 | HA_C05:1 | HA_C06:1 | HA_C10:1,HA_C04_01,HA_C04_01,5,broadly shared
+hybrid_a,snomed,161480008,H/O: epilepsy,6,11,15,HA_C04_01:4 | HA_C02:2 | HA_C07_00:2 | HA_C00:1 | HA_C01_03:1 | HA_C03:1,HA_C04_01,HA_C04_01,4,broadly shared
+hybrid_a,snomed,17173007,Excessive thirst,5,46,87,HA_C03:21 | HA_C06:8 | HA_C02:7 | HA_C04_01:6 | HA_C09:4,HA_C03,HA_C03,21,shared by 3-5 families
+hybrid_a,snomed,718402002,Increased urine output,5,46,87,HA_C03:21 | HA_C06:8 | HA_C02:7 | HA_C04_01:6 | HA_C09:4,HA_C03,HA_C03,21,shared by 3-5 families
+hybrid_a,snomed,66857006,Haemoptysis,5,45,89,HA_C06:17 | HA_C02:10 | HA_C03:6 | HA_C05:6 | HA_C07_00:6,HA_C06,HA_C06,17,shared by 3-5 families
+hybrid_a,snomed,39104002,Illness,5,35,47,HA_C01_00:24 | HA_C08:8 | HA_C00:1 | HA_C02:1 | HA_C07_00:1,HA_C01_00,HA_C01_00,24,shared by 3-5 families
+hybrid_a,snomed,248223005,Feeling faint,5,33,92,HA_C03:21 | HA_C05:7 | HA_C04_00:2 | HA_C04_01:2 | HA_C02:1,HA_C03,HA_C03,21,shared by 3-5 families
+hybrid_a,snomed,2237002,Pleuritic pain,5,30,43,HA_C06:11 | HA_C02:10 | HA_C05:4 | HA_C07_00:4 | HA_C03:1,HA_C06,HA_C06,11,shared by 3-5 families
+hybrid_a,snomed,271594007,Syncope,5,30,51,HA_C04_01:13 | HA_C03:9 | HA_C05:5 | HA_C07_00:2 | HA_C09:1,HA_C04_01,HA_C04_01,13,shared by 3-5 families
+hybrid_a,snomed,3950001,Birth,5,27,48,HA_C03:8 | HA_C02:7 | HA_C04_01:6 | HA_C05:4 | HA_C11:2,HA_C03,HA_C03,8,shared by 3-5 families
+hybrid_a,snomed,225460000,Constantly crying,5,23,37,HA_C03:12 | HA_C02:6 | HA_C04_01:2 | HA_C05:2 | HA_C00:1,HA_C03,HA_C03,12,shared by 3-5 families
+hybrid_a,snomed,95660002,Thunderclap headache,5,23,34,HA_C04_01:13 | HA_C03:4 | HA_C07_00:3 | HA_C10:2 | HA_C11:1,HA_C04_01,HA_C04_01,13,shared by 3-5 families
+hybrid_a,snomed,42984000,Night sweats,5,17,34,HA_C04_01:7 | HA_C06:5 | HA_C04_00:2 | HA_C10:2 | HA_C02:1,HA_C04_01,HA_C04_01,7,shared by 3-5 families
+hybrid_a,snomed,448765001,Unintentional weight loss,5,17,34,HA_C04_01:7 | HA_C06:5 | HA_C04_00:2 | HA_C10:2 | HA_C02:1,HA_C04_01,HA_C04_01,7,shared by 3-5 families
+hybrid_a,snomed,95354006,Mucosal vesicle,5,8,9,HA_C00:2 | HA_C02:2 | HA_C03:2 | HA_C04_01:1 | HA_C06:1,HA_C00,HA_C00,2,shared by 3-5 families
+hybrid_a,snomed,426206001,Constant pain,4,50,85,HA_C03:34 | HA_C05:12 | HA_C02:3 | HA_C00:1,HA_C03,HA_C03,34,shared by 3-5 families
+hybrid_a,snomed,365457007,Foreign travel history finding,4,48,80,HA_C03:35 | HA_C06:7 | HA_C02:3 | HA_C04_01:3,HA_C03,HA_C03,35,shared by 3-5 families
+hybrid_a,snomed,116290004,Acute abdominal pain,4,42,92,HA_C03:28 | HA_C05:11 | HA_C02:2 | HA_C11:1,HA_C03,HA_C03,28,shared by 3-5 families
+hybrid_a,snomed,239163008,Wound erythema,4,41,73,HA_C00:34 | HA_C05:3 | HA_C02:2 | HA_C04_01:2,HA_C00,HA_C00,34,shared by 3-5 families
+hybrid_a,snomed,21522001,Abdominal pain,4,40,68,HA_C03:19 | HA_C01_00:8 | HA_C05:8 | HA_C02:5,HA_C03,HA_C03,19,shared by 3-5 families
+hybrid_a,snomed,247355005,Flank pain,4,28,38,HA_C03:17 | HA_C04_01:7 | HA_C05:3 | HA_C02:1,HA_C03,HA_C03,17,shared by 3-5 families
+hybrid_a,snomed,706955002,Pain relieved by analgesic,4,28,30,HA_C00:14 | HA_C04_01:11 | HA_C04_00:2 | HA_C01_00:1,HA_C00,HA_C00,14,shared by 3-5 families
+hybrid_a,snomed,161586000,H/O: injury,4,25,61,HA_C06:11 | HA_C02:6 | HA_C05:4 | HA_C07_00:4,HA_C06,HA_C06,11,shared by 3-5 families
+hybrid_a,snomed,266996004,H/O: thromboembolism,4,25,62,HA_C06:11 | HA_C02:6 | HA_C05:4 | HA_C07_00:4,HA_C06,HA_C06,11,shared by 3-5 families
+hybrid_a,snomed,427631000,At risk of venous thromboembolus,4,25,62,HA_C06:11 | HA_C02:6 | HA_C05:4 | HA_C07_00:4,HA_C06,HA_C06,11,shared by 3-5 families
+hybrid_a,snomed,442150004,At risk of venous thromboembolus due to prolonged immobilisation,4,25,122,HA_C06:11 | HA_C02:6 | HA_C05:4 | HA_C07_00:4,HA_C06,HA_C06,11,shared by 3-5 families
+hybrid_a,snomed,710816000,Long-term current use of steroid,4,23,68,HA_C06:11 | HA_C02:4 | HA_C05:4 | HA_C07_00:4,HA_C06,HA_C06,11,shared by 3-5 families
+hybrid_a,snomed,289530006,Vaginal bleeding,4,22,56,HA_C05:17 | HA_C03:3 | HA_C00:1 | HA_C04_01:1,HA_C05,HA_C05,17,shared by 3-5 families
+hybrid_a,snomed,74699008,Foreign body in nose,4,22,58,HA_C04_01:9 | HA_C06:5 | HA_C10:5 | HA_C04_00:3,HA_C04_01,HA_C04_01,9,shared by 3-5 families
+hybrid_a,snomed,25064002,Headache,4,20,28,HA_C05:10 | HA_C03:8 | HA_C04_01:1 | HA_C09:1,HA_C05,HA_C05,10,shared by 3-5 families
+hybrid_a,snomed,271808008,"Oedema, generalised",4,20,28,HA_C05:10 | HA_C03:8 | HA_C04_01:1 | HA_C09:1,HA_C05,HA_C05,10,shared by 3-5 families
+hybrid_a,snomed,14760008,Constipation,4,19,30,HA_C03:9 | HA_C02:6 | HA_C05:3 | HA_C06:1,HA_C03,HA_C03,9,shared by 3-5 families
+hybrid_a,snomed,247442005,Broken skin,4,16,21,HA_C00:11 | HA_C06:3 | HA_C01_00:1 | HA_C04_01:1,HA_C00,HA_C00,11,shared by 3-5 families
+hybrid_a,snomed,16001004,Otalgia,4,15,57,HA_C04_01:7 | HA_C10:4 | HA_C05:2 | HA_C06:2,HA_C04_01,HA_C04_01,7,shared by 3-5 families
+hybrid_a,snomed,267083009,Incoordination symptom,4,15,17,HA_C02:7 | HA_C09:4 | HA_C06:3 | HA_C04_01:1,HA_C02,HA_C02,7,shared by 3-5 families
+hybrid_a,snomed,418611001,Exposure to heat,4,15,15,HA_C02:6 | HA_C03:4 | HA_C04_01:3 | HA_C06:2,HA_C02,HA_C02,6,shared by 3-5 families
+hybrid_a,snomed,45177002,Swelling of structure of eye,4,15,20,HA_C06:7 | HA_C10:5 | HA_C04_01:2 | HA_C03:1,HA_C06,HA_C06,7,shared by 3-5 families
+hybrid_a,snomed,249945007,Monoparesis - leg,4,14,18,HA_C04_01:8 | HA_C02:3 | HA_C11:2 | HA_C09:1,HA_C04_01,HA_C04_01,8,shared by 3-5 families
+hybrid_a,snomed,276369006,Reduced foetal movement,4,14,17,HA_C05:6 | HA_C03:5 | HA_C02:2 | HA_C09:1,HA_C05,HA_C05,6,shared by 3-5 families
+hybrid_a,snomed,249990003,Unsteady when standing,4,13,23,HA_C04_01:8 | HA_C03:2 | HA_C07_00:2 | HA_C11:1,HA_C04_01,HA_C04_01,8,shared by 3-5 families
+hybrid_a,snomed,284151004,Unable to move leg,4,13,14,HA_C02:5 | HA_C03:5 | HA_C00:2 | HA_C04_01:1,HA_C02,HA_C02,5,shared by 3-5 families
+hybrid_a,snomed,305635003,Seen by clinical oncologist,4,13,28,HA_C06:5 | HA_C07_00:4 | HA_C02:2 | HA_C05:2,HA_C06,HA_C06,5,shared by 3-5 families
+hybrid_a,snomed,412740002,Periorbital erythema,4,13,17,HA_C05:4 | HA_C11:4 | HA_C06:3 | HA_C04_01:2,HA_C05,HA_C05,4,shared by 3-5 families
+hybrid_a,snomed,91019004,Paraesthesia,4,13,13,HA_C02:5 | HA_C03:5 | HA_C00:2 | HA_C04_01:1,HA_C02,HA_C02,5,shared by 3-5 families
+hybrid_a,snomed,161887000,Spontaneous bruising,4,11,33,HA_C02:3 | HA_C04_00:3 | HA_C09:3 | HA_C05:2,HA_C02,HA_C02,3,shared by 3-5 families
+hybrid_a,snomed,78598000,Superficial injury of eye,4,11,16,HA_C11:6 | HA_C00:2 | HA_C05:2 | HA_C04_01:1,HA_C11,HA_C11,6,shared by 3-5 families
+hybrid_a,snomed,95891005,Influenza-like illness,4,11,14,HA_C11:6 | HA_C05:3 | HA_C04_01:1 | HA_C06:1,HA_C11,HA_C11,6,shared by 3-5 families
+hybrid_a,snomed,77880009,Rectal pain,4,9,9,HA_C02:5 | HA_C04_00:2 | HA_C05:1 | HA_C06:1,HA_C02,HA_C02,5,shared by 3-5 families
+hybrid_a,snomed,19346006,Marfan's syndrome,4,8,10,HA_C07_00:3 | HA_C03:2 | HA_C07_01:2 | HA_C05:1,HA_C07_00,HA_C07_00,3,shared by 3-5 families
+hybrid_a,snomed,239161005,Wound haemorrhage,3,47,56,HA_C00:37 | HA_C04_01:6 | HA_C05:4,HA_C00,HA_C00,37,shared by 3-5 families
+hybrid_a,snomed,283596007,Needle stick injury,3,39,53,HA_C00:32 | HA_C05:4 | HA_C04_01:3,HA_C00,HA_C00,32,shared by 3-5 families
+hybrid_a,snomed,34436003,Blood in urine,3,19,23,HA_C03:15 | HA_C05:3 | HA_C02:1,HA_C03,HA_C03,15,shared by 3-5 families
+hybrid_a,snomed,1075011000000102,unable to get up from floor,3,18,34,HA_C00:13 | HA_C04_01:4 | HA_C01_00:1,HA_C00,HA_C00,13,shared by 3-5 families
+hybrid_a,snomed,118216002,Labour finding,3,17,21,HA_C01_00:8 | HA_C05:8 | HA_C03:1,HA_C01_00,HA_C01_00,8,shared by 3-5 families
+hybrid_a,snomed,271939006,Vaginal discharge,3,17,23,HA_C03:12 | HA_C05:4 | HA_C04_01:1,HA_C03,HA_C03,12,shared by 3-5 families
+hybrid_a,snomed,54586004,Lower abdominal pain,3,17,46,HA_C03:11 | HA_C05:5 | HA_C02:1,HA_C03,HA_C03,11,shared by 3-5 families
+hybrid_a,snomed,88111009,Altered bowel function,3,15,15,HA_C03:13 | HA_C04_00:1 | HA_C06:1,HA_C03,HA_C03,13,shared by 3-5 families
+hybrid_a,snomed,272032002,C/O - watering eyes,3,14,14,HA_C11:9 | HA_C06:4 | HA_C05:1,HA_C11,HA_C11,9,shared by 3-5 families
+hybrid_a,snomed,24199005,Feeling agitated,3,13,14,HA_C09:9 | HA_C04_01:3 | HA_C06:1,HA_C09,HA_C09,9,shared by 3-5 families
+hybrid_a,snomed,248110007,Sexual assault,3,13,21,HA_C01_01:8 | HA_C01_00:4 | HA_C01_03:1,HA_C01_01,HA_C01_01,8,shared by 3-5 families
+hybrid_a,snomed,307077003,Feeling hopeless,3,13,14,HA_C09:9 | HA_C04_01:3 | HA_C06:1,HA_C09,HA_C09,9,shared by 3-5 families
+hybrid_a,snomed,314496008,Contact lens related disorder,3,13,18,HA_C11:8 | HA_C05:4 | HA_C04_01:1,HA_C11,HA_C11,8,shared by 3-5 families
+hybrid_a,snomed,34124000,Foreign body in vagina,3,13,36,HA_C03:7 | HA_C05:5 | HA_C04_01:1,HA_C03,HA_C03,7,shared by 3-5 families
+hybrid_a,snomed,366979004,Depressed mood,3,13,14,HA_C09:9 | HA_C04_01:3 | HA_C06:1,HA_C09,HA_C09,9,shared by 3-5 families
+hybrid_a,snomed,417523004,Loss of interest in previously enjoyable activity,3,13,14,HA_C09:9 | HA_C04_01:3 | HA_C06:1,HA_C09,HA_C09,9,shared by 3-5 families
+hybrid_a,snomed,48694002,Anxiety,3,13,14,HA_C09:9 | HA_C04_01:3 | HA_C06:1,HA_C09,HA_C09,9,shared by 3-5 families
+hybrid_a,snomed,52684005,Assault,3,13,21,HA_C01_01:8 | HA_C01_00:4 | HA_C01_03:1,HA_C01_01,HA_C01_01,8,shared by 3-5 families
+hybrid_a,snomed,82313006,Suicide attempt,3,13,21,HA_C01_01:8 | HA_C01_00:4 | HA_C01_03:1,HA_C01_01,HA_C01_01,8,shared by 3-5 families
+hybrid_a,snomed,249366005,Bleeding from nose,3,10,16,HA_C04_01:5 | HA_C04_00:3 | HA_C00:2,HA_C04_01,HA_C04_01,5,shared by 3-5 families
+hybrid_a,snomed,277210007,Tender mastoid,3,10,16,HA_C05:4 | HA_C04_01:3 | HA_C10:3,HA_C05,HA_C05,4,shared by 3-5 families
+hybrid_a,snomed,161481007,H/O: migraine,3,9,16,HA_C03:4 | HA_C04_01:3 | HA_C11:2,HA_C03,HA_C03,4,shared by 3-5 families
+hybrid_a,snomed,218196008,Overexposure to visual and ultraviolet light sources,3,9,22,HA_C04_01:4 | HA_C11:4 | HA_C05:1,HA_C04_01,HA_C04_01,4,shared by 3-5 families
+hybrid_a,snomed,438759003,History of tonsillectomy,3,9,9,HA_C03:4 | HA_C05:4 | HA_C06:1,HA_C03,HA_C03,4,shared by 3-5 families
+hybrid_a,snomed,278432003,Anal symptoms,3,8,15,HA_C02:5 | HA_C04_00:2 | HA_C06:1,HA_C02,HA_C02,5,shared by 3-5 families
+hybrid_a,snomed,278528006,Facial swelling,3,8,8,HA_C06:6 | HA_C00:1 | HA_C04_01:1,HA_C06,HA_C06,6,shared by 3-5 families
+hybrid_a,snomed,394896005,Change in skin lesion,3,8,14,HA_C06:6 | HA_C04_01:1 | HA_C11:1,HA_C06,HA_C06,6,shared by 3-5 families
+hybrid_a,snomed,421262002,Tongue swelling,3,8,8,HA_C06:6 | HA_C00:1 | HA_C04_01:1,HA_C06,HA_C06,6,shared by 3-5 families
+hybrid_a,snomed,421581006,Pharyngeal swelling,3,8,8,HA_C06:6 | HA_C00:1 | HA_C04_01:1,HA_C06,HA_C06,6,shared by 3-5 families
+hybrid_a,snomed,57773001,Rectal prolapse,3,8,8,HA_C02:5 | HA_C04_00:2 | HA_C06:1,HA_C02,HA_C02,5,shared by 3-5 families
+hybrid_a,snomed,699376002,Lip swelling,3,8,8,HA_C06:6 | HA_C00:1 | HA_C04_01:1,HA_C06,HA_C06,6,shared by 3-5 families
+hybrid_a,snomed,10000006,Radiating chest pain,3,7,14,HA_C03:4 | HA_C08:2 | HA_C06:1,HA_C03,HA_C03,4,shared by 3-5 families
+hybrid_a,snomed,15203004,Sudden visual loss,3,7,11,HA_C04_01:3 | HA_C03:2 | HA_C11:2,HA_C04_01,HA_C04_01,3,shared by 3-5 families
+hybrid_a,snomed,161501007,H/O: hypertension,3,7,11,HA_C11:4 | HA_C04_01:2 | HA_C04_00:1,HA_C11,HA_C11,4,shared by 3-5 families
+hybrid_a,snomed,300132001,Ear discharge,3,7,17,HA_C05:4 | HA_C00:2 | HA_C04_01:1,HA_C05,HA_C05,4,shared by 3-5 families
+hybrid_a,snomed,59139008,Crushing chest pain,3,7,7,HA_C03:4 | HA_C08:2 | HA_C06:1,HA_C03,HA_C03,4,shared by 3-5 families
+hybrid_a,snomed,271299001,Patient's condition worsened,3,5,16,HA_C05:3 | HA_C04_01:1 | HA_C11:1,HA_C05,HA_C05,3,shared by 3-5 families
+hybrid_a,snomed,359748005,Patient condition unchanged,3,5,8,HA_C05:3 | HA_C04_01:1 | HA_C11:1,HA_C05,HA_C05,3,shared by 3-5 families
+hybrid_a,snomed,422576004,Decreased coordination,3,5,7,HA_C05:3 | HA_C00:1 | HA_C02:1,HA_C05,HA_C05,3,shared by 3-5 families
+hybrid_a,snomed,425978000,History of headache,3,5,6,HA_C02:3 | HA_C04_01:1 | HA_C11:1,HA_C02,HA_C02,3,shared by 3-5 families
+hybrid_a,snomed,762354003,Persistent headache due to and following injury of head,3,5,11,HA_C03:2 | HA_C04_01:2 | HA_C09:1,HA_C03,HA_C03,2,shared by 3-5 families
+hybrid_a,snomed,78691002,Staggering gait,3,5,7,HA_C05:3 | HA_C00:1 | HA_C02:1,HA_C05,HA_C05,3,shared by 3-5 families
+hybrid_a,snomed,49218002,Hip pain,3,4,10,HA_C04_01:2 | HA_C06:1 | HA_C10:1,HA_C04_01,HA_C04_01,2,shared by 3-5 families
+hybrid_a,snomed,262557004,Deep wound,2,40,86,HA_C00:36 | HA_C05:4,HA_C00,HA_C00,36,shared by 2 families
+hybrid_a,snomed,48422000,Open wound with complication,2,40,86,HA_C00:36 | HA_C05:4,HA_C00,HA_C00,36,shared by 2 families
+hybrid_a,snomed,161649006,H/O: insulin therapy,2,26,140,HA_C03:20 | HA_C06:6,HA_C03,HA_C03,20,shared by 2 families
+hybrid_a,snomed,301754002,Right lower quadrant pain,2,24,63,HA_C03:20 | HA_C05:4,HA_C03,HA_C03,20,shared by 2 families
+hybrid_a,snomed,134021000119105,Vomiting faecal matter,2,20,24,HA_C03:19 | HA_C04_01:1,HA_C03,HA_C03,19,shared by 2 families
+hybrid_a,snomed,725119006,Generalised rash,2,16,26,HA_C03:10 | HA_C05:6,HA_C03,HA_C03,10,shared by 2 families
+hybrid_a,snomed,161528002,H/O: pneumothorax,2,15,36,HA_C06:11 | HA_C05:4,HA_C06,HA_C06,11,shared by 2 families
+hybrid_a,snomed,83132003,Upper abdominal pain,2,13,20,HA_C05:8 | HA_C03:5,HA_C05,HA_C05,8,shared by 2 families
+hybrid_a,snomed,246679005,Discharge from eye,2,11,11,HA_C11:8 | HA_C05:3,HA_C11,HA_C11,8,shared by 2 families
+hybrid_a,snomed,315224006,Heavy episode of vaginal bleeding,2,11,67,HA_C05:10 | HA_C04_01:1,HA_C05,HA_C05,10,shared by 2 families
+hybrid_a,snomed,165232002,Urinary incontinence,2,10,10,HA_C02:5 | HA_C03:5,HA_C02,HA_C02,5,shared by 2 families
+hybrid_a,snomed,267064002,Retention of urine,2,10,10,HA_C02:5 | HA_C03:5,HA_C02,HA_C02,5,shared by 2 families
+hybrid_a,snomed,161535005,H/O: liver disease,2,9,9,HA_C03:5 | HA_C06:4,HA_C03,HA_C03,5,shared by 2 families
+hybrid_a,snomed,284523002,Persistent cough,2,8,16,HA_C06:7 | HA_C03:1,HA_C06,HA_C06,7,shared by 2 families
+hybrid_a,snomed,399153001,Vertigo,2,8,10,HA_C03:4 | HA_C04_01:4,HA_C03,HA_C03,4,shared by 2 families
+hybrid_a,snomed,142661000119102,Retained foreign body,2,6,6,HA_C00:4 | HA_C05:2,HA_C00,HA_C00,4,shared by 2 families
+hybrid_a,snomed,161844003,Reduced fluid intake,2,6,17,HA_C02:5 | HA_C06:1,HA_C02,HA_C02,5,shared by 2 families
+hybrid_a,snomed,162106006,Spurious diarrhoea - overflow,2,6,17,HA_C02:5 | HA_C06:1,HA_C02,HA_C02,5,shared by 2 families
+hybrid_a,snomed,19491003,Injury of nose,2,6,9,HA_C04_00:3 | HA_C06:3,HA_C04_00,HA_C04_00,3,shared by 2 families
+hybrid_a,snomed,40196000,Mild pain,2,6,18,HA_C02:5 | HA_C06:1,HA_C02,HA_C02,5,shared by 2 families
+hybrid_a,snomed,50415004,Moderate pain,2,6,18,HA_C02:5 | HA_C06:1,HA_C02,HA_C02,5,shared by 2 families
+hybrid_a,snomed,75441006,Foreign body in ear,2,6,6,HA_C05:5 | HA_C04_01:1,HA_C05,HA_C05,5,shared by 2 families
+hybrid_a,snomed,118940003,Disorder of nervous system,2,5,5,HA_C06:4 | HA_C03:1,HA_C06,HA_C06,4,shared by 2 families
+hybrid_a,snomed,161523006,H/O: respiratory disease,2,5,5,HA_C06:4 | HA_C03:1,HA_C06,HA_C06,4,shared by 2 families
+hybrid_a,snomed,271613005,Parotid swelling,2,5,5,HA_C05:4 | HA_C04_01:1,HA_C05,HA_C05,4,shared by 2 families
+hybrid_a,snomed,275544003,H/O: heart disorder,2,5,5,HA_C06:4 | HA_C03:1,HA_C06,HA_C06,4,shared by 2 families
+hybrid_a,snomed,289534002,Passing large clots vaginally,2,5,29,HA_C05:4 | HA_C04_01:1,HA_C05,HA_C05,4,shared by 2 families
+hybrid_a,snomed,300103004,Pinna tender,2,5,5,HA_C05:4 | HA_C04_01:1,HA_C05,HA_C05,4,shared by 2 families
+hybrid_a,snomed,300115000,Red pinna,2,5,5,HA_C05:4 | HA_C04_01:1,HA_C05,HA_C05,4,shared by 2 families
+hybrid_a,snomed,42399005,Renal failure syndrome,2,5,5,HA_C06:4 | HA_C03:1,HA_C06,HA_C06,4,shared by 2 families
+hybrid_a,snomed,64531003,Nasal discharge,2,5,8,HA_C06:3 | HA_C00:2,HA_C06,HA_C06,3,shared by 2 families
+hybrid_a,snomed,161514008,H/O: aortic aneurysm,2,4,5,HA_C07_00:2 | HA_C07_01:2,HA_C07_00,HA_C07_00,2,shared by 2 families
+hybrid_a,snomed,162310002,Morning headache,2,4,4,HA_C04_01:3 | HA_C09:1,HA_C04_01,HA_C04_01,3,shared by 2 families
+hybrid_a,snomed,361055000,Misuses drugs,2,4,6,HA_C04_00:2 | HA_C06:2,HA_C04_00,HA_C04_00,2,shared by 2 families
+hybrid_a,snomed,571000119103,Daily headache,2,4,7,HA_C04_01:3 | HA_C03:1,HA_C04_01,HA_C04_01,3,shared by 2 families
+hybrid_a,snomed,79471008,Sudden hearing loss,2,4,4,HA_C05:3 | HA_C04_01:1,HA_C05,HA_C05,3,shared by 2 families
+hybrid_a,snomed,162397003,Pain in throat,2,3,5,HA_C04_01:2 | HA_C03:1,HA_C04_01,HA_C04_01,2,shared by 2 families
+hybrid_a,snomed,246681007,Blood in eye,2,3,3,HA_C11:2 | HA_C05:1,HA_C11,HA_C11,2,shared by 2 families
+hybrid_a,snomed,271739002,Wax in ear canal,2,3,6,HA_C05:2 | HA_C04_01:1,HA_C05,HA_C05,2,shared by 2 families
+hybrid_a,snomed,312081001,IUD contraception,2,3,3,HA_C05:2 | HA_C03:1,HA_C05,HA_C05,2,shared by 2 families
+hybrid_a,snomed,35101000119106,Bleeding following tonsillectomy,2,3,5,HA_C03:2 | HA_C04_01:1,HA_C03,HA_C03,2,shared by 2 families
+hybrid_a,snomed,404640003,Dizziness,2,3,8,HA_C00:2 | HA_C05:1,HA_C00,HA_C00,2,shared by 2 families
+hybrid_a,snomed,422587007,Nausea,2,3,6,HA_C11:2 | HA_C05:1,HA_C11,HA_C11,2,shared by 2 families
+hybrid_a,snomed,60862001,Tinnitus,2,3,3,HA_C05:2 | HA_C04_01:1,HA_C05,HA_C05,2,shared by 2 families
+hybrid_a,snomed,6300007,Exposed to noise,2,3,4,HA_C05:2 | HA_C04_01:1,HA_C05,HA_C05,2,shared by 2 families
+hybrid_a,snomed,81680005,Neck pain,2,3,3,HA_C04_01:2 | HA_C03:1,HA_C04_01,HA_C04_01,2,shared by 2 families
+hybrid_a,snomed,9459301000001100,Mirena,2,3,3,HA_C05:2 | HA_C03:1,HA_C05,HA_C05,2,shared by 2 families
+hybrid_a,snomed,1489008,External hordeolum,2,2,2,HA_C05:1 | HA_C11:1,HA_C05,HA_C05,1,shared by 2 families
+hybrid_a,snomed,225549006,Yellow skin,2,2,2,HA_C05:1 | HA_C11:1,HA_C05,HA_C05,1,shared by 2 families
+hybrid_a,snomed,248216009,Complexion changes,2,2,4,HA_C03:1 | HA_C06:1,HA_C03,HA_C03,1,shared by 2 families
+hybrid_a,snomed,248514008,Lump in eyelid,2,2,2,HA_C05:1 | HA_C11:1,HA_C05,HA_C05,1,shared by 2 families
+hybrid_a,snomed,274657005,Change in voice,2,2,3,HA_C03:1 | HA_C04_01:1,HA_C03,HA_C03,1,shared by 2 families
+hybrid_a,snomed,285466001,Difficulty opening mouth,2,2,3,HA_C03:1 | HA_C04_01:1,HA_C03,HA_C03,1,shared by 2 families
+hybrid_a,snomed,424580008,Post-tussive vomiting,2,2,4,HA_C03:1 | HA_C06:1,HA_C03,HA_C03,1,shared by 2 families
+hybrid_a,snomed,56018004,Wheezing,2,2,2,HA_C04_01:1 | HA_C06:1,HA_C04_01,HA_C04_01,1,shared by 2 families
+hybrid_a,snomed,60537006,Whooping respiration,2,2,4,HA_C03:1 | HA_C06:1,HA_C03,HA_C03,1,shared by 2 families
+hybrid_a,snomed,723538008,Eyelid symptom,2,2,4,HA_C05:1 | HA_C11:1,HA_C05,HA_C05,1,shared by 2 families
+hybrid_a,snomed,79893008,Vesicular eruption,2,2,4,HA_C05:1 | HA_C11:1,HA_C05,HA_C05,1,shared by 2 families
+hybrid_a,snomed,102427001,Exposure to water pollution,1,24,24,HA_C03:24,HA_C03,HA_C03,24,family-specific
+hybrid_a,snomed,223366009,Healthcare professional,1,24,24,HA_C03:24,HA_C03,HA_C03,24,family-specific
+hybrid_a,snomed,274272004,Catering services occupation,1,24,24,HA_C03:24,HA_C03,HA_C03,24,family-specific
+hybrid_a,snomed,364831007,Catering source - finding,1,24,24,HA_C03:24,HA_C03,HA_C03,24,family-specific
+hybrid_a,snomed,249519007,Diarrhoea and vomiting,1,22,24,HA_C03:22,HA_C03,HA_C03,22,family-specific
+hybrid_a,snomed,417893002,Deformity,1,20,66,HA_C00:20,HA_C00,HA_C00,20,family-specific
+hybrid_a,snomed,405729008,Haematochezia,1,18,28,HA_C03:18,HA_C03,HA_C03,18,family-specific
+hybrid_a,snomed,715034003,Unable to take medication,1,18,20,HA_C03:18,HA_C03,HA_C03,18,family-specific
+hybrid_a,snomed,5935008,Oral contraception,1,12,20,HA_C03:12,HA_C03,HA_C03,12,family-specific
+hybrid_a,snomed,397181002,Open fracture,1,10,24,HA_C00:10,HA_C00,HA_C00,10,family-specific
+hybrid_a,snomed,274708000,Abnormal sputum,1,9,58,HA_C06:9,HA_C06,HA_C06,9,family-specific
+hybrid_a,snomed,235797004,Stomal prolapse,1,6,15,HA_C03:6,HA_C03,HA_C03,6,family-specific
+hybrid_a,snomed,236129005,Stomal bleeding,1,5,11,HA_C03:5,HA_C03,HA_C03,5,family-specific
+hybrid_a,snomed,249509001,Unable to break wind,1,5,10,HA_C02:5,HA_C02,HA_C02,5,family-specific
+hybrid_a,snomed,266995000,H/O: cardiovascular disease,1,5,16,HA_C06:5,HA_C06,HA_C06,5,family-specific
+hybrid_a,snomed,367494004,Premature birth of newborn,1,5,5,HA_C03:5,HA_C03,HA_C03,5,family-specific
+hybrid_a,snomed,40917007,Clouded consciousness,1,5,5,HA_C04_01:5,HA_C04_01,HA_C04_01,5,family-specific
+hybrid_a,snomed,43025008,Paroxysmal cough,1,5,14,HA_C06:5,HA_C06,HA_C06,5,family-specific
+hybrid_a,snomed,49727002,Cough,1,5,18,HA_C06:5,HA_C06,HA_C06,5,family-specific
+hybrid_a,snomed,65958008,Hiccoughs,1,5,14,HA_C02:5,HA_C02,HA_C02,5,family-specific
+hybrid_a,snomed,8765009,Haematemesis,1,5,5,HA_C03:5,HA_C03,HA_C03,5,family-specific
+hybrid_a,snomed,95668009,Pain in face,1,5,18,HA_C06:5,HA_C06,HA_C06,5,family-specific
+hybrid_a,snomed,102568007,Paresis of lower extremity,1,4,8,HA_C01_01:4,HA_C01_01,HA_C01_01,4,family-specific
+hybrid_a,snomed,102570003,Inguinal pain,1,4,4,HA_C03:4,HA_C03,HA_C03,4,family-specific
+hybrid_a,snomed,162031009,Indigestion,1,4,4,HA_C03:4,HA_C03,HA_C03,4,family-specific
+hybrid_a,snomed,16331000,Heartburn,1,4,4,HA_C03:4,HA_C03,HA_C03,4,family-specific
+hybrid_a,snomed,170746002,Diabetic on oral treatment,1,4,4,HA_C02:4,HA_C02,HA_C02,4,family-specific
+hybrid_a,snomed,170747006,Diabetic on insulin,1,4,4,HA_C02:4,HA_C02,HA_C02,4,family-specific
+hybrid_a,snomed,230339003,Isolated head tremor,1,4,4,HA_C02:4,HA_C02,HA_C02,4,family-specific
+hybrid_a,snomed,238456006,Snake bite,1,4,6,HA_C00:4,HA_C00,HA_C00,4,family-specific
+hybrid_a,snomed,242594004,Fish sting,1,4,6,HA_C00:4,HA_C00,HA_C00,4,family-specific
+hybrid_a,snomed,242605002,Human bite,1,4,6,HA_C00:4,HA_C00,HA_C00,4,family-specific
+hybrid_a,snomed,242631000,Bite of fish,1,4,6,HA_C00:4,HA_C00,HA_C00,4,family-specific
+hybrid_a,snomed,26079004,Tremor,1,4,4,HA_C02:4,HA_C02,HA_C02,4,family-specific
+hybrid_a,snomed,266987004,H/O: malignant neoplasm,1,4,4,HA_C03:4,HA_C03,HA_C03,4,family-specific
+hybrid_a,snomed,274743004,Swelling of inguinal region,1,4,4,HA_C03:4,HA_C03,HA_C03,4,family-specific
+hybrid_a,snomed,284140004,Unable to move arm,1,4,4,HA_C00:4,HA_C00,HA_C00,4,family-specific
+hybrid_a,snomed,298255009,Pain on joint movement,1,4,5,HA_C00:4,HA_C00,HA_C00,4,family-specific
+hybrid_a,snomed,300366003,Vomit contains faeces,1,4,4,HA_C02:4,HA_C02,HA_C02,4,family-specific
+hybrid_a,snomed,414417004,History of renal failure,1,4,4,HA_C03:4,HA_C03,HA_C03,4,family-specific
+hybrid_a,snomed,45477008,Exposed to vibration,1,4,4,HA_C02:4,HA_C02,HA_C02,4,family-specific
+hybrid_a,snomed,60113004,Disorder of eyelid,1,4,4,HA_C11:4,HA_C11,HA_C11,4,family-specific
+hybrid_a,snomed,62315008,Diarrhoea,1,4,4,HA_C03:4,HA_C03,HA_C03,4,family-specific
+hybrid_a,snomed,703630003,Red eye,1,4,4,HA_C11:4,HA_C11,HA_C11,4,family-specific
+hybrid_a,snomed,705083008,Sensation of irritation of eye proper,1,4,4,HA_C11:4,HA_C11,HA_C11,4,family-specific
+hybrid_a,snomed,193031009,Cluster headache,1,3,4,HA_C04_01:3,HA_C04_01,HA_C04_01,3,family-specific
+hybrid_a,snomed,22253000,Pain,1,3,5,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,snomed,289525007,Swelling of vaginal introitus,1,3,3,HA_C03:3,HA_C03,HA_C03,3,family-specific
+hybrid_a,snomed,3890004,Treatment required for,1,3,6,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,snomed,398057008,Tension-type headache,1,3,4,HA_C04_01:3,HA_C04_01,HA_C04_01,3,family-specific
+hybrid_a,snomed,403142004,Hymenoptera sting,1,3,6,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,snomed,446101008,Removal of tick,1,3,6,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,snomed,95898004,Tick bite,1,3,12,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,snomed,103276001,Decreased hearing,1,2,4,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,snomed,162181003,Vaginal discomfort,1,2,2,HA_C02:2,HA_C02,HA_C02,2,family-specific
+hybrid_a,snomed,162277006,Sees flashes,1,2,2,HA_C11:2,HA_C11,HA_C11,2,family-specific
+hybrid_a,snomed,162278001,Floaters in visual field,1,2,2,HA_C11:2,HA_C11,HA_C11,2,family-specific
+hybrid_a,snomed,232209000,Nasal obstruction,1,2,4,HA_C04_00:2,HA_C04_00,HA_C04_00,2,family-specific
+hybrid_a,snomed,24982008,Diplopia,1,2,2,HA_C11:2,HA_C11,HA_C11,2,family-specific
+hybrid_a,snomed,275488008,Sore throat - chronic,1,2,4,HA_C03:2,HA_C03,HA_C03,2,family-specific
+hybrid_a,snomed,289894009,Menstrual bleeding present,1,2,8,HA_C05:2,HA_C05,HA_C05,2,family-specific
+hybrid_a,snomed,2910007,Discharge from penis,1,2,4,HA_C11:2,HA_C11,HA_C11,2,family-specific
+hybrid_a,snomed,297216006,Increasing breathlessness,1,2,2,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,snomed,309572008,Rectal symptoms,1,2,2,HA_C02:2,HA_C02,HA_C02,2,family-specific
+hybrid_a,snomed,48926009,Pain in spine,1,2,2,HA_C04_01:2,HA_C04_01,HA_C04_01,2,family-specific
+hybrid_a,snomed,54288002,Traumatic subcutaneous emphysema,1,2,2,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,snomed,723010005,Acute eruption of skin,1,2,2,HA_C03:2,HA_C03,HA_C03,2,family-specific
+hybrid_a,snomed,1371000119105,Chronic hoarseness,1,1,1,HA_C03:1,HA_C03,HA_C03,1,family-specific
+hybrid_a,snomed,161570007,H/O: back problem,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,snomed,161800001,H/O: hysterectomy,1,1,1,HA_C05:1,HA_C05,HA_C05,1,family-specific
+hybrid_a,snomed,162025006,Difficulty swallowing fluid,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,snomed,246663009,Curtain across vision,1,1,1,HA_C11:1,HA_C11,HA_C11,1,family-specific
+hybrid_a,snomed,2472002,Anuria,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,snomed,249486008,Unable to swallow,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,snomed,258643002,Chest drain,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,snomed,267103008,Feeling of lump in throat,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,snomed,274747003,"Localised swelling, mass and lump, neck",1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,snomed,285462004,Unable to open mouth,1,1,1,HA_C03:1,HA_C03,HA_C03,1,family-specific
+hybrid_a,snomed,288945004,Difficulty swallowing food,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,snomed,301384007,Excruciating present pain,1,1,1,HA_C07_00:1,HA_C07_00,HA_C07_00,1,family-specific
+hybrid_a,snomed,30233002,Swallowing painful,1,1,1,HA_C03:1,HA_C03,HA_C03,1,family-specific
+hybrid_a,snomed,48880000,Postcoital bleeding,1,1,1,HA_C05:1,HA_C05,HA_C05,1,family-specific
+hybrid_a,snomed,50219008,Hoarse,1,1,2,HA_C03:1,HA_C03,HA_C03,1,family-specific
+hybrid_a,snomed,72042002,Incontinence of faeces,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific

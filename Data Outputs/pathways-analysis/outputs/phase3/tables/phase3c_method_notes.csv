@@ -1,0 +1,6 @@
+Item,EvidenceClass,Statement
+Topology,assumption,"rolling_window_dag gives each node up to N immediately preceding nodes as parents. It is a benchmark shape, not a clinical DAG."
+Probabilities,assumption,Uniform synthetic CPT values are used. They have no clinical interpretation; only computational behaviour is measured.
+Memory,benchmark,"PythonPeakAllocatedMiB is tracemalloc peak allocation during model construction and inference initialisation, not total container RSS."
+Serialised size,benchmark,"SerializedModelMiB is a Python pickle size for the pgmpy model, not a storage-format recommendation."
+Exact inference,benchmark,"VariableElimination latency is meaningful only with the recorded topology, parent count and state cardinality."

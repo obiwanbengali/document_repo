@@ -1,0 +1,217 @@
+# =====================================================================
+# Phase 2 configuration: Bayesian Network family discovery
+#
+# Every threshold, weight and method choice used by
+# `python -m pathways_analysis.family_discovery` is declared here so that no
+# number in the Phase 2 evidence base is buried in code.
+#
+# NONE of these defaults is clinically validated. They are experimental
+# baselines chosen to make the analysis reproducible and its sensitivity
+# measurable. Where a default materially changes the answer, the sensitivity
+# tables say so.
+# =====================================================================
+
+# --- Scope ------------------------------------------------------------
+scope:
+  # Pathways eligible for family membership. "active" = IsArchived = 0 AND
+  # FlagForDeletion = 0, matching the Phase 1 definition.
+  #
+  # The transfer graph itself still contains every pathway that takes part in a
+  # resolved transfer (Phase 1 scope), so an edge from an active pathway to an
+  # archived one is counted as external rather than silently dropped.
+  pathway_scope: active
+
+# --- Community detection ----------------------------------------------
+community_detection:
+  # Methods to run. Each produces an independent partition; no single method is
+  # treated as truth. A method whose library is not installed is recorded as
+  # unavailable in community_method_comparison.csv rather than skipped silently.
+  methods:
+    - louvain              # python-louvain (Blondel et al.)
+    - networkx_louvain     # networkx implementation, independent check
+    - leiden               # leidenalg, if installed
+    - greedy_modularity    # Clauset-Newman-Moore
+    - label_propagation    # asynchronous label propagation, seeded
+    - strongly_connected   # non-trivial strongly connected components
+
+  # The partition used as the graph-derived input to HYBRID A and as the
+  # "graph-derived" representative in strategy comparison. A modelling choice,
+  # not a statement that this method is best.
+  primary_method: louvain
+
+  # Leiden resolution. 1.0 is the modularity-equivalent default.
+  leiden_resolution: 1.0
+
+# --- Family size ------------------------------------------------------
+family_size:
+  # Families smaller than this are candidates for absorption into a larger
+  # family (HYBRID A) rather than standing alone. Set to 1 to keep every
+  # singleton as its own family.
+  minimum_family_size: 5
+
+  # A family at or above this size is tested for an internal split (section 12).
+  split_review_size: 40
+
+  # A split is only proposed when both resulting parts reach this size.
+  minimum_split_part_size: 8
+
+# --- Overlap classification (section 8) ------------------------------
+overlap_thresholds:
+  # Which measure the low/moderate/high band is applied to.
+  #
+  #   discriminating -- the largest of the question / symptom discriminator / SNOMED
+  #                     Jaccard values. The DEFAULT, because dispositions overlap by
+  #                     construction: the estate has under 200 disposition codes and
+  #                     most families reach a similar subset, so disposition Jaccard
+  #                     has the highest median of any dimension and banding on it
+  #                     would flag almost every pair as high overlap.
+  #   all_features   -- additionally includes the disposition Jaccard.
+  #
+  # Both values are always computed and exported, so switching this changes only which
+  # one the band is read from.
+  band_measure: discriminating
+  moderate: 0.15
+  high: 0.35
+  # A pair sharing at least this many pathways is escalated to "high"
+  # regardless of feature Jaccard, because shared membership is a stronger
+  # signal than shared vocabulary.
+  shared_pathway_escalation: 1
+
+# --- Hybrid C similarity weights (section 5) -------------------------
+# EXPERIMENTAL BASELINE ONLY. These weights are not clinically endorsed. They
+# are deliberately flat across the feature dimensions, with graph adjacency
+# given the largest single share because it is the only dimension that is a
+# direct product of Pathways routing rather than of shared vocabulary.
+hybrid_c_weights:
+  graph: 0.35
+  symptom_discriminator: 0.20
+  snomed: 0.15
+  question: 0.20
+  disposition: 0.10
+
+hybrid_c:
+  # Pairwise similarity below this is not treated as an edge when clustering.
+  similarity_threshold: 0.12
+  # Community detection method applied to the weighted similarity graph.
+  clustering_method: louvain
+
+# --- Hybrid C sensitivity analysis -----------------------------------
+# Each variant re-runs Hybrid C with different weights. Agreement with the
+# default run is reported as adjusted Rand index plus the share of pathways
+# whose family membership changes.
+hybrid_c_sensitivity:
+  - name: graph_only
+    weights: {graph: 1.00, symptom_discriminator: 0.00, snomed: 0.00, question: 0.00, disposition: 0.00}
+  - name: features_only
+    weights: {graph: 0.00, symptom_discriminator: 0.30, snomed: 0.25, question: 0.30, disposition: 0.15}
+  - name: equal
+    weights: {graph: 0.20, symptom_discriminator: 0.20, snomed: 0.20, question: 0.20, disposition: 0.20}
+  - name: sd_heavy
+    weights: {graph: 0.20, symptom_discriminator: 0.50, snomed: 0.10, question: 0.15, disposition: 0.05}
+  - name: graph_heavy
+    weights: {graph: 0.60, symptom_discriminator: 0.15, snomed: 0.10, question: 0.10, disposition: 0.05}
+  - name: question_heavy
+    weights: {graph: 0.20, symptom_discriminator: 0.15, snomed: 0.10, question: 0.50, disposition: 0.05}
+
+# --- Hybrid A / B refinement rules -----------------------------------
+hybrid_a:
+  # A graph community is only split on clinical features when its mean pairwise
+  # symptom-discriminator Jaccard falls below this, i.e. the community is not
+  # already coherent on clinical vocabulary.
+  clinical_cohesion_threshold: 0.20
+  # Feature used to split an incoherent community: symptom_group | clinical_area
+  split_feature: symptom_group
+  # Communities below minimum_family_size are absorbed into the family with the
+  # highest affinity, provided the affinity reaches this floor. Below it the
+  # community is retained as a small family and flagged.
+  absorption_affinity_floor: 0.05
+
+hybrid_b:
+  # NHS-native grouping used as the primary key. Symptom group where the
+  # pathway has one; otherwise the pathway's most specific clinical area
+  # (fewest active pathways); otherwise unassigned.
+  primary_grouping: symptom_group_then_clinical_area
+  # A native group is split on graph evidence only when its internal-edge
+  # percentage falls below this.
+  weak_cohesion_internal_edge_pct: 25.0
+
+# --- Boundary classification (section 9) -----------------------------
+boundary:
+  # External degree = distinct pathways outside the family that the pathway is
+  # adjacent to in either direction.
+  strong_external_degree: 3
+  # Distinct other candidate families the pathway has edges to.
+  hub_external_family_count: 3
+  # A pathway must also sit in this betweenness percentile to be called a
+  # cross-family hub, so that a locally chatty pathway is not promoted.
+  hub_betweenness_percentile: 90.0
+
+# --- Shared-core candidates (section 11) -----------------------------
+shared_core:
+  # A feature used by at least this many candidate families is flagged as a
+  # shared-core candidate. Evidence only: this does not conclude that the
+  # feature belongs in a shared Bayesian Network.
+  minimum_family_count: 5
+  # Banding used in the shared-feature tables (section 10).
+  family_count_bands:
+    family_specific: 1
+    shared_2: 2
+    shared_3_to_5: 5
+
+# --- Routing ambiguity (section 14) ----------------------------------
+routing:
+  # Affinity weights used to score a pathway against each candidate family.
+  # Deliberately the same shape as hybrid_c_weights so that routing evidence
+  # and Hybrid C clustering are driven by one declared weighting.
+  weights:
+    graph: 0.35
+    symptom_discriminator: 0.20
+    snomed: 0.15
+    question: 0.20
+    disposition: 0.10
+  # ambiguity_score = second-best affinity / best affinity.
+  moderate_ambiguity: 0.40
+  high_ambiguity: 0.70
+  # A family counts as "plausible" for a pathway when its affinity reaches this
+  # fraction of the best affinity.
+  plausible_affinity_ratio: 0.60
+
+# --- Similarity export ------------------------------------------------
+similarity:
+  # Pairs with at least this many shared features are exported. 1 keeps every
+  # pair with genuine overlap and omits the all-zero pairs.
+  minimum_intersection: 1
+  # Graph similarity rows are exported for pairs within this many hops in the
+  # undirected projection. All-pairs shortest path over 838 nodes is cheap, but
+  # exporting 340k rows of mostly-unrelated pairs is not informative.
+  max_graph_hops: 2
+
+# --- Candidate family set presented for review -----------------------
+presentation:
+  # Strategy whose families populate candidate_bayesian_families.csv,
+  # candidate_family_membership.csv and the clinical review pack. A modelling
+  # choice, NOT a recommendation: every strategy is compared in
+  # family_strategy_comparison.csv.
+  primary_candidate_strategy: hybrid_a
+
+  # A family is given a metadata-derived name only when one metadata value
+  # covers at least this share of its pathways. Otherwise it keeps a neutral
+  # name such as Community_07.
+  naming_dominance_threshold: 0.50
+
+  # Rows per family in the clinical review pack.
+  representative_pathways: 6
+  top_features: 8
+
+# --- Optional composite score (section 17) ---------------------------
+composite_score:
+  # Off by default. A single opaque number is not a substitute for the
+  # component metrics, all of which stay in family_quality_scorecard.csv.
+  enabled: false
+  weights:
+    graph_cohesion: 0.30
+    symptom_discriminator_cohesion: 0.20
+    snomed_cohesion: 0.10
+    disposition_cohesion: 0.10
+    boundary_simplicity: 0.15
+    routing_clarity: 0.15

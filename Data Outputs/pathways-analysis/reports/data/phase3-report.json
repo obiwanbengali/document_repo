@@ -1,0 +1,1491 @@
+{
+  "benchmark": {
+    "caveat": "Envelope spans different parent/state cases. It is not a single latency estimate and must be read with benchmark_results.csv.",
+    "coverage_max_percentage": 100.0,
+    "coverage_min_percentage": 0.52,
+    "coverage_warning": "These timings come from models built at a fraction of the real size — between 0.5% and 100% of the variables the real models would contain. They establish how timing responds to size and structure. They are not a prediction of production latency, and they must not be quoted as one.",
+    "evidence_class": "measured",
+    "rows": [
+      {
+        "benchmark_nodes": 250,
+        "coverage_percentage": 6.6,
+        "evidence_class": "benchmark",
+        "fraction_of_real_model": 0.066,
+        "label": "One model, questions deduplicated",
+        "model_scope": "whole model",
+        "p95_max_ms": 119.867,
+        "p95_min_ms": 2.348,
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "benchmark_nodes": 250,
+        "coverage_percentage": 0.52,
+        "evidence_class": "benchmark",
+        "fraction_of_real_model": 0.0052,
+        "label": "One model, as the content is written",
+        "model_scope": "whole model",
+        "p95_max_ms": 186.868,
+        "p95_min_ms": 3.636,
+        "representation": "literal_monolith"
+      },
+      {
+        "benchmark_nodes": 250,
+        "coverage_percentage": 30.64,
+        "evidence_class": "benchmark",
+        "fraction_of_real_model": 0.3064,
+        "label": "Several models, one per candidate family",
+        "model_scope": "largest family",
+        "p95_max_ms": 201.06,
+        "p95_min_ms": 3.337,
+        "representation": "provisional_federated"
+      },
+      {
+        "benchmark_nodes": 37,
+        "coverage_percentage": 100.0,
+        "evidence_class": "benchmark",
+        "fraction_of_real_model": 1.0,
+        "label": "Several models, one per candidate family",
+        "model_scope": "median family",
+        "p95_max_ms": 46.752,
+        "p95_min_ms": 3.476,
+        "representation": "provisional_federated"
+      }
+    ],
+    "source": [
+      "outputs/phase3/tables/benchmark_runtime_envelope.csv"
+    ]
+  },
+  "conclusion": {
+    "evidence_class": "derived",
+    "next_question": "Which trade-off does the programme want to own: the simplicity of one model, or the smaller blast radius of several?",
+    "open_gates": 2,
+    "paragraphs": [
+      "Phase 3 set out to establish whether the three candidate architectures differ enough in size, speed, operability and cost for the choice to be made on technical grounds. On the evidence assembled, they do not. All three fit comfortably within ordinary infrastructure under the assumptions tested, and the illustrative costs sit close together.",
+      "What does separate them is operational: how much has to be re-tested when one part changes, how far a failure spreads, and how much content would be duplicated across models. Those are the terms in which the decision should be argued.",
+      "The largest single influence on model size is not the architecture at all. It is how many other variables each variable depends on, and that is a clinical modelling decision that has not been taken."
+    ],
+    "status_note": "The draft ADR remains open. The candidate families are a provisional analytical baseline, and the federated figures will change once clinical review settles the family boundaries."
+  },
+  "cost": {
+    "caveat": "These are illustrative scenarios, not a quotation. They are modelled on us-east-1 pricing as a stand-in for eu-west-2, and they price compute for inference only. Treat the gap between the patterns as the finding, not the absolute figures.",
+    "default_volume": 5000000,
+    "evidence_class": "candidate",
+    "floor_note": "Below roughly 5,000,000 assessments a month, the patterns cost the same because a minimum amount of capacity has to run regardless of how much work reaches it. The differences only appear once volume is high enough to need more than that minimum.",
+    "method_notes": [
+      {
+        "evidence_class": "assumption",
+        "item": "Production traffic",
+        "statement": "Monthly assessment volumes and peak multiplier are scenarios, not measured 111/999 production traffic."
+      },
+      {
+        "evidence_class": "assumption",
+        "item": "Inference duration",
+        "statement": "average_inference_seconds_assumption is used for capacity until the repaired Phase 3C benchmark can provide an observed throughput basis."
+      },
+      {
+        "evidence_class": "derived",
+        "item": "Federated fan-out",
+        "statement": "Family fan-out is a lower bound derived from Phase 2 plausible-family percentages. It is structural evidence, not case-frequency evidence."
+      },
+      {
+        "evidence_class": "external+assumption",
+        "item": "AWS rate",
+        "statement": "The checked-in Fargate rate is the AWS public Linux/x86 us-east-1 example rate. Absolute costs remain illustrative until the agreed eu-west-2 rate card is refreshed."
+      },
+      {
+        "evidence_class": "assumption",
+        "item": "Excluded services",
+        "statement": "ALB, observability and artefact storage use explicit monthly allowances. NAT/data transfer, WAF, KMS, ECR, backup and organisational shared-service charges are not yet itemised."
+      }
+    ],
+    "pricing_basis_region": "us-east-1",
+    "pricing_status": "illustrative_only_pending_eu-west-2_refresh",
+    "pricing_target_region": "eu-west-2",
+    "rows": [
+      {
+        "assessments_per_month": 100000,
+        "cost_per_1000_usd": 2.5013,
+        "label": "One model, always loaded",
+        "monthly_usd": 250.13,
+        "pattern_id": "monolith_always_resident",
+        "tasks": 2
+      },
+      {
+        "assessments_per_month": 100000,
+        "cost_per_1000_usd": 2.5013,
+        "label": "All family models, always loaded",
+        "monthly_usd": 250.13,
+        "pattern_id": "federated_all_resident",
+        "tasks": 2
+      },
+      {
+        "assessments_per_month": 100000,
+        "cost_per_1000_usd": 2.5013,
+        "label": "Family models loaded on demand",
+        "monthly_usd": 250.13,
+        "pattern_id": "federated_lazy_loaded",
+        "tasks": 2
+      },
+      {
+        "assessments_per_month": 100000,
+        "cost_per_1000_usd": 2.5013,
+        "label": "Family models plus a shared core",
+        "monthly_usd": 250.13,
+        "pattern_id": "hierarchical_shared_core",
+        "tasks": 2
+      },
+      {
+        "assessments_per_month": 1000000,
+        "cost_per_1000_usd": 0.2501,
+        "label": "One model, always loaded",
+        "monthly_usd": 250.13,
+        "pattern_id": "monolith_always_resident",
+        "tasks": 2
+      },
+      {
+        "assessments_per_month": 1000000,
+        "cost_per_1000_usd": 0.2501,
+        "label": "All family models, always loaded",
+        "monthly_usd": 250.13,
+        "pattern_id": "federated_all_resident",
+        "tasks": 2
+      },
+      {
+        "assessments_per_month": 1000000,
+        "cost_per_1000_usd": 0.2501,
+        "label": "Family models loaded on demand",
+        "monthly_usd": 250.13,
+        "pattern_id": "federated_lazy_loaded",
+        "tasks": 2
+      },
+      {
+        "assessments_per_month": 1000000,
+        "cost_per_1000_usd": 0.2501,
+        "label": "Family models plus a shared core",
+        "monthly_usd": 250.13,
+        "pattern_id": "hierarchical_shared_core",
+        "tasks": 2
+      },
+      {
+        "assessments_per_month": 5000000,
+        "cost_per_1000_usd": 0.05,
+        "label": "One model, always loaded",
+        "monthly_usd": 250.13,
+        "pattern_id": "monolith_always_resident",
+        "tasks": 2
+      },
+      {
+        "assessments_per_month": 5000000,
+        "cost_per_1000_usd": 0.067,
+        "label": "All family models, always loaded",
+        "monthly_usd": 335.19,
+        "pattern_id": "federated_all_resident",
+        "tasks": 3
+      },
+      {
+        "assessments_per_month": 5000000,
+        "cost_per_1000_usd": 0.067,
+        "label": "Family models loaded on demand",
+        "monthly_usd": 335.19,
+        "pattern_id": "federated_lazy_loaded",
+        "tasks": 3
+      },
+      {
+        "assessments_per_month": 5000000,
+        "cost_per_1000_usd": 0.1011,
+        "label": "Family models plus a shared core",
+        "monthly_usd": 505.32,
+        "pattern_id": "hierarchical_shared_core",
+        "tasks": 5
+      }
+    ],
+    "source": [
+      "outputs/phase3/tables/infrastructure_cost_scenarios.csv",
+      "outputs/phase3/tables/phase3e_method_notes.csv"
+    ],
+    "spread_by_volume": [
+      {
+        "assessments_per_month": 100000,
+        "max_monthly_usd": 250.13,
+        "min_monthly_usd": 250.13,
+        "patterns_differ": false,
+        "ratio": 1.0
+      },
+      {
+        "assessments_per_month": 1000000,
+        "max_monthly_usd": 250.13,
+        "min_monthly_usd": 250.13,
+        "patterns_differ": false,
+        "ratio": 1.0
+      },
+      {
+        "assessments_per_month": 5000000,
+        "max_monthly_usd": 505.32,
+        "min_monthly_usd": 250.13,
+        "patterns_differ": true,
+        "ratio": 2.02
+      }
+    ],
+    "volumes": [
+      100000,
+      1000000,
+      5000000
+    ],
+    "volumes_where_patterns_differ": [
+      5000000
+    ]
+  },
+  "cpt_growth": {
+    "case_labels": {
+      "median_parent_states": "Typical case",
+      "p90_parent_states": "Demanding case"
+    },
+    "caveat": "The number of dependencies per variable is a stated range, not a finding. The real structure would be designed clinically. These figures show how sensitive the size is to that choice, which is the point.",
+    "default_case": "median_parent_states",
+    "definition": "A probability table holds one number for every combination of a variable's own answers and the answers of the variables it depends on. Add one more dependency and the table multiplies in size rather than adding to it.",
+    "evidence_class": "derived",
+    "growth": [
+      {
+        "cpt_entries": 30324,
+        "growth_multiple": null,
+        "label": "One model, questions deduplicated",
+        "parent_count": 1,
+        "parent_state_case": "median_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 90972,
+        "growth_multiple": 3.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 2,
+        "parent_state_case": "median_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 272916,
+        "growth_multiple": 3.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 3,
+        "parent_state_case": "median_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 818748,
+        "growth_multiple": 3.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 4,
+        "parent_state_case": "median_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 2456244,
+        "growth_multiple": 3.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 5,
+        "parent_state_case": "median_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 7368732,
+        "growth_multiple": 3.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 6,
+        "parent_state_case": "median_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 339123,
+        "growth_multiple": null,
+        "label": "One model, as the content is written",
+        "parent_count": 1,
+        "parent_state_case": "median_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 1017369,
+        "growth_multiple": 3.0,
+        "label": "One model, as the content is written",
+        "parent_count": 2,
+        "parent_state_case": "median_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 3052107,
+        "growth_multiple": 3.0,
+        "label": "One model, as the content is written",
+        "parent_count": 3,
+        "parent_state_case": "median_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 9156321,
+        "growth_multiple": 3.0,
+        "label": "One model, as the content is written",
+        "parent_count": 4,
+        "parent_state_case": "median_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 27468963,
+        "growth_multiple": 3.0,
+        "label": "One model, as the content is written",
+        "parent_count": 5,
+        "parent_state_case": "median_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 82406889,
+        "growth_multiple": 3.0,
+        "label": "One model, as the content is written",
+        "parent_count": 6,
+        "parent_state_case": "median_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 54855,
+        "growth_multiple": null,
+        "label": "Several models, one per candidate family",
+        "parent_count": 1,
+        "parent_state_case": "median_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 164565,
+        "growth_multiple": 3.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 2,
+        "parent_state_case": "median_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 493695,
+        "growth_multiple": 3.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 3,
+        "parent_state_case": "median_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 1481085,
+        "growth_multiple": 3.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 4,
+        "parent_state_case": "median_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 4443255,
+        "growth_multiple": 3.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 5,
+        "parent_state_case": "median_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 13329765,
+        "growth_multiple": 3.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 6,
+        "parent_state_case": "median_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 40432,
+        "growth_multiple": null,
+        "label": "One model, questions deduplicated",
+        "parent_count": 1,
+        "parent_state_case": "p90_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 161728,
+        "growth_multiple": 4.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 2,
+        "parent_state_case": "p90_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 646912,
+        "growth_multiple": 4.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 3,
+        "parent_state_case": "p90_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 2587648,
+        "growth_multiple": 4.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 4,
+        "parent_state_case": "p90_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 10350592,
+        "growth_multiple": 4.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 5,
+        "parent_state_case": "p90_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 41402368,
+        "growth_multiple": 4.0,
+        "label": "One model, questions deduplicated",
+        "parent_count": 6,
+        "parent_state_case": "p90_parent_states",
+        "representation": "deduplicated_monolith"
+      },
+      {
+        "cpt_entries": 452164,
+        "growth_multiple": null,
+        "label": "One model, as the content is written",
+        "parent_count": 1,
+        "parent_state_case": "p90_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 1808656,
+        "growth_multiple": 4.0,
+        "label": "One model, as the content is written",
+        "parent_count": 2,
+        "parent_state_case": "p90_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 7234624,
+        "growth_multiple": 4.0,
+        "label": "One model, as the content is written",
+        "parent_count": 3,
+        "parent_state_case": "p90_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 28938496,
+        "growth_multiple": 4.0,
+        "label": "One model, as the content is written",
+        "parent_count": 4,
+        "parent_state_case": "p90_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 115753984,
+        "growth_multiple": 4.0,
+        "label": "One model, as the content is written",
+        "parent_count": 5,
+        "parent_state_case": "p90_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 463015936,
+        "growth_multiple": 4.0,
+        "label": "One model, as the content is written",
+        "parent_count": 6,
+        "parent_state_case": "p90_parent_states",
+        "representation": "literal_monolith"
+      },
+      {
+        "cpt_entries": 73140,
+        "growth_multiple": null,
+        "label": "Several models, one per candidate family",
+        "parent_count": 1,
+        "parent_state_case": "p90_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 292560,
+        "growth_multiple": 4.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 2,
+        "parent_state_case": "p90_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 1170240,
+        "growth_multiple": 4.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 3,
+        "parent_state_case": "p90_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 4680960,
+        "growth_multiple": 4.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 4,
+        "parent_state_case": "p90_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 18723840,
+        "growth_multiple": 4.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 5,
+        "parent_state_case": "p90_parent_states",
+        "representation": "provisional_federated"
+      },
+      {
+        "cpt_entries": 74895360,
+        "growth_multiple": 4.0,
+        "label": "Several models, one per candidate family",
+        "parent_count": 6,
+        "parent_state_case": "p90_parent_states",
+        "representation": "provisional_federated"
+      }
+    ],
+    "method_notes": [
+      {
+        "evidence_class": "assumption",
+        "item": "Bayesian dependencies",
+        "statement": "Parent counts are sensitivity cases only. Phase 3B does not map deterministic Pathways edges directly into Bayesian dependencies."
+      },
+      {
+        "evidence_class": "measured+assumption",
+        "item": "Parent state cardinality",
+        "statement": "Parent state cases use measured median and p90 authored answer cardinality, applied homogeneously to isolate CPT growth."
+      },
+      {
+        "evidence_class": "derived",
+        "item": "Raw storage",
+        "statement": "Storage figures count probability arrays only. They exclude node objects, factor metadata, indexes, evidence caches and interpreter overhead."
+      },
+      {
+        "evidence_class": "deferred",
+        "item": "Runtime memory",
+        "statement": "Runtime memory and serialised artefact size will be measured in Phase 3C against a concrete BN implementation rather than estimated from an arbitrary multiplier."
+      }
+    ],
+    "parent_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "parent_state_cases": [
+      "median_parent_states",
+      "p90_parent_states"
+    ],
+    "rows": [
+      {
+        "cpt_entries": 30324,
+        "free_parameters": 18963,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 21,
+        "parent_count": 1,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 0.116,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 339123,
+        "free_parameters": 195174,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 21,
+        "parent_count": 1,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 1.294,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 54855,
+        "free_parameters": 33885,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 21,
+        "parent_count": 1,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 0.209,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 40432,
+        "free_parameters": 25284,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 28,
+        "parent_count": 1,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 0.154,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 452164,
+        "free_parameters": 260232,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 28,
+        "parent_count": 1,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 1.725,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 73140,
+        "free_parameters": 45180,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 28,
+        "parent_count": 1,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 0.279,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 90972,
+        "free_parameters": 56889,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 63,
+        "parent_count": 2,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 0.347,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 1017369,
+        "free_parameters": 585522,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 63,
+        "parent_count": 2,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 3.881,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 164565,
+        "free_parameters": 101655,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 63,
+        "parent_count": 2,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 0.628,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 161728,
+        "free_parameters": 101136,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 112,
+        "parent_count": 2,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 0.617,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 1808656,
+        "free_parameters": 1040928,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 112,
+        "parent_count": 2,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 6.899,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 292560,
+        "free_parameters": 180720,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 112,
+        "parent_count": 2,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 1.116,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 272916,
+        "free_parameters": 170667,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 189,
+        "parent_count": 3,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 1.041,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 3052107,
+        "free_parameters": 1756566,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 189,
+        "parent_count": 3,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 11.643,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 493695,
+        "free_parameters": 304965,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 189,
+        "parent_count": 3,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 1.883,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 646912,
+        "free_parameters": 404544,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 448,
+        "parent_count": 3,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 2.468,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 7234624,
+        "free_parameters": 4163712,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 448,
+        "parent_count": 3,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 27.598,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 1170240,
+        "free_parameters": 722880,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 448,
+        "parent_count": 3,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 4.464,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 818748,
+        "free_parameters": 512001,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 567,
+        "parent_count": 4,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 3.123,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 9156321,
+        "free_parameters": 5269698,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 567,
+        "parent_count": 4,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 34.929,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 1481085,
+        "free_parameters": 914895,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 567,
+        "parent_count": 4,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 5.65,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 2587648,
+        "free_parameters": 1618176,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 1792,
+        "parent_count": 4,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 9.871,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 28938496,
+        "free_parameters": 16654848,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 1792,
+        "parent_count": 4,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 110.392,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 4680960,
+        "free_parameters": 2891520,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 1792,
+        "parent_count": 4,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 17.856,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 2456244,
+        "free_parameters": 1536003,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 1701,
+        "parent_count": 5,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 9.37,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 27468963,
+        "free_parameters": 15809094,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 1701,
+        "parent_count": 5,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 104.786,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 4443255,
+        "free_parameters": 2744685,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 1701,
+        "parent_count": 5,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 16.95,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 10350592,
+        "free_parameters": 6472704,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 7168,
+        "parent_count": 5,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 39.484,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 115753984,
+        "free_parameters": 66619392,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 7168,
+        "parent_count": 5,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 441.566,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 18723840,
+        "free_parameters": 11566080,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 7168,
+        "parent_count": 5,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 71.426,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 7368732,
+        "free_parameters": 4608009,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 5103,
+        "parent_count": 6,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 28.109,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 82406889,
+        "free_parameters": 47427282,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 5103,
+        "parent_count": 6,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 314.357,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 13329765,
+        "free_parameters": 8234055,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 5103,
+        "parent_count": 6,
+        "parent_state_case": "median_parent_states",
+        "parent_states_each": 3,
+        "raw_mib_float32": 50.849,
+        "representation": "provisional_federated",
+        "variables": 6990
+      },
+      {
+        "cpt_entries": 41402368,
+        "free_parameters": 25890816,
+        "label": "One model, questions deduplicated",
+        "largest_variable_entries": 28672,
+        "parent_count": 6,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 157.938,
+        "representation": "deduplicated_monolith",
+        "variables": 3787
+      },
+      {
+        "cpt_entries": 463015936,
+        "free_parameters": 266477568,
+        "label": "One model, as the content is written",
+        "largest_variable_entries": 28672,
+        "parent_count": 6,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 1766.266,
+        "representation": "literal_monolith",
+        "variables": 47983
+      },
+      {
+        "cpt_entries": 74895360,
+        "free_parameters": 46264320,
+        "label": "Several models, one per candidate family",
+        "largest_variable_entries": 28672,
+        "parent_count": 6,
+        "parent_state_case": "p90_parent_states",
+        "parent_states_each": 4,
+        "raw_mib_float32": 285.703,
+        "representation": "provisional_federated",
+        "variables": 6990
+      }
+    ],
+    "source": [
+      "outputs/phase3/tables/cpt_sizing_by_representation.csv",
+      "outputs/phase3/tables/cpt_growth_curve.csv"
+    ]
+  },
+  "decision": {
+    "evidence_class": "candidate",
+    "no_recommendation": "No architecture is recommended. Each option is shown with its strength and the cost of that strength, so the choice can be made deliberately rather than inherited from an analysis.",
+    "outstanding": "The decision cannot be closed while the candidate families remain a provisional analytical baseline. Clinical review of the Phase 2 families changes the federated figures and must come first.",
+    "rows": [
+      {
+        "benchmark_coverage": "0.5% max model coverage",
+        "benchmark_range": "3.636-186.868 ms",
+        "evidence_status": "complete_for_draft",
+        "illustrative_monthly_usd": 250.13,
+        "label": "One model, as the content is written",
+        "reference_cpt_entries": 3052107,
+        "representation": "literal_monolith",
+        "technical_label": "Literal monolith",
+        "variable_count": 47983
+      },
+      {
+        "benchmark_coverage": "6.6% max model coverage",
+        "benchmark_range": "2.348-119.867 ms",
+        "evidence_status": "complete_for_draft",
+        "illustrative_monthly_usd": 250.13,
+        "label": "One model, questions deduplicated",
+        "reference_cpt_entries": 272916,
+        "representation": "deduplicated_monolith",
+        "technical_label": "Question-ID deduplicated monolith",
+        "variable_count": 3787
+      },
+      {
+        "benchmark_coverage": "100.0% max model coverage",
+        "benchmark_range": "3.337-201.060 ms",
+        "evidence_status": "complete_for_draft",
+        "illustrative_monthly_usd": null,
+        "label": "Several models, one per candidate family",
+        "reference_cpt_entries": 493695,
+        "representation": "provisional_federated",
+        "technical_label": "Provisional federated / hierarchical",
+        "variable_count": 6990
+      }
+    ],
+    "source": [
+      "outputs/phase3/tables/adr_evidence_matrix.csv",
+      "outputs/phase3/tables/adr_runtime_tradeoffs.csv"
+    ],
+    "tradeoffs": [
+      {
+        "evidence_class": "architectural_interpretation",
+        "label": "One model, as the content is written",
+        "representation": "literal_monolith",
+        "strength": "single model boundary and simple runtime routing",
+        "tradeoff": "largest structural representation; whole-model release and regression blast radius"
+      },
+      {
+        "evidence_class": "architectural_interpretation",
+        "label": "One model, questions deduplicated",
+        "representation": "deduplicated_monolith",
+        "strength": "retains one runtime model while removing repeated QuestionID occurrences",
+        "tradeoff": "still one global dependency structure and whole-model release boundary; QuestionID identity is not clinical semantic normalisation"
+      },
+      {
+        "evidence_class": "architectural_interpretation",
+        "label": "Several models, one per candidate family",
+        "representation": "provisional_federated",
+        "strength": "smaller family inference units and potentially more localised model changes",
+        "tradeoff": "cross-family routing, shared evidence, compatibility/version management and family-boundary clinical governance"
+      },
+      {
+        "evidence_class": "architectural_interpretation",
+        "label": "hierarchical shared core",
+        "representation": "hierarchical_shared_core",
+        "strength": "makes broadly shared evidence explicit rather than duplicating it silently",
+        "tradeoff": "shared-core changes regain a broad blast radius and require explicit compatibility contracts with family models"
+      }
+    ]
+  },
+  "does_not_tell_us": [
+    "Which architecture should be built. The draft ADR records open decision gates, not a recommendation.",
+    "What the system would actually cost. The cost figures are illustrative scenarios built on stated assumptions and non-target-region pricing, not a quotation.",
+    "How fast the real system would respond — its production latency. The benchmark runs models a fraction of the size of the real ones; it bounds the shape of the problem, not the answer.",
+    "Whether the candidate families are the right ones. They remain a provisional analytical baseline pending clinical review, and every federated figure inherits that caveat.",
+    "What the clinically correct Bayesian structure is. The parent counts are a sensitivity range, not a proposed model; a real network would be designed clinically, not derived from the current question ordering."
+  ],
+  "executive_summary": {
+    "bottom_line": "Phase 3 has assembled the comparison evidence but does not close the decision: 2 gate(s) remain open, and the candidate families are still a provisional baseline awaiting clinical review.",
+    "evidence_class": "derived",
+    "headline": "All three architectures are technically feasible at this scale. The decision is not about whether they fit, but about which trade-off is acceptable.",
+    "key_points": [
+      "Representing the content literally needs about 47,983 variables; treating each distinct question once needs 3,787, roughly 13 times fewer.",
+      "Splitting into the candidate families needs about 6,990 variable copies, because a question used by several families is held in each of them.",
+      "Probability-table size is driven far more by how many other variables each one depends on than by how many variables there are. That structural choice is clinical, and has not been made.",
+      "Measured inference timings are in the low milliseconds, but on models a fraction of real size, so they bound the shape of the problem rather than predicting production performance.",
+      "Illustrative running costs are identical across the deployment patterns until volume is high enough to need more than minimum capacity; at 5,000,000 assessments a month they spread to about 2.0x between cheapest and dearest, though the absolute sums remain small."
+    ]
+  },
+  "meta": {
+    "confidentiality": "Contains derived NHS Pathways analysis. Handle according to programme information governance requirements.",
+    "evidence_classes": {
+      "candidate": "A possible grouping, boundary or shared structure suggested by the evidence. Requires clinical review and architectural judgement before it means anything.",
+      "derived": "Calculated from measured values using a stated definition. The definition is given with the figure.",
+      "measured": "Counted directly in the NHS Pathways dataset."
+    },
+    "generated_utc": "2026-10-05 15:57 UTC",
+    "phase": "3",
+    "question": "How large, fast, scalable and costly would the candidate architectures be?",
+    "schema_version": "1.2",
+    "scope_note": "This report presents measured and derived evidence only. It makes no architectural recommendation: comparing monolithic against federated designs is Phase 3 work.",
+    "title": "Comparing Architectures"
+  },
+  "methodology": [
+    {
+      "definition": "One thing the model reasons about, usually corresponding to a question and its possible answers. The three representations differ only in what they treat as the same variable.",
+      "term": "Variable"
+    },
+    {
+      "definition": "For each variable, one number for every combination of its own answers and the answers of the variables it depends on. Size is the product of those, not the sum, which is why dependency count dominates.",
+      "term": "Probability table"
+    },
+    {
+      "definition": "The numbers that would actually have to be estimated. Each column of a probability table must sum to one, so one value per column follows from the others and is not independently estimated.",
+      "term": "Free parameters"
+    },
+    {
+      "definition": "How many other variables a variable depends on. Varied deliberately across a range here because the real structure would be a clinical design decision, not something derivable from the current content.",
+      "term": "Parent count"
+    },
+    {
+      "definition": "The share of a real model's variables that the benchmarked model actually contained. Coverage well below 100% means the timings describe the trend, not the destination.",
+      "term": "Benchmark coverage"
+    },
+    {
+      "definition": "A deployment shape: how many services, which models are held in memory, and how requests are routed between them. Deliberately separate from the logical question of how the model is divided.",
+      "term": "Runtime pattern"
+    },
+    {
+      "definition": "How much of the system has to be re-tested and re-released when one part changes. A primary operational difference between the patterns.",
+      "term": "Release blast radius"
+    },
+    {
+      "definition": "A scenario built from stated assumptions about volume, compute and pricing. Useful for comparing patterns against each other; not a budget figure and not a quotation.",
+      "term": "Illustrative cost"
+    },
+    {
+      "definition": "Current Phase 2 analytical candidate set. Limitation: Pending clinician-led refinement.",
+      "term": "Candidate family boundaries (assumption)"
+    },
+    {
+      "definition": "Pathway/order Tx occurrence. Limitation: Upper-bound representation, not a clinical BN design.",
+      "term": "Literal variable identity (assumption)"
+    },
+    {
+      "definition": "Distinct QuestionID. Limitation: Does not merge clinically equivalent different QuestionIDs.",
+      "term": "Deduplicated variable identity (assumption)"
+    },
+    {
+      "definition": "Catalogue answer count. Limitation: A future clinical BN may encode states differently.",
+      "term": "Variable state cardinality (measured)"
+    },
+    {
+      "definition": "[1, 2, 3, 4, 5, 6]. Limitation: Sensitivity only until a BN DAG transformation is agreed.",
+      "term": "Bayesian parent count (assumption)"
+    },
+    {
+      "definition": "3203. Limitation: Counts variable copies, not memory or runtime coordination cost.",
+      "term": "Federated shared-variable overhead (derived)"
+    }
+  ],
+  "representations": {
+    "caveat": "None of these is a proposed Bayesian network. They are three ways of counting what the current content would become, which is what makes them comparable.",
+    "definition": "A variable is one thing the model reasons about. The three options differ only in what counts as the same variable: every question occurrence in every pathway, each distinct question once, or each distinct question once per family that uses it.",
+    "evidence_class": "derived",
+    "rows": [
+      {
+        "difference_vs_deduplicated": 44196,
+        "evidence_class": "derived",
+        "interpretation": "Structural upper bound; not a proposed Bayesian DAG.",
+        "label": "One model, as the content is written",
+        "representation": "literal_monolith",
+        "technical_label": "Literal monolith",
+        "variable_count": 47983,
+        "variable_identity": "pathway_order_occurrence"
+      },
+      {
+        "difference_vs_deduplicated": 3203,
+        "evidence_class": "candidate",
+        "interpretation": "Sum of distinct QuestionIDs per provisional family; shared questions are counted once in every family that uses them.",
+        "label": "Several models, one per candidate family",
+        "representation": "provisional_federated",
+        "technical_label": "Provisional federated / hierarchical",
+        "variable_count": 6990,
+        "variable_identity": "question_id_per_candidate_family"
+      },
+      {
+        "difference_vs_deduplicated": 0,
+        "evidence_class": "derived",
+        "interpretation": "Technical QuestionID deduplication only; no clinical semantic merge.",
+        "label": "One model, questions deduplicated",
+        "representation": "deduplicated_monolith",
+        "technical_label": "Question-ID deduplicated monolith",
+        "variable_count": 3787,
+        "variable_identity": "question_id"
+      }
+    ],
+    "source": [
+      "outputs/phase3/tables/representation_summary.csv",
+      "outputs/phase3/tables/state_cardinality_summary.csv"
+    ],
+    "state_cardinality": [
+      {
+        "max": 7,
+        "median": 3.0,
+        "min": 1,
+        "p90": 4.0,
+        "scope": "literal_occurrences",
+        "variables": 47983
+      },
+      {
+        "max": 7,
+        "median": 3.0,
+        "min": 1,
+        "p90": 4.0,
+        "scope": "deduplicated_questions",
+        "variables": 3787
+      }
+    ]
+  },
+  "runtime": {
+    "blast_radius": [
+      {
+        "change_unit": "single monolithic artefact",
+        "label": "One model, always loaded",
+        "pattern_id": "monolith_always_resident",
+        "regression_scope": "whole-model structural and clinical regression",
+        "release_blast_radius": "whole model"
+      },
+      {
+        "change_unit": "family artefact",
+        "label": "All family models, always loaded",
+        "pattern_id": "federated_all_resident",
+        "regression_scope": "changed family, neighbouring families and shared contracts",
+        "release_blast_radius": "family plus boundary/shared evidence dependencies"
+      },
+      {
+        "change_unit": "family artefact",
+        "label": "Family models loaded on demand",
+        "pattern_id": "federated_lazy_loaded",
+        "regression_scope": "same as federation plus load/cache behaviour",
+        "release_blast_radius": "family plus cache/version interactions"
+      },
+      {
+        "change_unit": "family or shared-core artefact",
+        "label": "Family models plus a shared core",
+        "pattern_id": "hierarchical_shared_core",
+        "regression_scope": "family-level for local changes; all dependent families for core changes",
+        "release_blast_radius": "family-local for isolated change; broad for shared-core change"
+      }
+    ],
+    "coordination_evidence": [
+      {
+        "evidence": "one plausible family",
+        "evidence_class": "candidate+derived",
+        "meaning": "Structural routing evidence only. It indicates where a runtime router may need one versus several candidate families, but it is not a production traffic distribution.",
+        "unit": "percent of structurally scored pathways",
+        "value": 70.92
+      },
+      {
+        "evidence": "two plausible families",
+        "evidence_class": "candidate+derived",
+        "meaning": "Structural routing evidence only. It indicates where a runtime router may need one versus several candidate families, but it is not a production traffic distribution.",
+        "unit": "percent of structurally scored pathways",
+        "value": 15.58
+      },
+      {
+        "evidence": "three or more plausible families",
+        "evidence_class": "candidate+derived",
+        "meaning": "Structural routing evidence only. It indicates where a runtime router may need one versus several candidate families, but it is not a production traffic distribution.",
+        "unit": "percent of structurally scored pathways",
+        "value": 13.5
+      },
+      {
+        "evidence": "high structural ambiguity",
+        "evidence_class": "candidate+derived",
+        "meaning": "Structural routing evidence only. It indicates where a runtime router may need one versus several candidate families, but it is not a production traffic distribution.",
+        "unit": "percent of structurally scored pathways",
+        "value": 21.6
+      },
+      {
+        "evidence": "strong single-family association",
+        "evidence_class": "candidate+derived",
+        "meaning": "Structural routing evidence only. It indicates where a runtime router may need one versus several candidate families, but it is not a production traffic distribution.",
+        "unit": "percent of structurally scored pathways",
+        "value": 46.63
+      },
+      {
+        "evidence": "shared features: disposition",
+        "evidence_class": "candidate+derived",
+        "meaning": "Out of 194 measured features, 60 are family-specific. Broad sharing creates a design choice between duplication, shared model structure or evidence propagation.",
+        "unit": "broadly shared features",
+        "value": 45.0
+      },
+      {
+        "evidence": "shared features: question",
+        "evidence_class": "candidate+derived",
+        "meaning": "Out of 3787 measured features, 2370 are family-specific. Broad sharing creates a design choice between duplication, shared model structure or evidence propagation.",
+        "unit": "broadly shared features",
+        "value": 163.0
+      },
+      {
+        "evidence": "shared features: snomed",
+        "evidence_class": "candidate+derived",
+        "meaning": "Out of 297 measured features, 84 are family-specific. Broad sharing creates a design choice between duplication, shared model structure or evidence propagation.",
+        "unit": "broadly shared features",
+        "value": 65.0
+      },
+      {
+        "evidence": "shared features: symptom_discriminator",
+        "evidence_class": "candidate+derived",
+        "meaning": "Out of 469 measured features, 255 are family-specific. Broad sharing creates a design choice between duplication, shared model structure or evidence propagation.",
+        "unit": "broadly shared features",
+        "value": 33.0
+      }
+    ],
+    "evidence_class": "candidate",
+    "failure_modes": [
+      {
+        "control": "roll back whole model version; keep previous immutable artefact available",
+        "failure_mode": "model artefact fails validation or load",
+        "label": "One model, always loaded",
+        "pattern_id": "monolith_always_resident",
+        "scope": "worker cannot serve that model version"
+      },
+      {
+        "control": "versioned rollback; regression suite must cover whole model",
+        "failure_mode": "clinical/model defect in one area",
+        "label": "One model, always loaded",
+        "pattern_id": "monolith_always_resident",
+        "scope": "potential estate-wide release impact"
+      },
+      {
+        "control": "family-level rollback under a validated family-set manifest",
+        "failure_mode": "one family artefact fails validation",
+        "label": "All family models, always loaded",
+        "pattern_id": "federated_all_resident",
+        "scope": "that family can be withheld while other validated family artefacts remain usable"
+      },
+      {
+        "control": "bounded load timeout, previous-version cache, explicit fail-safe handling",
+        "failure_mode": "family artefact store/cache miss or load failure",
+        "label": "Family models loaded on demand",
+        "pattern_id": "federated_lazy_loaded",
+        "scope": "request may be delayed or family unavailable"
+      },
+      {
+        "control": "atomic compatibility manifest and rollback of shared-core/family set",
+        "failure_mode": "shared-core failure or incompatible version",
+        "label": "Family models plus a shared core",
+        "pattern_id": "hierarchical_shared_core",
+        "scope": "multiple or all families may be affected"
+      },
+      {
+        "control": "family-level rollback if compatible with current shared core",
+        "failure_mode": "single family model failure",
+        "label": "Family models plus a shared core",
+        "pattern_id": "hierarchical_shared_core",
+        "scope": "local family capability affected"
+      }
+    ],
+    "key_point": "How the model is divided and how it is deployed are separate decisions. Several smaller models does not have to mean several services: they can sit inside one. The patterns exist so that cost is attached to a deployment shape rather than to the word 'federated'.",
+    "patterns": [
+      {
+        "coordination": "none",
+        "deployment_shape": "one central inference service; model replicated per worker",
+        "label": "One model, always loaded",
+        "logical_model": "monolithic",
+        "model_residency": "whole model loaded on every active worker",
+        "pattern_id": "monolith_always_resident",
+        "routing": "no family routing after request enters inference service"
+      },
+      {
+        "coordination": "required when evidence or pathway membership spans family boundaries",
+        "deployment_shape": "one central inference service; all family models resident in each worker",
+        "label": "All family models, always loaded",
+        "logical_model": "federated",
+        "model_residency": "all family models loaded on every worker",
+        "pattern_id": "federated_all_resident",
+        "routing": "select one or more candidate families inside inference service"
+      },
+      {
+        "coordination": "fan-out may load or query several family models for ambiguous cases",
+        "deployment_shape": "one central inference service with model cache; families loaded on demand",
+        "label": "Family models loaded on demand",
+        "logical_model": "federated",
+        "model_residency": "hot families cached; cold families loaded from artefact store",
+        "pattern_id": "federated_lazy_loaded",
+        "routing": "family routing occurs before model acquisition"
+      },
+      {
+        "coordination": "explicit contract between shared layer and family models",
+        "deployment_shape": "central inference service with shared/common model layer plus family models",
+        "label": "Family models plus a shared core",
+        "logical_model": "federated_hierarchical",
+        "model_residency": "shared layer resident; family models resident or cached according to policy",
+        "pattern_id": "hierarchical_shared_core",
+        "routing": "shared evidence evaluated first or alongside family routing; one or more families then engaged"
+      }
+    ],
+    "source": [
+      "outputs/phase3/tables/runtime_patterns.csv",
+      "outputs/phase3/tables/runtime_coordination_evidence.csv",
+      "outputs/phase3/tables/runtime_failure_modes.csv",
+      "outputs/phase3/tables/runtime_change_blast_radius.csv"
+    ]
+  },
+  "status": {
+    "decision_status": "DRAFT — decision gates open",
+    "evidence_class": "derived",
+    "gates": [
+      {
+        "detail": "representation summary exists",
+        "gate": "Phase 3A representation evidence",
+        "passed": true
+      },
+      {
+        "detail": "CPT sizing output exists",
+        "gate": "Phase 3B CPT sizing evidence",
+        "passed": true
+      },
+      {
+        "detail": "benchmark results exist and are non-empty",
+        "gate": "Phase 3C benchmark evidence",
+        "passed": true
+      },
+      {
+        "detail": "runtime pattern output exists",
+        "gate": "Phase 3D runtime evidence",
+        "passed": true
+      },
+      {
+        "detail": "cost scenario output exists",
+        "gate": "Phase 3E cost evidence",
+        "passed": true
+      },
+      {
+        "detail": "target=eu-west-2, basis=us-east-1, status=illustrative_only_pending_eu-west-2_refresh",
+        "gate": "Target-region pricing refreshed",
+        "passed": false
+      },
+      {
+        "detail": "Phase 2 family refinement is still required before the federated family boundaries can be treated as clinically agreed.",
+        "gate": "Clinician-led family review complete",
+        "passed": false
+      }
+    ],
+    "gates_open": 2,
+    "gates_passed": 5,
+    "gates_total": 7,
+    "note": "A gate marked as passed means the evidence for that stage exists and was produced by this pipeline. It does not mean the evidence has been accepted, reviewed or agreed.",
+    "source": [
+      "outputs/phase3/tables/adr_decision_gates.csv"
+    ]
+  },
+  "tells_us": [
+    {
+      "text": "Treating each distinct question once rather than once per pathway takes the variable count from 47,983 to 3,787. No other choice in this analysis changes the size by as much.",
+      "title": "Deduplication is the single largest lever on size"
+    },
+    {
+      "text": "The candidate families need 6,990 variable copies against 3,787 for a single deduplicated model. The difference is the questions used by more than one family, which each family would hold its own copy of.",
+      "title": "Splitting into families duplicates shared content"
+    },
+    {
+      "text": "Adding one more dependency to each variable multiplies the probability tables by up to 4 times. The number of variables is a much weaker driver of size than how they are connected.",
+      "title": "Structure matters more than scale"
+    },
+    {
+      "text": "Under the assumptions tested, the probability tables are measured in megabytes and the inference timings in milliseconds. Size is not what distinguishes these options.",
+      "title": "Nothing here is close to a technical limit"
+    },
+    {
+      "text": "Illustrative running costs are identical across the deployment patterns until volume is high enough to need more than minimum capacity; at 5,000,000 assessments a month they spread to about 2.0x between cheapest and dearest, though the absolute sums remain small. Below that, what distinguishes the patterns is release blast radius, failure scope and version coordination — operational qualities rather than a price.",
+      "title": "Cost separates the patterns only at high volume"
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+sg_id,sg_desc,active,is_archived,pathway_count,pathways_in_graph,internal_edges,outgoing_edges,incoming_edges,internal_transition_count,outgoing_transition_count,internal_edge_percentage,total_questions_in_member_pathways,total_logic_rows,distinct_questions_in_member_pathways,combination_count,active_combination_count,discriminator_count
+1193,Immediate threats to life,True,False,24,24,24,298,72,1144,3720,7.450000,1520,6258,138,12,11,12
+1195,Non-trauma Emergency,True,False,13,13,13,117,40,598,932,10.000000,494,2063,72,6,6,6
+1218,Entry pathway,True,False,13,13,8,50,16,48,652,13.790000,241,584,53,0,0,0
+1194,Trauma Emergency,True,False,12,12,12,96,48,1792,2008,11.110000,928,4676,112,28,28,28
+1054,Diarrhoea,True,False,10,10,0,85,24,0,882,0.000000,550,2443,132,13,13,13
+1055,Diarrhoea and Vomiting,True,False,10,10,0,84,24,0,644,0.000000,552,2208,123,11,11,11
+1088,Fits Within the Last 12 Hours   ,True,False,10,10,10,10,20,588,40,50.000000,381,2131,72,16,15,16
+1179,Vomiting,True,False,10,10,4,110,16,12,1172,3.510000,723,3970,183,15,15,15
+1080,"Face, Neck Pain or Swelling",True,False,9,9,6,32,2,48,160,15.790000,405,3395,81,10,10,10
+1103,Groin Pain or Groin Swelling,True,False,8,8,0,22,26,0,142,0.000000,419,1573,103,6,6,6
+1122,"Lower Back Injury, Blunt",True,False,8,8,0,18,0,0,102,0.000000,228,740,58,12,12,12
+1039,Chest and Upper Back Pain ,True,False,7,7,11,17,29,550,132,39.290000,491,3398,192,12,12,12
+1221,Ambulance Dispatch,True,False,7,7,14,3,0,368,24,82.350000,72,409,26,0,0,0
+1000,"Abdominal or Flank Injury, Blunt",True,False,6,6,0,11,0,0,74,0.000000,147,416,47,12,12,12
+1002,"Abdominal or Flank Injury, Penetrating",True,False,6,6,0,17,0,0,160,0.000000,172,782,50,15,15,15
+1034,"Breathing Problems, Breathlessness or Wheeze",True,False,6,6,0,31,51,0,314,0.000000,291,1149,95,10,10,10
+1036,Bringing Up Blood,True,False,6,6,0,12,3,0,118,0.000000,31,94,19,3,3,3
+1045,Constipation,True,False,6,6,4,21,5,12,100,16.000000,136,714,50,3,3,3
+1047,Cough,True,False,6,6,0,28,0,0,124,0.000000,308,1608,111,5,5,5
+1065,Easy or Unexplained Bruising,True,False,6,6,0,14,35,0,32,0.000000,152,664,52,5,5,5
+1084,Fever,True,False,6,6,0,46,10,0,286,0.000000,319,1029,109,6,6,6
+1097,"Genital Injury, Blunt",True,False,6,6,0,5,6,0,16,0.000000,91,288,34,8,7,8
+1099,"Genital Injury, Penetrating",True,False,6,6,0,15,6,0,68,0.000000,146,658,43,8,7,8
+1124,"Lower Back Injury, Penetrating",True,False,6,6,0,15,0,0,144,0.000000,168,779,49,16,16,16
+1128,Lower Limb Pain or Swelling,True,False,6,6,0,22,18,0,88,0.000000,70,225,33,6,6,6
+1183,Nail Injury,True,False,6,6,4,8,2,32,32,33.330000,45,140,27,7,7,7
+1207,Reception Point,True,False,6,6,5,50,12,52,424,9.090000,375,1472,315,61,59,61
+1016,"Arm, Pain or Swelling",True,False,5,5,2,32,16,16,186,5.880000,194,1377,62,6,6,6
+1032,Breast Problems,True,False,5,5,0,10,0,0,40,0.000000,34,131,11,1,1,1
+1043,Cold or Flu,True,False,5,5,0,25,4,0,180,0.000000,353,2496,102,4,3,4
+1049,Coughing up Blood,True,False,5,5,0,15,5,0,74,0.000000,140,605,43,7,7,7
+1059,Dizziness or Vertigo,True,False,5,5,5,27,0,72,140,15.620000,190,744,92,12,12,12
+1066,Electrical Injury   ,True,False,5,5,5,0,12,256,0,100.000000,131,584,36,14,14,14
+1112,Headache,True,False,5,5,2,27,3,36,220,6.900000,240,1141,137,16,12,16
+1159,Symptoms without specific Pathway,True,False,5,5,0,58,9,0,328,0.000000,264,1149,81,6,6,6
+1162,Tiredness (Fatigue),True,False,5,5,0,24,0,0,206,0.000000,201,694,61,8,5,8
+1180,Vomiting Blood,True,False,5,5,1,16,26,8,106,5.880000,165,396,66,12,12,12
+1182,"Wrist, Hand or Finger Pain or Swelling",True,False,5,5,2,15,5,10,70,11.760000,183,1079,60,7,7,7
+1187,"Diabetes, Blood Sugar Problem",True,False,5,5,7,9,12,492,36,43.750000,306,2198,149,11,11,11
+1190,Major Trauma,True,False,5,5,4,0,17,24,0,100.000000,65,1852,16,1,1,1
+1224,Eye or Eyelid Problems,True,False,5,5,0,30,0,0,140,0.000000,5,35,2,0,0,0
+1004,Abdominal Pain,True,False,4,4,0,58,16,0,434,0.000000,247,1274,81,11,11,11
+1013,Ankle or Foot Pain or Swelling,True,False,4,4,0,24,4,0,160,0.000000,265,1108,95,11,11,11
+1014,"Arm Injury, Blunt",True,False,4,4,2,7,4,16,48,22.220000,65,295,40,7,7,7
+1030,Breast Pain,True,False,4,4,2,30,4,12,128,6.250000,94,391,41,3,3,3
+1037,"Burn, Chemical",True,False,4,4,5,1,5,60,2,83.330000,65,597,33,6,6,6
+1115,"Hip, Thigh or Buttock Pain or Swelling",True,False,4,4,0,26,6,0,156,0.000000,192,1034,58,13,12,13
+1116,Itch,True,False,4,4,0,18,4,0,328,0.000000,160,669,51,4,4,4
+1117,Knee or Lower Leg Pain or Swelling,True,False,4,4,2,24,6,48,112,7.690000,165,742,93,12,12,12
+1119,"Leg Injury, Blunt",True,False,4,4,2,6,6,16,34,25.000000,65,263,43,6,6,6
+1126,Lower Back Pain,True,False,4,4,0,30,14,0,264,0.000000,286,1980,97,10,10,10
+1130,Nasal Congestion,True,False,4,4,0,12,0,0,150,0.000000,66,248,35,6,6,6
+1135,Pain and/or Frequency Passing Urine,True,False,4,4,0,0,4,0,0,,65,440,26,3,3,3
+1137,Palpitations,True,False,4,4,5,18,3,108,88,21.740000,109,518,60,11,11,11
+1146,Sexual Problems or Concerns,True,False,4,4,0,31,0,0,170,0.000000,191,623,76,15,15,15
+1148,Sinusitis ,True,False,4,4,0,16,0,0,48,0.000000,146,1156,43,6,6,6
+1149,Skin Lumps,True,False,4,4,0,8,12,0,48,0.000000,76,728,19,1,1,1
+1151,"Skin, Minor Foreign Body",True,False,4,4,0,4,8,0,32,0.000000,92,434,29,4,4,4
+1152,"Skin, Rash",True,False,4,4,3,8,12,34,46,27.270000,156,903,109,8,8,8
+1154,Sleep Difficulties,True,False,4,4,0,14,2,0,108,0.000000,57,178,30,8,6,8
+1170,Toxic Ingestion/Inhalation/Overdose,True,False,4,4,3,8,32,22,78,27.270000,58,190,40,12,11,12
+1177,Vaginal Itch or Soreness,True,False,4,4,0,4,3,0,16,0.000000,89,339,42,8,8,8
+1181,Wound Problems,True,False,4,4,4,6,11,40,20,40.000000,134,664,50,5,5,5
+1202,"Limb, cold or colour change",True,False,4,4,0,52,0,0,376,0.000000,68,348,20,3,3,3
+1225,Skin Problems,True,False,4,4,0,41,1,0,248,0.000000,14,76,9,0,0,0
+1020,"Bites or Stings, Insect or Spider",True,False,3,3,3,2,7,52,32,60.000000,100,1152,43,7,6,7
+1023,"Bites, Snake",True,False,3,3,3,0,6,92,0,100.000000,46,838,20,3,3,3
+1024,Blisters,True,False,3,3,2,5,4,24,12,28.570000,90,394,65,6,6,6
+1025,Blood in Urine,True,False,3,3,0,1,2,0,2,0.000000,67,572,38,5,5,5
+1038,"Burn, Thermal",True,False,3,3,3,12,5,26,80,20.000000,60,451,30,5,5,5
+1040,"Chest or Upper Back Injury, Blunt",True,False,3,3,0,6,8,0,36,0.000000,75,221,38,12,12,12
+1041,"Chest or Upper Back Injury, Penetrating",True,False,3,3,1,8,8,16,76,11.110000,87,426,45,16,16,16
+1052,Dental Injury,True,False,3,3,0,7,0,0,46,0.000000,17,55,12,3,3,3
+1064,Earache,True,False,3,3,0,6,6,0,12,0.000000,82,258,41,7,7,7
+1068,"Eye Injury, Blunt",True,False,3,3,0,7,0,0,42,0.000000,115,427,74,8,8,8
+1069,"Eye Injury, Penetrating",True,False,3,3,0,13,0,0,88,0.000000,105,535,60,9,9,9
+1071,Eye Splash Injury or Minor Foreign Body,True,False,3,3,3,3,3,26,12,50.000000,61,235,27,7,7,7
+1072,"Eye, Painful",True,False,3,3,0,5,11,0,20,0.000000,71,279,37,8,8,8
+1073,"Eye, Red or Irritable",True,False,3,3,0,8,9,0,32,0.000000,64,201,32,6,6,6
+1074,"Eye, Sticky or Watery",True,False,3,3,0,6,5,0,60,0.000000,37,112,24,5,5,5
+1076,"Eye, Visual Loss or Disturbance",True,False,3,3,0,10,14,0,46,0.000000,149,528,95,14,14,14
+1101,Genital Problems,True,False,3,3,0,3,9,0,16,0.000000,160,791,101,13,13,13
+1110,"Head, Facial or Neck Injury, Blunt",True,False,3,3,1,6,26,28,42,14.290000,117,496,77,9,8,9
+1111,"Head, Facial or Neck Injury, Penetrating",True,False,3,3,1,10,30,42,78,9.090000,151,847,93,10,10,10
+1114,Heat Exposure,True,False,3,3,3,0,11,64,0,100.000000,57,220,30,7,7,7
+1131,Nosebleeds without injury,True,False,3,3,0,0,0,0,0,,55,365,23,3,3,3
+1132,"Nosebleeds, Traumatic",True,False,3,3,0,6,0,0,20,0.000000,99,414,63,6,6,6
+1143,Rectal Bleeding,True,False,3,3,0,9,36,0,54,0.000000,97,479,76,11,11,11
+1144,"Rectal Pain, Swelling, Lump or Itch",True,False,3,3,0,0,4,0,0,,75,318,41,4,4,4
+1147,Shoulder Pain,True,False,3,3,1,12,4,8,82,7.690000,121,578,67,9,9,9
+1158,Sunburn,True,False,3,3,3,0,5,64,0,100.000000,63,254,35,10,10,10
+1169,Toothache Without Dental Injury,True,False,3,3,1,13,14,4,284,7.140000,59,211,32,5,2,5
+1174,Vaginal Bleeding,True,False,3,3,2,7,18,6,72,22.220000,138,1145,87,9,9,9
+1176,Vaginal Discharge,True,False,3,3,1,4,13,6,56,20.000000,144,748,89,8,8,8
+1178,Vaginal Swelling,True,False,3,3,0,4,6,0,44,0.000000,63,326,35,4,4,4
+1189,Dying,True,False,3,3,1,32,3,8,144,3.030000,7,50,3,1,0,1
+1192,Repeat Prescription,True,False,3,3,0,0,2,0,0,,19,104,11,3,2,3
+1206,NHS Pathways In House Clinician,True,False,3,3,2,7,43,28,64,22.220000,94,365,75,10,6,10
+1223,Bites and Stings,True,False,3,3,0,15,9,0,84,0.000000,8,27,4,0,0,0
+1226,Dental Problems,True,False,3,3,0,10,1,0,40,0.000000,3,10,2,0,0,0
+1006,"Abdominal, Flank, Groin or Back Pain or Swelling",True,False,2,2,0,22,4,0,126,0.000000,64,246,33,7,7,7
+1009,Alcohol Intoxication,True,False,2,2,2,0,6,124,0,100.000000,55,498,43,10,10,10
+1010,Allergic Reaction,True,False,2,2,1,5,26,86,34,16.670000,62,585,62,7,7,7
+1011,"Ankle or Foot Injury, Blunt",True,False,2,2,0,5,8,0,26,0.000000,60,299,38,7,7,7
+1012,"Ankle or Foot Injury, Penetrating",True,False,2,2,0,7,6,0,34,0.000000,76,390,46,10,10,10
+1015,"Arm Injury, Penetrating",True,False,2,2,0,7,4,0,42,0.000000,73,297,44,10,10,10
+1018,Behaviour Change,True,False,2,2,2,13,4,66,208,13.330000,165,1126,139,28,26,28
+1021,"Bites, Animal",True,False,2,2,2,4,3,40,24,33.330000,75,671,42,10,10,10
+1022,"Bites, Human",True,False,2,2,0,0,5,0,0,,28,117,16,3,3,3
+1026,Breast Discharge,True,False,2,2,0,1,8,0,4,0.000000,27,135,21,1,1,1
+1028,Breast Lump,True,False,2,2,0,2,4,0,8,0.000000,25,109,17,1,1,1
+1067,External Fixation Problems,True,False,2,2,0,4,2,0,18,0.000000,35,118,21,7,7,7
+1077,"Eye, Yellow",True,False,2,2,0,2,5,0,20,0.000000,16,55,12,2,2,2
+1078,Eyelid Problems,True,False,2,2,0,2,5,0,10,0.000000,51,183,34,9,9,9
+1083,Falls Without Injury,True,False,2,2,1,6,0,6,30,14.290000,26,98,23,4,4,4
+1085,"Finger or Thumb Injury, Blunt",True,False,2,2,0,5,4,0,28,0.000000,50,153,32,6,6,6
+1086,"Finger or Thumb Injury, Penetrating",True,False,2,2,0,3,4,0,12,0.000000,54,230,35,7,7,7
+1090,"Flank or Side Pain, Pregnant",True,False,2,2,2,11,3,12,112,15.380000,107,348,55,12,12,12
+1091,"Foreign Body, Ear",True,False,2,2,0,0,2,0,0,,27,114,18,3,2,3
+1092,"Foreign Body, Ingested or Inhaled",True,False,2,2,2,2,1,4,8,50.000000,51,175,28,6,6,6
+1093,"Foreign Body, Nose",True,False,2,2,0,0,2,0,0,,27,95,15,3,3,3
+1094,"Foreign Body, Penis",True,False,2,2,0,0,2,0,0,,32,124,20,3,3,3
+1095,"Foreign Body, Rectum",True,False,2,2,0,2,4,0,4,0.000000,28,92,18,4,4,4
+1096,"Foreign Body, Vaginal",True,False,2,2,0,6,2,0,32,0.000000,52,232,41,8,8,8
+1107,"Hand or Wrist Injury, Blunt",True,False,2,2,0,7,4,0,32,0.000000,59,186,36,5,5,5
+1108,"Hand or Wrist Injury, Penetrating",True,False,2,2,0,7,6,0,68,0.000000,83,531,51,13,12,13
+1118,Labour and Childbirth   ,True,False,2,2,2,0,49,256,0,100.000000,134,1666,74,15,15,15
+1120,"Leg Injury, Penetrating",True,False,2,2,0,7,2,0,40,0.000000,75,359,48,9,9,9
+1129,Mouth Ulcers,True,False,2,2,0,5,0,0,28,0.000000,35,148,24,3,3,3
+1136,"Pain, Frequency and/or Difficulty Passing Urine",True,False,2,2,0,0,0,0,0,,22,118,11,1,1,1
+1141,Probable Stroke   ,True,False,2,2,2,0,4,132,0,100.000000,101,455,58,11,10,11
+1153,"Skin, Yellow",True,False,2,2,2,6,5,12,16,25.000000,49,227,31,5,5,5
+1156,Sore Throat or Hoarse Voice,True,False,2,2,1,13,0,4,74,7.140000,101,437,68,5,5,5
+1161,Teething,True,False,2,2,0,0,1,0,0,,14,67,10,1,1,1
+1164,"Toe Injury, Blunt",True,False,2,2,0,5,4,0,28,0.000000,48,163,32,7,7,7
+1165,"Toe Injury, Penetrating",True,False,2,2,0,3,4,0,12,0.000000,48,209,31,6,6,6
+1166,Toe Pain or Swelling,True,False,2,2,0,2,4,0,16,0.000000,42,189,24,3,3,3
+1173,Urinary catheter Problems,True,False,2,2,0,3,1,0,6,0.000000,49,153,34,5,5,5
+1191,Health and Social Information,True,False,2,2,1,18,12,12,170,5.260000,50,183,48,14,12,14
+1204,Failed Contraception,True,False,2,2,0,0,7,0,0,,20,81,16,4,4,4
+1217,Stroke Like Symptoms,True,False,2,2,0,6,5,0,24,0.000000,22,49,22,0,0,0
+1219,"HCP, Bed Bureau, Interhospital Transfers",True,False,2,2,2,5,32,72,52,28.570000,86,423,65,0,0,0
+1227,"Wound Problems, Plaster Casts, Tubes and Metal Appliances",True,False,2,2,0,11,0,0,72,0.000000,9,42,5,0,0,0
+1228,Self-Harm,True,False,2,2,2,3,2,18,8,40.000000,30,118,28,0,0,0
+1236,ED Triage Injury,True,False,2,2,0,8,2,0,48,0.000000,244,1584,123,0,0,0
+1001,"Abdominal or Flank Injury, Blunt, Pregnant",True,False,1,1,1,6,1,8,62,14.290000,28,85,28,13,13,13
+1003,"Abdominal or Flank Injury, Penetrating, Pregnant",True,False,1,1,1,7,1,56,78,12.500000,34,208,34,15,15,15
+1005,"Abdominal Pain, Pregnant, Over 20 Weeks",True,False,1,1,1,8,6,8,46,11.110000,38,136,38,11,11,11
+1007,Absent or Missed Period,True,False,1,1,0,2,2,0,24,0.000000,18,92,18,1,1,1
+1008,"Acne, Spots and Pimples",True,False,1,1,0,0,2,0,0,,6,17,6,2,2,2
+1017,Athlete's Foot ,True,False,1,1,0,3,3,0,18,0.000000,7,20,7,2,2,2
+1027,"Breast Discharge, Pregnant",True,False,1,1,0,0,1,0,0,,10,52,10,1,1,1
+1029,"Breast Lump, Pregnant",True,False,1,1,0,0,2,0,0,,6,25,6,1,1,1
+1031,"Breast Pain, Pregnant",True,False,1,1,0,0,2,0,0,,7,30,7,1,1,1
+1033,Breastfeeding Problems,True,False,1,1,0,0,0,0,0,,10,37,10,1,1,1
+1035,"Breathing Problems, Breathlessness or Wheeze, Pregnant",True,False,1,1,0,1,3,0,40,0.000000,32,267,32,6,6,6
+1042,Child Safeguard/Protection or Vulnerable Adult Concern,True,False,1,1,1,0,30,14,0,100.000000,17,80,17,8,7,8
+1044,"Cold or Flu, Pregnant",True,False,1,1,0,2,2,0,10,0.000000,31,205,31,1,1,1
+1046,"Constipation, Pregnant",True,False,1,1,1,2,2,2,10,33.330000,25,158,25,3,3,3
+1048,"Cough, Pregnant",True,False,1,1,0,0,2,0,0,,28,149,28,2,2,2
+1051,Dental Bleeding,True,False,1,1,0,8,6,0,240,0.000000,28,295,28,5,5,5
+1056,"Diarrhoea or Vomiting, Pregnant, Over 20 Weeks",True,False,1,1,1,8,1,6,74,11.110000,51,200,51,12,12,12
+1057,Difficulty Passing Urine,True,False,1,1,0,0,1,0,0,,7,30,7,2,2,2
+1058,Difficulty Swallowing,True,False,1,1,0,4,0,0,18,0.000000,29,135,29,7,7,7
+1060,Dizziness or Vertigo Pregnant,True,False,1,1,1,3,2,14,18,25.000000,54,263,54,10,9,10
+1063,Ear Discharge or Ear Wax,True,False,1,1,0,5,0,0,36,0.000000,29,128,29,5,5,5
+1081,Falls or Faints Without Injury,True,False,1,1,1,7,0,52,76,12.500000,96,571,96,18,14,18
+1089,Flank or Side Pain,True,False,1,1,0,3,2,0,32,0.000000,91,505,91,9,9,9
+1098,"Genital Injury, Blunt, Pregnant",True,False,1,1,1,4,1,8,52,20.000000,21,68,21,9,9,9
+1100,"Genital Injury, Penetrating, Pregnant, Over 20 weeks",True,False,1,1,1,5,1,56,58,16.670000,28,158,28,12,11,12
+1104,"Groin Pain or Groin Swelling, Pregnant, Under 20 Weeks",True,False,1,1,0,1,2,0,18,0.000000,45,191,45,5,5,5
+1105,"Groin Pain or Swelling, Pregnant, Over 20 Weeks",True,False,1,1,1,7,2,6,48,12.500000,57,187,57,11,11,11
+1106,Hair loss,True,False,1,1,0,1,0,0,4,0.000000,13,48,13,2,2,2
+1109,Head Lice ,True,False,1,1,0,0,3,0,0,,7,17,7,2,2,2
+1113,"Headache, Pregnant",True,False,1,1,0,10,2,0,140,0.000000,94,727,94,15,13,15
+1121,Locked Jaw,True,False,1,1,0,1,0,0,4,0.000000,13,41,13,3,3,3
+1123,"Lower Back Injury, Blunt, Pregnant",True,False,1,1,1,6,2,8,62,14.290000,27,96,27,12,12,12
+1125,"Lower Back Injury, Penetrating, Pregnant",True,False,1,1,1,6,1,56,70,14.290000,31,193,31,17,15,17
+1127,"Lower Back Pain, Pregnant, Over 20 weeks",True,False,1,1,1,7,1,6,56,12.500000,56,187,56,12,12,12
+1133,Numbness or Pins and Needles,True,False,1,1,1,14,0,4,100,6.670000,58,277,58,8,8,8
+1134,"Other Dental Problems - Fillings, Crowns Bridges, Appliances etc",True,False,1,1,0,2,4,0,14,0.000000,18,90,18,4,4,4
+1138,"Palpitations, Pregnant",True,False,1,1,1,6,3,28,32,14.290000,46,295,46,10,10,10
+1139,Plaster Cast Problems,True,False,1,1,0,0,2,0,0,,14,43,14,5,5,5
+1140,Predetermined Management Plan,True,False,1,1,1,5,26,24,16,16.670000,47,169,47,15,14,15
+1145,Scratches and Grazes,True,False,1,1,1,1,1,12,4,50.000000,27,112,27,6,6,6
+1150,"Skin, Glued",True,False,1,1,0,0,1,0,0,,7,16,7,3,3,3
+1155,Social or Domestic Emergency,True,False,1,1,1,3,26,14,40,25.000000,39,159,39,13,8,13
+1157,Stoma Problems,True,False,1,1,0,6,0,0,192,0.000000,49,403,49,3,3,3
+1160,"Tattoos, Birthmarks or Moles",True,False,1,1,0,1,4,0,2,0.000000,16,93,16,2,2,2
+1163,"Tiredness (Fatigue), Pregnant",True,False,1,1,0,3,2,0,64,0.000000,41,278,41,8,5,8
+1168,Toothache After Dental Injury,True,False,1,1,0,3,3,0,24,0.000000,31,224,31,5,5,5
+1171,Tube and Drain Problems,True,False,1,1,0,3,2,0,10,0.000000,33,163,33,13,9,13
+1172,"Unwell, Under 1 Year Old",True,False,1,1,0,4,0,0,36,0.000000,2,10,2,10,10,10
+1175,"Vaginal Bleeding, Pregnant",True,False,1,1,1,3,13,30,30,25.000000,25,158,25,10,10,10
+1184,"Abdominal Pain, Rectal Bleeding, Pregnant Over 20 Weeks",True,False,1,1,1,8,1,8,58,11.110000,49,257,49,12,12,12
+1185,"Drug, solvent, alcohol misuse",True,False,1,1,0,3,2,0,40,0.000000,33,109,33,12,8,12
+1186,Worsening known Mental health problem,True,False,1,1,1,4,4,14,40,20.000000,46,165,46,12,12,12
+1188,Deceased,True,False,1,1,1,3,2,26,144,25.000000,20,240,20,2,2,2
+1196,Declared Seizure Warning,True,False,1,1,1,1,0,88,42,50.000000,13,168,13,7,1,7
+1197,Faecal Incontinence,True,False,1,1,0,11,0,0,100,0.000000,22,130,22,3,3,3
+1198,"Stings, Water Creature",True,False,1,1,1,0,4,122,0,100.000000,38,871,38,5,5,5
+1200,Frequent caller,True,False,1,1,1,28,24,24,176,3.450000,6,99,6,6,0,6
+1201,Reduced Fetal Movements,True,False,1,1,0,5,0,0,22,0.000000,24,62,24,6,6,6
+1203,Mental Health Problem,True,False,1,1,0,8,0,0,72,0.000000,10,31,10,13,0,13
+1205,Hearing Problems or Blocked Ear,True,False,1,1,0,4,0,0,28,0.000000,26,188,26,4,4,4
+1208,Pubic Lice,True,False,1,1,0,1,2,0,4,0.000000,4,14,4,1,1,1
+1209,Scabies,True,False,1,1,0,2,3,0,12,0.000000,5,16,5,1,1,1
+1210,Tremor,True,False,1,1,0,13,0,0,100,0.000000,21,106,21,2,2,2
+1211,"Eye splash injury, chemical",True,False,1,1,0,1,3,0,2,0.000000,8,39,8,3,3,3
+1212,Implantable Cardioverter Defibrillator Shock,True,False,1,1,1,2,12,6,8,33.330000,18,48,18,6,6,6
+1213,Hiccups,True,False,1,1,0,7,0,0,56,0.000000,7,32,7,2,2,2
+1222,Healthcare Professional Callback,True,False,1,1,0,0,1,0,0,,24,80,24,0,0,0
+1229,Dental Module,True,False,1,1,0,5,0,0,28,0.000000,50,243,50,0,0,0
+1230,Cold Exposure,True,False,1,1,1,3,5,34,18,25.000000,41,248,41,0,0,0
+1231,Drowning Incident,True,False,1,1,1,6,12,64,86,14.290000,45,260,45,0,0,0
+1234,"Covid 19, NHS Pathway response",False,False,1,1,1,4,21,40,70,20.000000,108,751,108,0,0,0
+1235,Loss of Taste or Smell,False,False,1,1,1,8,0,2,116,11.110000,40,136,40,0,0,0
+1237,ED Triage Chest Pain,False,False,1,1,0,0,1,0,0,,54,191,54,0,0,0
+1238,ED Triage Stroke Symptoms,False,False,1,1,0,0,1,0,0,,28,77,28,0,0,0
+1239,ED Triage Pre-Entry Pathway,True,False,1,1,0,1,0,0,8,0.000000,26,88,26,0,0,0
+1240,ED Triage Mental Health,False,False,1,1,0,0,1,0,0,,68,267,68,0,0,0
+1241,Urinary Problems,True,False,1,1,0,9,5,0,90,0.000000,45,149,45,0,0,0
+1242,ED ENT Triage,False,False,1,1,0,0,2,0,0,,42,163,42,0,0,0
+1243,ED Eye Triage,False,False,1,1,0,0,2,0,0,,37,139,37,0,0,0
+1,"abdominal, flank or genital injury",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+2,abdominal pain/gastrointestinal problems,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+3,"abdominal, back, groin or flank pain or swelling, under 5",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+4,alcohol Intoxication,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+5,allergic reaction,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+6,"altered consciousness, under 5",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+7,"ankle, foot or toe injury",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+8,arm Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+9,arm or hand pain or swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+10,neurological problems ,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+11,bites or stings,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+12,urinary/catheter problems,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+13,breast pain or discharge problems,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+14,"breast lump, size or enlargement problems",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+15,Breast Pain,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+16,breastfeeding problems,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+17,ENT/respiratory problems,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+18,burn,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+19,chest or upper back injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+20,"chest, upper back pain or palpitations",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+21,child protection/vulnerable adult concerns,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+22,Cold or Flu-Like Symptoms,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+23,Constipation,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+24,Cough,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+25,deceased,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+26,dental problems,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+27,dental Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+28,"Dental Problems, Other",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+29,diabetic emergency/hypoglycaemia,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+30,Diarrhoea and Vomiting,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+31,Diarrhoea,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+32,Difficulty Passing Urine or Catheter Problems,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+33,Difficulty Swallowing,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+34,dizziness/vertigo and falls (non trauma),False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+35,Earache,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+36,Elbow Pain or Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+37,electrical injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+38,entry and pre-entry flow,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+39,environmental threat,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+40,eye injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+41,eye problems,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+42,eye splash injury or minor foreign body,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+43,"Eye, Other Problems",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+44,"Eye, Painful",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+45,"Eye, Red",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+46,"Eye, Sticky, Watery",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+47,"Eye, Visual Disturbance or Loss",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+48,"face, neck pain or swelling",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+49,Falls or Faints without Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+50,fever,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+51,fighting for breath,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+52,"hand, wrist or finger injury ",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+53,Finger Pain or Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+54,Fingernail Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+55,fits within the last 12 hours,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+56,Flank or Side Pain,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+57,Foot or Ankle Pain or Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+58,"foreign body, ear",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+59,"foreign body, ingestion",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+60,"foreign body, inhalation",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+61,"foreign body, nose",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+62,"foreign body, penile",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+63,"foreign body, rectal",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+64,"foreign body, throat",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+65,"obstetric, gynaecological problems",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+66,Genital Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+67,"genital problems, male",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+68,GP urgent referral,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+69,Gradual Altered Consciousness,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+70,Groin Pain or Groin Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+71,Hand or Wrist Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+72,Hand or Wrist Pain or Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+73,"head, facial or neck injury",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+74,headache,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+75,heat exposure,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+76,Hip or Buttock Pain or Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+77,Knee Pain or Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+78,labour and childbirth,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+79,leg injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+80,leg or foot pain or swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+81,lower back injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+82,lower back pain,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+83,major bleeding,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+84,major trauma,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+85,Mouth Ulcers,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+86,nail injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+87,Nasal Congestion,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+88,Nosebleeds,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+89,other symptoms,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+90,Pain Passing Urine,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+91,Palpitations,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+92,Rectal Bleeding,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+93,Rectal Lump or Itch,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+94,"skin, abrasions or minor foreign body",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+95,self-harm,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+96,shoulder pain,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+97,Sinus Discomfort or Congestion,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+98,"skin, nail or hair problems",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+99,"skin, glued",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+100,"Skin, Minor Foreign Body",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+101,"Skin, Rash",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+102,Sore Throat,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+103,special patient instructions,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+104,stopped breathing,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+105,stroke ,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+106,"tattoos, birthmarks or moles",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+107,Thigh or Calf Pain or Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+108,"tiredness, fatigue, sleep problems",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+109,Toe Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+110,Toe Pain or Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+111,Toenail Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+112,Toothache after Dental Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+113,Toothache without Dental Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+114,toxic ingestion or inhalation,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+115,unconscious or fitting now,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+116,"unwell, infant and neonate",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+117,Vaginal Bleeding,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+118,Vaginal Discharge,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+119,Vaginal Itch or Soreness,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+120,Vaginal Swellings,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+121,Vomiting Blood,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+122,Vomiting,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+123,wound complications,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+125,social and domestic issues,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+126,"wounds, tubes and plaster problems",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1019,"Behaviour or Mood disturbance, Pregnant",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1050,Deliberate Self-Harm,True,False,0,0,0,0,0,0,0,,0,0,0,6,6,6
+1053,Diabetic Hypoglycaemia  ,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1061,Drowsiness,False,True,0,0,0,0,0,0,0,,0,0,0,15,0,15
+1062,"Drowsiness, Pregnant",False,True,0,0,0,0,0,0,0,,0,0,0,10,0,10
+1070,Eye or Eyelid Problems,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1075,"Eye, Sticky, Watery",False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1079,Face and Neck Pain or Swelling,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1082,"Falls or Faints Without Injury, Pregnant",False,True,0,0,0,0,0,0,0,,0,0,0,9,0,9
+1087,Fingernail Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1102,GP Urgent and Bed Bureau,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1142,Rash,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1167,Toenail Injury,False,True,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1216,Other,True,False,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1232,Limb Injury Penetrating,False,False,0,0,0,0,0,0,0,,0,0,0,0,0,0
+1233,Limb Injury Blunt,False,False,0,0,0,0,0,0,0,,0,0,0,0,0,0

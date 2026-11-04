@@ -1,0 +1,29 @@
+metric,category,definition
+PathwayCount,measured,Distinct pathways assigned to the family. A pathway may be counted in several families of the same strategy where that strategy is overlapping.
+UniqueQuestionCount,derived,"Distinct Tx triage questions referenced by the triage logic of the family's pathways. Cx care-advice and Dx disposition node references are excluded, because only Tx nodes are answerable questions."
+UniqueSymptomDiscriminatorCount,derived,Distinct SdId values reachable through an answer that one of the family's pathways offers.
+UniqueSnomedCount,derived,Distinct SNOMED concept ids assigned to an answer that one of the family's pathways offers.
+UniqueDispositionCount,derived,"Distinct disposition codes the family can reach, unioned over both routes: a T1-T4 transfer resolving to a DispositionCode, and a Dx disposition node in the pathway's own triage logic."
+InternalEdges,derived,Directed pathway-transfer edges whose source and target are both family members. Self loops count as internal.
+ExternalEdges,derived,"Directed edges leaving the family: source is a member, target is not. Targets outside the family-membership scope (an archived pathway taking part in a resolved transfer) count as external rather than being dropped."
+ExternalEdgesIncoming,derived,Directed edges entering the family from a non-member.
+InternalEdgePercentage,derived,"internal / (internal + external outgoing) * 100. The share of edges leaving the family's pathways that stay inside the family. NaN when the family's pathways have no outgoing or internal edges at all, rather than a misleading 0 or 100. Same definition as Phase 1."
+ExternalEdgePercentage,derived,100 - InternalEdgePercentage.
+AverageInternalDegree,derived,"Mean over the family's pathways of the number of distinct family members the pathway is adjacent to in either direction. Self loops excluded, since a pathway is not its own neighbour."
+AverageExternalDegree,derived,Mean over the family's pathways of the number of distinct non-member pathways the pathway is adjacent to in either direction.
+NumberOfBoundaryPathways,derived,"Family members with at least one edge, in either direction, to a non-member."
+PercentageBoundaryPathways,derived,NumberOfBoundaryPathways / PathwayCount * 100.
+SharedQuestionPercentage,derived,"Share of the family's unique Tx questions that are used by at least two of the family's pathways. Measures internal re-use, i.e. how much of the family's question vocabulary is genuinely shared rather than pathway-specific. It is NOT a measure of sharing with other families -- that is the overlap matrix."
+SharedSdPercentage,derived,Share of the family's unique symptom discriminators used by at least two of its pathways.
+SharedSnomedPercentage,derived,Share of the family's unique SNOMED concepts used by at least two of its pathways.
+MeanPairwiseQuestionJaccard,derived,"Mean question-set Jaccard similarity over all pairs of the family's pathways. Pairs sharing nothing contribute 0, so a family of unrelated pathways with one similar pair does not look cohesive."
+MeanPairwiseSdJaccard,derived,"As above, over symptom-discriminator sets."
+MeanPairwiseSnomedJaccard,derived,"As above, over SNOMED concept sets."
+DominantSymptomGroupShare,derived,"Share of the family's pathways carrying the family's most common SymptomGroupId. Pathways with no symptom group are counted in the denominator, so a family of mostly-unclassified pathways cannot score highly."
+DominantClinicalAreaShare,derived,"Share of the family's pathways mapped to the family's most common clinical area. Clinical areas overlap, so these shares do not sum to 1 across areas."
+AmbiguityScore,derived,"Per pathway: second-best family affinity divided by best family affinity, under the weights in routing.weights. 0 means an unambiguous single-family association; 1 means two families are equally plausible."
+MaxFeatureJaccard,derived,"Per family pair: the largest of the question, symptom-discriminator, SNOMED and disposition Jaccard values."
+MaxDiscriminatingJaccard,derived,"The same maximum with dispositions excluded. Under 200 disposition codes exist and most families reach a similar subset, so disposition Jaccard has the highest median of any dimension and cannot distinguish family pairs. This is the measure the overlap band is read from by default (overlap_thresholds.band_measure), and the one the scorecard's overlap columns aggregate."
+MaxOverlapWithAnotherFamily,derived,"Per family: the largest overlap with any other family of the same strategy, measured on whichever of the two maxima above configuration selects. Reported alongside MeanOverlapWithOtherFamilies because one very similar neighbour and many slightly similar ones are different problems."
+SizeBalanceVsStrategyMedian,derived,PathwayCount divided by the median family size of the same strategy. Above 1 means the family is larger than typical for its strategy.
+DuplicationIfFederated,derived,"Per shared-core candidate feature: FamilyCount - 1, i.e. how many extra copies the feature would need if every family using it held its own. A structural count, not a sizing estimate; sizing is Phase 3."

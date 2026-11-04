@@ -1,0 +1,4 @@
+Representation,Label,CandidateVariableCount,VariableIdentity,EvidenceClass,Interpretation,ComparedWithDeduplicatedMonolith
+literal_monolith,Literal monolith,47983,pathway_order_occurrence,derived,Structural upper bound; not a proposed Bayesian DAG.,44196
+deduplicated_monolith,Question-ID deduplicated monolith,3787,question_id,derived,Technical QuestionID deduplication only; no clinical semantic merge.,0
+provisional_federated,Provisional federated / hierarchical,6990,question_id_per_candidate_family,candidate,Sum of distinct QuestionIDs per provisional family; shared questions are counted once in every family that uses them.,3203

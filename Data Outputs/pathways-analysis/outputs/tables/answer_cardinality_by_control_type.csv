@@ -1,0 +1,4 @@
+control_type,control_type_desc,question_count,mean_answer_count,max_answer_count
+1,Single select,2724,3.530000,7
+3,Set variable,1205,1.000000,1
+4,Evaluate variable,562,2.090000,7

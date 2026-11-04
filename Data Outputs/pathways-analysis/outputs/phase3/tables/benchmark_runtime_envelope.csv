@@ -1,0 +1,5 @@
+Representation,ModelScope,MaxBenchmarkNodes,MaxFractionOfActualModel,ObservedQueryP95MinMs,ObservedQueryP95MaxMs,ObservedSerializedModelMaxMiB,ObservedPythonPeakMaxMiB,EvidenceClass,Caveat
+deduplicated_monolith,whole_model,250,0.066015,2.348,119.867,0.602,1.728,benchmark,Envelope spans different parent/state cases. It is not a single latency estimate and must be read with benchmark_results.csv.
+literal_monolith,whole_model,250,0.00521,3.636,186.868,0.602,1.728,benchmark,Envelope spans different parent/state cases. It is not a single latency estimate and must be read with benchmark_results.csv.
+provisional_federated,largest_family,250,0.306373,3.337,201.06,0.602,1.728,benchmark,Envelope spans different parent/state cases. It is not a single latency estimate and must be read with benchmark_results.csv.
+provisional_federated,median_family,37,1.0,3.476,46.752,0.084,0.277,benchmark,Envelope spans different parent/state cases. It is not a single latency estimate and must be read with benchmark_results.csv.

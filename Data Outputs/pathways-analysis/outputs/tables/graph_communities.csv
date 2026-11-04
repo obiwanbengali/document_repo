@@ -1,0 +1,2515 @@
+algorithm,pathway_key,community_id,pathway_id,pathway_title
+greedy_modularity,PA168,0,PA168,Reception Point 1
+greedy_modularity,PA169,0,PA169,Reception Point 2
+greedy_modularity,PA24,0,PA24,Labour and Childbirth 1st Party 
+greedy_modularity,PN5121,0,PN5121,Self-Harm
+greedy_modularity,PN5131,0,PN5131,Chemical Eye Splash
+greedy_modularity,PN5134,0,PN5134,"Burn, Chemical"
+greedy_modularity,PT201,0,PT201,"Emergency  Ambulance Closure, Wound, Foreign Body"
+greedy_modularity,PT204,0,PT204,"Emergency  Ambulance Closure, Wound Bleeding, Limb, With or Without Foreign Body"
+greedy_modularity,PT205,0,PT205,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso"
+greedy_modularity,PT218,0,PT218,"Emergency Ambulance Closure, Toxic Ingestion and Inhalation"
+greedy_modularity,PT22,0,PT22,"Emergency  Ambulance Closure, Trauma"
+greedy_modularity,PT23,0,PT23,"Emergency Ambulance Closure, Trauma, Spinal Injury"
+greedy_modularity,PT231,0,PT231,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso, Spinal Injury"
+greedy_modularity,PT302,0,PT302,"Non-emergency Ambulance Closure, Wound Bleeding, Limb"
+greedy_modularity,PT31,0,PT31,"Non-emergency Ambulance Closure, Trauma"
+greedy_modularity,PT33,0,PT33,"Assistance needed at home due to inability to get off the floor, trauma"
+greedy_modularity,PT404,0,PT404,"Emergency Ambulance Closure, Wound Bleeding, Limb, No Foreign Body"
+greedy_modularity,PT500,0,PT500,Reception Point Foreign Body Closure
+greedy_modularity,PT501,0,PT501,Reception Point Professional Referral Closure
+greedy_modularity,PT7,0,PT7,Repeat Prescription
+greedy_modularity,PW1010,0,PW1010,"Genital Injury, Penetrating"
+greedy_modularity,PW1012,0,PW1012,"Genital Injury, Penetrating"
+greedy_modularity,PW1014,0,PW1014,"Genital Injury, Penetrating, Pregnant, Over 20 weeks"
+greedy_modularity,PW1077,0,PW1077,Breast Pain
+greedy_modularity,PW1079,0,PW1079,Breast Pain
+greedy_modularity,PW1089,0,PW1089,Breast Discharge
+greedy_modularity,PW1092,0,PW1092,"Breast Discharge, Pregnant"
+greedy_modularity,PW1098,0,PW1098,Eye Splash Injury or Minor Foreign Body
+greedy_modularity,PW1120,0,PW1120,"Genital Injury, Blunt, Pregnant"
+greedy_modularity,PW1222,0,PW1222,"Leg Injury, Blunt"
+greedy_modularity,PW1224,0,PW1224,"Leg Injury, Penetrating"
+greedy_modularity,PW1234,0,PW1234,"Leg Injury, Penetrating"
+greedy_modularity,PW1259,0,PW1259,"Skin, Minor Foreign Body"
+greedy_modularity,PW1260,0,PW1260,"Hand or Wrist Injury, Penetrating"
+greedy_modularity,PW1264,0,PW1264,"Finger or Thumb Injury, Penetrating"
+greedy_modularity,PW1267,0,PW1267,"Hand or Wrist Injury, Blunt"
+greedy_modularity,PW1270,0,PW1270,"Finger or Thumb Injury, Blunt"
+greedy_modularity,PW1277,0,PW1277,"Foreign Body, Ear"
+greedy_modularity,PW1282,0,PW1282,"Toe Injury, Blunt"
+greedy_modularity,PW1283,0,PW1283,"Toe Injury, Blunt"
+greedy_modularity,PW1284,0,PW1284,"Toe Injury, Penetrating"
+greedy_modularity,PW1301,0,PW1301,"Skin, Glued"
+greedy_modularity,PW1319,0,PW1319,"Foreign Body, Nose"
+greedy_modularity,PW1328,0,PW1328,"Skin, Minor Foreign Body"
+greedy_modularity,PW1332,0,PW1332,Eye Splash Injury or Minor Foreign Body
+greedy_modularity,PW1359,0,PW1359,Eye Splash Injury or Minor Foreign Body
+greedy_modularity,PW1381,0,PW1381,"Abdominal or Flank Injury, Blunt"
+greedy_modularity,PW1382,0,PW1382,"Abdominal or Flank Injury, Blunt"
+greedy_modularity,PW1383,0,PW1383,"Abdominal or Flank Injury, Penetrating"
+greedy_modularity,PW1384,0,PW1384,"Abdominal or Flank Injury, Penetrating"
+greedy_modularity,PW1389,0,PW1389,"Burn, Sun"
+greedy_modularity,PW1391,0,PW1391,"Chest or Upper Back Injury, Blunt"
+greedy_modularity,PW1393,0,PW1393,"Chest or Upper Back Injury, Penetrating"
+greedy_modularity,PW1405,0,PW1405,"Genital Injury, Blunt"
+greedy_modularity,PW1407,0,PW1407,"Genital Injury, Penetrating"
+greedy_modularity,PW1408,0,PW1408,"Genital Injury, Penetrating"
+greedy_modularity,PW1419,0,PW1419,"Lower Back Injury, Blunt"
+greedy_modularity,PW1420,0,PW1420,"Lower Back Injury, Blunt"
+greedy_modularity,PW1421,0,PW1421,"Lower Back Injury, Penetrating"
+greedy_modularity,PW1422,0,PW1422,"Lower Back Injury, Penetrating"
+greedy_modularity,PW1480,0,PW1480,"Burn, Chemical"
+greedy_modularity,PW1501,0,PW1501,"Finger or Thumb Injury, Blunt"
+greedy_modularity,PW1504,0,PW1504,"Hand or Wrist Injury, Blunt"
+greedy_modularity,PW1507,0,PW1507,"Finger or Thumb Injury, Penetrating"
+greedy_modularity,PW1510,0,PW1510,"Hand or Wrist Injury, Penetrating"
+greedy_modularity,PW1512,0,PW1512,"Ankle or Foot Injury, Blunt"
+greedy_modularity,PW1516,0,PW1516,"Ankle or Foot Injury, Blunt"
+greedy_modularity,PW1518,0,PW1518,"Ankle or Foot Injury, Penetrating"
+greedy_modularity,PW1522,0,PW1522,"Ankle or Foot Injury, Penetrating"
+greedy_modularity,PW1526,0,PW1526,"Toe Injury, Penetrating"
+greedy_modularity,PW1528,0,PW1528,"Foreign Body, Ear"
+greedy_modularity,PW1529,0,PW1529,"Foreign Body, Nose"
+greedy_modularity,PW1543,0,PW1543,Self-Harm
+greedy_modularity,PW1570,0,PW1570,Fingernail Injury
+greedy_modularity,PW1571,0,PW1571,Fingernail Injury
+greedy_modularity,PW1575,0,PW1575,Bites and Stings
+greedy_modularity,PW1576,0,PW1576,"Bites, Human"
+greedy_modularity,PW1577,0,PW1577,"Bites, Animal"
+greedy_modularity,PW1578,0,PW1578,"Bites, Snake"
+greedy_modularity,PW1579,0,PW1579,"Bites and Stings, Insect or Spider"
+greedy_modularity,PW1580,0,PW1580,Bites and Stings
+greedy_modularity,PW1582,0,PW1582,"Bites, Animal"
+greedy_modularity,PW1583,0,PW1583,"Bites, Snake"
+greedy_modularity,PW1584,0,PW1584,"Bites and Stings, Insect or Spider"
+greedy_modularity,PW1585,0,PW1585,Bites and Stings
+greedy_modularity,PW1586,0,PW1586,"Bites, Human"
+greedy_modularity,PW1588,0,PW1588,"Bites, Snake"
+greedy_modularity,PW1589,0,PW1589,"Bites and Stings, Insect or Spider"
+greedy_modularity,PW1590,0,PW1590,"Scratches, Grazes and Minor Wounds"
+greedy_modularity,PW1591,0,PW1591,"Leg Injury, Blunt"
+greedy_modularity,PW1592,0,PW1592,Nail Injury
+greedy_modularity,PW1593,0,PW1593,Toenail Injury
+greedy_modularity,PW1594,0,PW1594,Toenail Injury
+greedy_modularity,PW1595,0,PW1595,Nail Injury
+greedy_modularity,PW1596,0,PW1596,"Lower Back Injury, Blunt"
+greedy_modularity,PW1597,0,PW1597,"Lower Back Injury, Blunt"
+greedy_modularity,PW1605,0,PW1605,Breast Problems
+greedy_modularity,PW1609,0,PW1609,Breast Lump
+greedy_modularity,PW1618,0,PW1618,"Skin, Blisters"
+greedy_modularity,PW1619,0,PW1619,"Skin, Blisters"
+greedy_modularity,PW1625,0,PW1625,Trauma Blisters
+greedy_modularity,PW1753,0,PW1753,"Skin, Minor Foreign Body"
+greedy_modularity,PW1754,0,PW1754,"Skin, Minor Foreign Body"
+greedy_modularity,PW1758,0,PW1758,Water Creature Stings
+greedy_modularity,PW1857,0,PW1857,Pathways Injury Module
+greedy_modularity,PW1859,0,PW1859,ED Injury Triage
+greedy_modularity,PW1863,0,PW1863,ED Injury Child
+greedy_modularity,PW500,0,PW500,"Abdominal or Flank Injury, Blunt"
+greedy_modularity,PW502,0,PW502,"Abdominal or Flank Injury, Blunt"
+greedy_modularity,PW503,0,PW503,"Abdominal or Flank Injury, Blunt"
+greedy_modularity,PW505,0,PW505,"Abdominal or Flank Injury, Blunt"
+greedy_modularity,PW506,0,PW506,"Abdominal or Flank Injury, Blunt, Pregnant"
+greedy_modularity,PW508,0,PW508,"Abdominal or Flank Injury, Penetrating"
+greedy_modularity,PW510,0,PW510,"Abdominal or Flank Injury, Penetrating"
+greedy_modularity,PW511,0,PW511,"Abdominal or Flank Injury, Penetrating"
+greedy_modularity,PW513,0,PW513,"Abdominal or Flank Injury, Penetrating"
+greedy_modularity,PW514,0,PW514,"Abdominal or Flank Injury, Penetrating, Pregnant"
+greedy_modularity,PW564,0,PW564,"Burn, Chemical"
+greedy_modularity,PW566,0,PW566,"Burn, Chemical"
+greedy_modularity,PW590,0,PW590,"Chest or Upper Back Injury, Blunt"
+greedy_modularity,PW596,0,PW596,"Chest or Upper Back Injury, Penetrating"
+greedy_modularity,PW598,0,PW598,"Chest or Upper Back Injury, Penetrating"
+greedy_modularity,PW660,0,PW660,"Eye Injury, Blunt"
+greedy_modularity,PW662,0,PW662,"Eye Injury, Blunt"
+greedy_modularity,PW790,0,PW790,"Lower Back Injury, Blunt"
+greedy_modularity,PW792,0,PW792,"Lower Back Injury, Blunt"
+greedy_modularity,PW793,0,PW793,"Lower Back Injury, Blunt"
+greedy_modularity,PW795,0,PW795,"Lower Back Injury, Blunt"
+greedy_modularity,PW796,0,PW796,"Lower Back Injury, Blunt, Pregnant"
+greedy_modularity,PW798,0,PW798,"Lower Back Injury, Penetrating"
+greedy_modularity,PW800,0,PW800,"Lower Back Injury, Penetrating"
+greedy_modularity,PW801,0,PW801,"Lower Back Injury, Penetrating"
+greedy_modularity,PW803,0,PW803,"Lower Back Injury, Penetrating"
+greedy_modularity,PW804,0,PW804,"Lower Back Injury, Penetrating, Pregnant "
+greedy_modularity,PW832,0,PW832,"Genital Injury, Blunt"
+greedy_modularity,PW834,0,PW834,"Genital Injury, Penetrating"
+greedy_modularity,PW835,0,PW835,"Genital Injury, Penetrating"
+greedy_modularity,PW880,0,PW880,Accidental Poisoning/Inhalation
+greedy_modularity,PW881,0,PW881,Accidental Poisoning/Inhalation
+greedy_modularity,PW895,0,PW895,"Arm Injury, Blunt"
+greedy_modularity,PW896,0,PW896,"Arm Injury, Blunt"
+greedy_modularity,PW902,0,PW902,"Arm Injury, Penetrating"
+greedy_modularity,PW904,0,PW904,"Arm Injury, Penetrating"
+greedy_modularity,PW987,0,PW987,"Burn, Sun"
+greedy_modularity,PW989,0,PW989,"Burn, Sun"
+greedy_modularity,PA23,1,PA23,Recent Fits 1st Party
+greedy_modularity,PA64,1,PA64,Recent Fits 1st Party
+greedy_modularity,PN5004,1,PN5004,Toxic Ingestion/Inhalation
+greedy_modularity,PN5125,1,PN5125,Toxic Ingestion/Inhalation
+greedy_modularity,PN5129,1,PN5129,Gastrointestinal Clinician Closure 
+greedy_modularity,PT207,1,PT207,"Emergency Ambulance Closure, Toxic Ingestion"
+greedy_modularity,PT5,1,PT5,Medication
+greedy_modularity,PT505,1,PT505,Viral Haemorrhagic Fever Closure
+greedy_modularity,PT507,1,PT507,Bleeding from Stoma
+greedy_modularity,PT511,1,PT511,"Black, Tarry or Red, Maroon Stools "
+greedy_modularity,PT6,1,PT6,Non-emergency Ambulance Closure
+greedy_modularity,PW1000,1,PW1000,Heat Exposure
+greedy_modularity,PW1118,1,PW1118,"Genital Injury, Blunt"
+greedy_modularity,PW1158,1,PW1158,Constipation
+greedy_modularity,PW1159,1,PW1159,Constipation
+greedy_modularity,PW1160,1,PW1160,"Constipation, Pregnant"
+greedy_modularity,PW1161,1,PW1161,Constipation
+greedy_modularity,PW1162,1,PW1162,Constipation
+greedy_modularity,PW1230,1,PW1230,Other Symptoms
+greedy_modularity,PW1323,1,PW1323,Mouth Ulcers
+greedy_modularity,PW1345,1,PW1345,Other Symptoms
+greedy_modularity,PW1346,1,PW1346,Other Symptoms
+greedy_modularity,PW1348,1,PW1348,Other Symptoms
+greedy_modularity,PW1349,1,PW1349,Other Symptoms
+greedy_modularity,PW1354,1,PW1354,Vaginal Swellings
+greedy_modularity,PW1413,1,PW1413,Heat Exposure
+greedy_modularity,PW1521,1,PW1521,Mouth Ulcers
+greedy_modularity,PW1530,1,PW1530,"Foreign Body, Penis"
+greedy_modularity,PW1553,1,PW1553,Diarrhoea and Vomiting
+greedy_modularity,PW1554,1,PW1554,Diarrhoea and Vomiting
+greedy_modularity,PW1555,1,PW1555,Diarrhoea and Vomiting
+greedy_modularity,PW1556,1,PW1556,Diarrhoea and Vomiting
+greedy_modularity,PW1561,1,PW1561,Vaginal Itch or Soreness
+greedy_modularity,PW1562,1,PW1562,Vaginal Itch or Soreness
+greedy_modularity,PW1563,1,PW1563,Diarrhoea and Vomiting
+greedy_modularity,PW1565,1,PW1565,Genital Problems
+greedy_modularity,PW1566,1,PW1566,Genital Problems
+greedy_modularity,PW1635,1,PW1635,"Hip, Thigh or Buttock Pain or Swelling"
+greedy_modularity,PW1636,1,PW1636,"Hip, Thigh or Buttock Pain or Swelling"
+greedy_modularity,PW1637,1,PW1637,"Hip, Thigh or Buttock Pain or Swelling"
+greedy_modularity,PW1638,1,PW1638,"Hip, Thigh or Buttock Pain or Swelling"
+greedy_modularity,PW1651,1,PW1651,Bringing Up Blood
+greedy_modularity,PW1652,1,PW1652,Bringing Up Blood
+greedy_modularity,PW1653,1,PW1653,Bringing Up Blood
+greedy_modularity,PW1654,1,PW1654,Bringing Up Blood
+greedy_modularity,PW1663,1,PW1663,Bringing Up Blood
+greedy_modularity,PW1666,1,PW1666,Vomiting Blood
+greedy_modularity,PW1667,1,PW1667,Vomiting Blood
+greedy_modularity,PW1674,1,PW1674,"Diarrhoea or Vomiting, Pregnant, Over 20 Weeks"
+greedy_modularity,PW1676,1,PW1676,Absent or Missed Period
+greedy_modularity,PW1678,1,PW1678,Hair Loss
+greedy_modularity,PW1685,1,PW1685,Sexual Concerns
+greedy_modularity,PW1698,1,PW1698,Sexual Concerns
+greedy_modularity,PW1701,1,PW1701,Sleep Difficulties
+greedy_modularity,PW1703,1,PW1703,Fever
+greedy_modularity,PW1705,1,PW1705,Cough 
+greedy_modularity,PW1708,1,PW1708,Diarrhoea and Vomiting
+greedy_modularity,PW1711,1,PW1711,Nasal Congestion
+greedy_modularity,PW1712,1,PW1712,Locked Jaw
+greedy_modularity,PW1715,1,PW1715,Diarrhoea
+greedy_modularity,PW1717,1,PW1717,"Breathing Problems, Breathlessness or Wheeze"
+greedy_modularity,PW1718,1,PW1718,Constipation
+greedy_modularity,PW1719,1,PW1719,Stoma Problems
+greedy_modularity,PW1720,1,PW1720,Bringing Up Blood 
+greedy_modularity,PW1723,1,PW1723,External Fixation
+greedy_modularity,PW1759,1,PW1759,Loss of Bowel Control
+greedy_modularity,PW1764,1,PW1764,Tremor
+greedy_modularity,PW1775,1,PW1775,Hiccups
+greedy_modularity,PW1800,1,PW1800,Unwell under 29 days
+greedy_modularity,PW1801,1,PW1801,Unwell 29 days to under 16 weeks
+greedy_modularity,PW1802,1,PW1802,Unwell 16 weeks to 6 months
+greedy_modularity,PW1803,1,PW1803,Unwell over 6 months
+greedy_modularity,PW1804,1,PW1804,Unwell Infant
+greedy_modularity,PW1805,1,PW1805,Unwell Infant
+greedy_modularity,PW1828,1,PW1828,Age and Gender
+greedy_modularity,PW1829,1,PW1829,Critical Illness Assessment 
+greedy_modularity,PW1830,1,PW1830,Vomiting and/or Nausea with Abdominal Pain
+greedy_modularity,PW1831,1,PW1831,Vomiting and/or Nausea with Abdominal Pain
+greedy_modularity,PW1832,1,PW1832,Vomiting and/or Nausea with Abdominal Pain
+greedy_modularity,PW1833,1,PW1833,Vomiting and/or Nausea with Abdominal Pain
+greedy_modularity,PW1834,1,PW1834,Diarrhoea with Abdominal Pain
+greedy_modularity,PW1835,1,PW1835,Diarrhoea with Abdominal Pain
+greedy_modularity,PW1836,1,PW1836,Diarrhoea with Abdominal Pain
+greedy_modularity,PW1837,1,PW1837,Diarrhoea with Abdominal Pain
+greedy_modularity,PW1838,1,PW1838,Diarrhoea and Vomiting with Abdominal Pain
+greedy_modularity,PW1839,1,PW1839,Diarrhoea and Vomiting with Abdominal Pain
+greedy_modularity,PW1840,1,PW1840,Diarrhoea and Vomiting with Abdominal Pain
+greedy_modularity,PW1841,1,PW1841,Diarrhoea and Vomiting with Abdominal Pain
+greedy_modularity,PW1844,1,PW1844,Groin Pain or Groin Swelling with Abdominal Pain
+greedy_modularity,PW1845,1,PW1845,Groin Pain or Groin Swelling with Abdominal Pain
+greedy_modularity,PW516,1,PW516,Abdominal Pain
+greedy_modularity,PW517,1,PW517,Abdominal Pain
+greedy_modularity,PW518,1,PW518,"Abdominal, Flank, Groin or Back Pain or Swelling"
+greedy_modularity,PW519,1,PW519,Abdominal Pain
+greedy_modularity,PW520,1,PW520,Abdominal Pain
+greedy_modularity,PW521,1,PW521,"Abdominal, Flank, Groin or Back Pain or Swelling"
+greedy_modularity,PW574,1,PW574,Cold or Flu Symptoms
+greedy_modularity,PW628,1,PW628,Diarrhoea
+greedy_modularity,PW629,1,PW629,Diarrhoea
+greedy_modularity,PW630,1,PW630,Diarrhoea
+greedy_modularity,PW631,1,PW631,Diarrhoea
+greedy_modularity,PW632,1,PW632,Diarrhoea
+greedy_modularity,PW708,1,PW708,Fever
+greedy_modularity,PW709,1,PW709,Fever
+greedy_modularity,PW710,1,PW710,Fever
+greedy_modularity,PW711,1,PW711,Fever
+greedy_modularity,PW712,1,PW712,Fever
+greedy_modularity,PW716,1,PW716,Flank or Side Pain
+greedy_modularity,PW728,1,PW728,Groin Pain or Groin Swelling
+greedy_modularity,PW729,1,PW729,Groin Pain or Groin Swelling
+greedy_modularity,PW731,1,PW731,Groin Pain or Groin Swelling
+greedy_modularity,PW754,1,PW754,Headache
+greedy_modularity,PW760,1,PW760,Constipation
+greedy_modularity,PW782,1,PW782,Lower Back Pain
+greedy_modularity,PW783,1,PW783,Lower Back Pain
+greedy_modularity,PW785,1,PW785,Lower Back Pain
+greedy_modularity,PW786,1,PW786,Lower Back Pain
+greedy_modularity,PW808,1,PW808,Unwell
+greedy_modularity,PW846,1,PW846,Rectal Bleeding
+greedy_modularity,PW848,1,PW848,Rectal Bleeding
+greedy_modularity,PW856,1,PW856,Sore Throat
+greedy_modularity,PW917,1,PW917,Vaginal Discharge
+greedy_modularity,PW928,1,PW928,Vomiting Blood
+greedy_modularity,PW929,1,PW929,Vomiting Blood
+greedy_modularity,PW930,1,PW930,Vomiting Blood
+greedy_modularity,PW936,1,PW936,Vomiting and/or Nausea
+greedy_modularity,PW937,1,PW937,Vomiting and/or Nausea
+greedy_modularity,PW938,1,PW938,Vomiting and/or Nausea
+greedy_modularity,PW939,1,PW939,Vomiting and/or Nausea
+greedy_modularity,PW940,1,PW940,Vomiting and/or Nausea
+greedy_modularity,PW998,1,PW998,Heat Exposure
+greedy_modularity,PA1,2,PA1,Stopped Breathing 3rd Party 
+greedy_modularity,PA107,2,PA107,Early Exit - Dying
+greedy_modularity,PA110,2,PA110,Social & information SPA/OOH Version
+greedy_modularity,PA111,2,PA111,"Immediate threats to life, Ambulance version, 3rd party"
+greedy_modularity,PA112,2,PA112,"Immediate threats to life, SPA/OOH version, 3rd party"
+greedy_modularity,PA113,2,PA113,"Trauma emergency, 3rd party"
+greedy_modularity,PA115,2,PA115,"Immediate threats to life, Ambulance version, 1st party  "
+greedy_modularity,PA116,2,PA116,"Immediate threats to life, SPA/OOH version, 1st party"
+greedy_modularity,PA117,2,PA117,"Trauma emergency, 1st party"
+greedy_modularity,PA119,2,PA119,"Immediate threats to life, Ambulance version, 3rd party"
+greedy_modularity,PA120,2,PA120,"Immediate threats to life, SPA/OOH version, 3rd party"
+greedy_modularity,PA121,2,PA121,"Trauma emergency, 3rd Party"
+greedy_modularity,PA123,2,PA123,"Immediate threats to life, Ambulance version, 1st party"
+greedy_modularity,PA124,2,PA124,"Immediate threats to life, SPA/OOH version, 1st party"
+greedy_modularity,PA125,2,PA125,"Trauma emergency, 1st Party"
+greedy_modularity,PA127,2,PA127,"Immediate threats to life, Ambulance version, 3rd party"
+greedy_modularity,PA128,2,PA128,"Immediate threats to life, SPA/OOH version, 3rd party"
+greedy_modularity,PA129,2,PA129,"Trauma emergency, 3rd Party"
+greedy_modularity,PA13,2,PA13,Environmental Threat 3rd Party
+greedy_modularity,PA131,2,PA131,"Immediate threats to life, Ambulance version, 1st party"
+greedy_modularity,PA132,2,PA132,"Immediate threats to life, SPA/OOH version, 1st party"
+greedy_modularity,PA133,2,PA133,"Trauma emergency, 1st Party"
+greedy_modularity,PA135,2,PA135,"Immediate threats to life, Ambulance version, 3rd party"
+greedy_modularity,PA136,2,PA136,"Immediate threats to life, SPA/OOH version, 3rd party"
+greedy_modularity,PA137,2,PA137,"Trauma emergency, 3rd Party"
+greedy_modularity,PA139,2,PA139,"Immediate threats to life, Ambulance version, 1st party"
+greedy_modularity,PA14,2,PA14,Labour and Childbirth 3rd Party 
+greedy_modularity,PA140,2,PA140,"Immediate threats to life, SPA/OOH version, 1st party"
+greedy_modularity,PA141,2,PA141,"Trauma emergency, 1st Party"
+greedy_modularity,PA143,2,PA143,"Immediate threats to life, Ambulance version"
+greedy_modularity,PA144,2,PA144,"Immediate threats to life, SPA/OOH version"
+greedy_modularity,PA145,2,PA145,Trauma emergency
+greedy_modularity,PA147,2,PA147,"Immediate threats to life, Ambulance version"
+greedy_modularity,PA148,2,PA148,"Immediate threats to life, SPA/OOH version"
+greedy_modularity,PA149,2,PA149,Trauma emergency
+greedy_modularity,PA151,2,PA151,"Immediate threats to life, Ambulance version"
+greedy_modularity,PA152,2,PA152,"Immediate threats to life, SPA/OOH version"
+greedy_modularity,PA153,2,PA153,Trauma emergency
+greedy_modularity,PA155,2,PA155,"Immediate threats to life, Ambulance version"
+greedy_modularity,PA156,2,PA156,"Immediate threats to life, SPA/OOH version"
+greedy_modularity,PA157,2,PA157,Trauma emergency
+greedy_modularity,PA159,2,PA159,Health Information
+greedy_modularity,PA16,2,PA16,Multiple Self-Harm 3rd Party
+greedy_modularity,PA162,2,PA162,Frequent Caller
+greedy_modularity,PA164,2,PA164,Early Exit - Dying
+greedy_modularity,PA165,2,PA165,Early Exit - Dying
+greedy_modularity,PA17,2,PA17,Electrical Injury 3rd Party
+greedy_modularity,PA217,2,PA217,Drowning Incident Within 24 hours
+greedy_modularity,PA218,2,PA218,"Choking on liquids now, infants"
+greedy_modularity,PA22,2,PA22,Environmental Threat 1st Party 
+greedy_modularity,PA25,2,PA25,"Major Bleeding, 1st & 3rd Party"
+greedy_modularity,PA26,2,PA26,Major Trauma 1st Party 
+greedy_modularity,PA27,2,PA27,Multiple Self-Harm 1st Party
+greedy_modularity,PA4,2,PA4,Major Trauma 3rd Party 
+greedy_modularity,PA40,2,PA40,Electrical Injury 3rd Party
+greedy_modularity,PA44,2,PA44,Major Trauma 3rd Party 
+greedy_modularity,PA45,2,PA45,Stopped Breathing 3rd Party 
+greedy_modularity,PA48,2,PA48,Major Trauma 3rd Party 
+greedy_modularity,PA5,2,PA5,Electrical Injury 1st Party
+greedy_modularity,PA53,2,PA53,Stopped Breathing 3rd Party 
+greedy_modularity,PA65,2,PA65,Electrical Injury 1st Party
+greedy_modularity,PA7,2,PA7,Fit or Seizure
+greedy_modularity,PA70,2,PA70,Major Trauma 1st Party 
+greedy_modularity,PA79,2,PA79,"Trapped with End of Call Safety, 3rd Party"
+greedy_modularity,PA80,2,PA80,"Trapped with End of Call Safety, 1st Party"
+greedy_modularity,PA85,2,PA85,Electrical Injury 3rd Party
+greedy_modularity,PA89,2,PA89,Choking
+greedy_modularity,PA90,2,PA90,Choking
+greedy_modularity,PA92,2,PA92,Choking
+greedy_modularity,PA99,2,PA99,Predetermined management Plan
+greedy_modularity,PEE5,2,PEE5,Early Exit (PaCCS)
+greedy_modularity,PFA1,2,PFA1,Calling About Self
+greedy_modularity,PFA3,2,PFA3,Calling About Someone Else
+greedy_modularity,PFC1,2,PFC1,Calling About Self
+greedy_modularity,PFC3,2,PFC3,Calling About Someone Else
+greedy_modularity,PFI,2,PFI,Calling About Someone Else
+greedy_modularity,PFT,2,PFT,Calling About Someone Else
+greedy_modularity,PHCP,2,PHCP,Calling About Someone Else
+greedy_modularity,PMA1,2,PMA1,Calling About Self
+greedy_modularity,PMA3,2,PMA3,Calling About Someone Else
+greedy_modularity,PMC1,2,PMC1,Calling About Self
+greedy_modularity,PMC3,2,PMC3,Calling About Someone Else
+greedy_modularity,PMI,2,PMI,Calling About Someone Else
+greedy_modularity,PMT,2,PMT,Calling About Someone Else
+greedy_modularity,PN5126,2,PN5126,Child Safeguard/Protection or Vulnerable Adult Concern
+greedy_modularity,PN5130,2,PN5130,Failed Contraception Clinician Assessment
+greedy_modularity,PT11,2,PT11,"Emergency Ambulance Closure, Trauma"
+greedy_modularity,PT335,2,PT335,Trauma care advice
+greedy_modularity,PT504,2,PT504,"Unconsciousness, Closure"
+greedy_modularity,PT510,2,PT510,Emergency CPR Pathway
+greedy_modularity,PW110,2,PW110,HCP and Bed Bureau
+greedy_modularity,PW111,2,PW111,GP Urgent and Bed Bureau Entry
+greedy_modularity,PW112,2,PW112,GP Urgent and Bed Bureau Entry
+greedy_modularity,PW113,2,PW113,GP Urgent and Bed Bureau Entry
+greedy_modularity,PW114,2,PW114,GP Urgent and Bed Bureau Entry
+greedy_modularity,PW115,2,PW115,GP Urgent and Bed Bureau Entry
+greedy_modularity,PW116,2,PW116,GP Urgent and Bed Bureau Cardiac Closure
+greedy_modularity,PW1669,2,PW1669,Transfer Between Health Units
+greedy_modularity,PW1687,2,PW1687,Social or Domestic Emergency
+greedy_modularity,PW1810,2,PW1810,Healthcare Professional (HCP) Callback
+greedy_modularity,PW1811,2,PW1811,Clinical Hub Closure
+greedy_modularity,PW1812,2,PW1812,Senior Clinician Module Entry
+greedy_modularity,PW1821,2,PW1821,Clinical Hub Closure - Mental Health
+greedy_modularity,PW1824,2,PW1824,CHEST PAIN PATHWAY FOR IUC SG PICK UP ONLY
+greedy_modularity,PW1825,2,PW1825,PROBABLE STROKE OR TIA PATHWAY FOR IUC SG PICK UP ONLY
+greedy_modularity,PW1826,2,PW1826,ALLERGIC REACTION PATHWAY FOR IUC SG PICK UP ONLY
+greedy_modularity,PW1848,2,PW1848,PaCCS Ambulance Dispatch
+greedy_modularity,PW580,2,PW580,"Burn, Thermal"
+greedy_modularity,PW582,2,PW582,"Burn, Thermal"
+greedy_modularity,PW588,2,PW588,"Chest or Upper Back Injury, Blunt"
+greedy_modularity,PW925,2,PW925,"Burn, Thermal"
+greedy_modularity,PA100,3,PA100,"Declared Diabetes Blood Sugar Problem, 3rd party"
+greedy_modularity,PA101,3,PA101,"Declared Diabetes Blood Sugar Problem, 1st party"
+greedy_modularity,PA104,3,PA104,Declared Diabetes Blood Sugar Problem
+greedy_modularity,PA114,3,PA114,"Non-trauma emergency, 3rd party"
+greedy_modularity,PA118,3,PA118,"Non-trauma emergency, 1st party"
+greedy_modularity,PA122,3,PA122,"Non-trauma emergency, 3rd Party"
+greedy_modularity,PA126,3,PA126,"Non-trauma emergency, 1st Party"
+greedy_modularity,PA130,3,PA130,"Non-trauma emergency, 3rd Party"
+greedy_modularity,PA134,3,PA134,"Non-trauma emergency, 1st Party"
+greedy_modularity,PA138,3,PA138,"Non-trauma emergency, 3rd Party"
+greedy_modularity,PA142,3,PA142,"Non-trauma emergency, 1st Party"
+greedy_modularity,PA146,3,PA146,Non-trauma emergency
+greedy_modularity,PA150,3,PA150,Non-trauma emergency
+greedy_modularity,PA154,3,PA154,Non-trauma emergency
+greedy_modularity,PA158,3,PA158,Non-trauma emergency
+greedy_modularity,PA170,3,PA170,Declared ICD (Implantable Cardioverter Defibrillator) Shock
+greedy_modularity,PA171,3,PA171,Stroke-like Symptoms
+greedy_modularity,PA18,3,PA18,Fighting for Breath 1st Party 
+greedy_modularity,PA19,3,PA19,Recent Fits 3rd Party
+greedy_modularity,PA21,3,PA21,Chest and Upper Back Pain
+greedy_modularity,PA212,3,PA212,Chest and Upper Back Pain
+greedy_modularity,PA213,3,PA213,Chest and Upper Back Pain
+greedy_modularity,PA214,3,PA214,Chest and Upper Back pain
+greedy_modularity,PA215,3,PA215,Declared Blood Sugar Problem
+greedy_modularity,PA216,3,PA216,Hypoglycaemia Management
+greedy_modularity,PA219,3,PA219,Chest or Upper Back Pain Under 35 Years 
+greedy_modularity,PA21PAN,3,PA21PAN,Chest and Upper Back Pain Pandemic Flu
+greedy_modularity,PA29,3,PA29,Probable Stroke or TIA 1st Party 
+greedy_modularity,PA36,3,PA36,Recent Fits 3rd Party
+greedy_modularity,PA41,3,PA41,Fighting for Breath 3rd Party
+greedy_modularity,PA42,3,PA42,Recent Fits 3rd Party
+greedy_modularity,PA51,3,PA51,Recent Fits 3rd Party
+greedy_modularity,PA55,3,PA55,Fighting for Breath 3rd Party
+greedy_modularity,PA57,3,PA57,Recent Fits 3rd Party
+greedy_modularity,PA6,3,PA6,Fighting for Breath 3rd Party
+greedy_modularity,PA71,3,PA71,Fighting for Breath 1st Party 
+greedy_modularity,PA72,3,PA72,Recent Fits 1st Party
+greedy_modularity,PA73,3,PA73,Recent Fits 1st Party
+greedy_modularity,PA78,3,PA78,Recent Fits 3rd Party
+greedy_modularity,PA87,3,PA87,Cardiac Medication Closure
+greedy_modularity,PA9,3,PA9,Probable Stroke or TIA 3rd Party
+greedy_modularity,PA93,3,PA93,Recovery From Successful Cardio-Pulmonary Resuscitation
+greedy_modularity,PT213,3,PT213,"Ambulance Closure, Stroke"
+greedy_modularity,PT418,3,PT418,Diabetic Hypoglycaemic Closure
+greedy_modularity,PT506,3,PT506,Emergency Tracheostomy or Laryngectomy
+greedy_modularity,PT515,3,PT515,Health Alert Palpitations
+greedy_modularity,PW1028,3,PW1028,Palpitations
+greedy_modularity,PW1029,3,PW1029,Palpitations
+greedy_modularity,PW1030,3,PW1030,Palpitations
+greedy_modularity,PW1031,3,PW1031,Palpitations
+greedy_modularity,PW1032,3,PW1032,"Palpitations, Pregnant"
+greedy_modularity,PW1034,3,PW1034,"Object, Ingested or Inhaled"
+greedy_modularity,PW1076,3,PW1076,Breast Pain
+greedy_modularity,PW1078,3,PW1078,Breast Pain
+greedy_modularity,PW1080,3,PW1080,"Breast Pain, Pregnant"
+greedy_modularity,PW1083,3,PW1083,Breast Lump
+greedy_modularity,PW1086,3,PW1086,"Breast Lump, Pregnant"
+greedy_modularity,PW1090,3,PW1090,Breast Discharge
+greedy_modularity,PW1140,3,PW1140,Shoulder Pain
+greedy_modularity,PW1164,3,PW1164,Arm Pain or Swelling
+greedy_modularity,PW1166,3,PW1166,Arm Pain or Swelling
+greedy_modularity,PW1496,3,PW1496,Difficulty Swallowing
+greedy_modularity,PW1544,3,PW1544,"Face, Neck Pain or Swelling"
+greedy_modularity,PW1545,3,PW1545,"Face, Neck Pain or Swelling"
+greedy_modularity,PW1559,3,PW1559,Vaginal Itch or Soreness
+greedy_modularity,PW1567,3,PW1567,Catheter Problems
+greedy_modularity,PW1598,3,PW1598,Face and Neck Pain or Swelling Over 25yrs
+greedy_modularity,PW1599,3,PW1599,Face and Neck Pain or Swelling Over 25yrs
+greedy_modularity,PW1600,3,PW1600,Face and Neck Pain or Swelling Under 25yrs
+greedy_modularity,PW1601,3,PW1601,Face and Neck Pain or Swelling Under 25yrs
+greedy_modularity,PW1603,3,PW1603,Breast Problems
+greedy_modularity,PW1604,3,PW1604,Breast Problems
+greedy_modularity,PW1606,3,PW1606,Breast Problems
+greedy_modularity,PW1614,3,PW1614,"Wrist, Hand or Finger Pain or Swelling"
+greedy_modularity,PW1615,3,PW1615,"Wrist, Hand or Finger Pain or Swelling"
+greedy_modularity,PW1683,3,PW1683,Numbness or Unusual Feelings in the Skin
+greedy_modularity,PW1746,3,PW1746,Diabetes Blood Sugar Problem (Declared)
+greedy_modularity,PW1819,3,PW1819,Ambulance Dispatch Cardiac Closure
+greedy_modularity,PW1823,3,PW1823,Cold Exposure
+greedy_modularity,PW1858,3,PW1858,"Emergency or Urgent Treament Centre, Self-triage"
+greedy_modularity,PW1860,3,PW1860,ED Triage Pre-Entry Pathway
+greedy_modularity,PW1861,3,PW1861,ED Chest Pain Triage
+greedy_modularity,PW1862,3,PW1862,ED Stroke Symptoms Triage
+greedy_modularity,PW1864,3,PW1864,Self Triage Child Illness 
+greedy_modularity,PW1865,3,PW1865,Urinary Problems
+greedy_modularity,PW1866,3,PW1866,ED Triage Mental Health
+greedy_modularity,PW1867,3,PW1867,ED Eye Triage
+greedy_modularity,PW1868,3,PW1868,ED Ear Nose Throat Triage
+greedy_modularity,PW636,3,PW636,Dizziness or Vertigo
+greedy_modularity,PW639,3,PW639,Dizziness or Vertigo
+greedy_modularity,PW643,3,PW643,Dizziness or Vertigo Pregnant
+greedy_modularity,PW644,3,PW644,"Passing Urine, Associated Pain, Frequency or Smell"
+greedy_modularity,PW645,3,PW645,"Passing Urine, Associated Pain, Frequency or Smell"
+greedy_modularity,PW647,3,PW647,"Passing Urine, Associated Pain, Frequency or Smell"
+greedy_modularity,PW648,3,PW648,"Passing Urine, Associated Pain, Frequency or Smell"
+greedy_modularity,PW700,3,PW700,"Falls, Faints or Blackouts or Unable to get up without Injury"
+greedy_modularity,PW752,3,PW752,Headache
+greedy_modularity,PW755,3,PW755,Headache
+greedy_modularity,PW758,3,PW758,"Headache, Pregnant"
+greedy_modularity,PW886,3,PW886,Difficulty Passing Urine
+greedy_modularity,PW894,3,PW894,"Arm Injury, Blunt"
+greedy_modularity,PW897,3,PW897,"Arm Injury, Blunt"
+greedy_modularity,PW961,3,PW961,Blood in Urine
+greedy_modularity,PW962,3,PW962,Blood in Urine
+greedy_modularity,PN5133,4,PN5133,"Failed Contraception and Retained Condom or Cap, Clinician Assessment "
+greedy_modularity,PN5135,4,PN5135,Covid Clinician Closure Pathway
+greedy_modularity,PT1,4,PT1,Emergency Ambulance Closure
+greedy_modularity,PT2,4,PT2,Emergency Ambulance Closure
+greedy_modularity,PT217,4,PT217,"Emergency Ambulance Closure, Vaginal Bleeding in Pregnancy"
+greedy_modularity,PT224,4,PT224,"Non-emergency Ambulance Closure, Vaginal Bleeding in Pregnancy"
+greedy_modularity,PT315,4,PT315,"Emergency Ambulance Closure, Breathlessness"
+greedy_modularity,PT513,4,PT513,Health Alert
+greedy_modularity,PTP1,4,PTP1,"Emergency Ambulance Closure, Pregnant"
+greedy_modularity,PTP11,4,PTP11,"Emergency Ambulance Closure, Pregnant, Trauma"
+greedy_modularity,PTP111,4,PTP111,"Emergency Ambulance Closure, Pregnant, Foreign Body, Wound"
+greedy_modularity,PTP2,4,PTP2,"Emergency Ambulance Closure, Pregnant"
+greedy_modularity,PW1102,4,PW1102,Vaginal Swellings
+greedy_modularity,PW1103,4,PW1103,Vaginal Swellings
+greedy_modularity,PW1116,4,PW1116,"Genital Injury, Blunt"
+greedy_modularity,PW1122,4,PW1122,"Eye, Visual Loss or Disturbance"
+greedy_modularity,PW1124,4,PW1124,"Eye, Visual Loss or Disturbance"
+greedy_modularity,PW1126,4,PW1126,"Eye, Painful"
+greedy_modularity,PW1128,4,PW1128,"Eye, Painful"
+greedy_modularity,PW1134,4,PW1134,"Eye, Red or Irritable"
+greedy_modularity,PW1137,4,PW1137,"Eye, Red or Irritable"
+greedy_modularity,PW1146,4,PW1146,"Eye, Sticky, Watery"
+greedy_modularity,PW1153,4,PW1153,Eyelid Problems
+greedy_modularity,PW1321,4,PW1321,"Foreign Body, Rectum"
+greedy_modularity,PW1322,4,PW1322,"Foreign Body, Vaginal"
+greedy_modularity,PW1531,4,PW1531,"Foreign Body, Rectum"
+greedy_modularity,PW1532,4,PW1532,"Foreign Body, Vaginal"
+greedy_modularity,PW1539,4,PW1539,"Flank or Side Pain, Pregnant"
+greedy_modularity,PW1564,4,PW1564,Genital Problems
+greedy_modularity,PW1568,4,PW1568,Catheter Problems
+greedy_modularity,PW1621,4,PW1621,"Skin, Yellow"
+greedy_modularity,PW1622,4,PW1622,"Skin, Yellow"
+greedy_modularity,PW1627,4,PW1627,Eye or Eyelid Problems
+greedy_modularity,PW1628,4,PW1628,Eye or Eyelid Problems
+greedy_modularity,PW1629,4,PW1629,Eye or Eyelid Problems
+greedy_modularity,PW1630,4,PW1630,Eye or Eyelid Problems
+greedy_modularity,PW1631,4,PW1631,Eye or Eyelid Problems
+greedy_modularity,PW1632,4,PW1632,"Eye, Yellow"
+greedy_modularity,PW1634,4,PW1634,"Eye, Yellow"
+greedy_modularity,PW1655,4,PW1655,Coughing up Blood
+greedy_modularity,PW1656,4,PW1656,Coughing up Blood
+greedy_modularity,PW1657,4,PW1657,Coughing up Blood
+greedy_modularity,PW1658,4,PW1658,Coughing up Blood
+greedy_modularity,PW1673,4,PW1673,"Abdominal Pain, Pregnant, Over 20 Weeks"
+greedy_modularity,PW1675,4,PW1675,"Groin Pain or Swelling, Pregnant, Over 20 Weeks"
+greedy_modularity,PW1684,4,PW1684,Sexual or Menstrual Concerns
+greedy_modularity,PW1699,4,PW1699,Sexual or Menstrual Concerns
+greedy_modularity,PW1702,4,PW1702,Ear Discharge or Ear Wax
+greedy_modularity,PW1736,4,PW1736,"Abdominal Pain, Pregnant, Over 20 Weeks with Rectal Bleeding"
+greedy_modularity,PW1762,4,PW1762,Hearing Disturbance or Blocked Ear
+greedy_modularity,PW1763,4,PW1763,Reduced Fetal Movements 
+greedy_modularity,PW1776,4,PW1776,Wound Problems
+greedy_modularity,PW1777,4,PW1777,Wound Problems
+greedy_modularity,PW1807,4,PW1807,Dummy pathway for PT Dx jumps
+greedy_modularity,PW1842,4,PW1842,Groin Pain or Groin Swelling with Abdominal Pain
+greedy_modularity,PW1843,4,PW1843,Groin Pain or Groin Swelling with Abdominal Pain
+greedy_modularity,PW1850,4,PW1850,Covid
+greedy_modularity,PW542,4,PW542,Behaviour Change
+greedy_modularity,PW654,4,PW654,Earache
+greedy_modularity,PW655,4,PW655,Earache
+greedy_modularity,PW656,4,PW656,Earache
+greedy_modularity,PW717,4,PW717,Flank or Side Pain
+greedy_modularity,PW719,4,PW719,Flank or Side Pain
+greedy_modularity,PW720,4,PW720,Flank or Side Pain
+greedy_modularity,PW722,4,PW722,"Flank or Side Pain, Pregnant"
+greedy_modularity,PW734,4,PW734,"Groin Pain or Groin Swelling, Pregnant, Under 20 Weeks"
+greedy_modularity,PW766,4,PW766,Eyelid Problems
+greedy_modularity,PW768,4,PW768,"Eye, Visual Loss or Disturbance"
+greedy_modularity,PW770,4,PW770,"Eye, Painful"
+greedy_modularity,PW788,4,PW788,"Lower Back Pain, Pregnant, Over 20 weeks"
+greedy_modularity,PW826,4,PW826,"Eye, Red or Irritable"
+greedy_modularity,PW828,4,PW828,"Eye, Sticky, Watery"
+greedy_modularity,PW836,4,PW836,"Object, Ingested or Inhaled"
+greedy_modularity,PW910,4,PW910,Vaginal Bleeding
+greedy_modularity,PW911,4,PW911,Vaginal Bleeding
+greedy_modularity,PW912,4,PW912,Vaginal Bleeding
+greedy_modularity,PW913,4,PW913,"Vaginal Bleeding, Pregnant"
+greedy_modularity,PW915,4,PW915,Vaginal Discharge
+greedy_modularity,PW916,4,PW916,Vaginal Discharge
+greedy_modularity,PW967,4,PW967,Blood in Urine
+greedy_modularity,PA102,5,PA102,"Declared Diabetes Blood Sugar Problem, 3rd party"
+greedy_modularity,PA103,5,PA103,"Declared Diabetes Blood Sugar Problem, 1st party"
+greedy_modularity,PA94,5,PA94,Allergic Reaction
+greedy_modularity,PN1619,5,PN1619,"Skin, Rash"
+greedy_modularity,PN1620,5,PN1620,"Skin, Rash"
+greedy_modularity,PN5127,5,PN5127,Generic Clinician Closure
+greedy_modularity,PT312,5,PT312,"Emergency Ambulance Closure, Breathlessness"
+greedy_modularity,PT512,5,PT512,Health Alert
+greedy_modularity,PW1040,5,PW1040,Cold or Flu Symptoms
+greedy_modularity,PW1041,5,PW1041,Cold or Flu Symptoms
+greedy_modularity,PW1042,5,PW1042,Cold or Flu Symptoms
+greedy_modularity,PW1043,5,PW1043,Cold or Flu Symptoms
+greedy_modularity,PW1044,5,PW1044,"Cold or Flu Symptoms, Pregnant"
+greedy_modularity,PW1053,5,PW1053,"Tattoos, Birthmarks or Moles"
+greedy_modularity,PW1057,5,PW1057,"Skin, Lumps"
+greedy_modularity,PW1091,5,PW1091,"Rectal Pain, Swelling, Lump or Itch"
+greedy_modularity,PW1226,5,PW1226,Nasal Congestion
+greedy_modularity,PW1560,5,PW1560,Vaginal Itch or Soreness
+greedy_modularity,PW1620,5,PW1620,"Skin, Rash"
+greedy_modularity,PW1623,5,PW1623,"Skin, Rash"
+greedy_modularity,PW1624,5,PW1624,"Skin, Acne, Spots and Pimples"
+greedy_modularity,PW1664,5,PW1664,Coughing up Blood
+greedy_modularity,PW1679,5,PW1679,Head Lice (Declared)
+greedy_modularity,PW1680,5,PW1680,Athlete's Foot (Declared)
+greedy_modularity,PW1681,5,PW1681,Itch
+greedy_modularity,PW1688,5,PW1688,Itch
+greedy_modularity,PW1689,5,PW1689,Itch
+greedy_modularity,PW1690,5,PW1690,Itch
+greedy_modularity,PW1755,5,PW1755,"Skin, Lumps"
+greedy_modularity,PW1757,5,PW1757,"Skin, Lumps"
+greedy_modularity,PW1769,5,PW1769,Pubic Lice (Declared)
+greedy_modularity,PW1770,5,PW1770,Scabies (Declared)
+greedy_modularity,PW1771,5,PW1771,Skin Problems
+greedy_modularity,PW1772,5,PW1772,Skin Problems
+greedy_modularity,PW1773,5,PW1773,Skin Problems
+greedy_modularity,PW1774,5,PW1774,Skin Problems
+greedy_modularity,PW1851,5,PW1851,Covid-19_online
+greedy_modularity,PW1852,5,PW1852,Covid-19_Online_Child Only
+greedy_modularity,PW1853,5,PW1853,Health Alert (Respiratory)
+greedy_modularity,PW1854,5,PW1854,Loss of Taste or Smell
+greedy_modularity,PW556,5,PW556,"Breathing Problems, Breathlessness or Wheeze"
+greedy_modularity,PW557,5,PW557,"Breathing Problems, Breathlessness or Wheeze"
+greedy_modularity,PW558,5,PW558,"Breathing Problems, Breathlessness or Wheeze"
+greedy_modularity,PW559,5,PW559,"Breathing Problems, Breathlessness or Wheeze"
+greedy_modularity,PW560,5,PW560,"Breathing Problems, Breathlessness or Wheeze"
+greedy_modularity,PW562,5,PW562,"Breathing Problems, Breathlessness or Wheeze, Pregnant"
+greedy_modularity,PW637,5,PW637,Dizziness or Vertigo
+greedy_modularity,PW640,5,PW640,Dizziness or Vertigo
+greedy_modularity,PW684,5,PW684,"Head, Facial or Neck Injury, Blunt"
+greedy_modularity,PW762,5,PW762,Cough
+greedy_modularity,PW830,5,PW830,Tiredness (Fatigue)
+greedy_modularity,PW854,5,PW854,Sore Throat or Hoarse Voice
+greedy_modularity,PW975,5,PW975,Cough
+greedy_modularity,PW976,5,PW976,Cough
+greedy_modularity,PW977,5,PW977,"Cough, Pregnant"
+greedy_modularity,PW978,5,PW978,Cough
+greedy_modularity,PW979,5,PW979,Cough
+greedy_modularity,PW981,5,PW981,Nasal Congestion
+greedy_modularity,PW984,5,PW984,Nasal Congestion
+greedy_modularity,PN1621,6,PN1621,Accidental Dental Analgesia Overdose
+greedy_modularity,PT202,6,PT202,"Emergency Ambulance Closure, Wound Bleeding, Foreign Body, Head"
+greedy_modularity,PT203,6,PT203,"Emergency Ambulance Closure, Wound Bleeding, Head"
+greedy_modularity,PT225,6,PT225,Dental Analgesia Assessment
+greedy_modularity,PT226,6,PT226,Dental Analgesia Assessment
+greedy_modularity,PT227,6,PT227,Dental Analgesia Assessment
+greedy_modularity,PT228,6,PT228,Dental Analgesia Assessment
+greedy_modularity,PT305,6,PT305,Transport to Emergency Centre within 1 hour
+greedy_modularity,PT4,6,PT4,"Emergency  Ambulance Closure, Override"
+greedy_modularity,PT41,6,PT41,"Emergency  Ambulance Closure, Trauma"
+greedy_modularity,PT517,6,PT517,Dental Analgesia Assessment
+greedy_modularity,PT518,6,PT518,Dental Analgesia Assessment
+greedy_modularity,PW1046,6,PW1046,Sinusitis (Declared)
+greedy_modularity,PW1048,6,PW1048,Sinusitis (Declared)
+greedy_modularity,PW1050,6,PW1050,Sinusitis (Declared)
+greedy_modularity,PW1367,6,PW1367,"Skin, Lumps"
+greedy_modularity,PW1395,6,PW1395,Dental Injury
+greedy_modularity,PW1397,6,PW1397,"Eye Injury, Blunt"
+greedy_modularity,PW1399,6,PW1399,"Eye Injury, Penetrating"
+greedy_modularity,PW1401,6,PW1401,"Head, Facial or Neck Injury, Blunt"
+greedy_modularity,PW1403,6,PW1403,"Head, Facial or Neck Injury, Penetrating"
+greedy_modularity,PW1515,6,PW1515,Dental Bleeding
+greedy_modularity,PW1517,6,PW1517,Other Dental Problems
+greedy_modularity,PW1548,6,PW1548,"Face, Neck Pain or Swelling"
+greedy_modularity,PW1549,6,PW1549,"Face, Neck Pain or Swelling"
+greedy_modularity,PW1550,6,PW1550,"Face, Neck Pain or Swelling"
+greedy_modularity,PW1602,6,PW1602,Sinusitis (Declared)
+greedy_modularity,PW1610,6,PW1610,Dental Problems
+greedy_modularity,PW1611,6,PW1611,Dental Problems
+greedy_modularity,PW1612,6,PW1612,Dental Problems
+greedy_modularity,PW1613,6,PW1613,"Falls, Faints or Blackouts without Injury"
+greedy_modularity,PW1670,6,PW1670,"Falls, Faints or Blackouts without Injury"
+greedy_modularity,PW1706,6,PW1706,Vomiting
+greedy_modularity,PW1713,6,PW1713,Nosebleeds after Injury
+greedy_modularity,PW1725,6,PW1725,Teething
+greedy_modularity,PW1730,6,PW1730,Nosebleeds after Injury
+greedy_modularity,PW1731,6,PW1731,Nosebleeds after Injury
+greedy_modularity,PW1809,6,PW1809,Dental Module
+greedy_modularity,PW572,6,PW572,Toothache After Dental Injury
+greedy_modularity,PW620,6,PW620,Dental Injury
+greedy_modularity,PW622,6,PW622,Dental Injury
+greedy_modularity,PW638,6,PW638,Dizziness or Vertigo
+greedy_modularity,PW668,6,PW668,"Eye Injury, Penetrating"
+greedy_modularity,PW670,6,PW670,"Eye Injury, Penetrating"
+greedy_modularity,PW686,6,PW686,"Head, Facial or Neck Injury, Blunt"
+greedy_modularity,PW692,6,PW692,"Head, Facial or Neck Injury, Penetrating"
+greedy_modularity,PW694,6,PW694,"Head, Facial or Neck Injury, Penetrating"
+greedy_modularity,PW870,6,PW870,Toothache without Dental Injury
+greedy_modularity,PW871,6,PW871,Toothache without Dental Injury
+greedy_modularity,PW872,6,PW872,Toothache without Dental Injury
+greedy_modularity,PT209,7,PT209,"Emergency Ambulance Closure, Swelling, General"
+greedy_modularity,PT220,7,PT220,"Emergency  Ambulance Closure, Breathlessness and Swelling"
+greedy_modularity,PT322,7,PT322,"Emergency Ambulance Closure, Breathlessness and/or Swelling"
+greedy_modularity,PT333,7,PT333,"Emergency Ambulance Closure, Breathlessness and/or Swelling"
+greedy_modularity,PW1066,7,PW1066,Wound Problems
+greedy_modularity,PW1141,7,PW1141,Shoulder Pain
+greedy_modularity,PW1143,7,PW1143,Shoulder Pain
+greedy_modularity,PW1165,7,PW1165,Arm Pain or Swelling
+greedy_modularity,PW1167,7,PW1167,Arm Pain or Swelling
+greedy_modularity,PW1240,7,PW1240,"Leg Injury, Blunt"
+greedy_modularity,PW1241,7,PW1241,"Leg Injury, Blunt"
+greedy_modularity,PW1492,7,PW1492,Wound Problems
+greedy_modularity,PW1616,7,PW1616,"Wrist, Hand or Finger Pain or Swelling"
+greedy_modularity,PW1617,7,PW1617,"Wrist, Hand or Finger Pain or Swelling"
+greedy_modularity,PW1626,7,PW1626,"Wrist, Hand or Finger Pain or Swelling"
+greedy_modularity,PW1639,7,PW1639,Knee or Lower Leg Pain or Swelling
+greedy_modularity,PW1640,7,PW1640,Knee or Lower Leg Pain or Swelling
+greedy_modularity,PW1641,7,PW1641,Knee or Lower Leg Pain or Swelling
+greedy_modularity,PW1642,7,PW1642,Knee or Lower Leg Pain or Swelling
+greedy_modularity,PW1643,7,PW1643,Ankle or Foot Pain or Swelling
+greedy_modularity,PW1644,7,PW1644,Ankle or Foot Pain or Swelling
+greedy_modularity,PW1645,7,PW1645,Ankle or Foot Pain or Swelling
+greedy_modularity,PW1646,7,PW1646,Ankle or Foot Pain or Swelling
+greedy_modularity,PW1647,7,PW1647,Toe Pain or Swelling
+greedy_modularity,PW1648,7,PW1648,Toe Pain or Swelling
+greedy_modularity,PW1677,7,PW1677,Easy or Unexplained Bruising
+greedy_modularity,PW1691,7,PW1691,Easy or Unexplained Bruising
+greedy_modularity,PW1692,7,PW1692,Easy or Unexplained Bruising
+greedy_modularity,PW1693,7,PW1693,Easy or Unexplained Bruising
+greedy_modularity,PW1694,7,PW1694,Easy or Unexplained Bruising
+greedy_modularity,PW1696,7,PW1696,Easy or Unexplained Bruising
+greedy_modularity,PW1709,7,PW1709,"Wound Problems, Plaster Casts, Tubes and Metal Appliances"
+greedy_modularity,PW1710,7,PW1710,"Wound Problems, Plaster Casts, Tubes and Metal Appliances"
+greedy_modularity,PW1721,7,PW1721,Plaster Cast Problems
+greedy_modularity,PW1722,7,PW1722,Tube and Drain Problems
+greedy_modularity,PW1724,7,PW1724,External Fixation
+greedy_modularity,PW1733,7,PW1733,"Arm, Cold or Colour Change"
+greedy_modularity,PW1734,7,PW1734,"Leg, Cold or Colour Change"
+greedy_modularity,PW1766,7,PW1766,"Leg, Cold or Colour Change"
+greedy_modularity,PW1767,7,PW1767,"Arm, Cold or Colour Change"
+greedy_modularity,PW732,7,PW732,Groin Pain or Groin Swelling
+greedy_modularity,PW774,7,PW774,Lower Limb Pain or Swelling
+greedy_modularity,PW775,7,PW775,Lower Limb Pain or Swelling
+greedy_modularity,PW776,7,PW776,Lower Limb Pain or Swelling
+greedy_modularity,PW777,7,PW777,Lower Limb Pain or Swelling
+greedy_modularity,PW778,7,PW778,Lower Limb Pain or Swelling
+greedy_modularity,PW779,7,PW779,Lower Limb Pain or Swelling
+greedy_modularity,PW923,7,PW923,Arm Pain or Swelling
+greedy_modularity,PP100,8,PP100,"Entry pathway, adult (Ambulance setting)"
+greedy_modularity,PP101,8,PP101,"Entry pathway, adult (OOH & SPA setting)"
+greedy_modularity,PP102,8,PP102,"Entry pathway, child (Ambulance setting)"
+greedy_modularity,PP103,8,PP103,"Entry pathway, child (OOH & SPA setting)"
+greedy_modularity,PP104,8,PP104,"Entry pathway, toddler (Ambulance setting)"
+greedy_modularity,PP105,8,PP105,"Entry pathway, toddler (OOH & SPA setting)"
+greedy_modularity,PP106,8,PP106,"Entry pathway, infant (Ambulance setting)"
+greedy_modularity,PP107,8,PP107,"Entry, infant (OOH & SPA setting)"
+greedy_modularity,PP200,8,PP200,"Pandemic flu, adult "
+greedy_modularity,PP201,8,PP201,"Pandemic flu, child"
+greedy_modularity,PP202,8,PP202,"Pandemic flu, toddler"
+greedy_modularity,PP203,8,PP203,"Pandemic flu, infant"
+greedy_modularity,PP500,8,PP500,"Generic triage pathway, adult "
+greedy_modularity,PP501,8,PP501,"Generic triage pathway, child"
+greedy_modularity,PP502,8,PP502,"Generic triage, toddler"
+greedy_modularity,PP503,8,PP503,"Generic triage pathway, infant"
+greedy_modularity,PPT1,8,PPT1,Disposition 999 Ambulance
+greedy_modularity,PPT10,8,PPT10,Disposition Medication Enquiry
+greedy_modularity,PPT11,8,PPT11,Disposition Speak to a Clinician from our service Immediately
+greedy_modularity,PPT12,8,PPT12,Disposition Service Location
+greedy_modularity,PPT13,8,PPT13,Disposition Refer to Health Information
+greedy_modularity,PPT14,8,PPT14,Disposition Refer to Flu Line
+greedy_modularity,PPT15,8,PPT15,Disposition Speak to the GP Practice within 20 minutes
+greedy_modularity,PPT16,8,PPT16,Disposition Speak to the GP Practice within 1 hour
+greedy_modularity,PPT17,8,PPT17,Disposition Emergency Department Immediately
+greedy_modularity,PPT2,8,PPT2,Disposition Community Healthcare Professional
+greedy_modularity,PPT3,8,PPT3,Disposition Refer to Another Out of Hours Service Provider
+greedy_modularity,PPT4,8,PPT4,Disposition Callback by Healthcare Professional within 20 minutes
+greedy_modularity,PPT5,8,PPT5,Disposition Callback by Healthcare Professional within 60 minutes
+greedy_modularity,PPT6,8,PPT6,Disposition Report of Results or Test
+greedy_modularity,PPT7,8,PPT7,Disposition Failed Contraception
+greedy_modularity,PPT8,8,PPT8,Disposition Contact Own GP Practice Next Working Day
+greedy_modularity,PPT9,8,PPT9,Disposition Repeat Prescription Required
+greedy_modularity,PA160,9,PA160,Early Exit - Deceased
+greedy_modularity,PA166,9,PA166,Attend Incident
+greedy_modularity,PA167,9,PA167,Attend Incident
+greedy_modularity,PEE1,9,PEE1,Early Exit
+greedy_modularity,PEE3,9,PEE3,Early Exit
+greedy_modularity,PN5128,9,PN5128,Assessment of Required Level of Response
+greedy_modularity,PN5132,9,PN5132,Assessment of Required Level of Response
+greedy_modularity,PT8,9,PT8,Mental Health Safety Closure
+greedy_modularity,PT9,9,PT9,Mental Health Medication 
+greedy_modularity,PW1070,9,PW1070,Tiredness (Fatigue)
+greedy_modularity,PW1071,9,PW1071,Tiredness (Fatigue)
+greedy_modularity,PW1072,9,PW1072,Tiredness (Fatigue)
+greedy_modularity,PW1073,9,PW1073,Tiredness (Fatigue)
+greedy_modularity,PW1074,9,PW1074,"Tiredness (Fatigue), Pregnant"
+greedy_modularity,PW1551,9,PW1551,Alcohol Intoxication
+greedy_modularity,PW1552,9,PW1552,Alcohol Intoxication
+greedy_modularity,PW1686,9,PW1686,Sleep Difficulties
+greedy_modularity,PW1697,9,PW1697,Sleep Difficulties
+greedy_modularity,PW1700,9,PW1700,Sleep Difficulties
+greedy_modularity,PW1738,9,PW1738,"Drug, Solvent or Alcohol Misuse"
+greedy_modularity,PW1745,9,PW1745,Low Mood or Depression
+greedy_modularity,PW1748,9,PW1748,Aura or Anticipated Fit/Seizure (Declared)
+greedy_modularity,PW1749,9,PW1749,Behaviour Change
+greedy_modularity,PW1750,9,PW1750,Known Mental Health Problems Worsening
+greedy_modularity,PW1751,9,PW1751,Mental Health Problems
+greedy_modularity,PW1752,9,PW1752,"Anxiety, Stress or Panic"
+greedy_modularity,PW1756,9,PW1756,Mental Health Other Symptoms
+greedy_modularity,PW753,9,PW753,Headache
+greedy_modularity,PW756,9,PW756,Headache
+greedy_modularity,PW1813,10,PW1813,Ambulance Dispatch
+greedy_modularity,PW1814,10,PW1814,Ambulance Dispatch
+greedy_modularity,PW1815,10,PW1815,Ambulance Dispatch
+greedy_modularity,PW1816,10,PW1816,Ambulance Dispatch
+greedy_modularity,PW1817,10,PW1817,Ambulance Dispatch
+greedy_modularity,PW1818,10,PW1818,Ambulance Dispatch Closure
+greedy_modularity,PEE4,11,PEE4,Early Exit
+greedy_modularity,PW1846,11,PW1846,PaCCS Service Search
+greedy_modularity,PW1847,11,PW1847,PaCCS Emergency Treatment Centre Referral
+greedy_modularity,PW1849,11,PW1849,PaCCS Home Management Suite
+greedy_modularity,PT230,12,PT230,"Assistance needed at home due to inability to get off the floor, Emergency Closure, Non Trauma"
+greedy_modularity,PT3,12,PT3,"Assistance needed at home due to inability to get off the floor, Closure"
+greedy_modularity,PT318,13,PT318,"Non-emergency Ambulance Closure, Breathlessness"
+greedy_modularity,PT503,13,PT503,"Emergency Ambulance Closure, Non-Trauma, Breathlessness"
+greedy_modularity,PT17,14,PT17,Ambulance due to Clinical Reasons
+greedy_modularity,PT18,15,PT18,Ambulance due to Transportation Reasons
+greedy_modularity,PT19,16,PT19,Emergency Ambulance due to Clinical Reasons
+greedy_modularity,PT229,17,PT229,"Emergency Ambulance Closure, Override"
+greedy_modularity,PT321,18,PT321,"Non-emergency Ambulance Closure, Override"
+greedy_modularity,PT40,19,PT40,"Emergency Ambulance Closure, Non Trauma"
+greedy_modularity,PT405,20,PT405,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso"
+greedy_modularity,PT417,21,PT417,"Emergency Ambulance Closure, Vaginal Bleeding in Pregnancy"
+greedy_modularity,PT508,22,PT508,Emergency Ambulance (Override) Closure
+greedy_modularity,PT509,23,PT509,Non-Emergency Ambulance (Override) Closure
+greedy_modularity,PT514,24,PT514,Health Alert Chest and Upper Back Pain
+greedy_modularity,PT516,25,PT516,Health Alert Chest and Upper Back pain
+greedy_modularity,PTP101,26,PTP101,"Emergency  Ambulance Closure, Pregnant, Foreign Body, Wound"
+greedy_modularity,PW1093,27,PW1093,"Rectal Pain, Swelling, Lump or Itch"
+greedy_modularity,PW1114,28,PW1114,Breastfeeding Problems
+greedy_modularity,PW1320,29,PW1320,"Foreign Body, Penis"
+greedy_modularity,PW1406,30,PW1406,"Genital Injury, Blunt"
+greedy_modularity,PW1607,31,PW1607,Breast Problems
+greedy_modularity,PW1714,32,PW1714,Teething
+greedy_modularity,PW1716,33,PW1716,"Eye, Sticky, Watery"
+greedy_modularity,PW1765,34,PW1765,Difficulty Passing Urine
+greedy_modularity,PW1778,35,PW1778,"Rectal Pain, Swelling, Lump or Itch"
+greedy_modularity,PW1808,36,PW1808,Prescription Request 
+greedy_modularity,PW1820,37,PW1820,Clinical Hub Closure - Dental
+greedy_modularity,PW1822,38,PW1822,Clinical Hub Closure Primary Care
+greedy_modularity,PW1827,39,PW1827,Emergency Prescription 111 online
+greedy_modularity,PW646,40,PW646,"Passing Urine, Associated Pain, Frequency or Smell"
+greedy_modularity,PW818,41,PW818,Nosebleeds without Injury
+greedy_modularity,PW819,42,PW819,Nosebleeds without Injury
+greedy_modularity,PW820,43,PW820,Nosebleeds without Injury
+greedy_modularity,PW833,44,PW833,"Genital Injury, Blunt"
+greedy_modularity,PW888,45,PW888,DEVELOPMENT test pathway only
+greedy_modularity,SP1,46,SP1,Assessing Safety 1st Party 
+greedy_modularity,SP3,47,SP3,Assessing Safety 3rd Party
+louvain,PA168,0,PA168,Reception Point 1
+louvain,PA169,0,PA169,Reception Point 2
+louvain,PN5121,0,PN5121,Self-Harm
+louvain,PN5131,0,PN5131,Chemical Eye Splash
+louvain,PN5134,0,PN5134,"Burn, Chemical"
+louvain,PT201,0,PT201,"Emergency  Ambulance Closure, Wound, Foreign Body"
+louvain,PT204,0,PT204,"Emergency  Ambulance Closure, Wound Bleeding, Limb, With or Without Foreign Body"
+louvain,PT205,0,PT205,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso"
+louvain,PT218,0,PT218,"Emergency Ambulance Closure, Toxic Ingestion and Inhalation"
+louvain,PT231,0,PT231,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso, Spinal Injury"
+louvain,PT302,0,PT302,"Non-emergency Ambulance Closure, Wound Bleeding, Limb"
+louvain,PT31,0,PT31,"Non-emergency Ambulance Closure, Trauma"
+louvain,PT33,0,PT33,"Assistance needed at home due to inability to get off the floor, trauma"
+louvain,PT404,0,PT404,"Emergency Ambulance Closure, Wound Bleeding, Limb, No Foreign Body"
+louvain,PT500,0,PT500,Reception Point Foreign Body Closure
+louvain,PT501,0,PT501,Reception Point Professional Referral Closure
+louvain,PT7,0,PT7,Repeat Prescription
+louvain,PW1012,0,PW1012,"Genital Injury, Penetrating"
+louvain,PW1066,0,PW1066,Wound Problems
+louvain,PW1078,0,PW1078,Breast Pain
+louvain,PW1079,0,PW1079,Breast Pain
+louvain,PW1090,0,PW1090,Breast Discharge
+louvain,PW1098,0,PW1098,Eye Splash Injury or Minor Foreign Body
+louvain,PW1222,0,PW1222,"Leg Injury, Blunt"
+louvain,PW1224,0,PW1224,"Leg Injury, Penetrating"
+louvain,PW1234,0,PW1234,"Leg Injury, Penetrating"
+louvain,PW1240,0,PW1240,"Leg Injury, Blunt"
+louvain,PW1259,0,PW1259,"Skin, Minor Foreign Body"
+louvain,PW1260,0,PW1260,"Hand or Wrist Injury, Penetrating"
+louvain,PW1264,0,PW1264,"Finger or Thumb Injury, Penetrating"
+louvain,PW1267,0,PW1267,"Hand or Wrist Injury, Blunt"
+louvain,PW1270,0,PW1270,"Finger or Thumb Injury, Blunt"
+louvain,PW1277,0,PW1277,"Foreign Body, Ear"
+louvain,PW1282,0,PW1282,"Toe Injury, Blunt"
+louvain,PW1283,0,PW1283,"Toe Injury, Blunt"
+louvain,PW1284,0,PW1284,"Toe Injury, Penetrating"
+louvain,PW1301,0,PW1301,"Skin, Glued"
+louvain,PW1319,0,PW1319,"Foreign Body, Nose"
+louvain,PW1328,0,PW1328,"Skin, Minor Foreign Body"
+louvain,PW1332,0,PW1332,Eye Splash Injury or Minor Foreign Body
+louvain,PW1359,0,PW1359,Eye Splash Injury or Minor Foreign Body
+louvain,PW1383,0,PW1383,"Abdominal or Flank Injury, Penetrating"
+louvain,PW1384,0,PW1384,"Abdominal or Flank Injury, Penetrating"
+louvain,PW1389,0,PW1389,"Burn, Sun"
+louvain,PW1393,0,PW1393,"Chest or Upper Back Injury, Penetrating"
+louvain,PW1407,0,PW1407,"Genital Injury, Penetrating"
+louvain,PW1408,0,PW1408,"Genital Injury, Penetrating"
+louvain,PW1421,0,PW1421,"Lower Back Injury, Penetrating"
+louvain,PW1422,0,PW1422,"Lower Back Injury, Penetrating"
+louvain,PW1480,0,PW1480,"Burn, Chemical"
+louvain,PW1492,0,PW1492,Wound Problems
+louvain,PW1501,0,PW1501,"Finger or Thumb Injury, Blunt"
+louvain,PW1504,0,PW1504,"Hand or Wrist Injury, Blunt"
+louvain,PW1507,0,PW1507,"Finger or Thumb Injury, Penetrating"
+louvain,PW1510,0,PW1510,"Hand or Wrist Injury, Penetrating"
+louvain,PW1512,0,PW1512,"Ankle or Foot Injury, Blunt"
+louvain,PW1516,0,PW1516,"Ankle or Foot Injury, Blunt"
+louvain,PW1518,0,PW1518,"Ankle or Foot Injury, Penetrating"
+louvain,PW1522,0,PW1522,"Ankle or Foot Injury, Penetrating"
+louvain,PW1526,0,PW1526,"Toe Injury, Penetrating"
+louvain,PW1528,0,PW1528,"Foreign Body, Ear"
+louvain,PW1529,0,PW1529,"Foreign Body, Nose"
+louvain,PW1543,0,PW1543,Self-Harm
+louvain,PW1570,0,PW1570,Fingernail Injury
+louvain,PW1571,0,PW1571,Fingernail Injury
+louvain,PW1575,0,PW1575,Bites and Stings
+louvain,PW1576,0,PW1576,"Bites, Human"
+louvain,PW1577,0,PW1577,"Bites, Animal"
+louvain,PW1578,0,PW1578,"Bites, Snake"
+louvain,PW1579,0,PW1579,"Bites and Stings, Insect or Spider"
+louvain,PW1580,0,PW1580,Bites and Stings
+louvain,PW1582,0,PW1582,"Bites, Animal"
+louvain,PW1583,0,PW1583,"Bites, Snake"
+louvain,PW1584,0,PW1584,"Bites and Stings, Insect or Spider"
+louvain,PW1585,0,PW1585,Bites and Stings
+louvain,PW1586,0,PW1586,"Bites, Human"
+louvain,PW1588,0,PW1588,"Bites, Snake"
+louvain,PW1589,0,PW1589,"Bites and Stings, Insect or Spider"
+louvain,PW1590,0,PW1590,"Scratches, Grazes and Minor Wounds"
+louvain,PW1591,0,PW1591,"Leg Injury, Blunt"
+louvain,PW1592,0,PW1592,Nail Injury
+louvain,PW1593,0,PW1593,Toenail Injury
+louvain,PW1594,0,PW1594,Toenail Injury
+louvain,PW1595,0,PW1595,Nail Injury
+louvain,PW1604,0,PW1604,Breast Problems
+louvain,PW1606,0,PW1606,Breast Problems
+louvain,PW1618,0,PW1618,"Skin, Blisters"
+louvain,PW1619,0,PW1619,"Skin, Blisters"
+louvain,PW1625,0,PW1625,Trauma Blisters
+louvain,PW1709,0,PW1709,"Wound Problems, Plaster Casts, Tubes and Metal Appliances"
+louvain,PW1710,0,PW1710,"Wound Problems, Plaster Casts, Tubes and Metal Appliances"
+louvain,PW1721,0,PW1721,Plaster Cast Problems
+louvain,PW1722,0,PW1722,Tube and Drain Problems
+louvain,PW1724,0,PW1724,External Fixation
+louvain,PW1753,0,PW1753,"Skin, Minor Foreign Body"
+louvain,PW1754,0,PW1754,"Skin, Minor Foreign Body"
+louvain,PW1758,0,PW1758,Water Creature Stings
+louvain,PW1857,0,PW1857,Pathways Injury Module
+louvain,PW1859,0,PW1859,ED Injury Triage
+louvain,PW1863,0,PW1863,ED Injury Child
+louvain,PW508,0,PW508,"Abdominal or Flank Injury, Penetrating"
+louvain,PW510,0,PW510,"Abdominal or Flank Injury, Penetrating"
+louvain,PW511,0,PW511,"Abdominal or Flank Injury, Penetrating"
+louvain,PW513,0,PW513,"Abdominal or Flank Injury, Penetrating"
+louvain,PW564,0,PW564,"Burn, Chemical"
+louvain,PW566,0,PW566,"Burn, Chemical"
+louvain,PW580,0,PW580,"Burn, Thermal"
+louvain,PW596,0,PW596,"Chest or Upper Back Injury, Penetrating"
+louvain,PW598,0,PW598,"Chest or Upper Back Injury, Penetrating"
+louvain,PW798,0,PW798,"Lower Back Injury, Penetrating"
+louvain,PW800,0,PW800,"Lower Back Injury, Penetrating"
+louvain,PW801,0,PW801,"Lower Back Injury, Penetrating"
+louvain,PW803,0,PW803,"Lower Back Injury, Penetrating"
+louvain,PW834,0,PW834,"Genital Injury, Penetrating"
+louvain,PW835,0,PW835,"Genital Injury, Penetrating"
+louvain,PW880,0,PW880,Accidental Poisoning/Inhalation
+louvain,PW881,0,PW881,Accidental Poisoning/Inhalation
+louvain,PW895,0,PW895,"Arm Injury, Blunt"
+louvain,PW896,0,PW896,"Arm Injury, Blunt"
+louvain,PW902,0,PW902,"Arm Injury, Penetrating"
+louvain,PW904,0,PW904,"Arm Injury, Penetrating"
+louvain,PW987,0,PW987,"Burn, Sun"
+louvain,PW989,0,PW989,"Burn, Sun"
+louvain,PA1,1,PA1,Stopped Breathing 3rd Party 
+louvain,PA107,1,PA107,Early Exit - Dying
+louvain,PA110,1,PA110,Social & information SPA/OOH Version
+louvain,PA111,1,PA111,"Immediate threats to life, Ambulance version, 3rd party"
+louvain,PA112,1,PA112,"Immediate threats to life, SPA/OOH version, 3rd party"
+louvain,PA113,1,PA113,"Trauma emergency, 3rd party"
+louvain,PA115,1,PA115,"Immediate threats to life, Ambulance version, 1st party  "
+louvain,PA116,1,PA116,"Immediate threats to life, SPA/OOH version, 1st party"
+louvain,PA117,1,PA117,"Trauma emergency, 1st party"
+louvain,PA119,1,PA119,"Immediate threats to life, Ambulance version, 3rd party"
+louvain,PA120,1,PA120,"Immediate threats to life, SPA/OOH version, 3rd party"
+louvain,PA121,1,PA121,"Trauma emergency, 3rd Party"
+louvain,PA123,1,PA123,"Immediate threats to life, Ambulance version, 1st party"
+louvain,PA124,1,PA124,"Immediate threats to life, SPA/OOH version, 1st party"
+louvain,PA125,1,PA125,"Trauma emergency, 1st Party"
+louvain,PA127,1,PA127,"Immediate threats to life, Ambulance version, 3rd party"
+louvain,PA128,1,PA128,"Immediate threats to life, SPA/OOH version, 3rd party"
+louvain,PA129,1,PA129,"Trauma emergency, 3rd Party"
+louvain,PA13,1,PA13,Environmental Threat 3rd Party
+louvain,PA131,1,PA131,"Immediate threats to life, Ambulance version, 1st party"
+louvain,PA132,1,PA132,"Immediate threats to life, SPA/OOH version, 1st party"
+louvain,PA133,1,PA133,"Trauma emergency, 1st Party"
+louvain,PA135,1,PA135,"Immediate threats to life, Ambulance version, 3rd party"
+louvain,PA136,1,PA136,"Immediate threats to life, SPA/OOH version, 3rd party"
+louvain,PA137,1,PA137,"Trauma emergency, 3rd Party"
+louvain,PA139,1,PA139,"Immediate threats to life, Ambulance version, 1st party"
+louvain,PA140,1,PA140,"Immediate threats to life, SPA/OOH version, 1st party"
+louvain,PA141,1,PA141,"Trauma emergency, 1st Party"
+louvain,PA143,1,PA143,"Immediate threats to life, Ambulance version"
+louvain,PA144,1,PA144,"Immediate threats to life, SPA/OOH version"
+louvain,PA145,1,PA145,Trauma emergency
+louvain,PA147,1,PA147,"Immediate threats to life, Ambulance version"
+louvain,PA148,1,PA148,"Immediate threats to life, SPA/OOH version"
+louvain,PA149,1,PA149,Trauma emergency
+louvain,PA151,1,PA151,"Immediate threats to life, Ambulance version"
+louvain,PA152,1,PA152,"Immediate threats to life, SPA/OOH version"
+louvain,PA153,1,PA153,Trauma emergency
+louvain,PA155,1,PA155,"Immediate threats to life, Ambulance version"
+louvain,PA156,1,PA156,"Immediate threats to life, SPA/OOH version"
+louvain,PA157,1,PA157,Trauma emergency
+louvain,PA159,1,PA159,Health Information
+louvain,PA16,1,PA16,Multiple Self-Harm 3rd Party
+louvain,PA162,1,PA162,Frequent Caller
+louvain,PA164,1,PA164,Early Exit - Dying
+louvain,PA165,1,PA165,Early Exit - Dying
+louvain,PA17,1,PA17,Electrical Injury 3rd Party
+louvain,PA217,1,PA217,Drowning Incident Within 24 hours
+louvain,PA22,1,PA22,Environmental Threat 1st Party 
+louvain,PA25,1,PA25,"Major Bleeding, 1st & 3rd Party"
+louvain,PA26,1,PA26,Major Trauma 1st Party 
+louvain,PA27,1,PA27,Multiple Self-Harm 1st Party
+louvain,PA4,1,PA4,Major Trauma 3rd Party 
+louvain,PA40,1,PA40,Electrical Injury 3rd Party
+louvain,PA44,1,PA44,Major Trauma 3rd Party 
+louvain,PA45,1,PA45,Stopped Breathing 3rd Party 
+louvain,PA48,1,PA48,Major Trauma 3rd Party 
+louvain,PA5,1,PA5,Electrical Injury 1st Party
+louvain,PA53,1,PA53,Stopped Breathing 3rd Party 
+louvain,PA65,1,PA65,Electrical Injury 1st Party
+louvain,PA7,1,PA7,Fit or Seizure
+louvain,PA70,1,PA70,Major Trauma 1st Party 
+louvain,PA79,1,PA79,"Trapped with End of Call Safety, 3rd Party"
+louvain,PA80,1,PA80,"Trapped with End of Call Safety, 1st Party"
+louvain,PA85,1,PA85,Electrical Injury 3rd Party
+louvain,PA89,1,PA89,Choking
+louvain,PA90,1,PA90,Choking
+louvain,PA92,1,PA92,Choking
+louvain,PA99,1,PA99,Predetermined management Plan
+louvain,PEE4,1,PEE4,Early Exit
+louvain,PEE5,1,PEE5,Early Exit (PaCCS)
+louvain,PFA1,1,PFA1,Calling About Self
+louvain,PFA3,1,PFA3,Calling About Someone Else
+louvain,PFC1,1,PFC1,Calling About Self
+louvain,PFC3,1,PFC3,Calling About Someone Else
+louvain,PFT,1,PFT,Calling About Someone Else
+louvain,PHCP,1,PHCP,Calling About Someone Else
+louvain,PMA1,1,PMA1,Calling About Self
+louvain,PMA3,1,PMA3,Calling About Someone Else
+louvain,PMC1,1,PMC1,Calling About Self
+louvain,PMC3,1,PMC3,Calling About Someone Else
+louvain,PMT,1,PMT,Calling About Someone Else
+louvain,PN5126,1,PN5126,Child Safeguard/Protection or Vulnerable Adult Concern
+louvain,PT11,1,PT11,"Emergency Ambulance Closure, Trauma"
+louvain,PT335,1,PT335,Trauma care advice
+louvain,PT504,1,PT504,"Unconsciousness, Closure"
+louvain,PT510,1,PT510,Emergency CPR Pathway
+louvain,PW110,1,PW110,HCP and Bed Bureau
+louvain,PW111,1,PW111,GP Urgent and Bed Bureau Entry
+louvain,PW112,1,PW112,GP Urgent and Bed Bureau Entry
+louvain,PW113,1,PW113,GP Urgent and Bed Bureau Entry
+louvain,PW114,1,PW114,GP Urgent and Bed Bureau Entry
+louvain,PW115,1,PW115,GP Urgent and Bed Bureau Entry
+louvain,PW116,1,PW116,GP Urgent and Bed Bureau Cardiac Closure
+louvain,PW1669,1,PW1669,Transfer Between Health Units
+louvain,PW1687,1,PW1687,Social or Domestic Emergency
+louvain,PW1810,1,PW1810,Healthcare Professional (HCP) Callback
+louvain,PW1811,1,PW1811,Clinical Hub Closure
+louvain,PW1812,1,PW1812,Senior Clinician Module Entry
+louvain,PW1821,1,PW1821,Clinical Hub Closure - Mental Health
+louvain,PW1824,1,PW1824,CHEST PAIN PATHWAY FOR IUC SG PICK UP ONLY
+louvain,PW1825,1,PW1825,PROBABLE STROKE OR TIA PATHWAY FOR IUC SG PICK UP ONLY
+louvain,PW1826,1,PW1826,ALLERGIC REACTION PATHWAY FOR IUC SG PICK UP ONLY
+louvain,PW1848,1,PW1848,PaCCS Ambulance Dispatch
+louvain,PW1849,1,PW1849,PaCCS Home Management Suite
+louvain,PW582,1,PW582,"Burn, Thermal"
+louvain,PW588,1,PW588,"Chest or Upper Back Injury, Blunt"
+louvain,PW925,1,PW925,"Burn, Thermal"
+louvain,PA100,2,PA100,"Declared Diabetes Blood Sugar Problem, 3rd party"
+louvain,PA101,2,PA101,"Declared Diabetes Blood Sugar Problem, 1st party"
+louvain,PA103,2,PA103,"Declared Diabetes Blood Sugar Problem, 1st party"
+louvain,PA23,2,PA23,Recent Fits 1st Party
+louvain,PA64,2,PA64,Recent Fits 1st Party
+louvain,PA72,2,PA72,Recent Fits 1st Party
+louvain,PA73,2,PA73,Recent Fits 1st Party
+louvain,PA87,2,PA87,Cardiac Medication Closure
+louvain,PT209,2,PT209,"Emergency Ambulance Closure, Swelling, General"
+louvain,PT220,2,PT220,"Emergency  Ambulance Closure, Breathlessness and Swelling"
+louvain,PT322,2,PT322,"Emergency Ambulance Closure, Breathlessness and/or Swelling"
+louvain,PT333,2,PT333,"Emergency Ambulance Closure, Breathlessness and/or Swelling"
+louvain,PT5,2,PT5,Medication
+louvain,PW1000,2,PW1000,Heat Exposure
+louvain,PW1076,2,PW1076,Breast Pain
+louvain,PW1077,2,PW1077,Breast Pain
+louvain,PW1080,2,PW1080,"Breast Pain, Pregnant"
+louvain,PW1083,2,PW1083,Breast Lump
+louvain,PW1086,2,PW1086,"Breast Lump, Pregnant"
+louvain,PW1089,2,PW1089,Breast Discharge
+louvain,PW1092,2,PW1092,"Breast Discharge, Pregnant"
+louvain,PW1118,2,PW1118,"Genital Injury, Blunt"
+louvain,PW1140,2,PW1140,Shoulder Pain
+louvain,PW1141,2,PW1141,Shoulder Pain
+louvain,PW1143,2,PW1143,Shoulder Pain
+louvain,PW1158,2,PW1158,Constipation
+louvain,PW1159,2,PW1159,Constipation
+louvain,PW1160,2,PW1160,"Constipation, Pregnant"
+louvain,PW1161,2,PW1161,Constipation
+louvain,PW1162,2,PW1162,Constipation
+louvain,PW1164,2,PW1164,Arm Pain or Swelling
+louvain,PW1165,2,PW1165,Arm Pain or Swelling
+louvain,PW1166,2,PW1166,Arm Pain or Swelling
+louvain,PW1167,2,PW1167,Arm Pain or Swelling
+louvain,PW1230,2,PW1230,Other Symptoms
+louvain,PW1241,2,PW1241,"Leg Injury, Blunt"
+louvain,PW1323,2,PW1323,Mouth Ulcers
+louvain,PW1345,2,PW1345,Other Symptoms
+louvain,PW1346,2,PW1346,Other Symptoms
+louvain,PW1348,2,PW1348,Other Symptoms
+louvain,PW1349,2,PW1349,Other Symptoms
+louvain,PW1521,2,PW1521,Mouth Ulcers
+louvain,PW1530,2,PW1530,"Foreign Body, Penis"
+louvain,PW1561,2,PW1561,Vaginal Itch or Soreness
+louvain,PW1562,2,PW1562,Vaginal Itch or Soreness
+louvain,PW1565,2,PW1565,Genital Problems
+louvain,PW1566,2,PW1566,Genital Problems
+louvain,PW1603,2,PW1603,Breast Problems
+louvain,PW1605,2,PW1605,Breast Problems
+louvain,PW1609,2,PW1609,Breast Lump
+louvain,PW1614,2,PW1614,"Wrist, Hand or Finger Pain or Swelling"
+louvain,PW1615,2,PW1615,"Wrist, Hand or Finger Pain or Swelling"
+louvain,PW1616,2,PW1616,"Wrist, Hand or Finger Pain or Swelling"
+louvain,PW1617,2,PW1617,"Wrist, Hand or Finger Pain or Swelling"
+louvain,PW1626,2,PW1626,"Wrist, Hand or Finger Pain or Swelling"
+louvain,PW1635,2,PW1635,"Hip, Thigh or Buttock Pain or Swelling"
+louvain,PW1636,2,PW1636,"Hip, Thigh or Buttock Pain or Swelling"
+louvain,PW1637,2,PW1637,"Hip, Thigh or Buttock Pain or Swelling"
+louvain,PW1638,2,PW1638,"Hip, Thigh or Buttock Pain or Swelling"
+louvain,PW1639,2,PW1639,Knee or Lower Leg Pain or Swelling
+louvain,PW1640,2,PW1640,Knee or Lower Leg Pain or Swelling
+louvain,PW1641,2,PW1641,Knee or Lower Leg Pain or Swelling
+louvain,PW1642,2,PW1642,Knee or Lower Leg Pain or Swelling
+louvain,PW1643,2,PW1643,Ankle or Foot Pain or Swelling
+louvain,PW1644,2,PW1644,Ankle or Foot Pain or Swelling
+louvain,PW1645,2,PW1645,Ankle or Foot Pain or Swelling
+louvain,PW1646,2,PW1646,Ankle or Foot Pain or Swelling
+louvain,PW1647,2,PW1647,Toe Pain or Swelling
+louvain,PW1648,2,PW1648,Toe Pain or Swelling
+louvain,PW1677,2,PW1677,Easy or Unexplained Bruising
+louvain,PW1678,2,PW1678,Hair Loss
+louvain,PW1683,2,PW1683,Numbness or Unusual Feelings in the Skin
+louvain,PW1685,2,PW1685,Sexual Concerns
+louvain,PW1691,2,PW1691,Easy or Unexplained Bruising
+louvain,PW1692,2,PW1692,Easy or Unexplained Bruising
+louvain,PW1693,2,PW1693,Easy or Unexplained Bruising
+louvain,PW1694,2,PW1694,Easy or Unexplained Bruising
+louvain,PW1696,2,PW1696,Easy or Unexplained Bruising
+louvain,PW1698,2,PW1698,Sexual Concerns
+louvain,PW1701,2,PW1701,Sleep Difficulties
+louvain,PW1712,2,PW1712,Locked Jaw
+louvain,PW1718,2,PW1718,Constipation
+louvain,PW1733,2,PW1733,"Arm, Cold or Colour Change"
+louvain,PW1734,2,PW1734,"Leg, Cold or Colour Change"
+louvain,PW1764,2,PW1764,Tremor
+louvain,PW1766,2,PW1766,"Leg, Cold or Colour Change"
+louvain,PW1767,2,PW1767,"Arm, Cold or Colour Change"
+louvain,PW1774,2,PW1774,Skin Problems
+louvain,PW1775,2,PW1775,Hiccups
+louvain,PW1804,2,PW1804,Unwell Infant
+louvain,PW1819,2,PW1819,Ambulance Dispatch Cardiac Closure
+louvain,PW709,2,PW709,Fever
+louvain,PW710,2,PW710,Fever
+louvain,PW712,2,PW712,Fever
+louvain,PW732,2,PW732,Groin Pain or Groin Swelling
+louvain,PW774,2,PW774,Lower Limb Pain or Swelling
+louvain,PW775,2,PW775,Lower Limb Pain or Swelling
+louvain,PW776,2,PW776,Lower Limb Pain or Swelling
+louvain,PW777,2,PW777,Lower Limb Pain or Swelling
+louvain,PW778,2,PW778,Lower Limb Pain or Swelling
+louvain,PW779,2,PW779,Lower Limb Pain or Swelling
+louvain,PW846,2,PW846,Rectal Bleeding
+louvain,PW894,2,PW894,"Arm Injury, Blunt"
+louvain,PW897,2,PW897,"Arm Injury, Blunt"
+louvain,PW917,2,PW917,Vaginal Discharge
+louvain,PW923,2,PW923,Arm Pain or Swelling
+louvain,PW998,2,PW998,Heat Exposure
+louvain,PA102,3,PA102,"Declared Diabetes Blood Sugar Problem, 3rd party"
+louvain,PN5004,3,PN5004,Toxic Ingestion/Inhalation
+louvain,PN5125,3,PN5125,Toxic Ingestion/Inhalation
+louvain,PN5127,3,PN5127,Generic Clinician Closure
+louvain,PN5129,3,PN5129,Gastrointestinal Clinician Closure 
+louvain,PT207,3,PT207,"Emergency Ambulance Closure, Toxic Ingestion"
+louvain,PT505,3,PT505,Viral Haemorrhagic Fever Closure
+louvain,PT507,3,PT507,Bleeding from Stoma
+louvain,PT511,3,PT511,"Black, Tarry or Red, Maroon Stools "
+louvain,PT6,3,PT6,Non-emergency Ambulance Closure
+louvain,PW1102,3,PW1102,Vaginal Swellings
+louvain,PW1103,3,PW1103,Vaginal Swellings
+louvain,PW1354,3,PW1354,Vaginal Swellings
+louvain,PW1413,3,PW1413,Heat Exposure
+louvain,PW1553,3,PW1553,Diarrhoea and Vomiting
+louvain,PW1554,3,PW1554,Diarrhoea and Vomiting
+louvain,PW1555,3,PW1555,Diarrhoea and Vomiting
+louvain,PW1556,3,PW1556,Diarrhoea and Vomiting
+louvain,PW1560,3,PW1560,Vaginal Itch or Soreness
+louvain,PW1563,3,PW1563,Diarrhoea and Vomiting
+louvain,PW1651,3,PW1651,Bringing Up Blood
+louvain,PW1652,3,PW1652,Bringing Up Blood
+louvain,PW1653,3,PW1653,Bringing Up Blood
+louvain,PW1654,3,PW1654,Bringing Up Blood
+louvain,PW1663,3,PW1663,Bringing Up Blood
+louvain,PW1666,3,PW1666,Vomiting Blood
+louvain,PW1667,3,PW1667,Vomiting Blood
+louvain,PW1673,3,PW1673,"Abdominal Pain, Pregnant, Over 20 Weeks"
+louvain,PW1676,3,PW1676,Absent or Missed Period
+louvain,PW1703,3,PW1703,Fever
+louvain,PW1705,3,PW1705,Cough 
+louvain,PW1708,3,PW1708,Diarrhoea and Vomiting
+louvain,PW1711,3,PW1711,Nasal Congestion
+louvain,PW1715,3,PW1715,Diarrhoea
+louvain,PW1717,3,PW1717,"Breathing Problems, Breathlessness or Wheeze"
+louvain,PW1719,3,PW1719,Stoma Problems
+louvain,PW1720,3,PW1720,Bringing Up Blood 
+louvain,PW1723,3,PW1723,External Fixation
+louvain,PW1759,3,PW1759,Loss of Bowel Control
+louvain,PW1800,3,PW1800,Unwell under 29 days
+louvain,PW1801,3,PW1801,Unwell 29 days to under 16 weeks
+louvain,PW1802,3,PW1802,Unwell 16 weeks to 6 months
+louvain,PW1803,3,PW1803,Unwell over 6 months
+louvain,PW1805,3,PW1805,Unwell Infant
+louvain,PW1828,3,PW1828,Age and Gender
+louvain,PW1829,3,PW1829,Critical Illness Assessment 
+louvain,PW1830,3,PW1830,Vomiting and/or Nausea with Abdominal Pain
+louvain,PW1831,3,PW1831,Vomiting and/or Nausea with Abdominal Pain
+louvain,PW1832,3,PW1832,Vomiting and/or Nausea with Abdominal Pain
+louvain,PW1833,3,PW1833,Vomiting and/or Nausea with Abdominal Pain
+louvain,PW1834,3,PW1834,Diarrhoea with Abdominal Pain
+louvain,PW1835,3,PW1835,Diarrhoea with Abdominal Pain
+louvain,PW1836,3,PW1836,Diarrhoea with Abdominal Pain
+louvain,PW1837,3,PW1837,Diarrhoea with Abdominal Pain
+louvain,PW1838,3,PW1838,Diarrhoea and Vomiting with Abdominal Pain
+louvain,PW1839,3,PW1839,Diarrhoea and Vomiting with Abdominal Pain
+louvain,PW1840,3,PW1840,Diarrhoea and Vomiting with Abdominal Pain
+louvain,PW1841,3,PW1841,Diarrhoea and Vomiting with Abdominal Pain
+louvain,PW1844,3,PW1844,Groin Pain or Groin Swelling with Abdominal Pain
+louvain,PW1845,3,PW1845,Groin Pain or Groin Swelling with Abdominal Pain
+louvain,PW516,3,PW516,Abdominal Pain
+louvain,PW517,3,PW517,Abdominal Pain
+louvain,PW518,3,PW518,"Abdominal, Flank, Groin or Back Pain or Swelling"
+louvain,PW519,3,PW519,Abdominal Pain
+louvain,PW520,3,PW520,Abdominal Pain
+louvain,PW521,3,PW521,"Abdominal, Flank, Groin or Back Pain or Swelling"
+louvain,PW574,3,PW574,Cold or Flu Symptoms
+louvain,PW628,3,PW628,Diarrhoea
+louvain,PW629,3,PW629,Diarrhoea
+louvain,PW630,3,PW630,Diarrhoea
+louvain,PW631,3,PW631,Diarrhoea
+louvain,PW632,3,PW632,Diarrhoea
+louvain,PW716,3,PW716,Flank or Side Pain
+louvain,PW728,3,PW728,Groin Pain or Groin Swelling
+louvain,PW729,3,PW729,Groin Pain or Groin Swelling
+louvain,PW731,3,PW731,Groin Pain or Groin Swelling
+louvain,PW754,3,PW754,Headache
+louvain,PW760,3,PW760,Constipation
+louvain,PW782,3,PW782,Lower Back Pain
+louvain,PW783,3,PW783,Lower Back Pain
+louvain,PW785,3,PW785,Lower Back Pain
+louvain,PW786,3,PW786,Lower Back Pain
+louvain,PW808,3,PW808,Unwell
+louvain,PW848,3,PW848,Rectal Bleeding
+louvain,PW854,3,PW854,Sore Throat or Hoarse Voice
+louvain,PW856,3,PW856,Sore Throat
+louvain,PW915,3,PW915,Vaginal Discharge
+louvain,PW916,3,PW916,Vaginal Discharge
+louvain,PW928,3,PW928,Vomiting Blood
+louvain,PW929,3,PW929,Vomiting Blood
+louvain,PW930,3,PW930,Vomiting Blood
+louvain,PW936,3,PW936,Vomiting and/or Nausea
+louvain,PW937,3,PW937,Vomiting and/or Nausea
+louvain,PW938,3,PW938,Vomiting and/or Nausea
+louvain,PW939,3,PW939,Vomiting and/or Nausea
+louvain,PW940,3,PW940,Vomiting and/or Nausea
+louvain,PT202,4,PT202,"Emergency Ambulance Closure, Wound Bleeding, Foreign Body, Head"
+louvain,PT203,4,PT203,"Emergency Ambulance Closure, Wound Bleeding, Head"
+louvain,PT213,4,PT213,"Ambulance Closure, Stroke"
+louvain,PT22,4,PT22,"Emergency  Ambulance Closure, Trauma"
+louvain,PT23,4,PT23,"Emergency Ambulance Closure, Trauma, Spinal Injury"
+louvain,PT305,4,PT305,Transport to Emergency Centre within 1 hour
+louvain,PT4,4,PT4,"Emergency  Ambulance Closure, Override"
+louvain,PT41,4,PT41,"Emergency  Ambulance Closure, Trauma"
+louvain,PW1028,4,PW1028,Palpitations
+louvain,PW1029,4,PW1029,Palpitations
+louvain,PW1030,4,PW1030,Palpitations
+louvain,PW1031,4,PW1031,Palpitations
+louvain,PW1032,4,PW1032,"Palpitations, Pregnant"
+louvain,PW1034,4,PW1034,"Object, Ingested or Inhaled"
+louvain,PW1367,4,PW1367,"Skin, Lumps"
+louvain,PW1381,4,PW1381,"Abdominal or Flank Injury, Blunt"
+louvain,PW1382,4,PW1382,"Abdominal or Flank Injury, Blunt"
+louvain,PW1391,4,PW1391,"Chest or Upper Back Injury, Blunt"
+louvain,PW1395,4,PW1395,Dental Injury
+louvain,PW1397,4,PW1397,"Eye Injury, Blunt"
+louvain,PW1399,4,PW1399,"Eye Injury, Penetrating"
+louvain,PW1401,4,PW1401,"Head, Facial or Neck Injury, Blunt"
+louvain,PW1403,4,PW1403,"Head, Facial or Neck Injury, Penetrating"
+louvain,PW1405,4,PW1405,"Genital Injury, Blunt"
+louvain,PW1419,4,PW1419,"Lower Back Injury, Blunt"
+louvain,PW1420,4,PW1420,"Lower Back Injury, Blunt"
+louvain,PW1496,4,PW1496,Difficulty Swallowing
+louvain,PW1544,4,PW1544,"Face, Neck Pain or Swelling"
+louvain,PW1545,4,PW1545,"Face, Neck Pain or Swelling"
+louvain,PW1559,4,PW1559,Vaginal Itch or Soreness
+louvain,PW1567,4,PW1567,Catheter Problems
+louvain,PW1596,4,PW1596,"Lower Back Injury, Blunt"
+louvain,PW1597,4,PW1597,"Lower Back Injury, Blunt"
+louvain,PW1598,4,PW1598,Face and Neck Pain or Swelling Over 25yrs
+louvain,PW1599,4,PW1599,Face and Neck Pain or Swelling Over 25yrs
+louvain,PW1600,4,PW1600,Face and Neck Pain or Swelling Under 25yrs
+louvain,PW1601,4,PW1601,Face and Neck Pain or Swelling Under 25yrs
+louvain,PW1613,4,PW1613,"Falls, Faints or Blackouts without Injury"
+louvain,PW1670,4,PW1670,"Falls, Faints or Blackouts without Injury"
+louvain,PW1706,4,PW1706,Vomiting
+louvain,PW1713,4,PW1713,Nosebleeds after Injury
+louvain,PW1730,4,PW1730,Nosebleeds after Injury
+louvain,PW1731,4,PW1731,Nosebleeds after Injury
+louvain,PW1858,4,PW1858,"Emergency or Urgent Treament Centre, Self-triage"
+louvain,PW1860,4,PW1860,ED Triage Pre-Entry Pathway
+louvain,PW1861,4,PW1861,ED Chest Pain Triage
+louvain,PW1862,4,PW1862,ED Stroke Symptoms Triage
+louvain,PW1864,4,PW1864,Self Triage Child Illness 
+louvain,PW1865,4,PW1865,Urinary Problems
+louvain,PW1866,4,PW1866,ED Triage Mental Health
+louvain,PW1867,4,PW1867,ED Eye Triage
+louvain,PW1868,4,PW1868,ED Ear Nose Throat Triage
+louvain,PW500,4,PW500,"Abdominal or Flank Injury, Blunt"
+louvain,PW502,4,PW502,"Abdominal or Flank Injury, Blunt"
+louvain,PW503,4,PW503,"Abdominal or Flank Injury, Blunt"
+louvain,PW505,4,PW505,"Abdominal or Flank Injury, Blunt"
+louvain,PW590,4,PW590,"Chest or Upper Back Injury, Blunt"
+louvain,PW636,4,PW636,Dizziness or Vertigo
+louvain,PW637,4,PW637,Dizziness or Vertigo
+louvain,PW638,4,PW638,Dizziness or Vertigo
+louvain,PW639,4,PW639,Dizziness or Vertigo
+louvain,PW640,4,PW640,Dizziness or Vertigo
+louvain,PW643,4,PW643,Dizziness or Vertigo Pregnant
+louvain,PW644,4,PW644,"Passing Urine, Associated Pain, Frequency or Smell"
+louvain,PW645,4,PW645,"Passing Urine, Associated Pain, Frequency or Smell"
+louvain,PW647,4,PW647,"Passing Urine, Associated Pain, Frequency or Smell"
+louvain,PW648,4,PW648,"Passing Urine, Associated Pain, Frequency or Smell"
+louvain,PW660,4,PW660,"Eye Injury, Blunt"
+louvain,PW662,4,PW662,"Eye Injury, Blunt"
+louvain,PW668,4,PW668,"Eye Injury, Penetrating"
+louvain,PW670,4,PW670,"Eye Injury, Penetrating"
+louvain,PW684,4,PW684,"Head, Facial or Neck Injury, Blunt"
+louvain,PW686,4,PW686,"Head, Facial or Neck Injury, Blunt"
+louvain,PW692,4,PW692,"Head, Facial or Neck Injury, Penetrating"
+louvain,PW694,4,PW694,"Head, Facial or Neck Injury, Penetrating"
+louvain,PW700,4,PW700,"Falls, Faints or Blackouts or Unable to get up without Injury"
+louvain,PW752,4,PW752,Headache
+louvain,PW753,4,PW753,Headache
+louvain,PW755,4,PW755,Headache
+louvain,PW756,4,PW756,Headache
+louvain,PW758,4,PW758,"Headache, Pregnant"
+louvain,PW790,4,PW790,"Lower Back Injury, Blunt"
+louvain,PW792,4,PW792,"Lower Back Injury, Blunt"
+louvain,PW793,4,PW793,"Lower Back Injury, Blunt"
+louvain,PW795,4,PW795,"Lower Back Injury, Blunt"
+louvain,PW832,4,PW832,"Genital Injury, Blunt"
+louvain,PW886,4,PW886,Difficulty Passing Urine
+louvain,PW961,4,PW961,Blood in Urine
+louvain,PW962,4,PW962,Blood in Urine
+louvain,PA14,5,PA14,Labour and Childbirth 3rd Party 
+louvain,PA218,5,PA218,"Choking on liquids now, infants"
+louvain,PA24,5,PA24,Labour and Childbirth 1st Party 
+louvain,PFI,5,PFI,Calling About Someone Else
+louvain,PMI,5,PMI,Calling About Someone Else
+louvain,PN5130,5,PN5130,Failed Contraception Clinician Assessment
+louvain,PN5133,5,PN5133,"Failed Contraception and Retained Condom or Cap, Clinician Assessment "
+louvain,PN5135,5,PN5135,Covid Clinician Closure Pathway
+louvain,PT1,5,PT1,Emergency Ambulance Closure
+louvain,PT2,5,PT2,Emergency Ambulance Closure
+louvain,PT217,5,PT217,"Emergency Ambulance Closure, Vaginal Bleeding in Pregnancy"
+louvain,PT224,5,PT224,"Non-emergency Ambulance Closure, Vaginal Bleeding in Pregnancy"
+louvain,PT315,5,PT315,"Emergency Ambulance Closure, Breathlessness"
+louvain,PT513,5,PT513,Health Alert
+louvain,PT515,5,PT515,Health Alert Palpitations
+louvain,PTP1,5,PTP1,"Emergency Ambulance Closure, Pregnant"
+louvain,PTP11,5,PTP11,"Emergency Ambulance Closure, Pregnant, Trauma"
+louvain,PTP111,5,PTP111,"Emergency Ambulance Closure, Pregnant, Foreign Body, Wound"
+louvain,PTP2,5,PTP2,"Emergency Ambulance Closure, Pregnant"
+louvain,PW1010,5,PW1010,"Genital Injury, Penetrating"
+louvain,PW1014,5,PW1014,"Genital Injury, Penetrating, Pregnant, Over 20 weeks"
+louvain,PW1116,5,PW1116,"Genital Injury, Blunt"
+louvain,PW1120,5,PW1120,"Genital Injury, Blunt, Pregnant"
+louvain,PW1321,5,PW1321,"Foreign Body, Rectum"
+louvain,PW1322,5,PW1322,"Foreign Body, Vaginal"
+louvain,PW1531,5,PW1531,"Foreign Body, Rectum"
+louvain,PW1532,5,PW1532,"Foreign Body, Vaginal"
+louvain,PW1539,5,PW1539,"Flank or Side Pain, Pregnant"
+louvain,PW1564,5,PW1564,Genital Problems
+louvain,PW1568,5,PW1568,Catheter Problems
+louvain,PW1622,5,PW1622,"Skin, Yellow"
+louvain,PW1631,5,PW1631,Eye or Eyelid Problems
+louvain,PW1634,5,PW1634,"Eye, Yellow"
+louvain,PW1655,5,PW1655,Coughing up Blood
+louvain,PW1656,5,PW1656,Coughing up Blood
+louvain,PW1657,5,PW1657,Coughing up Blood
+louvain,PW1658,5,PW1658,Coughing up Blood
+louvain,PW1674,5,PW1674,"Diarrhoea or Vomiting, Pregnant, Over 20 Weeks"
+louvain,PW1675,5,PW1675,"Groin Pain or Swelling, Pregnant, Over 20 Weeks"
+louvain,PW1684,5,PW1684,Sexual or Menstrual Concerns
+louvain,PW1699,5,PW1699,Sexual or Menstrual Concerns
+louvain,PW1702,5,PW1702,Ear Discharge or Ear Wax
+louvain,PW1736,5,PW1736,"Abdominal Pain, Pregnant, Over 20 Weeks with Rectal Bleeding"
+louvain,PW1762,5,PW1762,Hearing Disturbance or Blocked Ear
+louvain,PW1763,5,PW1763,Reduced Fetal Movements 
+louvain,PW1776,5,PW1776,Wound Problems
+louvain,PW1777,5,PW1777,Wound Problems
+louvain,PW1807,5,PW1807,Dummy pathway for PT Dx jumps
+louvain,PW1842,5,PW1842,Groin Pain or Groin Swelling with Abdominal Pain
+louvain,PW1843,5,PW1843,Groin Pain or Groin Swelling with Abdominal Pain
+louvain,PW1850,5,PW1850,Covid
+louvain,PW506,5,PW506,"Abdominal or Flank Injury, Blunt, Pregnant"
+louvain,PW514,5,PW514,"Abdominal or Flank Injury, Penetrating, Pregnant"
+louvain,PW542,5,PW542,Behaviour Change
+louvain,PW654,5,PW654,Earache
+louvain,PW655,5,PW655,Earache
+louvain,PW656,5,PW656,Earache
+louvain,PW717,5,PW717,Flank or Side Pain
+louvain,PW719,5,PW719,Flank or Side Pain
+louvain,PW720,5,PW720,Flank or Side Pain
+louvain,PW722,5,PW722,"Flank or Side Pain, Pregnant"
+louvain,PW734,5,PW734,"Groin Pain or Groin Swelling, Pregnant, Under 20 Weeks"
+louvain,PW766,5,PW766,Eyelid Problems
+louvain,PW768,5,PW768,"Eye, Visual Loss or Disturbance"
+louvain,PW770,5,PW770,"Eye, Painful"
+louvain,PW788,5,PW788,"Lower Back Pain, Pregnant, Over 20 weeks"
+louvain,PW796,5,PW796,"Lower Back Injury, Blunt, Pregnant"
+louvain,PW804,5,PW804,"Lower Back Injury, Penetrating, Pregnant "
+louvain,PW826,5,PW826,"Eye, Red or Irritable"
+louvain,PW828,5,PW828,"Eye, Sticky, Watery"
+louvain,PW836,5,PW836,"Object, Ingested or Inhaled"
+louvain,PW910,5,PW910,Vaginal Bleeding
+louvain,PW911,5,PW911,Vaginal Bleeding
+louvain,PW912,5,PW912,Vaginal Bleeding
+louvain,PW913,5,PW913,"Vaginal Bleeding, Pregnant"
+louvain,PW967,5,PW967,Blood in Urine
+louvain,PA94,6,PA94,Allergic Reaction
+louvain,PN1619,6,PN1619,"Skin, Rash"
+louvain,PN1620,6,PN1620,"Skin, Rash"
+louvain,PT312,6,PT312,"Emergency Ambulance Closure, Breathlessness"
+louvain,PT512,6,PT512,Health Alert
+louvain,PW1040,6,PW1040,Cold or Flu Symptoms
+louvain,PW1041,6,PW1041,Cold or Flu Symptoms
+louvain,PW1042,6,PW1042,Cold or Flu Symptoms
+louvain,PW1043,6,PW1043,Cold or Flu Symptoms
+louvain,PW1044,6,PW1044,"Cold or Flu Symptoms, Pregnant"
+louvain,PW1046,6,PW1046,Sinusitis (Declared)
+louvain,PW1050,6,PW1050,Sinusitis (Declared)
+louvain,PW1053,6,PW1053,"Tattoos, Birthmarks or Moles"
+louvain,PW1057,6,PW1057,"Skin, Lumps"
+louvain,PW1072,6,PW1072,Tiredness (Fatigue)
+louvain,PW1091,6,PW1091,"Rectal Pain, Swelling, Lump or Itch"
+louvain,PW1226,6,PW1226,Nasal Congestion
+louvain,PW1620,6,PW1620,"Skin, Rash"
+louvain,PW1623,6,PW1623,"Skin, Rash"
+louvain,PW1624,6,PW1624,"Skin, Acne, Spots and Pimples"
+louvain,PW1664,6,PW1664,Coughing up Blood
+louvain,PW1679,6,PW1679,Head Lice (Declared)
+louvain,PW1680,6,PW1680,Athlete's Foot (Declared)
+louvain,PW1681,6,PW1681,Itch
+louvain,PW1688,6,PW1688,Itch
+louvain,PW1689,6,PW1689,Itch
+louvain,PW1690,6,PW1690,Itch
+louvain,PW1755,6,PW1755,"Skin, Lumps"
+louvain,PW1757,6,PW1757,"Skin, Lumps"
+louvain,PW1769,6,PW1769,Pubic Lice (Declared)
+louvain,PW1770,6,PW1770,Scabies (Declared)
+louvain,PW1771,6,PW1771,Skin Problems
+louvain,PW1772,6,PW1772,Skin Problems
+louvain,PW1773,6,PW1773,Skin Problems
+louvain,PW1851,6,PW1851,Covid-19_online
+louvain,PW1852,6,PW1852,Covid-19_Online_Child Only
+louvain,PW1853,6,PW1853,Health Alert (Respiratory)
+louvain,PW1854,6,PW1854,Loss of Taste or Smell
+louvain,PW556,6,PW556,"Breathing Problems, Breathlessness or Wheeze"
+louvain,PW557,6,PW557,"Breathing Problems, Breathlessness or Wheeze"
+louvain,PW558,6,PW558,"Breathing Problems, Breathlessness or Wheeze"
+louvain,PW559,6,PW559,"Breathing Problems, Breathlessness or Wheeze"
+louvain,PW560,6,PW560,"Breathing Problems, Breathlessness or Wheeze"
+louvain,PW562,6,PW562,"Breathing Problems, Breathlessness or Wheeze, Pregnant"
+louvain,PW708,6,PW708,Fever
+louvain,PW711,6,PW711,Fever
+louvain,PW762,6,PW762,Cough
+louvain,PW830,6,PW830,Tiredness (Fatigue)
+louvain,PW975,6,PW975,Cough
+louvain,PW976,6,PW976,Cough
+louvain,PW977,6,PW977,"Cough, Pregnant"
+louvain,PW978,6,PW978,Cough
+louvain,PW979,6,PW979,Cough
+louvain,PW981,6,PW981,Nasal Congestion
+louvain,PW984,6,PW984,Nasal Congestion
+louvain,PA104,7,PA104,Declared Diabetes Blood Sugar Problem
+louvain,PA114,7,PA114,"Non-trauma emergency, 3rd party"
+louvain,PA118,7,PA118,"Non-trauma emergency, 1st party"
+louvain,PA122,7,PA122,"Non-trauma emergency, 3rd Party"
+louvain,PA126,7,PA126,"Non-trauma emergency, 1st Party"
+louvain,PA130,7,PA130,"Non-trauma emergency, 3rd Party"
+louvain,PA134,7,PA134,"Non-trauma emergency, 1st Party"
+louvain,PA138,7,PA138,"Non-trauma emergency, 3rd Party"
+louvain,PA142,7,PA142,"Non-trauma emergency, 1st Party"
+louvain,PA146,7,PA146,Non-trauma emergency
+louvain,PA150,7,PA150,Non-trauma emergency
+louvain,PA154,7,PA154,Non-trauma emergency
+louvain,PA158,7,PA158,Non-trauma emergency
+louvain,PA170,7,PA170,Declared ICD (Implantable Cardioverter Defibrillator) Shock
+louvain,PA171,7,PA171,Stroke-like Symptoms
+louvain,PA18,7,PA18,Fighting for Breath 1st Party 
+louvain,PA19,7,PA19,Recent Fits 3rd Party
+louvain,PA21,7,PA21,Chest and Upper Back Pain
+louvain,PA212,7,PA212,Chest and Upper Back Pain
+louvain,PA213,7,PA213,Chest and Upper Back Pain
+louvain,PA214,7,PA214,Chest and Upper Back pain
+louvain,PA215,7,PA215,Declared Blood Sugar Problem
+louvain,PA216,7,PA216,Hypoglycaemia Management
+louvain,PA219,7,PA219,Chest or Upper Back Pain Under 35 Years 
+louvain,PA21PAN,7,PA21PAN,Chest and Upper Back Pain Pandemic Flu
+louvain,PA29,7,PA29,Probable Stroke or TIA 1st Party 
+louvain,PA36,7,PA36,Recent Fits 3rd Party
+louvain,PA41,7,PA41,Fighting for Breath 3rd Party
+louvain,PA42,7,PA42,Recent Fits 3rd Party
+louvain,PA51,7,PA51,Recent Fits 3rd Party
+louvain,PA55,7,PA55,Fighting for Breath 3rd Party
+louvain,PA57,7,PA57,Recent Fits 3rd Party
+louvain,PA6,7,PA6,Fighting for Breath 3rd Party
+louvain,PA71,7,PA71,Fighting for Breath 1st Party 
+louvain,PA78,7,PA78,Recent Fits 3rd Party
+louvain,PA9,7,PA9,Probable Stroke or TIA 3rd Party
+louvain,PA93,7,PA93,Recovery From Successful Cardio-Pulmonary Resuscitation
+louvain,PT418,7,PT418,Diabetic Hypoglycaemic Closure
+louvain,PT506,7,PT506,Emergency Tracheostomy or Laryngectomy
+louvain,PW1746,7,PW1746,Diabetes Blood Sugar Problem (Declared)
+louvain,PP100,8,PP100,"Entry pathway, adult (Ambulance setting)"
+louvain,PP101,8,PP101,"Entry pathway, adult (OOH & SPA setting)"
+louvain,PP102,8,PP102,"Entry pathway, child (Ambulance setting)"
+louvain,PP103,8,PP103,"Entry pathway, child (OOH & SPA setting)"
+louvain,PP104,8,PP104,"Entry pathway, toddler (Ambulance setting)"
+louvain,PP105,8,PP105,"Entry pathway, toddler (OOH & SPA setting)"
+louvain,PP106,8,PP106,"Entry pathway, infant (Ambulance setting)"
+louvain,PP107,8,PP107,"Entry, infant (OOH & SPA setting)"
+louvain,PP200,8,PP200,"Pandemic flu, adult "
+louvain,PP201,8,PP201,"Pandemic flu, child"
+louvain,PP202,8,PP202,"Pandemic flu, toddler"
+louvain,PP203,8,PP203,"Pandemic flu, infant"
+louvain,PP500,8,PP500,"Generic triage pathway, adult "
+louvain,PP501,8,PP501,"Generic triage pathway, child"
+louvain,PP502,8,PP502,"Generic triage, toddler"
+louvain,PP503,8,PP503,"Generic triage pathway, infant"
+louvain,PPT1,8,PPT1,Disposition 999 Ambulance
+louvain,PPT10,8,PPT10,Disposition Medication Enquiry
+louvain,PPT11,8,PPT11,Disposition Speak to a Clinician from our service Immediately
+louvain,PPT12,8,PPT12,Disposition Service Location
+louvain,PPT13,8,PPT13,Disposition Refer to Health Information
+louvain,PPT14,8,PPT14,Disposition Refer to Flu Line
+louvain,PPT15,8,PPT15,Disposition Speak to the GP Practice within 20 minutes
+louvain,PPT16,8,PPT16,Disposition Speak to the GP Practice within 1 hour
+louvain,PPT17,8,PPT17,Disposition Emergency Department Immediately
+louvain,PPT2,8,PPT2,Disposition Community Healthcare Professional
+louvain,PPT3,8,PPT3,Disposition Refer to Another Out of Hours Service Provider
+louvain,PPT4,8,PPT4,Disposition Callback by Healthcare Professional within 20 minutes
+louvain,PPT5,8,PPT5,Disposition Callback by Healthcare Professional within 60 minutes
+louvain,PPT6,8,PPT6,Disposition Report of Results or Test
+louvain,PPT7,8,PPT7,Disposition Failed Contraception
+louvain,PPT8,8,PPT8,Disposition Contact Own GP Practice Next Working Day
+louvain,PPT9,8,PPT9,Disposition Repeat Prescription Required
+louvain,PA160,9,PA160,Early Exit - Deceased
+louvain,PA166,9,PA166,Attend Incident
+louvain,PA167,9,PA167,Attend Incident
+louvain,PEE1,9,PEE1,Early Exit
+louvain,PEE3,9,PEE3,Early Exit
+louvain,PN5128,9,PN5128,Assessment of Required Level of Response
+louvain,PN5132,9,PN5132,Assessment of Required Level of Response
+louvain,PT8,9,PT8,Mental Health Safety Closure
+louvain,PT9,9,PT9,Mental Health Medication 
+louvain,PW1070,9,PW1070,Tiredness (Fatigue)
+louvain,PW1071,9,PW1071,Tiredness (Fatigue)
+louvain,PW1073,9,PW1073,Tiredness (Fatigue)
+louvain,PW1074,9,PW1074,"Tiredness (Fatigue), Pregnant"
+louvain,PW1551,9,PW1551,Alcohol Intoxication
+louvain,PW1552,9,PW1552,Alcohol Intoxication
+louvain,PW1686,9,PW1686,Sleep Difficulties
+louvain,PW1697,9,PW1697,Sleep Difficulties
+louvain,PW1700,9,PW1700,Sleep Difficulties
+louvain,PW1738,9,PW1738,"Drug, Solvent or Alcohol Misuse"
+louvain,PW1745,9,PW1745,Low Mood or Depression
+louvain,PW1748,9,PW1748,Aura or Anticipated Fit/Seizure (Declared)
+louvain,PW1749,9,PW1749,Behaviour Change
+louvain,PW1750,9,PW1750,Known Mental Health Problems Worsening
+louvain,PW1751,9,PW1751,Mental Health Problems
+louvain,PW1752,9,PW1752,"Anxiety, Stress or Panic"
+louvain,PW1756,9,PW1756,Mental Health Other Symptoms
+louvain,PW1823,9,PW1823,Cold Exposure
+louvain,PN1621,10,PN1621,Accidental Dental Analgesia Overdose
+louvain,PT225,10,PT225,Dental Analgesia Assessment
+louvain,PT226,10,PT226,Dental Analgesia Assessment
+louvain,PT227,10,PT227,Dental Analgesia Assessment
+louvain,PT228,10,PT228,Dental Analgesia Assessment
+louvain,PT517,10,PT517,Dental Analgesia Assessment
+louvain,PT518,10,PT518,Dental Analgesia Assessment
+louvain,PW1048,10,PW1048,Sinusitis (Declared)
+louvain,PW1515,10,PW1515,Dental Bleeding
+louvain,PW1517,10,PW1517,Other Dental Problems
+louvain,PW1548,10,PW1548,"Face, Neck Pain or Swelling"
+louvain,PW1549,10,PW1549,"Face, Neck Pain or Swelling"
+louvain,PW1550,10,PW1550,"Face, Neck Pain or Swelling"
+louvain,PW1602,10,PW1602,Sinusitis (Declared)
+louvain,PW1610,10,PW1610,Dental Problems
+louvain,PW1611,10,PW1611,Dental Problems
+louvain,PW1612,10,PW1612,Dental Problems
+louvain,PW1725,10,PW1725,Teething
+louvain,PW1809,10,PW1809,Dental Module
+louvain,PW572,10,PW572,Toothache After Dental Injury
+louvain,PW620,10,PW620,Dental Injury
+louvain,PW622,10,PW622,Dental Injury
+louvain,PW870,10,PW870,Toothache without Dental Injury
+louvain,PW871,10,PW871,Toothache without Dental Injury
+louvain,PW872,10,PW872,Toothache without Dental Injury
+louvain,PW1122,11,PW1122,"Eye, Visual Loss or Disturbance"
+louvain,PW1124,11,PW1124,"Eye, Visual Loss or Disturbance"
+louvain,PW1126,11,PW1126,"Eye, Painful"
+louvain,PW1128,11,PW1128,"Eye, Painful"
+louvain,PW1134,11,PW1134,"Eye, Red or Irritable"
+louvain,PW1137,11,PW1137,"Eye, Red or Irritable"
+louvain,PW1146,11,PW1146,"Eye, Sticky, Watery"
+louvain,PW1153,11,PW1153,Eyelid Problems
+louvain,PW1621,11,PW1621,"Skin, Yellow"
+louvain,PW1627,11,PW1627,Eye or Eyelid Problems
+louvain,PW1628,11,PW1628,Eye or Eyelid Problems
+louvain,PW1629,11,PW1629,Eye or Eyelid Problems
+louvain,PW1630,11,PW1630,Eye or Eyelid Problems
+louvain,PW1632,11,PW1632,"Eye, Yellow"
+louvain,PW1813,12,PW1813,Ambulance Dispatch
+louvain,PW1814,12,PW1814,Ambulance Dispatch
+louvain,PW1815,12,PW1815,Ambulance Dispatch
+louvain,PW1816,12,PW1816,Ambulance Dispatch
+louvain,PW1817,12,PW1817,Ambulance Dispatch
+louvain,PW1818,12,PW1818,Ambulance Dispatch Closure
+louvain,PT230,13,PT230,"Assistance needed at home due to inability to get off the floor, Emergency Closure, Non Trauma"
+louvain,PT3,13,PT3,"Assistance needed at home due to inability to get off the floor, Closure"
+louvain,PT318,14,PT318,"Non-emergency Ambulance Closure, Breathlessness"
+louvain,PT503,14,PT503,"Emergency Ambulance Closure, Non-Trauma, Breathlessness"
+louvain,PW1846,15,PW1846,PaCCS Service Search
+louvain,PW1847,15,PW1847,PaCCS Emergency Treatment Centre Referral
+louvain,PT17,16,PT17,Ambulance due to Clinical Reasons
+louvain,PT18,17,PT18,Ambulance due to Transportation Reasons
+louvain,PT19,18,PT19,Emergency Ambulance due to Clinical Reasons
+louvain,PT229,19,PT229,"Emergency Ambulance Closure, Override"
+louvain,PT321,20,PT321,"Non-emergency Ambulance Closure, Override"
+louvain,PT40,21,PT40,"Emergency Ambulance Closure, Non Trauma"
+louvain,PT405,22,PT405,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso"
+louvain,PT417,23,PT417,"Emergency Ambulance Closure, Vaginal Bleeding in Pregnancy"
+louvain,PT508,24,PT508,Emergency Ambulance (Override) Closure
+louvain,PT509,25,PT509,Non-Emergency Ambulance (Override) Closure
+louvain,PT514,26,PT514,Health Alert Chest and Upper Back Pain
+louvain,PT516,27,PT516,Health Alert Chest and Upper Back pain
+louvain,PTP101,28,PTP101,"Emergency  Ambulance Closure, Pregnant, Foreign Body, Wound"
+louvain,PW1093,29,PW1093,"Rectal Pain, Swelling, Lump or Itch"
+louvain,PW1114,30,PW1114,Breastfeeding Problems
+louvain,PW1320,31,PW1320,"Foreign Body, Penis"
+louvain,PW1406,32,PW1406,"Genital Injury, Blunt"
+louvain,PW1607,33,PW1607,Breast Problems
+louvain,PW1714,34,PW1714,Teething
+louvain,PW1716,35,PW1716,"Eye, Sticky, Watery"
+louvain,PW1765,36,PW1765,Difficulty Passing Urine
+louvain,PW1778,37,PW1778,"Rectal Pain, Swelling, Lump or Itch"
+louvain,PW1808,38,PW1808,Prescription Request 
+louvain,PW1820,39,PW1820,Clinical Hub Closure - Dental
+louvain,PW1822,40,PW1822,Clinical Hub Closure Primary Care
+louvain,PW1827,41,PW1827,Emergency Prescription 111 online
+louvain,PW646,42,PW646,"Passing Urine, Associated Pain, Frequency or Smell"
+louvain,PW818,43,PW818,Nosebleeds without Injury
+louvain,PW819,44,PW819,Nosebleeds without Injury
+louvain,PW820,45,PW820,Nosebleeds without Injury
+louvain,PW833,46,PW833,"Genital Injury, Blunt"
+louvain,PW888,47,PW888,DEVELOPMENT test pathway only
+louvain,SP1,48,SP1,Assessing Safety 1st Party 
+louvain,SP3,49,SP3,Assessing Safety 3rd Party
+networkx_louvain,PA168,0,PA168,Reception Point 1
+networkx_louvain,PA169,0,PA169,Reception Point 2
+networkx_louvain,PN5121,0,PN5121,Self-Harm
+networkx_louvain,PN5131,0,PN5131,Chemical Eye Splash
+networkx_louvain,PN5134,0,PN5134,"Burn, Chemical"
+networkx_louvain,PT204,0,PT204,"Emergency  Ambulance Closure, Wound Bleeding, Limb, With or Without Foreign Body"
+networkx_louvain,PT218,0,PT218,"Emergency Ambulance Closure, Toxic Ingestion and Inhalation"
+networkx_louvain,PT22,0,PT22,"Emergency  Ambulance Closure, Trauma"
+networkx_louvain,PT23,0,PT23,"Emergency Ambulance Closure, Trauma, Spinal Injury"
+networkx_louvain,PT302,0,PT302,"Non-emergency Ambulance Closure, Wound Bleeding, Limb"
+networkx_louvain,PT31,0,PT31,"Non-emergency Ambulance Closure, Trauma"
+networkx_louvain,PT33,0,PT33,"Assistance needed at home due to inability to get off the floor, trauma"
+networkx_louvain,PT404,0,PT404,"Emergency Ambulance Closure, Wound Bleeding, Limb, No Foreign Body"
+networkx_louvain,PT500,0,PT500,Reception Point Foreign Body Closure
+networkx_louvain,PT501,0,PT501,Reception Point Professional Referral Closure
+networkx_louvain,PT7,0,PT7,Repeat Prescription
+networkx_louvain,PW1066,0,PW1066,Wound Problems
+networkx_louvain,PW1078,0,PW1078,Breast Pain
+networkx_louvain,PW1079,0,PW1079,Breast Pain
+networkx_louvain,PW1090,0,PW1090,Breast Discharge
+networkx_louvain,PW1098,0,PW1098,Eye Splash Injury or Minor Foreign Body
+networkx_louvain,PW1222,0,PW1222,"Leg Injury, Blunt"
+networkx_louvain,PW1224,0,PW1224,"Leg Injury, Penetrating"
+networkx_louvain,PW1234,0,PW1234,"Leg Injury, Penetrating"
+networkx_louvain,PW1240,0,PW1240,"Leg Injury, Blunt"
+networkx_louvain,PW1241,0,PW1241,"Leg Injury, Blunt"
+networkx_louvain,PW1259,0,PW1259,"Skin, Minor Foreign Body"
+networkx_louvain,PW1260,0,PW1260,"Hand or Wrist Injury, Penetrating"
+networkx_louvain,PW1264,0,PW1264,"Finger or Thumb Injury, Penetrating"
+networkx_louvain,PW1267,0,PW1267,"Hand or Wrist Injury, Blunt"
+networkx_louvain,PW1270,0,PW1270,"Finger or Thumb Injury, Blunt"
+networkx_louvain,PW1277,0,PW1277,"Foreign Body, Ear"
+networkx_louvain,PW1282,0,PW1282,"Toe Injury, Blunt"
+networkx_louvain,PW1283,0,PW1283,"Toe Injury, Blunt"
+networkx_louvain,PW1284,0,PW1284,"Toe Injury, Penetrating"
+networkx_louvain,PW1301,0,PW1301,"Skin, Glued"
+networkx_louvain,PW1319,0,PW1319,"Foreign Body, Nose"
+networkx_louvain,PW1328,0,PW1328,"Skin, Minor Foreign Body"
+networkx_louvain,PW1332,0,PW1332,Eye Splash Injury or Minor Foreign Body
+networkx_louvain,PW1359,0,PW1359,Eye Splash Injury or Minor Foreign Body
+networkx_louvain,PW1381,0,PW1381,"Abdominal or Flank Injury, Blunt"
+networkx_louvain,PW1382,0,PW1382,"Abdominal or Flank Injury, Blunt"
+networkx_louvain,PW1389,0,PW1389,"Burn, Sun"
+networkx_louvain,PW1391,0,PW1391,"Chest or Upper Back Injury, Blunt"
+networkx_louvain,PW1397,0,PW1397,"Eye Injury, Blunt"
+networkx_louvain,PW1405,0,PW1405,"Genital Injury, Blunt"
+networkx_louvain,PW1419,0,PW1419,"Lower Back Injury, Blunt"
+networkx_louvain,PW1420,0,PW1420,"Lower Back Injury, Blunt"
+networkx_louvain,PW1480,0,PW1480,"Burn, Chemical"
+networkx_louvain,PW1492,0,PW1492,Wound Problems
+networkx_louvain,PW1501,0,PW1501,"Finger or Thumb Injury, Blunt"
+networkx_louvain,PW1504,0,PW1504,"Hand or Wrist Injury, Blunt"
+networkx_louvain,PW1507,0,PW1507,"Finger or Thumb Injury, Penetrating"
+networkx_louvain,PW1510,0,PW1510,"Hand or Wrist Injury, Penetrating"
+networkx_louvain,PW1512,0,PW1512,"Ankle or Foot Injury, Blunt"
+networkx_louvain,PW1516,0,PW1516,"Ankle or Foot Injury, Blunt"
+networkx_louvain,PW1518,0,PW1518,"Ankle or Foot Injury, Penetrating"
+networkx_louvain,PW1522,0,PW1522,"Ankle or Foot Injury, Penetrating"
+networkx_louvain,PW1526,0,PW1526,"Toe Injury, Penetrating"
+networkx_louvain,PW1528,0,PW1528,"Foreign Body, Ear"
+networkx_louvain,PW1529,0,PW1529,"Foreign Body, Nose"
+networkx_louvain,PW1543,0,PW1543,Self-Harm
+networkx_louvain,PW1570,0,PW1570,Fingernail Injury
+networkx_louvain,PW1571,0,PW1571,Fingernail Injury
+networkx_louvain,PW1575,0,PW1575,Bites and Stings
+networkx_louvain,PW1576,0,PW1576,"Bites, Human"
+networkx_louvain,PW1577,0,PW1577,"Bites, Animal"
+networkx_louvain,PW1578,0,PW1578,"Bites, Snake"
+networkx_louvain,PW1579,0,PW1579,"Bites and Stings, Insect or Spider"
+networkx_louvain,PW1580,0,PW1580,Bites and Stings
+networkx_louvain,PW1582,0,PW1582,"Bites, Animal"
+networkx_louvain,PW1583,0,PW1583,"Bites, Snake"
+networkx_louvain,PW1584,0,PW1584,"Bites and Stings, Insect or Spider"
+networkx_louvain,PW1585,0,PW1585,Bites and Stings
+networkx_louvain,PW1586,0,PW1586,"Bites, Human"
+networkx_louvain,PW1588,0,PW1588,"Bites, Snake"
+networkx_louvain,PW1589,0,PW1589,"Bites and Stings, Insect or Spider"
+networkx_louvain,PW1590,0,PW1590,"Scratches, Grazes and Minor Wounds"
+networkx_louvain,PW1591,0,PW1591,"Leg Injury, Blunt"
+networkx_louvain,PW1592,0,PW1592,Nail Injury
+networkx_louvain,PW1593,0,PW1593,Toenail Injury
+networkx_louvain,PW1594,0,PW1594,Toenail Injury
+networkx_louvain,PW1595,0,PW1595,Nail Injury
+networkx_louvain,PW1596,0,PW1596,"Lower Back Injury, Blunt"
+networkx_louvain,PW1597,0,PW1597,"Lower Back Injury, Blunt"
+networkx_louvain,PW1604,0,PW1604,Breast Problems
+networkx_louvain,PW1606,0,PW1606,Breast Problems
+networkx_louvain,PW1618,0,PW1618,"Skin, Blisters"
+networkx_louvain,PW1619,0,PW1619,"Skin, Blisters"
+networkx_louvain,PW1625,0,PW1625,Trauma Blisters
+networkx_louvain,PW1709,0,PW1709,"Wound Problems, Plaster Casts, Tubes and Metal Appliances"
+networkx_louvain,PW1710,0,PW1710,"Wound Problems, Plaster Casts, Tubes and Metal Appliances"
+networkx_louvain,PW1721,0,PW1721,Plaster Cast Problems
+networkx_louvain,PW1722,0,PW1722,Tube and Drain Problems
+networkx_louvain,PW1724,0,PW1724,External Fixation
+networkx_louvain,PW1753,0,PW1753,"Skin, Minor Foreign Body"
+networkx_louvain,PW1754,0,PW1754,"Skin, Minor Foreign Body"
+networkx_louvain,PW1758,0,PW1758,Water Creature Stings
+networkx_louvain,PW1857,0,PW1857,Pathways Injury Module
+networkx_louvain,PW1859,0,PW1859,ED Injury Triage
+networkx_louvain,PW1863,0,PW1863,ED Injury Child
+networkx_louvain,PW500,0,PW500,"Abdominal or Flank Injury, Blunt"
+networkx_louvain,PW502,0,PW502,"Abdominal or Flank Injury, Blunt"
+networkx_louvain,PW503,0,PW503,"Abdominal or Flank Injury, Blunt"
+networkx_louvain,PW505,0,PW505,"Abdominal or Flank Injury, Blunt"
+networkx_louvain,PW564,0,PW564,"Burn, Chemical"
+networkx_louvain,PW566,0,PW566,"Burn, Chemical"
+networkx_louvain,PW580,0,PW580,"Burn, Thermal"
+networkx_louvain,PW590,0,PW590,"Chest or Upper Back Injury, Blunt"
+networkx_louvain,PW660,0,PW660,"Eye Injury, Blunt"
+networkx_louvain,PW662,0,PW662,"Eye Injury, Blunt"
+networkx_louvain,PW790,0,PW790,"Lower Back Injury, Blunt"
+networkx_louvain,PW792,0,PW792,"Lower Back Injury, Blunt"
+networkx_louvain,PW793,0,PW793,"Lower Back Injury, Blunt"
+networkx_louvain,PW795,0,PW795,"Lower Back Injury, Blunt"
+networkx_louvain,PW832,0,PW832,"Genital Injury, Blunt"
+networkx_louvain,PW880,0,PW880,Accidental Poisoning/Inhalation
+networkx_louvain,PW881,0,PW881,Accidental Poisoning/Inhalation
+networkx_louvain,PW895,0,PW895,"Arm Injury, Blunt"
+networkx_louvain,PW896,0,PW896,"Arm Injury, Blunt"
+networkx_louvain,PW897,0,PW897,"Arm Injury, Blunt"
+networkx_louvain,PW902,0,PW902,"Arm Injury, Penetrating"
+networkx_louvain,PW904,0,PW904,"Arm Injury, Penetrating"
+networkx_louvain,PW987,0,PW987,"Burn, Sun"
+networkx_louvain,PW989,0,PW989,"Burn, Sun"
+networkx_louvain,PA1,1,PA1,Stopped Breathing 3rd Party 
+networkx_louvain,PA110,1,PA110,Social & information SPA/OOH Version
+networkx_louvain,PA111,1,PA111,"Immediate threats to life, Ambulance version, 3rd party"
+networkx_louvain,PA112,1,PA112,"Immediate threats to life, SPA/OOH version, 3rd party"
+networkx_louvain,PA113,1,PA113,"Trauma emergency, 3rd party"
+networkx_louvain,PA115,1,PA115,"Immediate threats to life, Ambulance version, 1st party  "
+networkx_louvain,PA116,1,PA116,"Immediate threats to life, SPA/OOH version, 1st party"
+networkx_louvain,PA117,1,PA117,"Trauma emergency, 1st party"
+networkx_louvain,PA119,1,PA119,"Immediate threats to life, Ambulance version, 3rd party"
+networkx_louvain,PA120,1,PA120,"Immediate threats to life, SPA/OOH version, 3rd party"
+networkx_louvain,PA121,1,PA121,"Trauma emergency, 3rd Party"
+networkx_louvain,PA123,1,PA123,"Immediate threats to life, Ambulance version, 1st party"
+networkx_louvain,PA124,1,PA124,"Immediate threats to life, SPA/OOH version, 1st party"
+networkx_louvain,PA125,1,PA125,"Trauma emergency, 1st Party"
+networkx_louvain,PA127,1,PA127,"Immediate threats to life, Ambulance version, 3rd party"
+networkx_louvain,PA128,1,PA128,"Immediate threats to life, SPA/OOH version, 3rd party"
+networkx_louvain,PA129,1,PA129,"Trauma emergency, 3rd Party"
+networkx_louvain,PA13,1,PA13,Environmental Threat 3rd Party
+networkx_louvain,PA131,1,PA131,"Immediate threats to life, Ambulance version, 1st party"
+networkx_louvain,PA132,1,PA132,"Immediate threats to life, SPA/OOH version, 1st party"
+networkx_louvain,PA133,1,PA133,"Trauma emergency, 1st Party"
+networkx_louvain,PA135,1,PA135,"Immediate threats to life, Ambulance version, 3rd party"
+networkx_louvain,PA136,1,PA136,"Immediate threats to life, SPA/OOH version, 3rd party"
+networkx_louvain,PA137,1,PA137,"Trauma emergency, 3rd Party"
+networkx_louvain,PA139,1,PA139,"Immediate threats to life, Ambulance version, 1st party"
+networkx_louvain,PA140,1,PA140,"Immediate threats to life, SPA/OOH version, 1st party"
+networkx_louvain,PA141,1,PA141,"Trauma emergency, 1st Party"
+networkx_louvain,PA143,1,PA143,"Immediate threats to life, Ambulance version"
+networkx_louvain,PA144,1,PA144,"Immediate threats to life, SPA/OOH version"
+networkx_louvain,PA145,1,PA145,Trauma emergency
+networkx_louvain,PA147,1,PA147,"Immediate threats to life, Ambulance version"
+networkx_louvain,PA148,1,PA148,"Immediate threats to life, SPA/OOH version"
+networkx_louvain,PA149,1,PA149,Trauma emergency
+networkx_louvain,PA151,1,PA151,"Immediate threats to life, Ambulance version"
+networkx_louvain,PA152,1,PA152,"Immediate threats to life, SPA/OOH version"
+networkx_louvain,PA153,1,PA153,Trauma emergency
+networkx_louvain,PA155,1,PA155,"Immediate threats to life, Ambulance version"
+networkx_louvain,PA156,1,PA156,"Immediate threats to life, SPA/OOH version"
+networkx_louvain,PA157,1,PA157,Trauma emergency
+networkx_louvain,PA159,1,PA159,Health Information
+networkx_louvain,PA16,1,PA16,Multiple Self-Harm 3rd Party
+networkx_louvain,PA162,1,PA162,Frequent Caller
+networkx_louvain,PA164,1,PA164,Early Exit - Dying
+networkx_louvain,PA165,1,PA165,Early Exit - Dying
+networkx_louvain,PA17,1,PA17,Electrical Injury 3rd Party
+networkx_louvain,PA217,1,PA217,Drowning Incident Within 24 hours
+networkx_louvain,PA22,1,PA22,Environmental Threat 1st Party 
+networkx_louvain,PA25,1,PA25,"Major Bleeding, 1st & 3rd Party"
+networkx_louvain,PA26,1,PA26,Major Trauma 1st Party 
+networkx_louvain,PA27,1,PA27,Multiple Self-Harm 1st Party
+networkx_louvain,PA4,1,PA4,Major Trauma 3rd Party 
+networkx_louvain,PA40,1,PA40,Electrical Injury 3rd Party
+networkx_louvain,PA44,1,PA44,Major Trauma 3rd Party 
+networkx_louvain,PA45,1,PA45,Stopped Breathing 3rd Party 
+networkx_louvain,PA48,1,PA48,Major Trauma 3rd Party 
+networkx_louvain,PA5,1,PA5,Electrical Injury 1st Party
+networkx_louvain,PA53,1,PA53,Stopped Breathing 3rd Party 
+networkx_louvain,PA65,1,PA65,Electrical Injury 1st Party
+networkx_louvain,PA7,1,PA7,Fit or Seizure
+networkx_louvain,PA70,1,PA70,Major Trauma 1st Party 
+networkx_louvain,PA79,1,PA79,"Trapped with End of Call Safety, 3rd Party"
+networkx_louvain,PA80,1,PA80,"Trapped with End of Call Safety, 1st Party"
+networkx_louvain,PA85,1,PA85,Electrical Injury 3rd Party
+networkx_louvain,PA89,1,PA89,Choking
+networkx_louvain,PA90,1,PA90,Choking
+networkx_louvain,PA92,1,PA92,Choking
+networkx_louvain,PA99,1,PA99,Predetermined management Plan
+networkx_louvain,PFA1,1,PFA1,Calling About Self
+networkx_louvain,PFA3,1,PFA3,Calling About Someone Else
+networkx_louvain,PFC1,1,PFC1,Calling About Self
+networkx_louvain,PFC3,1,PFC3,Calling About Someone Else
+networkx_louvain,PFT,1,PFT,Calling About Someone Else
+networkx_louvain,PHCP,1,PHCP,Calling About Someone Else
+networkx_louvain,PMA1,1,PMA1,Calling About Self
+networkx_louvain,PMA3,1,PMA3,Calling About Someone Else
+networkx_louvain,PMC1,1,PMC1,Calling About Self
+networkx_louvain,PMC3,1,PMC3,Calling About Someone Else
+networkx_louvain,PMT,1,PMT,Calling About Someone Else
+networkx_louvain,PN5126,1,PN5126,Child Safeguard/Protection or Vulnerable Adult Concern
+networkx_louvain,PT11,1,PT11,"Emergency Ambulance Closure, Trauma"
+networkx_louvain,PT335,1,PT335,Trauma care advice
+networkx_louvain,PT504,1,PT504,"Unconsciousness, Closure"
+networkx_louvain,PT510,1,PT510,Emergency CPR Pathway
+networkx_louvain,PW110,1,PW110,HCP and Bed Bureau
+networkx_louvain,PW111,1,PW111,GP Urgent and Bed Bureau Entry
+networkx_louvain,PW112,1,PW112,GP Urgent and Bed Bureau Entry
+networkx_louvain,PW113,1,PW113,GP Urgent and Bed Bureau Entry
+networkx_louvain,PW114,1,PW114,GP Urgent and Bed Bureau Entry
+networkx_louvain,PW115,1,PW115,GP Urgent and Bed Bureau Entry
+networkx_louvain,PW116,1,PW116,GP Urgent and Bed Bureau Cardiac Closure
+networkx_louvain,PW1669,1,PW1669,Transfer Between Health Units
+networkx_louvain,PW1687,1,PW1687,Social or Domestic Emergency
+networkx_louvain,PW1810,1,PW1810,Healthcare Professional (HCP) Callback
+networkx_louvain,PW1811,1,PW1811,Clinical Hub Closure
+networkx_louvain,PW1812,1,PW1812,Senior Clinician Module Entry
+networkx_louvain,PW1821,1,PW1821,Clinical Hub Closure - Mental Health
+networkx_louvain,PW1824,1,PW1824,CHEST PAIN PATHWAY FOR IUC SG PICK UP ONLY
+networkx_louvain,PW1825,1,PW1825,PROBABLE STROKE OR TIA PATHWAY FOR IUC SG PICK UP ONLY
+networkx_louvain,PW1826,1,PW1826,ALLERGIC REACTION PATHWAY FOR IUC SG PICK UP ONLY
+networkx_louvain,PW582,1,PW582,"Burn, Thermal"
+networkx_louvain,PW588,1,PW588,"Chest or Upper Back Injury, Blunt"
+networkx_louvain,PW925,1,PW925,"Burn, Thermal"
+networkx_louvain,PA101,2,PA101,"Declared Diabetes Blood Sugar Problem, 1st party"
+networkx_louvain,PA23,2,PA23,Recent Fits 1st Party
+networkx_louvain,PA64,2,PA64,Recent Fits 1st Party
+networkx_louvain,PA72,2,PA72,Recent Fits 1st Party
+networkx_louvain,PA73,2,PA73,Recent Fits 1st Party
+networkx_louvain,PA87,2,PA87,Cardiac Medication Closure
+networkx_louvain,PT209,2,PT209,"Emergency Ambulance Closure, Swelling, General"
+networkx_louvain,PT220,2,PT220,"Emergency  Ambulance Closure, Breathlessness and Swelling"
+networkx_louvain,PT322,2,PT322,"Emergency Ambulance Closure, Breathlessness and/or Swelling"
+networkx_louvain,PT333,2,PT333,"Emergency Ambulance Closure, Breathlessness and/or Swelling"
+networkx_louvain,PT5,2,PT5,Medication
+networkx_louvain,PW1000,2,PW1000,Heat Exposure
+networkx_louvain,PW1076,2,PW1076,Breast Pain
+networkx_louvain,PW1077,2,PW1077,Breast Pain
+networkx_louvain,PW1080,2,PW1080,"Breast Pain, Pregnant"
+networkx_louvain,PW1083,2,PW1083,Breast Lump
+networkx_louvain,PW1086,2,PW1086,"Breast Lump, Pregnant"
+networkx_louvain,PW1089,2,PW1089,Breast Discharge
+networkx_louvain,PW1092,2,PW1092,"Breast Discharge, Pregnant"
+networkx_louvain,PW1118,2,PW1118,"Genital Injury, Blunt"
+networkx_louvain,PW1140,2,PW1140,Shoulder Pain
+networkx_louvain,PW1141,2,PW1141,Shoulder Pain
+networkx_louvain,PW1143,2,PW1143,Shoulder Pain
+networkx_louvain,PW1158,2,PW1158,Constipation
+networkx_louvain,PW1160,2,PW1160,"Constipation, Pregnant"
+networkx_louvain,PW1161,2,PW1161,Constipation
+networkx_louvain,PW1162,2,PW1162,Constipation
+networkx_louvain,PW1164,2,PW1164,Arm Pain or Swelling
+networkx_louvain,PW1165,2,PW1165,Arm Pain or Swelling
+networkx_louvain,PW1166,2,PW1166,Arm Pain or Swelling
+networkx_louvain,PW1167,2,PW1167,Arm Pain or Swelling
+networkx_louvain,PW1230,2,PW1230,Other Symptoms
+networkx_louvain,PW1323,2,PW1323,Mouth Ulcers
+networkx_louvain,PW1345,2,PW1345,Other Symptoms
+networkx_louvain,PW1346,2,PW1346,Other Symptoms
+networkx_louvain,PW1348,2,PW1348,Other Symptoms
+networkx_louvain,PW1349,2,PW1349,Other Symptoms
+networkx_louvain,PW1521,2,PW1521,Mouth Ulcers
+networkx_louvain,PW1530,2,PW1530,"Foreign Body, Penis"
+networkx_louvain,PW1561,2,PW1561,Vaginal Itch or Soreness
+networkx_louvain,PW1562,2,PW1562,Vaginal Itch or Soreness
+networkx_louvain,PW1565,2,PW1565,Genital Problems
+networkx_louvain,PW1566,2,PW1566,Genital Problems
+networkx_louvain,PW1603,2,PW1603,Breast Problems
+networkx_louvain,PW1605,2,PW1605,Breast Problems
+networkx_louvain,PW1609,2,PW1609,Breast Lump
+networkx_louvain,PW1614,2,PW1614,"Wrist, Hand or Finger Pain or Swelling"
+networkx_louvain,PW1615,2,PW1615,"Wrist, Hand or Finger Pain or Swelling"
+networkx_louvain,PW1616,2,PW1616,"Wrist, Hand or Finger Pain or Swelling"
+networkx_louvain,PW1617,2,PW1617,"Wrist, Hand or Finger Pain or Swelling"
+networkx_louvain,PW1626,2,PW1626,"Wrist, Hand or Finger Pain or Swelling"
+networkx_louvain,PW1635,2,PW1635,"Hip, Thigh or Buttock Pain or Swelling"
+networkx_louvain,PW1636,2,PW1636,"Hip, Thigh or Buttock Pain or Swelling"
+networkx_louvain,PW1637,2,PW1637,"Hip, Thigh or Buttock Pain or Swelling"
+networkx_louvain,PW1638,2,PW1638,"Hip, Thigh or Buttock Pain or Swelling"
+networkx_louvain,PW1639,2,PW1639,Knee or Lower Leg Pain or Swelling
+networkx_louvain,PW1640,2,PW1640,Knee or Lower Leg Pain or Swelling
+networkx_louvain,PW1641,2,PW1641,Knee or Lower Leg Pain or Swelling
+networkx_louvain,PW1642,2,PW1642,Knee or Lower Leg Pain or Swelling
+networkx_louvain,PW1643,2,PW1643,Ankle or Foot Pain or Swelling
+networkx_louvain,PW1644,2,PW1644,Ankle or Foot Pain or Swelling
+networkx_louvain,PW1645,2,PW1645,Ankle or Foot Pain or Swelling
+networkx_louvain,PW1646,2,PW1646,Ankle or Foot Pain or Swelling
+networkx_louvain,PW1647,2,PW1647,Toe Pain or Swelling
+networkx_louvain,PW1648,2,PW1648,Toe Pain or Swelling
+networkx_louvain,PW1677,2,PW1677,Easy or Unexplained Bruising
+networkx_louvain,PW1678,2,PW1678,Hair Loss
+networkx_louvain,PW1683,2,PW1683,Numbness or Unusual Feelings in the Skin
+networkx_louvain,PW1685,2,PW1685,Sexual Concerns
+networkx_louvain,PW1691,2,PW1691,Easy or Unexplained Bruising
+networkx_louvain,PW1692,2,PW1692,Easy or Unexplained Bruising
+networkx_louvain,PW1693,2,PW1693,Easy or Unexplained Bruising
+networkx_louvain,PW1694,2,PW1694,Easy or Unexplained Bruising
+networkx_louvain,PW1696,2,PW1696,Easy or Unexplained Bruising
+networkx_louvain,PW1698,2,PW1698,Sexual Concerns
+networkx_louvain,PW1701,2,PW1701,Sleep Difficulties
+networkx_louvain,PW1712,2,PW1712,Locked Jaw
+networkx_louvain,PW1718,2,PW1718,Constipation
+networkx_louvain,PW1733,2,PW1733,"Arm, Cold or Colour Change"
+networkx_louvain,PW1734,2,PW1734,"Leg, Cold or Colour Change"
+networkx_louvain,PW1764,2,PW1764,Tremor
+networkx_louvain,PW1766,2,PW1766,"Leg, Cold or Colour Change"
+networkx_louvain,PW1767,2,PW1767,"Arm, Cold or Colour Change"
+networkx_louvain,PW1774,2,PW1774,Skin Problems
+networkx_louvain,PW1775,2,PW1775,Hiccups
+networkx_louvain,PW1804,2,PW1804,Unwell Infant
+networkx_louvain,PW1819,2,PW1819,Ambulance Dispatch Cardiac Closure
+networkx_louvain,PW710,2,PW710,Fever
+networkx_louvain,PW732,2,PW732,Groin Pain or Groin Swelling
+networkx_louvain,PW774,2,PW774,Lower Limb Pain or Swelling
+networkx_louvain,PW775,2,PW775,Lower Limb Pain or Swelling
+networkx_louvain,PW776,2,PW776,Lower Limb Pain or Swelling
+networkx_louvain,PW777,2,PW777,Lower Limb Pain or Swelling
+networkx_louvain,PW778,2,PW778,Lower Limb Pain or Swelling
+networkx_louvain,PW779,2,PW779,Lower Limb Pain or Swelling
+networkx_louvain,PW894,2,PW894,"Arm Injury, Blunt"
+networkx_louvain,PW917,2,PW917,Vaginal Discharge
+networkx_louvain,PW923,2,PW923,Arm Pain or Swelling
+networkx_louvain,PN5004,3,PN5004,Toxic Ingestion/Inhalation
+networkx_louvain,PN5125,3,PN5125,Toxic Ingestion/Inhalation
+networkx_louvain,PN5129,3,PN5129,Gastrointestinal Clinician Closure 
+networkx_louvain,PT207,3,PT207,"Emergency Ambulance Closure, Toxic Ingestion"
+networkx_louvain,PT505,3,PT505,Viral Haemorrhagic Fever Closure
+networkx_louvain,PT507,3,PT507,Bleeding from Stoma
+networkx_louvain,PT511,3,PT511,"Black, Tarry or Red, Maroon Stools "
+networkx_louvain,PT6,3,PT6,Non-emergency Ambulance Closure
+networkx_louvain,PW1102,3,PW1102,Vaginal Swellings
+networkx_louvain,PW1103,3,PW1103,Vaginal Swellings
+networkx_louvain,PW1159,3,PW1159,Constipation
+networkx_louvain,PW1354,3,PW1354,Vaginal Swellings
+networkx_louvain,PW1413,3,PW1413,Heat Exposure
+networkx_louvain,PW1553,3,PW1553,Diarrhoea and Vomiting
+networkx_louvain,PW1554,3,PW1554,Diarrhoea and Vomiting
+networkx_louvain,PW1555,3,PW1555,Diarrhoea and Vomiting
+networkx_louvain,PW1556,3,PW1556,Diarrhoea and Vomiting
+networkx_louvain,PW1560,3,PW1560,Vaginal Itch or Soreness
+networkx_louvain,PW1563,3,PW1563,Diarrhoea and Vomiting
+networkx_louvain,PW1651,3,PW1651,Bringing Up Blood
+networkx_louvain,PW1652,3,PW1652,Bringing Up Blood
+networkx_louvain,PW1653,3,PW1653,Bringing Up Blood
+networkx_louvain,PW1654,3,PW1654,Bringing Up Blood
+networkx_louvain,PW1663,3,PW1663,Bringing Up Blood
+networkx_louvain,PW1666,3,PW1666,Vomiting Blood
+networkx_louvain,PW1667,3,PW1667,Vomiting Blood
+networkx_louvain,PW1673,3,PW1673,"Abdominal Pain, Pregnant, Over 20 Weeks"
+networkx_louvain,PW1676,3,PW1676,Absent or Missed Period
+networkx_louvain,PW1703,3,PW1703,Fever
+networkx_louvain,PW1705,3,PW1705,Cough 
+networkx_louvain,PW1708,3,PW1708,Diarrhoea and Vomiting
+networkx_louvain,PW1711,3,PW1711,Nasal Congestion
+networkx_louvain,PW1715,3,PW1715,Diarrhoea
+networkx_louvain,PW1717,3,PW1717,"Breathing Problems, Breathlessness or Wheeze"
+networkx_louvain,PW1719,3,PW1719,Stoma Problems
+networkx_louvain,PW1720,3,PW1720,Bringing Up Blood 
+networkx_louvain,PW1723,3,PW1723,External Fixation
+networkx_louvain,PW1759,3,PW1759,Loss of Bowel Control
+networkx_louvain,PW1800,3,PW1800,Unwell under 29 days
+networkx_louvain,PW1801,3,PW1801,Unwell 29 days to under 16 weeks
+networkx_louvain,PW1802,3,PW1802,Unwell 16 weeks to 6 months
+networkx_louvain,PW1803,3,PW1803,Unwell over 6 months
+networkx_louvain,PW1805,3,PW1805,Unwell Infant
+networkx_louvain,PW1828,3,PW1828,Age and Gender
+networkx_louvain,PW1829,3,PW1829,Critical Illness Assessment 
+networkx_louvain,PW1830,3,PW1830,Vomiting and/or Nausea with Abdominal Pain
+networkx_louvain,PW1831,3,PW1831,Vomiting and/or Nausea with Abdominal Pain
+networkx_louvain,PW1832,3,PW1832,Vomiting and/or Nausea with Abdominal Pain
+networkx_louvain,PW1833,3,PW1833,Vomiting and/or Nausea with Abdominal Pain
+networkx_louvain,PW1834,3,PW1834,Diarrhoea with Abdominal Pain
+networkx_louvain,PW1835,3,PW1835,Diarrhoea with Abdominal Pain
+networkx_louvain,PW1836,3,PW1836,Diarrhoea with Abdominal Pain
+networkx_louvain,PW1837,3,PW1837,Diarrhoea with Abdominal Pain
+networkx_louvain,PW1838,3,PW1838,Diarrhoea and Vomiting with Abdominal Pain
+networkx_louvain,PW1839,3,PW1839,Diarrhoea and Vomiting with Abdominal Pain
+networkx_louvain,PW1840,3,PW1840,Diarrhoea and Vomiting with Abdominal Pain
+networkx_louvain,PW1841,3,PW1841,Diarrhoea and Vomiting with Abdominal Pain
+networkx_louvain,PW1844,3,PW1844,Groin Pain or Groin Swelling with Abdominal Pain
+networkx_louvain,PW1845,3,PW1845,Groin Pain or Groin Swelling with Abdominal Pain
+networkx_louvain,PW516,3,PW516,Abdominal Pain
+networkx_louvain,PW517,3,PW517,Abdominal Pain
+networkx_louvain,PW518,3,PW518,"Abdominal, Flank, Groin or Back Pain or Swelling"
+networkx_louvain,PW519,3,PW519,Abdominal Pain
+networkx_louvain,PW520,3,PW520,Abdominal Pain
+networkx_louvain,PW521,3,PW521,"Abdominal, Flank, Groin or Back Pain or Swelling"
+networkx_louvain,PW574,3,PW574,Cold or Flu Symptoms
+networkx_louvain,PW628,3,PW628,Diarrhoea
+networkx_louvain,PW629,3,PW629,Diarrhoea
+networkx_louvain,PW630,3,PW630,Diarrhoea
+networkx_louvain,PW631,3,PW631,Diarrhoea
+networkx_louvain,PW632,3,PW632,Diarrhoea
+networkx_louvain,PW716,3,PW716,Flank or Side Pain
+networkx_louvain,PW728,3,PW728,Groin Pain or Groin Swelling
+networkx_louvain,PW729,3,PW729,Groin Pain or Groin Swelling
+networkx_louvain,PW731,3,PW731,Groin Pain or Groin Swelling
+networkx_louvain,PW754,3,PW754,Headache
+networkx_louvain,PW760,3,PW760,Constipation
+networkx_louvain,PW782,3,PW782,Lower Back Pain
+networkx_louvain,PW783,3,PW783,Lower Back Pain
+networkx_louvain,PW785,3,PW785,Lower Back Pain
+networkx_louvain,PW786,3,PW786,Lower Back Pain
+networkx_louvain,PW808,3,PW808,Unwell
+networkx_louvain,PW846,3,PW846,Rectal Bleeding
+networkx_louvain,PW848,3,PW848,Rectal Bleeding
+networkx_louvain,PW854,3,PW854,Sore Throat or Hoarse Voice
+networkx_louvain,PW856,3,PW856,Sore Throat
+networkx_louvain,PW915,3,PW915,Vaginal Discharge
+networkx_louvain,PW916,3,PW916,Vaginal Discharge
+networkx_louvain,PW928,3,PW928,Vomiting Blood
+networkx_louvain,PW929,3,PW929,Vomiting Blood
+networkx_louvain,PW930,3,PW930,Vomiting Blood
+networkx_louvain,PW936,3,PW936,Vomiting and/or Nausea
+networkx_louvain,PW937,3,PW937,Vomiting and/or Nausea
+networkx_louvain,PW938,3,PW938,Vomiting and/or Nausea
+networkx_louvain,PW939,3,PW939,Vomiting and/or Nausea
+networkx_louvain,PW940,3,PW940,Vomiting and/or Nausea
+networkx_louvain,PN5135,4,PN5135,Covid Clinician Closure Pathway
+networkx_louvain,PT1,4,PT1,Emergency Ambulance Closure
+networkx_louvain,PT2,4,PT2,Emergency Ambulance Closure
+networkx_louvain,PT213,4,PT213,"Ambulance Closure, Stroke"
+networkx_louvain,PT224,4,PT224,"Non-emergency Ambulance Closure, Vaginal Bleeding in Pregnancy"
+networkx_louvain,PT315,4,PT315,"Emergency Ambulance Closure, Breathlessness"
+networkx_louvain,PT513,4,PT513,Health Alert
+networkx_louvain,PT515,4,PT515,Health Alert Palpitations
+networkx_louvain,PTP1,4,PTP1,"Emergency Ambulance Closure, Pregnant"
+networkx_louvain,PTP11,4,PTP11,"Emergency Ambulance Closure, Pregnant, Trauma"
+networkx_louvain,PTP111,4,PTP111,"Emergency Ambulance Closure, Pregnant, Foreign Body, Wound"
+networkx_louvain,PW1028,4,PW1028,Palpitations
+networkx_louvain,PW1029,4,PW1029,Palpitations
+networkx_louvain,PW1030,4,PW1030,Palpitations
+networkx_louvain,PW1031,4,PW1031,Palpitations
+networkx_louvain,PW1032,4,PW1032,"Palpitations, Pregnant"
+networkx_louvain,PW1034,4,PW1034,"Object, Ingested or Inhaled"
+networkx_louvain,PW1321,4,PW1321,"Foreign Body, Rectum"
+networkx_louvain,PW1322,4,PW1322,"Foreign Body, Vaginal"
+networkx_louvain,PW1496,4,PW1496,Difficulty Swallowing
+networkx_louvain,PW1539,4,PW1539,"Flank or Side Pain, Pregnant"
+networkx_louvain,PW1544,4,PW1544,"Face, Neck Pain or Swelling"
+networkx_louvain,PW1545,4,PW1545,"Face, Neck Pain or Swelling"
+networkx_louvain,PW1559,4,PW1559,Vaginal Itch or Soreness
+networkx_louvain,PW1564,4,PW1564,Genital Problems
+networkx_louvain,PW1567,4,PW1567,Catheter Problems
+networkx_louvain,PW1568,4,PW1568,Catheter Problems
+networkx_louvain,PW1598,4,PW1598,Face and Neck Pain or Swelling Over 25yrs
+networkx_louvain,PW1599,4,PW1599,Face and Neck Pain or Swelling Over 25yrs
+networkx_louvain,PW1600,4,PW1600,Face and Neck Pain or Swelling Under 25yrs
+networkx_louvain,PW1601,4,PW1601,Face and Neck Pain or Swelling Under 25yrs
+networkx_louvain,PW1655,4,PW1655,Coughing up Blood
+networkx_louvain,PW1656,4,PW1656,Coughing up Blood
+networkx_louvain,PW1657,4,PW1657,Coughing up Blood
+networkx_louvain,PW1658,4,PW1658,Coughing up Blood
+networkx_louvain,PW1702,4,PW1702,Ear Discharge or Ear Wax
+networkx_louvain,PW1762,4,PW1762,Hearing Disturbance or Blocked Ear
+networkx_louvain,PW1776,4,PW1776,Wound Problems
+networkx_louvain,PW1777,4,PW1777,Wound Problems
+networkx_louvain,PW1807,4,PW1807,Dummy pathway for PT Dx jumps
+networkx_louvain,PW1842,4,PW1842,Groin Pain or Groin Swelling with Abdominal Pain
+networkx_louvain,PW1843,4,PW1843,Groin Pain or Groin Swelling with Abdominal Pain
+networkx_louvain,PW1850,4,PW1850,Covid
+networkx_louvain,PW1858,4,PW1858,"Emergency or Urgent Treament Centre, Self-triage"
+networkx_louvain,PW1860,4,PW1860,ED Triage Pre-Entry Pathway
+networkx_louvain,PW1861,4,PW1861,ED Chest Pain Triage
+networkx_louvain,PW1862,4,PW1862,ED Stroke Symptoms Triage
+networkx_louvain,PW1864,4,PW1864,Self Triage Child Illness 
+networkx_louvain,PW1865,4,PW1865,Urinary Problems
+networkx_louvain,PW1866,4,PW1866,ED Triage Mental Health
+networkx_louvain,PW1867,4,PW1867,ED Eye Triage
+networkx_louvain,PW1868,4,PW1868,ED Ear Nose Throat Triage
+networkx_louvain,PW542,4,PW542,Behaviour Change
+networkx_louvain,PW636,4,PW636,Dizziness or Vertigo
+networkx_louvain,PW637,4,PW637,Dizziness or Vertigo
+networkx_louvain,PW639,4,PW639,Dizziness or Vertigo
+networkx_louvain,PW640,4,PW640,Dizziness or Vertigo
+networkx_louvain,PW643,4,PW643,Dizziness or Vertigo Pregnant
+networkx_louvain,PW644,4,PW644,"Passing Urine, Associated Pain, Frequency or Smell"
+networkx_louvain,PW645,4,PW645,"Passing Urine, Associated Pain, Frequency or Smell"
+networkx_louvain,PW647,4,PW647,"Passing Urine, Associated Pain, Frequency or Smell"
+networkx_louvain,PW648,4,PW648,"Passing Urine, Associated Pain, Frequency or Smell"
+networkx_louvain,PW654,4,PW654,Earache
+networkx_louvain,PW655,4,PW655,Earache
+networkx_louvain,PW656,4,PW656,Earache
+networkx_louvain,PW684,4,PW684,"Head, Facial or Neck Injury, Blunt"
+networkx_louvain,PW700,4,PW700,"Falls, Faints or Blackouts or Unable to get up without Injury"
+networkx_louvain,PW717,4,PW717,Flank or Side Pain
+networkx_louvain,PW719,4,PW719,Flank or Side Pain
+networkx_louvain,PW720,4,PW720,Flank or Side Pain
+networkx_louvain,PW722,4,PW722,"Flank or Side Pain, Pregnant"
+networkx_louvain,PW734,4,PW734,"Groin Pain or Groin Swelling, Pregnant, Under 20 Weeks"
+networkx_louvain,PW752,4,PW752,Headache
+networkx_louvain,PW753,4,PW753,Headache
+networkx_louvain,PW755,4,PW755,Headache
+networkx_louvain,PW756,4,PW756,Headache
+networkx_louvain,PW758,4,PW758,"Headache, Pregnant"
+networkx_louvain,PW836,4,PW836,"Object, Ingested or Inhaled"
+networkx_louvain,PW886,4,PW886,Difficulty Passing Urine
+networkx_louvain,PW912,4,PW912,Vaginal Bleeding
+networkx_louvain,PW961,4,PW961,Blood in Urine
+networkx_louvain,PW962,4,PW962,Blood in Urine
+networkx_louvain,PW967,4,PW967,Blood in Urine
+networkx_louvain,PA100,5,PA100,"Declared Diabetes Blood Sugar Problem, 3rd party"
+networkx_louvain,PA102,5,PA102,"Declared Diabetes Blood Sugar Problem, 3rd party"
+networkx_louvain,PA103,5,PA103,"Declared Diabetes Blood Sugar Problem, 1st party"
+networkx_louvain,PA94,5,PA94,Allergic Reaction
+networkx_louvain,PEE4,5,PEE4,Early Exit
+networkx_louvain,PEE5,5,PEE5,Early Exit (PaCCS)
+networkx_louvain,PN1619,5,PN1619,"Skin, Rash"
+networkx_louvain,PN1620,5,PN1620,"Skin, Rash"
+networkx_louvain,PN5127,5,PN5127,Generic Clinician Closure
+networkx_louvain,PT312,5,PT312,"Emergency Ambulance Closure, Breathlessness"
+networkx_louvain,PT512,5,PT512,Health Alert
+networkx_louvain,PW1040,5,PW1040,Cold or Flu Symptoms
+networkx_louvain,PW1041,5,PW1041,Cold or Flu Symptoms
+networkx_louvain,PW1042,5,PW1042,Cold or Flu Symptoms
+networkx_louvain,PW1043,5,PW1043,Cold or Flu Symptoms
+networkx_louvain,PW1044,5,PW1044,"Cold or Flu Symptoms, Pregnant"
+networkx_louvain,PW1053,5,PW1053,"Tattoos, Birthmarks or Moles"
+networkx_louvain,PW1057,5,PW1057,"Skin, Lumps"
+networkx_louvain,PW1072,5,PW1072,Tiredness (Fatigue)
+networkx_louvain,PW1073,5,PW1073,Tiredness (Fatigue)
+networkx_louvain,PW1091,5,PW1091,"Rectal Pain, Swelling, Lump or Itch"
+networkx_louvain,PW1226,5,PW1226,Nasal Congestion
+networkx_louvain,PW1620,5,PW1620,"Skin, Rash"
+networkx_louvain,PW1623,5,PW1623,"Skin, Rash"
+networkx_louvain,PW1624,5,PW1624,"Skin, Acne, Spots and Pimples"
+networkx_louvain,PW1664,5,PW1664,Coughing up Blood
+networkx_louvain,PW1679,5,PW1679,Head Lice (Declared)
+networkx_louvain,PW1680,5,PW1680,Athlete's Foot (Declared)
+networkx_louvain,PW1681,5,PW1681,Itch
+networkx_louvain,PW1688,5,PW1688,Itch
+networkx_louvain,PW1689,5,PW1689,Itch
+networkx_louvain,PW1690,5,PW1690,Itch
+networkx_louvain,PW1755,5,PW1755,"Skin, Lumps"
+networkx_louvain,PW1757,5,PW1757,"Skin, Lumps"
+networkx_louvain,PW1769,5,PW1769,Pubic Lice (Declared)
+networkx_louvain,PW1770,5,PW1770,Scabies (Declared)
+networkx_louvain,PW1771,5,PW1771,Skin Problems
+networkx_louvain,PW1772,5,PW1772,Skin Problems
+networkx_louvain,PW1773,5,PW1773,Skin Problems
+networkx_louvain,PW1846,5,PW1846,PaCCS Service Search
+networkx_louvain,PW1847,5,PW1847,PaCCS Emergency Treatment Centre Referral
+networkx_louvain,PW1848,5,PW1848,PaCCS Ambulance Dispatch
+networkx_louvain,PW1849,5,PW1849,PaCCS Home Management Suite
+networkx_louvain,PW1851,5,PW1851,Covid-19_online
+networkx_louvain,PW1852,5,PW1852,Covid-19_Online_Child Only
+networkx_louvain,PW1853,5,PW1853,Health Alert (Respiratory)
+networkx_louvain,PW1854,5,PW1854,Loss of Taste or Smell
+networkx_louvain,PW556,5,PW556,"Breathing Problems, Breathlessness or Wheeze"
+networkx_louvain,PW557,5,PW557,"Breathing Problems, Breathlessness or Wheeze"
+networkx_louvain,PW558,5,PW558,"Breathing Problems, Breathlessness or Wheeze"
+networkx_louvain,PW559,5,PW559,"Breathing Problems, Breathlessness or Wheeze"
+networkx_louvain,PW560,5,PW560,"Breathing Problems, Breathlessness or Wheeze"
+networkx_louvain,PW562,5,PW562,"Breathing Problems, Breathlessness or Wheeze, Pregnant"
+networkx_louvain,PW708,5,PW708,Fever
+networkx_louvain,PW709,5,PW709,Fever
+networkx_louvain,PW711,5,PW711,Fever
+networkx_louvain,PW712,5,PW712,Fever
+networkx_louvain,PW762,5,PW762,Cough
+networkx_louvain,PW830,5,PW830,Tiredness (Fatigue)
+networkx_louvain,PW975,5,PW975,Cough
+networkx_louvain,PW976,5,PW976,Cough
+networkx_louvain,PW977,5,PW977,"Cough, Pregnant"
+networkx_louvain,PW978,5,PW978,Cough
+networkx_louvain,PW979,5,PW979,Cough
+networkx_louvain,PW981,5,PW981,Nasal Congestion
+networkx_louvain,PW984,5,PW984,Nasal Congestion
+networkx_louvain,PW998,5,PW998,Heat Exposure
+networkx_louvain,PA14,6,PA14,Labour and Childbirth 3rd Party 
+networkx_louvain,PA218,6,PA218,"Choking on liquids now, infants"
+networkx_louvain,PA24,6,PA24,Labour and Childbirth 1st Party 
+networkx_louvain,PFI,6,PFI,Calling About Someone Else
+networkx_louvain,PMI,6,PMI,Calling About Someone Else
+networkx_louvain,PN5130,6,PN5130,Failed Contraception Clinician Assessment
+networkx_louvain,PN5133,6,PN5133,"Failed Contraception and Retained Condom or Cap, Clinician Assessment "
+networkx_louvain,PT201,6,PT201,"Emergency  Ambulance Closure, Wound, Foreign Body"
+networkx_louvain,PT205,6,PT205,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso"
+networkx_louvain,PT217,6,PT217,"Emergency Ambulance Closure, Vaginal Bleeding in Pregnancy"
+networkx_louvain,PT231,6,PT231,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso, Spinal Injury"
+networkx_louvain,PTP2,6,PTP2,"Emergency Ambulance Closure, Pregnant"
+networkx_louvain,PW1010,6,PW1010,"Genital Injury, Penetrating"
+networkx_louvain,PW1012,6,PW1012,"Genital Injury, Penetrating"
+networkx_louvain,PW1014,6,PW1014,"Genital Injury, Penetrating, Pregnant, Over 20 weeks"
+networkx_louvain,PW1116,6,PW1116,"Genital Injury, Blunt"
+networkx_louvain,PW1120,6,PW1120,"Genital Injury, Blunt, Pregnant"
+networkx_louvain,PW1383,6,PW1383,"Abdominal or Flank Injury, Penetrating"
+networkx_louvain,PW1384,6,PW1384,"Abdominal or Flank Injury, Penetrating"
+networkx_louvain,PW1393,6,PW1393,"Chest or Upper Back Injury, Penetrating"
+networkx_louvain,PW1407,6,PW1407,"Genital Injury, Penetrating"
+networkx_louvain,PW1408,6,PW1408,"Genital Injury, Penetrating"
+networkx_louvain,PW1421,6,PW1421,"Lower Back Injury, Penetrating"
+networkx_louvain,PW1422,6,PW1422,"Lower Back Injury, Penetrating"
+networkx_louvain,PW1531,6,PW1531,"Foreign Body, Rectum"
+networkx_louvain,PW1532,6,PW1532,"Foreign Body, Vaginal"
+networkx_louvain,PW1674,6,PW1674,"Diarrhoea or Vomiting, Pregnant, Over 20 Weeks"
+networkx_louvain,PW1675,6,PW1675,"Groin Pain or Swelling, Pregnant, Over 20 Weeks"
+networkx_louvain,PW1684,6,PW1684,Sexual or Menstrual Concerns
+networkx_louvain,PW1699,6,PW1699,Sexual or Menstrual Concerns
+networkx_louvain,PW1736,6,PW1736,"Abdominal Pain, Pregnant, Over 20 Weeks with Rectal Bleeding"
+networkx_louvain,PW1763,6,PW1763,Reduced Fetal Movements 
+networkx_louvain,PW506,6,PW506,"Abdominal or Flank Injury, Blunt, Pregnant"
+networkx_louvain,PW508,6,PW508,"Abdominal or Flank Injury, Penetrating"
+networkx_louvain,PW510,6,PW510,"Abdominal or Flank Injury, Penetrating"
+networkx_louvain,PW511,6,PW511,"Abdominal or Flank Injury, Penetrating"
+networkx_louvain,PW513,6,PW513,"Abdominal or Flank Injury, Penetrating"
+networkx_louvain,PW514,6,PW514,"Abdominal or Flank Injury, Penetrating, Pregnant"
+networkx_louvain,PW596,6,PW596,"Chest or Upper Back Injury, Penetrating"
+networkx_louvain,PW598,6,PW598,"Chest or Upper Back Injury, Penetrating"
+networkx_louvain,PW788,6,PW788,"Lower Back Pain, Pregnant, Over 20 weeks"
+networkx_louvain,PW796,6,PW796,"Lower Back Injury, Blunt, Pregnant"
+networkx_louvain,PW798,6,PW798,"Lower Back Injury, Penetrating"
+networkx_louvain,PW800,6,PW800,"Lower Back Injury, Penetrating"
+networkx_louvain,PW801,6,PW801,"Lower Back Injury, Penetrating"
+networkx_louvain,PW803,6,PW803,"Lower Back Injury, Penetrating"
+networkx_louvain,PW804,6,PW804,"Lower Back Injury, Penetrating, Pregnant "
+networkx_louvain,PW834,6,PW834,"Genital Injury, Penetrating"
+networkx_louvain,PW835,6,PW835,"Genital Injury, Penetrating"
+networkx_louvain,PW910,6,PW910,Vaginal Bleeding
+networkx_louvain,PW911,6,PW911,Vaginal Bleeding
+networkx_louvain,PW913,6,PW913,"Vaginal Bleeding, Pregnant"
+networkx_louvain,PN1621,7,PN1621,Accidental Dental Analgesia Overdose
+networkx_louvain,PT202,7,PT202,"Emergency Ambulance Closure, Wound Bleeding, Foreign Body, Head"
+networkx_louvain,PT203,7,PT203,"Emergency Ambulance Closure, Wound Bleeding, Head"
+networkx_louvain,PT225,7,PT225,Dental Analgesia Assessment
+networkx_louvain,PT226,7,PT226,Dental Analgesia Assessment
+networkx_louvain,PT227,7,PT227,Dental Analgesia Assessment
+networkx_louvain,PT228,7,PT228,Dental Analgesia Assessment
+networkx_louvain,PT305,7,PT305,Transport to Emergency Centre within 1 hour
+networkx_louvain,PT4,7,PT4,"Emergency  Ambulance Closure, Override"
+networkx_louvain,PT41,7,PT41,"Emergency  Ambulance Closure, Trauma"
+networkx_louvain,PT517,7,PT517,Dental Analgesia Assessment
+networkx_louvain,PT518,7,PT518,Dental Analgesia Assessment
+networkx_louvain,PW1046,7,PW1046,Sinusitis (Declared)
+networkx_louvain,PW1048,7,PW1048,Sinusitis (Declared)
+networkx_louvain,PW1050,7,PW1050,Sinusitis (Declared)
+networkx_louvain,PW1367,7,PW1367,"Skin, Lumps"
+networkx_louvain,PW1395,7,PW1395,Dental Injury
+networkx_louvain,PW1399,7,PW1399,"Eye Injury, Penetrating"
+networkx_louvain,PW1401,7,PW1401,"Head, Facial or Neck Injury, Blunt"
+networkx_louvain,PW1403,7,PW1403,"Head, Facial or Neck Injury, Penetrating"
+networkx_louvain,PW1515,7,PW1515,Dental Bleeding
+networkx_louvain,PW1517,7,PW1517,Other Dental Problems
+networkx_louvain,PW1548,7,PW1548,"Face, Neck Pain or Swelling"
+networkx_louvain,PW1549,7,PW1549,"Face, Neck Pain or Swelling"
+networkx_louvain,PW1550,7,PW1550,"Face, Neck Pain or Swelling"
+networkx_louvain,PW1602,7,PW1602,Sinusitis (Declared)
+networkx_louvain,PW1610,7,PW1610,Dental Problems
+networkx_louvain,PW1611,7,PW1611,Dental Problems
+networkx_louvain,PW1612,7,PW1612,Dental Problems
+networkx_louvain,PW1613,7,PW1613,"Falls, Faints or Blackouts without Injury"
+networkx_louvain,PW1670,7,PW1670,"Falls, Faints or Blackouts without Injury"
+networkx_louvain,PW1706,7,PW1706,Vomiting
+networkx_louvain,PW1713,7,PW1713,Nosebleeds after Injury
+networkx_louvain,PW1725,7,PW1725,Teething
+networkx_louvain,PW1730,7,PW1730,Nosebleeds after Injury
+networkx_louvain,PW1731,7,PW1731,Nosebleeds after Injury
+networkx_louvain,PW1809,7,PW1809,Dental Module
+networkx_louvain,PW572,7,PW572,Toothache After Dental Injury
+networkx_louvain,PW620,7,PW620,Dental Injury
+networkx_louvain,PW622,7,PW622,Dental Injury
+networkx_louvain,PW638,7,PW638,Dizziness or Vertigo
+networkx_louvain,PW668,7,PW668,"Eye Injury, Penetrating"
+networkx_louvain,PW670,7,PW670,"Eye Injury, Penetrating"
+networkx_louvain,PW686,7,PW686,"Head, Facial or Neck Injury, Blunt"
+networkx_louvain,PW692,7,PW692,"Head, Facial or Neck Injury, Penetrating"
+networkx_louvain,PW694,7,PW694,"Head, Facial or Neck Injury, Penetrating"
+networkx_louvain,PW870,7,PW870,Toothache without Dental Injury
+networkx_louvain,PW871,7,PW871,Toothache without Dental Injury
+networkx_louvain,PW872,7,PW872,Toothache without Dental Injury
+networkx_louvain,PA104,8,PA104,Declared Diabetes Blood Sugar Problem
+networkx_louvain,PA114,8,PA114,"Non-trauma emergency, 3rd party"
+networkx_louvain,PA118,8,PA118,"Non-trauma emergency, 1st party"
+networkx_louvain,PA122,8,PA122,"Non-trauma emergency, 3rd Party"
+networkx_louvain,PA126,8,PA126,"Non-trauma emergency, 1st Party"
+networkx_louvain,PA130,8,PA130,"Non-trauma emergency, 3rd Party"
+networkx_louvain,PA134,8,PA134,"Non-trauma emergency, 1st Party"
+networkx_louvain,PA138,8,PA138,"Non-trauma emergency, 3rd Party"
+networkx_louvain,PA142,8,PA142,"Non-trauma emergency, 1st Party"
+networkx_louvain,PA146,8,PA146,Non-trauma emergency
+networkx_louvain,PA150,8,PA150,Non-trauma emergency
+networkx_louvain,PA154,8,PA154,Non-trauma emergency
+networkx_louvain,PA158,8,PA158,Non-trauma emergency
+networkx_louvain,PA170,8,PA170,Declared ICD (Implantable Cardioverter Defibrillator) Shock
+networkx_louvain,PA171,8,PA171,Stroke-like Symptoms
+networkx_louvain,PA18,8,PA18,Fighting for Breath 1st Party 
+networkx_louvain,PA19,8,PA19,Recent Fits 3rd Party
+networkx_louvain,PA21,8,PA21,Chest and Upper Back Pain
+networkx_louvain,PA212,8,PA212,Chest and Upper Back Pain
+networkx_louvain,PA213,8,PA213,Chest and Upper Back Pain
+networkx_louvain,PA214,8,PA214,Chest and Upper Back pain
+networkx_louvain,PA215,8,PA215,Declared Blood Sugar Problem
+networkx_louvain,PA216,8,PA216,Hypoglycaemia Management
+networkx_louvain,PA219,8,PA219,Chest or Upper Back Pain Under 35 Years 
+networkx_louvain,PA21PAN,8,PA21PAN,Chest and Upper Back Pain Pandemic Flu
+networkx_louvain,PA29,8,PA29,Probable Stroke or TIA 1st Party 
+networkx_louvain,PA36,8,PA36,Recent Fits 3rd Party
+networkx_louvain,PA41,8,PA41,Fighting for Breath 3rd Party
+networkx_louvain,PA42,8,PA42,Recent Fits 3rd Party
+networkx_louvain,PA51,8,PA51,Recent Fits 3rd Party
+networkx_louvain,PA55,8,PA55,Fighting for Breath 3rd Party
+networkx_louvain,PA57,8,PA57,Recent Fits 3rd Party
+networkx_louvain,PA6,8,PA6,Fighting for Breath 3rd Party
+networkx_louvain,PA71,8,PA71,Fighting for Breath 1st Party 
+networkx_louvain,PA78,8,PA78,Recent Fits 3rd Party
+networkx_louvain,PA9,8,PA9,Probable Stroke or TIA 3rd Party
+networkx_louvain,PA93,8,PA93,Recovery From Successful Cardio-Pulmonary Resuscitation
+networkx_louvain,PT418,8,PT418,Diabetic Hypoglycaemic Closure
+networkx_louvain,PT506,8,PT506,Emergency Tracheostomy or Laryngectomy
+networkx_louvain,PW1746,8,PW1746,Diabetes Blood Sugar Problem (Declared)
+networkx_louvain,PP100,9,PP100,"Entry pathway, adult (Ambulance setting)"
+networkx_louvain,PP101,9,PP101,"Entry pathway, adult (OOH & SPA setting)"
+networkx_louvain,PP102,9,PP102,"Entry pathway, child (Ambulance setting)"
+networkx_louvain,PP103,9,PP103,"Entry pathway, child (OOH & SPA setting)"
+networkx_louvain,PP104,9,PP104,"Entry pathway, toddler (Ambulance setting)"
+networkx_louvain,PP105,9,PP105,"Entry pathway, toddler (OOH & SPA setting)"
+networkx_louvain,PP106,9,PP106,"Entry pathway, infant (Ambulance setting)"
+networkx_louvain,PP107,9,PP107,"Entry, infant (OOH & SPA setting)"
+networkx_louvain,PP200,9,PP200,"Pandemic flu, adult "
+networkx_louvain,PP201,9,PP201,"Pandemic flu, child"
+networkx_louvain,PP202,9,PP202,"Pandemic flu, toddler"
+networkx_louvain,PP203,9,PP203,"Pandemic flu, infant"
+networkx_louvain,PP500,9,PP500,"Generic triage pathway, adult "
+networkx_louvain,PP501,9,PP501,"Generic triage pathway, child"
+networkx_louvain,PP502,9,PP502,"Generic triage, toddler"
+networkx_louvain,PP503,9,PP503,"Generic triage pathway, infant"
+networkx_louvain,PPT1,9,PPT1,Disposition 999 Ambulance
+networkx_louvain,PPT10,9,PPT10,Disposition Medication Enquiry
+networkx_louvain,PPT11,9,PPT11,Disposition Speak to a Clinician from our service Immediately
+networkx_louvain,PPT12,9,PPT12,Disposition Service Location
+networkx_louvain,PPT13,9,PPT13,Disposition Refer to Health Information
+networkx_louvain,PPT14,9,PPT14,Disposition Refer to Flu Line
+networkx_louvain,PPT15,9,PPT15,Disposition Speak to the GP Practice within 20 minutes
+networkx_louvain,PPT16,9,PPT16,Disposition Speak to the GP Practice within 1 hour
+networkx_louvain,PPT17,9,PPT17,Disposition Emergency Department Immediately
+networkx_louvain,PPT2,9,PPT2,Disposition Community Healthcare Professional
+networkx_louvain,PPT3,9,PPT3,Disposition Refer to Another Out of Hours Service Provider
+networkx_louvain,PPT4,9,PPT4,Disposition Callback by Healthcare Professional within 20 minutes
+networkx_louvain,PPT5,9,PPT5,Disposition Callback by Healthcare Professional within 60 minutes
+networkx_louvain,PPT6,9,PPT6,Disposition Report of Results or Test
+networkx_louvain,PPT7,9,PPT7,Disposition Failed Contraception
+networkx_louvain,PPT8,9,PPT8,Disposition Contact Own GP Practice Next Working Day
+networkx_louvain,PPT9,9,PPT9,Disposition Repeat Prescription Required
+networkx_louvain,PA107,10,PA107,Early Exit - Dying
+networkx_louvain,PA160,10,PA160,Early Exit - Deceased
+networkx_louvain,PA166,10,PA166,Attend Incident
+networkx_louvain,PA167,10,PA167,Attend Incident
+networkx_louvain,PEE1,10,PEE1,Early Exit
+networkx_louvain,PEE3,10,PEE3,Early Exit
+networkx_louvain,PN5128,10,PN5128,Assessment of Required Level of Response
+networkx_louvain,PN5132,10,PN5132,Assessment of Required Level of Response
+networkx_louvain,PT8,10,PT8,Mental Health Safety Closure
+networkx_louvain,PT9,10,PT9,Mental Health Medication 
+networkx_louvain,PW1070,10,PW1070,Tiredness (Fatigue)
+networkx_louvain,PW1071,10,PW1071,Tiredness (Fatigue)
+networkx_louvain,PW1074,10,PW1074,"Tiredness (Fatigue), Pregnant"
+networkx_louvain,PW1551,10,PW1551,Alcohol Intoxication
+networkx_louvain,PW1552,10,PW1552,Alcohol Intoxication
+networkx_louvain,PW1686,10,PW1686,Sleep Difficulties
+networkx_louvain,PW1697,10,PW1697,Sleep Difficulties
+networkx_louvain,PW1700,10,PW1700,Sleep Difficulties
+networkx_louvain,PW1738,10,PW1738,"Drug, Solvent or Alcohol Misuse"
+networkx_louvain,PW1745,10,PW1745,Low Mood or Depression
+networkx_louvain,PW1748,10,PW1748,Aura or Anticipated Fit/Seizure (Declared)
+networkx_louvain,PW1749,10,PW1749,Behaviour Change
+networkx_louvain,PW1750,10,PW1750,Known Mental Health Problems Worsening
+networkx_louvain,PW1751,10,PW1751,Mental Health Problems
+networkx_louvain,PW1752,10,PW1752,"Anxiety, Stress or Panic"
+networkx_louvain,PW1756,10,PW1756,Mental Health Other Symptoms
+networkx_louvain,PW1823,10,PW1823,Cold Exposure
+networkx_louvain,PW1122,11,PW1122,"Eye, Visual Loss or Disturbance"
+networkx_louvain,PW1124,11,PW1124,"Eye, Visual Loss or Disturbance"
+networkx_louvain,PW1126,11,PW1126,"Eye, Painful"
+networkx_louvain,PW1128,11,PW1128,"Eye, Painful"
+networkx_louvain,PW1134,11,PW1134,"Eye, Red or Irritable"
+networkx_louvain,PW1137,11,PW1137,"Eye, Red or Irritable"
+networkx_louvain,PW1146,11,PW1146,"Eye, Sticky, Watery"
+networkx_louvain,PW1153,11,PW1153,Eyelid Problems
+networkx_louvain,PW1621,11,PW1621,"Skin, Yellow"
+networkx_louvain,PW1627,11,PW1627,Eye or Eyelid Problems
+networkx_louvain,PW1628,11,PW1628,Eye or Eyelid Problems
+networkx_louvain,PW1629,11,PW1629,Eye or Eyelid Problems
+networkx_louvain,PW1630,11,PW1630,Eye or Eyelid Problems
+networkx_louvain,PW1632,11,PW1632,"Eye, Yellow"
+networkx_louvain,PW1622,12,PW1622,"Skin, Yellow"
+networkx_louvain,PW1631,12,PW1631,Eye or Eyelid Problems
+networkx_louvain,PW1634,12,PW1634,"Eye, Yellow"
+networkx_louvain,PW766,12,PW766,Eyelid Problems
+networkx_louvain,PW768,12,PW768,"Eye, Visual Loss or Disturbance"
+networkx_louvain,PW770,12,PW770,"Eye, Painful"
+networkx_louvain,PW826,12,PW826,"Eye, Red or Irritable"
+networkx_louvain,PW828,12,PW828,"Eye, Sticky, Watery"
+networkx_louvain,PW1813,13,PW1813,Ambulance Dispatch
+networkx_louvain,PW1814,13,PW1814,Ambulance Dispatch
+networkx_louvain,PW1815,13,PW1815,Ambulance Dispatch
+networkx_louvain,PW1816,13,PW1816,Ambulance Dispatch
+networkx_louvain,PW1817,13,PW1817,Ambulance Dispatch
+networkx_louvain,PW1818,13,PW1818,Ambulance Dispatch Closure
+networkx_louvain,PT230,14,PT230,"Assistance needed at home due to inability to get off the floor, Emergency Closure, Non Trauma"
+networkx_louvain,PT3,14,PT3,"Assistance needed at home due to inability to get off the floor, Closure"
+networkx_louvain,PT318,15,PT318,"Non-emergency Ambulance Closure, Breathlessness"
+networkx_louvain,PT503,15,PT503,"Emergency Ambulance Closure, Non-Trauma, Breathlessness"
+networkx_louvain,PT17,16,PT17,Ambulance due to Clinical Reasons
+networkx_louvain,PT18,17,PT18,Ambulance due to Transportation Reasons
+networkx_louvain,PT19,18,PT19,Emergency Ambulance due to Clinical Reasons
+networkx_louvain,PT229,19,PT229,"Emergency Ambulance Closure, Override"
+networkx_louvain,PT321,20,PT321,"Non-emergency Ambulance Closure, Override"
+networkx_louvain,PT40,21,PT40,"Emergency Ambulance Closure, Non Trauma"
+networkx_louvain,PT405,22,PT405,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso"
+networkx_louvain,PT417,23,PT417,"Emergency Ambulance Closure, Vaginal Bleeding in Pregnancy"
+networkx_louvain,PT508,24,PT508,Emergency Ambulance (Override) Closure
+networkx_louvain,PT509,25,PT509,Non-Emergency Ambulance (Override) Closure
+networkx_louvain,PT514,26,PT514,Health Alert Chest and Upper Back Pain
+networkx_louvain,PT516,27,PT516,Health Alert Chest and Upper Back pain
+networkx_louvain,PTP101,28,PTP101,"Emergency  Ambulance Closure, Pregnant, Foreign Body, Wound"
+networkx_louvain,PW1093,29,PW1093,"Rectal Pain, Swelling, Lump or Itch"
+networkx_louvain,PW1114,30,PW1114,Breastfeeding Problems
+networkx_louvain,PW1320,31,PW1320,"Foreign Body, Penis"
+networkx_louvain,PW1406,32,PW1406,"Genital Injury, Blunt"
+networkx_louvain,PW1607,33,PW1607,Breast Problems
+networkx_louvain,PW1714,34,PW1714,Teething
+networkx_louvain,PW1716,35,PW1716,"Eye, Sticky, Watery"
+networkx_louvain,PW1765,36,PW1765,Difficulty Passing Urine
+networkx_louvain,PW1778,37,PW1778,"Rectal Pain, Swelling, Lump or Itch"
+networkx_louvain,PW1808,38,PW1808,Prescription Request 
+networkx_louvain,PW1820,39,PW1820,Clinical Hub Closure - Dental
+networkx_louvain,PW1822,40,PW1822,Clinical Hub Closure Primary Care
+networkx_louvain,PW1827,41,PW1827,Emergency Prescription 111 online
+networkx_louvain,PW646,42,PW646,"Passing Urine, Associated Pain, Frequency or Smell"
+networkx_louvain,PW818,43,PW818,Nosebleeds without Injury
+networkx_louvain,PW819,44,PW819,Nosebleeds without Injury
+networkx_louvain,PW820,45,PW820,Nosebleeds without Injury
+networkx_louvain,PW833,46,PW833,"Genital Injury, Blunt"
+networkx_louvain,PW888,47,PW888,DEVELOPMENT test pathway only
+networkx_louvain,SP1,48,SP1,Assessing Safety 1st Party 
+networkx_louvain,SP3,49,SP3,Assessing Safety 3rd Party

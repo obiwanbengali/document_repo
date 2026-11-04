@@ -1,0 +1,509 @@
+sd_id,pathway_count,logic_row_count,sd_desc,active,is_archived
+4003,527,7081,PC full Primary Care assessment and prescribing capability,True,False
+4052,385,1461,ED full ED assessment and management capability,True,False
+4000,173,217,AMB septicaemia,True,False
+4010,161,298,"ALL assault, sexual",True,False
+4002,147,170,AMB meningitis,True,False
+4460,136,542,PC severe illness assessment capability,False,False
+4033,134,192,AMB new/worsening breathlessness,True,False
+4017,83,134,AMB gastrointestinal bleed,True,False
+4060,77,105,AMB acute abdomen,True,False
+4106,59,101,AMB shock,True,False
+4019,55,93,AMB toxic ingestion,True,False
+4001,53,90,AMB acute coronary syndrome,True,False
+4459,53,88,AMB critical illness assessment,False,False
+4027,51,77,"AMB ischaemia, non-trauma",True,False
+4018,45,68,AMB severe pain,True,False
+4102,44,66,AMB respiratory distress,True,False
+4020,43,58,"PC assessment and management capability, minor condition",True,False
+4026,42,60,AMB deep vein thrombosis,True,False
+4048,42,55,AMB fit/convulsion,True,False
+4134,40,64,ED full ophthalmic ED assessment and management capability,True,False
+4004,38,76,"AMB foreign body, wound, large",True,False
+4028,35,55,AMB stroke,True,False
+4212,34,86,AMB cardiac arrest,True,False
+4455,34,44,PC suspected pre-eclampsia,False,False
+4103,32,45,AMB unable to weight bear,True,False
+4129,32,45,PC minor injury,True,False
+4022,31,64,"ED foreign body, removal required",True,False
+4108,30,46,AMB decreased conscious level,True,False
+4029,29,32,AMB spinal cord compression,True,False
+4044,29,30,AMB suicide attempt,True,False
+4406,28,33,AMB acute neurological deficit,True,False
+4215,27,41,"AMB major blood loss, trauma",True,False
+4301,27,37,AMB major blood loss,True,False
+4221,26,38,"AMB threat to life, environmental",True,False
+4084,25,50,AMB pulmonary embolism,True,False
+4153,25,75,"AMB bleeding, significant",True,False
+4171,25,82,PC full Primary Care TIA assessment and prescribing capability,True,False
+4101,24,39,AMB anaphylaxis,True,False
+4216,24,40,"AMB major blood loss, non-trauma",True,False
+4217,24,24,"AMB major blood loss, non-trauma AND respiratory distress",True,False
+4218,24,24,"AMB major blood loss, non-trauma AND shock",True,False
+4219,24,24,"AMB major blood loss, non-trauma AND septicaemia",True,False
+4325,24,41,AMB faecal vomiting,True,False
+4023,23,26,AMB toxic inhalation,True,False
+4035,23,31,AMB subarachnoid haemorrhage,True,False
+4046,23,30,"AMB unconsciousness, recent",True,False
+4220,23,23,"AMB major blood loss, trauma AND amputated digits",True,False
+4074,22,23,"AMB new/worsening breathlessness AND wound, foreign body, large",True,False
+4089,22,28,AMB labour,True,False
+4098,22,26,AMB recent head injury,True,False
+4250,22,52,AMB ectopic pregnancy,True,False
+4034,21,24,AMB haemoptysis,True,False
+4097,21,33,AMB palpitations,True,False
+4214,20,26,AMB unconscious,True,False
+4505,19,19,AMB unconscious AND anaphylaxis,False,False
+4005,18,41,"AMB ischaemia, post trauma",True,False
+4031,18,48,PC sexually transmitted infection,True,False
+4043,18,41,AMB major head/neck injury,True,False
+4091,18,37,"AMB Head injury, full ED assessment required",True,False
+4093,18,28,"AMB fall, unable to get up",True,False
+4112,18,40,PC full obstetric assessment and management capability,True,False
+4115,18,32,"AMB vaginal bleeding, heavy",True,False
+4155,18,26,PC full Primary Care assessment and prescribing capability - blood in motion,True,False
+4310,18,43,PC extended ophthalmic assessment and prescribing capability (MECS),True,False
+4474,18,141,"ALL Full Assessment Capability, symptomatic assessment",False,False
+4501,18,41,"ED Ischaemia, post trauma",False,False
+4008,17,17,AMB motor and/or sensory deficit,True,False
+4014,17,35,"ED constricting object, removal required",True,False
+4135,17,17,"AMB fall, significant",True,False
+4312,17,26,ED extended ophthalmic assessment and prescribing capability (MECS),True,False
+4007,16,43,AMB fracture and/or dislocation,True,False
+4075,16,23,AMB spinal injury,True,False
+4087,16,17,AMB cord prolapse,True,False
+4088,16,50,AMB imminent birth,True,False
+4090,16,26,AMB vaginal bleeding,True,False
+4229,16,18,AMB major burn,True,False
+4047,15,60,PC full dental assessment and prescribing capability,True,False
+4049,15,17,AMB heat stroke,True,False
+4191,15,17,AMB trapped,True,False
+4480,15,19,"AMB fall,  over 2 hours on floor",False,False
+4016,14,18,"AMB aortic aneurysm, rupture/dissection",True,False
+4030,14,17,AMB drug/alcohol/solvent misuse,True,False
+4177,14,33,PC depressed mood,True,False
+4179,14,33,PC anxiety/panic,True,False
+4506,14,16,AMB respiratory distress AND anaphylaxis,False,False
+4009,13,31,"ED amputation, digit",True,False
+4180,13,18,"PC mental health assessment, alcohol misuse",True,False
+4227,13,13,"AMB Road Traffic Incident, vehicle rollover",True,False
+4232,13,13,AMB multiple major injuries,True,False
+4499,13,26,"ED anticoagulant, bleeding or clotting disorder risk",True,False
+4181,12,17,"PC mental health assessment, drug misuse",True,False
+4222,12,12,AMB major trauma AND significant blood loss,True,False
+4224,12,12,"AMB gunshot OR stab injury, head/neck",True,False
+4225,12,24,AMB gunshot OR stab injury,True,False
+4226,12,12,"AMB Road Traffic Incident, ejected from vehicle",True,False
+4228,12,12,"AMB major burn, respiratory involvement",True,False
+4230,12,24,AMB major blunt injury,True,False
+4231,12,24,AMB major wound/amputation,True,False
+4234,12,12,AMB strangulation/suffocation,True,False
+4235,12,12,AMB blast injury,True,False
+4236,12,12,AMB lightning strike,True,False
+4240,12,12,AMB loss of consciousness prior to injury,True,False
+4249,12,12,"AMB gunshot OR stab injury, torso",True,False
+4389,12,14,ED post tonsillectomy bleeding,True,False
+4421,12,12,"AMB major blunt injury, torso",True,False
+4422,12,12,"AMB major blunt injury, head/neck",True,False
+4488,12,12,AMB corrosive substance attack,False,False
+4496,12,25,AMB ectopic pregnancy with TLOC,False,False
+4512,12,19,PC potential cancer symptom/s,False,False
+4517,12,18,ED suspected pulmonary embolism,False,False
+4100,11,15,AMB placental abruption,True,False
+4110,11,11,AMB prolonged fitting,True,False
+4311,11,12,"PC extended ophthalmic assessment and management capability, minor condition (MECS)",True,False
+4388,11,11,AMB ICD implanted,True,False
+4500,11,28,ED fracture and or dislocation,False,False
+4516,11,19,AMB life-threatening asthma,True,False
+4006,10,24,AMB compound fracture,True,False
+4085,10,11,AMB pneumothorax,True,False
+4099,10,17,AMB diabetes mellitus,True,False
+4116,10,18,AMB abdominal pain,True,False
+4244,10,13,"AMB suicidal, means and plan",True,False
+4011,9,10,"AMB assault, major",True,False
+4067,9,12,AMB high-risk group,True,False
+4118,9,24,AMB ambulance dispatch,True,False
+4243,9,9,"AMB resuscitation, recent",True,False
+4377,9,21,RP ED urinary catheter problem,True,False
+4024,8,47,"ED management, significant burn",True,False
+4025,8,8,AMB hydrofluoric acid,True,False
+4032,8,14,AMB pregnancy,True,False
+4057,8,15,"ED foreign body, vagina",True,False
+4058,8,8,"ED foreign body, rectum",True,False
+4081,8,14,"ED foreign body, skin, small",True,False
+4193,8,11,PC general health information,True,False
+4237,8,8,AMB major trauma AND trapped at scene,True,False
+4238,8,8,AMB self-harm episode AND toxic ingestion/inhalation/overdose,True,False
+4239,8,16,AMB chest injury AND cardiac/respiratory symptoms,True,False
+4242,8,8,AMB subarachnoid haemorrhage symptoms prior to injury,True,False
+4245,8,15,"ED suicidal, no means nor plan",True,False
+4456,8,22,PC full mental health assessment capability,False,False
+4070,7,36,PC urinary catheter management capability,True,False
+4104,7,7,"AMB motor/sensory deficit, spine",True,False
+4109,7,11,AMB stroke,True,False
+4114,7,8,PC management of dressings,True,False
+4136,7,10,"AMB associated injury, risk",True,False
+4165,7,18,AMB diabetes AND confusion,True,False
+4353,7,7,"RP ED throat, foreign body",True,False
+4399,7,99,PC insulin pump management capability,True,False
+4413,7,37,PC repeat prescription,True,False
+4492,7,12,ED Assessment for post exposure prophylaxis,False,False
+4570,7,11,ED Hazardous Object,True,False
+4012,6,9,"AMB bleeding, persistent",True,False
+4038,6,8,"PC genital herpes, recurrent",True,False
+4066,6,6,"PC retained tampon, condom or cap",True,False
+4083,6,6,AMB choked within previous 24 hours,True,False
+4107,6,6,AMB apnoeic episode,True,False
+4113,6,6,AMB untreated/treatment failure,True,False
+4119,6,9,"AMB medication/toxic substance overdose, high risk",True,False
+4137,6,7,"AMB vaginal bleeding, pregnant",True,False
+4139,6,8,"AMB ischaemia, limb",True,False
+4156,6,10,PC Possible DVT,True,False
+4163,6,34,AMB diabetic ketoacidosis,True,False
+4203,6,8,AMB immediate threat to life,True,False
+4333,6,16,RP ED minor injury,True,False
+4364,6,13,RP AMB suicide attempt,True,False
+4493,6,11,ED suspected subdural at risk group,False,False
+4544,6,7,AMB aortic rupture/dissection,True,False
+4068,5,6,AMB hypotension,True,False
+4073,5,7,PC urinary catheter problem AND fever,True,False
+4077,5,5,"AMB motor/sensory deficit AND wound, foreign body, large",True,False
+4078,5,5,"AMB electric shock, still in contact with source",True,False
+4079,5,5,"AMB electric shock, greater than domestic supply",True,False
+4094,5,9,"ED electric shock, domestic or lesser supply",True,False
+4124,5,8,AMB seriously ill infant,True,False
+4148,5,5,"AMB burn, electrical",True,False
+4164,5,8,AMB diabetic ketoacidosis in pregnancy,True,False
+4248,5,14,ALL unexpected death,True,False
+4350,5,9,"RP ED nose, foreign body",True,False
+4352,5,9,"RP ED ear, foreign body",True,False
+4428,5,6,Major Trauma,True,False
+4454,5,7,ED dental emergency,False,False
+4489,5,12,ED bruising non-mobile infant,False,False
+4490,5,12,ED new head/face/neck swelling infants,False,False
+4495,5,5,AMB obstetric emergency,True,False
+4041,4,4,PC contraception issue,True,False
+4056,4,4,ED toxic shock syndrome,True,False
+4086,4,8,AMB chest pain (undifferentiated) ,True,False
+4095,4,8,PC social services referral required,True,False
+4117,4,5,PC police referral required,True,False
+4133,4,4,AMB burst abdomen,True,False
+4143,4,18,PC palliative care service,True,False
+4150,4,4,AMB neonatal respiratory arrest,True,False
+4169,4,6,AMB diabetes AND reduced conscious level,True,False
+4173,4,8,PC bereavement,True,False
+4174,4,8,PC relationship breakdown,True,False
+4175,4,11,PC postnatal mental health problem,True,False
+4176,4,8,PC post-traumatic stress,True,False
+4183,4,4,"PC mental health assessment, solvent misuse",True,False
+4198,4,6,PC failed contraception,True,False
+4223,4,4,"AMB vaginal bleeding,heavy AND pregnant,over 20 weeks",True,False
+4241,4,4,AMB stroke symptoms prior to injury,True,False
+4300,4,12,AMB other assistance required,True,False
+4317,4,7,CN Health Visitor,True,False
+4319,4,9,PC alcohol drug withdrawal,True,False
+4323,4,13,CN Community Nurse,True,False
+4324,4,5,CN Community Midwife,True,False
+4351,4,4,"RP ED genital, foreign body",True,False
+4370,4,9,RP AMB features of severe illness,True,False
+4374,4,8,RP ED urinary retention,True,False
+4380,4,4,RP ED foreign body location undeclared,True,False
+4381,4,8,"AMB chemical eye splash, high risk",True,False
+4392,4,10,PC dental brace problem,True,False
+4405,4,7,"PC skin, yellow",True,False
+4412,4,4,AMB acute neurological symptoms prior to injury,True,False
+4452,4,6,PC symptomatic assessment,False,False
+4485,4,4,PC management of burns dressings,False,False
+4508,4,5,"AMB anaphylaxis, immediate life-threat",False,False
+4515,4,5,PC Unwell Infant Under 10 days old,False,False
+4518,4,8,ED chest pain under 35 years,False,False
+4521,4,8,AMB oxygen level concern,True,False
+4543,4,5,AMB aortic aneurysm,True,False
+4045,3,3,AMB aggression/violence,True,False
+4055,3,4,PC sexual identity/activity issue,True,False
+4072,3,11,ED testicular torsion,True,False
+4076,3,6,AMB haematuria,True,False
+4080,3,4,AMB pregnancy AND confusion,True,False
+4127,3,3,ED subungual haematoma,True,False
+4130,3,13,PC rabies risk,True,False
+4131,3,6,AMB envenomation,True,False
+4132,3,13,"ED tick, removal required",True,False
+4167,3,5,"AMB analgesia overdose, accidental",True,False
+4170,3,3,PC syringe driver management capability - palliative care services,True,False
+4247,3,8,"PC expected death, terminal illness",True,False
+4256,3,4,AMB other fire incident,True,False
+4287,3,4,AMB airport or aircraft incident,True,False
+4292,3,4,AMB rail or train incident,True,False
+4304,3,9,ED unable to weightbear,True,False
+4306,3,3,ED highly dangerous chemical,True,False
+4316,3,3,PC Community Healthcare Professional,True,False
+4366,3,4,RP AMB stroke,True,False
+4371,3,7,RP AMB severe injury,True,False
+4398,3,11,"PC tick, removal and bite management",True,False
+4403,3,5,ED viral haemorrhagic fever,True,False
+4419,3,5,ED mental health crisis,True,False
+4451,3,5,AMB burn chemical,True,False
+4498,3,8,PC suspected shingles,False,False
+4510,3,3,ED recurrent bleeding on anticoagulants or bleeding disorder,False,False
+4513,3,3,ED eye burn significant,False,False
+4519,3,6,ED chest pain over 12 hours ago,False,False
+4554,3,13,RP ED self harm,False,False
+4037,2,2,AMB pre-eclampsia,True,False
+4042,2,4,AMB hypothermia,True,False
+4051,2,4,PC child protection/vulnerable adult concern,True,False
+4062,2,3,ED welding flash/UV exposure ,True,False
+4071,2,5,PC urinary retention,True,False
+4092,2,2,"AMB fall, environmental exposure",True,False
+4105,2,2,"AMB spinal device, loose or broken",True,False
+4120,2,4,PC syringe driver management capability,True,False
+4126,2,2,ED nail avulsion,True,False
+4128,2,2,PC local infection,True,False
+4140,2,4,ED tight/painful plaster,True,False
+4144,2,2,AMB multiple birth,True,False
+4145,2,6,AMB pre-term,True,False
+4146,2,2,"ED ischaemia, digit/s",True,False
+4147,2,2,AMB stillbirth,True,False
+4149,2,2,AMB post delivery,True,False
+4151,2,2,AMB abdominal injury,True,False
+4152,2,4,AMB amputation,True,False
+4154,2,2,AMB hazardous object,True,False
+4190,2,3,AMB trapped and ejected from a vehicle,True,False
+4251,2,2,AMB road traffic incident,True,False
+4253,2,2,AMB police request for assistance,True,False
+4254,2,3,AMB other police incident,True,False
+4255,2,2,AMB fire incident,True,False
+4260,2,3,AMB fire service request for assistance,True,False
+4281,2,8,AMB hospital request for assistance,True,False
+4294,2,3,AMB other railways incident,True,False
+4334,2,3,RP ED intoxication,True,False
+4337,2,4,"RP AMB injury, severe pain",True,False
+4338,2,3,RP AMB fit or seizure within past 12 hours,True,False
+4346,2,3,RP referral by healthcare professional,True,False
+4359,2,2,RP AMB acute coronary syndrome,True,False
+4360,2,2,RP AMB meningitis,True,False
+4361,2,4,RP AMB severe pain,True,False
+4363,2,2,RP ED features of severe illness,True,False
+4365,2,2,RP AMB anaphylaxis,True,False
+4402,2,3,PC viral haemorrhagic fever,True,False
+4404,2,2,AMB viral haemorrhagic fever,True,False
+4407,2,3,"RP ED non-trauma bleeding nose, ear, eye or mouth",True,False
+4410,2,2,ED hydraulic injection injury,True,False
+4411,2,2,"PC dental trauma, tooth avulsion",True,False
+4425,2,2,AMB fitting,True,False
+4432,2,3,AMB marine or coastal incident,False,False
+4438,2,2,AMB major incident declared,False,False
+4439,2,2,AMB major incident standby,False,False
+4440,2,3,AMB operation consort,False,False
+4441,2,3,AMB concern for welfare,False,False
+4442,2,3,AMB Section136,False,False
+4443,2,3,AMB flooding,False,False
+4444,2,4,AMB building or structural collapse,False,False
+4446,2,3,AMB CBRNE incident,False,False
+4448,2,3,AMB medical type incident,False,False
+4457,2,2,AMB diabetes AND severely ill,True,False
+4467,2,6,PC Pharmacy Services,True,False
+4475,2,3,"ALL Full Assessment Capability, chest pain",False,False
+4481,2,2,PC mechanical low back pain,False,False
+4482,2,5,Mental health emergency,False,False
+4486,2,2,ED frailty: risk of fracture,False,False
+4497,2,4,ED assessment of gastrointestinal bleed,False,False
+4511,2,2,AMB declared shaken baby,False,False
+4533,2,3,All Improving Access to Psychological Therapies service,True,False
+4550,2,4,RP ED digit injury,False,False
+4551,2,8,RP ED compound fracture and/or dislocation,False,False
+4552,2,16,RP ED needlestick injury,False,False
+4553,2,16,RP ED assault,False,False
+4555,2,24,RP ED limb injury penetrating,False,False
+4556,2,10,RP ED limb injury blunt,False,False
+4557,2,2,RP ED electrical injury and/or burn other,True,False
+4558,2,4,RP ED burn under 6 hours,False,False
+4575,2,2,RP ED headache,False,False
+4015,1,2,ED bleeding disorder,True,False
+4036,1,1,PC alcohol misuse,True,False
+4040,1,1,PC stress incontinence,True,False
+4050,1,2,ED dehydration,True,False
+4054,1,2,PC substance misuse,True,False
+4063,1,2,"RP ED foreign body, eye",False,True
+4121,1,2,PC peritoneal dialysis catheter management capability,True,False
+4122,1,2,PC central venous line management capability,True,False
+4123,1,2,PC enteral feeding tube management capability,True,False
+4125,1,4,PC drain management capability,True,False
+4138,1,1,"ED wound, contaminated",True,False
+4141,1,1,ED loose/damaged plaster,True,False
+4178,1,5,PC agitation,True,False
+4182,1,1,"PC drug misuse, information",True,False
+4184,1,1,"PC solvent misuse, information",True,False
+4185,1,4,PC hallucinations,True,False
+4186,1,2,"AMB road traffic incident, unknown casualties",True,False
+4188,1,2,"AMB hazard, chemical, unknown casualties",True,False
+4189,1,5,"AMB hazard, other, unknown casualties",True,False
+4192,1,1,PC medication enquiry,True,False
+4194,1,1,"PC pharmacy, location information",True,False
+4195,1,1,"PC GP practice, location information",True,False
+4196,1,1,"PC sexual health service, location information",True,False
+4197,1,1,"PC optician, location information",True,False
+4200,1,1,PC appointment request,True,False
+4204,1,1,"PC dental service, location information",True,False
+4205,1,1,ED schizophrenia,True,False
+4206,1,1,PC bipolar disorder,True,False
+4207,1,1,PC chronic depression,True,False
+4208,1,1,ED mania/hypomania,True,False
+4209,1,1,PC generalised anxiety disorder,True,False
+4210,1,1,PC Dementia/alzheimer’s,True,False
+4211,1,1,PC self-harm,True,False
+4246,1,4,AMB imminent seizure,True,False
+4252,1,1,AMB public order incident,True,False
+4257,1,1,AMB lift entrapment incident,True,False
+4258,1,1,AMB fire alarm activation incident,True,False
+4259,1,1,AMB fire service road traffic incident,True,False
+4261,1,1,AMB other fire service incident,True,False
+4262,1,1,AMB rescue service specific request,True,False
+4263,1,1,AMB rescue service request for assistance,True,False
+4264,1,1,AMB other rescue service incident,True,False
+4265,1,1,AMB large passenger ship incident,True,False
+4266,1,1,AMB large cargo ship incident,True,False
+4267,1,1,AMB chemical or oil tanker incident,True,False
+4268,1,1,AMB fishing vessel incident,True,False
+4269,1,1,AMB inland cargo ship incident,True,False
+4270,1,1,AMB small water vessel incident,True,False
+4271,1,1,AMB other marine incident,True,False
+4272,1,1,AMB metalworking industry incident,True,False
+4273,1,1,AMB foodstuffs industry incident,True,False
+4274,1,1,AMB petrochemical industry incident,True,False
+4275,1,1,AMB hazardous chemical industry incident,True,False
+4276,1,1,AMB radiological industry incident,True,False
+4277,1,1,AMB industrial request for assistance,True,False
+4278,1,1,AMB other industrial incident,True,False
+4279,1,1,AMB hospital evacuation request,True,False
+4280,1,1,AMB hospital public health incident,True,False
+4282,1,1,AMB other hospital incident,True,False
+4283,1,1,AMB unwell persons on plane,True,False
+4284,1,1,AMB light civilian aircraft incident,True,False
+4285,1,1,AMB commercial civilian aircraft incident,True,False
+4286,1,1,AMB civilian cargo aircraft incident,True,False
+4288,1,1,AMB military aircraft incident,True,False
+4289,1,1,AMB other aircraft incident,True,False
+4290,1,1,AMB unwell persons on train,True,False
+4291,1,1,AMB railway station incident,True,False
+4293,1,1,AMB railways request for assistance,True,False
+4295,1,1,AMB unwell persons on bus,True,False
+4296,1,1,AMB bus station incident,True,False
+4297,1,1,AMB bus incident,True,False
+4298,1,1,AMB bus request for assistance,True,False
+4299,1,1,AMB other bus incident,True,False
+4302,1,1,PC mania/hypomania,True,False
+4303,1,1,PC schizophrenia,True,False
+4305,1,1,ED local infection,True,False
+4313,1,5,AMB sting ray,True,False
+4314,1,2,"ED Weever Fish, Sea Urchin",True,False
+4315,1,5,PC Healthcare Professional Callback,True,False
+4318,1,2,PC Stoma Management,True,False
+4320,1,1,PC Failed Contraception over 72 hours,True,False
+4326,1,1,PC Community Healthcare Professional Service Location ,True,False
+4328,1,1,PC Receive report of results or tests,True,False
+4330,1,1,RP ED failed contraception,True,False
+4332,1,1,RP AMB urinary retention,True,False
+4336,1,2,RP ED medication toxicity,True,False
+4339,1,1,RP ED early labour,True,False
+4340,1,3,RP PC referral without triage,True,False
+4341,1,1,RP flu medication collection,True,False
+4342,1,2,RP AMB antidepressant medication toxicity,True,False
+4343,1,1,RP ED child protection/vulnerable adult concern,True,False
+4344,1,1,"RP ED Trauma bleeding, nose, ear, eye or mouth",True,False
+4347,1,1,RP brought in by police,True,False
+4348,1,2,RP ED referral without triage,True,False
+4349,1,1,RP ED behaviour problem,True,False
+4355,1,1,RP ED management of dressings,True,False
+4356,1,1,"RP PC Non trauma bleeding, nose, ear, eye or mouth",True,False
+4357,1,1,RP AMB labour,True,False
+4358,1,1,RP AMB septicaemia,True,False
+4367,1,4,"RP AMB major blood loss, trauma",True,False
+4368,1,1,"RP AMB resuscitation, recent",True,False
+4369,1,4,RP AMB major blood loss,True,False
+4372,1,2,RP AMB intoxication,True,False
+4373,1,2,RP AMB paracetamol toxicity,True,False
+4375,1,4,"RP AMB medication toxicity, high risk",True,False
+4376,1,1,RP PC medication toxicity,True,False
+4378,1,1,RP PC social/domestic emergency,True,False
+4379,1,2,RP ED foreign body in situ,True,False
+4382,1,1,AMB ICD activation,True,False
+4383,1,1,AMB cardiac symptoms post ICD activation,True,False
+4384,1,1,AMB breathlessness post ICD activation,True,False
+4385,1,1,AMB palpitations post ICD activation,True,False
+4386,1,1,AMB confusion post ICD activation,True,False
+4387,1,2,PC ICD activation,True,False
+4391,1,1,ED bleeding post dental procedure,True,False
+4393,1,1,PC bleeding post dental procedure,True,False
+4395,1,1,RP AMB diabetes AND confusion,True,False
+4396,1,1,RP ED loose/damaged plaster,True,False
+4416,1,2,PC support pessary displaced and/ or removal required,True,False
+4417,1,2,PC intrauterine coil displaced and/ or removal required,True,False
+4420,1,3,PC failed contraception and retained foreign body,True,False
+4431,1,2,AMB person on fire,False,False
+4435,1,1,AMB threat of terrorism,False,False
+4450,1,1,AMB terrorist incident,False,False
+4461,1,1,"AMB automatic fire alarm, standby",False,False
+4462,1,1,"AMB automatic fire alarm, information",False,False
+4463,1,1,AMB running call,False,False
+4464,1,1,"AMB incident, trauma",False,False
+4469,1,1,PC Prescription Request,True,False
+4470,1,1,"ALL Full Assessment Capability, significant blood loss",False,False
+4471,1,3,"ALL Full Assessment Capability, breathing difficulties",False,False
+4472,1,1,"ALL Full Assessment Capability, potential critical illness",False,False
+4473,1,3,"ALL Full Assessment Capability, potential life threatening shock",False,False
+4476,1,1,"ALL Full Assessment Capability, major trauma",False,False
+4477,1,1,"ALL Full Assessment Capability, head injury",False,False
+4478,1,1,"ALL Full Assessment Capability, probable stroke or mini-stroke",False,False
+4479,1,1,"ALL Full Assessment Capability, possible allergic reaction",False,False
+4483,1,1,PC at risk of acute kidney injury,True,False
+4484,1,2,ED suspected acute urinary retention,True,False
+4487,1,1,PC suspected chickenpox at risk group,False,False
+4491,1,2,AMB acute illness after drowning,False,False
+4494,1,1,ALL unexpected death with DNAR,False,False
+4502,1,1,AMB Acute Behavioural Disturbance,False,False
+4503,1,1,All new suprapubic catheter management,True,False
+4504,1,1,All suprapubic catheter management,True,False
+4507,1,1,"AMB shock, anaphylaxis",False,False
+4509,1,4,"AMB unexpected death, under 18",True,False
+4514,1,3,PC Enhanced Pharmacy Services,False,False
+4522,1,1,ED full obstetric assessment and management capability,True,False
+4523,1,1,ED same day emergency care medical,True,False
+4524,1,1,ED same day emergency care surgical,True,False
+4525,1,1,ED same day emergency care gynaecology,True,False
+4526,1,1,ED same day emergency care paediatric,True,False
+4527,1,1,ALL Urgent Care Service Illness,True,False
+4528,1,1,ALL Urgent Care Service Injury,True,False
+4529,1,1,ALL Early Pregnancy Unit,True,False
+4530,1,2,PC Musculoskeletal Service,True,False
+4531,1,1,All Fracture Clinic,True,False
+4532,1,2,All Mental Health Single Point of Access,True,False
+4534,1,1,PC Emergency Contraception IUD,True,False
+4535,1,4,All Community Rapid Response Service,True,False
+4536,1,1,All Sexual Health Service,True,False
+4537,1,1,All COVID oximetry at home service new user,True,False
+4538,1,1,ALL Long Covid Service New Referral,True,False
+4539,1,1,ALL Termination of Pregnancy Service,True,False
+4540,1,1,ALL Long Covid Service Existing User,True,False
+4541,1,1,All COVID oximetry at home service existing user,True,False
+4542,1,1,PC extended ophthalmic assessment and prescribing capability COVID Risk (CUES),True,False
+4545,1,1,RP ED allergic reaction,False,False
+4546,1,2,"RP ED collapse, fit or blackout",False,False
+4547,1,2,RP ED alcohol withdrawal,False,False
+4548,1,1,RP ED blood sugar problem,False,False
+4549,1,2,RP PC blood sugar problem,False,False
+4559,1,1,ALL COVID-19 assessment,True,False
+4560,1,1,ALL ED booked arrival time,True,False
+4561,1,1,ALL ED or hospital discharge within 3 days,True,False
+4562,1,2,ALL inappropriate for self-triage,True,False
+4563,1,1,ALL referral letter from GP,True,False
+4564,1,1,ALL specialist advice to attend ED,True,False
+4565,1,1,ALL severe breathing difficulty assessment,True,False
+4566,1,1,ALL significant blood loss assessment,True,False
+4567,1,1,ALL airway swelling assessment,True,False
+4568,1,2,ALL critical illness assessment,True,False
+4571,1,1,RP ED human bite,False,False
+4573,1,1,RP ED rash,False,False
+4574,1,1,"RP ED abdomen, flank or back pain",False,False
+4576,1,1,RP AMB testicular pain,False,False
+4577,1,1,PC crisis response falls pick up,False,False
+4578,1,1,PC community falls prevention,False,False

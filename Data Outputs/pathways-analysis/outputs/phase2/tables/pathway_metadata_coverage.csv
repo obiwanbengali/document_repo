@@ -1,0 +1,13 @@
+field,pathways_in_scope,pathways_populated,pathways_missing,coverage_percentage,distinct_values,usable_as_grouping
+Module,815,0,815,0.000000,0,False
+Party,815,12,803,1.470000,2,True
+SymptomGroupId,815,665,150,81.600000,224,True
+ClinicalAreas,815,376,439,46.130000,22,True
+AreaGroups,815,376,439,46.130000,8,True
+AgeIds,815,796,19,97.670000,5,True
+GenderIds,815,796,19,97.670000,2,True
+TraumaIds,815,449,366,55.090000,2,True
+QuestionIDs,815,799,16,98.040000,3787,True
+SymptomDiscriminatorIds,815,635,180,77.910000,469,True
+SnomedConceptIds,815,610,205,74.850000,297,True
+DispositionIds,815,719,96,88.220000,194,True

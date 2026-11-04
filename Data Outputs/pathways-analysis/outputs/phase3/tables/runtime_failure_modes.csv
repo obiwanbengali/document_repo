@@ -1,0 +1,7 @@
+PatternId,FailureMode,LikelyScope,RequiredControl,EvidenceClass
+monolith_always_resident,model artefact fails validation or load,worker cannot serve that model version,roll back whole model version; keep previous immutable artefact available,architectural_interpretation
+monolith_always_resident,clinical/model defect in one area,potential estate-wide release impact,versioned rollback; regression suite must cover whole model,architectural_interpretation
+federated_all_resident,one family artefact fails validation,that family can be withheld while other validated family artefacts remain usable,family-level rollback under a validated family-set manifest,architectural_interpretation
+federated_lazy_loaded,family artefact store/cache miss or load failure,request may be delayed or family unavailable,"bounded load timeout, previous-version cache, explicit fail-safe handling",architectural_interpretation
+hierarchical_shared_core,shared-core failure or incompatible version,multiple or all families may be affected,atomic compatibility manifest and rollback of shared-core/family set,architectural_interpretation
+hierarchical_shared_core,single family model failure,local family capability affected,family-level rollback if compatible with current shared core,architectural_interpretation

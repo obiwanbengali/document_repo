@@ -1,0 +1,470 @@
+strategy,FeatureType,FeatureId,Description,FamilyCount,PathwayCount,TotalOccurrences,FamilyDistribution,TopFamilyId,TopFamilyLabel,TopFamilyPathwayCount,SharingBand
+hybrid_a,symptom_discriminator,4003,PC full Primary Care assessment and prescribing capability,14,514,6703,HA_C00:91 | HA_C02:88 | HA_C03:79 | HA_C04_01:55 | HA_C05:55 | HA_C06:48 | HA_C10:21 | HA_C07_00:20 | HA_C04_00:16 | HA_C09:16 | HA_C11:11 | HA_C01_00:9,HA_C00,HA_C00,91,broadly shared
+hybrid_a,symptom_discriminator,4052,ED full ED assessment and management capability,13,377,1415,HA_C00:92 | HA_C03:57 | HA_C04_01:51 | HA_C02:50 | HA_C05:36 | HA_C06:23 | HA_C04_00:16 | HA_C10:15 | HA_C09:11 | HA_C07_00:10 | HA_C01_00:7 | HA_C11:6,HA_C00,HA_C00,92,broadly shared
+hybrid_a,symptom_discriminator,4000,AMB septicaemia,13,158,196,HA_C03:33 | HA_C07_00:28 | HA_C02:27 | HA_C06:24 | HA_C05:15 | HA_C04_01:13 | HA_C10:5 | HA_C12:5 | HA_C11:3 | HA_C01_00:2 | HA_C00:1 | HA_C01_03:1,HA_C03,HA_C03,33,broadly shared
+hybrid_a,symptom_discriminator,4002,AMB meningitis,11,140,161,HA_C03:37 | HA_C06:23 | HA_C02:21 | HA_C07_00:17 | HA_C05:16 | HA_C04_01:14 | HA_C10:5 | HA_C11:4 | HA_C00:1 | HA_C09:1 | HA_C12:1,HA_C03,HA_C03,37,broadly shared
+hybrid_a,symptom_discriminator,4001,AMB acute coronary syndrome,11,49,84,HA_C02:11 | HA_C07_00:10 | HA_C04_01:9 | HA_C03:5 | HA_C09:5 | HA_C01_00:3 | HA_C12:2 | HA_C00:1 | HA_C01_03:1 | HA_C06:1 | HA_C10:1,HA_C02,HA_C02,11,broadly shared
+hybrid_a,symptom_discriminator,4010,"ALL assault, sexual",10,160,297,HA_C00:61 | HA_C04_01:26 | HA_C05:20 | HA_C02:13 | HA_C04_00:13 | HA_C01_00:10 | HA_C03:9 | HA_C10:4 | HA_C06:3 | HA_C01_03:1,HA_C00,HA_C00,61,broadly shared
+hybrid_a,symptom_discriminator,4033,AMB new/worsening breathlessness,10,123,176,HA_C00:28 | HA_C04_01:28 | HA_C02:23 | HA_C05:9 | HA_C03:8 | HA_C04_00:8 | HA_C06:7 | HA_C01_00:6 | HA_C07_00:4 | HA_C09:2,HA_C00,HA_C00,28,broadly shared
+hybrid_a,symptom_discriminator,4060,AMB acute abdomen,10,74,101,HA_C03:29 | HA_C05:19 | HA_C00:10 | HA_C04_01:5 | HA_C04_00:4 | HA_C02:2 | HA_C12:2 | HA_C01_00:1 | HA_C01_03:1 | HA_C11:1,HA_C03,HA_C03,29,broadly shared
+hybrid_a,symptom_discriminator,4134,ED full ophthalmic ED assessment and management capability,10,40,64,HA_C04_01:16 | HA_C00:6 | HA_C05:5 | HA_C02:3 | HA_C11:3 | HA_C03:2 | HA_C07_00:2 | HA_C01_03:1 | HA_C06:1 | HA_C10:1,HA_C04_01,HA_C04_01,16,broadly shared
+hybrid_a,symptom_discriminator,4460,PC severe illness assessment capability,9,130,492,HA_C03:55 | HA_C06:21 | HA_C05:20 | HA_C02:12 | HA_C07_00:12 | HA_C04_01:6 | HA_C00:2 | HA_C09:1 | HA_C10:1,HA_C03,HA_C03,55,broadly shared
+hybrid_a,symptom_discriminator,4102,AMB respiratory distress,8,39,58,HA_C01_01:12 | HA_C07_00:12 | HA_C12:5 | HA_C03:4 | HA_C01_00:2 | HA_C09:2 | HA_C01_03:1 | HA_C05:1,HA_C01_01,HA_C01_01,12,broadly shared
+hybrid_a,symptom_discriminator,4028,AMB stroke,8,31,51,HA_C04_01:15 | HA_C09:4 | HA_C02:3 | HA_C01_00:2 | HA_C03:2 | HA_C11:2 | HA_C12:2 | HA_C01_03:1,HA_C04_01,HA_C04_01,15,broadly shared
+hybrid_a,symptom_discriminator,4108,AMB decreased conscious level,8,28,41,HA_C07_00:9 | HA_C03:7 | HA_C02:4 | HA_C06:3 | HA_C04_01:2 | HA_C01_00:1 | HA_C05:1 | HA_C09:1,HA_C07_00,HA_C07_00,9,broadly shared
+hybrid_a,symptom_discriminator,4017,AMB gastrointestinal bleed,7,82,131,HA_C03:32 | HA_C00:17 | HA_C04_01:13 | HA_C05:10 | HA_C04_00:8 | HA_C01_00:1 | HA_C02:1,HA_C03,HA_C03,32,broadly shared
+hybrid_a,symptom_discriminator,4106,AMB shock,7,53,91,HA_C07_00:25 | HA_C01_01:12 | HA_C12:6 | HA_C02:5 | HA_C05:3 | HA_C01_00:1 | HA_C01_03:1,HA_C07_00,HA_C07_00,25,broadly shared
+hybrid_a,symptom_discriminator,4459,AMB critical illness assessment,7,48,69,HA_C03:17 | HA_C06:11 | HA_C04_01:7 | HA_C05:7 | HA_C07_00:4 | HA_C00:1 | HA_C09:1,HA_C03,HA_C03,17,broadly shared
+hybrid_a,symptom_discriminator,4020,"PC assessment and management capability, minor condition",7,43,58,HA_C02:14 | HA_C06:14 | HA_C05:4 | HA_C11:4 | HA_C04_01:3 | HA_C03:2 | HA_C04_00:2,HA_C02,HA_C02,14,broadly shared
+hybrid_a,symptom_discriminator,4048,AMB fit/convulsion,7,42,55,HA_C01_00:21 | HA_C02:6 | HA_C07_00:6 | HA_C00:3 | HA_C04_01:3 | HA_C01_03:2 | HA_C03:1,HA_C01_00,HA_C01_00,21,broadly shared
+hybrid_a,symptom_discriminator,4022,"ED foreign body, removal required",7,31,64,HA_C04_01:8 | HA_C05:5 | HA_C10:5 | HA_C00:4 | HA_C06:4 | HA_C04_00:3 | HA_C02:2,HA_C04_01,HA_C04_01,8,broadly shared
+hybrid_a,symptom_discriminator,4406,AMB acute neurological deficit,7,27,32,HA_C04_01:9 | HA_C02:7 | HA_C05:3 | HA_C07_00:3 | HA_C03:2 | HA_C11:2 | HA_C09:1,HA_C04_01,HA_C04_01,9,broadly shared
+hybrid_a,symptom_discriminator,4171,PC full Primary Care TIA assessment and prescribing capability,7,25,82,HA_C04_01:11 | HA_C02:5 | HA_C11:3 | HA_C03:2 | HA_C07_00:2 | HA_C01_03:1 | HA_C09:1,HA_C04_01,HA_C04_01,11,broadly shared
+hybrid_a,symptom_discriminator,4046,"AMB unconsciousness, recent",7,23,30,HA_C04_01:11 | HA_C00:5 | HA_C02:2 | HA_C07_00:2 | HA_C03:1 | HA_C05:1 | HA_C09:1,HA_C04_01,HA_C04_01,11,broadly shared
+hybrid_a,symptom_discriminator,4101,AMB anaphylaxis,7,22,37,HA_C00:7 | HA_C12:5 | HA_C03:4 | HA_C01_00:2 | HA_C04_01:2 | HA_C01_03:1 | HA_C06:1,HA_C00,HA_C00,7,broadly shared
+hybrid_a,symptom_discriminator,4474,"ALL Full Assessment Capability, symptomatic assessment",7,15,87,HA_C07_00:5 | HA_C01_00:3 | HA_C01_03:2 | HA_C06:2 | HA_C04_01:1 | HA_C05:1 | HA_C10:1,HA_C07_00,HA_C07_00,5,broadly shared
+hybrid_a,symptom_discriminator,4018,AMB severe pain,6,45,68,HA_C00:15 | HA_C04_01:8 | HA_C05:8 | HA_C03:6 | HA_C01_00:4 | HA_C04_00:4,HA_C00,HA_C00,15,broadly shared
+hybrid_a,symptom_discriminator,4212,AMB cardiac arrest,6,34,86,HA_C01_00:16 | HA_C07_00:12 | HA_C01_03:2 | HA_C09:2 | HA_C05:1 | HA_C12:1,HA_C01_00,HA_C01_00,16,broadly shared
+hybrid_a,symptom_discriminator,4455,PC suspected pre-eclampsia,6,33,42,HA_C05:12 | HA_C03:8 | HA_C02:7 | HA_C04_01:4 | HA_C09:1 | HA_C11:1,HA_C05,HA_C05,12,broadly shared
+hybrid_a,symptom_discriminator,4103,AMB unable to weight bear,6,32,45,HA_C00:9 | HA_C05:8 | HA_C02:7 | HA_C04_00:4 | HA_C03:2 | HA_C04_01:2,HA_C00,HA_C00,9,broadly shared
+hybrid_a,symptom_discriminator,4153,"AMB bleeding, significant",6,25,75,HA_C01_01:12 | HA_C03:6 | HA_C05:3 | HA_C00:2 | HA_C02:1 | HA_C04_01:1,HA_C01_01,HA_C01_01,12,broadly shared
+hybrid_a,symptom_discriminator,4023,AMB toxic inhalation,6,22,25,HA_C00:6 | HA_C06:6 | HA_C03:4 | HA_C04_01:3 | HA_C01_00:2 | HA_C05:1,HA_C00,HA_C00,6,broadly shared
+hybrid_a,symptom_discriminator,4098,AMB recent head injury,6,22,26,HA_C07_00:8 | HA_C02:4 | HA_C04_01:3 | HA_C09:3 | HA_C05:2 | HA_C11:2,HA_C07_00,HA_C07_00,8,broadly shared
+hybrid_a,symptom_discriminator,4031,PC sexually transmitted infection,6,18,48,HA_C06:6 | HA_C05:4 | HA_C02:3 | HA_C04_01:3 | HA_C00:1 | HA_C03:1,HA_C06,HA_C06,6,broadly shared
+hybrid_a,symptom_discriminator,4049,AMB heat stroke,6,14,16,HA_C04_01:6 | HA_C00:3 | HA_C02:2 | HA_C03:1 | HA_C05:1 | HA_C09:1,HA_C04_01,HA_C04_01,6,broadly shared
+hybrid_a,symptom_discriminator,4019,AMB toxic ingestion,5,55,93,HA_C03:43 | HA_C00:5 | HA_C04_01:3 | HA_C05:3 | HA_C02:1,HA_C03,HA_C03,43,shared by 3-5 families
+hybrid_a,symptom_discriminator,4029,AMB spinal cord compression,5,29,32,HA_C02:16 | HA_C03:9 | HA_C10:2 | HA_C04_01:1 | HA_C05:1,HA_C02,HA_C02,16,shared by 3-5 families
+hybrid_a,symptom_discriminator,4044,AMB suicide attempt,5,29,30,HA_C07_00:12 | HA_C01_00:10 | HA_C02:4 | HA_C09:2 | HA_C01_03:1,HA_C07_00,HA_C07_00,12,shared by 3-5 families
+hybrid_a,symptom_discriminator,4035,AMB subarachnoid haemorrhage,5,23,31,HA_C04_01:13 | HA_C03:4 | HA_C07_00:3 | HA_C10:2 | HA_C11:1,HA_C04_01,HA_C04_01,13,shared by 3-5 families
+hybrid_a,symptom_discriminator,4034,AMB haemoptysis,5,18,20,HA_C06:7 | HA_C02:6 | HA_C00:2 | HA_C05:2 | HA_C03:1,HA_C06,HA_C06,7,shared by 3-5 families
+hybrid_a,symptom_discriminator,4097,AMB palpitations,5,18,28,HA_C04_01:6 | HA_C01_00:5 | HA_C00:3 | HA_C07_00:3 | HA_C02:1,HA_C04_01,HA_C04_01,6,shared by 3-5 families
+hybrid_a,symptom_discriminator,4112,PC full obstetric assessment and management capability,5,18,40,HA_C05:10 | HA_C03:3 | HA_C04_01:3 | HA_C01_00:1 | HA_C01_03:1,HA_C05,HA_C05,10,shared by 3-5 families
+hybrid_a,symptom_discriminator,4310,PC extended ophthalmic assessment and prescribing capability (MECS),5,18,43,HA_C11:10 | HA_C00:3 | HA_C05:3 | HA_C01_03:1 | HA_C04_01:1,HA_C11,HA_C11,10,shared by 3-5 families
+hybrid_a,symptom_discriminator,4075,AMB spinal injury,5,16,23,HA_C00:5 | HA_C04_00:4 | HA_C05:4 | HA_C04_01:2 | HA_C01_00:1,HA_C00,HA_C00,5,shared by 3-5 families
+hybrid_a,symptom_discriminator,4016,"AMB aortic aneurysm, rupture/dissection",5,10,14,HA_C12:4 | HA_C01_00:2 | HA_C07_00:2 | HA_C01_03:1 | HA_C04_01:1,HA_C12,HA_C12,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4118,AMB ambulance dispatch,5,9,24,HA_C09:4 | HA_C01_00:2 | HA_C01_03:1 | HA_C05:1 | HA_C12:1,HA_C09,HA_C09,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4413,PC repeat prescription,5,7,37,HA_C00:2 | HA_C01_00:2 | HA_C01_03:1 | HA_C38:1 | HA_C41:1,HA_C00,HA_C00,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4544,AMB aortic rupture/dissection,5,6,7,HA_C03:2 | HA_C02:1 | HA_C05:1 | HA_C07_00:1 | HA_C09:1,HA_C03,HA_C03,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4301,AMB major blood loss,4,27,37,HA_C01_00:17 | HA_C12:6 | HA_C01_03:2 | HA_C09:2,HA_C01_00,HA_C01_00,17,shared by 3-5 families
+hybrid_a,symptom_discriminator,4084,AMB pulmonary embolism,4,23,48,HA_C02:10 | HA_C06:6 | HA_C05:4 | HA_C07_00:3,HA_C02,HA_C02,10,shared by 3-5 families
+hybrid_a,symptom_discriminator,4250,AMB ectopic pregnancy,4,21,46,HA_C03:13 | HA_C05:6 | HA_C02:1 | HA_C04_01:1,HA_C03,HA_C03,13,shared by 3-5 families
+hybrid_a,symptom_discriminator,4115,"AMB vaginal bleeding, heavy",4,18,32,HA_C01_00:8 | HA_C01_01:4 | HA_C05:4 | HA_C04_01:2,HA_C01_00,HA_C01_00,8,shared by 3-5 families
+hybrid_a,symptom_discriminator,4312,ED extended ophthalmic assessment and prescribing capability (MECS),4,17,26,HA_C11:8 | HA_C00:6 | HA_C05:2 | HA_C04_01:1,HA_C11,HA_C11,8,shared by 3-5 families
+hybrid_a,symptom_discriminator,4090,AMB vaginal bleeding,4,16,26,HA_C00:6 | HA_C05:5 | HA_C04_01:3 | HA_C04_00:2,HA_C00,HA_C00,6,shared by 3-5 families
+hybrid_a,symptom_discriminator,4191,AMB trapped,4,15,17,HA_C01_01:12 | HA_C01_00:1 | HA_C01_03:1 | HA_C09:1,HA_C01_01,HA_C01_01,12,shared by 3-5 families
+hybrid_a,symptom_discriminator,4030,AMB drug/alcohol/solvent misuse,4,14,17,HA_C07_00:6 | HA_C02:4 | HA_C04_01:2 | HA_C09:2,HA_C07_00,HA_C07_00,6,shared by 3-5 families
+hybrid_a,symptom_discriminator,4047,PC full dental assessment and prescribing capability,4,14,53,HA_C10:9 | HA_C02:3 | HA_C01_00:1 | HA_C01_03:1,HA_C10,HA_C10,9,shared by 3-5 families
+hybrid_a,symptom_discriminator,4389,ED post tonsillectomy bleeding,4,12,14,HA_C03:6 | HA_C05:4 | HA_C04_01:1 | HA_C06:1,HA_C03,HA_C03,6,shared by 3-5 families
+hybrid_a,symptom_discriminator,4512,PC potential cancer symptom/s,4,12,19,HA_C03:5 | HA_C02:3 | HA_C06:3 | HA_C04_01:1,HA_C03,HA_C03,5,shared by 3-5 families
+hybrid_a,symptom_discriminator,4099,AMB diabetes mellitus,4,10,17,HA_C07_00:6 | HA_C09:2 | HA_C04_01:1 | HA_C05:1,HA_C07_00,HA_C07_00,6,shared by 3-5 families
+hybrid_a,symptom_discriminator,4377,RP ED urinary catheter problem,4,9,21,HA_C04_01:3 | HA_C05:3 | HA_C02:2 | HA_C00:1,HA_C04_01,HA_C04_01,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4058,"ED foreign body, rectum",4,8,8,HA_C00:3 | HA_C02:2 | HA_C05:2 | HA_C04_01:1,HA_C00,HA_C00,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4456,PC full mental health assessment capability,4,8,22,HA_C09:3 | HA_C01_00:2 | HA_C01_03:2 | HA_C04_01:1,HA_C09,HA_C09,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4012,"AMB bleeding, persistent",4,6,9,HA_C04_01:3 | HA_C00:1 | HA_C03:1 | HA_C05:1,HA_C04_01,HA_C04_01,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4038,"PC genital herpes, recurrent",4,6,8,HA_C05:2 | HA_C06:2 | HA_C02:1 | HA_C04_01:1,HA_C05,HA_C05,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4119,"AMB medication/toxic substance overdose, high risk",4,6,9,HA_C03:2 | HA_C09:2 | HA_C00:1 | HA_C01_03:1,HA_C03,HA_C03,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4124,AMB seriously ill infant,4,5,8,HA_C01_00:2 | HA_C03:1 | HA_C04_01:1 | HA_C06:1,HA_C01_00,HA_C01_00,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4454,ED dental emergency,4,5,7,HA_C00:2 | HA_C01_03:1 | HA_C04_01:1 | HA_C10:1,HA_C00,HA_C00,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4056,ED toxic shock syndrome,4,4,4,HA_C02:1 | HA_C03:1 | HA_C04_01:1 | HA_C05:1,HA_C02,HA_C02,1,shared by 3-5 families
+hybrid_a,symptom_discriminator,4198,PC failed contraception,4,4,6,HA_C00:1 | HA_C01_00:1 | HA_C01_03:1 | HA_C05:1,HA_C00,HA_C00,1,shared by 3-5 families
+hybrid_a,symptom_discriminator,4027,"AMB ischaemia, non-trauma",3,48,73,HA_C02:30 | HA_C03:10 | HA_C05:8,HA_C02,HA_C02,30,shared by 3-5 families
+hybrid_a,symptom_discriminator,4026,AMB deep vein thrombosis,3,39,56,HA_C02:21 | HA_C03:10 | HA_C05:8,HA_C02,HA_C02,21,shared by 3-5 families
+hybrid_a,symptom_discriminator,4004,"AMB foreign body, wound, large",3,38,76,HA_C00:28 | HA_C04_01:6 | HA_C05:4,HA_C00,HA_C00,28,shared by 3-5 families
+hybrid_a,symptom_discriminator,4129,PC minor injury,3,32,45,HA_C01_00:12 | HA_C01_01:12 | HA_C00:8,HA_C01_00,HA_C01_00,12,shared by 3-5 families
+hybrid_a,symptom_discriminator,4221,"AMB threat to life, environmental",3,26,38,HA_C01_00:24 | HA_C01_03:1 | HA_C09:1,HA_C01_00,HA_C01_00,24,shared by 3-5 families
+hybrid_a,symptom_discriminator,4325,AMB faecal vomiting,3,24,41,HA_C03:19 | HA_C02:4 | HA_C04_01:1,HA_C03,HA_C03,19,shared by 3-5 families
+hybrid_a,symptom_discriminator,4074,"AMB new/worsening breathlessness AND wound, foreign body, large",3,22,23,HA_C00:17 | HA_C04_01:3 | HA_C05:2,HA_C00,HA_C00,17,shared by 3-5 families
+hybrid_a,symptom_discriminator,4089,AMB labour,3,22,28,HA_C05:12 | HA_C01_00:9 | HA_C03:1,HA_C05,HA_C05,12,shared by 3-5 families
+hybrid_a,symptom_discriminator,4214,AMB unconscious,3,20,26,HA_C01_00:16 | HA_C01_03:2 | HA_C09:2,HA_C01_00,HA_C01_00,16,shared by 3-5 families
+hybrid_a,symptom_discriminator,4505,AMB unconscious AND anaphylaxis,3,19,19,HA_C01_00:16 | HA_C09:2 | HA_C01_03:1,HA_C01_00,HA_C01_00,16,shared by 3-5 families
+hybrid_a,symptom_discriminator,4043,AMB major head/neck injury,3,18,41,HA_C04_01:16 | HA_C02:1 | HA_C07_00:1,HA_C04_01,HA_C04_01,16,shared by 3-5 families
+hybrid_a,symptom_discriminator,4093,"AMB fall, unable to get up",3,18,28,HA_C00:13 | HA_C04_01:4 | HA_C01_00:1,HA_C00,HA_C00,13,shared by 3-5 families
+hybrid_a,symptom_discriminator,4008,AMB motor and/or sensory deficit,3,17,17,HA_C04_01:8 | HA_C00:5 | HA_C04_00:4,HA_C04_01,HA_C04_01,8,shared by 3-5 families
+hybrid_a,symptom_discriminator,4229,AMB major burn,3,16,18,HA_C01_01:12 | HA_C00:2 | HA_C09:2,HA_C01_01,HA_C01_01,12,shared by 3-5 families
+hybrid_a,symptom_discriminator,4480,"AMB fall,  over 2 hours on floor",3,15,19,HA_C00:11 | HA_C04_01:3 | HA_C01_00:1,HA_C00,HA_C00,11,shared by 3-5 families
+hybrid_a,symptom_discriminator,4177,PC depressed mood,3,14,33,HA_C09:10 | HA_C04_01:3 | HA_C06:1,HA_C09,HA_C09,10,shared by 3-5 families
+hybrid_a,symptom_discriminator,4179,PC anxiety/panic,3,14,33,HA_C09:10 | HA_C04_01:3 | HA_C06:1,HA_C09,HA_C09,10,shared by 3-5 families
+hybrid_a,symptom_discriminator,4180,"PC mental health assessment, alcohol misuse",3,13,18,HA_C09:11 | HA_C04_01:1 | HA_C06:1,HA_C09,HA_C09,11,shared by 3-5 families
+hybrid_a,symptom_discriminator,4496,AMB ectopic pregnancy with TLOC,3,12,25,HA_C03:7 | HA_C05:4 | HA_C04_01:1,HA_C03,HA_C03,7,shared by 3-5 families
+hybrid_a,symptom_discriminator,4517,ED suspected pulmonary embolism,3,12,18,HA_C02:6 | HA_C06:3 | HA_C07_00:3,HA_C02,HA_C02,6,shared by 3-5 families
+hybrid_a,symptom_discriminator,4110,AMB prolonged fitting,3,11,11,HA_C07_00:6 | HA_C02:4 | HA_C04_01:1,HA_C07_00,HA_C07_00,6,shared by 3-5 families
+hybrid_a,symptom_discriminator,4516,AMB life-threatening asthma,3,11,19,HA_C07_00:8 | HA_C09:2 | HA_C01_03:1,HA_C07_00,HA_C07_00,8,shared by 3-5 families
+hybrid_a,symptom_discriminator,4116,AMB abdominal pain,3,10,18,HA_C01_00:8 | HA_C04_01:1 | HA_C05:1,HA_C01_00,HA_C01_00,8,shared by 3-5 families
+hybrid_a,symptom_discriminator,4244,"AMB suicidal, means and plan",3,10,13,HA_C09:6 | HA_C00:2 | HA_C01_00:2,HA_C09,HA_C09,6,shared by 3-5 families
+hybrid_a,symptom_discriminator,4032,AMB pregnancy,3,8,14,HA_C04_01:4 | HA_C02:2 | HA_C07_00:2,HA_C04_01,HA_C04_01,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4057,"ED foreign body, vagina",3,8,15,HA_C05:4 | HA_C02:3 | HA_C03:1,HA_C05,HA_C05,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4081,"ED foreign body, skin, small",3,8,14,HA_C00:4 | HA_C02:2 | HA_C05:2,HA_C00,HA_C00,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4245,"ED suicidal, no means nor plan",3,8,15,HA_C09:5 | HA_C01_00:2 | HA_C00:1,HA_C09,HA_C09,5,shared by 3-5 families
+hybrid_a,symptom_discriminator,4070,PC urinary catheter management capability,3,7,36,HA_C04_01:3 | HA_C05:3 | HA_C02:1,HA_C04_01,HA_C04_01,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4104,"AMB motor/sensory deficit, spine",3,7,7,HA_C00:4 | HA_C04_01:2 | HA_C03:1,HA_C00,HA_C00,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4109,AMB stroke,3,7,11,HA_C07_00:4 | HA_C02:2 | HA_C04_01:1,HA_C07_00,HA_C07_00,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4114,PC management of dressings,3,7,8,HA_C00:4 | HA_C05:2 | HA_C03:1,HA_C00,HA_C00,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4353,"RP ED throat, foreign body",3,7,7,HA_C00:3 | HA_C04_01:3 | HA_C05:1,HA_C00,HA_C00,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4492,ED Assessment for post exposure prophylaxis,3,7,12,HA_C05:4 | HA_C02:2 | HA_C01_03:1,HA_C05,HA_C05,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4570,ED Hazardous Object,3,7,11,HA_C00:3 | HA_C04_01:3 | HA_C05:1,HA_C00,HA_C00,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4066,"PC retained tampon, condom or cap",3,6,6,HA_C05:4 | HA_C03:1 | HA_C04_01:1,HA_C05,HA_C05,4,shared by 3-5 families
+hybrid_a,symptom_discriminator,4203,AMB immediate threat to life,3,6,8,HA_C09:3 | HA_C01_00:2 | HA_C01_03:1,HA_C09,HA_C09,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4493,ED suspected subdural at risk group,3,6,11,HA_C04_01:3 | HA_C03:2 | HA_C09:1,HA_C04_01,HA_C04_01,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4068,AMB hypotension,3,5,6,HA_C03:3 | HA_C04_01:1 | HA_C05:1,HA_C03,HA_C03,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4073,PC urinary catheter problem AND fever,3,5,7,HA_C04_01:3 | HA_C02:1 | HA_C05:1,HA_C04_01,HA_C04_01,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4248,ALL unexpected death,3,5,14,HA_C09:3 | HA_C01_00:1 | HA_C01_03:1,HA_C09,HA_C09,3,shared by 3-5 families
+hybrid_a,symptom_discriminator,4428,Major Trauma,3,5,6,HA_C00:2 | HA_C09:2 | HA_C01_03:1,HA_C00,HA_C00,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4495,AMB obstetric emergency,3,5,5,HA_C01_00:2 | HA_C09:2 | HA_C01_03:1,HA_C01_00,HA_C01_00,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4095,PC social services referral required,3,4,8,HA_C09:2 | HA_C01_00:1 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4117,PC police referral required,3,4,5,HA_C09:2 | HA_C01_00:1 | HA_C01_03:1,HA_C09,HA_C09,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4165,AMB diabetes AND confusion,3,4,7,HA_C07_00:2 | HA_C02:1 | HA_C04_01:1,HA_C07_00,HA_C07_00,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4319,PC alcohol drug withdrawal,3,4,9,HA_C09:2 | HA_C01_00:1 | HA_C02:1,HA_C09,HA_C09,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4374,RP ED urinary retention,3,4,8,HA_C02:2 | HA_C00:1 | HA_C05:1,HA_C02,HA_C02,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4399,PC insulin pump management capability,3,4,33,HA_C07_00:2 | HA_C00:1 | HA_C02:1,HA_C07_00,HA_C07_00,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4508,"AMB anaphylaxis, immediate life-threat",3,4,5,HA_C09:2 | HA_C01_03:1 | HA_C06:1,HA_C09,HA_C09,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4521,AMB oxygen level concern,3,4,8,HA_C07_00:2 | HA_C01_00:1 | HA_C06:1,HA_C07_00,HA_C07_00,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4543,AMB aortic aneurysm,3,4,5,HA_C03:2 | HA_C05:1 | HA_C07_00:1,HA_C03,HA_C03,2,shared by 3-5 families
+hybrid_a,symptom_discriminator,4080,AMB pregnancy AND confusion,3,3,4,HA_C02:1 | HA_C04_01:1 | HA_C06:1,HA_C02,HA_C02,1,shared by 3-5 families
+hybrid_a,symptom_discriminator,4167,"AMB analgesia overdose, accidental",3,3,5,HA_C05:1 | HA_C10:1 | HA_C11:1,HA_C05,HA_C05,1,shared by 3-5 families
+hybrid_a,symptom_discriminator,4247,"PC expected death, terminal illness",3,3,8,HA_C01_00:1 | HA_C01_03:1 | HA_C09:1,HA_C01_00,HA_C01_00,1,shared by 3-5 families
+hybrid_a,symptom_discriminator,4300,AMB other assistance required,3,3,11,HA_C01_00:1 | HA_C01_03:1 | HA_C09:1,HA_C01_00,HA_C01_00,1,shared by 3-5 families
+hybrid_a,symptom_discriminator,4452,PC symptomatic assessment,3,3,5,HA_C01_00:1 | HA_C01_03:1 | HA_C38:1,HA_C01_00,HA_C01_00,1,shared by 3-5 families
+hybrid_a,symptom_discriminator,4215,"AMB major blood loss, trauma",2,27,41,HA_C01_00:23 | HA_C01_01:4,HA_C01_00,HA_C01_00,23,shared by 2 families
+hybrid_a,symptom_discriminator,4091,"AMB Head injury, full ED assessment required",2,18,37,HA_C04_01:15 | HA_C00:3,HA_C04_01,HA_C04_01,15,shared by 2 families
+hybrid_a,symptom_discriminator,4014,"ED constricting object, removal required",2,17,35,HA_C00:14 | HA_C02:3,HA_C00,HA_C00,14,shared by 2 families
+hybrid_a,symptom_discriminator,4135,"AMB fall, significant",2,17,17,HA_C01_01:12 | HA_C01_00:5,HA_C01_01,HA_C01_01,12,shared by 2 families
+hybrid_a,symptom_discriminator,4087,AMB cord prolapse,2,16,17,HA_C05:15 | HA_C03:1,HA_C05,HA_C05,15,shared by 2 families
+hybrid_a,symptom_discriminator,4088,AMB imminent birth,2,16,50,HA_C05:15 | HA_C03:1,HA_C05,HA_C05,15,shared by 2 families
+hybrid_a,symptom_discriminator,4506,AMB respiratory distress AND anaphylaxis,2,14,16,HA_C07_00:12 | HA_C09:2,HA_C07_00,HA_C07_00,12,shared by 2 families
+hybrid_a,symptom_discriminator,4009,"ED amputation, digit",2,13,31,HA_C00:12 | HA_C01_03:1,HA_C00,HA_C00,12,shared by 2 families
+hybrid_a,symptom_discriminator,4227,"AMB Road Traffic Incident, vehicle rollover",2,13,13,HA_C01_01:12 | HA_C01_03:1,HA_C01_01,HA_C01_01,12,shared by 2 families
+hybrid_a,symptom_discriminator,4232,AMB multiple major injuries,2,13,13,HA_C01_01:12 | HA_C01_00:1,HA_C01_01,HA_C01_01,12,shared by 2 families
+hybrid_a,symptom_discriminator,4181,"PC mental health assessment, drug misuse",2,12,17,HA_C09:11 | HA_C06:1,HA_C09,HA_C09,11,shared by 2 families
+hybrid_a,symptom_discriminator,4100,AMB placental abruption,2,11,15,HA_C05:10 | HA_C03:1,HA_C05,HA_C05,10,shared by 2 families
+hybrid_a,symptom_discriminator,4311,"PC extended ophthalmic assessment and management capability, minor condition (MECS)",2,11,12,HA_C11:8 | HA_C05:3,HA_C11,HA_C11,8,shared by 2 families
+hybrid_a,symptom_discriminator,4388,AMB ICD implanted,2,11,11,HA_C04_01:8 | HA_C07_00:3,HA_C04_01,HA_C04_01,8,shared by 2 families
+hybrid_a,symptom_discriminator,4085,AMB pneumothorax,2,10,11,HA_C06:6 | HA_C05:4,HA_C06,HA_C06,6,shared by 2 families
+hybrid_a,symptom_discriminator,4011,"AMB assault, major",2,9,10,HA_C01_00:5 | HA_C04_01:4,HA_C01_00,HA_C01_00,5,shared by 2 families
+hybrid_a,symptom_discriminator,4067,AMB high-risk group,2,9,12,HA_C01_00:5 | HA_C03:4,HA_C01_00,HA_C01_00,5,shared by 2 families
+hybrid_a,symptom_discriminator,4243,"AMB resuscitation, recent",2,9,9,HA_C07_00:8 | HA_C01_00:1,HA_C07_00,HA_C07_00,8,shared by 2 families
+hybrid_a,symptom_discriminator,4024,"ED management, significant burn",2,8,47,HA_C00:6 | HA_C01_00:2,HA_C00,HA_C00,6,shared by 2 families
+hybrid_a,symptom_discriminator,4136,"AMB associated injury, risk",2,7,10,HA_C01_00:6 | HA_C04_01:1,HA_C01_00,HA_C01_00,6,shared by 2 families
+hybrid_a,symptom_discriminator,4137,"AMB vaginal bleeding, pregnant",2,6,7,HA_C05:5 | HA_C04_01:1,HA_C05,HA_C05,5,shared by 2 families
+hybrid_a,symptom_discriminator,4139,"AMB ischaemia, limb",2,6,8,HA_C00:4 | HA_C05:2,HA_C00,HA_C00,4,shared by 2 families
+hybrid_a,symptom_discriminator,4193,PC general health information,2,6,7,HA_C01_00:4 | HA_C09:2,HA_C01_00,HA_C01_00,4,shared by 2 families
+hybrid_a,symptom_discriminator,4364,RP AMB suicide attempt,2,6,13,HA_C00:5 | HA_C04_01:1,HA_C00,HA_C00,5,shared by 2 families
+hybrid_a,symptom_discriminator,4350,"RP ED nose, foreign body",2,5,9,HA_C00:3 | HA_C04_01:2,HA_C00,HA_C00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4352,"RP ED ear, foreign body",2,5,9,HA_C00:3 | HA_C04_01:2,HA_C00,HA_C00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4489,ED bruising non-mobile infant,2,5,12,HA_C03:4 | HA_C02:1,HA_C03,HA_C03,4,shared by 2 families
+hybrid_a,symptom_discriminator,4490,ED new head/face/neck swelling infants,2,5,12,HA_C03:4 | HA_C02:1,HA_C03,HA_C03,4,shared by 2 families
+hybrid_a,symptom_discriminator,4041,PC contraception issue,2,4,4,HA_C02:2 | HA_C05:2,HA_C02,HA_C02,2,shared by 2 families
+hybrid_a,symptom_discriminator,4086,AMB chest pain (undifferentiated) ,2,4,8,HA_C04_01:3 | HA_C09:1,HA_C04_01,HA_C04_01,3,shared by 2 families
+hybrid_a,symptom_discriminator,4133,AMB burst abdomen,2,4,4,HA_C00:2 | HA_C05:2,HA_C00,HA_C00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4143,PC palliative care service,2,4,18,HA_C01_00:3 | HA_C01_03:1,HA_C01_00,HA_C01_00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4150,AMB neonatal respiratory arrest,2,4,4,HA_C01_00:2 | HA_C05:2,HA_C01_00,HA_C01_00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4317,CN Health Visitor,2,4,7,HA_C01_00:3 | HA_C01_03:1,HA_C01_00,HA_C01_00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4323,CN Community Nurse,2,4,13,HA_C01_00:3 | HA_C01_03:1,HA_C01_00,HA_C01_00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4324,CN Community Midwife,2,4,5,HA_C01_00:3 | HA_C01_03:1,HA_C01_00,HA_C01_00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4351,"RP ED genital, foreign body",2,4,4,HA_C00:3 | HA_C04_01:1,HA_C00,HA_C00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4370,RP AMB features of severe illness,2,4,9,HA_C00:3 | HA_C04_01:1,HA_C00,HA_C00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4380,RP ED foreign body location undeclared,2,4,4,HA_C00:3 | HA_C04_01:1,HA_C00,HA_C00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4381,"AMB chemical eye splash, high risk",2,4,8,HA_C00:3 | HA_C04_01:1,HA_C00,HA_C00,3,shared by 2 families
+hybrid_a,symptom_discriminator,4485,PC management of burns dressings,2,4,4,HA_C00:2 | HA_C05:2,HA_C00,HA_C00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4518,ED chest pain under 35 years,2,4,8,HA_C04_01:2 | HA_C07_00:2,HA_C04_01,HA_C04_01,2,shared by 2 families
+hybrid_a,symptom_discriminator,4045,AMB aggression/violence,2,3,3,HA_C09:2 | HA_C01_00:1,HA_C09,HA_C09,2,shared by 2 families
+hybrid_a,symptom_discriminator,4055,PC sexual identity/activity issue,2,3,4,HA_C02:2 | HA_C05:1,HA_C02,HA_C02,2,shared by 2 families
+hybrid_a,symptom_discriminator,4072,ED testicular torsion,2,3,11,HA_C02:2 | HA_C05:1,HA_C02,HA_C02,2,shared by 2 families
+hybrid_a,symptom_discriminator,4113,AMB untreated/treatment failure,2,3,3,HA_C07_00:2 | HA_C02:1,HA_C07_00,HA_C07_00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4163,AMB diabetic ketoacidosis,2,3,13,HA_C07_00:2 | HA_C02:1,HA_C07_00,HA_C07_00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4366,RP AMB stroke,2,3,4,HA_C00:2 | HA_C04_01:1,HA_C00,HA_C00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4403,ED viral haemorrhagic fever,2,3,5,HA_C00:2 | HA_C03:1,HA_C00,HA_C00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4419,ED mental health crisis,2,3,5,HA_C01_03:2 | HA_C04_01:1,HA_C01_03,HA_C01_03,2,shared by 2 families
+hybrid_a,symptom_discriminator,4498,PC suspected shingles,2,3,8,HA_C00:2 | HA_C02:1,HA_C00,HA_C00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4513,ED eye burn significant,2,3,3,HA_C01_00:2 | HA_C00:1,HA_C01_00,HA_C01_00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4554,RP ED self harm,2,3,13,HA_C00:2 | HA_C04_01:1,HA_C00,HA_C00,2,shared by 2 families
+hybrid_a,symptom_discriminator,4042,AMB hypothermia,2,2,4,HA_C05:1 | HA_C09:1,HA_C05,HA_C05,1,shared by 2 families
+hybrid_a,symptom_discriminator,4051,PC child protection/vulnerable adult concern,2,2,4,HA_C01_00:1 | HA_C01_03:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4071,PC urinary retention,2,2,5,HA_C02:1 | HA_C05:1,HA_C02,HA_C02,1,shared by 2 families
+hybrid_a,symptom_discriminator,4092,"AMB fall, environmental exposure",2,2,2,HA_C00:1 | HA_C04_01:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4105,"AMB spinal device, loose or broken",2,2,2,HA_C00:1 | HA_C03:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4120,PC syringe driver management capability,2,2,4,HA_C00:1 | HA_C01_03:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4154,AMB hazardous object,2,2,2,HA_C04_01:1 | HA_C05:1,HA_C04_01,HA_C04_01,1,shared by 2 families
+hybrid_a,symptom_discriminator,4164,AMB diabetic ketoacidosis in pregnancy,2,2,3,HA_C02:1 | HA_C07_00:1,HA_C02,HA_C02,1,shared by 2 families
+hybrid_a,symptom_discriminator,4190,AMB trapped and ejected from a vehicle,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4256,AMB other fire incident,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4287,AMB airport or aircraft incident,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4292,AMB rail or train incident,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4334,RP ED intoxication,2,2,3,HA_C00:1 | HA_C04_01:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4338,RP AMB fit or seizure within past 12 hours,2,2,3,HA_C00:1 | HA_C04_01:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4346,RP referral by healthcare professional,2,2,3,HA_C00:1 | HA_C04_01:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4360,RP AMB meningitis,2,2,2,HA_C00:1 | HA_C04_01:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4361,RP AMB severe pain,2,2,4,HA_C00:1 | HA_C04_01:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4363,RP ED features of severe illness,2,2,2,HA_C00:1 | HA_C04_01:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4365,RP AMB anaphylaxis,2,2,2,HA_C00:1 | HA_C04_01:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4402,PC viral haemorrhagic fever,2,2,3,HA_C00:1 | HA_C03:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4404,AMB viral haemorrhagic fever,2,2,2,HA_C00:1 | HA_C03:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4407,"RP ED non-trauma bleeding nose, ear, eye or mouth",2,2,3,HA_C00:1 | HA_C04_01:1,HA_C00,HA_C00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4432,AMB marine or coastal incident,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4438,AMB major incident declared,2,2,2,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4439,AMB major incident standby,2,2,2,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4440,AMB operation consort,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4441,AMB concern for welfare,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4442,AMB Section136,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4443,AMB flooding,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4444,AMB building or structural collapse,2,2,4,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4446,AMB CBRNE incident,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4448,AMB medical type incident,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4457,AMB diabetes AND severely ill,2,2,2,HA_C04_01:1 | HA_C07_00:1,HA_C04_01,HA_C04_01,1,shared by 2 families
+hybrid_a,symptom_discriminator,4467,PC Pharmacy Services,2,2,6,HA_C01_00:1 | HA_C01_03:1,HA_C01_00,HA_C01_00,1,shared by 2 families
+hybrid_a,symptom_discriminator,4497,ED assessment of gastrointestinal bleed,2,2,4,HA_C02:1 | HA_C03:1,HA_C02,HA_C02,1,shared by 2 families
+hybrid_a,symptom_discriminator,4533,All Improving Access to Psychological Therapies service,2,2,3,HA_C01_03:1 | HA_C09:1,HA_C01_03,HA_C01_03,1,shared by 2 families
+hybrid_a,symptom_discriminator,4216,"AMB major blood loss, non-trauma",1,24,40,HA_C01_00:24,HA_C01_00,HA_C01_00,24,family-specific
+hybrid_a,symptom_discriminator,4217,"AMB major blood loss, non-trauma AND respiratory distress",1,24,24,HA_C01_00:24,HA_C01_00,HA_C01_00,24,family-specific
+hybrid_a,symptom_discriminator,4218,"AMB major blood loss, non-trauma AND shock",1,24,24,HA_C01_00:24,HA_C01_00,HA_C01_00,24,family-specific
+hybrid_a,symptom_discriminator,4219,"AMB major blood loss, non-trauma AND septicaemia",1,24,24,HA_C01_00:24,HA_C01_00,HA_C01_00,24,family-specific
+hybrid_a,symptom_discriminator,4220,"AMB major blood loss, trauma AND amputated digits",1,23,23,HA_C01_00:23,HA_C01_00,HA_C01_00,23,family-specific
+hybrid_a,symptom_discriminator,4005,"AMB ischaemia, post trauma",1,18,41,HA_C00:18,HA_C00,HA_C00,18,family-specific
+hybrid_a,symptom_discriminator,4155,PC full Primary Care assessment and prescribing capability - blood in motion,1,18,26,HA_C03:18,HA_C03,HA_C03,18,family-specific
+hybrid_a,symptom_discriminator,4501,"ED Ischaemia, post trauma",1,18,41,HA_C00:18,HA_C00,HA_C00,18,family-specific
+hybrid_a,symptom_discriminator,4007,AMB fracture and/or dislocation,1,16,43,HA_C00:16,HA_C00,HA_C00,16,family-specific
+hybrid_a,symptom_discriminator,4499,"ED anticoagulant, bleeding or clotting disorder risk",1,13,26,HA_C04_01:13,HA_C04_01,HA_C04_01,13,family-specific
+hybrid_a,symptom_discriminator,4222,AMB major trauma AND significant blood loss,1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4224,"AMB gunshot OR stab injury, head/neck",1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4225,AMB gunshot OR stab injury,1,12,24,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4226,"AMB Road Traffic Incident, ejected from vehicle",1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4228,"AMB major burn, respiratory involvement",1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4230,AMB major blunt injury,1,12,24,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4231,AMB major wound/amputation,1,12,24,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4234,AMB strangulation/suffocation,1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4235,AMB blast injury,1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4236,AMB lightning strike,1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4240,AMB loss of consciousness prior to injury,1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4249,"AMB gunshot OR stab injury, torso",1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4421,"AMB major blunt injury, torso",1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4422,"AMB major blunt injury, head/neck",1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4488,AMB corrosive substance attack,1,12,12,HA_C01_01:12,HA_C01_01,HA_C01_01,12,family-specific
+hybrid_a,symptom_discriminator,4500,ED fracture and or dislocation,1,11,28,HA_C00:11,HA_C00,HA_C00,11,family-specific
+hybrid_a,symptom_discriminator,4006,AMB compound fracture,1,10,24,HA_C00:10,HA_C00,HA_C00,10,family-specific
+hybrid_a,symptom_discriminator,4025,AMB hydrofluoric acid,1,8,8,HA_C00:8,HA_C00,HA_C00,8,family-specific
+hybrid_a,symptom_discriminator,4237,AMB major trauma AND trapped at scene,1,8,8,HA_C01_01:8,HA_C01_01,HA_C01_01,8,family-specific
+hybrid_a,symptom_discriminator,4238,AMB self-harm episode AND toxic ingestion/inhalation/overdose,1,8,8,HA_C01_01:8,HA_C01_01,HA_C01_01,8,family-specific
+hybrid_a,symptom_discriminator,4239,AMB chest injury AND cardiac/respiratory symptoms,1,8,16,HA_C01_01:8,HA_C01_01,HA_C01_01,8,family-specific
+hybrid_a,symptom_discriminator,4242,AMB subarachnoid haemorrhage symptoms prior to injury,1,8,8,HA_C01_01:8,HA_C01_01,HA_C01_01,8,family-specific
+hybrid_a,symptom_discriminator,4083,AMB choked within previous 24 hours,1,6,6,HA_C06:6,HA_C06,HA_C06,6,family-specific
+hybrid_a,symptom_discriminator,4156,PC Possible DVT,1,6,10,HA_C02:6,HA_C02,HA_C02,6,family-specific
+hybrid_a,symptom_discriminator,4333,RP ED minor injury,1,6,16,HA_C00:6,HA_C00,HA_C00,6,family-specific
+hybrid_a,symptom_discriminator,4077,"AMB motor/sensory deficit AND wound, foreign body, large",1,5,5,HA_C00:5,HA_C00,HA_C00,5,family-specific
+hybrid_a,symptom_discriminator,4078,"AMB electric shock, still in contact with source",1,5,5,HA_C01_00:5,HA_C01_00,HA_C01_00,5,family-specific
+hybrid_a,symptom_discriminator,4079,"AMB electric shock, greater than domestic supply",1,5,5,HA_C01_00:5,HA_C01_00,HA_C01_00,5,family-specific
+hybrid_a,symptom_discriminator,4094,"ED electric shock, domestic or lesser supply",1,5,9,HA_C01_00:5,HA_C01_00,HA_C01_00,5,family-specific
+hybrid_a,symptom_discriminator,4148,"AMB burn, electrical",1,5,5,HA_C01_00:5,HA_C01_00,HA_C01_00,5,family-specific
+hybrid_a,symptom_discriminator,4107,AMB apnoeic episode,1,4,4,HA_C03:4,HA_C03,HA_C03,4,family-specific
+hybrid_a,symptom_discriminator,4173,PC bereavement,1,4,8,HA_C09:4,HA_C09,HA_C09,4,family-specific
+hybrid_a,symptom_discriminator,4174,PC relationship breakdown,1,4,8,HA_C09:4,HA_C09,HA_C09,4,family-specific
+hybrid_a,symptom_discriminator,4175,PC postnatal mental health problem,1,4,11,HA_C09:4,HA_C09,HA_C09,4,family-specific
+hybrid_a,symptom_discriminator,4176,PC post-traumatic stress,1,4,8,HA_C09:4,HA_C09,HA_C09,4,family-specific
+hybrid_a,symptom_discriminator,4183,"PC mental health assessment, solvent misuse",1,4,4,HA_C09:4,HA_C09,HA_C09,4,family-specific
+hybrid_a,symptom_discriminator,4223,"AMB vaginal bleeding,heavy AND pregnant,over 20 weeks",1,4,4,HA_C01_01:4,HA_C01_01,HA_C01_01,4,family-specific
+hybrid_a,symptom_discriminator,4241,AMB stroke symptoms prior to injury,1,4,4,HA_C01_01:4,HA_C01_01,HA_C01_01,4,family-specific
+hybrid_a,symptom_discriminator,4392,PC dental brace problem,1,4,10,HA_C10:4,HA_C10,HA_C10,4,family-specific
+hybrid_a,symptom_discriminator,4412,AMB acute neurological symptoms prior to injury,1,4,4,HA_C01_01:4,HA_C01_01,HA_C01_01,4,family-specific
+hybrid_a,symptom_discriminator,4515,PC Unwell Infant Under 10 days old,1,4,5,HA_C03:4,HA_C03,HA_C03,4,family-specific
+hybrid_a,symptom_discriminator,4076,AMB haematuria,1,3,6,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4127,ED subungual haematoma,1,3,3,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4130,PC rabies risk,1,3,13,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4131,AMB envenomation,1,3,6,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4132,"ED tick, removal required",1,3,13,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4170,PC syringe driver management capability - palliative care services,1,3,3,HA_C01_00:3,HA_C01_00,HA_C01_00,3,family-specific
+hybrid_a,symptom_discriminator,4304,ED unable to weightbear,1,3,9,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4306,ED highly dangerous chemical,1,3,3,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4316,PC Community Healthcare Professional,1,3,3,HA_C01_00:3,HA_C01_00,HA_C01_00,3,family-specific
+hybrid_a,symptom_discriminator,4371,RP AMB severe injury,1,3,7,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4398,"PC tick, removal and bite management",1,3,11,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4405,"PC skin, yellow",1,3,4,HA_C03:3,HA_C03,HA_C03,3,family-specific
+hybrid_a,symptom_discriminator,4451,AMB burn chemical,1,3,5,HA_C00:3,HA_C00,HA_C00,3,family-specific
+hybrid_a,symptom_discriminator,4510,ED recurrent bleeding on anticoagulants or bleeding disorder,1,3,3,HA_C04_00:3,HA_C04_00,HA_C04_00,3,family-specific
+hybrid_a,symptom_discriminator,4519,ED chest pain over 12 hours ago,1,3,6,HA_C07_00:3,HA_C07_00,HA_C07_00,3,family-specific
+hybrid_a,symptom_discriminator,4037,AMB pre-eclampsia,1,2,2,HA_C05:2,HA_C05,HA_C05,2,family-specific
+hybrid_a,symptom_discriminator,4062,ED welding flash/UV exposure ,1,2,3,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4126,ED nail avulsion,1,2,2,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4128,PC local infection,1,2,2,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4140,ED tight/painful plaster,1,2,4,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4144,AMB multiple birth,1,2,2,HA_C05:2,HA_C05,HA_C05,2,family-specific
+hybrid_a,symptom_discriminator,4145,AMB pre-term,1,2,6,HA_C05:2,HA_C05,HA_C05,2,family-specific
+hybrid_a,symptom_discriminator,4146,"ED ischaemia, digit/s",1,2,2,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4147,AMB stillbirth,1,2,2,HA_C05:2,HA_C05,HA_C05,2,family-specific
+hybrid_a,symptom_discriminator,4149,AMB post delivery,1,2,2,HA_C05:2,HA_C05,HA_C05,2,family-specific
+hybrid_a,symptom_discriminator,4151,AMB abdominal injury,1,2,2,HA_C05:2,HA_C05,HA_C05,2,family-specific
+hybrid_a,symptom_discriminator,4152,AMB amputation,1,2,4,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4169,AMB diabetes AND reduced conscious level,1,2,2,HA_C07_00:2,HA_C07_00,HA_C07_00,2,family-specific
+hybrid_a,symptom_discriminator,4337,"RP AMB injury, severe pain",1,2,4,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4359,RP AMB acute coronary syndrome,1,2,2,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4410,ED hydraulic injection injury,1,2,2,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4411,"PC dental trauma, tooth avulsion",1,2,2,HA_C10:2,HA_C10,HA_C10,2,family-specific
+hybrid_a,symptom_discriminator,4425,AMB fitting,1,2,2,HA_C09:2,HA_C09,HA_C09,2,family-specific
+hybrid_a,symptom_discriminator,4475,"ALL Full Assessment Capability, chest pain",1,2,3,HA_C10:2,HA_C10,HA_C10,2,family-specific
+hybrid_a,symptom_discriminator,4481,PC mechanical low back pain,1,2,2,HA_C03:2,HA_C03,HA_C03,2,family-specific
+hybrid_a,symptom_discriminator,4482,Mental health emergency,1,2,5,HA_C01_00:2,HA_C01_00,HA_C01_00,2,family-specific
+hybrid_a,symptom_discriminator,4486,ED frailty: risk of fracture,1,2,2,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4511,AMB declared shaken baby,1,2,2,HA_C01_01:2,HA_C01_01,HA_C01_01,2,family-specific
+hybrid_a,symptom_discriminator,4550,RP ED digit injury,1,2,4,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4551,RP ED compound fracture and/or dislocation,1,2,8,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4552,RP ED needlestick injury,1,2,16,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4553,RP ED assault,1,2,16,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4555,RP ED limb injury penetrating,1,2,24,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4556,RP ED limb injury blunt,1,2,10,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4557,RP ED electrical injury and/or burn other,1,2,2,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4558,RP ED burn under 6 hours,1,2,4,HA_C00:2,HA_C00,HA_C00,2,family-specific
+hybrid_a,symptom_discriminator,4575,RP ED headache,1,2,2,HA_C04_01:2,HA_C04_01,HA_C04_01,2,family-specific
+hybrid_a,symptom_discriminator,4015,ED bleeding disorder,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4036,PC alcohol misuse,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4040,PC stress incontinence,1,1,1,HA_C05:1,HA_C05,HA_C05,1,family-specific
+hybrid_a,symptom_discriminator,4050,ED dehydration,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4054,PC substance misuse,1,1,2,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4063,"RP ED foreign body, eye",1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4121,PC peritoneal dialysis catheter management capability,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4122,PC central venous line management capability,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4123,PC enteral feeding tube management capability,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4125,PC drain management capability,1,1,4,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4138,"ED wound, contaminated",1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4141,ED loose/damaged plaster,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4178,PC agitation,1,1,5,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4182,"PC drug misuse, information",1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4184,"PC solvent misuse, information",1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4185,PC hallucinations,1,1,4,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4186,"AMB road traffic incident, unknown casualties",1,1,2,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4188,"AMB hazard, chemical, unknown casualties",1,1,2,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4189,"AMB hazard, other, unknown casualties",1,1,5,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4192,PC medication enquiry,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4194,"PC pharmacy, location information",1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4195,"PC GP practice, location information",1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4196,"PC sexual health service, location information",1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4197,"PC optician, location information",1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4200,PC appointment request,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4204,"PC dental service, location information",1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4205,ED schizophrenia,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4206,PC bipolar disorder,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4207,PC chronic depression,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4208,ED mania/hypomania,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4209,PC generalised anxiety disorder,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4210,PC Dementia/alzheimer’s,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4211,PC self-harm,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4246,AMB imminent seizure,1,1,4,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4251,AMB road traffic incident,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4253,AMB police request for assistance,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4254,AMB other police incident,1,1,2,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4255,AMB fire incident,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4260,AMB fire service request for assistance,1,1,2,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4281,AMB hospital request for assistance,1,1,7,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4294,AMB other railways incident,1,1,2,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4302,PC mania/hypomania,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4303,PC schizophrenia,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4305,ED local infection,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4313,AMB sting ray,1,1,5,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4314,"ED Weever Fish, Sea Urchin",1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4315,PC Healthcare Professional Callback,1,1,5,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4318,PC Stoma Management,1,1,2,HA_C03:1,HA_C03,HA_C03,1,family-specific
+hybrid_a,symptom_discriminator,4320,PC Failed Contraception over 72 hours,1,1,1,HA_C05:1,HA_C05,HA_C05,1,family-specific
+hybrid_a,symptom_discriminator,4326,PC Community Healthcare Professional Service Location ,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4328,PC Receive report of results or tests,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4330,RP ED failed contraception,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4332,RP AMB urinary retention,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4336,RP ED medication toxicity,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4339,RP ED early labour,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4340,RP PC referral without triage,1,1,3,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4341,RP flu medication collection,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4342,RP AMB antidepressant medication toxicity,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4343,RP ED child protection/vulnerable adult concern,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4344,"RP ED Trauma bleeding, nose, ear, eye or mouth",1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4347,RP brought in by police,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4348,RP ED referral without triage,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4349,RP ED behaviour problem,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4355,RP ED management of dressings,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4356,"RP PC Non trauma bleeding, nose, ear, eye or mouth",1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4357,RP AMB labour,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4358,RP AMB septicaemia,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4367,"RP AMB major blood loss, trauma",1,1,4,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4368,"RP AMB resuscitation, recent",1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4369,RP AMB major blood loss,1,1,4,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4372,RP AMB intoxication,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4373,RP AMB paracetamol toxicity,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4375,"RP AMB medication toxicity, high risk",1,1,4,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4376,RP PC medication toxicity,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4378,RP PC social/domestic emergency,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4379,RP ED foreign body in situ,1,1,2,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4382,AMB ICD activation,1,1,1,HA_C07_00:1,HA_C07_00,HA_C07_00,1,family-specific
+hybrid_a,symptom_discriminator,4383,AMB cardiac symptoms post ICD activation,1,1,1,HA_C07_00:1,HA_C07_00,HA_C07_00,1,family-specific
+hybrid_a,symptom_discriminator,4384,AMB breathlessness post ICD activation,1,1,1,HA_C07_00:1,HA_C07_00,HA_C07_00,1,family-specific
+hybrid_a,symptom_discriminator,4385,AMB palpitations post ICD activation,1,1,1,HA_C07_00:1,HA_C07_00,HA_C07_00,1,family-specific
+hybrid_a,symptom_discriminator,4386,AMB confusion post ICD activation,1,1,1,HA_C07_00:1,HA_C07_00,HA_C07_00,1,family-specific
+hybrid_a,symptom_discriminator,4387,PC ICD activation,1,1,2,HA_C07_00:1,HA_C07_00,HA_C07_00,1,family-specific
+hybrid_a,symptom_discriminator,4391,ED bleeding post dental procedure,1,1,1,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4393,PC bleeding post dental procedure,1,1,1,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4395,RP AMB diabetes AND confusion,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4396,RP ED loose/damaged plaster,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4416,PC support pessary displaced and/ or removal required,1,1,2,HA_C05:1,HA_C05,HA_C05,1,family-specific
+hybrid_a,symptom_discriminator,4417,PC intrauterine coil displaced and/ or removal required,1,1,2,HA_C05:1,HA_C05,HA_C05,1,family-specific
+hybrid_a,symptom_discriminator,4420,PC failed contraception and retained foreign body,1,1,3,HA_C05:1,HA_C05,HA_C05,1,family-specific
+hybrid_a,symptom_discriminator,4431,AMB person on fire,1,1,2,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4435,AMB threat of terrorism,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4450,AMB terrorist incident,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4461,"AMB automatic fire alarm, standby",1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4462,"AMB automatic fire alarm, information",1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4463,AMB running call,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4464,"AMB incident, trauma",1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4469,PC Prescription Request,1,1,1,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4470,"ALL Full Assessment Capability, significant blood loss",1,1,1,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4471,"ALL Full Assessment Capability, breathing difficulties",1,1,3,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4472,"ALL Full Assessment Capability, potential critical illness",1,1,1,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4473,"ALL Full Assessment Capability, potential life threatening shock",1,1,3,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4476,"ALL Full Assessment Capability, major trauma",1,1,1,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4477,"ALL Full Assessment Capability, head injury",1,1,1,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4478,"ALL Full Assessment Capability, probable stroke or mini-stroke",1,1,1,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4479,"ALL Full Assessment Capability, possible allergic reaction",1,1,1,HA_C10:1,HA_C10,HA_C10,1,family-specific
+hybrid_a,symptom_discriminator,4483,PC at risk of acute kidney injury,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4484,ED suspected acute urinary retention,1,1,2,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4487,PC suspected chickenpox at risk group,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4491,AMB acute illness after drowning,1,1,2,HA_C01_00:1,HA_C01_00,HA_C01_00,1,family-specific
+hybrid_a,symptom_discriminator,4494,ALL unexpected death with DNAR,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4502,AMB Acute Behavioural Disturbance,1,1,1,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4503,All new suprapubic catheter management,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4504,All suprapubic catheter management,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4507,"AMB shock, anaphylaxis",1,1,1,HA_C06:1,HA_C06,HA_C06,1,family-specific
+hybrid_a,symptom_discriminator,4509,"AMB unexpected death, under 18",1,1,4,HA_C09:1,HA_C09,HA_C09,1,family-specific
+hybrid_a,symptom_discriminator,4514,PC Enhanced Pharmacy Services,1,1,3,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4522,ED full obstetric assessment and management capability,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4523,ED same day emergency care medical,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4524,ED same day emergency care surgical,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4525,ED same day emergency care gynaecology,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4526,ED same day emergency care paediatric,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4527,ALL Urgent Care Service Illness,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4528,ALL Urgent Care Service Injury,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4529,ALL Early Pregnancy Unit,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4530,PC Musculoskeletal Service,1,1,2,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4531,All Fracture Clinic,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4532,All Mental Health Single Point of Access,1,1,2,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4534,PC Emergency Contraception IUD,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4535,All Community Rapid Response Service,1,1,4,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4536,All Sexual Health Service,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4537,All COVID oximetry at home service new user,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4538,ALL Long Covid Service New Referral,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4539,ALL Termination of Pregnancy Service,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4540,ALL Long Covid Service Existing User,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4541,All COVID oximetry at home service existing user,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4542,PC extended ophthalmic assessment and prescribing capability COVID Risk (CUES),1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4545,RP ED allergic reaction,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4546,"RP ED collapse, fit or blackout",1,1,2,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4547,RP ED alcohol withdrawal,1,1,2,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4548,RP ED blood sugar problem,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4549,RP PC blood sugar problem,1,1,2,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4559,ALL COVID-19 assessment,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4560,ALL ED booked arrival time,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4561,ALL ED or hospital discharge within 3 days,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4562,ALL inappropriate for self-triage,1,1,2,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4563,ALL referral letter from GP,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4564,ALL specialist advice to attend ED,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4565,ALL severe breathing difficulty assessment,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4566,ALL significant blood loss assessment,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4567,ALL airway swelling assessment,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4568,ALL critical illness assessment,1,1,2,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4571,RP ED human bite,1,1,1,HA_C00:1,HA_C00,HA_C00,1,family-specific
+hybrid_a,symptom_discriminator,4573,RP ED rash,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4574,"RP ED abdomen, flank or back pain",1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4576,RP AMB testicular pain,1,1,1,HA_C04_01:1,HA_C04_01,HA_C04_01,1,family-specific
+hybrid_a,symptom_discriminator,4577,PC crisis response falls pick up,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific
+hybrid_a,symptom_discriminator,4578,PC community falls prevention,1,1,1,HA_C01_03:1,HA_C01_03,HA_C01_03,1,family-specific

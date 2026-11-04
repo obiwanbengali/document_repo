@@ -1,0 +1,10 @@
+[console_scripts]
+pathways-families = pathways_analysis.family_discovery:main
+pathways-phase3 = pathways_analysis.phase3_sizing:main
+pathways-phase3-adr = pathways_analysis.phase3_adr:main
+pathways-phase3-benchmark = pathways_analysis.phase3_benchmark:main
+pathways-phase3-cost = pathways_analysis.phase3_cost:main
+pathways-phase3-cpt = pathways_analysis.phase3_cpt_sizing:main
+pathways-phase3-runtime = pathways_analysis.phase3_runtime:main
+pathways-profile = pathways_analysis.profiling:main
+pathways-report = pathways_analysis.report_builder:main

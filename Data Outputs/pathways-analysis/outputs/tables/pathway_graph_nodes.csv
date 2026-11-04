@@ -1,0 +1,839 @@
+pathway_key,pathway_id,pathway_title,is_active,symptom_group_id,symptom_group_description,clinical_areas,question_count,logic_row_count,logic_position_count,in_degree,out_degree,total_degree,weighted_in_degree,weighted_out_degree,weighted_total_degree,betweenness_centrality,pagerank,self_loop,successor_count,predecessor_count
+PA1,PA1,Stopped Breathing 3rd Party ,True,,,,53,762,206,10,0,10,304,0,304,0.000000,0.001114,False,0,10
+PA100,PA100,"Declared Diabetes Blood Sugar Problem, 3rd party",False,1187.000000,"Diabetes, Blood Sugar Problem",,92,885,341,2,3,5,162,170,332,0.000001,0.001237,True,2,1
+PA101,PA101,"Declared Diabetes Blood Sugar Problem, 1st party",True,1187.000000,"Diabetes, Blood Sugar Problem",,85,866,346,1,3,4,150,162,312,0.000000,0.001102,True,2,0
+PA102,PA102,"Declared Diabetes Blood Sugar Problem, 3rd party",False,1187.000000,"Diabetes, Blood Sugar Problem",,86,859,337,1,2,3,160,164,324,0.000000,0.001369,True,1,0
+PA103,PA103,"Declared Diabetes Blood Sugar Problem, 1st party",False,1187.000000,"Diabetes, Blood Sugar Problem",,79,842,337,1,3,4,158,166,324,0.000000,0.001229,True,2,0
+PA104,PA104,Declared Diabetes Blood Sugar Problem,True,1187.000000,"Diabetes, Blood Sugar Problem",,78,670,265,4,2,6,196,172,368,0.000007,0.002651,True,1,3
+PA107,PA107,Early Exit - Dying,True,1189.000000,Dying,,3,18,5,2,17,19,32,56,88,0.000117,0.000291,True,16,1
+PA110,PA110,Social & information SPA/OOH Version,True,1191.000000,Health and Social Information,,33,143,49,12,19,31,208,182,390,0.000985,0.001230,False,19,12
+PA111,PA111,"Immediate threats to life, Ambulance version, 3rd party",True,1193.000000,Immediate threats to life,,101,483,189,3,18,21,98,306,404,0.000409,0.000541,True,17,2
+PA112,PA112,"Immediate threats to life, SPA/OOH version, 3rd party",True,1193.000000,Immediate threats to life,,94,442,179,7,16,23,116,282,398,0.000343,0.000553,True,15,6
+PA113,PA113,"Trauma emergency, 3rd party",True,1194.000000,Trauma Emergency,,90,472,185,5,10,15,272,392,664,0.000254,0.000655,True,9,4
+PA114,PA114,"Non-trauma emergency, 3rd party",True,1195.000000,Non-trauma Emergency,,42,181,79,4,12,16,70,144,214,0.000396,0.000379,True,11,3
+PA115,PA115,"Immediate threats to life, Ambulance version, 1st party  ",True,1193.000000,Immediate threats to life,,56,217,96,2,12,14,46,154,200,0.000068,0.000327,True,11,1
+PA116,PA116,"Immediate threats to life, SPA/OOH version, 1st party",True,1193.000000,Immediate threats to life,,61,233,104,3,12,15,60,170,230,0.000137,0.000406,True,11,2
+PA117,PA117,"Trauma emergency, 1st party",True,1194.000000,Trauma Emergency,,90,451,184,5,10,15,276,352,628,0.000204,0.000797,True,9,4
+PA118,PA118,"Non-trauma emergency, 1st party",True,1195.000000,Non-trauma Emergency,,40,178,77,4,11,15,70,142,212,0.000295,0.000388,True,10,3
+PA119,PA119,"Immediate threats to life, Ambulance version, 3rd party",True,1193.000000,Immediate threats to life,,82,401,156,3,15,18,82,258,340,0.000356,0.000547,True,14,2
+PA120,PA120,"Immediate threats to life, SPA/OOH version, 3rd party",True,1193.000000,Immediate threats to life,,76,371,149,7,13,20,108,238,346,0.000299,0.000566,True,12,6
+PA121,PA121,"Trauma emergency, 3rd Party",True,1194.000000,Trauma Emergency,,83,438,170,5,10,15,266,374,640,0.000254,0.000708,True,9,4
+PA122,PA122,"Non-trauma emergency, 3rd Party",True,1195.000000,Non-trauma Emergency,,42,181,79,4,12,16,70,144,214,0.000396,0.000385,True,11,3
+PA123,PA123,"Immediate threats to life, Ambulance version, 1st party",True,1193.000000,Immediate threats to life,,37,159,70,2,9,11,36,120,156,0.000065,0.000350,True,8,1
+PA124,PA124,"Immediate threats to life, SPA/OOH version, 1st party",True,1193.000000,Immediate threats to life,,44,181,80,3,9,12,46,136,182,0.000116,0.000402,True,8,2
+PA125,PA125,"Trauma emergency, 1st Party",True,1194.000000,Trauma Emergency,,83,413,167,5,10,15,270,318,588,0.000204,0.000933,True,9,4
+PA126,PA126,"Non-trauma emergency, 1st Party",True,1195.000000,Non-trauma Emergency,,40,178,77,4,11,15,70,142,212,0.000295,0.000397,True,10,3
+PA127,PA127,"Immediate threats to life, Ambulance version, 3rd party",True,1193.000000,Immediate threats to life,,84,354,145,3,18,21,104,264,368,0.000414,0.000689,True,17,2
+PA128,PA128,"Immediate threats to life, SPA/OOH version, 3rd party",True,1193.000000,Immediate threats to life,,79,326,139,7,16,23,100,252,352,0.000333,0.000477,True,15,6
+PA129,PA129,"Trauma emergency, 3rd Party",True,1194.000000,Trauma Emergency,,90,448,173,5,10,15,240,336,576,0.000254,0.000678,True,9,4
+PA13,PA13,Environmental Threat 3rd Party,True,,,,7,182,41,17,0,17,100,0,100,0.000000,0.000419,False,0,17
+PA130,PA130,"Non-trauma emergency, 3rd Party",True,1195.000000,Non-trauma Emergency,,43,195,82,4,12,16,70,148,218,0.000395,0.000378,True,11,3
+PA131,PA131,"Immediate threats to life, Ambulance version, 1st party",True,1193.000000,Immediate threats to life,,46,210,87,2,12,14,58,154,212,0.000068,0.000358,True,11,1
+PA132,PA132,"Immediate threats to life, SPA/OOH version, 1st party",True,1193.000000,Immediate threats to life,,51,226,95,3,12,15,72,170,242,0.000136,0.000440,True,11,2
+PA133,PA133,"Trauma emergency, 1st Party",True,1194.000000,Trauma Emergency,,90,430,172,5,10,15,244,308,552,0.000204,0.000786,True,9,4
+PA134,PA134,"Non-trauma emergency, 1st Party",True,1195.000000,Non-trauma Emergency,,42,193,81,4,11,15,70,146,216,0.000280,0.000386,True,10,3
+PA135,PA135,"Immediate threats to life, Ambulance version, 3rd party",True,1193.000000,Immediate threats to life,,67,250,100,3,15,18,80,216,296,0.000361,0.000667,True,14,2
+PA136,PA136,"Immediate threats to life, SPA/OOH version, 3rd party",True,1193.000000,Immediate threats to life,,63,233,97,7,13,20,84,208,292,0.000288,0.000472,True,12,6
+PA137,PA137,"Trauma emergency, 3rd Party",True,1194.000000,Trauma Emergency,,85,427,163,5,10,15,236,324,560,0.000254,0.000730,True,9,4
+PA138,PA138,"Non-trauma emergency, 3rd Party",True,1195.000000,Non-trauma Emergency,,43,195,82,4,12,16,70,148,218,0.000395,0.000384,True,11,3
+PA139,PA139,"Immediate threats to life, Ambulance version, 1st party",True,1193.000000,Immediate threats to life,,28,93,41,2,9,11,32,108,140,0.000065,0.000346,True,8,1
+PA14,PA14,Labour and Childbirth 3rd Party ,True,1118.000000,Labour and Childbirth   ,,70,875,269,25,1,26,416,128,544,0.000000,0.013415,True,0,24
+PA140,PA140,"Immediate threats to life, SPA/OOH version, 1st party",True,1193.000000,Immediate threats to life,,36,115,51,3,9,12,42,124,166,0.000115,0.000398,True,8,2
+PA141,PA141,"Trauma emergency, 1st Party",True,1194.000000,Trauma Emergency,,85,409,162,5,10,15,240,296,536,0.000204,0.000882,True,9,4
+PA142,PA142,"Non-trauma emergency, 1st Party",True,1195.000000,Non-trauma Emergency,,42,193,81,4,11,15,70,146,216,0.000280,0.000396,True,10,3
+PA143,PA143,"Immediate threats to life, Ambulance version",True,1193.000000,Immediate threats to life,,68,256,102,2,15,17,64,212,276,0.000078,0.000401,True,14,1
+PA144,PA144,"Immediate threats to life, SPA/OOH version",True,1193.000000,Immediate threats to life,,66,243,99,7,13,20,76,208,284,0.000197,0.000453,True,12,6
+PA145,PA145,Trauma emergency,True,1194.000000,Trauma Emergency,,58,298,115,5,7,12,220,272,492,0.000075,0.000722,True,6,4
+PA146,PA146,Non-trauma emergency,True,1195.000000,Non-trauma Emergency,,36,135,60,4,9,13,50,76,126,0.000155,0.000420,True,8,3
+PA147,PA147,"Immediate threats to life, Ambulance version",True,1193.000000,Immediate threats to life,,68,256,102,2,15,17,64,212,276,0.000078,0.000407,True,14,1
+PA148,PA148,"Immediate threats to life, SPA/OOH version",True,1193.000000,Immediate threats to life,,65,243,99,7,13,20,92,208,300,0.000197,0.000529,True,12,6
+PA149,PA149,Trauma emergency,True,1194.000000,Trauma Emergency,,58,298,115,5,7,12,228,272,500,0.000075,0.000904,True,6,4
+PA150,PA150,Non-trauma emergency,True,1195.000000,Non-trauma Emergency,,36,135,60,4,9,13,50,76,126,0.000155,0.000424,True,8,3
+PA151,PA151,"Immediate threats to life, Ambulance version",True,1193.000000,Immediate threats to life,,62,235,94,2,15,17,64,212,276,0.000061,0.000345,True,14,1
+PA152,PA152,"Immediate threats to life, SPA/OOH version",True,1193.000000,Immediate threats to life,,62,248,100,7,14,21,90,220,310,0.000284,0.000506,True,13,6
+PA153,PA153,Trauma emergency,True,1194.000000,Trauma Emergency,,58,296,115,5,7,12,230,278,508,0.000075,0.000737,True,6,4
+PA154,PA154,Non-trauma emergency,True,1195.000000,Non-trauma Emergency,,38,128,59,4,8,12,60,98,158,0.000142,0.000420,True,7,3
+PA155,PA155,"Immediate threats to life, Ambulance version",True,1193.000000,Immediate threats to life,,62,235,94,2,15,17,64,212,276,0.000061,0.000348,True,14,1
+PA156,PA156,"Immediate threats to life, SPA/OOH version",True,1193.000000,Immediate threats to life,,62,248,100,7,14,21,106,220,326,0.000284,0.000579,True,13,6
+PA157,PA157,Trauma emergency,True,1194.000000,Trauma Emergency,,58,296,115,5,7,12,238,278,516,0.000075,0.000921,True,6,4
+PA158,PA158,Non-trauma emergency,True,1195.000000,Non-trauma Emergency,,38,128,59,4,8,12,60,98,158,0.000142,0.000424,True,7,3
+PA159,PA159,Health Information,True,1191.000000,Health and Social Information,,17,40,20,1,0,1,12,0,12,0.000000,0.000301,False,0,1
+PA16,PA16,Multiple Self-Harm 3rd Party,True,,,,4,133,26,4,0,4,16,0,16,0.000000,0.000258,False,0,4
+PA160,PA160,Early Exit - Deceased,True,1188.000000,Deceased,,20,240,77,3,4,7,154,170,324,0.000006,0.000430,True,3,2
+PA162,PA162,Frequent Caller,True,1200.000000,Frequent caller,,6,99,24,25,29,54,96,200,296,0.003081,0.000420,True,28,24
+PA164,PA164,Early Exit - Dying,True,1189.000000,Dying,,2,16,3,1,8,9,12,48,60,0.000063,0.000246,False,8,1
+PA165,PA165,Early Exit - Dying,True,1189.000000,Dying,,2,16,3,1,8,9,12,48,60,0.000063,0.000246,False,8,1
+PA166,PA166,Attend Incident,True,,,,128,548,212,1,1,2,8,2,10,0.000001,0.000429,False,1,1
+PA167,PA167,Attend Incident,False,,,not area specific,159,268,168,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PA168,PA168,Reception Point 1,True,1207.000000,Reception Point,,72,358,119,0,3,3,0,32,32,0.000000,0.000232,False,3,0
+PA169,PA169,Reception Point 2,True,1207.000000,Reception Point,,74,315,123,7,11,18,60,80,140,0.000393,0.000858,False,11,7
+PA17,PA17,Electrical Injury 3rd Party,True,1066.000000,Electrical Injury   ,,27,124,47,3,1,4,72,56,128,0.000000,0.001704,True,0,2
+PA170,PA170,Declared ICD (Implantable Cardioverter Defibrillator) Shock,True,1212.000000,Implantable Cardioverter Defibrillator Shock,,18,48,20,13,3,16,54,14,68,0.000033,0.000584,True,2,12
+PA171,PA171,Stroke-like Symptoms,True,1217.000000,Stroke Like Symptoms,,21,48,21,4,5,9,48,20,68,0.000091,0.000339,False,5,4
+PA18,PA18,Fighting for Breath 1st Party ,True,,,,22,186,44,3,0,3,64,0,64,0.000000,0.000405,False,0,3
+PA19,PA19,Recent Fits 3rd Party,True,1088.000000,Fits Within the Last 12 Hours   ,,51,279,103,3,2,5,88,84,172,0.000012,0.001321,True,1,2
+PA21,PA21,Chest and Upper Back Pain,True,1039.000000,Chest and Upper Back Pain ,,134,750,301,21,11,32,214,240,454,0.002867,0.001131,True,10,20
+PA212,PA212,Chest and Upper Back Pain,True,1039.000000,Chest and Upper Back Pain ,back | chest,61,579,243,3,2,5,90,50,140,0.000000,0.001002,True,1,2
+PA213,PA213,Chest and Upper Back Pain,True,1039.000000,Chest and Upper Back Pain ,back | chest,78,501,192,2,5,7,100,110,210,0.000277,0.000847,True,4,1
+PA214,PA214,Chest and Upper Back pain,True,1039.000000,Chest and Upper Back Pain ,back | chest,52,563,215,2,1,3,42,30,72,0.000000,0.002061,True,0,1
+PA215,PA215,Declared Blood Sugar Problem,True,1187.000000,"Diabetes, Blood Sugar Problem",,103,488,201,11,6,17,178,132,310,0.000274,0.001379,True,5,10
+PA216,PA216,Hypoglycaemia Management,True,1187.000000,"Diabetes, Blood Sugar Problem",,39,168,58,2,3,5,56,38,94,0.000000,0.001593,True,2,1
+PA217,PA217,Drowning Incident Within 24 hours,True,1231.000000,Drowning Incident,,45,260,122,13,7,20,144,150,294,0.000255,0.000626,True,6,12
+PA218,PA218,"Choking on liquids now, infants",True,1195.000000,Non-trauma Emergency,,12,43,18,5,4,9,26,22,48,0.000256,0.000440,True,3,4
+PA219,PA219,Chest or Upper Back Pain Under 35 Years ,True,1039.000000,Chest and Upper Back Pain ,,96,440,180,2,6,8,88,108,196,0.000000,0.000698,True,5,1
+PA21PAN,PA21PAN,Chest and Upper Back Pain Pandemic Flu,True,1039.000000,Chest and Upper Back Pain ,,68,551,182,9,2,11,288,140,428,0.000012,0.002714,True,1,8
+PA22,PA22,Environmental Threat 1st Party ,True,,,,7,181,41,8,0,8,48,0,48,0.000000,0.000343,False,0,8
+PA23,PA23,Recent Fits 1st Party,True,1088.000000,Fits Within the Last 12 Hours   ,,42,163,68,3,1,4,80,68,148,0.000000,0.001710,True,0,2
+PA24,PA24,Labour and Childbirth 1st Party ,True,1118.000000,Labour and Childbirth   ,,64,791,256,26,1,27,500,128,628,0.000000,0.014683,True,0,25
+PA25,PA25,"Major Bleeding, 1st & 3rd Party",True,,,,23,318,73,36,0,36,888,0,888,0.000000,0.001985,False,0,36
+PA26,PA26,Major Trauma 1st Party ,True,1190.000000,Major Trauma,,14,374,81,4,1,5,222,6,228,0.000000,0.004830,True,0,3
+PA27,PA27,Multiple Self-Harm 1st Party,True,,,,4,131,26,4,0,4,16,0,16,0.000000,0.000268,False,0,4
+PA29,PA29,Probable Stroke or TIA 1st Party ,True,1141.000000,Probable Stroke   ,,44,190,75,3,1,4,74,66,140,0.000000,0.001668,True,0,2
+PA36,PA36,Recent Fits 3rd Party,True,1088.000000,Fits Within the Last 12 Hours   ,,44,255,93,3,2,5,80,76,156,0.000012,0.001294,True,1,2
+PA4,PA4,Major Trauma 3rd Party ,True,1190.000000,Major Trauma,,14,388,83,4,1,5,310,6,316,0.000000,0.004823,True,0,3
+PA40,PA40,Electrical Injury 3rd Party,True,1066.000000,Electrical Injury   ,,30,133,50,3,1,4,70,54,124,0.000000,0.001736,True,0,2
+PA41,PA41,Fighting for Breath 3rd Party,True,,,,10,89,19,4,0,4,80,0,80,0.000000,0.000467,False,0,4
+PA42,PA42,Recent Fits 3rd Party,True,1088.000000,Fits Within the Last 12 Hours   ,,42,228,86,3,3,6,66,66,132,0.000024,0.000992,True,2,2
+PA44,PA44,Major Trauma 3rd Party ,True,1190.000000,Major Trauma,,14,385,83,4,1,5,262,6,268,0.000000,0.004816,True,0,3
+PA45,PA45,Stopped Breathing 3rd Party ,True,,,,42,668,171,12,0,12,296,0,296,0.000000,0.001321,False,0,12
+PA48,PA48,Major Trauma 3rd Party ,True,1190.000000,Major Trauma,,9,334,71,5,0,5,488,0,488,0.000000,0.001487,False,0,5
+PA5,PA5,Electrical Injury 1st Party,True,1066.000000,Electrical Injury   ,,27,117,45,3,1,4,68,52,120,0.000000,0.001778,True,0,2
+PA51,PA51,Recent Fits 3rd Party,True,1088.000000,Fits Within the Last 12 Hours   ,,36,339,108,3,2,5,64,60,124,0.000019,0.001323,True,1,2
+PA53,PA53,Stopped Breathing 3rd Party ,True,,,,22,329,81,8,0,8,216,0,216,0.000000,0.001001,False,0,8
+PA55,PA55,Fighting for Breath 3rd Party,True,,,,10,98,23,3,0,3,68,0,68,0.000000,0.000534,False,0,3
+PA57,PA57,Recent Fits 3rd Party,True,1088.000000,Fits Within the Last 12 Hours   ,,33,276,89,3,2,5,64,60,124,0.000019,0.001281,True,1,2
+PA6,PA6,Fighting for Breath 3rd Party,True,,,,19,175,40,2,0,2,56,0,56,0.000000,0.000358,False,0,2
+PA64,PA64,Recent Fits 1st Party,True,1088.000000,Fits Within the Last 12 Hours   ,,35,145,59,3,1,4,72,60,132,0.000000,0.001711,True,0,2
+PA65,PA65,Electrical Injury 1st Party,True,1066.000000,Electrical Injury   ,,30,126,48,3,1,4,66,50,116,0.000000,0.001793,True,0,2
+PA7,PA7,Fit or Seizure,True,,,,13,137,30,18,0,18,140,0,140,0.000000,0.000767,False,0,18
+PA70,PA70,Major Trauma 1st Party ,True,1190.000000,Major Trauma,,14,371,81,4,1,5,206,6,212,0.000000,0.004800,True,0,3
+PA71,PA71,Fighting for Breath 1st Party ,True,,,,7,77,16,3,0,3,64,0,64,0.000000,0.000423,False,0,3
+PA72,PA72,Recent Fits 1st Party,True,1088.000000,Fits Within the Last 12 Hours   ,,33,127,55,3,2,5,60,52,112,0.000007,0.001207,True,1,2
+PA73,PA73,Recent Fits 1st Party,True,1088.000000,Fits Within the Last 12 Hours   ,,28,112,48,3,2,5,52,44,96,0.000007,0.001144,True,1,2
+PA78,PA78,Recent Fits 3rd Party,True,1088.000000,Fits Within the Last 12 Hours   ,,37,207,78,3,3,6,58,58,116,0.000024,0.000939,True,2,2
+PA79,PA79,"Trapped with End of Call Safety, 3rd Party",True,,,,8,180,40,8,0,8,48,0,48,0.000000,0.000326,False,0,8
+PA80,PA80,"Trapped with End of Call Safety, 1st Party",True,,,,6,150,34,4,0,4,32,0,32,0.000000,0.000305,False,0,4
+PA85,PA85,Electrical Injury 3rd Party,True,1066.000000,Electrical Injury   ,,17,84,32,5,1,6,60,44,104,0.000000,0.001813,True,0,4
+PA87,PA87,Cardiac Medication Closure,True,,,,18,268,63,36,1,37,304,24,328,0.000000,0.015864,True,0,35
+PA89,PA89,Choking,True,,,,24,365,88,9,2,11,112,72,184,0.000046,0.000440,False,2,9
+PA9,PA9,Probable Stroke or TIA 3rd Party,True,1141.000000,Probable Stroke   ,,57,265,93,3,1,4,74,66,140,0.000000,0.001663,True,0,2
+PA90,PA90,Choking,True,,,,25,408,96,15,2,17,208,72,280,0.000059,0.000672,False,2,15
+PA92,PA92,Choking,True,,,,20,305,71,7,1,8,104,64,168,0.000002,0.000426,False,1,7
+PA93,PA93,Recovery From Successful Cardio-Pulmonary Resuscitation,True,,,,1,15,4,9,1,10,24,8,32,0.000000,0.001884,True,0,8
+PA94,PA94,Allergic Reaction,True,1010.000000,Allergic Reaction,,61,584,173,26,5,31,530,116,646,0.001490,0.007488,True,4,25
+PA99,PA99,Predetermined management Plan,True,1140.000000,Predetermined Management Plan,,47,169,69,27,6,33,180,40,220,0.000393,0.001212,True,5,26
+PEE1,PEE1,Early Exit,True,,,,80,481,169,1,7,8,78,264,342,0.000000,0.000309,True,6,0
+PEE3,PEE3,Early Exit,True,,,,72,432,150,1,8,9,58,210,268,0.000000,0.000303,True,7,0
+PEE4,PEE4,Early Exit,True,,,,11,72,21,0,4,4,0,24,24,0.000000,0.000232,False,4,0
+PEE5,PEE5,Early Exit (PaCCS),False,,,,3,9,3,0,1,1,0,4,4,0.000000,0.000232,False,1,0
+PFA1,PFA1,Calling About Self,True,1218.000000,Entry pathway,,12,26,12,0,4,4,0,40,40,0.000000,0.000232,False,4,0
+PFA3,PFA3,Calling About Someone Else,True,1218.000000,Entry pathway,,21,43,22,3,3,6,16,48,64,0.000038,0.000271,False,3,3
+PFC1,PFC1,Calling About Self,True,1218.000000,Entry pathway,,12,26,12,0,4,4,0,40,40,0.000000,0.000232,False,4,0
+PFC3,PFC3,Calling About Someone Else,True,1218.000000,Entry pathway,,21,43,22,3,3,6,10,48,58,0.000038,0.000255,False,3,3
+PFI,PFI,Calling About Someone Else,True,1218.000000,Entry pathway,,31,83,36,3,8,11,16,88,104,0.000061,0.000271,False,8,3
+PFT,PFT,Calling About Someone Else,True,1218.000000,Entry pathway,,19,39,20,3,3,6,10,44,54,0.000031,0.000255,False,3,3
+PHCP,PHCP,Calling About Someone Else,True,1218.000000,Entry pathway,,11,68,17,0,10,10,0,108,108,0.000000,0.000232,False,10,0
+PMA1,PMA1,Calling About Self,True,1218.000000,Entry pathway,,13,28,14,0,3,3,0,32,32,0.000000,0.000232,False,3,0
+PMA3,PMA3,Calling About Someone Else,True,1218.000000,Entry pathway,,19,39,20,3,3,6,24,44,68,0.000036,0.000284,False,3,3
+PMC1,PMC1,Calling About Self,True,1218.000000,Entry pathway,,13,28,14,0,3,3,0,32,32,0.000000,0.000232,False,3,0
+PMC3,PMC3,Calling About Someone Else,True,1218.000000,Entry pathway,,19,39,20,3,3,6,18,44,62,0.000036,0.000268,False,3,3
+PMI,PMI,Calling About Someone Else,True,1218.000000,Entry pathway,,31,83,36,3,8,11,24,88,112,0.000061,0.000284,False,8,3
+PMT,PMT,Calling About Someone Else,True,1218.000000,Entry pathway,,19,39,20,3,3,6,18,44,62,0.000031,0.000268,False,3,3
+PN1619,PN1619,"Skin, Rash",True,1152.000000,"Skin, Rash",,12,48,15,4,0,4,16,0,16,0.000000,0.000855,False,0,4
+PN1620,PN1620,"Skin, Rash",True,1152.000000,"Skin, Rash",not area specific | skin and hair,12,46,15,3,0,3,28,0,28,0.000000,0.000860,False,0,3
+PN1621,PN1621,Accidental Dental Analgesia Overdose,True,,,,21,49,28,7,1,8,38,2,40,0.000037,0.003443,False,1,7
+PN5004,PN5004,Toxic Ingestion/Inhalation,True,1170.000000,Toxic Ingestion/Inhalation/Overdose,,12,53,26,33,1,34,112,2,114,0.000129,0.000884,False,1,33
+PN5121,PN5121,Self-Harm,True,1228.000000,Self-Harm,,12,30,14,1,1,2,2,2,4,0.000000,0.000284,False,1,1
+PN5125,PN5125,Toxic Ingestion/Inhalation,True,1170.000000,Toxic Ingestion/Inhalation/Overdose,,8,20,9,0,1,1,0,2,2,0.000000,0.000232,False,1,0
+PN5126,PN5126,Child Safeguard/Protection or Vulnerable Adult Concern,True,1042.000000,Child Safeguard/Protection or Vulnerable Adult Concern,,17,80,41,31,1,32,136,14,150,0.000000,0.010832,True,0,30
+PN5127,PN5127,Generic Clinician Closure,True,,,,5,18,8,23,0,23,72,0,72,0.000000,0.001185,False,0,23
+PN5128,PN5128,Assessment of Required Level of Response,True,1206.000000,NHS Pathways In House Clinician,,18,81,40,39,1,40,386,14,400,0.000000,0.015298,True,0,38
+PN5129,PN5129,Gastrointestinal Clinician Closure ,True,,,abdomen,7,25,10,27,0,27,88,0,88,0.000000,0.000520,False,0,27
+PN5130,PN5130,Failed Contraception Clinician Assessment,True,1204.000000,Failed Contraception,,11,47,19,4,0,4,12,0,12,0.000000,0.000283,False,0,4
+PN5131,PN5131,Chemical Eye Splash,True,1211.000000,"Eye splash injury, chemical",,8,39,21,3,1,4,12,2,14,0.000004,0.000693,False,1,3
+PN5132,PN5132,Assessment of Required Level of Response,True,1206.000000,NHS Pathways In House Clinician,,16,74,37,6,1,7,58,14,72,0.000000,0.005289,True,0,5
+PN5133,PN5133,"Failed Contraception and Retained Condom or Cap, Clinician Assessment ",True,1204.000000,Failed Contraception,,9,34,16,3,0,3,10,0,10,0.000000,0.000289,False,0,3
+PN5134,PN5134,"Burn, Chemical",True,1037.000000,"Burn, Chemical",,10,45,23,2,1,3,8,2,10,0.000006,0.000525,False,1,2
+PN5135,PN5135,Covid Clinician Closure Pathway,True,,,,9,36,21,2,3,5,36,18,54,0.000000,0.000400,True,2,1
+PP100,PP100,"Entry pathway, adult (Ambulance setting)",True,,,,12,118,37,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PP101,PP101,"Entry pathway, adult (OOH & SPA setting)",True,,,,15,125,36,1,14,15,8,84,92,0.000000,0.000252,True,13,0
+PP102,PP102,"Entry pathway, child (Ambulance setting)",True,,,,9,97,29,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PP103,PP103,"Entry pathway, child (OOH & SPA setting)",True,,,,12,104,28,1,14,15,8,84,92,0.000000,0.000252,True,13,0
+PP104,PP104,"Entry pathway, toddler (Ambulance setting)",True,,,,9,97,29,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PP105,PP105,"Entry pathway, toddler (OOH & SPA setting)",True,,,,12,103,28,1,13,14,8,80,88,0.000000,0.000253,True,12,0
+PP106,PP106,"Entry pathway, infant (Ambulance setting)",True,,,,9,95,29,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PP107,PP107,"Entry, infant (OOH & SPA setting)",True,,,,12,107,28,1,13,14,8,92,100,0.000000,0.000250,True,12,0
+PP200,PP200,"Pandemic flu, adult ",True,,,,8,66,16,2,3,5,26,44,70,0.000004,0.000394,True,2,1
+PP201,PP201,"Pandemic flu, child",True,,,,5,33,8,2,3,5,20,32,52,0.000004,0.000388,True,2,1
+PP202,PP202,"Pandemic flu, toddler",True,,,,6,37,9,2,3,5,24,40,64,0.000004,0.000417,True,2,1
+PP203,PP203,"Pandemic flu, infant",True,,,,6,36,9,2,3,5,22,36,58,0.000004,0.000410,True,2,1
+PP500,PP500,"Generic triage pathway, adult ",True,,,,26,198,57,3,7,10,98,192,290,0.000019,0.000709,True,6,2
+PP501,PP501,"Generic triage pathway, child",True,,,,22,148,44,3,7,10,74,144,218,0.000019,0.000692,True,6,2
+PP502,PP502,"Generic triage, toddler",True,,,,18,101,31,3,7,10,54,104,158,0.000019,0.000669,True,6,2
+PP503,PP503,"Generic triage pathway, infant",True,,,,17,98,30,3,7,10,52,104,156,0.000019,0.000650,True,6,2
+PPT1,PPT1,Disposition 999 Ambulance,True,,,,0,6,2,12,0,12,290,0,290,0.000000,0.001672,False,0,12
+PPT10,PPT10,Disposition Medication Enquiry,True,,,,0,4,2,4,0,4,32,0,32,0.000000,0.000312,False,0,4
+PPT11,PPT11,Disposition Speak to a Clinician from our service Immediately,True,,,,0,4,2,4,0,4,32,0,32,0.000000,0.000376,False,0,4
+PPT12,PPT12,Disposition Service Location,True,,,,0,2,2,4,0,4,44,0,44,0.000000,0.000340,False,0,4
+PPT13,PPT13,Disposition Refer to Health Information,True,,,,1,10,4,4,0,4,16,0,16,0.000000,0.000272,False,0,4
+PPT14,PPT14,Disposition Refer to Flu Line,True,,,,0,8,2,4,0,4,32,0,32,0.000000,0.000523,False,0,4
+PPT15,PPT15,Disposition Speak to the GP Practice within 20 minutes,True,,,,0,3,2,4,0,4,16,0,16,0.000000,0.000304,False,0,4
+PPT16,PPT16,Disposition Speak to the GP Practice within 1 hour,True,,,,0,7,2,4,0,4,16,0,16,0.000000,0.000304,False,0,4
+PPT17,PPT17,Disposition Emergency Department Immediately,True,,,,0,6,2,4,0,4,20,0,20,0.000000,0.000325,False,0,4
+PPT2,PPT2,Disposition Community Healthcare Professional,True,,,,0,2,2,4,0,4,16,0,16,0.000000,0.000272,False,0,4
+PPT3,PPT3,Disposition Refer to Another Out of Hours Service Provider,True,,,,0,2,2,4,0,4,16,0,16,0.000000,0.000272,False,0,4
+PPT4,PPT4,Disposition Callback by Healthcare Professional within 20 minutes,True,,,,0,2,2,4,0,4,16,0,16,0.000000,0.000272,False,0,4
+PPT5,PPT5,Disposition Callback by Healthcare Professional within 60 minutes,True,,,,0,2,2,4,0,4,16,0,16,0.000000,0.000272,False,0,4
+PPT6,PPT6,Disposition Report of Results or Test,True,,,,0,5,2,4,0,4,16,0,16,0.000000,0.000272,False,0,4
+PPT7,PPT7,Disposition Failed Contraception,True,,,,0,4,2,2,0,2,8,0,8,0.000000,0.000252,False,0,2
+PPT8,PPT8,Disposition Contact Own GP Practice Next Working Day,True,,,,0,2,2,4,0,4,48,0,48,0.000000,0.000353,False,0,4
+PPT9,PPT9,Disposition Repeat Prescription Required,True,,,,0,5,2,4,0,4,32,0,32,0.000000,0.000312,False,0,4
+PT1,PT1,Emergency Ambulance Closure,True,,,,2,40,21,137,1,138,526,12,538,0.000000,0.036913,True,0,136
+PT11,PT11,"Emergency Ambulance Closure, Trauma",True,,,,1,26,11,2,1,3,14,12,26,0.000000,0.001841,True,0,1
+PT17,PT17,Ambulance due to Clinical Reasons,True,,,,4,10,6,1,1,2,18,18,36,0.000000,0.001543,True,0,0
+PT18,PT18,Ambulance due to Transportation Reasons,True,,,,4,10,6,1,1,2,18,18,36,0.000000,0.001543,True,0,0
+PT19,PT19,Emergency Ambulance due to Clinical Reasons,True,,,,3,6,4,1,1,2,12,12,24,0.000000,0.001543,True,0,0
+PT2,PT2,Emergency Ambulance Closure,True,,,,4,19,12,211,1,212,2036,12,2048,0.000000,0.116906,True,0,210
+PT201,PT201,"Emergency  Ambulance Closure, Wound, Foreign Body",True,,,,3,23,12,35,1,36,238,12,250,0.000000,0.019836,True,0,34
+PT202,PT202,"Emergency Ambulance Closure, Wound Bleeding, Foreign Body, Head",True,,,,3,19,12,7,1,8,64,12,76,0.000000,0.005596,True,0,6
+PT203,PT203,"Emergency Ambulance Closure, Wound Bleeding, Head",True,,,,3,19,12,7,1,8,54,12,66,0.000000,0.005166,True,0,6
+PT204,PT204,"Emergency  Ambulance Closure, Wound Bleeding, Limb, With or Without Foreign Body",True,,,,4,43,16,11,1,12,72,12,84,0.000000,0.008414,True,0,10
+PT205,PT205,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso",True,,,,3,19,12,25,1,26,290,12,302,0.000000,0.017728,True,0,24
+PT207,PT207,"Emergency Ambulance Closure, Toxic Ingestion",True,,,,4,16,12,55,1,56,184,12,196,0.000000,0.036557,True,0,54
+PT209,PT209,"Emergency Ambulance Closure, Swelling, General",True,,,,3,14,10,31,1,32,186,12,198,0.000000,0.013473,True,0,30
+PT213,PT213,"Ambulance Closure, Stroke",True,,,,23,201,53,37,1,38,294,44,338,0.000000,0.014475,True,0,36
+PT217,PT217,"Emergency Ambulance Closure, Vaginal Bleeding in Pregnancy",True,,,,3,18,10,2,1,3,30,12,42,0.000000,0.003685,True,0,1
+PT218,PT218,"Emergency Ambulance Closure, Toxic Ingestion and Inhalation",True,,,,4,47,21,3,1,4,38,12,50,0.000000,0.002514,True,0,2
+PT22,PT22,"Emergency  Ambulance Closure, Trauma",True,,,,3,13,10,49,1,50,310,12,322,0.000000,0.043971,True,0,48
+PT220,PT220,"Emergency  Ambulance Closure, Breathlessness and Swelling",True,,,,4,42,23,6,1,7,58,36,94,0.000000,0.002756,True,0,5
+PT224,PT224,"Non-emergency Ambulance Closure, Vaginal Bleeding in Pregnancy",True,,,,4,17,7,1,2,3,12,16,28,0.000000,0.000641,True,1,0
+PT225,PT225,Dental Analgesia Assessment,True,,,,10,23,11,6,2,8,174,8,182,0.000012,0.001110,True,1,5
+PT226,PT226,Dental Analgesia Assessment,True,,,,7,17,7,6,2,8,110,8,118,0.000012,0.000990,True,1,5
+PT227,PT227,Dental Analgesia Assessment,True,,,,9,21,10,7,2,9,126,8,134,0.000012,0.001403,True,1,6
+PT228,PT228,Dental Analgesia Assessment,True,,,,8,19,8,5,2,7,82,8,90,0.000009,0.000739,True,1,4
+PT229,PT229,"Emergency Ambulance Closure, Override",True,,,,3,6,4,1,1,2,12,12,24,0.000000,0.001543,True,0,0
+PT23,PT23,"Emergency Ambulance Closure, Trauma, Spinal Injury",True,,,,3,16,10,10,1,11,30,12,42,0.000000,0.002958,True,0,9
+PT230,PT230,"Assistance needed at home due to inability to get off the floor, Emergency Closure, Non Trauma",True,,,,3,6,4,2,1,3,16,12,28,0.000000,0.002445,True,0,1
+PT231,PT231,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso, Spinal Injury",True,,,,3,22,12,8,1,9,40,12,52,0.000000,0.002567,True,0,7
+PT3,PT3,"Assistance needed at home due to inability to get off the floor, Closure",True,,,,4,9,5,1,2,3,12,16,28,0.000000,0.000641,True,1,0
+PT302,PT302,"Non-emergency Ambulance Closure, Wound Bleeding, Limb",True,,,,4,26,9,3,2,5,16,16,32,0.000000,0.000796,True,1,2
+PT305,PT305,Transport to Emergency Centre within 1 hour,True,,,,4,12,6,29,3,32,140,20,160,0.000326,0.005652,True,2,28
+PT31,PT31,"Non-emergency Ambulance Closure, Trauma",True,,,,4,12,7,18,2,20,60,16,76,0.000067,0.002796,True,1,17
+PT312,PT312,"Emergency Ambulance Closure, Breathlessness",True,,,,5,38,19,39,1,40,408,36,444,0.000000,0.027787,True,0,38
+PT315,PT315,"Emergency Ambulance Closure, Breathlessness",True,,,,3,71,28,15,1,16,152,36,188,0.000000,0.004602,True,0,14
+PT318,PT318,"Non-emergency Ambulance Closure, Breathlessness",True,,,,5,23,10,1,2,3,12,16,28,0.000000,0.000641,True,1,0
+PT321,PT321,"Non-emergency Ambulance Closure, Override",True,,,,4,10,6,1,1,2,12,12,24,0.000000,0.001543,True,0,0
+PT322,PT322,"Emergency Ambulance Closure, Breathlessness and/or Swelling",True,,,,4,24,14,7,1,8,24,12,36,0.000000,0.002166,True,0,6
+PT33,PT33,"Assistance needed at home due to inability to get off the floor, trauma",True,,,,5,15,8,15,1,16,84,12,96,0.000000,0.009367,True,0,14
+PT333,PT333,"Emergency Ambulance Closure, Breathlessness and/or Swelling",True,,,,4,24,14,7,1,8,24,12,36,0.000000,0.002118,True,0,6
+PT335,PT335,Trauma care advice,True,,,,7,176,38,12,0,12,48,0,48,0.000000,0.000335,False,0,12
+PT4,PT4,"Emergency  Ambulance Closure, Override",True,,,,3,6,4,3,1,4,20,12,32,0.000000,0.014377,True,0,2
+PT40,PT40,"Emergency Ambulance Closure, Non Trauma",True,,,,3,6,4,1,1,2,12,12,24,0.000000,0.001543,True,0,0
+PT404,PT404,"Emergency Ambulance Closure, Wound Bleeding, Limb, No Foreign Body",True,,,,3,27,12,10,1,11,72,12,84,0.000000,0.008503,True,0,9
+PT405,PT405,"Emergency Ambulance Closure, Wound Bleeding, Neck, Torso",True,,,,3,15,8,1,1,2,12,12,24,0.000000,0.001543,True,0,0
+PT41,PT41,"Emergency  Ambulance Closure, Trauma",True,,,,3,13,10,3,1,4,20,12,32,0.000000,0.011825,True,0,2
+PT417,PT417,"Emergency Ambulance Closure, Vaginal Bleeding in Pregnancy",True,,,,3,14,6,1,1,2,12,12,24,0.000000,0.001543,True,0,0
+PT418,PT418,Diabetic Hypoglycaemic Closure,True,,,,13,126,27,6,0,6,24,0,24,0.000000,0.000598,False,0,6
+PT5,PT5,Medication,True,,,,2,9,5,104,0,104,784,0,784,0.000000,0.006958,False,0,104
+PT500,PT500,Reception Point Foreign Body Closure,True,1207.000000,Reception Point,abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | rectum/anus | shoulder | skin and hair | throat | urinary,17,64,26,7,0,7,80,0,80,0.000000,0.001851,False,0,7
+PT501,PT501,Reception Point Professional Referral Closure,True,1207.000000,Reception Point,,15,50,21,1,1,2,8,8,16,0.000000,0.000281,False,1,1
+PT503,PT503,"Emergency Ambulance Closure, Non-Trauma, Breathlessness",True,,,,4,24,13,2,1,3,16,12,28,0.000000,0.002445,True,0,1
+PT504,PT504,"Unconsciousness, Closure",True,,,,30,444,89,17,2,19,224,8,232,0.000244,0.000655,False,2,17
+PT505,PT505,Viral Haemorrhagic Fever Closure,True,,,,12,31,17,59,1,60,1654,14,1668,0.000000,0.050575,True,0,58
+PT506,PT506,Emergency Tracheostomy or Laryngectomy,True,,,,17,249,61,13,3,16,52,24,76,0.000125,0.000439,False,3,13
+PT507,PT507,Bleeding from Stoma,True,,,,30,148,66,5,3,8,40,20,60,0.000017,0.000314,False,3,5
+PT508,PT508,Emergency Ambulance (Override) Closure,True,,,,3,6,4,1,1,2,12,12,24,0.000000,0.001543,True,0,0
+PT509,PT509,Non-Emergency Ambulance (Override) Closure,True,,,,4,10,6,1,1,2,12,12,24,0.000000,0.001543,True,0,0
+PT510,PT510,Emergency CPR Pathway,True,,,,2,44,10,2,16,18,24,128,152,0.000225,0.000257,False,16,2
+PT511,PT511,"Black, Tarry or Red, Maroon Stools ",True,1143.000000,Rectal Bleeding,,16,34,16,28,3,31,592,12,604,0.000091,0.001903,False,3,28
+PT512,PT512,Health Alert,False,,,,28,116,56,0,1,1,0,2,2,0.000000,0.000232,False,1,0
+PT513,PT513,Health Alert,False,,,,30,135,68,1,5,6,2,22,24,0.000000,0.000251,True,4,0
+PT514,PT514,Health Alert Chest and Upper Back Pain,False,,,,40,497,183,1,1,2,30,30,60,0.000000,0.001543,True,0,0
+PT515,PT515,Health Alert Palpitations,False,1137.000000,Palpitations,,22,82,32,1,5,6,14,30,44,0.000000,0.000384,True,4,0
+PT516,PT516,Health Alert Chest and Upper Back pain,False,,,,45,497,185,1,1,2,30,30,60,0.000000,0.001543,True,0,0
+PT517,PT517,Dental Analgesia Assessment,True,,,,6,18,8,2,2,4,26,8,34,0.000001,0.000357,True,1,1
+PT518,PT518,Dental Analgesia Assessment,True,,,,6,18,8,2,2,4,22,8,30,0.000001,0.000347,True,1,1
+PT6,PT6,Non-emergency Ambulance Closure,True,,,,4,9,5,20,2,22,102,16,118,0.000213,0.004629,True,1,19
+PT7,PT7,Repeat Prescription,True,1192.000000,Repeat Prescription,,6,51,27,2,0,2,16,0,16,0.000000,0.000327,False,0,2
+PT8,PT8,Mental Health Safety Closure,True,,,,42,169,63,20,2,22,642,16,658,0.000036,0.009734,True,1,19
+PT9,PT9,Mental Health Medication ,True,,,,5,9,5,4,1,5,20,16,36,0.000000,0.000272,False,1,4
+PTP1,PTP1,"Emergency Ambulance Closure, Pregnant",True,,,,1,36,20,10,1,11,112,12,124,0.000000,0.003476,True,0,9
+PTP101,PTP101,"Emergency  Ambulance Closure, Pregnant, Foreign Body, Wound",True,,,,2,36,11,1,1,2,12,12,24,0.000000,0.001543,True,0,0
+PTP11,PTP11,"Emergency Ambulance Closure, Pregnant, Trauma",True,,,,1,39,22,5,1,6,74,12,86,0.000000,0.001842,True,0,4
+PTP111,PTP111,"Emergency Ambulance Closure, Pregnant, Foreign Body, Wound",True,,,,2,53,26,5,1,6,74,12,86,0.000000,0.001752,True,0,4
+PTP2,PTP2,"Emergency Ambulance Closure, Pregnant",True,,,,3,14,10,8,1,9,28,12,40,0.000000,0.002321,True,0,7
+PW1000,PW1000,Heat Exposure,True,1114.000000,Heat Exposure,not area specific,17,58,25,3,1,4,28,20,48,0.000000,0.001830,True,0,2
+PW1010,PW1010,"Genital Injury, Penetrating",True,1099.000000,"Genital Injury, Penetrating",genital,33,147,61,4,4,8,16,20,36,0.000604,0.000289,False,4,4
+PW1012,PW1012,"Genital Injury, Penetrating",True,1099.000000,"Genital Injury, Penetrating",genital,25,117,50,2,3,5,8,12,20,0.000007,0.000281,False,3,2
+PW1014,PW1014,"Genital Injury, Penetrating, Pregnant, Over 20 weeks",True,1100.000000,"Genital Injury, Penetrating, Pregnant, Over 20 weeks",,28,158,59,2,6,8,64,114,178,0.000154,0.000567,True,5,1
+PW1028,PW1028,Palpitations,True,1137.000000,Palpitations,chest,16,45,19,2,6,8,8,46,54,0.000310,0.000267,True,5,1
+PW1029,PW1029,Palpitations,True,1137.000000,Palpitations,chest,4,12,4,0,2,2,0,32,32,0.000000,0.000232,False,2,0
+PW1030,PW1030,Palpitations,True,1137.000000,Palpitations,chest,51,286,118,4,8,12,116,68,184,0.000552,0.000804,True,7,3
+PW1031,PW1031,Palpitations,True,1137.000000,Palpitations,chest,38,175,69,2,7,9,52,50,102,0.000006,0.000724,True,6,1
+PW1032,PW1032,"Palpitations, Pregnant",True,1138.000000,"Palpitations, Pregnant",,46,295,117,4,7,11,52,60,112,0.000014,0.000546,True,6,3
+PW1034,PW1034,"Object, Ingested or Inhaled",True,1092.000000,"Foreign Body, Ingested or Inhaled",mouth | neck | not area specific | throat,26,88,37,2,2,4,6,6,12,0.000000,0.000384,True,1,1
+PW1040,PW1040,Cold or Flu Symptoms,True,1043.000000,Cold or Flu,not area specific,77,564,242,1,6,7,8,52,60,0.000002,0.000245,False,6,1
+PW1041,PW1041,Cold or Flu Symptoms,True,1043.000000,Cold or Flu,not area specific,81,558,243,1,6,7,28,52,80,0.000002,0.000279,False,6,1
+PW1042,PW1042,Cold or Flu Symptoms,True,1043.000000,Cold or Flu,not area specific,70,502,213,1,5,6,8,32,40,0.000001,0.000245,False,5,1
+PW1043,PW1043,Cold or Flu Symptoms,True,1043.000000,Cold or Flu,not area specific,74,504,219,1,5,6,20,32,52,0.000001,0.000265,False,5,1
+PW1044,PW1044,"Cold or Flu Symptoms, Pregnant",True,1044.000000,"Cold or Flu, Pregnant",,31,205,92,2,2,4,24,10,34,0.000000,0.000334,False,2,2
+PW1046,PW1046,Sinusitis (Declared),True,1148.000000,Sinusitis ,face | head | nose,41,323,146,0,4,4,0,12,12,0.000000,0.000232,False,4,0
+PW1048,PW1048,Sinusitis (Declared),True,1148.000000,Sinusitis ,face | head | nose,41,319,142,0,4,4,0,12,12,0.000000,0.000232,False,4,0
+PW1050,PW1050,Sinusitis (Declared),True,1148.000000,Sinusitis ,face | head | nose,32,257,118,0,4,4,0,12,12,0.000000,0.000232,False,4,0
+PW1053,PW1053,"Tattoos, Birthmarks or Moles",True,1160.000000,"Tattoos, Birthmarks or Moles",,16,93,39,4,1,5,16,2,18,0.000004,0.000294,False,1,4
+PW1057,PW1057,"Skin, Lumps",True,1149.000000,Skin Lumps,,19,181,83,5,2,7,28,12,40,0.000041,0.000340,False,2,5
+PW1066,PW1066,Wound Problems,True,1181.000000,Wound Problems,,40,222,85,11,3,14,70,22,92,0.000042,0.001369,True,2,10
+PW1070,PW1070,Tiredness (Fatigue),True,1162.000000,Tiredness (Fatigue),head | not area specific,47,160,74,0,6,6,0,46,46,0.000000,0.000232,False,6,0
+PW1071,PW1071,Tiredness (Fatigue),True,1162.000000,Tiredness (Fatigue),head | not area specific,50,167,76,0,6,6,0,54,54,0.000000,0.000232,False,6,0
+PW1072,PW1072,Tiredness (Fatigue),True,1162.000000,Tiredness (Fatigue),head | not area specific,42,148,68,0,5,5,0,42,42,0.000000,0.000232,False,5,0
+PW1073,PW1073,Tiredness (Fatigue),True,1162.000000,Tiredness (Fatigue),head | not area specific,44,155,71,0,5,5,0,48,48,0.000000,0.000232,False,5,0
+PW1074,PW1074,"Tiredness (Fatigue), Pregnant",True,1163.000000,"Tiredness (Fatigue), Pregnant",,41,278,124,2,3,5,8,64,72,0.000001,0.000263,False,3,2
+PW1076,PW1076,Breast Pain,True,1030.000000,Breast Pain,,35,152,64,2,10,12,10,48,58,0.000023,0.000333,True,9,1
+PW1077,PW1077,Breast Pain,True,1030.000000,Breast Pain,,25,102,43,1,9,10,4,36,40,0.000059,0.000297,False,9,1
+PW1078,PW1078,Breast Pain,True,1030.000000,Breast Pain,,23,98,41,2,7,9,10,32,42,0.000020,0.000393,True,6,1
+PW1079,PW1079,Breast Pain,True,1030.000000,Breast Pain,chest,11,39,16,1,6,7,4,24,28,0.000056,0.000330,False,6,1
+PW1080,PW1080,"Breast Pain, Pregnant",True,1031.000000,"Breast Pain, Pregnant",,7,30,13,2,0,2,8,0,8,0.000000,0.000283,False,0,2
+PW1083,PW1083,Breast Lump,True,1028.000000,Breast Lump,,13,55,24,2,1,3,8,4,12,0.000003,0.000321,False,1,2
+PW1086,PW1086,"Breast Lump, Pregnant",True,1029.000000,"Breast Lump, Pregnant",,6,25,10,2,0,2,8,0,8,0.000000,0.000781,False,0,2
+PW1089,PW1089,Breast Discharge,True,1026.000000,Breast Discharge,,21,116,45,4,1,5,16,4,20,0.000006,0.000415,False,1,4
+PW1090,PW1090,Breast Discharge,True,1026.000000,Breast Discharge,,6,19,9,4,0,4,16,0,16,0.000000,0.000517,False,0,4
+PW1091,PW1091,"Rectal Pain, Swelling, Lump or Itch",True,1144.000000,"Rectal Pain, Swelling, Lump or Itch",rectum/anus,29,140,56,4,0,4,16,0,16,0.000000,0.000273,False,0,4
+PW1092,PW1092,"Breast Discharge, Pregnant",True,1027.000000,"Breast Discharge, Pregnant",,10,52,22,1,0,1,4,0,4,0.000000,0.000584,False,0,1
+PW1093,PW1093,"Rectal Pain, Swelling, Lump or Itch",True,1144.000000,"Rectal Pain, Swelling, Lump or Itch",rectum/anus,23,95,41,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1098,PW1098,Eye Splash Injury or Minor Foreign Body,True,1071.000000,Eye Splash Injury or Minor Foreign Body,eye,23,106,38,2,2,4,38,18,56,0.000000,0.000710,True,1,1
+PW110,PW110,HCP and Bed Bureau,True,1219.000000,"HCP, Bed Bureau, Interhospital Transfers",,48,221,88,17,7,24,264,124,388,0.001145,0.001967,True,6,16
+PW1102,PW1102,Vaginal Swellings,True,1178.000000,Vaginal Swelling,genital,28,150,66,3,2,5,12,22,34,0.000014,0.000265,False,2,3
+PW1103,PW1103,Vaginal Swellings,True,1178.000000,Vaginal Swelling,genital,26,135,59,2,2,4,8,22,30,0.000009,0.000258,False,2,2
+PW111,PW111,GP Urgent and Bed Bureau Entry,False,1219.000000,"HCP, Bed Bureau, Interhospital Transfers",,4,22,7,1,3,4,8,32,40,0.000000,0.000294,True,2,0
+PW1114,PW1114,Breastfeeding Problems,True,1033.000000,Breastfeeding Problems,breast | chest,10,37,16,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1116,PW1116,"Genital Injury, Blunt",True,1097.000000,"Genital Injury, Blunt",genital,24,78,33,4,2,6,32,10,42,0.000315,0.000347,False,2,4
+PW1118,PW1118,"Genital Injury, Blunt",True,1097.000000,"Genital Injury, Blunt",genital,15,49,23,2,1,3,16,2,18,0.000001,0.000330,False,1,2
+PW112,PW112,GP Urgent and Bed Bureau Entry,False,1219.000000,"HCP, Bed Bureau, Interhospital Transfers",,4,22,7,1,3,4,8,28,36,0.000000,0.000306,True,2,0
+PW1120,PW1120,"Genital Injury, Blunt, Pregnant",True,1098.000000,"Genital Injury, Blunt, Pregnant",,21,68,31,2,5,7,16,60,76,0.000154,0.000527,True,4,1
+PW1122,PW1122,"Eye, Visual Loss or Disturbance",True,1076.000000,"Eye, Visual Loss or Disturbance",,76,297,131,5,4,9,32,24,56,0.000032,0.000922,False,4,5
+PW1124,PW1124,"Eye, Visual Loss or Disturbance",True,1076.000000,"Eye, Visual Loss or Disturbance",,55,183,83,5,4,9,40,14,54,0.000026,0.000825,False,4,5
+PW1126,PW1126,"Eye, Painful",True,1072.000000,"Eye, Painful",,26,117,51,4,1,5,20,4,24,0.000000,0.000468,False,1,4
+PW1128,PW1128,"Eye, Painful",True,1072.000000,"Eye, Painful",,28,115,51,4,2,6,28,6,34,0.000001,0.000490,False,2,4
+PW113,PW113,GP Urgent and Bed Bureau Entry,False,1219.000000,"HCP, Bed Bureau, Interhospital Transfers",,4,22,7,1,3,4,8,28,36,0.000000,0.000306,True,2,0
+PW1134,PW1134,"Eye, Red or Irritable",True,1073.000000,"Eye, Red or Irritable",,17,60,26,4,2,6,16,8,24,0.000022,0.000309,False,2,4
+PW1137,PW1137,"Eye, Red or Irritable",True,1073.000000,"Eye, Red or Irritable",,23,77,34,4,3,7,16,10,26,0.000019,0.000309,False,3,4
+PW114,PW114,GP Urgent and Bed Bureau Entry,False,1219.000000,"HCP, Bed Bureau, Interhospital Transfers",,9,36,14,1,4,5,16,48,64,0.000000,0.000323,True,3,0
+PW1140,PW1140,Shoulder Pain,True,1147.000000,Shoulder Pain,shoulder,63,332,140,3,7,10,16,54,70,0.000006,0.000315,True,6,2
+PW1141,PW1141,Shoulder Pain,True,1147.000000,Shoulder Pain,shoulder,31,129,53,1,3,4,4,20,24,0.000001,0.000261,False,3,1
+PW1143,PW1143,Shoulder Pain,True,1147.000000,Shoulder Pain,shoulder,27,117,49,1,3,4,4,16,20,0.000000,0.000266,False,3,1
+PW1146,PW1146,"Eye, Sticky, Watery",True,1074.000000,"Eye, Sticky or Watery",,11,33,12,4,4,8,16,48,64,0.000011,0.000344,False,4,4
+PW115,PW115,GP Urgent and Bed Bureau Entry,False,1219.000000,"HCP, Bed Bureau, Interhospital Transfers",,9,35,14,1,4,5,16,44,60,0.000000,0.000335,True,3,0
+PW1153,PW1153,Eyelid Problems,True,1078.000000,Eyelid Problems,,30,107,46,4,1,5,16,8,24,0.000003,0.000344,False,1,4
+PW1158,PW1158,Constipation,True,1045.000000,Constipation,abdomen,34,175,70,2,6,8,10,24,34,0.000003,0.000266,True,5,1
+PW1159,PW1159,Constipation,True,1045.000000,Constipation,abdomen,30,163,66,2,5,7,10,20,30,0.000002,0.000270,True,4,1
+PW116,PW116,GP Urgent and Bed Bureau Cardiac Closure,False,,,,2,15,4,3,1,4,12,4,16,0.000000,0.001868,True,0,2
+PW1160,PW1160,"Constipation, Pregnant",True,1046.000000,"Constipation, Pregnant",,25,158,62,3,3,6,10,12,22,0.000000,0.000356,True,2,2
+PW1161,PW1161,Constipation,True,1045.000000,Constipation,abdomen,30,164,65,2,6,8,8,26,34,0.000003,0.000276,True,5,1
+PW1162,PW1162,Constipation,True,1045.000000,Constipation,abdomen,27,155,62,2,5,7,8,22,30,0.000002,0.000283,True,4,1
+PW1164,PW1164,Arm Pain or Swelling,True,1016.000000,"Arm, Pain or Swelling",arm,56,418,179,5,9,14,28,66,94,0.000024,0.000396,True,8,4
+PW1165,PW1165,Arm Pain or Swelling,True,1016.000000,"Arm, Pain or Swelling",arm,41,257,112,3,6,9,12,30,42,0.000011,0.000257,False,6,3
+PW1166,PW1166,Arm Pain or Swelling,True,1016.000000,"Arm, Pain or Swelling",arm,46,390,168,5,9,14,52,66,118,0.000024,0.000453,True,8,4
+PW1167,PW1167,Arm Pain or Swelling,True,1016.000000,"Arm, Pain or Swelling",arm,31,230,102,3,7,10,36,30,66,0.000012,0.000308,False,7,3
+PW1222,PW1222,"Leg Injury, Blunt",True,1119.000000,"Leg Injury, Blunt",hip & leg,25,120,49,1,2,3,12,6,18,0.000001,0.000236,False,2,1
+PW1224,PW1224,"Leg Injury, Penetrating",True,1120.000000,"Leg Injury, Penetrating",hip & leg,32,181,73,1,3,4,12,14,26,0.000001,0.000236,False,3,1
+PW1226,PW1226,Nasal Congestion,True,1130.000000,Nasal Congestion,nose,22,66,28,0,3,3,0,8,8,0.000000,0.000232,False,3,0
+PW1230,PW1230,Other Symptoms,True,1159.000000,Symptoms without specific Pathway,not area specific,42,164,70,1,10,11,8,58,66,0.000034,0.000260,False,10,1
+PW1234,PW1234,"Leg Injury, Penetrating",True,1120.000000,"Leg Injury, Penetrating",hip & leg,43,178,73,1,4,5,12,26,38,0.000001,0.000236,False,4,1
+PW1240,PW1240,"Leg Injury, Blunt",True,1119.000000,"Leg Injury, Blunt",hip & leg,2,5,2,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW1241,PW1241,"Leg Injury, Blunt",True,1119.000000,"Leg Injury, Blunt",hip & leg,2,5,2,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW1259,PW1259,"Skin, Minor Foreign Body",True,1151.000000,"Skin, Minor Foreign Body",skin and hair,20,77,33,3,1,4,20,8,28,0.000006,0.000287,False,1,3
+PW1260,PW1260,"Hand or Wrist Injury, Penetrating",True,1108.000000,"Hand or Wrist Injury, Penetrating",arm,45,288,116,3,4,7,24,40,64,0.000014,0.000478,False,4,3
+PW1264,PW1264,"Finger or Thumb Injury, Penetrating",True,1086.000000,"Finger or Thumb Injury, Penetrating",arm,31,125,48,2,2,4,16,8,24,0.000004,0.000285,False,2,2
+PW1267,PW1267,"Hand or Wrist Injury, Blunt",True,1107.000000,"Hand or Wrist Injury, Blunt",arm,32,97,44,2,4,6,16,18,34,0.000015,0.000296,False,4,2
+PW1270,PW1270,"Finger or Thumb Injury, Blunt",True,1085.000000,"Finger or Thumb Injury, Blunt",arm,28,80,38,2,3,5,16,16,32,0.000012,0.000285,False,3,2
+PW1277,PW1277,"Foreign Body, Ear",True,1091.000000,"Foreign Body, Ear",ear,15,65,27,1,0,1,12,0,12,0.000000,0.000236,False,0,1
+PW1282,PW1282,"Toe Injury, Blunt",True,1164.000000,"Toe Injury, Blunt",hip & leg,28,78,38,2,3,5,16,16,32,0.000010,0.000285,False,3,2
+PW1283,PW1283,"Toe Injury, Blunt",True,1164.000000,"Toe Injury, Blunt",hip & leg,20,85,38,2,2,4,16,12,28,0.000009,0.000285,False,2,2
+PW1284,PW1284,"Toe Injury, Penetrating",True,1165.000000,"Toe Injury, Penetrating",hip & leg,21,102,40,2,1,3,16,4,20,0.000003,0.000285,False,1,2
+PW1301,PW1301,"Skin, Glued",True,1150.000000,"Skin, Glued",skin and hair,7,16,7,1,0,1,4,0,4,0.000000,0.000233,False,0,1
+PW1319,PW1319,"Foreign Body, Nose",True,1093.000000,"Foreign Body, Nose",nose,14,48,21,1,0,1,12,0,12,0.000000,0.000236,False,0,1
+PW1320,PW1320,"Foreign Body, Penis",True,1094.000000,"Foreign Body, Penis",genital | not area specific,15,60,25,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1321,PW1321,"Foreign Body, Rectum",True,1095.000000,"Foreign Body, Rectum",rectum/anus,13,46,21,0,1,1,0,2,2,0.000000,0.000232,False,1,0
+PW1322,PW1322,"Foreign Body, Vaginal",True,1096.000000,"Foreign Body, Vaginal",genital | not area specific,14,40,18,0,1,1,0,2,2,0.000000,0.000232,False,1,0
+PW1323,PW1323,Mouth Ulcers,True,1129.000000,Mouth Ulcers,mouth,20,85,34,0,3,3,0,16,16,0.000000,0.000232,False,3,0
+PW1328,PW1328,"Skin, Minor Foreign Body",True,1151.000000,"Skin, Minor Foreign Body",skin and hair,26,140,54,1,1,2,12,8,20,0.000000,0.000236,False,1,1
+PW1332,PW1332,Eye Splash Injury or Minor Foreign Body,True,1071.000000,Eye Splash Injury or Minor Foreign Body,eye,17,57,22,2,2,4,22,10,32,0.000000,0.000484,True,1,1
+PW1345,PW1345,Other Symptoms,True,1159.000000,Symptoms without specific Pathway,not area specific,59,257,113,2,12,14,16,68,84,0.000124,0.000275,False,12,2
+PW1346,PW1346,Other Symptoms,True,1159.000000,Symptoms without specific Pathway,not area specific,54,243,109,2,12,14,16,66,82,0.000098,0.000275,False,12,2
+PW1348,PW1348,Other Symptoms,True,1159.000000,Symptoms without specific Pathway,not area specific,57,250,110,2,12,14,20,68,88,0.000098,0.000277,False,12,2
+PW1349,PW1349,Other Symptoms,True,1159.000000,Symptoms without specific Pathway,not area specific,52,235,105,2,12,14,20,68,88,0.000072,0.000277,False,12,2
+PW1354,PW1354,Vaginal Swellings,True,1178.000000,Vaginal Swelling,genital,9,41,20,1,0,1,4,0,4,0.000000,0.000247,False,0,1
+PW1359,PW1359,Eye Splash Injury or Minor Foreign Body,True,1071.000000,Eye Splash Injury or Minor Foreign Body,eye,21,72,27,2,2,4,14,10,24,0.000000,0.000478,True,1,1
+PW1367,PW1367,"Skin, Lumps",True,1149.000000,Skin Lumps,,19,183,83,1,2,3,4,12,16,0.000006,0.000247,False,2,1
+PW1381,PW1381,"Abdominal or Flank Injury, Blunt",True,1000.000000,"Abdominal or Flank Injury, Blunt",abdomen | flank | groin | urinary,17,40,17,0,1,1,0,10,10,0.000000,0.000232,False,1,0
+PW1382,PW1382,"Abdominal or Flank Injury, Blunt",True,1000.000000,"Abdominal or Flank Injury, Blunt",abdomen | flank | groin | urinary,15,36,15,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PW1383,PW1383,"Abdominal or Flank Injury, Penetrating",True,1002.000000,"Abdominal or Flank Injury, Penetrating",abdomen | flank | groin | urinary,24,102,41,0,2,2,0,24,24,0.000000,0.000232,False,2,0
+PW1384,PW1384,"Abdominal or Flank Injury, Penetrating",True,1002.000000,"Abdominal or Flank Injury, Penetrating",abdomen | flank | groin | urinary,22,94,37,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW1389,PW1389,"Burn, Sun",True,1158.000000,Sunburn,abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | neck | nose | not area specific | shoulder | skin and hair,15,51,22,2,1,3,28,20,48,0.000000,0.001561,True,0,1
+PW1391,PW1391,"Chest or Upper Back Injury, Blunt",True,1040.000000,"Chest or Upper Back Injury, Blunt",back | chest,18,45,19,0,1,1,0,10,10,0.000000,0.000232,False,1,0
+PW1393,PW1393,"Chest or Upper Back Injury, Penetrating",True,1041.000000,"Chest or Upper Back Injury, Penetrating",back | chest,24,103,41,0,2,2,0,24,24,0.000000,0.000232,False,2,0
+PW1395,PW1395,Dental Injury,True,1052.000000,Dental Injury,mouth,3,7,3,0,3,3,0,14,14,0.000000,0.000232,False,3,0
+PW1397,PW1397,"Eye Injury, Blunt",True,1068.000000,"Eye Injury, Blunt",eye,25,75,32,0,2,2,0,12,12,0.000000,0.000232,False,2,0
+PW1399,PW1399,"Eye Injury, Penetrating",True,1069.000000,"Eye Injury, Penetrating",eye,27,115,48,0,4,4,0,22,22,0.000000,0.000232,False,4,0
+PW1401,PW1401,"Head, Facial or Neck Injury, Blunt",True,1110.000000,"Head, Facial or Neck Injury, Blunt",ear | face | head | neck | nose,25,77,33,3,2,5,24,12,36,0.000011,0.000535,False,2,3
+PW1403,PW1403,"Head, Facial or Neck Injury, Penetrating",True,1111.000000,"Head, Facial or Neck Injury, Penetrating",ear | face | head | mouth | neck | nose,30,111,43,3,3,6,12,18,30,0.000015,0.000384,False,3,3
+PW1405,PW1405,"Genital Injury, Blunt",True,1097.000000,"Genital Injury, Blunt",genital,12,33,15,0,1,1,0,2,2,0.000000,0.000232,False,1,0
+PW1406,PW1406,"Genital Injury, Blunt",True,1097.000000,"Genital Injury, Blunt",genital,10,29,13,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1407,PW1407,"Genital Injury, Penetrating",True,1099.000000,"Genital Injury, Penetrating",genital,20,85,35,0,2,2,0,10,10,0.000000,0.000232,False,2,0
+PW1408,PW1408,"Genital Injury, Penetrating",True,1099.000000,"Genital Injury, Penetrating",genital,18,81,33,0,2,2,0,8,8,0.000000,0.000232,False,2,0
+PW1413,PW1413,Heat Exposure,True,1114.000000,Heat Exposure,not area specific,16,54,23,2,1,3,24,20,44,0.000000,0.001612,True,0,1
+PW1419,PW1419,"Lower Back Injury, Blunt",True,1122.000000,"Lower Back Injury, Blunt",back,17,41,18,0,1,1,0,10,10,0.000000,0.000232,False,1,0
+PW1420,PW1420,"Lower Back Injury, Blunt",True,1122.000000,"Lower Back Injury, Blunt",back,15,37,16,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PW1421,PW1421,"Lower Back Injury, Penetrating",True,1124.000000,"Lower Back Injury, Penetrating",back,24,102,41,0,2,2,0,24,24,0.000000,0.000232,False,2,0
+PW1422,PW1422,"Lower Back Injury, Penetrating",True,1124.000000,"Lower Back Injury, Penetrating",back,22,94,37,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW1480,PW1480,"Burn, Chemical",True,1037.000000,"Burn, Chemical",abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,10,85,24,2,1,3,20,12,32,0.000000,0.001561,True,0,1
+PW1492,PW1492,Wound Problems,True,1181.000000,Wound Problems,,29,115,49,2,2,4,14,8,22,0.000000,0.000740,True,1,1
+PW1496,PW1496,Difficulty Swallowing,True,1058.000000,Difficulty Swallowing,chest | mouth | neck | throat,29,135,58,0,4,4,0,18,18,0.000000,0.000232,False,4,0
+PW1501,PW1501,"Finger or Thumb Injury, Blunt",True,1085.000000,"Finger or Thumb Injury, Blunt",arm,22,73,32,2,2,4,16,12,28,0.000011,0.000285,False,2,2
+PW1504,PW1504,"Hand or Wrist Injury, Blunt",True,1107.000000,"Hand or Wrist Injury, Blunt",arm,27,89,37,2,3,5,16,14,30,0.000014,0.000316,False,3,2
+PW1507,PW1507,"Finger or Thumb Injury, Penetrating",True,1086.000000,"Finger or Thumb Injury, Penetrating",arm,23,105,38,2,1,3,16,4,20,0.000003,0.000285,False,1,2
+PW1510,PW1510,"Hand or Wrist Injury, Penetrating",True,1108.000000,"Hand or Wrist Injury, Penetrating",arm,38,243,97,3,3,6,24,28,52,0.000013,0.000639,False,3,3
+PW1512,PW1512,"Ankle or Foot Injury, Blunt",True,1011.000000,"Ankle or Foot Injury, Blunt",hip & leg,35,140,65,6,3,9,32,16,48,0.000059,0.000399,False,3,6
+PW1515,PW1515,Dental Bleeding,True,1051.000000,Dental Bleeding,mouth,28,295,111,6,8,14,28,240,268,0.000124,0.000584,False,8,6
+PW1516,PW1516,"Ankle or Foot Injury, Blunt",True,1011.000000,"Ankle or Foot Injury, Blunt",hip & leg,25,159,66,2,2,4,16,10,26,0.000009,0.000316,False,2,2
+PW1517,PW1517,Other Dental Problems,True,1134.000000,"Other Dental Problems - Fillings, Crowns Bridges, Appliances etc",mouth,18,90,39,4,2,6,20,14,34,0.000017,0.000470,False,2,4
+PW1518,PW1518,"Ankle or Foot Injury, Penetrating",True,1012.000000,"Ankle or Foot Injury, Penetrating",hip & leg,39,181,72,3,4,7,24,20,44,0.000018,0.000478,False,4,3
+PW1521,PW1521,Mouth Ulcers,True,1129.000000,Mouth Ulcers,mouth,15,63,27,0,2,2,0,12,12,0.000000,0.000232,False,2,0
+PW1522,PW1522,"Ankle or Foot Injury, Penetrating",True,1012.000000,"Ankle or Foot Injury, Penetrating",hip & leg,37,209,85,3,3,6,24,14,38,0.000013,0.000639,False,3,3
+PW1526,PW1526,"Toe Injury, Penetrating",True,1165.000000,"Toe Injury, Penetrating",hip & leg,27,107,43,2,2,4,16,8,24,0.000004,0.000285,False,2,2
+PW1528,PW1528,"Foreign Body, Ear",True,1091.000000,"Foreign Body, Ear",ear,12,49,21,1,0,1,12,0,12,0.000000,0.000236,False,0,1
+PW1529,PW1529,"Foreign Body, Nose",True,1093.000000,"Foreign Body, Nose",nose,13,47,21,1,0,1,12,0,12,0.000000,0.000236,False,0,1
+PW1530,PW1530,"Foreign Body, Penis",True,1094.000000,"Foreign Body, Penis",genital,17,64,27,2,0,2,8,0,8,0.000000,0.000281,False,0,2
+PW1531,PW1531,"Foreign Body, Rectum",True,1095.000000,"Foreign Body, Rectum",rectum/anus,15,46,22,4,1,5,16,2,18,0.000002,0.000313,False,1,4
+PW1532,PW1532,"Foreign Body, Vaginal",True,1096.000000,"Foreign Body, Vaginal",genital,38,192,78,2,5,7,16,30,46,0.000009,0.000296,False,5,2
+PW1539,PW1539,"Flank or Side Pain, Pregnant",True,1090.000000,"Flank or Side Pain, Pregnant",,53,173,82,3,6,9,22,62,84,0.000015,0.000286,True,5,2
+PW1543,PW1543,Self-Harm,True,1228.000000,Self-Harm,not area specific,18,88,29,3,4,7,44,24,68,0.000126,0.000737,True,3,2
+PW1544,PW1544,"Face, Neck Pain or Swelling",True,1080.000000,"Face, Neck Pain or Swelling",face | head | mouth | neck,49,283,131,2,11,13,8,64,72,0.000013,0.000249,True,10,1
+PW1545,PW1545,"Face, Neck Pain or Swelling",True,1080.000000,"Face, Neck Pain or Swelling",face | head | mouth | neck,49,283,131,2,11,13,16,64,80,0.000013,0.000259,True,10,1
+PW1548,PW1548,"Face, Neck Pain or Swelling",True,1080.000000,"Face, Neck Pain or Swelling",face | head | mouth | neck,49,505,230,0,4,4,0,20,20,0.000000,0.000232,False,4,0
+PW1549,PW1549,"Face, Neck Pain or Swelling",True,1080.000000,"Face, Neck Pain or Swelling",face | head | mouth | neck,49,467,207,0,4,4,0,20,20,0.000000,0.000232,False,4,0
+PW1550,PW1550,"Face, Neck Pain or Swelling",True,1080.000000,"Face, Neck Pain or Swelling",face | head | mouth | neck,41,476,212,0,4,4,0,16,16,0.000000,0.000232,False,4,0
+PW1551,PW1551,Alcohol Intoxication,True,1009.000000,Alcohol Intoxication,head | not area specific,43,434,115,4,1,5,106,90,196,0.000000,0.002033,True,0,3
+PW1552,PW1552,Alcohol Intoxication,True,1009.000000,Alcohol Intoxication,head | not area specific,12,64,23,4,1,5,58,34,92,0.000000,0.002383,True,0,3
+PW1553,PW1553,Diarrhoea and Vomiting,True,1055.000000,Diarrhoea and Vomiting,abdomen,61,218,101,3,10,13,12,58,70,0.000103,0.000301,False,10,3
+PW1554,PW1554,Diarrhoea and Vomiting,True,1055.000000,Diarrhoea and Vomiting,abdomen,63,224,102,3,10,13,12,58,70,0.000103,0.000299,False,10,3
+PW1555,PW1555,Diarrhoea and Vomiting,True,1055.000000,Diarrhoea and Vomiting,abdomen,57,191,88,3,10,13,20,58,78,0.000099,0.000392,False,10,3
+PW1556,PW1556,Diarrhoea and Vomiting,True,1055.000000,Diarrhoea and Vomiting,abdomen,59,202,93,3,10,13,20,58,78,0.000105,0.000389,False,10,3
+PW1559,PW1559,Vaginal Itch or Soreness,True,1177.000000,Vaginal Itch or Soreness,genital,30,119,50,2,1,3,12,4,16,0.000022,0.000250,False,1,2
+PW1560,PW1560,Vaginal Itch or Soreness,True,1177.000000,Vaginal Itch or Soreness,genital,25,104,43,1,1,2,4,4,8,0.000021,0.000241,False,1,1
+PW1561,PW1561,Vaginal Itch or Soreness,True,1177.000000,Vaginal Itch or Soreness,genital,18,61,27,0,1,1,0,4,4,0.000000,0.000232,False,1,0
+PW1562,PW1562,Vaginal Itch or Soreness,True,1177.000000,Vaginal Itch or Soreness,genital,16,55,26,0,1,1,0,4,4,0.000000,0.000232,False,1,0
+PW1563,PW1563,Diarrhoea and Vomiting,True,1055.000000,Diarrhoea and Vomiting,abdomen,45,241,105,4,7,11,36,56,92,0.000007,0.000365,False,7,4
+PW1564,PW1564,Genital Problems,True,1101.000000,Genital Problems,genital,88,428,199,4,2,6,16,14,30,0.000003,0.000291,False,2,4
+PW1565,PW1565,Genital Problems,True,1101.000000,Genital Problems,genital,46,233,106,3,1,4,12,2,14,0.000001,0.000297,False,1,3
+PW1566,PW1566,Genital Problems,True,1101.000000,Genital Problems,genital,26,130,61,2,0,2,16,0,16,0.000000,0.000336,False,0,2
+PW1567,PW1567,Catheter Problems,True,1173.000000,Urinary catheter Problems,abdomen | urinary,30,92,45,1,2,3,4,4,8,0.000000,0.000236,False,2,1
+PW1568,PW1568,Catheter Problems,True,1173.000000,Urinary catheter Problems,abdomen | urinary,19,61,29,0,1,1,0,2,2,0.000000,0.000232,False,1,0
+PW1570,PW1570,Fingernail Injury,True,1183.000000,Nail Injury,arm,1,4,1,0,3,3,0,16,16,0.000000,0.000232,False,3,0
+PW1571,PW1571,Fingernail Injury,True,1183.000000,Nail Injury,arm,1,4,1,0,3,3,0,16,16,0.000000,0.000232,False,3,0
+PW1575,PW1575,Bites and Stings,True,1223.000000,Bites and Stings,abdomen | arm | back | breast | chest | ear | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,4,11,4,7,5,12,36,28,64,0.000120,0.000443,False,5,7
+PW1576,PW1576,"Bites, Human",True,1022.000000,"Bites, Human",,12,48,18,3,0,3,16,0,16,0.000000,0.000387,False,0,3
+PW1577,PW1577,"Bites, Animal",True,1021.000000,"Bites, Animal",,36,320,126,2,3,5,36,40,76,0.000034,0.000840,True,2,1
+PW1578,PW1578,"Bites, Snake",True,1023.000000,"Bites, Snake",,16,402,79,3,1,4,52,44,96,0.000000,0.002144,True,0,2
+PW1579,PW1579,"Bites and Stings, Insect or Spider",True,1020.000000,"Bites or Stings, Insect or Spider",,35,471,133,4,1,5,48,28,76,0.000000,0.002775,True,0,3
+PW1580,PW1580,Bites and Stings,True,1223.000000,Bites and Stings,abdomen | arm | back | breast | chest | ear | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,2,8,2,1,5,6,4,28,32,0.000005,0.000233,False,5,1
+PW1582,PW1582,"Bites, Animal",True,1021.000000,"Bites, Animal",,39,351,145,3,3,6,28,24,52,0.000006,0.000600,True,2,2
+PW1583,PW1583,"Bites, Snake",True,1023.000000,"Bites, Snake",,14,214,47,3,1,4,32,24,56,0.000000,0.001974,True,0,2
+PW1584,PW1584,"Bites and Stings, Insect or Spider",True,1020.000000,"Bites or Stings, Insect or Spider",,30,300,95,3,2,5,28,28,56,0.000001,0.000568,True,1,2
+PW1585,PW1585,Bites and Stings,True,1223.000000,Bites and Stings,abdomen | arm | back | breast | chest | ear | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,2,8,2,1,5,6,8,28,36,0.000005,0.000234,False,5,1
+PW1586,PW1586,"Bites, Human",True,1022.000000,"Bites, Human",,16,69,27,2,0,2,8,0,8,0.000000,0.000297,False,0,2
+PW1588,PW1588,"Bites, Snake",True,1023.000000,"Bites, Snake",,16,222,49,3,1,4,32,24,56,0.000000,0.001975,True,0,2
+PW1589,PW1589,"Bites and Stings, Insect or Spider",True,1020.000000,"Bites or Stings, Insect or Spider",,35,381,129,3,2,5,28,28,56,0.000001,0.000569,True,1,2
+PW1590,PW1590,"Scratches, Grazes and Minor Wounds",True,1145.000000,Scratches and Grazes,abdomen | arm | back | breast | chest | ear | face | flank | groin | head | hip & leg | neck | nose | not area specific | shoulder | skin and hair,27,112,41,2,2,4,16,16,32,0.000000,0.000645,True,1,1
+PW1591,PW1591,"Leg Injury, Blunt",True,1119.000000,"Leg Injury, Blunt",hip & leg,36,133,59,7,2,9,44,12,56,0.000044,0.000563,False,2,7
+PW1592,PW1592,Nail Injury,True,1183.000000,Nail Injury,,21,60,29,3,0,3,28,0,28,0.000000,0.000433,False,0,3
+PW1593,PW1593,Toenail Injury,True,1183.000000,Nail Injury,hip & leg,1,4,1,0,3,3,0,16,16,0.000000,0.000232,False,3,0
+PW1594,PW1594,Toenail Injury,True,1183.000000,Nail Injury,hip & leg,1,4,1,0,3,3,0,16,16,0.000000,0.000232,False,3,0
+PW1595,PW1595,Nail Injury,True,1183.000000,Nail Injury,,20,64,28,3,0,3,28,0,28,0.000000,0.000433,False,0,3
+PW1596,PW1596,"Lower Back Injury, Blunt",True,1122.000000,"Lower Back Injury, Blunt",back,39,135,57,0,4,4,0,20,20,0.000000,0.000232,False,4,0
+PW1597,PW1597,"Lower Back Injury, Blunt",True,1122.000000,"Lower Back Injury, Blunt",back,35,124,53,0,3,3,0,12,12,0.000000,0.000232,False,3,0
+PW1598,PW1598,Face and Neck Pain or Swelling Over 25yrs,True,1080.000000,"Face, Neck Pain or Swelling",,47,407,181,1,1,2,8,6,14,0.000000,0.000258,False,1,1
+PW1599,PW1599,Face and Neck Pain or Swelling Over 25yrs,True,1080.000000,"Face, Neck Pain or Swelling",,47,408,181,1,1,2,8,6,14,0.000000,0.000259,False,1,1
+PW1600,PW1600,Face and Neck Pain or Swelling Under 25yrs,True,1080.000000,"Face, Neck Pain or Swelling",,37,277,127,1,1,2,12,6,18,0.000000,0.000271,False,1,1
+PW1601,PW1601,Face and Neck Pain or Swelling Under 25yrs,True,1080.000000,"Face, Neck Pain or Swelling",,37,289,134,1,1,2,12,6,18,0.000000,0.000273,False,1,1
+PW1602,PW1602,Sinusitis (Declared),True,1148.000000,Sinusitis ,face | head | nose,32,257,118,0,4,4,0,12,12,0.000000,0.000232,False,4,0
+PW1603,PW1603,Breast Problems,True,1032.000000,Breast Problems,breast | chest,6,22,10,0,3,3,0,12,12,0.000000,0.000232,False,3,0
+PW1604,PW1604,Breast Problems,True,1032.000000,Breast Problems,breast | chest,9,35,16,0,2,2,0,8,8,0.000000,0.000232,False,2,0
+PW1605,PW1605,Breast Problems,True,1032.000000,Breast Problems,breast | chest,6,22,10,0,3,3,0,12,12,0.000000,0.000232,False,3,0
+PW1606,PW1606,Breast Problems,True,1032.000000,Breast Problems,breast | chest,7,27,12,0,2,2,0,8,8,0.000000,0.000232,False,2,0
+PW1607,PW1607,Breast Problems,True,1032.000000,Breast Problems,breast | chest,6,25,11,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1609,PW1609,Breast Lump,True,1028.000000,Breast Lump,,12,54,23,2,1,3,8,4,12,0.000003,0.000325,False,1,2
+PW1610,PW1610,Dental Problems,True,1226.000000,Dental Problems,head | mouth,1,3,1,1,3,4,4,12,16,0.000024,0.000236,False,3,1
+PW1611,PW1611,Dental Problems,True,1226.000000,Dental Problems,head | mouth,1,3,1,0,3,3,0,12,12,0.000000,0.000232,False,3,0
+PW1612,PW1612,Dental Problems,True,1226.000000,Dental Problems,head | mouth,1,4,1,0,4,4,0,16,16,0.000000,0.000232,False,4,0
+PW1613,PW1613,"Falls, Faints or Blackouts without Injury",True,1083.000000,Falls Without Injury,not area specific,20,83,35,1,4,5,6,22,28,0.000000,0.000302,True,3,0
+PW1614,PW1614,"Wrist, Hand or Finger Pain or Swelling",True,1182.000000,"Wrist, Hand or Finger Pain or Swelling",arm,56,308,132,2,6,8,10,30,40,0.000000,0.000304,True,5,1
+PW1615,PW1615,"Wrist, Hand or Finger Pain or Swelling",True,1182.000000,"Wrist, Hand or Finger Pain or Swelling",arm,45,277,118,2,6,8,8,28,36,0.000000,0.000290,True,5,1
+PW1616,PW1616,"Wrist, Hand or Finger Pain or Swelling",True,1182.000000,"Wrist, Hand or Finger Pain or Swelling",arm,39,230,97,1,2,3,4,10,14,0.000001,0.000261,False,2,1
+PW1617,PW1617,"Wrist, Hand or Finger Pain or Swelling",True,1182.000000,"Wrist, Hand or Finger Pain or Swelling",arm,29,204,88,1,2,3,4,10,14,0.000000,0.000266,False,2,1
+PW1618,PW1618,"Skin, Blisters",True,1024.000000,Blisters,,59,255,106,3,4,7,28,8,36,0.000013,0.000521,False,4,3
+PW1619,PW1619,"Skin, Blisters",True,1024.000000,Blisters,,29,130,57,3,1,4,28,4,32,0.000003,0.000377,False,1,3
+PW1620,PW1620,"Skin, Rash",True,1152.000000,"Skin, Rash",,79,507,209,4,6,10,40,26,66,0.000493,0.001421,False,6,4
+PW1621,PW1621,"Skin, Yellow",True,1153.000000,"Skin, Yellow",,27,129,59,4,4,8,20,12,32,0.000014,0.000758,True,3,3
+PW1622,PW1622,"Skin, Yellow",True,1153.000000,"Skin, Yellow",,22,98,43,3,4,7,24,16,40,0.000009,0.000813,True,3,2
+PW1623,PW1623,"Skin, Rash",True,1152.000000,"Skin, Rash",,53,302,128,4,5,9,36,54,90,0.000456,0.000683,True,4,3
+PW1624,PW1624,"Skin, Acne, Spots and Pimples",True,1008.000000,"Acne, Spots and Pimples",,6,17,7,2,0,2,8,0,8,0.000000,0.000251,False,0,2
+PW1625,PW1625,Trauma Blisters,True,1024.000000,Blisters,not area specific | skin and hair,2,9,2,0,2,2,0,24,24,0.000000,0.000232,False,2,0
+PW1626,PW1626,"Wrist, Hand or Finger Pain or Swelling",True,1182.000000,"Wrist, Hand or Finger Pain or Swelling",arm,14,60,27,1,1,2,4,2,6,0.000000,0.000322,False,1,1
+PW1627,PW1627,Eye or Eyelid Problems,True,1224.000000,Eye or Eyelid Problems,eye,1,7,1,0,6,6,0,28,28,0.000000,0.000232,False,6,0
+PW1628,PW1628,Eye or Eyelid Problems,True,1224.000000,Eye or Eyelid Problems,eye,1,7,1,0,6,6,0,28,28,0.000000,0.000232,False,6,0
+PW1629,PW1629,Eye or Eyelid Problems,True,1224.000000,Eye or Eyelid Problems,eye,1,7,1,0,6,6,0,28,28,0.000000,0.000232,False,6,0
+PW1630,PW1630,Eye or Eyelid Problems,True,1224.000000,Eye or Eyelid Problems,eye,1,7,1,0,6,6,0,28,28,0.000000,0.000232,False,6,0
+PW1631,PW1631,Eye or Eyelid Problems,True,1224.000000,Eye or Eyelid Problems,eye,1,7,1,0,6,6,0,28,28,0.000000,0.000232,False,6,0
+PW1632,PW1632,"Eye, Yellow",True,1077.000000,"Eye, Yellow",,10,35,12,4,1,5,16,8,24,0.000011,0.000344,False,1,4
+PW1634,PW1634,"Eye, Yellow",True,1077.000000,"Eye, Yellow",,6,20,8,1,1,2,4,12,16,0.000003,0.000260,False,1,1
+PW1635,PW1635,"Hip, Thigh or Buttock Pain or Swelling",True,1115.000000,"Hip, Thigh or Buttock Pain or Swelling",,47,280,121,2,6,8,8,38,46,0.000264,0.000311,False,6,2
+PW1636,PW1636,"Hip, Thigh or Buttock Pain or Swelling",True,1115.000000,"Hip, Thigh or Buttock Pain or Swelling",,47,274,115,2,6,8,16,36,52,0.000229,0.000330,False,6,2
+PW1637,PW1637,"Hip, Thigh or Buttock Pain or Swelling",True,1115.000000,"Hip, Thigh or Buttock Pain or Swelling",,49,239,101,1,7,8,4,40,44,0.000169,0.000286,False,7,1
+PW1638,PW1638,"Hip, Thigh or Buttock Pain or Swelling",True,1115.000000,"Hip, Thigh or Buttock Pain or Swelling",,49,241,103,1,7,8,4,42,46,0.000141,0.000296,False,7,1
+PW1639,PW1639,Knee or Lower Leg Pain or Swelling,True,1117.000000,Knee or Lower Leg Pain or Swelling,,84,389,162,3,8,11,32,44,76,0.000148,0.000473,False,8,3
+PW1640,PW1640,Knee or Lower Leg Pain or Swelling,True,1117.000000,Knee or Lower Leg Pain or Swelling,,12,30,12,1,5,6,4,36,40,0.000076,0.000286,False,5,1
+PW1641,PW1641,Knee or Lower Leg Pain or Swelling,True,1117.000000,Knee or Lower Leg Pain or Swelling,,57,293,123,3,8,11,40,44,84,0.000148,0.000498,False,8,3
+PW1642,PW1642,Knee or Lower Leg Pain or Swelling,True,1117.000000,Knee or Lower Leg Pain or Swelling,,12,30,12,1,5,6,4,36,40,0.000076,0.000296,False,5,1
+PW1643,PW1643,Ankle or Foot Pain or Swelling,True,1013.000000,Ankle or Foot Pain or Swelling,,75,297,126,1,6,7,4,40,44,0.000117,0.000307,False,6,1
+PW1644,PW1644,Ankle or Foot Pain or Swelling,True,1013.000000,Ankle or Foot Pain or Swelling,,80,319,138,1,6,7,4,40,44,0.000072,0.000286,False,6,1
+PW1645,PW1645,Ankle or Foot Pain or Swelling,True,1013.000000,Ankle or Foot Pain or Swelling,,52,238,99,1,6,7,4,40,44,0.000120,0.000317,False,6,1
+PW1646,PW1646,Ankle or Foot Pain or Swelling,True,1013.000000,Ankle or Foot Pain or Swelling,,58,254,106,1,6,7,4,40,44,0.000073,0.000296,False,6,1
+PW1647,PW1647,Toe Pain or Swelling,True,1166.000000,Toe Pain or Swelling,,21,95,42,2,1,3,8,8,16,0.000001,0.000392,False,1,2
+PW1648,PW1648,Toe Pain or Swelling,True,1166.000000,Toe Pain or Swelling,,21,94,43,2,1,3,8,8,16,0.000001,0.000350,False,1,2
+PW1651,PW1651,Bringing Up Blood,True,1036.000000,Bringing Up Blood,abdomen | chest | mouth,3,7,3,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW1652,PW1652,Bringing Up Blood,True,1036.000000,Bringing Up Blood,abdomen | chest | mouth,3,7,3,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW1653,PW1653,Bringing Up Blood,True,1036.000000,Bringing Up Blood,abdomen | chest | mouth,3,7,3,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW1654,PW1654,Bringing Up Blood,True,1036.000000,Bringing Up Blood,abdomen | chest | mouth,3,7,3,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW1655,PW1655,Coughing up Blood,True,1049.000000,Coughing up Blood,,36,158,68,1,3,4,4,18,22,0.000181,0.000271,False,3,1
+PW1656,PW1656,Coughing up Blood,True,1049.000000,Coughing up Blood,,36,167,70,1,3,4,4,18,22,0.000040,0.000271,False,3,1
+PW1657,PW1657,Coughing up Blood,True,1049.000000,Coughing up Blood,,29,129,56,1,3,4,4,14,18,0.000180,0.000271,False,3,1
+PW1658,PW1658,Coughing up Blood,True,1049.000000,Coughing up Blood,,29,129,56,1,3,4,4,16,20,0.000039,0.000271,False,3,1
+PW1663,PW1663,Bringing Up Blood,True,1036.000000,Bringing Up Blood,abdomen | chest | mouth,3,7,3,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW1664,PW1664,Coughing up Blood,True,1049.000000,Coughing up Blood,,10,22,10,1,3,4,4,8,12,0.000020,0.000271,False,3,1
+PW1666,PW1666,Vomiting Blood,True,1180.000000,Vomiting Blood,,60,152,69,6,4,10,64,36,100,0.000016,0.000955,False,4,6
+PW1667,PW1667,Vomiting Blood,True,1180.000000,Vomiting Blood,,38,90,41,5,4,9,56,24,80,0.000008,0.000518,False,4,5
+PW1669,PW1669,Transfer Between Health Units,True,1219.000000,"HCP, Bed Bureau, Interhospital Transfers",,38,202,81,17,0,17,80,0,80,0.000000,0.000641,False,0,17
+PW1670,PW1670,"Falls, Faints or Blackouts without Injury",True,1083.000000,Falls Without Injury,not area specific,6,15,6,0,3,3,0,14,14,0.000000,0.000232,False,3,0
+PW1673,PW1673,"Abdominal Pain, Pregnant, Over 20 Weeks",True,1005.000000,"Abdominal Pain, Pregnant, Over 20 Weeks",,38,136,67,7,9,16,128,54,182,0.000198,0.001451,True,8,6
+PW1674,PW1674,"Diarrhoea or Vomiting, Pregnant, Over 20 Weeks",True,1056.000000,"Diarrhoea or Vomiting, Pregnant, Over 20 Weeks",,51,200,88,2,9,11,22,80,102,0.000019,0.000275,True,8,1
+PW1675,PW1675,"Groin Pain or Swelling, Pregnant, Over 20 Weeks",True,1105.000000,"Groin Pain or Swelling, Pregnant, Over 20 Weeks",,57,187,85,3,8,11,22,54,76,0.000399,0.000323,True,7,2
+PW1676,PW1676,Absent or Missed Period,True,1007.000000,Absent or Missed Period,genital,18,92,35,2,2,4,8,24,32,0.000275,0.000264,False,2,2
+PW1677,PW1677,Easy or Unexplained Bruising,True,1065.000000,Easy or Unexplained Bruising,,31,149,67,6,3,9,28,8,36,0.000005,0.000303,False,3,6
+PW1678,PW1678,Hair Loss,True,1106.000000,Hair loss,head | skin and hair,13,48,19,0,1,1,0,4,4,0.000000,0.000232,False,1,0
+PW1679,PW1679,Head Lice (Declared),True,1109.000000,Head Lice ,,7,17,7,3,0,3,12,0,12,0.000000,0.000266,False,0,3
+PW1680,PW1680,Athlete's Foot (Declared),True,1017.000000,Athlete's Foot ,,7,20,8,3,3,6,12,18,30,0.000008,0.000266,False,3,3
+PW1681,PW1681,Itch,True,1116.000000,Itch,,37,152,60,1,5,6,4,84,88,0.000023,0.000241,False,5,1
+PW1683,PW1683,Numbness or Unusual Feelings in the Skin,True,1133.000000,Numbness or Pins and Needles,abdomen | arm | back | chest | face | flank | groin | hip & leg | not area specific | skin and hair,58,277,116,1,15,16,4,104,108,0.000000,0.000239,True,14,0
+PW1684,PW1684,Sexual or Menstrual Concerns,True,1146.000000,Sexual Problems or Concerns,genital | not area specific,55,182,77,0,10,10,0,48,48,0.000000,0.000232,False,10,0
+PW1685,PW1685,Sexual Concerns,True,1146.000000,Sexual Problems or Concerns,genital | not area specific,53,191,82,0,6,6,0,48,48,0.000000,0.000232,False,6,0
+PW1686,PW1686,Sleep Difficulties,True,1154.000000,Sleep Difficulties,not area specific,23,71,37,1,4,5,20,40,60,0.000001,0.000286,False,4,1
+PW1687,PW1687,Social or Domestic Emergency,True,1155.000000,Social or Domestic Emergency,,39,159,58,27,4,31,166,54,220,0.000097,0.000713,True,3,26
+PW1688,PW1688,Itch,True,1116.000000,Itch,,37,155,62,1,5,6,4,84,88,0.000017,0.000241,False,5,1
+PW1689,PW1689,Itch,True,1116.000000,Itch,,44,186,77,1,4,5,12,80,92,0.000011,0.000261,False,4,1
+PW1690,PW1690,Itch,True,1116.000000,Itch,,42,176,72,1,4,5,12,80,92,0.000005,0.000260,False,4,1
+PW1691,PW1691,Easy or Unexplained Bruising,True,1065.000000,Easy or Unexplained Bruising,,25,121,53,6,2,8,28,4,32,0.000002,0.000302,False,2,6
+PW1692,PW1692,Easy or Unexplained Bruising,True,1065.000000,Easy or Unexplained Bruising,,27,113,50,6,3,9,68,8,76,0.000005,0.000390,False,3,6
+PW1693,PW1693,Easy or Unexplained Bruising,True,1065.000000,Easy or Unexplained Bruising,,21,88,39,6,2,8,68,4,72,0.000002,0.000388,False,2,6
+PW1694,PW1694,Easy or Unexplained Bruising,True,1065.000000,Easy or Unexplained Bruising,,21,90,38,6,2,8,28,4,32,0.000003,0.000311,False,2,6
+PW1696,PW1696,Easy or Unexplained Bruising,True,1065.000000,Easy or Unexplained Bruising,,27,103,43,5,2,7,36,4,40,0.000004,0.000327,False,2,5
+PW1697,PW1697,Sleep Difficulties,True,1154.000000,Sleep Difficulties,not area specific,25,79,37,1,5,6,4,46,50,0.000001,0.000243,False,5,1
+PW1698,PW1698,Sexual Concerns,True,1146.000000,Sexual Problems or Concerns,genital | not area specific,40,123,55,0,5,5,0,24,24,0.000000,0.000232,False,5,0
+PW1699,PW1699,Sexual or Menstrual Concerns,True,1146.000000,Sexual Problems or Concerns,genital | not area specific,43,127,54,0,10,10,0,50,50,0.000000,0.000232,False,10,0
+PW1700,PW1700,Sleep Difficulties,True,1154.000000,Sleep Difficulties,not area specific,7,24,10,0,4,4,0,14,14,0.000000,0.000232,False,4,0
+PW1701,PW1701,Sleep Difficulties,True,1154.000000,Sleep Difficulties,not area specific,2,4,2,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PW1702,PW1702,Ear Discharge or Ear Wax,True,1063.000000,Ear Discharge or Ear Wax,ear,29,128,47,0,5,5,0,36,36,0.000000,0.000232,False,5,0
+PW1703,PW1703,Fever,True,1084.000000,Fever,not area specific,7,30,9,0,5,5,0,76,76,0.000000,0.000232,False,5,0
+PW1705,PW1705,Cough ,True,1047.000000,Cough,chest,50,209,88,0,7,7,0,44,44,0.000000,0.000232,False,7,0
+PW1706,PW1706,Vomiting,True,1179.000000,Vomiting,abdomen,8,19,8,0,4,4,0,20,20,0.000000,0.000232,False,4,0
+PW1708,PW1708,Diarrhoea and Vomiting,True,1055.000000,Diarrhoea and Vomiting,abdomen,43,133,57,0,9,9,0,100,100,0.000000,0.000232,False,9,0
+PW1709,PW1709,"Wound Problems, Plaster Casts, Tubes and Metal Appliances",True,1227.000000,"Wound Problems, Plaster Casts, Tubes and Metal Appliances",abdomen | arm | back | breast | chest | ear | face | flank | genital | groin | head | hip & leg | neck | not area specific | shoulder | skin and hair,4,18,8,0,5,5,0,28,28,0.000000,0.000232,False,5,0
+PW1710,PW1710,"Wound Problems, Plaster Casts, Tubes and Metal Appliances",True,1227.000000,"Wound Problems, Plaster Casts, Tubes and Metal Appliances",abdomen | arm | back | breast | chest | ear | face | flank | genital | groin | head | hip & leg | neck | not area specific | shoulder | skin and hair,5,24,9,0,6,6,0,44,44,0.000000,0.000232,False,6,0
+PW1711,PW1711,Nasal Congestion,True,1130.000000,Nasal Congestion,nose,12,60,18,0,5,5,0,110,110,0.000000,0.000232,False,5,0
+PW1712,PW1712,Locked Jaw,True,1121.000000,Locked Jaw,head | mouth,13,41,16,0,1,1,0,4,4,0.000000,0.000232,False,1,0
+PW1713,PW1713,Nosebleeds after Injury,True,1132.000000,"Nosebleeds, Traumatic",face | nose,47,218,86,0,2,2,0,6,6,0.000000,0.000232,False,2,0
+PW1714,PW1714,Teething,True,1161.000000,Teething,mouth,10,47,19,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1715,PW1715,Diarrhoea,True,1054.000000,Diarrhoea,abdomen,42,130,56,0,8,8,0,96,96,0.000000,0.000232,False,8,0
+PW1716,PW1716,"Eye, Sticky, Watery",True,1074.000000,"Eye, Sticky or Watery",eye,14,51,21,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1717,PW1717,"Breathing Problems, Breathlessness or Wheeze",True,1034.000000,"Breathing Problems, Breathlessness or Wheeze",chest,12,32,13,0,4,4,0,36,36,0.000000,0.000232,False,4,0
+PW1718,PW1718,Constipation,True,1045.000000,Constipation,abdomen,5,15,7,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW1719,PW1719,Stoma Problems,True,1157.000000,Stoma Problems,abdomen | not area specific | rectum/anus | skin and hair | urinary,49,403,168,0,6,6,0,192,192,0.000000,0.000232,False,6,0
+PW1720,PW1720,Bringing Up Blood ,True,1036.000000,Bringing Up Blood,abdomen | chest | mouth,16,59,26,3,2,5,12,18,30,0.000003,0.000297,False,2,3
+PW1721,PW1721,Plaster Cast Problems,True,1139.000000,Plaster Cast Problems,,14,43,17,2,0,2,8,0,8,0.000000,0.000278,False,0,2
+PW1722,PW1722,Tube and Drain Problems,True,1171.000000,Tube and Drain Problems,,33,163,67,2,3,5,8,10,18,0.000023,0.000278,False,3,2
+PW1723,PW1723,External Fixation,True,1067.000000,External Fixation Problems,,17,56,28,1,2,3,4,12,16,0.000004,0.000260,False,2,1
+PW1724,PW1724,External Fixation,True,1067.000000,External Fixation Problems,,18,62,27,1,2,3,4,6,10,0.000003,0.000250,False,2,1
+PW1725,PW1725,Teething,True,1161.000000,Teething,mouth,4,20,9,1,0,1,4,0,4,0.000000,0.000281,False,0,1
+PW1730,PW1730,Nosebleeds after Injury,True,1132.000000,"Nosebleeds, Traumatic",face | nose,33,134,56,0,2,2,0,6,6,0.000000,0.000232,False,2,0
+PW1731,PW1731,Nosebleeds after Injury,True,1132.000000,"Nosebleeds, Traumatic",face | nose,19,62,26,0,2,2,0,8,8,0.000000,0.000232,False,2,0
+PW1733,PW1733,"Arm, Cold or Colour Change",True,1202.000000,"Limb, cold or colour change",arm,17,85,33,0,12,12,0,90,90,0.000000,0.000232,False,12,0
+PW1734,PW1734,"Leg, Cold or Colour Change",True,1202.000000,"Limb, cold or colour change",hip & leg,17,89,34,0,13,13,0,94,94,0.000000,0.000232,False,13,0
+PW1736,PW1736,"Abdominal Pain, Pregnant, Over 20 Weeks with Rectal Bleeding",True,1184.000000,"Abdominal Pain, Rectal Bleeding, Pregnant Over 20 Weeks",,49,257,120,2,9,11,16,66,82,0.000025,0.000273,True,8,1
+PW1738,PW1738,"Drug, Solvent or Alcohol Misuse",True,1185.000000,"Drug, solvent, alcohol misuse",,33,109,51,2,3,5,20,40,60,0.000015,0.000311,False,3,2
+PW1745,PW1745,Low Mood or Depression,True,,,not area specific,54,231,107,2,4,6,22,106,128,0.000001,0.000283,True,3,1
+PW1746,PW1746,Diabetes Blood Sugar Problem (Declared),True,1187.000000,"Diabetes, Blood Sugar Problem",not area specific,1,6,1,1,2,3,4,24,28,0.000026,0.000326,False,2,1
+PW1748,PW1748,Aura or Anticipated Fit/Seizure (Declared),True,1196.000000,Declared Seizure Warning,head | not area specific,13,168,47,1,2,3,88,130,218,0.000000,0.000546,True,1,0
+PW1749,PW1749,Behaviour Change,True,1018.000000,Behaviour Change,head | not area specific,127,953,405,4,11,15,84,244,328,0.000125,0.000427,True,10,3
+PW1750,PW1750,Known Mental Health Problems Worsening,True,1186.000000,Worsening known Mental health problem,,46,165,64,5,5,10,30,54,84,0.000037,0.000373,True,4,4
+PW1751,PW1751,Mental Health Problems,True,1203.000000,Mental Health Problem,head | not area specific,10,31,10,0,8,8,0,72,72,0.000000,0.000232,False,8,0
+PW1752,PW1752,"Anxiety, Stress or Panic",True,,,,58,247,114,2,4,6,26,98,124,0.000001,0.000301,True,3,1
+PW1753,PW1753,"Skin, Minor Foreign Body",True,1151.000000,"Skin, Minor Foreign Body",skin and hair,26,140,54,1,1,2,12,8,20,0.000000,0.000236,False,1,1
+PW1754,PW1754,"Skin, Minor Foreign Body",True,1151.000000,"Skin, Minor Foreign Body",skin and hair,20,77,33,3,1,4,20,8,28,0.000006,0.000324,False,1,3
+PW1755,PW1755,"Skin, Lumps",True,1149.000000,Skin Lumps,,19,183,83,1,2,3,12,12,24,0.000006,0.000277,False,2,1
+PW1756,PW1756,Mental Health Other Symptoms,True,,,,55,245,112,2,4,6,26,108,134,0.000001,0.000295,True,3,1
+PW1757,PW1757,"Skin, Lumps",True,1149.000000,Skin Lumps,,19,181,83,5,2,7,52,12,64,0.000041,0.000484,False,2,5
+PW1758,PW1758,Water Creature Stings,True,1198.000000,"Stings, Water Creature",abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,38,871,211,5,1,6,146,122,268,0.000000,0.003008,True,0,4
+PW1759,PW1759,Loss of Bowel Control,True,1197.000000,Faecal Incontinence,abdomen | rectum/anus,22,130,42,0,11,11,0,100,100,0.000000,0.000232,False,11,0
+PW1762,PW1762,Hearing Disturbance or Blocked Ear,True,1205.000000,Hearing Problems or Blocked Ear,ear,26,188,81,0,4,4,0,28,28,0.000000,0.000232,False,4,0
+PW1763,PW1763,Reduced Fetal Movements ,True,1201.000000,Reduced Fetal Movements,abdomen,24,62,26,0,5,5,0,22,22,0.000000,0.000232,False,5,0
+PW1764,PW1764,Tremor,True,1210.000000,Tremor,arm | head | hip & leg | not area specific,21,106,37,0,13,13,0,100,100,0.000000,0.000232,False,13,0
+PW1765,PW1765,Difficulty Passing Urine,True,1136.000000,"Pain, Frequency and/or Difficulty Passing Urine",urinary,11,59,25,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1766,PW1766,"Leg, Cold or Colour Change",True,1202.000000,"Limb, cold or colour change",hip & leg,17,89,34,0,14,14,0,102,102,0.000000,0.000232,False,14,0
+PW1767,PW1767,"Arm, Cold or Colour Change",True,1202.000000,"Limb, cold or colour change",arm,17,85,33,0,13,13,0,90,90,0.000000,0.000232,False,13,0
+PW1769,PW1769,Pubic Lice (Declared),True,1208.000000,Pubic Lice,,4,14,5,2,1,3,8,4,12,0.000002,0.000251,False,1,2
+PW1770,PW1770,Scabies (Declared),True,1209.000000,Scabies,,5,16,5,3,2,5,12,12,24,0.000010,0.000266,False,2,3
+PW1771,PW1771,Skin Problems,True,1225.000000,Skin Problems,skin and hair,4,26,6,1,14,15,8,84,92,0.000060,0.000240,False,14,1
+PW1772,PW1772,Skin Problems,True,1225.000000,Skin Problems,skin and hair,4,26,6,0,14,14,0,84,84,0.000000,0.000232,False,14,0
+PW1773,PW1773,Skin Problems,True,1225.000000,Skin Problems,skin and hair,3,15,3,0,9,9,0,52,52,0.000000,0.000232,False,9,0
+PW1774,PW1774,Skin Problems,True,1225.000000,Skin Problems,skin and hair,3,9,3,0,4,4,0,28,28,0.000000,0.000232,False,4,0
+PW1775,PW1775,Hiccups,True,1213.000000,Hiccups,abdomen | mouth | not area specific,7,32,11,0,7,7,0,56,56,0.000000,0.000232,False,7,0
+PW1776,PW1776,Wound Problems,True,1181.000000,Wound Problems,abdomen | arm | back | breast | chest | ear | eye | face | flank | groin | head | hip & leg | neck | not area specific | shoulder | skin and hair,38,217,82,1,3,4,14,22,36,0.000000,0.000505,True,2,0
+PW1777,PW1777,Wound Problems,True,1181.000000,Wound Problems,abdomen | arm | back | breast | chest | ear | face | flank | genital | groin | head | hip & leg | neck | not area specific | shoulder | skin and hair,27,110,46,1,2,3,6,8,14,0.000000,0.000641,True,1,0
+PW1778,PW1778,"Rectal Pain, Swelling, Lump or Itch",True,1144.000000,"Rectal Pain, Swelling, Lump or Itch",rectum/anus,23,83,39,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1800,PW1800,Unwell under 29 days,True,,,,75,378,171,9,8,17,106,90,196,0.000050,0.000669,True,7,8
+PW1801,PW1801,Unwell 29 days to under 16 weeks,True,,,,71,418,188,9,8,17,158,110,268,0.000050,0.000882,True,7,8
+PW1802,PW1802,Unwell 16 weeks to 6 months,True,,,,76,420,192,9,9,18,106,112,218,0.000060,0.000666,True,8,8
+PW1803,PW1803,Unwell over 6 months,True,,,,76,424,192,10,9,19,114,112,226,0.000073,0.000766,True,8,9
+PW1804,PW1804,Unwell Infant,True,,,,2,10,2,8,4,12,68,36,104,0.000307,0.000808,False,4,8
+PW1805,PW1805,Unwell Infant,True,1172.000000,"Unwell, Under 1 Year Old",abdomen | arm | back | chest | ear | eye | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair | urinary,2,10,2,0,4,4,0,36,36,0.000000,0.000232,False,4,0
+PW1807,PW1807,Dummy pathway for PT Dx jumps,True,,,,4,239,37,0,6,6,0,952,952,0.000000,0.000232,False,6,0
+PW1808,PW1808,Prescription Request ,True,1192.000000,Repeat Prescription,,10,40,18,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1809,PW1809,Dental Module,True,1229.000000,Dental Module,,50,243,94,0,5,5,0,28,28,0.000000,0.000232,False,5,0
+PW1810,PW1810,Healthcare Professional (HCP) Callback,True,1222.000000,Healthcare Professional Callback,,24,80,43,1,0,1,4,0,4,0.000000,0.000255,False,0,1
+PW1811,PW1811,Clinical Hub Closure,True,,,,9,66,38,3,0,3,12,0,12,0.000000,0.000864,False,0,3
+PW1812,PW1812,Senior Clinician Module Entry,True,1206.000000,NHS Pathways In House Clinician,,60,210,98,0,7,7,0,64,64,0.000000,0.000232,False,7,0
+PW1813,PW1813,Ambulance Dispatch,True,1221.000000,Ambulance Dispatch,,10,58,21,1,2,3,36,52,88,0.000000,0.000564,True,1,0
+PW1814,PW1814,Ambulance Dispatch,True,1221.000000,Ambulance Dispatch,,16,90,32,1,3,4,52,84,136,0.000000,0.000489,True,2,0
+PW1815,PW1815,Ambulance Dispatch,True,1221.000000,Ambulance Dispatch,,14,85,29,1,3,4,50,78,128,0.000000,0.000509,True,2,0
+PW1816,PW1816,Ambulance Dispatch,True,1221.000000,Ambulance Dispatch,,9,38,17,1,2,3,36,52,88,0.000000,0.000564,True,1,0
+PW1817,PW1817,Ambulance Dispatch,True,1221.000000,Ambulance Dispatch,,12,67,28,1,2,3,42,62,104,0.000000,0.000547,True,1,0
+PW1818,PW1818,Ambulance Dispatch Closure,True,1221.000000,Ambulance Dispatch,,9,61,25,6,3,9,132,40,172,0.000014,0.002357,True,2,5
+PW1819,PW1819,Ambulance Dispatch Cardiac Closure,True,1221.000000,Ambulance Dispatch,,2,10,3,3,2,5,20,24,44,0.000003,0.000476,True,1,2
+PW1820,PW1820,Clinical Hub Closure - Dental,True,,,,22,100,46,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1821,PW1821,Clinical Hub Closure - Mental Health,True,,,,13,52,30,1,0,1,4,0,4,0.000000,0.000244,False,0,1
+PW1822,PW1822,Clinical Hub Closure Primary Care,True,,,,6,34,19,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1823,PW1823,Cold Exposure,True,1230.000000,Cold Exposure,not area specific,41,248,89,6,4,10,54,52,106,0.000219,0.000906,True,3,5
+PW1824,PW1824,CHEST PAIN PATHWAY FOR IUC SG PICK UP ONLY,True,1039.000000,Chest and Upper Back Pain ,,2,14,14,1,1,2,4,4,8,0.000000,0.000244,False,1,1
+PW1825,PW1825,PROBABLE STROKE OR TIA PATHWAY FOR IUC SG PICK UP ONLY,True,1217.000000,Stroke Like Symptoms,,1,1,1,1,1,2,4,4,8,0.000000,0.000244,False,1,1
+PW1826,PW1826,ALLERGIC REACTION PATHWAY FOR IUC SG PICK UP ONLY,True,1010.000000,Allergic Reaction,,1,1,1,1,1,2,8,4,12,0.000000,0.000256,False,1,1
+PW1827,PW1827,Emergency Prescription 111 online,True,1192.000000,Repeat Prescription,,3,13,8,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW1828,PW1828,Age and Gender,True,,,,46,158,74,42,16,58,276,156,432,0.011500,0.001883,False,16,42
+PW1829,PW1829,Critical Illness Assessment ,True,,,,94,504,233,4,42,46,58,414,472,0.010142,0.000799,True,41,3
+PW1830,PW1830,Vomiting and/or Nausea with Abdominal Pain,True,1179.000000,Vomiting,,86,689,297,2,7,9,8,228,236,0.000032,0.000250,False,7,2
+PW1831,PW1831,Vomiting and/or Nausea with Abdominal Pain,True,1179.000000,Vomiting,,81,585,250,2,7,9,12,174,186,0.000032,0.000260,False,7,2
+PW1832,PW1832,Vomiting and/or Nausea with Abdominal Pain,True,1179.000000,Vomiting,,70,419,182,2,7,9,16,118,134,0.000031,0.000264,False,7,2
+PW1833,PW1833,Vomiting and/or Nausea with Abdominal Pain,True,1179.000000,Vomiting,,59,377,160,3,8,11,24,108,132,0.000031,0.000279,True,7,2
+PW1834,PW1834,Diarrhoea with Abdominal Pain,True,1054.000000,Diarrhoea,,74,400,180,2,8,10,8,150,158,0.000046,0.000250,False,8,2
+PW1835,PW1835,Diarrhoea with Abdominal Pain,True,1054.000000,Diarrhoea,,59,399,175,2,8,10,8,166,174,0.000047,0.000249,False,8,2
+PW1836,PW1836,Diarrhoea with Abdominal Pain,True,1054.000000,Diarrhoea,,60,273,123,2,8,10,16,94,110,0.000043,0.000264,False,8,2
+PW1837,PW1837,Diarrhoea with Abdominal Pain,True,1054.000000,Diarrhoea,,50,226,100,2,8,10,16,78,94,0.000046,0.000261,False,8,2
+PW1838,PW1838,Diarrhoea and Vomiting with Abdominal Pain,True,1055.000000,Diarrhoea and Vomiting,,63,278,127,2,7,9,8,66,74,0.000032,0.000250,False,7,2
+PW1839,PW1839,Diarrhoea and Vomiting with Abdominal Pain,True,1055.000000,Diarrhoea and Vomiting,,53,242,110,2,7,9,12,58,70,0.000032,0.000260,False,7,2
+PW1840,PW1840,Diarrhoea and Vomiting with Abdominal Pain,True,1055.000000,Diarrhoea and Vomiting,,59,260,118,2,7,9,16,74,90,0.000031,0.000264,False,7,2
+PW1841,PW1841,Diarrhoea and Vomiting with Abdominal Pain,True,1055.000000,Diarrhoea and Vomiting,,49,219,100,2,7,9,20,58,78,0.000031,0.000270,False,7,2
+PW1842,PW1842,Groin Pain or Groin Swelling with Abdominal Pain,True,1103.000000,Groin Pain or Groin Swelling,,67,261,121,2,3,5,8,26,34,0.000094,0.000250,False,3,2
+PW1843,PW1843,Groin Pain or Groin Swelling with Abdominal Pain,True,1103.000000,Groin Pain or Groin Swelling,,55,246,113,2,3,5,8,26,34,0.000091,0.000249,False,3,2
+PW1844,PW1844,Groin Pain or Groin Swelling with Abdominal Pain,True,1103.000000,Groin Pain or Groin Swelling,,55,204,93,2,2,4,16,14,30,0.000022,0.000264,False,2,2
+PW1845,PW1845,Groin Pain or Groin Swelling with Abdominal Pain,True,1103.000000,Groin Pain or Groin Swelling,,42,156,71,2,2,4,16,14,30,0.000022,0.000261,False,2,2
+PW1846,PW1846,PaCCS Service Search,True,,,,98,479,219,2,0,2,20,0,20,0.000000,0.000489,False,0,2
+PW1847,PW1847,PaCCS Emergency Treatment Centre Referral,True,,,,3,6,3,1,1,2,4,16,20,0.000000,0.000264,False,1,1
+PW1848,PW1848,PaCCS Ambulance Dispatch,True,,,,68,545,211,4,13,17,336,452,788,0.000103,0.001343,True,12,3
+PW1849,PW1849,PaCCS Home Management Suite,True,,,,6,11,7,1,0,1,4,0,4,0.000000,0.000264,False,0,1
+PW1850,PW1850,Covid,False,1234.000000,"Covid 19, NHS Pathway response",,125,775,343,1,7,8,66,164,230,0.000000,0.000352,True,6,0
+PW1851,PW1851,Covid-19_online,False,1234.000000,"Covid 19, NHS Pathway response",,33,102,43,1,7,8,2,42,44,0.000000,0.000241,True,6,0
+PW1852,PW1852,Covid-19_Online_Child Only,False,1234.000000,"Covid 19, NHS Pathway response",,50,197,86,1,4,5,20,16,36,0.000000,0.000329,False,4,1
+PW1853,PW1853,Health Alert (Respiratory),True,1234.000000,"Covid 19, NHS Pathway response",,108,751,315,22,5,27,252,110,362,0.000056,0.002178,True,4,21
+PW1854,PW1854,Loss of Taste or Smell,True,1235.000000,Loss of Taste or Smell,mouth | nose,40,136,49,1,9,10,2,118,120,0.000000,0.000235,True,8,0
+PW1857,PW1857,Pathways Injury Module,True,,,,11,197,39,0,53,53,0,584,584,0.000000,0.000232,False,53,0
+PW1858,PW1858,"Emergency or Urgent Treament Centre, Self-triage",True,1207.000000,Reception Point,,91,318,122,1,38,39,8,332,340,0.000332,0.000429,False,38,1
+PW1859,PW1859,ED Injury Triage,True,1236.000000,ED Triage Injury,,122,793,376,1,4,5,8,24,32,0.000057,0.000240,False,4,1
+PW1860,PW1860,ED Triage Pre-Entry Pathway,True,1239.000000,ED Triage Pre-Entry Pathway,,26,88,42,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PW1861,PW1861,ED Chest Pain Triage,True,1237.000000,ED Triage Chest Pain,,54,191,80,1,0,1,16,0,16,0.000000,0.000249,False,0,1
+PW1862,PW1862,ED Stroke Symptoms Triage,True,1238.000000,ED Triage Stroke Symptoms,,28,77,37,1,0,1,8,0,8,0.000000,0.000240,False,0,1
+PW1863,PW1863,ED Injury Child,True,1236.000000,ED Triage Injury,,122,791,376,1,4,5,4,24,28,0.000057,0.000236,False,4,1
+PW1864,PW1864,Self Triage Child Illness ,True,1207.000000,Reception Point,,106,367,171,1,2,3,4,24,28,0.000000,0.000236,False,2,1
+PW1865,PW1865,Urinary Problems,True,1241.000000,Urinary Problems,urinary,45,149,65,5,9,14,40,90,130,0.001041,0.000330,False,9,5
+PW1866,PW1866,ED Triage Mental Health,True,1240.000000,ED Triage Mental Health,not area specific,68,267,123,1,0,1,8,0,8,0.000000,0.000240,False,0,1
+PW1867,PW1867,ED Eye Triage,True,1243.000000,ED Eye Triage,,37,139,53,2,0,2,8,0,8,0.000000,0.000269,False,0,2
+PW1868,PW1868,ED Ear Nose Throat Triage,True,1242.000000,ED ENT Triage,,42,163,67,2,0,2,32,0,32,0.000000,0.000412,False,0,2
+PW500,PW500,"Abdominal or Flank Injury, Blunt",True,1000.000000,"Abdominal or Flank Injury, Blunt",abdomen | flank | groin | urinary,37,114,45,0,4,4,0,22,22,0.000000,0.000232,False,4,0
+PW502,PW502,"Abdominal or Flank Injury, Blunt",True,1000.000000,"Abdominal or Flank Injury, Blunt",abdomen | flank | groin | urinary,25,70,29,0,1,1,0,10,10,0.000000,0.000232,False,1,0
+PW503,PW503,"Abdominal or Flank Injury, Blunt",True,1000.000000,"Abdominal or Flank Injury, Blunt",abdomen | flank | groin | urinary,30,89,37,0,3,3,0,14,14,0.000000,0.000232,False,3,0
+PW505,PW505,"Abdominal or Flank Injury, Blunt",True,1000.000000,"Abdominal or Flank Injury, Blunt",abdomen | flank | groin | urinary,23,67,28,0,1,1,0,10,10,0.000000,0.000232,False,1,0
+PW506,PW506,"Abdominal or Flank Injury, Blunt, Pregnant",True,1001.000000,"Abdominal or Flank Injury, Blunt, Pregnant",,28,85,37,2,7,9,16,70,86,0.000004,0.000336,True,6,1
+PW508,PW508,"Abdominal or Flank Injury, Penetrating",True,1002.000000,"Abdominal or Flank Injury, Penetrating",abdomen | flank | groin | urinary,40,185,71,0,5,5,0,40,40,0.000000,0.000232,False,5,0
+PW510,PW510,"Abdominal or Flank Injury, Penetrating",True,1002.000000,"Abdominal or Flank Injury, Penetrating",abdomen | flank | groin | urinary,28,126,50,0,2,2,0,24,24,0.000000,0.000232,False,2,0
+PW511,PW511,"Abdominal or Flank Injury, Penetrating",True,1002.000000,"Abdominal or Flank Injury, Penetrating",abdomen | flank | groin | urinary,32,157,62,0,4,4,0,32,32,0.000000,0.000232,False,4,0
+PW513,PW513,"Abdominal or Flank Injury, Penetrating",True,1002.000000,"Abdominal or Flank Injury, Penetrating",abdomen | flank | groin | urinary,26,118,46,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW514,PW514,"Abdominal or Flank Injury, Penetrating, Pregnant",True,1003.000000,"Abdominal or Flank Injury, Penetrating, Pregnant",,34,208,77,2,8,10,64,134,198,0.000004,0.000420,True,7,1
+PW516,PW516,Abdominal Pain,True,1004.000000,Abdominal Pain,abdomen,76,390,175,5,15,20,76,108,184,0.000722,0.000389,False,15,5
+PW517,PW517,Abdominal Pain,True,1004.000000,Abdominal Pain,abdomen,64,399,185,4,16,20,88,148,236,0.000731,0.000467,False,16,4
+PW518,PW518,"Abdominal, Flank, Groin or Back Pain or Swelling",True,1006.000000,"Abdominal, Flank, Groin or Back Pain or Swelling",abdomen | back | flank | groin,32,124,51,2,12,14,8,68,76,0.000089,0.000317,False,12,2
+PW519,PW519,Abdominal Pain,True,1004.000000,Abdominal Pain,abdomen,59,266,120,4,13,17,44,80,124,0.000318,0.000295,False,13,4
+PW520,PW520,Abdominal Pain,True,1004.000000,Abdominal Pain,abdomen,48,219,99,3,14,17,24,98,122,0.000359,0.000273,False,14,3
+PW521,PW521,"Abdominal, Flank, Groin or Back Pain or Swelling",True,1006.000000,"Abdominal, Flank, Groin or Back Pain or Swelling",abdomen | back | flank | groin,32,122,51,2,10,12,16,58,74,0.000075,0.000357,False,10,2
+PW542,PW542,Behaviour Change,True,1018.000000,Behaviour Change,head | not area specific,38,173,75,2,4,6,10,30,40,0.000003,0.000347,True,3,1
+PW556,PW556,"Breathing Problems, Breathlessness or Wheeze",True,1034.000000,"Breathing Problems, Breathlessness or Wheeze",chest,71,273,124,11,7,18,60,68,128,0.001653,0.000613,False,7,11
+PW557,PW557,"Breathing Problems, Breathlessness or Wheeze",True,1034.000000,"Breathing Problems, Breathlessness or Wheeze",chest,58,255,109,11,6,17,44,62,106,0.000339,0.000641,False,6,11
+PW558,PW558,"Breathing Problems, Breathlessness or Wheeze",True,1034.000000,"Breathing Problems, Breathlessness or Wheeze",chest,34,130,60,7,3,10,36,28,64,0.000138,0.000784,False,3,7
+PW559,PW559,"Breathing Problems, Breathlessness or Wheeze",True,1034.000000,"Breathing Problems, Breathlessness or Wheeze",chest,65,242,111,11,6,17,60,62,122,0.001670,0.000736,False,6,11
+PW560,PW560,"Breathing Problems, Breathlessness or Wheeze",True,1034.000000,"Breathing Problems, Breathlessness or Wheeze",chest,51,217,95,11,5,16,52,58,110,0.000321,0.000781,False,5,11
+PW562,PW562,"Breathing Problems, Breathlessness or Wheeze, Pregnant",True,1035.000000,"Breathing Problems, Breathlessness or Wheeze, Pregnant",,32,267,115,3,1,4,16,40,56,0.000001,0.000325,False,1,3
+PW564,PW564,"Burn, Chemical",True,1037.000000,"Burn, Chemical",abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,24,287,100,4,2,6,56,32,88,0.000009,0.001464,True,1,3
+PW566,PW566,"Burn, Chemical",True,1037.000000,"Burn, Chemical",abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,21,180,61,2,2,4,16,16,32,0.000001,0.000645,True,1,1
+PW572,PW572,Toothache After Dental Injury,True,1168.000000,Toothache After Dental Injury,,31,224,89,3,3,6,28,24,52,0.000015,0.000555,False,3,3
+PW574,PW574,Cold or Flu Symptoms,True,1043.000000,Cold or Flu,not area specific,51,368,161,0,3,3,0,12,12,0.000000,0.000232,False,3,0
+PW580,PW580,"Burn, Thermal",True,1038.000000,"Burn, Thermal",abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,28,257,98,4,9,13,42,62,104,0.000220,0.000459,True,8,3
+PW582,PW582,"Burn, Thermal",True,1038.000000,"Burn, Thermal",abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,21,141,53,2,3,5,10,22,32,0.000006,0.000303,True,2,1
+PW588,PW588,"Chest or Upper Back Injury, Blunt",True,1040.000000,"Chest or Upper Back Injury, Blunt",back | chest,31,97,43,8,4,12,96,16,112,0.000320,0.000421,False,4,8
+PW590,PW590,"Chest or Upper Back Injury, Blunt",True,1040.000000,"Chest or Upper Back Injury, Blunt",back | chest,26,79,35,0,1,1,0,10,10,0.000000,0.000232,False,1,0
+PW596,PW596,"Chest or Upper Back Injury, Penetrating",True,1041.000000,"Chest or Upper Back Injury, Penetrating",back | chest,36,197,78,9,5,14,48,48,96,0.000314,0.000411,True,4,8
+PW598,PW598,"Chest or Upper Back Injury, Penetrating",True,1041.000000,"Chest or Upper Back Injury, Penetrating",back | chest,27,126,51,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW620,PW620,Dental Injury,True,1052.000000,Dental Injury,mouth,10,38,16,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW622,PW622,Dental Injury,True,1052.000000,Dental Injury,mouth,4,10,4,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW628,PW628,Diarrhoea,True,1054.000000,Diarrhoea,abdomen,57,208,96,3,9,12,16,52,68,0.000068,0.000297,False,9,3
+PW629,PW629,Diarrhoea,True,1054.000000,Diarrhoea,abdomen,57,211,95,3,9,12,12,56,68,0.000068,0.000289,False,9,3
+PW630,PW630,Diarrhoea,True,1054.000000,Diarrhoea,abdomen,44,222,98,4,9,13,36,82,118,0.000013,0.000325,False,9,4
+PW631,PW631,Diarrhoea,True,1054.000000,Diarrhoea,abdomen,54,186,87,3,9,12,24,52,76,0.000068,0.000382,False,9,3
+PW632,PW632,Diarrhoea,True,1054.000000,Diarrhoea,abdomen,53,188,85,3,9,12,20,56,76,0.000068,0.000374,False,9,3
+PW636,PW636,Dizziness or Vertigo,True,1059.000000,Dizziness or Vertigo,head | not area specific,27,72,30,1,8,9,4,52,56,0.000000,0.000248,True,7,0
+PW637,PW637,Dizziness or Vertigo,True,1059.000000,Dizziness or Vertigo,head | not area specific,16,38,16,0,5,5,0,40,40,0.000000,0.000232,False,5,0
+PW638,PW638,Dizziness or Vertigo,True,1059.000000,Dizziness or Vertigo,head | not area specific,29,102,42,0,4,4,0,16,16,0.000000,0.000232,False,4,0
+PW639,PW639,Dizziness or Vertigo,True,1059.000000,Dizziness or Vertigo,head | not area specific,66,297,132,2,8,10,34,60,94,0.000001,0.000398,True,7,1
+PW640,PW640,Dizziness or Vertigo,True,1059.000000,Dizziness or Vertigo,head | not area specific,52,235,101,2,7,9,34,44,78,0.000002,0.000452,True,6,1
+PW643,PW643,Dizziness or Vertigo Pregnant,True,1060.000000,Dizziness or Vertigo Pregnant,,54,263,112,3,4,7,22,32,54,0.000004,0.000426,True,3,2
+PW644,PW644,"Passing Urine, Associated Pain, Frequency or Smell",True,1135.000000,Pain and/or Frequency Passing Urine,urinary,24,198,89,1,0,1,8,0,8,0.000000,0.000257,False,0,1
+PW645,PW645,"Passing Urine, Associated Pain, Frequency or Smell",True,1135.000000,Pain and/or Frequency Passing Urine,urinary,17,118,48,1,0,1,8,0,8,0.000000,0.000257,False,0,1
+PW646,PW646,"Passing Urine, Associated Pain, Frequency or Smell",True,1136.000000,"Pain, Frequency and/or Difficulty Passing Urine",urinary,11,59,25,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW647,PW647,"Passing Urine, Associated Pain, Frequency or Smell",True,1135.000000,Pain and/or Frequency Passing Urine,urinary,14,66,30,1,0,1,24,0,24,0.000000,0.000306,False,0,1
+PW648,PW648,"Passing Urine, Associated Pain, Frequency or Smell",True,1135.000000,Pain and/or Frequency Passing Urine,urinary,10,58,26,1,0,1,24,0,24,0.000000,0.000306,False,0,1
+PW654,PW654,Earache,True,1064.000000,Earache,ear | head,22,71,31,2,2,4,24,4,28,0.000001,0.000382,False,2,2
+PW655,PW655,Earache,True,1064.000000,Earache,ear | head,34,106,44,2,2,4,16,4,20,0.000001,0.000332,False,2,2
+PW656,PW656,Earache,True,1064.000000,Earache,ear | head,26,81,34,2,2,4,8,4,12,0.000001,0.000282,False,2,2
+PW660,PW660,"Eye Injury, Blunt",True,1068.000000,"Eye Injury, Blunt",eye,58,254,99,0,3,3,0,18,18,0.000000,0.000232,False,3,0
+PW662,PW662,"Eye Injury, Blunt",True,1068.000000,"Eye Injury, Blunt",eye,32,98,41,0,2,2,0,12,12,0.000000,0.000232,False,2,0
+PW668,PW668,"Eye Injury, Penetrating",True,1069.000000,"Eye Injury, Penetrating",eye,47,291,109,0,5,5,0,46,46,0.000000,0.000232,False,5,0
+PW670,PW670,"Eye Injury, Penetrating",True,1069.000000,"Eye Injury, Penetrating",eye,31,129,51,0,4,4,0,20,20,0.000000,0.000232,False,4,0
+PW684,PW684,"Head, Facial or Neck Injury, Blunt",True,1110.000000,"Head, Facial or Neck Injury, Blunt",ear | face | head | neck | nose,60,306,113,18,3,21,180,42,222,0.000101,0.002703,True,2,17
+PW686,PW686,"Head, Facial or Neck Injury, Blunt",True,1110.000000,"Head, Facial or Neck Injury, Blunt",ear | face | head | neck | nose,32,113,48,6,2,8,48,16,64,0.000030,0.000773,False,2,6
+PW692,PW692,"Head, Facial or Neck Injury, Penetrating",True,1111.000000,"Head, Facial or Neck Injury, Penetrating",ear | face | head | mouth | neck | nose,76,559,212,20,5,25,134,82,216,0.000482,0.001372,True,4,19
+PW694,PW694,"Head, Facial or Neck Injury, Penetrating",True,1111.000000,"Head, Facial or Neck Injury, Penetrating",ear | face | head | mouth | neck | nose,45,177,71,8,3,11,40,20,60,0.000088,0.000576,False,3,8
+PW700,PW700,"Falls, Faints or Blackouts or Unable to get up without Injury",True,1081.000000,Falls or Faints Without Injury,not area specific,96,571,233,1,8,9,52,128,180,0.000000,0.000354,True,7,0
+PW708,PW708,Fever,True,1084.000000,Fever,not area specific,72,236,102,2,8,10,12,46,58,0.000015,0.000276,False,8,2
+PW709,PW709,Fever,True,1084.000000,Fever,not area specific,72,252,111,2,9,11,12,50,62,0.000027,0.000274,False,9,2
+PW710,PW710,Fever,True,1084.000000,Fever,not area specific,52,145,63,2,7,9,12,38,50,0.000013,0.000311,False,7,2
+PW711,PW711,Fever,True,1084.000000,Fever,not area specific,60,187,80,2,8,10,12,36,48,0.000012,0.000279,False,8,2
+PW712,PW712,Fever,True,1084.000000,Fever,not area specific,56,179,78,2,9,11,12,40,52,0.000013,0.000276,False,9,2
+PW716,PW716,Flank or Side Pain,True,1089.000000,Flank or Side Pain,flank,91,505,224,2,3,5,32,32,64,0.000027,0.000280,False,3,2
+PW717,PW717,Flank or Side Pain,False,1089.000000,Flank or Side Pain,flank,84,956,445,0,6,6,0,90,90,0.000000,0.000232,False,6,0
+PW719,PW719,Flank or Side Pain,False,1089.000000,Flank or Side Pain,flank,88,552,252,0,4,4,0,28,28,0.000000,0.000232,False,4,0
+PW720,PW720,Flank or Side Pain,False,1089.000000,Flank or Side Pain,flank,66,414,188,0,4,4,0,30,30,0.000000,0.000232,False,4,0
+PW722,PW722,"Flank or Side Pain, Pregnant",True,1090.000000,"Flank or Side Pain, Pregnant",,54,175,83,2,7,9,14,62,76,0.000017,0.000267,True,6,1
+PW728,PW728,Groin Pain or Groin Swelling,True,1103.000000,Groin Pain or Groin Swelling,groin,54,182,85,5,4,9,20,22,42,0.000755,0.000333,False,4,5
+PW729,PW729,Groin Pain or Groin Swelling,True,1103.000000,Groin Pain or Groin Swelling,groin,50,176,81,4,3,7,16,18,34,0.000655,0.000348,False,3,4
+PW731,PW731,Groin Pain or Groin Swelling,True,1103.000000,Groin Pain or Groin Swelling,groin,55,185,87,6,3,9,40,14,54,0.000751,0.000402,False,3,6
+PW732,PW732,Groin Pain or Groin Swelling,True,1103.000000,Groin Pain or Groin Swelling,groin,41,163,73,3,2,5,12,8,20,0.000582,0.000309,False,2,3
+PW734,PW734,"Groin Pain or Groin Swelling, Pregnant, Under 20 Weeks",True,1104.000000,"Groin Pain or Groin Swelling, Pregnant, Under 20 Weeks",,45,191,88,2,1,3,12,18,30,0.000000,0.000329,False,1,2
+PW752,PW752,Headache,True,1112.000000,Headache,head,7,15,7,0,2,2,0,24,24,0.000000,0.000232,False,2,0
+PW753,PW753,Headache,True,1112.000000,Headache,head,6,14,6,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW754,PW754,Headache,True,1112.000000,Headache,head,43,195,85,0,7,7,0,48,48,0.000000,0.000232,False,7,0
+PW755,PW755,Headache,True,1112.000000,Headache,head,104,509,234,4,9,13,36,82,118,0.000042,0.000431,False,9,4
+PW756,PW756,Headache,True,1112.000000,Headache,head,80,408,183,1,9,10,16,82,98,0.000011,0.000389,False,9,1
+PW758,PW758,"Headache, Pregnant",True,1113.000000,"Headache, Pregnant",,94,727,306,2,10,12,8,140,148,0.000026,0.000304,False,10,2
+PW760,PW760,Constipation,True,1045.000000,Constipation,abdomen,10,42,19,1,1,2,24,4,28,0.000003,0.000279,False,1,1
+PW762,PW762,Cough,True,1047.000000,Cough,chest,35,120,52,0,3,3,0,8,8,0.000000,0.000232,False,3,0
+PW766,PW766,Eyelid Problems,True,1078.000000,Eyelid Problems,,21,76,35,1,1,2,4,2,6,0.000000,0.000260,False,1,1
+PW768,PW768,"Eye, Visual Loss or Disturbance",True,1076.000000,"Eye, Visual Loss or Disturbance",,18,48,21,4,2,6,32,8,40,0.000007,0.000831,False,2,4
+PW770,PW770,"Eye, Painful",True,1072.000000,"Eye, Painful",,17,47,20,3,2,5,12,10,22,0.000001,0.000396,False,2,3
+PW774,PW774,Lower Limb Pain or Swelling,True,1128.000000,Lower Limb Pain or Swelling,hip & leg,4,8,4,4,4,8,20,16,36,0.000336,0.000354,False,4,4
+PW775,PW775,Lower Limb Pain or Swelling,True,1128.000000,Lower Limb Pain or Swelling,hip & leg,2,6,2,3,4,7,12,16,28,0.000147,0.000256,False,4,3
+PW776,PW776,Lower Limb Pain or Swelling,True,1128.000000,Lower Limb Pain or Swelling,hip & leg,29,99,43,2,3,5,8,12,20,0.000032,0.000248,False,3,2
+PW777,PW777,Lower Limb Pain or Swelling,True,1128.000000,Lower Limb Pain or Swelling,hip & leg,4,8,4,4,4,8,44,16,60,0.000308,0.000402,False,4,4
+PW778,PW778,Lower Limb Pain or Swelling,True,1128.000000,Lower Limb Pain or Swelling,hip & leg,2,6,2,3,4,7,36,16,52,0.000120,0.000303,False,4,3
+PW779,PW779,Lower Limb Pain or Swelling,True,1128.000000,Lower Limb Pain or Swelling,hip & leg,29,98,42,2,3,5,24,12,36,0.000026,0.000280,False,3,2
+PW782,PW782,Lower Back Pain,True,1126.000000,Lower Back Pain,back,89,613,290,4,9,13,48,94,142,0.000884,0.000337,False,9,4
+PW783,PW783,Lower Back Pain,True,1126.000000,Lower Back Pain,back,64,496,232,3,9,12,32,80,112,0.000808,0.000309,False,9,3
+PW785,PW785,Lower Back Pain,True,1126.000000,Lower Back Pain,back,79,505,237,4,6,10,32,50,82,0.000261,0.000310,False,6,4
+PW786,PW786,Lower Back Pain,True,1126.000000,Lower Back Pain,back,54,366,166,3,6,9,16,40,56,0.000251,0.000283,False,6,3
+PW788,PW788,"Lower Back Pain, Pregnant, Over 20 weeks",True,1127.000000,"Lower Back Pain, Pregnant, Over 20 weeks",,56,187,88,2,8,10,14,62,76,0.000018,0.000267,True,7,1
+PW790,PW790,"Lower Back Injury, Blunt",True,1122.000000,"Lower Back Injury, Blunt",back,40,140,59,0,4,4,0,22,22,0.000000,0.000232,False,4,0
+PW792,PW792,"Lower Back Injury, Blunt",True,1122.000000,"Lower Back Injury, Blunt",back,24,70,31,0,1,1,0,10,10,0.000000,0.000232,False,1,0
+PW793,PW793,"Lower Back Injury, Blunt",True,1122.000000,"Lower Back Injury, Blunt",back,36,127,54,0,3,3,0,12,12,0.000000,0.000232,False,3,0
+PW795,PW795,"Lower Back Injury, Blunt",True,1122.000000,"Lower Back Injury, Blunt",back,22,66,29,0,1,1,0,8,8,0.000000,0.000232,False,1,0
+PW796,PW796,"Lower Back Injury, Blunt, Pregnant",True,1123.000000,"Lower Back Injury, Blunt, Pregnant",,27,96,41,3,7,10,24,70,94,0.000009,0.000423,True,6,2
+PW798,PW798,"Lower Back Injury, Penetrating",True,1124.000000,"Lower Back Injury, Penetrating",back,38,184,70,0,4,4,0,32,32,0.000000,0.000232,False,4,0
+PW800,PW800,"Lower Back Injury, Penetrating",True,1124.000000,"Lower Back Injury, Penetrating",back,28,127,51,0,2,2,0,24,24,0.000000,0.000232,False,2,0
+PW801,PW801,"Lower Back Injury, Penetrating",True,1124.000000,"Lower Back Injury, Penetrating",back,30,153,58,0,3,3,0,24,24,0.000000,0.000232,False,3,0
+PW803,PW803,"Lower Back Injury, Penetrating",True,1124.000000,"Lower Back Injury, Penetrating",back,26,119,47,0,2,2,0,20,20,0.000000,0.000232,False,2,0
+PW804,PW804,"Lower Back Injury, Penetrating, Pregnant ",True,1125.000000,"Lower Back Injury, Penetrating, Pregnant",,31,193,70,2,7,9,64,126,190,0.000004,0.000451,True,6,1
+PW808,PW808,Unwell,False,1172.000000,"Unwell, Under 1 Year Old",,84,495,219,0,7,7,0,96,96,0.000000,0.000232,False,7,0
+PW818,PW818,Nosebleeds without Injury,True,1131.000000,Nosebleeds without injury,nose,21,148,56,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW819,PW819,Nosebleeds without Injury,True,1131.000000,Nosebleeds without injury,nose,19,129,47,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW820,PW820,Nosebleeds without Injury,True,1131.000000,Nosebleeds without injury,nose,15,88,36,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW826,PW826,"Eye, Red or Irritable",True,1073.000000,"Eye, Red or Irritable",,24,64,29,1,3,4,4,14,18,0.000000,0.000260,False,3,1
+PW828,PW828,"Eye, Sticky, Watery",True,1074.000000,"Eye, Sticky or Watery",,12,28,13,1,2,3,4,12,16,0.000000,0.000260,False,2,1
+PW830,PW830,Tiredness (Fatigue),True,1162.000000,Tiredness (Fatigue),head | not area specific,18,64,29,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW832,PW832,"Genital Injury, Blunt",True,1097.000000,"Genital Injury, Blunt",genital,16,51,23,0,1,1,0,2,2,0.000000,0.000232,False,1,0
+PW833,PW833,"Genital Injury, Blunt",True,1097.000000,"Genital Injury, Blunt",genital,14,48,22,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW834,PW834,"Genital Injury, Penetrating",True,1099.000000,"Genital Injury, Penetrating",genital,26,116,47,0,2,2,0,10,10,0.000000,0.000232,False,2,0
+PW835,PW835,"Genital Injury, Penetrating",True,1099.000000,"Genital Injury, Penetrating",genital,24,112,45,0,2,2,0,8,8,0.000000,0.000232,False,2,0
+PW836,PW836,"Object, Ingested or Inhaled",True,1092.000000,"Foreign Body, Ingested or Inhaled",mouth | neck | not area specific | throat,25,87,35,1,2,3,2,6,8,0.000000,0.000323,True,1,0
+PW846,PW846,Rectal Bleeding,True,1143.000000,Rectal Bleeding,rectum/anus,59,366,161,5,3,8,24,30,54,0.000676,0.000408,False,3,5
+PW848,PW848,Rectal Bleeding,True,1143.000000,Rectal Bleeding,rectum/anus,22,79,36,3,3,6,12,12,24,0.000025,0.000505,False,3,3
+PW854,PW854,Sore Throat or Hoarse Voice,True,1156.000000,Sore Throat or Hoarse Voice,mouth | throat,60,282,122,1,8,9,4,46,50,0.000000,0.000250,True,7,0
+PW856,PW856,Sore Throat,True,1156.000000,Sore Throat or Hoarse Voice,mouth | throat,41,155,71,0,6,6,0,32,32,0.000000,0.000232,False,6,0
+PW870,PW870,Toothache without Dental Injury,True,1169.000000,Toothache Without Dental Injury,,30,103,47,7,6,13,36,108,144,0.000047,0.000528,True,5,6
+PW871,PW871,Toothache without Dental Injury,True,1169.000000,Toothache Without Dental Injury,,17,61,25,6,4,10,32,92,124,0.000038,0.000614,False,4,6
+PW872,PW872,Toothache without Dental Injury,True,1169.000000,Toothache Without Dental Injury,,12,47,18,2,4,6,12,88,100,0.000011,0.000379,False,4,2
+PW880,PW880,Accidental Poisoning/Inhalation,True,1170.000000,Toxic Ingestion/Inhalation/Overdose,mouth | not area specific,14,32,14,0,3,3,0,24,24,0.000000,0.000232,False,3,0
+PW881,PW881,Accidental Poisoning/Inhalation,True,1170.000000,Toxic Ingestion/Inhalation/Overdose,mouth | not area specific,24,85,31,2,6,8,18,72,90,0.000043,0.000287,True,5,1
+PW886,PW886,Difficulty Passing Urine,True,1057.000000,Difficulty Passing Urine,urinary,7,30,14,1,0,1,4,0,4,0.000000,0.000244,False,0,1
+PW888,PW888,DEVELOPMENT test pathway only,True,,,,174,658,300,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+PW894,PW894,"Arm Injury, Blunt",True,1014.000000,"Arm Injury, Blunt",arm | shoulder,2,5,2,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW895,PW895,"Arm Injury, Blunt",True,1014.000000,"Arm Injury, Blunt",arm | shoulder,32,165,74,4,3,7,32,24,56,0.000021,0.000489,False,3,4
+PW896,PW896,"Arm Injury, Blunt",True,1014.000000,"Arm Injury, Blunt",arm | shoulder,29,120,51,2,2,4,16,8,24,0.000009,0.000313,False,2,2
+PW897,PW897,"Arm Injury, Blunt",True,1014.000000,"Arm Injury, Blunt",arm | shoulder,2,5,2,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW902,PW902,"Arm Injury, Penetrating",True,1015.000000,"Arm Injury, Penetrating",arm | shoulder,38,153,62,2,4,6,20,24,44,0.000005,0.000348,False,4,2
+PW904,PW904,"Arm Injury, Penetrating",True,1015.000000,"Arm Injury, Penetrating",arm | shoulder,35,144,58,2,3,5,20,18,38,0.000005,0.000389,False,3,2
+PW910,PW910,Vaginal Bleeding,True,1174.000000,Vaginal Bleeding,genital,62,516,218,10,3,13,62,34,96,0.000063,0.000435,True,2,9
+PW911,PW911,Vaginal Bleeding,True,1174.000000,Vaginal Bleeding,genital,58,532,229,9,3,12,44,32,76,0.000052,0.000445,True,2,8
+PW912,PW912,Vaginal Bleeding,True,1174.000000,Vaginal Bleeding,genital,18,97,44,1,3,4,4,12,16,0.000000,0.000247,False,3,1
+PW913,PW913,"Vaginal Bleeding, Pregnant",True,1175.000000,"Vaginal Bleeding, Pregnant",,25,158,61,14,4,18,118,60,178,0.000281,0.001263,True,3,13
+PW915,PW915,Vaginal Discharge,True,1176.000000,Vaginal Discharge,genital,66,345,155,5,2,7,20,30,50,0.000062,0.000498,False,2,5
+PW916,PW916,Vaginal Discharge,True,1176.000000,Vaginal Discharge,genital,55,324,144,5,3,8,22,32,54,0.000066,0.000573,True,2,4
+PW917,PW917,Vaginal Discharge,True,1176.000000,Vaginal Discharge,genital,23,79,35,4,0,4,16,0,16,0.000000,0.000669,False,0,4
+PW923,PW923,Arm Pain or Swelling,True,1016.000000,"Arm, Pain or Swelling",arm,20,82,33,2,3,5,16,10,26,0.000003,0.000267,False,3,2
+PW925,PW925,"Burn, Thermal",True,1038.000000,"Burn, Thermal",abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | mouth | neck | nose | not area specific | shoulder | skin and hair,11,53,18,2,3,5,14,22,36,0.000006,0.000305,True,2,1
+PW928,PW928,Vomiting Blood,True,1180.000000,Vomiting Blood,,2,3,2,5,1,6,56,8,64,0.000016,0.000502,False,1,5
+PW929,PW929,Vomiting Blood,True,1180.000000,Vomiting Blood,,38,90,41,5,4,9,56,24,80,0.000009,0.000495,False,4,5
+PW930,PW930,Vomiting Blood,True,1180.000000,Vomiting Blood,,27,61,27,6,4,10,72,22,94,0.000006,0.000627,False,4,6
+PW936,PW936,Vomiting and/or Nausea,True,1179.000000,Vomiting,abdomen,104,437,198,3,18,21,10,108,118,0.000391,0.000281,True,17,2
+PW937,PW937,Vomiting and/or Nausea,True,1179.000000,Vomiting,abdomen,87,391,173,1,16,17,4,104,108,0.000336,0.000273,False,16,1
+PW938,PW938,Vomiting and/or Nausea,True,1179.000000,Vomiting,abdomen,62,326,137,2,12,14,16,106,122,0.000084,0.000305,False,12,2
+PW939,PW939,Vomiting and/or Nausea,True,1179.000000,Vomiting,abdomen,91,387,174,3,18,21,26,108,134,0.000387,0.000374,True,17,2
+PW940,PW940,Vomiting and/or Nausea,True,1179.000000,Vomiting,abdomen,75,340,150,2,17,19,16,110,126,0.000338,0.000366,True,16,1
+PW961,PW961,Blood in Urine,True,1025.000000,Blood in Urine,urinary,27,304,121,1,0,1,4,0,4,0.000000,0.000244,False,0,1
+PW962,PW962,Blood in Urine,True,1025.000000,Blood in Urine,urinary,19,186,76,1,0,1,12,0,12,0.000000,0.000269,False,0,1
+PW967,PW967,Blood in Urine,True,1025.000000,Blood in Urine,urinary,21,82,36,0,1,1,0,2,2,0.000000,0.000232,False,1,0
+PW975,PW975,Cough,True,1047.000000,Cough,chest,59,352,148,0,5,5,0,20,20,0.000000,0.000232,False,5,0
+PW976,PW976,Cough,True,1047.000000,Cough,chest,53,306,129,0,4,4,0,16,16,0.000000,0.000232,False,4,0
+PW977,PW977,"Cough, Pregnant",True,1048.000000,"Cough, Pregnant",,28,149,62,2,0,2,8,0,8,0.000000,0.000310,False,0,2
+PW978,PW978,Cough,True,1047.000000,Cough,chest,60,343,146,0,5,5,0,20,20,0.000000,0.000232,False,5,0
+PW979,PW979,Cough,True,1047.000000,Cough,chest,51,278,118,0,4,4,0,16,16,0.000000,0.000232,False,4,0
+PW981,PW981,Nasal Congestion,True,1130.000000,Nasal Congestion,nose,16,65,28,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW984,PW984,Nasal Congestion,True,1130.000000,Nasal Congestion,nose,16,57,24,0,2,2,0,16,16,0.000000,0.000232,False,2,0
+PW987,PW987,"Burn, Sun",True,1158.000000,Sunburn,abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | neck | nose | not area specific | shoulder | skin and hair,29,130,52,4,1,5,44,24,68,0.000000,0.002019,True,0,3
+PW989,PW989,"Burn, Sun",True,1158.000000,Sunburn,abdomen | arm | back | breast | chest | ear | eye | face | flank | genital | groin | head | hip & leg | neck | nose | not area specific | shoulder | skin and hair,19,73,31,2,1,3,24,20,44,0.000000,0.001552,True,0,1
+PW998,PW998,Heat Exposure,True,1114.000000,Heat Exposure,not area specific,24,108,41,9,1,10,56,24,80,0.000000,0.002505,True,0,8
+SP1,SP1,Assessing Safety 1st Party ,True,,,,19,193,51,0,0,0,0,0,0,0.000000,0.000232,False,0,0
+SP3,SP3,Assessing Safety 3rd Party,True,,,,33,314,85,0,0,0,0,0,0,0.000000,0.000232,False,0,0

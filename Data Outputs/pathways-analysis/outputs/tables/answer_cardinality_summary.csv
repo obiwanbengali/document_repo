@@ -1,0 +1,4 @@
+metric,count,min,mean,median,p90,p95,p99,max
+catalogue_answer_count_active_questions,4491,1.000000,2.671100,3.000000,4.000000,5.000000,7.000000,7.000000
+used_answer_count_active_questions,4491,0.000000,2.325800,3.000000,4.000000,5.000000,7.000000,7.000000
+catalogue_answer_count_all_questions,5020,0.000000,2.711000,3.000000,5.000000,5.000000,7.000000,7.000000

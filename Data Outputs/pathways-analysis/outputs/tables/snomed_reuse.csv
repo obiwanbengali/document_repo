@@ -1,0 +1,298 @@
+snomed_concept_id,pathway_count,logic_row_count,snomed_preferred_term,snomed_semantic_tag
+103001002,331,1130,Feeling feverish,Not set
+267036007,234,440,Dyspnoea,Not set
+275723000,231,523,Patient's condition deteriorating,Not set
+130987000,198,560,Acute confusion,Not set
+423902002,194,530,Purpura,Not set
+422608009,161,287,Sexual assault,
+213257006,148,377,Generally unwell,Not set
+409668002,144,190,Photophobia,
+161882006,141,179,Stiff neck,
+161941007,140,284,Dyspnoea at rest,
+161647008,131,353,H/O: anticoagulant therapy,
+90774003,126,430,Victim of physical assault,
+64779008,109,273,Blood coagulation disorder,
+266712008,108,162,New medication commenced,
+102874004,107,186,Possible pregnancy,
+182877009,102,308,Drug dosage altered,
+386806002,91,106,Impaired cognition,
+161445009,82,170,H/O: diabetes mellitus,
+267032009,82,126,Tired all the time,Not set
+79890006,82,126,Loss of appetite,Not set
+269899009,75,144,Faeces colour: tarry,Not set
+64412006,75,144,Red stools,Not set
+813381000000102,72,225,Foreign body associated with wound,disorder
+95667004,72,126,Unilateral facial paresis,Not set
+267051003,71,97,Vomiting blood - fresh,Not set
+40835002,71,97,Coffee ground vomiting,Not set
+231431000000108,69,103,Over 20 weeks gestational age,(finding)
+262519004,69,101,Multiple injuries,disorder
+428566005,69,103,Gestation less than 20 weeks,Not set
+441924001,69,103,Gestational age unknown,Not set
+248435007,67,148,Prolonged fever,Not set
+161615003,66,142,H/O: surgery,situation
+246975001,66,95,Scleral icterus,
+422868009,65,92,Unexplained weight loss,Not set
+707857003,61,416,Exposure to Ebola virus,
+247441003,60,241,Erythema,Not set
+29164008,58,88,Disturbance in speech,Not set
+305793000,58,111,Seen by clinical oncology service,finding
+128482007,57,236,Acute inflammatory disease,Not set
+707793005,57,236,Hot skin,Not set
+80593000,57,98,Ingestion of foreign material,
+422400008,56,117,Vomiting,Not set
+63102001,54,83,Visual disturbance,Not set
+66857006,54,109,Haemoptysis,
+426206001,53,93,Constant pain,Not set
+713512009,53,83,Muscle weakness of upper limb,Not set
+367391008,52,115,Malaise,Not set
+248062006,49,64,Self-injurious behaviour,
+365457007,49,81,Foreign travel history finding,
+239161005,47,56,Wound haemorrhage,finding
+17173007,46,87,Excessive thirst,Not set
+718402002,46,87,Increased urine output,Not set
+116290004,45,100,Acute abdominal pain,Not set
+721542002,44,134,Acute blistering eruption of skin,
+45326000,42,172,Shoulder pain,Not set
+239163008,41,73,Wound erythema,Not set
+21522001,40,68,Abdominal pain,finding
+262557004,40,86,Deep wound,disorder
+48422000,40,86,Open wound with complication,disorder
+49650001,40,50,Dysuria,Not set
+283596007,39,53,Needle stick injury,disorder
+39104002,39,68,Illness,Not set
+300359004,38,78,Finding of vomiting,
+109211000119102,37,50,History of toxic inhalation exposure,
+161587009,36,56,H/O: head injury,Not set
+271903000,36,56,H/O: pregnancy,
+65124004,35,82,Swelling,finding
+2237002,34,52,Pleuritic pain,
+248223005,33,92,Feeling faint,
+76948002,33,58,Severe pain,Not set
+271594007,31,52,Syncope,Not set
+370388006,31,70,Patient immunocompromised,Not set
+41652007,31,42,Pain in eye,Not set
+161649006,30,150,H/O: insulin therapy,
+80313002,29,41,Palpitations,
+161586000,28,79,H/O: injury,
+247355005,28,38,Flank pain,Not set
+266996004,28,80,H/O: thromboembolism,
+3950001,28,49,Birth,
+427631000,28,80,At risk of venous thromboembolus,
+442150004,28,158,At risk of venous thromboembolus due to prolonged immobilisation,
+706955002,28,30,Pain relieved by analgesic,Not set
+301754002,27,71,Right lower quadrant pain,Not set
+225460000,25,41,Constantly crying,
+710816000,25,84,Long-term current use of steroid,Not set
+102427001,24,24,Exposure to water pollution,Not set
+1098521000000101,24,31,Face Arms Speech Time test positive,
+223366009,24,24,Healthcare professional,Not set
+274272004,24,24,Catering services occupation,Not set
+364831007,24,24,Catering source - finding,Not set
+95660002,23,34,Thunderclap headache,Not set
+249519007,22,24,Diarrhoea and vomiting,Not set
+276438008,22,28,Swelling / lump finding,finding
+289530006,22,56,Vaginal bleeding,finding
+74699008,22,58,Foreign body in nose,
+12063002,21,22,Rectal haemorrhage,Not set
+25064002,21,30,Headache,
+271808008,21,30,"Oedema, generalised",
+134021000119105,20,24,Vomiting faecal matter,
+417893002,20,66,Deformity,finding
+14760008,19,30,Constipation,
+34436003,19,23,Blood in urine,Not set
+1075011000000102,18,34,unable to get up from floor,finding
+405729008,18,28,Haematochezia,
+54586004,18,51,Lower abdominal pain,Not set
+715034003,18,20,Unable to take medication,finding
+118216002,17,21,Labour finding,finding
+271939006,17,23,Vaginal discharge,finding
+29857009,17,29,Chest pain,
+42984000,17,34,Night sweats,Not set
+448765001,17,34,Unintentional weight loss,Not set
+247442005,16,21,Broken skin,
+725119006,16,26,Generalised rash,disorder
+16001004,15,57,Otalgia,Not set
+161528002,15,36,H/O: pneumothorax,
+249945007,15,19,Monoparesis - leg,
+267083009,15,17,Incoordination symptom,finding
+274667000,15,29,Jaw pain,finding
+305635003,15,36,Seen by clinical oncologist,finding
+418611001,15,15,Exposure to heat,event
+45177002,15,20,Swelling of structure of eye,
+88111009,15,15,Altered bowel function,
+272032002,14,14,C/O - watering eyes,Not set
+276369006,14,17,Reduced foetal movement,finding
+83132003,14,21,Upper abdominal pain,finding
+24199005,13,14,Feeling agitated,Not set
+248110007,13,21,Sexual assault,
+249990003,13,23,Unsteady when standing,Not set
+284151004,13,14,Unable to move leg,Not set
+307077003,13,14,Feeling hopeless,Not set
+314496008,13,18,Contact lens related disorder,
+34124000,13,36,Foreign body in vagina,disorder
+366979004,13,14,Depressed mood,Not set
+412740002,13,17,Periorbital erythema,Not set
+417523004,13,14,Loss of interest in previously enjoyable activity,Not set
+48694002,13,14,Anxiety,Not set
+52684005,13,21,Assault,
+75851004,13,29,Scalp tenderness,
+82313006,13,21,Suicide attempt,
+91019004,13,13,Paraesthesia,Not set
+5935008,12,20,Oral contraception,Not set
+161480008,11,15,H/O: epilepsy,Not set
+161887000,11,33,Spontaneous bruising,disorder
+246679005,11,11,Discharge from eye,Not set
+315224006,11,67,Heavy episode of vaginal bleeding,finding
+78598000,11,16,Superficial injury of eye,Not set
+95891005,11,14,Influenza-like illness,Not set
+165232002,10,10,Urinary incontinence,Not set
+249366005,10,16,Bleeding from nose,
+267064002,10,10,Retention of urine,Not set
+277210007,10,16,Tender mastoid,
+397181002,10,24,Open fracture,disorder
+161481007,9,16,H/O: migraine,Not set
+161535005,9,9,H/O: liver disease,
+19346006,9,11,Marfan's syndrome,Not set
+218196008,9,22,Overexposure to visual and ultraviolet light sources,
+274708000,9,58,Abnormal sputum,
+438759003,9,9,History of tonsillectomy,
+50415004,9,22,Moderate pain,Not set
+77880009,9,9,Rectal pain,Not set
+278432003,8,15,Anal symptoms,
+278528006,8,8,Facial swelling,
+284523002,8,16,Persistent cough,Not set
+394896005,8,14,Change in skin lesion,
+399153001,8,10,Vertigo,finding
+421262002,8,8,Tongue swelling,
+421581006,8,8,Pharyngeal swelling,
+57773001,8,8,Rectal prolapse,
+699376002,8,8,Lip swelling,
+95354006,8,9,Mucosal vesicle,
+10000006,7,14,Radiating chest pain,Not set
+15203004,7,11,Sudden visual loss,Not set
+161501007,7,11,H/O: hypertension,
+300132001,7,17,Ear discharge,
+59139008,7,7,Crushing chest pain,Not set
+142661000119102,6,6,Retained foreign body,
+161844003,6,17,Reduced fluid intake,
+162106006,6,17,Spurious diarrhoea - overflow,
+19491003,6,9,Injury of nose,
+235797004,6,15,Stomal prolapse,Not set
+367494004,6,6,Premature birth of newborn,finding
+40196000,6,18,Mild pain,
+75441006,6,6,Foreign body in ear,
+118940003,5,5,Disorder of nervous system,
+161514008,5,6,H/O: aortic aneurysm,Not set
+161523006,5,5,H/O: respiratory disease,
+236129005,5,11,Stomal bleeding,
+249509001,5,10,Unable to break wind,Not set
+266995000,5,16,H/O: cardiovascular disease,
+271299001,5,16,Patient's condition worsened,finding
+271613005,5,5,Parotid swelling,
+275544003,5,5,H/O: heart disorder,
+289534002,5,29,Passing large clots vaginally,
+300103004,5,5,Pinna tender,Not set
+300115000,5,5,Red pinna,Not set
+359748005,5,8,Patient condition unchanged,finding
+40917007,5,5,Clouded consciousness,
+422576004,5,7,Decreased coordination,
+42399005,5,5,Renal failure syndrome,
+425978000,5,6,History of headache,Not set
+43025008,5,14,Paroxysmal cough,Not set
+49727002,5,18,Cough,
+64531003,5,8,Nasal discharge,
+65958008,5,14,Hiccoughs,finding
+762354003,5,11,Persistent headache due to and following injury of head,
+78691002,5,7,Staggering gait,
+8765009,5,5,Haematemesis,
+95668009,5,18,Pain in face,
+102568007,4,8,Paresis of lower extremity,
+102570003,4,4,Inguinal pain,Not set
+162031009,4,4,Indigestion,
+162310002,4,4,Morning headache,
+16331000,4,4,Heartburn,
+170746002,4,4,Diabetic on oral treatment,finding
+170747006,4,4,Diabetic on insulin,finding
+230339003,4,4,Isolated head tremor,finding
+238456006,4,6,Snake bite,Not set
+242594004,4,6,Fish sting,Not set
+242605002,4,6,Human bite,Not set
+242631000,4,6,Bite of fish,Not set
+26079004,4,4,Tremor,finding
+266987004,4,4,H/O: malignant neoplasm,
+274743004,4,4,Swelling of inguinal region,Not set
+284140004,4,4,Unable to move arm,finding
+298255009,4,5,Pain on joint movement,finding
+300366003,4,4,Vomit contains faeces,Not set
+361055000,4,6,Misuses drugs,
+414417004,4,4,History of renal failure,
+45477008,4,4,Exposed to vibration,event
+49218002,4,10,Hip pain,Not set
+571000119103,4,7,Daily headache,
+60113004,4,4,Disorder of eyelid,
+62315008,4,4,Diarrhoea,Not set
+703630003,4,4,Red eye,
+705083008,4,4,Sensation of irritation of eye proper,
+79471008,4,4,Sudden hearing loss,
+162397003,3,5,Pain in throat,finding
+193031009,3,4,Cluster headache,Not set
+22253000,3,5,Pain,Not set
+246681007,3,3,Blood in eye,
+271739002,3,6,Wax in ear canal,
+289525007,3,3,Swelling of vaginal introitus,
+301384007,3,3,Excruciating present pain,finding
+312081001,3,3,IUD contraception,finding
+35101000119106,3,5,Bleeding following tonsillectomy,Not set
+3890004,3,6,Treatment required for,
+398057008,3,4,Tension-type headache,Not set
+403142004,3,6,Hymenoptera sting,
+404640003,3,8,Dizziness,Not set
+422587007,3,6,Nausea,Not set
+446101008,3,6,Removal of tick,
+60862001,3,3,Tinnitus,
+6300007,3,4,Exposed to noise,
+81680005,3,3,Neck pain,finding
+9459301000001100,3,3,Mirena,product
+95898004,3,12,Tick bite,
+103276001,2,4,Decreased hearing,
+1489008,2,2,External hordeolum,
+162181003,2,2,Vaginal discomfort,
+162277006,2,2,Sees flashes,
+162278001,2,2,Floaters in visual field,
+225549006,2,2,Yellow skin,Not set
+232209000,2,4,Nasal obstruction,
+248216009,2,4,Complexion changes,
+248514008,2,2,Lump in eyelid,
+24982008,2,2,Diplopia,
+274657005,2,3,Change in voice,
+275488008,2,4,Sore throat - chronic,Not set
+285466001,2,3,Difficulty opening mouth,
+289894009,2,8,Menstrual bleeding present,finding
+2910007,2,4,Discharge from penis,finding
+297216006,2,2,Increasing breathlessness,finding
+309572008,2,2,Rectal symptoms,
+424580008,2,4,Post-tussive vomiting,
+48926009,2,2,Pain in spine,Not set
+54288002,2,2,Traumatic subcutaneous emphysema,disorder
+56018004,2,2,Wheezing,
+60537006,2,4,Whooping respiration,
+723010005,2,2,Acute eruption of skin,
+723538008,2,4,Eyelid symptom,
+79893008,2,4,Vesicular eruption,
+1371000119105,1,1,Chronic hoarseness,
+161570007,1,1,H/O: back problem,Not set
+161800001,1,1,H/O: hysterectomy,situation
+162025006,1,1,Difficulty swallowing fluid,
+246663009,1,1,Curtain across vision,
+2472002,1,1,Anuria,
+249486008,1,1,Unable to swallow,Not set
+258643002,1,1,Chest drain,physical object
+267103008,1,1,Feeling of lump in throat,
+274747003,1,1,"Localised swelling, mass and lump, neck",
+285462004,1,1,Unable to open mouth,
+288945004,1,1,Difficulty swallowing food,
+30233002,1,1,Swallowing painful,
+48880000,1,1,Postcoital bleeding,finding
+50219008,1,2,Hoarse,
+72042002,1,1,Incontinence of faeces,Not set

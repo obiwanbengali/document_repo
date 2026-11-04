@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>NHS Pathways Bayesian Architecture Investigation</title>
+<link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+<div class="confidentiality-banner">
+  <strong>Confidential.</strong>
+  Contains derived NHS Pathways analysis. Handle according to programme information governance requirements.
+</div>
+<header class="site-header">
+  <div class="site-header__inner">
+    <p class="site-header__title"><a href="index.html">NHS Pathways Bayesian architecture investigation</a></p>
+    <nav class="site-nav" aria-label="Report sections">
+      <a href="index.html">Overview</a>
+      <a href="phase1.html">Estate structure</a>
+      <a href="phase2.html">Family discovery</a>
+      <a href="phase3.html">Architecture comparison</a>
+      <a href="ent.html">ENT family</a>
+      <a href="revised-ent.html">Revised ENT</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="page-intro">
+    <p class="page-intro__eyebrow">Evidence briefing</p>
+    <h1>From the NHS Pathways estate to a clinically governed Bayesian architecture</h1>
+    <p class="page-intro__question">Four connected investigations, each answering a different architectural question.</p>
+    <p class="lede">
+      The work has moved beyond a simple monolithic-versus-federated comparison. We first measured the Pathways estate,
+      then looked for candidate family boundaries, then tested the computational and operational implications of the
+      architecture choices. The ENT investigation now takes that evidence into a concrete first-family definition for
+      the proposed April 2027 private beta.
+    </p>
+    <p>
+      The investigations are deliberately separated because they use different evidence and answer different questions.
+      Structural evidence can suggest a family boundary, but it cannot clinically approve one. Likewise, benchmark or
+      cost evidence can compare implementation patterns without deciding which clinical pathways belong together.
+    </p>
+  </div>
+
+  <section class="report-section">
+    <div class="section-head">
+      <span class="section-head__number">Investigation map</span>
+      <h2>Where the architecture work now sits</h2>
+      <p>The four reports form one evidence chain, with ENT acting as the first concrete family-boundary investigation.</p>
+    </div>
+
+    <div class="phase-grid">
+      <a class="phase-card" href="phase1.html">
+        <span class="phase-card__number">Estate Structure</span>
+        <p class="phase-card__title">Understand the NHS Pathways estate</p>
+        <p class="phase-card__question">“What does the estate actually look like?”</p>
+        <div class="phase-card__body">
+          Measures pathway size, reuse, connectivity, handovers and the classifications already present in Pathways.
+          This establishes the structural constraints any Bayesian representation has to accommodate.
+        </div>
+        <span class="phase-card__status phase-card__status--done">Complete — view evidence</span>
+      </a>
+
+      <a class="phase-card" href="phase2.html">
+        <span class="phase-card__number">Candidate Family Discovery</span>
+        <p class="phase-card__title">Find plausible model boundaries</p>
+        <p class="phase-card__question">“If we use family BNs, where might the boundaries lie?”</p>
+        <div class="phase-card__body">
+          Compares existing Pathways classifications, graph structure and shared clinical features to identify
+          provisional family groupings, overlap, boundary pathways and shared evidence.
+        </div>
+        <span class="phase-card__status phase-card__status--done">Complete — candidates require clinical review</span>
+      </a>
+
+      <a class="phase-card" href="phase3.html">
+        <span class="phase-card__number">Architecture Feasibility &amp; Comparison</span>
+        <p class="phase-card__title">Test whether the candidate architectures are practical</p>
+        <p class="phase-card__question">“How large, fast, deployable and costly would the options be?”</p>
+        <div class="phase-card__body">
+          Covers representation sizing, CPT growth, inference benchmarking, runtime deployment patterns,
+          infrastructure and cost, and decision-evidence synthesis.
+        </div>
+        <span class="phase-card__status phase-card__status--done">Evidence assembled — decision remains governed</span>
+      </a>
+
+      <a class="phase-card" href="ent.html">
+        <span class="phase-card__number">ENT Family Definition</span>
+        <p class="phase-card__title">Define the first clinically reviewable family BN</p>
+        <p class="phase-card__question">“What belongs in Ear, Nose and Throat, and where are its boundaries?”</p>
+        <div class="phase-card__body">
+          Lists every proposed ENT pathway and the reason for inclusion, then traces internal, incoming and outbound
+          pathway transfers to expose family boundaries, safety escalations and cross-family evidence for clinical review.
+        </div>
+        <span class="phase-card__status phase-card__status--done">Active family investigation — private-beta candidate</span>
+      </a>
+      <a class="phase-card" href="revised-ent.html">
+        <span class="phase-card__number">Revised ENT Evaluation</span>
+        <p class="phase-card__title">Test the revised family against observed journeys</p>
+        <p class="phase-card__question">“How much 111 Online activity can the revised family cover end to end?”</p>
+        <div class="phase-card__body">
+          Uses the explicitly agreed Revised ENT pathway list to measure journey coverage, end-to-end
+          completion, family leakage, out-of-scope handovers and every structural endpoint reachable
+          from the supported family boundary.
+        </div>
+        <span class="phase-card__status phase-card__status--done">Revised scope — journey evidence report</span>
+      </a>
+    </div>
+
+    <div class="callout callout--prominent">
+      <span class="callout__label">Current architectural direction under investigation</span>
+      <p>
+        A centralised inference service containing multiple clinically governed family Bayesian Networks, potentially
+        supported by a deliberately small shared/common evidence layer. Federation describes the model topology and
+        governance boundary; it does not imply one microservice per family.
+      </p>
+    </div>
+  </section>
+
+  <section class="report-section">
+    <div class="section-head">
+      <span class="section-head__number">Evidence flow</span>
+      <h2>How the investigations feed the decision</h2>
+      <p>The ENT work is the bridge between broad family discovery and a production-shaped first family.</p>
+    </div>
+    <div class="flow" role="list" aria-label="Investigation flow">
+      <div class="flow__step" role="listitem">NHS Pathways source data</div>
+      <div class="flow__arrow" aria-hidden="true">↓</div>
+      <div class="flow__step flow__step--emphasis" role="listitem"><strong>Estate Structure</strong><br><span class="muted">Measure size, reuse and connectivity</span></div>
+      <div class="flow__arrow" aria-hidden="true">↓</div>
+      <div class="flow__step flow__step--emphasis" role="listitem"><strong>Candidate Family Discovery</strong><br><span class="muted">Find provisional boundaries and overlap</span></div>
+      <div class="flow__arrow" aria-hidden="true">↓</div>
+      <div class="flow__step flow__step--emphasis" role="listitem"><strong>Architecture Feasibility &amp; Comparison</strong><br><span class="muted">Size, benchmark, deploy and cost the options</span></div>
+      <div class="flow__arrow" aria-hidden="true">↓</div>
+      <div class="flow__step flow__step--emphasis" role="listitem"><strong>ENT Family Definition</strong><br><span class="muted">Test a concrete family boundary against real pathway transfers</span></div>
+      <div class="flow__arrow" aria-hidden="true">↓</div>
+      <div class="flow__step flow__step--pending" role="listitem">Clinical approval → BN build → private-beta evidence</div>
+    </div>
+  </section>
+
+  <section class="report-section">
+    <div class="section-head">
+      <span class="section-head__number">Architecture feasibility stages</span>
+      <h2>The six technical investigations behind the architecture comparison</h2>
+      <p>These replace the shorthand 3A–3F labels in reader-facing material.</p>
+    </div>
+    <div class="panel-grid">
+      <div class="panel"><p class="panel__eyebrow">Representation sizing</p><h4>How much model structure must be represented?</h4><p>Variables, states and family-size baselines.</p></div>
+      <div class="panel"><p class="panel__eyebrow">CPT growth</p><h4>How quickly does probability data grow?</h4><p>Parent-count and state-cardinality sensitivity.</p></div>
+      <div class="panel"><p class="panel__eyebrow">Inference benchmarking</p><h4>What drives runtime feasibility?</h4><p>Measured latency under controlled topology and cardinality scenarios.</p></div>
+      <div class="panel"><p class="panel__eyebrow">Runtime architecture</p><h4>How are family models hosted and coordinated?</h4><p>Central service patterns, loading, routing, state and failure modes.</p></div>
+      <div class="panel"><p class="panel__eyebrow">Infrastructure &amp; cost</p><h4>What operational footprint do the patterns imply?</h4><p>Capacity, HA floors, workload assumptions and comparative cost.</p></div>
+      <div class="panel"><p class="panel__eyebrow">Decision synthesis</p><h4>What evidence belongs in the ADR?</h4><p>Trade-offs, open gates, caveats and decision evidence without algorithmically choosing a winner.</p></div>
+    </div>
+  </section>
+
+  <section class="report-section">
+    <div class="section-head">
+      <span class="section-head__number">Reading the evidence</span>
+      <h2>How statements in these reports are labelled</h2>
+      <p>Measured facts, derived metrics and candidate structures are deliberately distinguished.</p>
+    </div>
+    <dl class="glossary-grid" id="evidence-key"></dl>
+  </section>
+
+  <section class="report-section">
+    <div class="section-head"><span class="section-head__number">Reference</span><h2>Glossary</h2></div>
+    <dl class="glossary-grid" id="glossary"></dl>
+  </section>
+</main>
+<footer class="site-footer"><div class="site-footer__inner">
+  <p><strong>Confidential — do not publish externally.</strong> This report presents derived analysis of NHS Pathways content.</p>
+  <p>The underlying analytical evidence in <span class="lineage">pathways-analysis/outputs/</span> remains the source of truth.</p>
+</div></footer>
+<script src="js/common.js"></script>
+<script>renderEvidenceKey(document.getElementById('evidence-key'));renderGlossary(document.getElementById('glossary'));</script>
+</body>
+</html>

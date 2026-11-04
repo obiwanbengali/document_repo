@@ -1,0 +1,141 @@
+# Phase 3 — architecture sizing and benchmark assumptions
+#
+# This file contains modelling assumptions, not measured NHS Pathways facts.
+# Every value must remain visible and changeable so sensitivity analysis can show
+# how conclusions move when an assumption changes.
+
+phase3:
+  status: started
+  candidate_family_status: provisional
+  candidate_family_note: >
+    Use the current Phase 2 analytical candidate family set as the sizing baseline.
+    These families are not clinically endorsed. Phase 2 will be revisited with a
+    clinician-led grouping approach after the first Phase 3 comparison, and affected
+    Phase 3 calculations will then be re-run.
+
+representations:
+  literal_monolith:
+    label: "Literal monolith"
+    variable_identity: "pathway_order_occurrence"
+    description: >
+      Treat each answerable Tx occurrence at a pathway/order position as its own
+      candidate Bayesian variable. This is a structural upper-bound representation,
+      not a claim that a production BN should copy the deterministic graph literally.
+
+  deduplicated_monolith:
+    label: "Question-ID deduplicated monolith"
+    variable_identity: "question_id"
+    description: >
+      Represent each distinct QuestionID once across the estate. This measures the
+      effect of technical reuse already present in Pathways. It is not clinical
+      semantic normalisation: two different QuestionIDs that clinicians judge
+      equivalent remain separate.
+
+  provisional_federated:
+    label: "Provisional federated / hierarchical"
+    variable_identity: "question_id_per_candidate_family"
+    description: >
+      Size each current Phase 2 candidate family using distinct QuestionIDs within
+      that family. Shared questions may therefore appear in more than one family.
+      Shared-core and cross-family treatment will be modelled explicitly rather than
+      assumed away.
+
+future_sensitivity:
+  clinically_normalised:
+    enabled: false
+    reason: >
+      Requires a clinician-approved equivalence map showing which distinct Pathways
+      questions or concepts are clinically the same. Phase 3 will keep this as a
+      future sensitivity scenario rather than fabricate that mapping.
+
+cpt_sizing:
+  probability_storage_bytes: [4, 8]
+  default_state_cardinality_method: "observed_answer_count"
+  parent_count_scenarios: [1, 2, 3, 4, 5, 6]
+  note: >
+    CPT entry counts depend on child state count and the product of parent state
+    counts. Parent-count scenarios are sensitivity cases until a Bayesian DAG
+    transformation has been defined.
+
+benchmarking:
+  random_seed: 42
+  repetitions: 30
+  warmup_runs: 5
+  evidence_updates: [1, 5, 10, 15]
+  concurrency_scenarios: [1, 10, 50, 100]
+
+  # Phase 3C uses structurally controlled synthetic DAGs. These are benchmark shapes,
+  # not inferred clinical dependency structures.
+  topology: "rolling_window_dag"
+  variable_count_steps: [25, 50, 100, 250]
+  parent_count_cases: [1, 2, 3]
+  state_cases: ["median", "p90"]
+  max_benchmark_variables: 250
+  max_cpt_entries_per_variable: 250000
+  max_total_cpt_entries: 5000000
+  query_evidence_count: 5
+
+  note: >
+    Synthetic probability values are permitted for computational benchmarks only.
+    Benchmark results must never be described as clinical model performance. Exact
+    inference performance depends strongly on topology and treewidth, so benchmark
+    topology and parent count must always be reported alongside latency.
+
+runtime_architecture:
+  service_boundary: "centralised_inference_service"
+  session_state: "externalised_from_model_worker"
+  routing_owner: "inference_service"
+  deployment_patterns:
+    - monolith_always_resident
+    - federated_all_resident
+    - federated_lazy_loaded
+    - hierarchical_shared_core
+  principles:
+    - "Logical BN architecture and service deployment architecture are separate decisions."
+    - "Federated BNs do not imply one microservice per family."
+    - "A monolithic BN may still be horizontally replicated across workers."
+    - "Cross-family fan-out must be explicit and observable, not hidden inside routing."
+    - "Model version, family version and shared-core version must be traceable per assessment."
+
+infrastructure_cost:
+  platform_assumption: "ecs_fargate"
+  target_region: "eu-west-2"
+  pricing_basis_region: "us-east-1"
+  pricing_status: "illustrative_only_pending_eu-west-2_refresh"
+  pricing_source: "AWS Fargate public pricing example, checked 2026-09-22"
+  hours_per_month: 730
+  high_availability_min_tasks: 2
+  task_cpu_vcpu: 2
+  task_memory_gb: 8
+  target_utilisation: 0.65
+  assessments_per_month_scenarios: [100000, 1000000, 5000000]
+  average_inference_seconds_assumption: 0.25
+  peak_multiplier: 5
+  load_balancer_monthly_allowance_usd: 25
+  observability_monthly_allowance_usd: 50
+  artefact_storage_monthly_allowance_usd: 5
+
+  # Current AWS public Fargate page exposes these Linux/X86 US East (N. Virginia)
+  # example rates. They are used only to exercise the cost model until Commercial /
+  # FinOps supplies the agreed eu-west-2 rate card.
+  fargate_linux_x86:
+    vcpu_per_hour_usd: 0.0404784
+    memory_gb_per_hour_usd: 0.004446
+
+adr:
+  status: "draft"
+  decision_gate_requires:
+    - phase3a
+    - phase3b
+    - phase3c
+    - phase3d
+    - phase3e
+  clinical_family_review_required_before_final: true
+  cost_region_refresh_required_before_final: true
+
+evidence_classes:
+  - measured
+  - derived
+  - assumption
+  - benchmark
+  - architectural_interpretation

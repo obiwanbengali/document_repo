@@ -1,0 +1,13 @@
+ParentCount,StateCase,AssumedChildStates,AssumedParentStatesEach,CptEntriesPerVariable,EvidenceClass
+1,median_state_cardinality,3,3,9,assumption
+1,p90_state_cardinality,4,4,16,assumption
+2,median_state_cardinality,3,3,27,assumption
+2,p90_state_cardinality,4,4,64,assumption
+3,median_state_cardinality,3,3,81,assumption
+3,p90_state_cardinality,4,4,256,assumption
+4,median_state_cardinality,3,3,243,assumption
+4,p90_state_cardinality,4,4,1024,assumption
+5,median_state_cardinality,3,3,729,assumption
+5,p90_state_cardinality,4,4,4096,assumption
+6,median_state_cardinality,3,3,2187,assumption
+6,p90_state_cardinality,4,4,16384,assumption

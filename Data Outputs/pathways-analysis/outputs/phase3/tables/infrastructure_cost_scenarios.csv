@@ -1,0 +1,13 @@
+PatternId,AssessmentsPerMonth,RequiredTasks,FargateComputeMonthlyUsd,FixedPlatformAllowancesMonthlyUsd,TotalIllustrativeMonthlyUsd,IllustrativeCostPer1000AssessmentsUsd,PricingTargetRegion,PricingBasisRegion,PricingStatus,EvidenceClass
+monolith_always_resident,100000,2,170.13,80.0,250.13,2.5013,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+federated_all_resident,100000,2,170.13,80.0,250.13,2.5013,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+federated_lazy_loaded,100000,2,170.13,80.0,250.13,2.5013,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+hierarchical_shared_core,100000,2,170.13,80.0,250.13,2.5013,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+monolith_always_resident,1000000,2,170.13,80.0,250.13,0.2501,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+federated_all_resident,1000000,2,170.13,80.0,250.13,0.2501,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+federated_lazy_loaded,1000000,2,170.13,80.0,250.13,0.2501,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+hierarchical_shared_core,1000000,2,170.13,80.0,250.13,0.2501,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+monolith_always_resident,5000000,2,170.13,80.0,250.13,0.05,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+federated_all_resident,5000000,3,255.19,80.0,335.19,0.067,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+federated_lazy_loaded,5000000,3,255.19,80.0,335.19,0.067,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived
+hierarchical_shared_core,5000000,5,425.32,80.0,505.32,0.1011,eu-west-2,us-east-1,illustrative_only_pending_eu-west-2_refresh,assumption+derived

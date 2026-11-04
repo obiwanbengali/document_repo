@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Revised ENT — Family Journey &amp; Boundary Analysis</title>
+<link rel="stylesheet" href="css/report.css">
+<style>
+.metric-grid-revised{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin:1.25rem 0}
+.metric-card-revised{border:1px solid var(--rule);border-radius:var(--radius);padding:1rem;background:var(--surface-raised)}
+.metric-card-revised strong{display:block;font-size:1.8rem;line-height:1.15;margin:.2rem 0}
+.metric-card-revised small{display:block;color:var(--ink-muted);margin-top:.4rem}
+.data-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.data-table th,.data-table td{padding:.65rem;border-bottom:1px solid var(--rule);vertical-align:top;text-align:left}
+.data-table th{position:sticky;top:0;background:var(--surface-raised);z-index:1}
+.table-wrap{overflow:auto;max-height:720px;border:1px solid var(--rule);border-radius:var(--radius)}
+.pill{display:inline-block;padding:.15rem .45rem;border:1px solid var(--rule-strong);border-radius:999px;margin:.1rem .15rem .1rem 0;font-size:.78rem}
+.metric-unavailable{font-size:1.05rem!important;color:var(--ink-muted)}
+</style>
+</head>
+<body>
+<div class="confidentiality-banner" data-confidentiality><strong>Confidential.</strong> Contains derived NHS Pathways analysis.</div>
+<header class="site-header"><div class="site-header__inner">
+<p class="site-header__title"><a href="index.html">NHS Pathways Bayesian architecture investigation</a></p>
+<nav class="site-nav" aria-label="Report sections">
+<a href="index.html">Overview</a>
+<a href="phase1.html">Estate structure</a>
+<a href="phase2.html">Family discovery</a>
+<a href="phase3.html">Architecture comparison</a>
+<a href="ent.html">ENT family</a>
+<a href="revised-ent.html" aria-current="page">Revised ENT</a>
+</nav></div></header>
+
+<main id="report">
+<div class="page-intro">
+<p class="page-intro__eyebrow">Revised ENT Family Investigation</p>
+<h1>Revised ENT — journey coverage and family-boundary analysis</h1>
+<p class="page-intro__question">How much observed 111 Online activity can this 22-pathway family cover end to end, and where can journeys leave the supported boundary?</p>
+<p class="lede">This report uses the revised, explicitly supplied ENT pathway membership. It separates two kinds of evidence: observed 111 Online journey behaviour where journey data is supplied, and potential Pathways endpoints derived from the deterministic pathway structure.</p>
+<p class="page-meta">Generated <span data-meta-generated>—</span>. <span data-meta-scope></span></p>
+</div>
+
+<div id="load-status" class="loading">Loading Revised ENT evidence…</div>
+
+<section class="report-section" hidden>
+<div class="section-head"><span class="section-head__number">Family definition</span><h2>Revised ENT scope</h2><p>The membership below is authoritative for this report; it is not inferred from titles, clinical areas or clustering.</p></div>
+<div id="family-summary" class="callout callout--prominent"></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>Pathway ID</th><th>Pathway title</th><th>Status</th></tr></thead><tbody id="membership-body"></tbody></table></div>
+</section>
+
+<section class="report-section" hidden>
+<div class="section-head"><span class="section-head__number">111 Online journey evidence</span><h2>Coverage and end-to-end completion</h2><p>All percentages use observed journeys that start in one of the Revised ENT pathways as their denominator, except coverage, which uses all journeys in the supplied dataset.</p></div>
+<div id="journey-warning"></div>
+<div class="metric-grid-revised" id="journey-metrics"></div>
+<div class="callout"><span class="callout__label">How the measures relate</span><p><strong>E2E completion within group</strong> means the final observed pathway is in Revised ENT. It is then split into journeys that never leave Revised ENT and journeys that temporarily leave to an unsupported pathway before returning. <strong>Finish with handover out of scope</strong> is the complementary case where the final observed pathway is outside the family.</p></div>
+</section>
+
+<section class="report-section" hidden>
+<div class="section-head"><span class="section-head__number">Boundary decision view</span><h2>Where does Revised ENT connect to the rest of Pathways?</h2><p>This is the decision-level view: which ENT pathways are boundary hotspots, how many external pathways feed them, and how many external pathways they hand over to.</p></div>
+<div id="boundary-summary" class="metric-grid-revised"></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>ENT pathway</th><th>Boundary role</th><th>Ingress from outside ENT</th><th>Egress outside ENT</th><th>Internal connectivity</th><th>Disposition points</th></tr></thead><tbody id="boundary-body"></tbody></table></div>
+</section>
+
+<section class="report-section" hidden>
+<div class="section-head"><span class="section-head__number">Ingress</span><h2>Exactly which pathways enter Revised ENT?</h2><p>Each row is an external-pathway → ENT-pathway relationship. Expand to the detailed transfer table below to see the source order, question reference, answer number, T1-T4 branch and exact target order.</p></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>External source</th><th>ENT target</th><th>Transfer points</th><th>Source orders</th><th>Target orders</th><th>Question refs</th></tr></thead><tbody id="ingress-pair-body"></tbody></table></div>
+<details class="methodology"><summary>Show every ingress transfer point</summary><div class="table-wrap"><table class="data-table"><thead><tr><th>Source pathway</th><th>Source order</th><th>Question</th><th>Answer</th><th>Branch</th><th>ENT target</th><th>Target order</th><th>Raw transfer</th></tr></thead><tbody id="ingress-route-body"></tbody></table></div></details>
+</section>
+
+<section class="report-section" hidden>
+<div class="section-head"><span class="section-head__number">Egress</span><h2>Exactly where does Revised ENT hand over out of scope?</h2><p>Each row is an ENT-pathway → external-pathway relationship. This is the key evidence for deciding whether the proposed family boundary is acceptable or whether specific neighbouring pathways need to be brought into scope.</p></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>ENT source</th><th>External target</th><th>Transfer points</th><th>Source orders</th><th>Target orders</th><th>Question refs</th></tr></thead><tbody id="egress-pair-body"></tbody></table></div>
+<details class="methodology"><summary>Show every egress transfer point</summary><div class="table-wrap"><table class="data-table"><thead><tr><th>ENT source</th><th>Source order</th><th>Question</th><th>Answer</th><th>Branch</th><th>External target</th><th>Target order</th><th>Raw transfer</th></tr></thead><tbody id="egress-route-body"></tbody></table></div></details>
+</section>
+
+<section class="report-section" hidden>
+<div class="section-head"><span class="section-head__number">Potential endpoints</span><h2>All potential end points from Revised ENT</h2><p>Pathway handovers and dispositions are deliberately separated. A handover means the family boundary has been crossed; a disposition means the deterministic journey can terminate without another pathway.</p></div>
+<div id="endpoint-summary" class="metric-grid-revised"></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>Endpoint type</th><th>Endpoint</th><th>Name / title</th><th>ENT source pathways</th><th>Transfer points</th></tr></thead><tbody id="endpoint-body"></tbody></table></div>
+</section>
+
+<section class="report-section" hidden>
+<div class="section-head"><span class="section-head__number">Internal connectivity</span><h2>Transfers that remain inside Revised ENT</h2><p>These show the internal pathway-to-pathway routes the proposed family must absorb rather than treat as external handovers.</p></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>Source</th><th>Target</th><th>Transfer points</th></tr></thead><tbody id="internal-body"></tbody></table></div>
+</section>
+
+<section class="report-section" hidden>
+<div class="section-head"><span class="section-head__number">Interpretation</span><h2>Important distinctions</h2></div>
+<ul id="metric-notes"></ul>
+</section>
+</main>
+
+<script src="js/common.js"></script>
+<script src="js/revised-ent.js"></script>
+</body>
+</html>

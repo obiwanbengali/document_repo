@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Estate Structure — Understanding NHS Pathways</title>
+<link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+
+<div class="confidentiality-banner" data-confidentiality>
+  <strong>Confidential.</strong>
+  Contains derived NHS Pathways analysis. Handle according to programme information
+  governance requirements.
+</div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <p class="site-header__title"><a href="index.html">NHS Pathways architecture investigation</a></p>
+    <nav class="site-nav" aria-label="Report sections">
+      <a href="index.html">Overview</a>
+      <a href="phase1.html">Estate structure</a>
+      <a href="phase2.html">Family discovery</a>
+      <a href="phase3.html">Architecture comparison</a>
+      <a href="ent.html">ENT family</a>
+      <a href="revised-ent.html">Revised ENT</a>
+    </nav>
+  </div>
+</header>
+
+<main id="report">
+
+  <div class="page-intro">
+    <p class="page-intro__eyebrow">Estate Structure Investigation</p>
+    <h1>Understanding NHS Pathways</h1>
+    <p class="page-intro__question">"What does NHS Pathways actually look like?"</p>
+    <p class="lede">
+      It is tempting to picture NHS Pathways as several hundred separate assessment flows,
+      each self-contained. The data says otherwise. Questions are shared between pathways,
+      pathways hand assessments over to one another, and the same outcomes are reached from
+      many different starting points.
+    </p>
+    <p>
+      What the estate actually forms is a single connected clinical decision structure. That
+      matters for any design decision that follows: a structure with this much sharing and
+      cross-referral behaves very differently from a collection of independent parts.
+    </p>
+    <p>
+      Estate Structure investigation measures that structure and nothing more. It draws no conclusions about how a
+      model should be built.
+    </p>
+    <p class="page-meta">
+      Generated <span data-meta-generated>—</span> from a read-only extract of the Pathways
+      dataset. <span data-meta-scope></span>
+    </p>
+  </div>
+
+  <div id="load-status" class="loading">Loading report data…</div>
+
+  <!-- Executive summary -->
+  <section class="report-section report-section--executive" id="section-executive" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Executive summary</span>
+      <h2>What senior readers need to know</h2>
+      <p>A short synthesis of the evidence before the detailed analysis.</p>
+    </div>
+    <div class="callout callout--prominent" id="phase1-executive-summary"></div>
+  </section>
+
+  <!-- 1. Estate at a glance -->
+  <section class="report-section" id="section-estate" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 1</span>
+      <h2>The estate at a glance</h2>
+      <p>
+        These are direct counts from the Pathways dataset. Nothing here is calculated or
+        inferred, other than the pathway-to-pathway link count, which is derived by
+        resolving each recorded transfer instruction to the pathway it points at.
+      </p>
+    </div>
+    <div class="card-grid" id="estate-cards"></div>
+    <div id="estate-lineage"></div>
+  </section>
+
+  <!-- 2. Pathway size -->
+  <section class="report-section" id="section-size" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 2</span>
+      <h2>How large are pathways?</h2>
+      <p>
+        A pathway's size is the number of questions it can ask. This is not the number a
+        patient would be asked: most assessments take a short route through a pathway, and
+        the questions available depend on the answers given. It is the size of the content
+        that has to exist.
+      </p>
+      <p>
+        Size varies enormously, and that variation is the point: a design sized around the
+        typical pathway would not accommodate the largest ones.
+      </p>
+    </div>
+    <div class="card-grid" id="size-cards"></div>
+    <div id="size-figure"></div>
+  </section>
+
+  <!-- 3. Reuse -->
+  <section class="report-section" id="section-reuse" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 3</span>
+      <h2>How much content is reused?</h2>
+      <p>
+        The same clinical question often appears in many pathways. Rather than each pathway
+        having its own private set of questions, the estate draws on a shared catalogue.
+      </p>
+      <p>
+        This is worth measuring because it describes how separable the estate is. Heavily
+        shared content has to be accounted for by any design — held once, or repeated
+        wherever it is used. Estate Structure investigation measures the sharing; it does not say which approach
+        is better.
+      </p>
+    </div>
+    <div class="card-grid" id="reuse-cards"></div>
+    <div id="reuse-figure"></div>
+    <div id="discriminator-figure"></div>
+  </section>
+
+  <!-- 4. Connectivity -->
+  <section class="report-section" id="section-connectivity" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 4</span>
+      <h2>Pathways are connected</h2>
+      <p>
+        There are two kinds of navigation in the data. <strong>Within</strong> a pathway, an
+        answer moves the assessment to another question in the same pathway. Between
+        pathways, an answer can hand the whole assessment over to a different pathway
+        entirely — for example, an assessment that begins with one symptom transferring to
+        the pathway for a more specific problem once that becomes apparent.
+      </p>
+      <p>
+        It is the second kind that shapes the structure of the estate, and it is far more
+        common than one might expect.
+      </p>
+    </div>
+    <div class="card-grid" id="connectivity-cards"></div>
+    <div id="connectivity-figure"></div>
+    <div id="top-connected-figure"></div>
+    <div class="callout" id="hairball-note"></div>
+  </section>
+
+  <!-- 5. Existing groupings -->
+  <section class="report-section" id="section-groupings" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 5</span>
+      <h2>How Pathways is already grouped</h2>
+      <p>
+        The data already carries several classification systems: clinical areas, symptom
+        groups, age bands and trauma tags. Any of these could in principle be a starting
+        point for dividing the estate.
+      </p>
+      <p>
+        Two things complicate that. They overlap — a pathway can belong to several at once —
+        and they were designed for clinical navigation and content management, not for
+        dividing up a computational model. Candidate Family Discovery tests how well each of them actually
+        holds together.
+      </p>
+    </div>
+    <div class="callout" id="groupings-caveat"></div>
+    <div id="clinical-area-figure"></div>
+    <div id="symptom-group-figure"></div>
+    <div id="age-trauma-figures"></div>
+    <div id="coverage-disclosure"></div>
+  </section>
+
+  <!-- 6. What Estate Structure investigation tells us -->
+  <section class="report-section" id="section-tells" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 6</span>
+      <h2>What Estate Structure investigation tells us</h2>
+      <p>Five things the measurements establish, in plain terms.</p>
+    </div>
+    <div class="insight-grid" id="tells-cards"></div>
+  </section>
+
+  <!-- 7. Estate Structure investigation conclusion -->
+  <section class="report-section" id="section-conclusion" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 7</span>
+      <h2>Estate Structure investigation conclusion</h2>
+      <p>The evidence above is brought together here into the conclusion this phase supports.</p>
+    </div>
+    <div class="callout callout--prominent" id="phase1-conclusion"></div>
+  </section>
+
+  <!-- 8. What Estate Structure investigation does not tell us -->
+  <section class="report-section" id="section-limits" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 8</span>
+      <h2>What Estate Structure investigation does <em>not</em> tell us</h2>
+      <p>
+        Being explicit about this matters as much as the findings. Estate Structure investigation is a
+        measurement exercise, and the following questions are outside what a measurement
+        can answer.
+      </p>
+    </div>
+    <ul class="limits-list" id="limits-list"></ul>
+
+    <details class="methodology">
+      <summary>Methodology and technical definitions</summary>
+      <dl class="definition-list" id="methodology"></dl>
+    </details>
+
+    <details class="methodology">
+      <summary>Glossary of terms</summary>
+      <dl class="glossary-grid" id="glossary" style="padding:0 1.5rem 1.5rem"></dl>
+    </details>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>
+      <strong>Confidential — do not publish externally.</strong>
+      Figures on this page are drawn from aggregated extracts of the analytical evidence.
+      The detailed evidence files remain the source of truth; each figure names the file it
+      came from under "Technical detail and data source".
+    </p>
+    <p>Next: <a href="phase2.html">Candidate Family Discovery — Discovering candidate Bayesian families</a>.</p>
+  </div>
+</footer>
+
+<script src="vendor/plotly-cartesian-2.35.2.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/phase1.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Item,Class,Value,Limitation
+Candidate family boundaries,assumption,Current Phase 2 analytical candidate set,Pending clinician-led refinement.
+Literal variable identity,assumption,Pathway/order Tx occurrence,"Upper-bound representation, not a clinical BN design."
+Deduplicated variable identity,assumption,Distinct QuestionID,Does not merge clinically equivalent different QuestionIDs.
+Variable state cardinality,measured,Catalogue answer count,A future clinical BN may encode states differently.
+Bayesian parent count,assumption,"[1, 2, 3, 4, 5, 6]",Sensitivity only until a BN DAG transformation is agreed.
+Federated shared-variable overhead,derived,3203,"Counts variable copies, not memory or runtime coordination cost."

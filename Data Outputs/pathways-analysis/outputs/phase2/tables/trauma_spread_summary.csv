@@ -1,0 +1,5 @@
+Dimension,ClassificationValue,strategy,TaggedPathways,FamiliesContainingValue,FamilyCountTotal,LargestFamilyShare,LargestFamilyId,FamiliesCovering80Percent,DistinctAreaGroups,TopAreaGroups,MeanBetweennessOfTagged,MeanBetweennessOfAllInScope,SpreadReading
+trauma,unspecified,hybrid_a,366,29,34,0.133900,HA_C01_00,11,8,abdomen:10 | chest:6 | back:5 | non specific:5,0.000072,0.000092,"spread: tagged pathways are distributed across many families, consistent with a cross-cutting dimension"
+trauma,non_trauma,hybrid_a,294,13,34,0.275500,HA_C03,5,8,abdomen:73 | non specific:61 | head:49 | face:44,0.000153,0.000092,concentrated: 80% of tagged pathways sit in a small number of families
+trauma,trauma,hybrid_a,131,9,34,0.542000,HA_C00,3,8,back:49 | abdomen:43 | head:40 | lower limb:31,0.000027,0.000092,concentrated: one family holds at least half the tagged pathways
+trauma,trauma_and_non_trauma,hybrid_a,24,10,34,0.250000,HA_C00,6,4,non specific:8 | head:4 | face:2 | abdomen:2,0.000027,0.000092,"spread: tagged pathways are distributed across many families, consistent with a cross-cutting dimension"

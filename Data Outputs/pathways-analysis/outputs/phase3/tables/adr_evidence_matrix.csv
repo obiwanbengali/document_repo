@@ -1,0 +1,4 @@
+Representation,Label,CandidateVariableCount,ReferenceCptEntries,ReferenceCptCase,BenchmarkCoverage,BenchmarkP95MsRange,IllustrativeMonthlyCost1mUsd,CostBasis,EvidenceStatus
+literal_monolith,Literal monolith,47983,3052107,"3 parents, median parent-state cardinality",0.5% max model coverage,3.636-186.868 ms,250.13,Phase 3E scenario model,complete_for_draft
+deduplicated_monolith,Question-ID deduplicated monolith,3787,272916,"3 parents, median parent-state cardinality",6.6% max model coverage,2.348-119.867 ms,250.13,Phase 3E scenario model,complete_for_draft
+provisional_federated,Provisional federated / hierarchical,6990,493695,"3 parents, median parent-state cardinality",100.0% max model coverage,3.337-201.060 ms,250.13-250.13,Phase 3E scenario model,complete_for_draft

@@ -1,0 +1,7 @@
+dimension,pathways_with_any_feature,overlapping_pairs,possible_pairs,percentage_of_pairs_overlapping,median_jaccard,max_jaccard,pairs_at_or_above_0_5
+question,799,187760,318801,58.900000,0.036400,1.000000,1994
+symptom_discriminator,635,151560,201295,75.290000,0.142900,1.000000,6065
+snomed,610,110315,185745,59.390000,0.088200,1.000000,2908
+disposition,719,182782,258121,70.810000,0.200000,1.000000,15308
+clinical_area,376,14915,70500,21.160000,0.250000,1.000000,5139
+graph_relationship,815,42189,331705,12.720000,,,1224

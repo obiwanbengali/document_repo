@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Candidate Family Discovery — Bayesian Families</title>
+<link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+
+<div class="confidentiality-banner" data-confidentiality>
+  <strong>Confidential.</strong>
+  Contains derived NHS Pathways analysis. Handle according to programme information
+  governance requirements.
+</div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <p class="site-header__title"><a href="index.html">NHS Pathways architecture investigation</a></p>
+    <nav class="site-nav" aria-label="Report sections">
+      <a href="index.html">Overview</a>
+      <a href="phase1.html">Estate structure</a>
+      <a href="phase2.html">Family discovery</a>
+      <a href="phase3.html">Architecture comparison</a>
+      <a href="ent.html">ENT family</a>
+      <a href="revised-ent.html">Revised ENT</a>
+    </nav>
+  </div>
+</header>
+
+<main id="report">
+
+  <div class="page-intro">
+    <p class="page-intro__eyebrow">Candidate Family Discovery</p>
+    <h1>Discovering candidate Bayesian families</h1>
+    <p class="page-intro__question">"If federation were chosen, what candidate Bayesian
+      families might exist?"</p>
+    <p class="lede">
+      Instead of one large Bayesian model covering all of NHS Pathways, a federated
+      approach could use several smaller models, each focused on a related area of clinical
+      reasoning. Smaller models are easier to change, test and reason about. The difficulty
+      is deciding where the lines between them should fall.
+    </p>
+    <p>
+      Candidate Family Discovery investigates where those boundaries might exist. It looks for groupings that
+      the data itself suggests, using three independent kinds of evidence, and then measures
+      how well each proposed grouping actually holds together.
+    </p>
+    <p>
+      <strong>Nothing here has been decided.</strong> Every grouping on this page is a
+      candidate. Whether federation is the right approach at all is a Architecture Feasibility & Comparison question, and
+      whether any individual family makes clinical sense is a question for clinical review.
+    </p>
+    <p class="page-meta">
+      Generated <span data-meta-generated>—</span>. <span data-meta-scope></span>
+    </p>
+  </div>
+
+  <div id="load-status" class="loading">Loading report data…</div>
+
+  <!-- Executive summary -->
+  <section class="report-section report-section--executive" id="section-executive" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Executive summary</span>
+      <h2>What senior readers need to know</h2>
+      <p>A short synthesis of the evidence before the detailed analysis.</p>
+    </div>
+    <div class="callout callout--prominent" id="phase2-executive-summary"></div>
+  </section>
+
+  <!-- 1. How we looked for families -->
+  <section class="report-section" id="section-approach" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 1</span>
+      <h2>How we looked for families</h2>
+      <p>
+        Three independent kinds of evidence were used. Keeping them separate matters: when
+        methods that share no assumptions arrive at similar groupings, that agreement is
+        itself evidence. If only one method had been used, its output could not be
+        distinguished from its assumptions.
+      </p>
+    </div>
+
+    <div class="panel-grid" id="evidence-panels"></div>
+
+    <div class="callout callout--prominent" id="graph-warning"></div>
+
+    <div id="method-agreement-figure"></div>
+  </section>
+
+  <!-- 2. Strategy comparison -->
+  <section class="report-section" id="section-strategies" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 2</span>
+      <h2>Comparing the approaches</h2>
+      <p>
+        Fifteen ways of grouping the estate were tested and measured identically. The two
+        qualities that matter pull against each other: a grouping can be
+        <em>recognisable</em> — matching classifications clinicians already use — or
+        <em>self-contained</em>, meaning its pathways mostly refer to each other rather
+        than outside. Few groupings are both.
+      </p>
+    </div>
+
+    <div id="strategy-scatter-figure"></div>
+    <div id="strategy-bars-figure"></div>
+    <div class="callout" id="no-winner-note"></div>
+    <div id="strategy-table"></div>
+  </section>
+
+  <!-- 3. Candidate family explorer -->
+  <section class="report-section" id="section-explorer" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 3</span>
+      <h2>Candidate family explorer</h2>
+      <p>
+        The candidate set presented here is the one that required both kinds of evidence
+        before keeping a group: pathways had to connect to each other <em>and</em> share
+        clinical features. Select a family to see what it contains and how well it holds
+        together.
+      </p>
+      <p>
+        Every measure has an explanation attached — select the
+        <span aria-hidden="true">ⓘ</span> marker beside any label.
+      </p>
+    </div>
+
+    <div class="explorer">
+      <label class="control" for="family-select">
+        Candidate family
+        <select id="family-select"></select>
+      </label>
+      <div class="explorer__panel" id="family-panel"></div>
+    </div>
+    <div id="explorer-lineage"></div>
+  </section>
+
+  <!-- 4. Family overlap -->
+  <section class="report-section" id="section-overlap" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 4</span>
+      <h2>Where candidate families overlap</h2>
+      <p>
+        Candidate families are not cleanly separated. Some hand assessments to each other
+        frequently; some draw on much the same clinical vocabulary. Four different measures
+        of overlap are available, because they can disagree — two families may exchange many
+        assessments while sharing little vocabulary, or the reverse.
+      </p>
+    </div>
+
+    <div id="overlap-figure"></div>
+    <div class="callout callout--prominent" id="overlap-note"></div>
+  </section>
+
+  <!-- 5. Boundary pathways -->
+  <section class="report-section" id="section-boundaries" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 5</span>
+      <h2>Pathways that sit on a boundary</h2>
+      <p>
+        Most pathways sit comfortably inside one candidate family: everything they hand
+        over to, and receive from, is in the same family. Others sit at the edge, and a few
+        connect several families at once. Those are the pathways where the choice of
+        boundary matters most.
+      </p>
+    </div>
+
+    <div class="diagram">
+      <svg viewBox="0 0 760 300" role="img"
+           aria-label="Diagram showing four kinds of pathway position relative to family boundaries: inside one family, touching one other family, sitting on a boundary, and connecting several families.">
+        <!-- Family A -->
+        <ellipse cx="170" cy="150" rx="140" ry="105" fill="#f5f8fd" stroke="#c3c2b7"
+                 stroke-dasharray="5 4"/>
+        <text x="170" y="42" text-anchor="middle" font-size="14" fill="#898781"
+              font-family="system-ui, sans-serif">Family A</text>
+        <!-- Family B -->
+        <ellipse cx="590" cy="150" rx="140" ry="105" fill="#f5f8fd" stroke="#c3c2b7"
+                 stroke-dasharray="5 4"/>
+        <text x="590" y="42" text-anchor="middle" font-size="14" fill="#898781"
+              font-family="system-ui, sans-serif">Family B</text>
+
+        <!-- Links -->
+        <line x1="110" y1="150" x2="170" y2="150" stroke="#c3c2b7" stroke-width="2"/>
+        <line x1="255" y1="120" x2="380" y2="150" stroke="#c3c2b7" stroke-width="2"/>
+        <line x1="255" y1="190" x2="380" y2="150" stroke="#c3c2b7" stroke-width="2"/>
+        <line x1="380" y1="150" x2="505" y2="120" stroke="#c3c2b7" stroke-width="2"/>
+        <line x1="380" y1="150" x2="505" y2="190" stroke="#c3c2b7" stroke-width="2"/>
+        <line x1="380" y1="150" x2="380" y2="60" stroke="#c3c2b7" stroke-width="2"/>
+        <line x1="505" y1="120" x2="645" y2="150" stroke="#c3c2b7" stroke-width="2"/>
+
+        <!-- Pathways inside family A -->
+        <circle cx="110" cy="150" r="13" fill="#cde2fb" stroke="#ffffff" stroke-width="2"/>
+        <circle cx="170" cy="150" r="13" fill="#cde2fb" stroke="#ffffff" stroke-width="2"/>
+        <circle cx="140" cy="210" r="13" fill="#cde2fb" stroke="#ffffff" stroke-width="2"/>
+        <!-- Weak boundary in A -->
+        <circle cx="255" cy="190" r="13" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/>
+        <!-- Strong boundary in A -->
+        <circle cx="255" cy="120" r="13" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+        <!-- Cross-family hub, between the two -->
+        <circle cx="380" cy="150" r="16" fill="#104281" stroke="#ffffff" stroke-width="2"/>
+        <circle cx="380" cy="60" r="10" fill="#cde2fb" stroke="#ffffff" stroke-width="2"/>
+        <text x="380" y="44" text-anchor="middle" font-size="12" fill="#898781"
+              font-family="system-ui, sans-serif">Family C</text>
+        <!-- Pathways in family B -->
+        <circle cx="505" cy="120" r="13" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+        <circle cx="505" cy="190" r="13" fill="#86b6ef" stroke="#ffffff" stroke-width="2"/>
+        <circle cx="645" cy="150" r="13" fill="#cde2fb" stroke="#ffffff" stroke-width="2"/>
+        <circle cx="600" cy="205" r="13" fill="#cde2fb" stroke="#ffffff" stroke-width="2"/>
+      </svg>
+      <div class="diagram__legend">
+        <span><i class="swatch" style="background:#cde2fb"></i> Inside one family</span>
+        <span><i class="swatch" style="background:#86b6ef"></i> Touches one other family</span>
+        <span><i class="swatch" style="background:#2a78d6"></i> Sits on a boundary</span>
+        <span><i class="swatch" style="background:#104281"></i> Connects several families</span>
+      </div>
+    </div>
+
+    <div class="card-grid" id="boundary-cards"></div>
+    <div id="boundary-figure"></div>
+    <div class="callout" id="boundary-note"></div>
+  </section>
+
+  <!-- 6. Shared core -->
+  <section class="report-section" id="section-shared-core" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 6</span>
+      <h2>Content shared across many families</h2>
+      <p>
+        Some questions, symptom discriminators, clinical concepts and outcomes appear in
+        many candidate families at once. If families were built as separate models, this
+        content would have to be either duplicated in each one or held somewhere common.
+      </p>
+    </div>
+
+    <div class="card-grid" id="shared-core-cards"></div>
+    <div id="shared-core-figure"></div>
+    <div class="callout callout--prominent" id="shared-core-note"></div>
+  </section>
+
+  <!-- 7. Routing ambiguity -->
+  <section class="report-section" id="section-routing" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 7</span>
+      <h2>How clearly each pathway belongs to one family</h2>
+      <p>
+        If separate models were used, something would have to decide which model handles an
+        incoming case. This section measures how far that decision can be made from the
+        structure of the data alone.
+      </p>
+      <p>
+        It does not design that mechanism. How routing would actually work in a running
+        system is a Architecture Feasibility & Comparison question.
+      </p>
+    </div>
+
+    <div id="routing-figure"></div>
+    <div id="plausible-figure"></div>
+    <div class="callout" id="routing-note"></div>
+  </section>
+
+  <!-- 8. Merge and split evidence -->
+  <section class="report-section" id="section-merge-split" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 8</span>
+      <h2>Where families might be too broad, or too closely related</h2>
+      <p>
+        Some candidate families are large and might naturally divide. Others overlap enough
+        to raise the question of whether they are really one family. Both were tested by
+        measuring what would happen — dividing or combining the families and recomputing
+        the same measures.
+      </p>
+      <p>
+        <strong>No merge or split is proposed.</strong> These are before-and-after
+        measurements for review, not recommendations.
+      </p>
+    </div>
+
+    <h3>Families that overlap strongly</h3>
+    <div class="callout" id="merge-caveat"></div>
+    <div id="merge-figure"></div>
+    <div id="merge-table"></div>
+
+    <h3>Families large enough to divide</h3>
+    <div class="callout" id="split-caveat"></div>
+    <div id="split-figure"></div>
+    <div id="split-table"></div>
+  </section>
+
+  <!-- 9. Clinical review -->
+  <section class="report-section" id="section-clinical" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 9</span>
+      <h2>What clinical review needs to decide</h2>
+      <p>
+        Structure has taken this analysis as far as it can. The following points cannot be
+        settled by measurement, and the candidate families should not be treated as agreed
+        until they have been.
+      </p>
+    </div>
+
+    <div class="card-grid" id="clinical-cards"></div>
+    <h3>Questions for clinical review</h3>
+    <ul class="limits-list" id="clinical-questions"></ul>
+    <div class="callout" id="review-pack-note"></div>
+  </section>
+
+  <!-- 10. What Candidate Family Discovery tells us -->
+  <section class="report-section" id="section-tells" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 10</span>
+      <h2>What Candidate Family Discovery tells us</h2>
+      <p>What the evidence establishes, in plain terms.</p>
+    </div>
+    <div class="insight-grid" id="tells-cards"></div>
+  </section>
+
+  <!-- 11. Candidate Family Discovery conclusion -->
+  <section class="report-section" id="section-conclusion" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 11</span>
+      <h2>Candidate Family Discovery conclusion</h2>
+      <p>The findings above are synthesised here without selecting an architecture.</p>
+    </div>
+    <div class="callout callout--prominent" id="phase2-conclusion"></div>
+  </section>
+
+  <!-- 12. What Candidate Family Discovery does not tell us -->
+  <section class="report-section" id="section-limits" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 12</span>
+      <h2>What Candidate Family Discovery does <em>not</em> tell us</h2>
+      <p>
+        Candidate Family Discovery produces candidate structures and measures how they hold together. It
+        answers none of the following, and no figure on this page should be read as
+        bearing on them.
+      </p>
+    </div>
+    <ul class="limits-list" id="limits-list"></ul>
+  </section>
+
+  <!-- 13. Next: Architecture Feasibility & Comparison -->
+  <section class="report-section" id="section-next" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Section 13</span>
+      <h2>Next: Architecture Feasibility & Comparison — comparing architectures</h2>
+      <p id="next-description"></p>
+    </div>
+
+    <div class="panel-grid" id="next-options"></div>
+
+    <h3>Measured against</h3>
+    <div class="panel-grid">
+      <div class="panel">
+        <p class="panel__eyebrow">Comparison criteria</p>
+        <ul id="next-criteria"></ul>
+      </div>
+      <div class="panel">
+        <p class="panel__eyebrow">What Architecture Feasibility & Comparison needs from Candidate Family Discovery</p>
+        <ul id="next-inputs"></ul>
+      </div>
+    </div>
+
+    <details class="methodology">
+      <summary>Methodology and technical definitions</summary>
+      <dl class="definition-list" id="methodology"></dl>
+    </details>
+
+    <details class="methodology">
+      <summary>Configuration used to produce this evidence</summary>
+      <div class="disclosure__body">
+        <p id="config-note"></p>
+        <div id="config-table"></div>
+      </div>
+    </details>
+
+    <details class="methodology">
+      <summary>Glossary of terms</summary>
+      <dl class="glossary-grid" id="glossary" style="padding:0 1.5rem 1.5rem"></dl>
+    </details>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>
+      <strong>Confidential — do not publish externally.</strong>
+      Figures on this page are drawn from aggregated extracts of the analytical evidence.
+      The detailed evidence files remain the source of truth; each figure names the file it
+      came from under "Technical detail and data source".
+    </p>
+    <p>
+      Previous: <a href="phase1.html">Estate Structure investigation — Understanding NHS Pathways</a>.
+      Next: <a href="phase3.html">Architecture Feasibility & Comparison — Comparing architectures</a> (not yet started).
+    </p>
+  </div>
+</footer>
+
+<script src="vendor/plotly-cartesian-2.35.2.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/phase2.js"></script>
+</body>
+</html>

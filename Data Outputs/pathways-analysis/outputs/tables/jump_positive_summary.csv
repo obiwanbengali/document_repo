@@ -1,0 +1,15 @@
+metric,value
+positive_jump_rows,110728.000000
+forward_jumps,81651.000000
+backward_jumps,29077.000000
+self_jumps,0.000000
+unresolved_target_order_numbers,0.000000
+abs_jump_distance_count,110728.000000
+abs_jump_distance_min,5.000000
+abs_jump_distance_mean,3985.007600
+abs_jump_distance_median,500.000000
+abs_jump_distance_p75,3000.000000
+abs_jump_distance_p90,11300.000000
+abs_jump_distance_p95,18900.000000
+abs_jump_distance_p99,40900.000000
+abs_jump_distance_max,314700.000000

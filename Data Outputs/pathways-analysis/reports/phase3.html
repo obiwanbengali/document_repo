@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Architecture Feasibility & Comparison</title>
+<link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+
+<div class="confidentiality-banner" data-confidentiality>
+  <strong>Confidential.</strong>
+  Contains derived NHS Pathways analysis. Handle according to programme information
+  governance requirements.
+</div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <p class="site-header__title"><a href="index.html">NHS Pathways architecture investigation</a></p>
+    <nav class="site-nav" aria-label="Report sections">
+      <a href="index.html">Overview</a>
+      <a href="phase1.html">Estate structure</a>
+      <a href="phase2.html">Family discovery</a>
+      <a href="phase3.html">Architecture comparison</a>
+      <a href="ent.html">ENT family</a>
+      <a href="revised-ent.html">Revised ENT</a>
+    </nav>
+  </div>
+</header>
+
+<main id="report">
+
+  <div class="page-intro">
+    <p class="page-intro__eyebrow">Architecture Feasibility &amp; Comparison</p>
+    <h1>Comparing architectures</h1>
+    <p class="page-intro__question">"How large, fast, scalable and costly would the
+      candidate architectures be?"</p>
+    <p class="lede">
+      Phases 1 and 2 established what the estate contains and where its natural
+      boundaries might lie. Architecture Feasibility & Comparison asks the question that decides the design: are the
+      candidate architectures different enough, in size, speed, operability or cost, for
+      the choice to be made on technical grounds?
+    </p>
+    <p>
+      Three options are compared on identical terms — one model following the content as
+      written, one model with duplicate questions represented once, and several smaller
+      models based on the Candidate Family Discovery candidate families.
+    </p>
+    <p class="page-meta">
+      Generated <span data-meta-generated>—</span>. <span data-meta-scope></span>
+    </p>
+  </div>
+
+  <div id="load-status" class="loading">Loading report data…</div>
+
+  <!-- Executive summary -->
+  <section class="report-section" id="section-summary" hidden>
+    <div class="section-head">
+      <span class="section-head__number">In brief</span>
+      <h2 id="exec-headline"></h2>
+    </div>
+    <ul class="limits-list" id="exec-points"></ul>
+    <div class="callout">
+      <span class="callout__label">Bottom line</span>
+      <p id="exec-bottom-line"></p>
+    </div>
+  </section>
+
+  <!-- 1. Status -->
+  <section class="report-section" id="section-status" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Decision status</span>
+      <h2>Where Architecture Feasibility & Comparison has reached</h2>
+      <p>
+        Architecture Feasibility & Comparison ran in six stages: sizing the three options, modelling how their
+        probability tables grow, measuring inference speed, setting out deployment
+        patterns, costing them, and assembling the evidence into a draft decision record.
+      </p>
+      <p>
+        Status: <strong id="status-headline"></strong>
+      </p>
+    </div>
+    <div class="card-grid" id="status-cards"></div>
+    <div class="insight-grid" id="gate-list"></div>
+    <div class="callout" id="status-note"></div>
+    <div class="callout callout--prominent">
+      <span class="callout__label">Important caveat on everything below</span>
+      <p>
+        Architecture Feasibility & Comparison uses the Candidate Family Discovery candidate families as a <strong>provisional analytical
+        baseline</strong>. Those families have not been through clinical review. Every
+        figure on this page relating to several smaller models inherits that caveat, and
+        will change once the family boundaries are settled clinically.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. The three options -->
+  <section class="report-section" id="section-representations" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Representation sizing</span>
+      <h2>How large would each option be?</h2>
+      <p>
+        The three options differ in one respect only: what counts as the same question
+        appearing more than once. The same clinical question can appear in dozens of
+        pathways, so that single choice changes the size of the model by more than
+        anything else in this analysis.
+      </p>
+    </div>
+    <div id="representation-figure"></div>
+    <div class="callout callout--prominent" id="representation-caveat"></div>
+    <div id="representation-table"></div>
+  </section>
+
+  <!-- 3. Probability tables -->
+  <section class="report-section" id="section-cpt" hidden>
+    <div class="section-head">
+      <span class="section-head__number">CPT growth</span>
+      <h2>How much probability data would each option hold?</h2>
+      <p>
+        A Bayesian model does not just hold variables; it holds a number for every
+        combination of a variable's answers and the answers of the variables it depends
+        on. Add one more dependency and that table multiplies in size rather than adding
+        to it.
+      </p>
+      <p>
+        How many dependencies each variable would have is a clinical modelling decision
+        that has not been taken. The figures below therefore span a deliberate range
+        rather than offering a single estimate.
+      </p>
+    </div>
+    <div id="cpt-figure"></div>
+    <div class="callout callout--prominent" id="cpt-caveat"></div>
+    <div id="cpt-table"></div>
+  </section>
+
+  <!-- 4. Benchmark -->
+  <section class="report-section" id="section-benchmark" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Inference benchmarking</span>
+      <h2>How fast would each option answer?</h2>
+      <p>
+        Models were built and timed for each option under controlled conditions. The
+        important qualifier is how much of a real model each tested model represented —
+        stated on the chart, because it governs how far the timings can be trusted.
+      </p>
+    </div>
+    <div class="callout callout--prominent" id="benchmark-warning"></div>
+    <div id="benchmark-figure"></div>
+    <div id="benchmark-table"></div>
+  </section>
+
+  <!-- 5. Runtime patterns -->
+  <section class="report-section" id="section-runtime" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Runtime architecture</span>
+      <h2>How would each option actually be deployed?</h2>
+      <p>
+        "Several smaller models" is a statement about the model, not about the running
+        system. Those models could sit inside a single service, or be spread across many.
+        Four deployment patterns are carried forward so that cost and operational risk
+        attach to a concrete shape.
+      </p>
+    </div>
+    <div class="callout" id="runtime-key-point"></div>
+    <div class="panel-grid" id="runtime-patterns"></div>
+    <div id="runtime-tables"></div>
+  </section>
+
+  <!-- 6. Cost -->
+  <section class="report-section" id="section-cost" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Infrastructure &amp; cost</span>
+      <h2>What would each option cost to run?</h2>
+      <p>
+        Modelled monthly compute cost for each deployment pattern, across a range of
+        assessment volumes. These are scenarios built on stated assumptions, intended for
+        comparing the patterns against each other.
+      </p>
+    </div>
+    <div class="callout callout--prominent" id="cost-caveat"></div>
+    <div id="cost-figure"></div>
+    <div id="cost-table"></div>
+  </section>
+
+  <!-- 7. Trade-offs -->
+  <section class="report-section" id="section-decision" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Decision synthesis</span>
+      <h2>What each option costs you, and what it buys</h2>
+      <p>
+        Every option has a genuine strength and a genuine price for it. Presented side by
+        side so the trade-off is explicit rather than buried in a recommendation.
+      </p>
+    </div>
+    <div class="panel-grid" id="tradeoff-panels"></div>
+    <div class="callout callout--prominent" id="no-recommendation"></div>
+    <div id="decision-table"></div>
+  </section>
+
+  <!-- 8. What Architecture Feasibility & Comparison tells us -->
+  <section class="report-section" id="section-tells" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Evidence synthesis</span>
+      <h2>What Architecture Feasibility & Comparison tells us</h2>
+      <p>What the evidence establishes, in plain terms.</p>
+    </div>
+    <div class="insight-grid" id="tells-cards"></div>
+  </section>
+
+  <!-- 9. What Architecture Feasibility & Comparison does not tell us -->
+  <section class="report-section" id="section-limits" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Limits and open questions</span>
+      <h2>What Architecture Feasibility & Comparison does <em>not</em> tell us</h2>
+      <p>
+        Architecture Feasibility & Comparison assembles the comparison. It does not close the decision, and the
+        following should not be read out of it.
+      </p>
+    </div>
+    <ul class="limits-list" id="limits-list"></ul>
+  </section>
+
+  <!-- 10. Conclusion -->
+  <section class="report-section" id="section-conclusion" hidden>
+    <div class="section-head">
+      <span class="section-head__number">Next evidence cycle</span>
+      <h2>Conclusion</h2>
+    </div>
+    <div id="conclusion-body"></div>
+    <div class="callout">
+      <span class="callout__label">The question this leaves</span>
+      <p id="conclusion-question"></p>
+    </div>
+    <div class="callout callout--prominent">
+      <span class="callout__label">Status of the decision record</span>
+      <p id="conclusion-status"></p>
+    </div>
+
+    <div class="flow" role="list" aria-label="Remaining steps">
+      <div class="flow__step" role="listitem">Clinical review of the candidate families</div>
+      <div class="flow__arrow" aria-hidden="true">↓</div>
+      <div class="flow__step" role="listitem">Re-run the affected Architecture Feasibility & Comparison calculations</div>
+      <div class="flow__arrow" aria-hidden="true">↓</div>
+      <div class="flow__step flow__step--pending" role="listitem">
+        Architecture Decision Record
+      </div>
+    </div>
+
+    <details class="methodology">
+      <summary>Methodology, definitions and stated assumptions</summary>
+      <dl class="definition-list" id="methodology"></dl>
+    </details>
+
+    <details class="methodology">
+      <summary>Glossary of terms</summary>
+      <dl class="glossary-grid" id="glossary" style="padding:0 1.5rem 1.5rem"></dl>
+    </details>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>
+      <strong>Confidential — do not publish externally.</strong>
+      Figures on this page are drawn from aggregated extracts of the analytical evidence.
+      The detailed evidence files remain the source of truth; each figure names the file
+      it came from under "Technical detail and data source".
+    </p>
+    <p>
+      Previous: <a href="phase2.html">Candidate Family Discovery — Discovering candidate Bayesian families</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="vendor/plotly-cartesian-2.35.2.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/phase3.js"></script>
+</body>
+</html>

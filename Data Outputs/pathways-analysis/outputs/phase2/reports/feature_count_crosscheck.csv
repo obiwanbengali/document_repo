@@ -1,0 +1,5 @@
+dimension,python_features,sql_features,features_with_mismatched_pathway_count,agrees
+question,3787,3787,0,True
+symptom_discriminator,469,469,0,True
+snomed,297,297,0,True
+disposition,194,194,0,True

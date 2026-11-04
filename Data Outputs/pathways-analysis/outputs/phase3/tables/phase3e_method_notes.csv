@@ -1,0 +1,6 @@
+Item,EvidenceClass,Statement
+Production traffic,assumption,"Monthly assessment volumes and peak multiplier are scenarios, not measured 111/999 production traffic."
+Inference duration,assumption,average_inference_seconds_assumption is used for capacity until the repaired Phase 3C benchmark can provide an observed throughput basis.
+Federated fan-out,derived,"Family fan-out is a lower bound derived from Phase 2 plausible-family percentages. It is structural evidence, not case-frequency evidence."
+AWS rate,external+assumption,The checked-in Fargate rate is the AWS public Linux/x86 us-east-1 example rate. Absolute costs remain illustrative until the agreed eu-west-2 rate card is refreshed.
+Excluded services,assumption,"ALB, observability and artefact storage use explicit monthly allowances. NAT/data transfer, WAF, KMS, ECR, backup and organisational shared-service charges are not yet itemised."

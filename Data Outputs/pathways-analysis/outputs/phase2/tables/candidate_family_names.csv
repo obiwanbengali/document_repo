@@ -1,0 +1,35 @@
+FamilyId,FamilyName,FamilyNameBasis,NamingDominanceThreshold
+HA_C00,Family_00,neutral,0.500000
+HA_C02,Family_01,neutral,0.500000
+HA_C03,Family_02,neutral,0.500000
+HA_C04_01,Family_03,neutral,0.500000
+HA_C05,Family_04,neutral,0.500000
+HA_C06,Family_05,neutral,0.500000
+HA_C01_00,Family_06,neutral,0.500000
+HA_C08,Family_07,neutral,0.500000
+HA_C07_00,Family_08,neutral,0.500000
+HA_C10,head,dominant area group (50% of the family's pathways),0.500000
+HA_C01_03,Family_10,neutral,0.500000
+HA_C09,not area specific,dominant clinical area (50% of the family's pathways),0.500000
+HA_C04_00,"Lower Back Injury, Blunt",dominant symptom group (50% of the family's pathways),0.500000
+HA_C11,Family_13,neutral,0.500000
+HA_C01_01,Trauma Emergency,dominant symptom group (100% of the family's pathways),0.500000
+HA_C01_02,Entry pathway,dominant symptom group (100% of the family's pathways),0.500000
+HA_C07_01,Family_16,neutral,0.500000
+HA_C12,Ambulance Dispatch,dominant symptom group (100% of the family's pathways),0.500000
+HA_C13,Family_18,neutral,0.500000
+HA_C14,Family_19,neutral,0.500000
+HA_C16,Family_20,neutral,0.500000
+HA_C17,Family_21,neutral,0.500000
+HA_C18,Family_22,neutral,0.500000
+HA_C19,Family_23,neutral,0.500000
+HA_C20,Family_24,neutral,0.500000
+HA_C21,Family_25,neutral,0.500000
+HA_C22,Family_26,neutral,0.500000
+HA_C23,Family_27,neutral,0.500000
+HA_C24,Family_28,neutral,0.500000
+HA_C25,Family_29,neutral,0.500000
+HA_C38,Repeat Prescription (HA_C38),dominant symptom group (100% of the family's pathways); family id appended because another family shares the same dominant value,0.500000
+HA_C41,Repeat Prescription (HA_C41),dominant symptom group (100% of the family's pathways); family id appended because another family shares the same dominant value,0.500000
+HA_C48,Family_32,neutral,0.500000
+HA_C49,Family_33,neutral,0.500000

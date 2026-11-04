@@ -1,0 +1,7075 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "generated_utc": "2026-09-24T06:04:59.171515+00:00",
+    "confidentiality": "Contains derived NHS Pathways analysis and pathway titles. Handle according to programme information governance requirements.",
+    "scope_note": "Provisional ENT family definition for architecture and clinical review; not a clinically approved family boundary."
+  },
+  "definition": {
+    "family": "ENT",
+    "long_name": "Ear, Nose and Throat",
+    "status": "provisional candidate for private beta",
+    "principle": "Start with a conservative core ENT seed, then inspect one-hop inbound and outbound pathway transfers before clinical approval.",
+    "automatic_inclusion_rule": "Include an active pathway when its clinical-area metadata, symptom-group metadata, or pathway title contains an explicit ENT term. Broad overlap terms such as swallowing, dizziness and facial swelling are review-only.",
+    "core_terms": [
+      "ear",
+      "hearing",
+      "tinnitus",
+      "nose",
+      "nasal",
+      "epistaxis",
+      "sinus",
+      "throat",
+      "tonsil",
+      "tonsillar",
+      "larynx",
+      "laryngeal",
+      "pharynx",
+      "pharyngeal",
+      "otolaryng",
+      "ent"
+    ],
+    "review_terms": [
+      "swallow",
+      "dysphagia",
+      "neck swelling",
+      "facial swelling",
+      "dizziness",
+      "vertigo",
+      "jaw"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "title": "Define the core ENT seed",
+      "detail": "Use explicit ENT metadata/title evidence only; do not use graph proximity alone."
+    },
+    {
+      "step": 2,
+      "title": "List every included pathway and why",
+      "detail": "Each inclusion carries the metadata/title evidence that triggered it."
+    },
+    {
+      "step": 3,
+      "title": "Trace outbound jumps",
+      "detail": "Find every transfer from an included ENT pathway to a pathway outside the family."
+    },
+    {
+      "step": 4,
+      "title": "Trace inbound jumps",
+      "detail": "Reverse the graph to find every non-ENT pathway that transfers into the ENT core."
+    },
+    {
+      "step": 5,
+      "title": "Review the boundary",
+      "detail": "Use inbound/outbound evidence to decide what stays external, what is shared evidence and what should be added."
+    },
+    {
+      "step": 6,
+      "title": "Clinical approval before BN build",
+      "detail": "The resulting family boundary is an evidence pack for clinical review, not an automated clinical decision."
+    }
+  ],
+  "summary": {
+    "included_pathways": 65,
+    "review_candidates": 7,
+    "internal_transition_pairs": 42,
+    "outbound_transition_pairs": 179,
+    "inbound_transition_pairs": 95,
+    "internal_transition_count": 890,
+    "outbound_transition_count": 1338,
+    "inbound_transition_count": 708,
+    "unique_outbound_pathways": 86,
+    "unique_inbound_pathways": 46,
+    "heading_counts": {
+      "Cross-cutting ENT": 23,
+      "Ear": 20,
+      "Nose": 17,
+      "Throat": 5
+    }
+  },
+  "included_pathways": [
+    {
+      "pathway_id": "PW1575",
+      "pathway_key": "PW1575",
+      "title": "Bites and Stings",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1580",
+      "pathway_key": "PW1580",
+      "title": "Bites and Stings",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1585",
+      "pathway_key": "PW1585",
+      "title": "Bites and Stings",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1480",
+      "pathway_key": "PW1480",
+      "title": "Burn, Chemical",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW564",
+      "pathway_key": "PW564",
+      "title": "Burn, Chemical",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW566",
+      "pathway_key": "PW566",
+      "title": "Burn, Chemical",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1389",
+      "pathway_key": "PW1389",
+      "title": "Burn, Sun",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW987",
+      "pathway_key": "PW987",
+      "title": "Burn, Sun",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW989",
+      "pathway_key": "PW989",
+      "title": "Burn, Sun",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW580",
+      "pathway_key": "PW580",
+      "title": "Burn, Thermal",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW582",
+      "pathway_key": "PW582",
+      "title": "Burn, Thermal",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW925",
+      "pathway_key": "PW925",
+      "title": "Burn, Thermal",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1868",
+      "pathway_key": "PW1868",
+      "title": "ED Ear Nose Throat Triage",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear, nose, throat"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear",
+          "nose",
+          "throat"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1401",
+      "pathway_key": "PW1401",
+      "title": "Head, Facial or Neck Injury, Blunt",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW684",
+      "pathway_key": "PW684",
+      "title": "Head, Facial or Neck Injury, Blunt",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW686",
+      "pathway_key": "PW686",
+      "title": "Head, Facial or Neck Injury, Blunt",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1403",
+      "pathway_key": "PW1403",
+      "title": "Head, Facial or Neck Injury, Penetrating",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW692",
+      "pathway_key": "PW692",
+      "title": "Head, Facial or Neck Injury, Penetrating",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW694",
+      "pathway_key": "PW694",
+      "title": "Head, Facial or Neck Injury, Penetrating",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PT500",
+      "pathway_key": "PT500",
+      "title": "Reception Point Foreign Body Closure",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "urinary",
+          "group": "abdomen"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "rectum/anus",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        },
+        {
+          "description": "throat",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose, throat"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose",
+          "throat"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1590",
+      "pathway_key": "PW1590",
+      "title": "Scratches, Grazes and Minor Wounds",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1805",
+      "pathway_key": "PW1805",
+      "title": "Unwell Infant",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "urinary",
+          "group": "abdomen"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1758",
+      "pathway_key": "PW1758",
+      "title": "Water Creature Stings",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Cross-cutting ENT",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear, nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear",
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PA219",
+      "pathway_key": "PA219",
+      "title": "Chest or Upper Back Pain Under 35 Years ",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1702",
+      "pathway_key": "PW1702",
+      "title": "Ear Discharge or Ear Wax",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear",
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW654",
+      "pathway_key": "PW654",
+      "title": "Earache",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear",
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW655",
+      "pathway_key": "PW655",
+      "title": "Earache",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear",
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW656",
+      "pathway_key": "PW656",
+      "title": "Earache",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear",
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PEE1",
+      "pathway_key": "PEE1",
+      "title": "Early Exit",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PEE3",
+      "pathway_key": "PEE3",
+      "title": "Early Exit",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PEE4",
+      "pathway_key": "PEE4",
+      "title": "Early Exit",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PA160",
+      "pathway_key": "PA160",
+      "title": "Early Exit - Deceased",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PA107",
+      "pathway_key": "PA107",
+      "title": "Early Exit - Dying",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PA164",
+      "pathway_key": "PA164",
+      "title": "Early Exit - Dying",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PA165",
+      "pathway_key": "PA165",
+      "title": "Early Exit - Dying",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1277",
+      "pathway_key": "PW1277",
+      "title": "Foreign Body, Ear",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear",
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1528",
+      "pathway_key": "PW1528",
+      "title": "Foreign Body, Ear",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear",
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1762",
+      "pathway_key": "PW1762",
+      "title": "Hearing Disturbance or Blocked Ear",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear",
+        "Pathway title has an explicit ENT presentation: ear, hearing"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear",
+          "hearing"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1846",
+      "pathway_key": "PW1846",
+      "title": "PaCCS Service Search",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Pathway title has an explicit ENT presentation: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "ear"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1776",
+      "pathway_key": "PW1776",
+      "title": "Wound Problems",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "eye",
+          "group": "head"
+        },
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1777",
+      "pathway_key": "PW1777",
+      "title": "Wound Problems",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1709",
+      "pathway_key": "PW1709",
+      "title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1710",
+      "pathway_key": "PW1710",
+      "title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "breast",
+          "group": "chest"
+        },
+        {
+          "description": "arm",
+          "group": "upper limb"
+        },
+        {
+          "description": "back",
+          "group": "back"
+        },
+        {
+          "description": "hip & leg",
+          "group": "lower limb"
+        },
+        {
+          "description": "skin and hair",
+          "group": "non specific"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "flank",
+          "group": "back"
+        },
+        {
+          "description": "shoulder",
+          "group": "upper limb"
+        },
+        {
+          "description": "groin",
+          "group": "abdomen"
+        },
+        {
+          "description": "genital",
+          "group": "abdomen"
+        },
+        {
+          "description": "abdomen",
+          "group": "abdomen"
+        },
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "ear",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Ear",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: ear"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "ear"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1319",
+      "pathway_key": "PW1319",
+      "title": "Foreign Body, Nose",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nose"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1529",
+      "pathway_key": "PW1529",
+      "title": "Foreign Body, Nose",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nose"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1854",
+      "pathway_key": "PW1854",
+      "title": "Loss of Taste or Smell",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1226",
+      "pathway_key": "PW1226",
+      "title": "Nasal Congestion",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nasal"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nasal"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1711",
+      "pathway_key": "PW1711",
+      "title": "Nasal Congestion",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nasal"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nasal"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW981",
+      "pathway_key": "PW981",
+      "title": "Nasal Congestion",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nasal"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nasal"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW984",
+      "pathway_key": "PW984",
+      "title": "Nasal Congestion",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nasal"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nasal"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1713",
+      "pathway_key": "PW1713",
+      "title": "Nosebleeds after Injury",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nose"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1730",
+      "pathway_key": "PW1730",
+      "title": "Nosebleeds after Injury",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nose"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1731",
+      "pathway_key": "PW1731",
+      "title": "Nosebleeds after Injury",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nose"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW818",
+      "pathway_key": "PW818",
+      "title": "Nosebleeds without Injury",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nose"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW819",
+      "pathway_key": "PW819",
+      "title": "Nosebleeds without Injury",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nose"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW820",
+      "pathway_key": "PW820",
+      "title": "Nosebleeds without Injury",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: nose"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "nose"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1046",
+      "pathway_key": "PW1046",
+      "title": "Sinusitis (Declared)",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: sinus"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "sinus"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1048",
+      "pathway_key": "PW1048",
+      "title": "Sinusitis (Declared)",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: sinus"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "sinus"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1050",
+      "pathway_key": "PW1050",
+      "title": "Sinusitis (Declared)",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: sinus"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "sinus"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1602",
+      "pathway_key": "PW1602",
+      "title": "Sinusitis (Declared)",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "face",
+          "group": "face"
+        },
+        {
+          "description": "nose",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Nose",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: nose",
+        "Pathway title has an explicit ENT presentation: sinus"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "nose"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "sinus"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW1496",
+      "pathway_key": "PW1496",
+      "title": "Difficulty Swallowing",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "chest",
+          "group": "chest"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        },
+        {
+          "description": "throat",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Throat",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: throat"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "throat"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW1034",
+      "pathway_key": "PW1034",
+      "title": "Object, Ingested or Inhaled",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        },
+        {
+          "description": "throat",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Throat",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: throat"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "throat"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW836",
+      "pathway_key": "PW836",
+      "title": "Object, Ingested or Inhaled",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        },
+        {
+          "description": "neck",
+          "group": "face"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        },
+        {
+          "description": "throat",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Throat",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: throat"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "throat"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": []
+      }
+    },
+    {
+      "pathway_id": "PW856",
+      "pathway_key": "PW856",
+      "title": "Sore Throat",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "mouth",
+          "group": "head"
+        },
+        {
+          "description": "throat",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Throat",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: throat",
+        "Pathway title has an explicit ENT presentation: throat"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "throat"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "throat"
+        ]
+      }
+    },
+    {
+      "pathway_id": "PW854",
+      "pathway_key": "PW854",
+      "title": "Sore Throat or Hoarse Voice",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "mouth",
+          "group": "head"
+        },
+        {
+          "description": "throat",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Throat",
+      "decision": "include",
+      "reasons": [
+        "Existing clinical-area metadata is ENT-specific: throat",
+        "Pathway title has an explicit ENT presentation: throat"
+      ],
+      "evidence": {
+        "clinical_area_terms": [
+          "throat"
+        ],
+        "symptom_group_terms": [],
+        "title_terms": [
+          "throat"
+        ]
+      }
+    }
+  ],
+  "review_candidates": [
+    {
+      "pathway_id": "PW636",
+      "pathway_key": "PW636",
+      "title": "Dizziness or Vertigo",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        }
+      ],
+      "ent_heading": "Other ENT",
+      "decision": "review_not_included",
+      "reasons": [
+        "Potential ENT overlap but not strong enough for automatic inclusion: dizziness, vertigo"
+      ]
+    },
+    {
+      "pathway_id": "PW637",
+      "pathway_key": "PW637",
+      "title": "Dizziness or Vertigo",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        }
+      ],
+      "ent_heading": "Other ENT",
+      "decision": "review_not_included",
+      "reasons": [
+        "Potential ENT overlap but not strong enough for automatic inclusion: dizziness, vertigo"
+      ]
+    },
+    {
+      "pathway_id": "PW638",
+      "pathway_key": "PW638",
+      "title": "Dizziness or Vertigo",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        }
+      ],
+      "ent_heading": "Other ENT",
+      "decision": "review_not_included",
+      "reasons": [
+        "Potential ENT overlap but not strong enough for automatic inclusion: dizziness, vertigo"
+      ]
+    },
+    {
+      "pathway_id": "PW639",
+      "pathway_key": "PW639",
+      "title": "Dizziness or Vertigo",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        }
+      ],
+      "ent_heading": "Other ENT",
+      "decision": "review_not_included",
+      "reasons": [
+        "Potential ENT overlap but not strong enough for automatic inclusion: dizziness, vertigo"
+      ]
+    },
+    {
+      "pathway_id": "PW640",
+      "pathway_key": "PW640",
+      "title": "Dizziness or Vertigo",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "not area specific",
+          "group": "non specific"
+        }
+      ],
+      "ent_heading": "Other ENT",
+      "decision": "review_not_included",
+      "reasons": [
+        "Potential ENT overlap but not strong enough for automatic inclusion: dizziness, vertigo"
+      ]
+    },
+    {
+      "pathway_id": "PW643",
+      "pathway_key": "PW643",
+      "title": "Dizziness or Vertigo Pregnant",
+      "symptom_group": "",
+      "clinical_areas": [],
+      "ent_heading": "Other ENT",
+      "decision": "review_not_included",
+      "reasons": [
+        "Potential ENT overlap but not strong enough for automatic inclusion: dizziness, vertigo"
+      ]
+    },
+    {
+      "pathway_id": "PW1712",
+      "pathway_key": "PW1712",
+      "title": "Locked Jaw",
+      "symptom_group": "",
+      "clinical_areas": [
+        {
+          "description": "head",
+          "group": "face"
+        },
+        {
+          "description": "mouth",
+          "group": "head"
+        }
+      ],
+      "ent_heading": "Other ENT",
+      "decision": "review_not_included",
+      "reasons": [
+        "Potential ENT overlap but not strong enough for automatic inclusion: jaw"
+      ]
+    }
+  ],
+  "internal_transitions": [
+    {
+      "source_pathway_id": "PW1758",
+      "source_title": "Water Creature Stings",
+      "target_pathway_id": "PW1758",
+      "target_title": "Water Creature Stings",
+      "transition_count": 122,
+      "answer_branches": 6,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PEE1",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PEE1",
+      "target_title": "Early Exit",
+      "transition_count": 78,
+      "answer_branches": 27,
+      "source_question_count": 23
+    },
+    {
+      "source_pathway_id": "PA219",
+      "source_title": "Chest or Upper Back Pain Under 35 Years ",
+      "target_pathway_id": "PA219",
+      "target_title": "Chest or Upper Back Pain Under 35 Years ",
+      "transition_count": 76,
+      "answer_branches": 7,
+      "source_question_count": 5
+    },
+    {
+      "source_pathway_id": "PEE1",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PA160",
+      "target_title": "Early Exit - Deceased",
+      "transition_count": 64,
+      "answer_branches": 16,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PEE3",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PA160",
+      "target_title": "Early Exit - Deceased",
+      "transition_count": 64,
+      "answer_branches": 16,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PEE3",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PEE3",
+      "target_title": "Early Exit",
+      "transition_count": 58,
+      "answer_branches": 20,
+      "source_question_count": 20
+    },
+    {
+      "source_pathway_id": "PW692",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 42,
+      "answer_branches": 4,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW564",
+      "source_title": "Burn, Chemical",
+      "target_pathway_id": "PW564",
+      "target_title": "Burn, Chemical",
+      "transition_count": 28,
+      "answer_branches": 5,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PW684",
+      "source_title": "Head, Facial or Neck Injury, Blunt",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 28,
+      "answer_branches": 4,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PA160",
+      "source_title": "Early Exit - Deceased",
+      "target_pathway_id": "PA160",
+      "target_title": "Early Exit - Deceased",
+      "transition_count": 26,
+      "answer_branches": 3,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PEE1",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PA107",
+      "target_title": "Early Exit - Dying",
+      "transition_count": 24,
+      "answer_branches": 6,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW987",
+      "source_title": "Burn, Sun",
+      "target_pathway_id": "PW987",
+      "target_title": "Burn, Sun",
+      "transition_count": 24,
+      "answer_branches": 8,
+      "source_question_count": 6
+    },
+    {
+      "source_pathway_id": "PW1389",
+      "source_title": "Burn, Sun",
+      "target_pathway_id": "PW1389",
+      "target_title": "Burn, Sun",
+      "transition_count": 20,
+      "answer_branches": 7,
+      "source_question_count": 7
+    },
+    {
+      "source_pathway_id": "PW989",
+      "source_title": "Burn, Sun",
+      "target_pathway_id": "PW989",
+      "target_title": "Burn, Sun",
+      "transition_count": 20,
+      "answer_branches": 7,
+      "source_question_count": 7
+    },
+    {
+      "source_pathway_id": "PW1854",
+      "source_title": "Loss of Taste or Smell",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 16,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1776",
+      "source_title": "Wound Problems",
+      "target_pathway_id": "PW1776",
+      "target_title": "Wound Problems",
+      "transition_count": 14,
+      "answer_branches": 4,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW580",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PW580",
+      "target_title": "Burn, Thermal",
+      "transition_count": 14,
+      "answer_branches": 4,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PEE3",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PA164",
+      "target_title": "Early Exit - Dying",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PEE3",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PA165",
+      "target_title": "Early Exit - Dying",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1480",
+      "source_title": "Burn, Chemical",
+      "target_pathway_id": "PW1480",
+      "target_title": "Burn, Chemical",
+      "transition_count": 12,
+      "answer_branches": 4,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PW1590",
+      "source_title": "Scratches, Grazes and Minor Wounds",
+      "target_pathway_id": "PW1590",
+      "target_title": "Scratches, Grazes and Minor Wounds",
+      "transition_count": 12,
+      "answer_branches": 6,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1702",
+      "source_title": "Ear Discharge or Ear Wax",
+      "target_pathway_id": "PW654",
+      "target_title": "Earache",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1762",
+      "source_title": "Hearing Disturbance or Blocked Ear",
+      "target_pathway_id": "PW654",
+      "target_title": "Earache",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW566",
+      "source_title": "Burn, Chemical",
+      "target_pathway_id": "PW566",
+      "target_title": "Burn, Chemical",
+      "transition_count": 12,
+      "answer_branches": 4,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA107",
+      "target_title": "Early Exit - Dying",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1702",
+      "source_title": "Ear Discharge or Ear Wax",
+      "target_pathway_id": "PW655",
+      "target_title": "Earache",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1762",
+      "source_title": "Hearing Disturbance or Blocked Ear",
+      "target_pathway_id": "PW655",
+      "target_title": "Earache",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1854",
+      "source_title": "Loss of Taste or Smell",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 8,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1777",
+      "source_title": "Wound Problems",
+      "target_pathway_id": "PW1777",
+      "target_title": "Wound Problems",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW582",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PW582",
+      "target_title": "Burn, Thermal",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW925",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PW925",
+      "target_title": "Burn, Thermal",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PEE4",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PW1846",
+      "target_title": "PaCCS Service Search",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1496",
+      "source_title": "Difficulty Swallowing",
+      "target_pathway_id": "PW1034",
+      "target_title": "Object, Ingested or Inhaled",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1575",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1758",
+      "target_title": "Water Creature Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1580",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1758",
+      "target_title": "Water Creature Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1585",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1758",
+      "target_title": "Water Creature Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1702",
+      "source_title": "Ear Discharge or Ear Wax",
+      "target_pathway_id": "PW656",
+      "target_title": "Earache",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1762",
+      "source_title": "Hearing Disturbance or Blocked Ear",
+      "target_pathway_id": "PW656",
+      "target_title": "Earache",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW854",
+      "source_title": "Sore Throat or Hoarse Voice",
+      "target_pathway_id": "PW854",
+      "target_title": "Sore Throat or Hoarse Voice",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1034",
+      "source_title": "Object, Ingested or Inhaled",
+      "target_pathway_id": "PW1034",
+      "target_title": "Object, Ingested or Inhaled",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1854",
+      "source_title": "Loss of Taste or Smell",
+      "target_pathway_id": "PW1854",
+      "target_title": "Loss of Taste or Smell",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW836",
+      "source_title": "Object, Ingested or Inhaled",
+      "target_pathway_id": "PW836",
+      "target_title": "Object, Ingested or Inhaled",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    }
+  ],
+  "outbound_transitions": [
+    {
+      "source_pathway_id": "PEE1",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PN5128",
+      "target_title": "Assessment of Required Level of Response",
+      "transition_count": 64,
+      "answer_branches": 9,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PA160",
+      "source_title": "Early Exit - Deceased",
+      "target_pathway_id": "PA1",
+      "target_title": "Stopped Breathing 3rd Party ",
+      "transition_count": 48,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA160",
+      "source_title": "Early Exit - Deceased",
+      "target_pathway_id": "PA45",
+      "target_title": "Stopped Breathing 3rd Party ",
+      "transition_count": 48,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA160",
+      "source_title": "Early Exit - Deceased",
+      "target_pathway_id": "PA53",
+      "target_title": "Stopped Breathing 3rd Party ",
+      "transition_count": 48,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1711",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PW1801",
+      "target_title": "Unwell 29 days to under 16 weeks",
+      "transition_count": 36,
+      "answer_branches": 3,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PEE3",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PN5128",
+      "target_title": "Assessment of Required Level of Response",
+      "transition_count": 32,
+      "answer_branches": 8,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1854",
+      "source_title": "Loss of Taste or Smell",
+      "target_pathway_id": "PW1041",
+      "target_title": "Cold or Flu Symptoms",
+      "transition_count": 28,
+      "answer_branches": 7,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1711",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PW1800",
+      "target_title": "Unwell under 29 days",
+      "transition_count": 24,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1711",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PW1802",
+      "target_title": "Unwell 16 weeks to 6 months",
+      "transition_count": 24,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1711",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PW1803",
+      "target_title": "Unwell over 6 months",
+      "transition_count": 24,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1854",
+      "source_title": "Loss of Taste or Smell",
+      "target_pathway_id": "PW1043",
+      "target_title": "Cold or Flu Symptoms",
+      "transition_count": 20,
+      "answer_branches": 5,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1854",
+      "source_title": "Loss of Taste or Smell",
+      "target_pathway_id": "PW1853",
+      "target_title": "Health Alert (Respiratory)",
+      "transition_count": 20,
+      "answer_branches": 5,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PEE1",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PT510",
+      "target_title": "Emergency CPR Pathway",
+      "transition_count": 16,
+      "answer_branches": 4,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PEE3",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PN5132",
+      "target_title": "Assessment of Required Level of Response",
+      "transition_count": 16,
+      "answer_branches": 7,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PW1710",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PW1066",
+      "target_title": "Wound Problems",
+      "transition_count": 16,
+      "answer_branches": 4,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW854",
+      "source_title": "Sore Throat or Hoarse Voice",
+      "target_pathway_id": "PT505",
+      "target_title": "Viral Haemorrhagic Fever Closure",
+      "transition_count": 16,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW856",
+      "source_title": "Sore Throat",
+      "target_pathway_id": "PT505",
+      "target_title": "Viral Haemorrhagic Fever Closure",
+      "transition_count": 16,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW692",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT305",
+      "target_title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 14,
+      "answer_branches": 3,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PA219",
+      "source_title": "Chest or Upper Back Pain Under 35 Years ",
+      "target_pathway_id": "PA212",
+      "target_title": "Chest and Upper Back Pain",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PEE4",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PW1848",
+      "target_title": "PaCCS Ambulance Dispatch",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PW1805",
+      "source_title": "Unwell Infant",
+      "target_pathway_id": "PW1801",
+      "target_title": "Unwell 29 days to under 16 weeks",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW582",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA149",
+      "target_title": "Trauma emergency",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW692",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT203",
+      "target_title": "Emergency Ambulance Closure, Wound Bleeding, Head",
+      "transition_count": 12,
+      "answer_branches": 4,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PW925",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA157",
+      "target_title": "Trauma emergency",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW981",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PW559",
+      "target_title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW984",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PW560",
+      "target_title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PEE1",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PN5132",
+      "target_title": "Assessment of Required Level of Response",
+      "transition_count": 10,
+      "answer_branches": 7,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PW684",
+      "source_title": "Head, Facial or Neck Injury, Blunt",
+      "target_pathway_id": "PT305",
+      "target_title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 10,
+      "answer_branches": 4,
+      "source_question_count": 4
+    },
+    {
+      "source_pathway_id": "PA164",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA112",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA164",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA120",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA164",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA152",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA164",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA156",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA165",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA112",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA165",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA120",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA165",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA152",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA165",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA156",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA219",
+      "source_title": "Chest or Upper Back Pain Under 35 Years ",
+      "target_pathway_id": "PT312",
+      "target_title": "Emergency Ambulance Closure, Breathlessness",
+      "transition_count": 8,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PEE1",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PA1",
+      "target_title": "Stopped Breathing 3rd Party ",
+      "transition_count": 8,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PEE3",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PA1",
+      "target_title": "Stopped Breathing 3rd Party ",
+      "transition_count": 8,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PEE3",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PT510",
+      "target_title": "Emergency CPR Pathway",
+      "transition_count": 8,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1496",
+      "source_title": "Difficulty Swallowing",
+      "target_pathway_id": "PT213",
+      "target_title": "Ambulance Closure, Stroke",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1575",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1577",
+      "target_title": "Bites, Animal",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1575",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1579",
+      "target_title": "Bites and Stings, Insect or Spider",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1580",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1582",
+      "target_title": "Bites, Animal",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1580",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1584",
+      "target_title": "Bites and Stings, Insect or Spider",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1585",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1582",
+      "target_title": "Bites, Animal",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1585",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1589",
+      "target_title": "Bites and Stings, Insect or Spider",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1709",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PA169",
+      "target_title": "Reception Point 2",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1709",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PW1066",
+      "target_title": "Wound Problems",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1710",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PA169",
+      "target_title": "Reception Point 2",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1710",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PW1492",
+      "target_title": "Wound Problems",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1805",
+      "source_title": "Unwell Infant",
+      "target_pathway_id": "PW1800",
+      "target_title": "Unwell under 29 days",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1805",
+      "source_title": "Unwell Infant",
+      "target_pathway_id": "PW1802",
+      "target_title": "Unwell 16 weeks to 6 months",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1805",
+      "source_title": "Unwell Infant",
+      "target_pathway_id": "PW1803",
+      "target_title": "Unwell over 6 months",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1854",
+      "source_title": "Loss of Taste or Smell",
+      "target_pathway_id": "PN5127",
+      "target_title": "Generic Clinician Closure",
+      "transition_count": 8,
+      "answer_branches": 4,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1854",
+      "source_title": "Loss of Taste or Smell",
+      "target_pathway_id": "PW1040",
+      "target_title": "Cold or Flu Symptoms",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1854",
+      "source_title": "Loss of Taste or Smell",
+      "target_pathway_id": "PW1042",
+      "target_title": "Cold or Flu Symptoms",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW580",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA117",
+      "target_title": "Trauma emergency, 1st party",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW580",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA125",
+      "target_title": "Trauma emergency, 1st Party",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW580",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA133",
+      "target_title": "Trauma emergency, 1st Party",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW580",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA141",
+      "target_title": "Trauma emergency, 1st Party",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW686",
+      "source_title": "Head, Facial or Neck Injury, Blunt",
+      "target_pathway_id": "PT22",
+      "target_title": "Emergency  Ambulance Closure, Trauma",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW686",
+      "source_title": "Head, Facial or Neck Injury, Blunt",
+      "target_pathway_id": "PT305",
+      "target_title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 8,
+      "answer_branches": 3,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PW692",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT202",
+      "target_title": "Emergency Ambulance Closure, Wound Bleeding, Foreign Body, Head",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW694",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT305",
+      "target_title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 8,
+      "answer_branches": 3,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PW854",
+      "source_title": "Sore Throat or Hoarse Voice",
+      "target_pathway_id": "PA87",
+      "target_title": "Cardiac Medication Closure",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PA219",
+      "source_title": "Chest or Upper Back Pain Under 35 Years ",
+      "target_pathway_id": "PN5128",
+      "target_title": "Assessment of Required Level of Response",
+      "transition_count": 6,
+      "answer_branches": 3,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1401",
+      "source_title": "Head, Facial or Neck Injury, Blunt",
+      "target_pathway_id": "PT22",
+      "target_title": "Emergency  Ambulance Closure, Trauma",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1401",
+      "source_title": "Head, Facial or Neck Injury, Blunt",
+      "target_pathway_id": "PT305",
+      "target_title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1403",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT202",
+      "target_title": "Emergency Ambulance Closure, Wound Bleeding, Foreign Body, Head",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1403",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT203",
+      "target_title": "Emergency Ambulance Closure, Wound Bleeding, Head",
+      "transition_count": 6,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1403",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT305",
+      "target_title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1702",
+      "source_title": "Ear Discharge or Ear Wax",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 6,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1702",
+      "source_title": "Ear Discharge or Ear Wax",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 6,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1731",
+      "source_title": "Nosebleeds after Injury",
+      "target_pathway_id": "PT305",
+      "target_title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1776",
+      "source_title": "Wound Problems",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW692",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT22",
+      "target_title": "Emergency  Ambulance Closure, Trauma",
+      "transition_count": 6,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW694",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT202",
+      "target_title": "Emergency Ambulance Closure, Wound Bleeding, Foreign Body, Head",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW694",
+      "source_title": "Head, Facial or Neck Injury, Penetrating",
+      "target_pathway_id": "PT203",
+      "target_title": "Emergency Ambulance Closure, Wound Bleeding, Head",
+      "transition_count": 6,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW854",
+      "source_title": "Sore Throat or Hoarse Voice",
+      "target_pathway_id": "PT312",
+      "target_title": "Emergency Ambulance Closure, Breathlessness",
+      "transition_count": 6,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA112",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA120",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA152",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA156",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PFA3",
+      "target_title": "Calling About Someone Else",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PFI",
+      "target_title": "Calling About Someone Else",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PMA3",
+      "target_title": "Calling About Someone Else",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PMI",
+      "target_title": "Calling About Someone Else",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA164",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA128",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA164",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA136",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA164",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA144",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA164",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA148",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA165",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA128",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA165",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA136",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA165",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA144",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA165",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA148",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA219",
+      "source_title": "Chest or Upper Back Pain Under 35 Years ",
+      "target_pathway_id": "PA87",
+      "target_title": "Cardiac Medication Closure",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PEE4",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PW1847",
+      "target_title": "PaCCS Emergency Treatment Centre Referral",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PEE4",
+      "source_title": "Early Exit",
+      "target_pathway_id": "PW1849",
+      "target_title": "PaCCS Home Management Suite",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1034",
+      "source_title": "Object, Ingested or Inhaled",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1046",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PW556",
+      "target_title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1046",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PW870",
+      "target_title": "Toothache without Dental Injury",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1048",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PW559",
+      "target_title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1048",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PW870",
+      "target_title": "Toothache without Dental Injury",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1050",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PW557",
+      "target_title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1050",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PW871",
+      "target_title": "Toothache without Dental Injury",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1226",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PW558",
+      "target_title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1496",
+      "source_title": "Difficulty Swallowing",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1575",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1576",
+      "target_title": "Bites, Human",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1575",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1578",
+      "target_title": "Bites, Snake",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1580",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1576",
+      "target_title": "Bites, Human",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1580",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1583",
+      "target_title": "Bites, Snake",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1585",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1586",
+      "target_title": "Bites, Human",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1585",
+      "source_title": "Bites and Stings",
+      "target_pathway_id": "PW1588",
+      "target_title": "Bites, Snake",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1590",
+      "source_title": "Scratches, Grazes and Minor Wounds",
+      "target_pathway_id": "PT33",
+      "target_title": "Assistance needed at home due to inability to get off the floor, trauma",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1602",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PW560",
+      "target_title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1602",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PW871",
+      "target_title": "Toothache without Dental Injury",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1709",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PW1721",
+      "target_title": "Plaster Cast Problems",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1709",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PW1722",
+      "target_title": "Tube and Drain Problems",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1709",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PW1723",
+      "target_title": "External Fixation",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1710",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PW1721",
+      "target_title": "Plaster Cast Problems",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1710",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PW1722",
+      "target_title": "Tube and Drain Problems",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1710",
+      "source_title": "Wound Problems, Plaster Casts, Tubes and Metal Appliances",
+      "target_pathway_id": "PW1724",
+      "target_title": "External Fixation",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1713",
+      "source_title": "Nosebleeds after Injury",
+      "target_pathway_id": "PT305",
+      "target_title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1730",
+      "source_title": "Nosebleeds after Injury",
+      "target_pathway_id": "PT305",
+      "target_title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1762",
+      "source_title": "Hearing Disturbance or Blocked Ear",
+      "target_pathway_id": "PT5",
+      "target_title": "Medication",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW564",
+      "source_title": "Burn, Chemical",
+      "target_pathway_id": "PN5134",
+      "target_title": "Burn, Chemical",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW566",
+      "source_title": "Burn, Chemical",
+      "target_pathway_id": "PN5134",
+      "target_title": "Burn, Chemical",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW580",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA113",
+      "target_title": "Trauma emergency, 3rd party",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW580",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA121",
+      "target_title": "Trauma emergency, 3rd Party",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW580",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA129",
+      "target_title": "Trauma emergency, 3rd Party",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW580",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA137",
+      "target_title": "Trauma emergency, 3rd Party",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW582",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA145",
+      "target_title": "Trauma emergency",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW684",
+      "source_title": "Head, Facial or Neck Injury, Blunt",
+      "target_pathway_id": "PT22",
+      "target_title": "Emergency  Ambulance Closure, Trauma",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW836",
+      "source_title": "Object, Ingested or Inhaled",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW854",
+      "source_title": "Sore Throat or Hoarse Voice",
+      "target_pathway_id": "PN5127",
+      "target_title": "Generic Clinician Closure",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW854",
+      "source_title": "Sore Throat or Hoarse Voice",
+      "target_pathway_id": "PT315",
+      "target_title": "Emergency Ambulance Closure, Breathlessness",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW856",
+      "source_title": "Sore Throat",
+      "target_pathway_id": "PN5127",
+      "target_title": "Generic Clinician Closure",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW856",
+      "source_title": "Sore Throat",
+      "target_pathway_id": "PT312",
+      "target_title": "Emergency Ambulance Closure, Breathlessness",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW856",
+      "source_title": "Sore Throat",
+      "target_pathway_id": "PT315",
+      "target_title": "Emergency Ambulance Closure, Breathlessness",
+      "transition_count": 4,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW925",
+      "source_title": "Burn, Thermal",
+      "target_pathway_id": "PA153",
+      "target_title": "Trauma emergency",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW981",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PW556",
+      "target_title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW984",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PW557",
+      "target_title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA128",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA136",
+      "target_title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA144",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PA148",
+      "target_title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PFC3",
+      "target_title": "Calling About Someone Else",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PFT",
+      "target_title": "Calling About Someone Else",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PMC3",
+      "target_title": "Calling About Someone Else",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA107",
+      "source_title": "Early Exit - Dying",
+      "target_pathway_id": "PMT",
+      "target_title": "Calling About Someone Else",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA219",
+      "source_title": "Chest or Upper Back Pain Under 35 Years ",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1046",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1046",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1048",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1048",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1050",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1050",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1226",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1226",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1496",
+      "source_title": "Difficulty Swallowing",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1602",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1602",
+      "source_title": "Sinusitis (Declared)",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1711",
+      "source_title": "Nasal Congestion",
+      "target_pathway_id": "PN5127",
+      "target_title": "Generic Clinician Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1713",
+      "source_title": "Nosebleeds after Injury",
+      "target_pathway_id": "PT22",
+      "target_title": "Emergency  Ambulance Closure, Trauma",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1730",
+      "source_title": "Nosebleeds after Injury",
+      "target_pathway_id": "PT22",
+      "target_title": "Emergency  Ambulance Closure, Trauma",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1731",
+      "source_title": "Nosebleeds after Injury",
+      "target_pathway_id": "PT22",
+      "target_title": "Emergency  Ambulance Closure, Trauma",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1776",
+      "source_title": "Wound Problems",
+      "target_pathway_id": "PN5127",
+      "target_title": "Generic Clinician Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1777",
+      "source_title": "Wound Problems",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW654",
+      "source_title": "Earache",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW654",
+      "source_title": "Earache",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW655",
+      "source_title": "Earache",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW655",
+      "source_title": "Earache",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW656",
+      "source_title": "Earache",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW656",
+      "source_title": "Earache",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW854",
+      "source_title": "Sore Throat or Hoarse Voice",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW854",
+      "source_title": "Sore Throat or Hoarse Voice",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW856",
+      "source_title": "Sore Throat",
+      "target_pathway_id": "PT1",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW856",
+      "source_title": "Sore Throat",
+      "target_pathway_id": "PT2",
+      "target_title": "Emergency Ambulance Closure",
+      "transition_count": 2,
+      "answer_branches": 1,
+      "source_question_count": 1
+    }
+  ],
+  "inbound_transitions": [
+    {
+      "source_pathway_id": "PW1864",
+      "source_title": "Self Triage Child Illness ",
+      "target_pathway_id": "PW1868",
+      "target_title": "ED Ear Nose Throat Triage",
+      "transition_count": 20,
+      "answer_branches": 5,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PA169",
+      "source_title": "Reception Point 2",
+      "target_pathway_id": "PT500",
+      "target_title": "Reception Point Foreign Body Closure",
+      "transition_count": 16,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1584",
+      "source_title": "Bites and Stings, Insect or Spider",
+      "target_pathway_id": "PT500",
+      "target_title": "Reception Point Foreign Body Closure",
+      "transition_count": 16,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1589",
+      "source_title": "Bites and Stings, Insect or Spider",
+      "target_pathway_id": "PT500",
+      "target_title": "Reception Point Foreign Body Closure",
+      "transition_count": 16,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1847",
+      "source_title": "PaCCS Emergency Treatment Centre Referral",
+      "target_pathway_id": "PW1846",
+      "target_title": "PaCCS Service Search",
+      "transition_count": 16,
+      "answer_branches": 4,
+      "source_question_count": 3
+    },
+    {
+      "source_pathway_id": "PW700",
+      "source_title": "Falls, Faints or Blackouts or Unable to get up without Injury",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 16,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA169",
+      "source_title": "Reception Point 2",
+      "target_pathway_id": "PW1758",
+      "target_title": "Water Creature Stings",
+      "transition_count": 12,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PA21",
+      "source_title": "Chest and Upper Back Pain",
+      "target_pathway_id": "PA219",
+      "target_title": "Chest or Upper Back Pain Under 35 Years ",
+      "transition_count": 12,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1515",
+      "source_title": "Dental Bleeding",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1515",
+      "source_title": "Dental Bleeding",
+      "target_pathway_id": "PW694",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1277",
+      "target_title": "Foreign Body, Ear",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1319",
+      "target_title": "Foreign Body, Nose",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1528",
+      "target_title": "Foreign Body, Ear",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1529",
+      "target_title": "Foreign Body, Nose",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1575",
+      "target_title": "Bites and Stings",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW564",
+      "target_title": "Burn, Chemical",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW580",
+      "target_title": "Burn, Thermal",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW987",
+      "target_title": "Burn, Sun",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1858",
+      "source_title": "Emergency or Urgent Treament Centre, Self-triage",
+      "target_pathway_id": "PW1868",
+      "target_title": "ED Ear Nose Throat Triage",
+      "transition_count": 12,
+      "answer_branches": 3,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1057",
+      "source_title": "Skin, Lumps",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1259",
+      "source_title": "Skin, Minor Foreign Body",
+      "target_pathway_id": "PT500",
+      "target_title": "Reception Point Foreign Body Closure",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1328",
+      "source_title": "Skin, Minor Foreign Body",
+      "target_pathway_id": "PT500",
+      "target_title": "Reception Point Foreign Body Closure",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1367",
+      "source_title": "Skin, Lumps",
+      "target_pathway_id": "PW686",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1395",
+      "source_title": "Dental Injury",
+      "target_pathway_id": "PW1401",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1544",
+      "source_title": "Face, Neck Pain or Swelling",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1545",
+      "source_title": "Face, Neck Pain or Swelling",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1613",
+      "source_title": "Falls, Faints or Blackouts without Injury",
+      "target_pathway_id": "PW686",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1670",
+      "source_title": "Falls, Faints or Blackouts without Injury",
+      "target_pathway_id": "PW1401",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1706",
+      "source_title": "Vomiting",
+      "target_pathway_id": "PW1401",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1753",
+      "source_title": "Skin, Minor Foreign Body",
+      "target_pathway_id": "PT500",
+      "target_title": "Reception Point Foreign Body Closure",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1754",
+      "source_title": "Skin, Minor Foreign Body",
+      "target_pathway_id": "PT500",
+      "target_title": "Reception Point Foreign Body Closure",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 2
+    },
+    {
+      "source_pathway_id": "PW1755",
+      "source_title": "Skin, Lumps",
+      "target_pathway_id": "PW686",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1757",
+      "source_title": "Skin, Lumps",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1389",
+      "target_title": "Burn, Sun",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1480",
+      "target_title": "Burn, Chemical",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1585",
+      "target_title": "Bites and Stings",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW925",
+      "target_title": "Burn, Thermal",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1859",
+      "source_title": "ED Injury Triage",
+      "target_pathway_id": "PW564",
+      "target_title": "Burn, Chemical",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1859",
+      "source_title": "ED Injury Triage",
+      "target_pathway_id": "PW580",
+      "target_title": "Burn, Thermal",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1863",
+      "source_title": "ED Injury Child",
+      "target_pathway_id": "PW564",
+      "target_title": "Burn, Chemical",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1863",
+      "source_title": "ED Injury Child",
+      "target_pathway_id": "PW580",
+      "target_title": "Burn, Thermal",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW636",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW637",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW638",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW686",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW639",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW640",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW700",
+      "source_title": "Falls, Faints or Blackouts or Unable to get up without Injury",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 8,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW754",
+      "source_title": "Headache",
+      "target_pathway_id": "PW686",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW755",
+      "source_title": "Headache",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW756",
+      "source_title": "Headache",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW758",
+      "source_title": "Headache, Pregnant",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW936",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW937",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW938",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW686",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW939",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW940",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW684",
+      "target_title": "Head, Facial or Neck Injury, Blunt",
+      "transition_count": 8,
+      "answer_branches": 2,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1057",
+      "source_title": "Skin, Lumps",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1076",
+      "source_title": "Breast Pain",
+      "target_pathway_id": "PW1575",
+      "target_title": "Bites and Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1077",
+      "source_title": "Breast Pain",
+      "target_pathway_id": "PW1575",
+      "target_title": "Bites and Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1078",
+      "source_title": "Breast Pain",
+      "target_pathway_id": "PW1575",
+      "target_title": "Bites and Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1079",
+      "source_title": "Breast Pain",
+      "target_pathway_id": "PW1575",
+      "target_title": "Bites and Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1367",
+      "source_title": "Skin, Lumps",
+      "target_pathway_id": "PW694",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1395",
+      "source_title": "Dental Injury",
+      "target_pathway_id": "PW1403",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1544",
+      "source_title": "Face, Neck Pain or Swelling",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1545",
+      "source_title": "Face, Neck Pain or Swelling",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1613",
+      "source_title": "Falls, Faints or Blackouts without Injury",
+      "target_pathway_id": "PW694",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1670",
+      "source_title": "Falls, Faints or Blackouts without Injury",
+      "target_pathway_id": "PW1403",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1706",
+      "source_title": "Vomiting",
+      "target_pathway_id": "PW1403",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1755",
+      "source_title": "Skin, Lumps",
+      "target_pathway_id": "PW694",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1757",
+      "source_title": "Skin, Lumps",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1580",
+      "target_title": "Bites and Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW1590",
+      "target_title": "Scratches, Grazes and Minor Wounds",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW566",
+      "target_title": "Burn, Chemical",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW582",
+      "target_title": "Burn, Thermal",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1857",
+      "source_title": "Pathways Injury Module",
+      "target_pathway_id": "PW989",
+      "target_title": "Burn, Sun",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1859",
+      "source_title": "ED Injury Triage",
+      "target_pathway_id": "PW1575",
+      "target_title": "Bites and Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1859",
+      "source_title": "ED Injury Triage",
+      "target_pathway_id": "PW987",
+      "target_title": "Burn, Sun",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1863",
+      "source_title": "ED Injury Child",
+      "target_pathway_id": "PW1575",
+      "target_title": "Bites and Stings",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW1863",
+      "source_title": "ED Injury Child",
+      "target_pathway_id": "PW987",
+      "target_title": "Burn, Sun",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW620",
+      "source_title": "Dental Injury",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW622",
+      "source_title": "Dental Injury",
+      "target_pathway_id": "PW694",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW636",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW637",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW638",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW694",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW639",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW640",
+      "source_title": "Dizziness or Vertigo",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW754",
+      "source_title": "Headache",
+      "target_pathway_id": "PW694",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW755",
+      "source_title": "Headache",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW756",
+      "source_title": "Headache",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW758",
+      "source_title": "Headache, Pregnant",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW936",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW937",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW938",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW694",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW939",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    },
+    {
+      "source_pathway_id": "PW940",
+      "source_title": "Vomiting and/or Nausea",
+      "target_pathway_id": "PW692",
+      "target_title": "Head, Facial or Neck Injury, Penetrating",
+      "transition_count": 4,
+      "answer_branches": 1,
+      "source_question_count": 1
+    }
+  ],
+  "outbound_destinations": [
+    {
+      "pathway_id": "PN5128",
+      "title": "Assessment of Required Level of Response",
+      "transition_count": 102,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PT305",
+      "title": "Transport to Emergency Centre within 1 hour",
+      "transition_count": 66,
+      "edge_count": 9
+    },
+    {
+      "pathway_id": "PA1",
+      "title": "Stopped Breathing 3rd Party ",
+      "transition_count": 64,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PA45",
+      "title": "Stopped Breathing 3rd Party ",
+      "transition_count": 48,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA53",
+      "title": "Stopped Breathing 3rd Party ",
+      "transition_count": 48,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PT2",
+      "title": "Emergency Ambulance Closure",
+      "transition_count": 48,
+      "edge_count": 17
+    },
+    {
+      "pathway_id": "PW1801",
+      "title": "Unwell 29 days to under 16 weeks",
+      "transition_count": 48,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PT505",
+      "title": "Viral Haemorrhagic Fever Closure",
+      "transition_count": 32,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1800",
+      "title": "Unwell under 29 days",
+      "transition_count": 32,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1802",
+      "title": "Unwell 16 weeks to 6 months",
+      "transition_count": 32,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1803",
+      "title": "Unwell over 6 months",
+      "transition_count": 32,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PT22",
+      "title": "Emergency  Ambulance Closure, Trauma",
+      "transition_count": 30,
+      "edge_count": 7
+    },
+    {
+      "pathway_id": "PT1",
+      "title": "Emergency Ambulance Closure",
+      "transition_count": 28,
+      "edge_count": 12
+    },
+    {
+      "pathway_id": "PW1041",
+      "title": "Cold or Flu Symptoms",
+      "transition_count": 28,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PN5132",
+      "title": "Assessment of Required Level of Response",
+      "transition_count": 26,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PT203",
+      "title": "Emergency Ambulance Closure, Wound Bleeding, Head",
+      "transition_count": 24,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PT510",
+      "title": "Emergency CPR Pathway",
+      "transition_count": 24,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1066",
+      "title": "Wound Problems",
+      "transition_count": 24,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PA112",
+      "title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 20,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PA120",
+      "title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 20,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PA152",
+      "title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 20,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PA156",
+      "title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 20,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PN5127",
+      "title": "Generic Clinician Closure",
+      "transition_count": 20,
+      "edge_count": 5
+    },
+    {
+      "pathway_id": "PT202",
+      "title": "Emergency Ambulance Closure, Wound Bleeding, Foreign Body, Head",
+      "transition_count": 20,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PW1043",
+      "title": "Cold or Flu Symptoms",
+      "transition_count": 20,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1853",
+      "title": "Health Alert (Respiratory)",
+      "transition_count": 20,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PT312",
+      "title": "Emergency Ambulance Closure, Breathlessness",
+      "transition_count": 18,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PA169",
+      "title": "Reception Point 2",
+      "transition_count": 16,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1582",
+      "title": "Bites, Animal",
+      "transition_count": 16,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW559",
+      "title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 16,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW560",
+      "title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 16,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PA149",
+      "title": "Trauma emergency",
+      "transition_count": 12,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA157",
+      "title": "Trauma emergency",
+      "transition_count": 12,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA212",
+      "title": "Chest and Upper Back Pain",
+      "transition_count": 12,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA87",
+      "title": "Cardiac Medication Closure",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1848",
+      "title": "PaCCS Ambulance Dispatch",
+      "transition_count": 12,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA128",
+      "title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 10,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PA136",
+      "title": "Immediate threats to life, SPA/OOH version, 3rd party",
+      "transition_count": 10,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PA144",
+      "title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 10,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PA148",
+      "title": "Immediate threats to life, SPA/OOH version",
+      "transition_count": 10,
+      "edge_count": 3
+    },
+    {
+      "pathway_id": "PA117",
+      "title": "Trauma emergency, 1st party",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA125",
+      "title": "Trauma emergency, 1st Party",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA133",
+      "title": "Trauma emergency, 1st Party",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA141",
+      "title": "Trauma emergency, 1st Party",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PN5134",
+      "title": "Burn, Chemical",
+      "transition_count": 8,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PT213",
+      "title": "Ambulance Closure, Stroke",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PT315",
+      "title": "Emergency Ambulance Closure, Breathlessness",
+      "transition_count": 8,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1040",
+      "title": "Cold or Flu Symptoms",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1042",
+      "title": "Cold or Flu Symptoms",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1492",
+      "title": "Wound Problems",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1576",
+      "title": "Bites, Human",
+      "transition_count": 8,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1577",
+      "title": "Bites, Animal",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1579",
+      "title": "Bites and Stings, Insect or Spider",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1584",
+      "title": "Bites and Stings, Insect or Spider",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1589",
+      "title": "Bites and Stings, Insect or Spider",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1721",
+      "title": "Plaster Cast Problems",
+      "transition_count": 8,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1722",
+      "title": "Tube and Drain Problems",
+      "transition_count": 8,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW556",
+      "title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 8,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW557",
+      "title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 8,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW870",
+      "title": "Toothache without Dental Injury",
+      "transition_count": 8,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW871",
+      "title": "Toothache without Dental Injury",
+      "transition_count": 8,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PA113",
+      "title": "Trauma emergency, 3rd party",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA121",
+      "title": "Trauma emergency, 3rd Party",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA129",
+      "title": "Trauma emergency, 3rd Party",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA137",
+      "title": "Trauma emergency, 3rd Party",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA145",
+      "title": "Trauma emergency",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA153",
+      "title": "Trauma emergency",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PFA3",
+      "title": "Calling About Someone Else",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PFI",
+      "title": "Calling About Someone Else",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PMA3",
+      "title": "Calling About Someone Else",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PMI",
+      "title": "Calling About Someone Else",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PT33",
+      "title": "Assistance needed at home due to inability to get off the floor, trauma",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PT5",
+      "title": "Medication",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1578",
+      "title": "Bites, Snake",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1583",
+      "title": "Bites, Snake",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1586",
+      "title": "Bites, Human",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1588",
+      "title": "Bites, Snake",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1723",
+      "title": "External Fixation",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1724",
+      "title": "External Fixation",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1847",
+      "title": "PaCCS Emergency Treatment Centre Referral",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1849",
+      "title": "PaCCS Home Management Suite",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW558",
+      "title": "Breathing Problems, Breathlessness or Wheeze",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PFC3",
+      "title": "Calling About Someone Else",
+      "transition_count": 2,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PFT",
+      "title": "Calling About Someone Else",
+      "transition_count": 2,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PMC3",
+      "title": "Calling About Someone Else",
+      "transition_count": 2,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PMT",
+      "title": "Calling About Someone Else",
+      "transition_count": 2,
+      "edge_count": 1
+    }
+  ],
+  "inbound_sources": [
+    {
+      "pathway_id": "PW1857",
+      "title": "Pathways Injury Module",
+      "transition_count": 148,
+      "edge_count": 17
+    },
+    {
+      "pathway_id": "PA169",
+      "title": "Reception Point 2",
+      "transition_count": 28,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1515",
+      "title": "Dental Bleeding",
+      "transition_count": 24,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1859",
+      "title": "ED Injury Triage",
+      "transition_count": 24,
+      "edge_count": 4
+    },
+    {
+      "pathway_id": "PW1863",
+      "title": "ED Injury Child",
+      "transition_count": 24,
+      "edge_count": 4
+    },
+    {
+      "pathway_id": "PW700",
+      "title": "Falls, Faints or Blackouts or Unable to get up without Injury",
+      "transition_count": 24,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1864",
+      "title": "Self Triage Child Illness ",
+      "transition_count": 20,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1584",
+      "title": "Bites and Stings, Insect or Spider",
+      "transition_count": 16,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1589",
+      "title": "Bites and Stings, Insect or Spider",
+      "transition_count": 16,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1847",
+      "title": "PaCCS Emergency Treatment Centre Referral",
+      "transition_count": 16,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PA21",
+      "title": "Chest and Upper Back Pain",
+      "transition_count": 12,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1057",
+      "title": "Skin, Lumps",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1367",
+      "title": "Skin, Lumps",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1395",
+      "title": "Dental Injury",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1544",
+      "title": "Face, Neck Pain or Swelling",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1545",
+      "title": "Face, Neck Pain or Swelling",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1613",
+      "title": "Falls, Faints or Blackouts without Injury",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1670",
+      "title": "Falls, Faints or Blackouts without Injury",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1706",
+      "title": "Vomiting",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1755",
+      "title": "Skin, Lumps",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1757",
+      "title": "Skin, Lumps",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1858",
+      "title": "Emergency or Urgent Treament Centre, Self-triage",
+      "transition_count": 12,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW636",
+      "title": "Dizziness or Vertigo",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW637",
+      "title": "Dizziness or Vertigo",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW638",
+      "title": "Dizziness or Vertigo",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW639",
+      "title": "Dizziness or Vertigo",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW640",
+      "title": "Dizziness or Vertigo",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW754",
+      "title": "Headache",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW755",
+      "title": "Headache",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW756",
+      "title": "Headache",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW758",
+      "title": "Headache, Pregnant",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW936",
+      "title": "Vomiting and/or Nausea",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW937",
+      "title": "Vomiting and/or Nausea",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW938",
+      "title": "Vomiting and/or Nausea",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW939",
+      "title": "Vomiting and/or Nausea",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW940",
+      "title": "Vomiting and/or Nausea",
+      "transition_count": 12,
+      "edge_count": 2
+    },
+    {
+      "pathway_id": "PW1259",
+      "title": "Skin, Minor Foreign Body",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1328",
+      "title": "Skin, Minor Foreign Body",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1753",
+      "title": "Skin, Minor Foreign Body",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1754",
+      "title": "Skin, Minor Foreign Body",
+      "transition_count": 8,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1076",
+      "title": "Breast Pain",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1077",
+      "title": "Breast Pain",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1078",
+      "title": "Breast Pain",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW1079",
+      "title": "Breast Pain",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW620",
+      "title": "Dental Injury",
+      "transition_count": 4,
+      "edge_count": 1
+    },
+    {
+      "pathway_id": "PW622",
+      "title": "Dental Injury",
+      "transition_count": 4,
+      "edge_count": 1
+    }
+  ],
+  "clinical_review_questions": [
+    "Does every included pathway belong in an ENT reasoning model?",
+    "Which inbound pathways represent legitimate ENT entry points rather than incidental handovers?",
+    "Which outbound transfers are safety escalations that should remain deterministic?",
+    "Which boundary presentations should become shared/common evidence rather than family membership?",
+    "Are any review-only pathways clinically core enough to move into the ENT family?",
+    "Are there ENT-specific pathways missing because their metadata/title does not contain an explicit ENT term?"
+  ]
+}
